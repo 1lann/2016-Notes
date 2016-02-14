@@ -12,6 +12,13 @@ $\require{mhchem}$
 
 = Reactions =
 
+*Definitions*
+* System
+	* All particles involved in the reaction
+* Surroundings
+	* Everything else
+
+
 == Non-Reversible ==
 
 $$
@@ -23,6 +30,8 @@ $$
 * Forward reaction from left to right
 * Reverse reaction from right to left
 * Single arrow meaning reaction cannot be reversed
+* Reaction proceeds to completion
+	* All reactants converted to products
 
 
 == Reversible ==
@@ -32,3 +41,5 @@ $$
 $$
 
 * Double arrow meaning reaction is reversible
+* Never completes
+* Mixture of reactants and products present at all times

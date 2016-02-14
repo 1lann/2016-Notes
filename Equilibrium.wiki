@@ -19,7 +19,19 @@ $\require{mhchem}$
             - [[#Kinetic Theory#Rate of Reaction#Temperature|Temperature]]
             - [[#Kinetic Theory#Rate of Reaction#Catalyst|Catalyst]]
     - [[#Equilibrium|Equilibrium]]
+        - [[#Equilibrium#Examples|Examples]]
+        - [[#Equilibrium#Rate vs. Time|Rate vs. Time]]
+        - [[#Equilibrium#Concentration vs. Time|Concentration vs. Time]]
         - [[#Equilibrium#Equilibrium Constant|Equilibrium Constant]]
+        - [[#Equilibrium#Position of Equilibrium|Position of Equilibrium]]
+        - [[#Equilibrium#Changes in Equilibrium|Changes in Equilibrium]]
+            - [[#Equilibrium#Changes in Equilibrium#Le Châtelier's Principle|Le Châtelier's Principle]]
+            - [[#Equilibrium#Changes in Equilibrium#Concentration|Concentration]]
+                - [[#Equilibrium#Changes in Equilibrium#Concentration#Reactants|Reactants]]
+                - [[#Equilibrium#Changes in Equilibrium#Concentration#Products|Products]]
+            - [[#Equilibrium#Changes in Equilibrium#Pressure|Pressure]]
+            - [[#Equilibrium#Changes in Equilibrium#Temperature|Temperature]]
+            - [[#Equilibrium#Changes in Equilibrium#Catalyst|Catalyst]]
 
 
 
@@ -246,15 +258,138 @@ $\require{mhchem}$
 	  reaction)
 
 
-== Reaching Equilibrium ==
+== Rate vs. Time ==
 
-$
+For equation:
+
+$$
 \ce{H2 (g) + I2 (g) <=> 2HI (g)}
-$
+$$
 
-Rate of reaction vs. time:
+{{local:../notes/assets/chemistry/equilibrium-rate.svg}}
+
+* Initial concentration of reactants is high
+	* High initial forward reaction rate due to high frequency of collisions
+	* Decreases exponentially over time as more reactants are used in the
+	  reaction
+* Initial concentration of products is 0
+	* Initial reverse reaction rate is 0
+	* Increases exponentially over time as more products are formed
+* Rates of forward and reverse reaction eventually become equal
 
 
+== Concentration vs. Time ==
+
+For equation:
+
+$$
+\ce{H2 (g) + I2 (g) <=> 2HI (g)}
+$$
+
+{{local:../notes/assets/chemistry/equilibrium-concentration.svg}}
+
+* Initial concentration of reactants is high
+* Initial concentration of products is 0
+* Initial rate of change of concentration is high as rate of reaction is high
+* Rate of change of concentration decreases over time as rate of reaction for
+  forward reaction decreases, and rate of reverse reaction increases
+* Increase in concentration of products realtive to decrease in concentration of
+  reactants follows stoichiometric ratios in equation
+	* In this equation, 2 times as much $\ce{HI}$ is produced as $\ce{H}$ and
+	  $\ce{I}$ is used up
 
 
 == Equilibrium Constant ==
+
+For the equation:
+
+$$
+\ce{aA + bB -> cC + dD}
+$$
+
+The equilibrium constant is:
+
+$$
+K = \frac{[\mbox{C}]^c [\mbox{D}]^d}{[\mbox{A}]^a [\mbox{B}]^b}
+$$
+
+* Products divided by reactants
+* Value remains constant at a given temperatue
+	* Changes if temperature changes
+* Only includes concentration of gases and aqueous substances
+	* Solids and pure liquids are ignored
+* If $K > 1$:
+	* Concentration of products greater than concentration of reactants
+* If $K < 1$:
+	* Concentration of reactants greater than concentration of products
+* Gives no indication about the rate of reaction
+
+
+== Position of Equilibrium ==
+
+{{local:../notes/assets/chemistry/equilibrium-scale.svg}}
+
+* Equilibrium is a position on a linear scale
+* Changing environment will shift position of equilibrium
+* Change relative composition of reactant and products
+
+*Shift Left*
+* Rate of reverse reaction increases
+* Products used up by reverse reaction
+* Decreases concentration of products
+* Increases concentration of reactants
+
+
+*Shift Right*
+* Rate of forward reaction increases
+* Reactants used up by forward reaction
+* Increases concentration of products
+* Decreases concentration of reactants
+
+
+== Changes in Equilibrium ==
+
+* If a change is imposed on a system in equilibrium which changes the rate of
+  forward and reverse reactions by different amounts
+* System will no longer be in equilibrium
+* System will attempt to restore equilibrium
+
+
+=== Le Châtelier's Principle ===
+
+* For a system in equilibrium
+* If a change is imposed on the system
+* The system will attempt to counteract the change
+
+
+*Examples*
+* If the temperature is increased
+	* System will attempt to decrease temperature
+* If the pressure is increased
+	* System will attempt to decrease the pressure
+
+
+=== Concentration ===
+
+==== Reactants ====
+
+*Increase in a Reactant*
+* System attempt to offset increase in concentration
+*
+
+
+==== Products ====
+
+
+=== Pressure ===
+
+* Identical to concentration
+* Can be changed by:
+	* Adding more or removing some of a gas
+	* Decreasing or increasing the volume of the container
+
+
+=== Temperature ===
+
+
+=== Catalyst ===
