@@ -1,0 +1,34 @@
+
+$\require{mhchem}$
+
+= Contents =
+    - [[#Reactions|Reactions]]
+        - [[#Reactions#Non-Reversible|Non-Reversible]]
+        - [[#Reactions#Reversible|Reversible]]
+
+
+
+
+
+= Reactions =
+
+== Non-Reversible ==
+
+$$
+\ce{CaCO3 + HCl -> CaCl2 + H2O + CO2}
+$$
+
+* Reactants left of arrow
+* Products right of arrow
+* Forward reaction from left to right
+* Reverse reaction from right to left
+* Single arrow meaning reaction cannot be reversed
+
+
+== Reversible ==
+
+$$
+\ce{2NO2 <=> N2O4}
+$$
+
+* Double arrow meaning reaction is reversible

@@ -1,0 +1,22 @@
+
+= Differentiation =
+
+
+= Polynomials =
+
+
+= Product Rule =
+
+
+= Quotient Rule =
+
+$$
+\frac{dy}{dx} = \frac{du}{dx} v + \frac{dv}{dx} u
+$$
+
+
+= Chain Rule =
+
+$$
+\frac{dy}{dx} = \frac{du}{dx} \frac{dv}{dx}
+$$

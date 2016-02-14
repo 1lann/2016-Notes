@@ -1,0 +1,260 @@
+
+$\require{mhchem}$
+
+= Contents =
+    - [[#Energy|Energy]]
+        - [[#Energy#Enthalpy|Enthalpy]]
+            - [[#Energy#Enthalpy#Change in Enthalpy|Change in Enthalpy]]
+        - [[#Energy#Activation Energy|Activation Energy]]
+        - [[#Energy#Energy Profile Diagrams|Energy Profile Diagrams]]
+            - [[#Energy#Energy Profile Diagrams#Exothermic|Exothermic]]
+            - [[#Energy#Energy Profile Diagrams#Endothermic|Endothermic]]
+    - [[#Kinetic Theory|Kinetic Theory]]
+        - [[#Kinetic Theory#Reaction|Reaction]]
+        - [[#Kinetic Theory#Energy Distribution Diagram|Energy Distribution Diagram]]
+        - [[#Kinetic Theory#Rate of Reaction|Rate of Reaction]]
+            - [[#Kinetic Theory#Rate of Reaction#Concentration|Concentration]]
+            - [[#Kinetic Theory#Rate of Reaction#Partial Pressure|Partial Pressure]]
+            - [[#Kinetic Theory#Rate of Reaction#Surface Area|Surface Area]]
+            - [[#Kinetic Theory#Rate of Reaction#Temperature|Temperature]]
+            - [[#Kinetic Theory#Rate of Reaction#Catalyst|Catalyst]]
+    - [[#Equilibrium|Equilibrium]]
+        - [[#Equilibrium#Equilibrium Constant|Equilibrium Constant]]
+
+
+
+
+
+= Energy =
+
+== Enthalpy ==
+
+* Means the same as energy
+* Symbol: $H$
+* Units: Joules ($J$)
+
+
+=== Change in Enthalpy ===
+
+* Symbol: $\Delta H$
+* How much energy was released or absorbed from the surroundings during the
+  course of a reaction
+
+
+*Exothermic*
+* Reaction releases energy to its surroundings
+* Increases temperature of surroundings
+* $\Delta H$ is negative
+	* As enthalpy of products is less than enthalpy of reactants
+* Examples
+	* Bond formation
+	* Cellular respiration
+	* Combustion
+	* Condensation
+		* As intermolecular bond formation is exothermic
+	* Freezing
+	* Formation of a precipitate
+
+
+*Endothermic*
+* Reaction uses up energy from its surroundings
+* Decreases temperature of surroundings
+* $\Delta H$ is positive
+	* As enthalpy of products is greater than enthalpy of reactants
+* Examples
+	* Bond breaking
+	* Photosynthesis
+	* Melting
+		* As intermolecular bond breakage is endothermic
+	* Evaporation
+
+
+== Activation Energy ==
+
+* Energy required to start reaction
+* Very low activation energy reactions happen spontaneously
+
+*Common Examples*
+* Very low
+	* Ions in solution that form a precipitate
+
+
+== Energy Profile Diagrams ==
+
+* Graph
+* Enthalpy on y axis
+* Reaction coordinate (time) on x axis
+
+
+*Features*
+* $H$ of reactants
+* $H$ of products
+* $\Delta H$ of reaction
+* Activation energy for forward and reverse reaction
+* Transition state (or activated complex)
+
+
+*Drawing*
+* Labelled axes
+	* Y is Enthalpy
+	* X is Reaction Coordinate
+* Axis units
+	* Enthalpy is in kJ (kilojoules)
+* Reactants and products written on graph
+	* Above product and reactant lines
+* $\Delta H$ distance marked
+	* Distance between product and reactant lines
+* Transition state labelled
+	* Peak of activation energy curve
+
+
+=== Exothermic ===
+
+{{local:../notes/assets/chemistry/exothermic.svg}}
+
+
+=== Endothermic ===
+
+{{local:../notes/assets/chemistry/endothermic.svg}}
+
+
+
+
+
+= Kinetic Theory =
+
+== Reaction ==
+
+* In order for a reaction to occur:
+	* Particles must collide
+	* With sufficient energy (energy greater than the activation energy)
+	* With the correct orientation
+
+
+== Energy Distribution Diagram ==
+
+{{local:../notes/assets/chemistry/energy-distribution.svg}}
+
+* Shows number of particles with a particular energy
+
+
+== Rate of Reaction ==
+
+* How quickly a reaction occurs
+* Doesn't affect how much product is formed
+* Depends on:
+	* Frequency of collisions
+	* Proportion of particles with energy greater than the activation energy
+
+
+=== Concentration ===
+
+* Only for aqueous ions in a liquid
+* Effect on rate of reaction
+	* Increase concentration of reactant
+	* Increase particles of reactant per unit volume
+	* Increase frequency of collisions
+	* Increase rate of reaction
+
+
+=== Partial Pressure ===
+
+* Only for gases
+* Proportion of the pressure a gas exerts on its container that is due to a
+  particular substance within the gas
+	* Exactly like concentration for gases
+	* Eg. in a container full of hydrogen and nitrogen, partial pressure of
+	  hydrogen is the pressure exerted on the container due to the hydrogen only
+	  (less than total pressure)
+* Effect on rate of reaction
+	* Increase partial pressure of a substance
+		* Decrease container volume
+		* Increase amount of substance in container
+	* Increase frequency of collisions
+	* Increase rate of reaction
+
+
+=== Surface Area ===
+
+* Only for solids
+* Effect on rate of reaction
+	* Increase surface area of solid
+	* Increase frequency of collisions
+	* Increase rate of reaction
+
+
+=== Temperature ===
+
+{{local:../notes/assets/chemistry/temperature-distribution.svg}}
+
+* Kinetic energy of particles is proportional to temperature
+* Effect on rate of reaction
+	* Increase temperature
+	* Increase kinetic energy of particles
+	* Travelling faster, have more energy
+	* Increase frequency of collision
+	* Increase proportion of particles with energy greater than activation
+	  energy
+	* Increase rate of reaction
+* Effect on energy distribution diagram
+	* Moves peak of graph down and right
+	* Area under graph should remain the same (number of particles doesn't
+	  change)
+
+
+=== Catalyst ===
+
+{{local:../notes/assets/chemistry/catalyst-distribution.svg}}
+
+{{local:../notes/assets/chemistry/exothermic-catalyst.svg}}
+
+* Provides an alternate reaction pathway with a lower activation energy
+* Effect on rate of reaction
+	* Add catalyst
+	* Decrease activation energy
+	* Increase proportion of particles with energy greater than activation
+	  energy
+	* Increase rate of reaction
+
+
+
+
+
+= Equilibrium =
+
+* System is in equilibrium when the rate of the forward reaction equals the rate
+  of the reverse reaction
+	* No net change in concentration of products or reactants
+* Only applies to reversible reactions
+	* Usually have low activation energies
+* Applies to chemical reactions and physical state changes
+
+
+== Examples ==
+
+*Physical Equilibria*
+* Dissolving solid in saturated solution
+	* Rate of dissolving equals rate of concentration
+* Vapor pressure
+	* Rate of condensation equals rate of evaporation
+
+
+*Chemical Equilibria*
+* $\ce{H2 (g) + I2 (g) <=> 2HI (g)}$
+	* Hydrogen and iodine combine to form hydrogen iodide (forward reaction)
+	* Hydrogen iodide breaks apart to form hydrogen and iodine (reverse
+	  reaction)
+
+
+== Reaching Equilibrium ==
+
+$
+\ce{H2 (g) + I2 (g) <=> 2HI (g)}
+$
+
+Rate of reaction vs. time:
+
+
+
+
+== Equilibrium Constant ==

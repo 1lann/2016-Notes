@@ -1,0 +1,749 @@
+
+= Contents =
+    - [[#Globalisation|Globalisation]]
+        - [[#Globalisation#Causes|Causes]]
+        - [[#Globalisation#Effects|Effects]]
+        - [[#Globalisation#Statistics|Statistics]]
+        - [[#Globalisation#Economic Integration Types|Economic Integration Types]]
+    - [[#Organisations|Organisations]]
+    - [[#Trade|Trade]]
+        - [[#Trade#Inflows|Inflows]]
+        - [[#Trade#Outflows|Outflows]]
+        - [[#Trade#Factors Affecting Trade|Factors Affecting Trade]]
+        - [[#Trade#Effects|Effects]]
+        - [[#Trade#Corporations|Corporations]]
+        - [[#Trade#Agreement Types|Agreement Types]]
+        - [[#Trade#Strategic Trade Theory|Strategic Trade Theory]]
+        - [[#Trade#Trade Diversion|Trade Diversion]]
+        - [[#Trade#Trade Intensity|Trade Intensity]]
+        - [[#Trade#Trade Specialisation|Trade Specialisation]]
+        - [[#Trade#Trade Composition|Trade Composition]]
+            - [[#Trade#Trade Composition#Australian Export Categories|Australian Export Categories]]
+            - [[#Trade#Trade Composition#Australian Import Categories|Australian Import Categories]]
+            - [[#Trade#Trade Composition#Top Australian Exports|Top Australian Exports]]
+            - [[#Trade#Trade Composition#Top Australian Imports|Top Australian Imports]]
+            - [[#Trade#Trade Composition#Balance of Goods and Services|Balance of Goods and Services]]
+            - [[#Trade#Trade Composition#Trends|Trends]]
+            - [[#Trade#Trade Composition#Reasons|Reasons]]
+        - [[#Trade#Trade Direction|Trade Direction]]
+            - [[#Trade#Trade Direction#Trade Partners|Trade Partners]]
+            - [[#Trade#Trade Direction#Shift in Direction|Shift in Direction]]
+    - [[#Competitiveness|Competitiveness]]
+        - [[#Competitiveness#Factors|Factors]]
+        - [[#Competitiveness#Measurements|Measurements]]
+    - [[#Purchasing Power Parity|Purchasing Power Parity]]
+        - [[#Purchasing Power Parity#Disadvantages|Disadvantages]]
+
+
+
+
+
+= Globalisation =
+
+*Definition*
+* Nobel prize in economics Joseph Stiglitz
+* The closer integration of countries and people bought about by the reduction
+  in cost of transport and communication, and the breaking down of artificial
+  barriers to the flow of goods, services, capital, knowledge, and people
+  across borders
+* Currently in 3rd wave of globalisation
+	* Started in 1980s
+
+
+== Causes ==
+
+*Technology*
+* Decreased cost of transportation
+	* Standardisation of transportation systems
+	* Through use of shipping containers
+* Increased speed of transportation
+	* Increased use of airplanes due to improvements in technology
+	* Enabled faster deliveries
+* Increased ease of international communication
+	* Eg. email, instant messenger applications
+	* Allows for coordination of international operations
+	* Allows for constant access to markets across all world timezones
+
+
+*Government Policy*
+* Opening of domestic markets to international producers
+	* Through unilateral trade reform
+* Reduced governmental assistance to firms
+	* Reduction in "protection"
+	* More level playing field for international producers
+	* Improves efficiency in producing goods and services as businesses are
+	  forced to compete
+
+
+*Organisations*
+* Organisations encouraging reduction in protection through:
+	* Encouraging unilateral trade reform
+	* Facilitating bilateral and multilateral free trade agreements
+* Increase in free trade agreements could cause trade diversion rather than
+  trade creation
+
+
+*Multinational Corporations*
+* Driven globalisation in an attempt to increase profit by reducing costs
+* Evident through the processes of:
+	* Outsourcing
+		* Purchasing a good or service from another firm so we don't have to
+		  manufacture/supply it ourselves
+	* Offshoring
+		* Moving operations to another country to reduce costs
+		* Usually to reduce labour costs in manufacturing
+* Have established global brands, produced by global manufacturing processes,
+  distributed by global networks
+
+
+*Media*
+* Global media networks transfer information and knowledge of other cultures to
+  consumers in many countries
+* Increases global awareness of popular culture
+	* Reinforced by tourism to other countries
+* Influences consumers to want what the rest of the world has
+	* Creates demand for international products
+* Enhances tolerance of other cultures (eg. tolerance for people of different
+  races and religions)
+* Decreases effects of cultural barriers (eg. language and customs)
+
+
+== Effects ==
+
+*Positive*
+* Access to wider variety of higher quality goods and service
+	* Due to:
+		* Increased imports from foreign countries
+* Lowers prices
+	* Decreases country's inflation rate
+	* Increases consumers' real income
+	* Increases consumer purchasing power
+	* Due to:
+		* Increased competition from international markets forcing firms to
+		  remain competitive
+		* Reduced cost of production due to cheaper international supply chains
+* Provides more, better paying jobs
+	* Increases real income
+	* Increases standard of living
+* Increases competition
+	* Increases efficiency and productivity
+	* Advances technology
+* Reduces poverty
+	* Creates jobs, increasing real income
+	* Increased foreign direct investment in developing countries creates
+	  economic growth, raising the standard of living
+* Increases economic growth
+	* Increased trade, job opportunities
+	* Decreased prices
+* Increases living standards
+	* Increased real income of consumers
+* International transfer of technology and knowledge
+	* International labour force spreading skills
+	* Multinational companies bringing their technology into new countries
+* Increases multiculturalism
+	* International labour force introducing variety of cultures to the rest of
+	  the world
+* Promotes world peace
+	* War causes massive global economic destabilisation
+	* As economies are interdependent, shocks propagate faster and are more
+	  harmful
+
+
+*Negative*
+* Increases unemployment amongst low skill workers
+	* Firms attempt to reduce costs by replacing low skill workers with
+	  improved technology
+* Increases structural unemployment due to rate of structural change
+	* Rapid changes in global demand for goods and services
+	* Causes firms to shift operations quickly (high rate of structural change)
+	  to satisfy demand
+	* Skill sets of workers become mismatched against the skill sets required by
+	  firms
+	* Increases unemployment
+* Entrenches exploitation of child labour
+	* Firms attempt to reduce costs
+* Decreases wages of low skill workers
+	* Low skilled workers easily replacable
+	* Firms attempt to reduce costs by lowering wages and replacing workers if
+	  needed
+* Unfair to developing countries
+	* Unable to compete effectively with large scale multinational corporations
+	* Fail to produce competitive exports
+	* Limits economic growth
+* Volatile capital flow
+	* Capital shifts between sectors quickly to accomodate changes in global
+	  demand
+	* Can destabilise developing economies
+	* EXPLAIN MORE??
+* Economic shocks are contagious
+	* Economic shocks propagate faster, cause more harm
+	* Due to interdependent economies
+	* Have severe destabilising effects (eg. GFC in 2008)
+* Increased environmental damage and resource depletion
+	* Due to increased industrialisation
+* Erosion of political sovereignty
+	* Large corporations gaining political influence because of their large
+	  economic influence
+	* Create incentive for politicians to favour corporations over consumers
+	  when making political decisions to maintain economic prosperity
+
+
+== Statistics ==
+
+*Growth in Globalisation*
+* Trade intensity
+	* 13% in 1970
+	* 24% in 2008
+* Foreign direct investment
+	* $51b of world GDP in 1980
+	* $1664b of world GDP in 2013
+	* Grew at 23% per year in the last decade
+* World exports as percentage of world GDP
+	* 19% in 1980
+	* 30% in 2013
+
+
+== Economic Integration Types ==
+
+*Free trade area*
+* Two or more countries
+* Agree to no trade barriers between member countries
+
+
+*Customs union*
+* Free trade agreement between member countries
+* Common restrictions and trade barriers placed on imports from all non-member
+  countries
+
+
+*Common market*
+* Customs union
+* Common restrictions apply to everything (eg. foreign investment, immigrants)
+
+
+*Monetary union*
+* All countries use a single currency
+	* Eg. European Union with the Euro
+* Or agree to fixed exchange rates between currencies of member countries
+
+
+
+
+
+= Organisations =
+
+*Organisation for Economic Cooperation and Development (OECD)*
+* 34 members
+* Undertake research and reviews to advance own economic wellbeing
+* Members must be considered advanced economy
+	* Established strong economic base
+	* At least $30,000 average annual per capita income
+
+
+*World Trade Organisation (WTO)*
+* 188 members
+* Attempt to achieve greater economic integration
+* Administer trade agreements
+* Forum for countries to:
+	* Facilitate opening up borders to international trade
+	* Negotiate trade agreements
+	* Settle trade disputes
+
+
+*International Monetary Fund (IMF)*
+* Attempt to ensure stability of global financial systems
+* By ensuring financial stability of individual countries
+	* Stability of exchange, interest, and inflation rates
+
+
+*World Bank*
+* Provides funding for less developed economies
+* Through low or no interest rate loans
+* For infrastructure development projects
+* Since these countries have little access to international credit markets
+
+
+
+
+
+= Trade =
+
+*Definition*
+* The import and export of goods and services between countries
+
+
+== Inflows ==
+
+1. Imports
+2. Foreign tourists travelling to Australia
+3. Immigrants
+4. Foreign investment in Australia
+
+
+== Outflows ==
+
+1. Exports
+2. Australian tourists travelling overseas
+3. Emigrants
+4. Foreign investment in other countries
+
+
+== Factors Affecting Trade ==
+
+*Exchange Rate*
+* Lower exchange rate
+	* Cheaper exports relative to consumer currency
+		* Increased demand for exports
+		* Increased exports
+	* More expensive imports
+		* Decreased demand for imports
+		* Decreased imports
+
+
+*World Economic Growth*
+* Increased world economic growth
+	* Increases real income of international consumers
+	* Increases demand for exports
+	* Increases exports and imports
+
+
+*Domestic Economic Growth*
+* Increased domestic growth
+	* Increases real income of domestic consumers
+	* Increases demand for imports
+	* Increases imports
+
+
+*Relative Inflation Rate*
+* Relative to trading partners
+* Lower relative inflation rate
+	* Decreases price of exports relative to those of other countries
+	* Increased exports
+
+
+*Relative Interest Rate*
+* Relative to trading partners
+* Higher relative interest rate
+	* Increases flow of financial capital into a country
+
+
+*Productivity*
+* Higher productivity
+	* Increases output for a given input input
+	* Decreases average cost
+	* Decreases price of exports
+	* Increases competitiveness and demand for exports
+	* Increases exports
+
+
+== Effects ==
+
+*Consumers*
+* Increased variety, quantity, and quality of goods and services
+* Decreased prices
+	* More competition from international producers
+	* International supply chains reduce costs
+* Increased standard of living
+	* More, better paying jobs
+	* Increased real income
+	* Increased economic growth
+	* Increased standard of living
+
+
+*Producers*
+* Increased competition
+* Increased production volume
+	* Larger market (market is accessible to more consumers)
+	* More demand
+* Increased revenue
+	* Larger market
+	* Increased demand
+	* Increased sales
+	* Increased revenue
+
+
+== Corporations ==
+
+*Multinational Corporation*
+* Headquarters in 1 country
+* Operations (eg. subsidiaries) in many others
+
+
+*Transnational Corporation*
+* No readily identifiable headquarters
+* Operations (eg. subsidiaries) in many others
+
+
+== Agreement Types ==
+
+*Unilateral*
+* Remove trade barriers for all other countries
+* Don't expect other countries to reciprocate
+
+
+*Bilateral*
+* Agreement between 2 countries
+* Removal of trade barriers between them
+
+
+*Multilateral*
+* Agreement between more than 2 countries
+* Removal of trade barriers between members
+
+
+*Bilateral vs. Multilateral*
+* Advantages of multilateral
+	* Increase trade more than a bilateral agreement would
+* Disadvantages of multilateral
+	* Significantly harder to negotiate than bilateral agreements as all member
+	  countries must be satisfied
+
+
+== Strategic Trade Theory ==
+
+* Government recognises challenges faced by smaller firms selling in
+  international markets
+	* Not all countries abide by international best practice
+	* Creates an uneven playing field, disadvantaging international firms
+* Offers financial or regulatory assistance
+* Increases their competitiveness
+	* Increases sales
+	* Increases revenue and profit
+	* Benefits the country's economy
+* Offered to smaller firms rather than large corporations (eg. not BHP)
+
+
+== Trade Diversion ==
+
+*
+
+
+== Trade Intensity ==
+
+*Formula*
+
+$$
+\mbox{Trade intensity} = \frac{\mbox{X} + \mbox{M}}{\mbox{GDP}} \times 100
+$$
+
+
+*Definition*
+* Value of a country's imports and exports as a percentage of its GDP
+* Indication of the openness of a country to international trade
+	* Highlights the impact the overseas sector has on the Australian economy
+* Australian statistics
+	* Increased significantly
+		* 13% in 1970
+		* 21% in 2013
+
+
+== Trade Specialisation ==
+
+* Where a country dedicates its limited resources to producing goods and
+  services that it is efficient at producing
+	* Export the surplus
+* Imports goods and services that it is less efficient at producing, rather than
+  producing them itself
+
+
+== Trade Composition ==
+
+*Definition*
+* What a country trades
+
+
+*Comparative Advantage*
+* When a country can produce a good or service at a relatively lower cost than
+  another
+	* Theoretically measured through opportunity cost
+	* When the opportunity cost of a country producing one good over another is
+	  less than that of another country
+* In reality, demonstrated through a lower price or superior quality
+* Eg. Australia's mining and agricultural sectors
+
+
+=== Australian Export Categories ===
+
+* Primary (64%)
+	* Minerals (29%)
+	* Fuels (21%)
+	* Rural (11%)
+* Services (17%)
+* Manufacturing (13%)
+	* ETMs (9%)
+	* STMs (4%)
+* Other goods, including gold (6%)
+
+
+*Commodity*
+* Raw natural material or agricultural product
+
+
+*Primary Exports*
+* Natural resources, eg. agriculture, fishing, forestry, mining
+* Rural exports
+	* Eg. agriculture, fishing, livestock
+* Non-rural exports
+	* Mining
+	* Eg. ores, fuels, metals
+
+
+*Manufacturing*
+* Simply transformed manufactures (STMs)
+	* Commodities that have had very little processing or refining
+	* Eg. steel
+* Elaborately transformed manufactures (ETMs)
+	* Commodities that have undergone a long or complex process to arrive at the
+	  end product
+	* Eg. cars
+
+
+=== Australian Import Categories ===
+
+* Intermediate goods (35%)
+	* Fuels (13%)
+* Consumption goods (24%)
+	* Cars (6%)
+	* Food (4%)
+	* Clothing and footwear (4%)
+* Services (21%)
+* Capital goods (19%)
+	* Machinery (6%)
+
+
+*Intermediate Goods*
+* Goods used in the production of another final good
+* Not necessarily sold to consumers, but to other manufacturers for use in the
+  production of a final good
+* Eg. steel for manufacturing cars
+
+
+*Consumption Goods*
+* Goods sold to the consumer as a final product
+* Eg. a car
+
+
+*Capital Goods*
+* Goods used to produce other goods
+* Eg. machinery used in producing a car
+
+
+=== Top Australian Exports ===
+
+1. Iron Ore (22.5%)
+2. Coal (21.1%)
+3. Natural gas (4.9%)
+4. Education services (4.7%)
+5. Foreign travel to Australia (4.2%)
+
+
+=== Top Australian Imports ===
+
+1. Australians travelling overseas (7.5%)
+2. Crude petroleum (6.4%)
+3. Refined petroleum (5.7%)
+4. Cars (5.3%)
+5. Freight services (2.8%)
+
+
+=== Balance of Goods and Services ===
+
+*Merchandise Exports*
+* Exports of goods
+* Not including services
+
+
+*Balance*
+* Merchandise trade balance
+	* Total merchandise exports subtract merchandise imports
+* Services trade balance
+	* Total service exports subtract service imports
+* Balance of goods and services
+	* Total exports subtract total imports
+	* Often taken as a percentage of GDP
+
+
+=== Trends ===
+
+* Decrease in rural exports
+* Increase in resource exports
+* Growth in service and manufacturing exports until large appreciation in
+  Australian dollar in 2000s
+
+
+=== Reasons ===
+
+*Exports*
+* Comparative advantage in mining
+	* Have abundance of minerals
+	* Large foreign investment in mining sector
+		* Increased productive capacity
+* Inefficient manufacturing sector
+	* Low population
+		* Fewer workers to employ at a low wage
+	* High labour cost
+	* Stringent environmental and health regulations
+* Education services is a niche market
+	* Are good at it
+	* Large government investment in public sector education has created a large
+	  private sector complement
+
+
+*Imports*
+* Inefficient manufacturing sector
+	* Import a lot of manufactured goods
+	* No available substitutes that are produced in Australia
+	* Economy relatively serviced based
+		* Comparative disadvantage in manufacturing
+* WHAT ELSE??
+
+
+== Trade Direction ==
+
+*Definition*
+* Who we trade with
+
+
+=== Trade Partners ===
+
+* Trade in Asia and countries around the Pacific Rim accounts for about 80% of
+  Australian exports and 65% of imports
+* Important Countries
+	* China
+	* United States
+	* Japan
+
+
+=== Shift in Direction ===
+
+*Shift*
+* Shift in trade over Australian history
+* From Britain
+	* Originally established due to historic ties (convicts)
+* To Asia and Pacific Rim countries
+
+
+*Reasons*
+* Asia Pacific Economic Cooperation (APEC) free trade agreement
+	* Reduced trade barriers with Asia and Pacific Rim
+* Geographic proximity
+	* Reduces transport costs
+* Britain joined the European Union
+	* Forced common trade barriers on Australia
+	* Forced Australia to find new markets
+* Large Asian population
+	* Asia have limited supply of commodities relative to their size
+
+
+
+
+
+= Competitiveness =
+
+*Definition*
+* The degree to which a country can produce goods and services that meet the
+  test of international markets, while simultaneously maintaining and expanding
+  the real income of its people in the long term
+* Test of international markets
+	* Price
+		* Cheaper products are more competitive
+		* More important for homogenous (identical) products
+			* Eg. fuels like petrol or diesel
+	* Perception of quality
+		* Products of a higher perceived quality are more competitive
+
+
+== Factors ==
+
+*Productivity*
+* Output (GDP, revenue) per unit of input (labour cost, labour time, material
+  costs, capital costs)
+* Higher productivity
+	* Increases output per unit of input
+	* Decreases average cost
+	* Decreases prices of exports
+	* Increases competitiveness
+
+
+*Inflation Rate*
+* Percentage by which the price of goods and services in a country rise per
+  year
+* Lower inflation rate relative to other countries
+	* Decreases prices of exports relative to other countries
+	* Increases competitiveness
+
+
+*Wage Rate*
+* Amount paid to workers per unit of output or per unit of time spent working
+* Lower wage rate
+	* Decreases cost of production
+	* Decreases prices of exports
+	* Increases competitiveness
+
+
+*Exchange Rate*
+* Price of currency relative to another base currency (eg. $USD)
+* Lower exchange rate
+	* Decreases price of producer's currency when converted to consumer's
+	  currency
+	* Decreases prices of exports when converted to the consumer's currency
+	* Increases competitiveness
+
+
+== Measurements ==
+
+*Real Unit Labour Costs*
+* Wage rate divided by productivity
+	* Higher wage rate increases real unit labour costs
+	* Higher productivity decreases real unit labour costs
+* Lower real unit labour costs
+	* Decreases cost of production
+		* Increased productivity, more output from same input
+		* Decreased wages or time spent working, same output from less input
+	* Decreases price of exports
+	* Increases competitiveness
+* Statistics
+	* Decreased 6% since 2000
+	* Increased Australia's competitiveness
+
+
+*Trade Weighted Exchange Rate*
+* Also known as "Trade Weighted Index"
+* Exchange rate relative to trading partners
+* Lower trade weighted exchange rate
+	* Decreased price of currency when converted to trading partners' currency
+	* Decreased price of exports when converted to consumer's currency
+	* Increases competitiveness
+* Statistics
+	* Increased 57% since 2000
+	* Increased Australia's competitiveness
+
+
+
+
+
+= Purchasing Power Parity =
+
+*Definition*
+* A good or service should cost the same amount in each country once converted
+  to a common currency
+* Measure to determine if a currency is over or undervalued
+
+
+*Formula*
+* Cost in country B (in country B's currency) divided by cost in country A (in
+  country A's currency)
+* Ratio greater than 1
+	* Currency overvalued
+* Ratio less than 1
+	* Currency undervalued
+
+
+== Disadvantages ==
+
+* Not usually an accurate measurement of by how much a currency is over or
+  undervalued
+* Country may have introduced some other condition which drives up the price of
+  the product
+	* Eg. for hamburgers, a tariff on imported beef products would artificially
+	  increase the price
