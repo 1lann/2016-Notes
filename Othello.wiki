@@ -1,0 +1,195 @@
+
+= Othello =
+
+== Act 1 ==
+
+=== Quotes ===
+
+*Iago*
+* Arrogance
+	* Pg 3: "I know my price, I am worth no worse a place"
+	* Pg 5: "And when they have lined their coats, do themselves homage. These
+	  fellows have some soul"
+* Duplicity
+	* Pg 5: "I follow him to serve my turn upon him"
+	* Pg 5: "In following him, I follow but myself"
+	* Pg 15: "Nay, but he prated and spoke such scurvy and provoking terms
+	  against your honour"
+		* Ironic, as Iago prompted him to
+	* Pg 17: "By Janus, I think no"
+		* Swears by the God of two faces, allusion
+	* Pg 19: "You Roderigo? Come, sir, I am for you"
+		* Wants to fight Roderigo to prove fake loyalty to Othello
+* Contempt for Othello
+	* Pg 43: "I hate the Moor"
+	* Pg 43: "Let us be conjunctive in our revenge against him"
+	* Pg 45: "And will as tenderly be led by the nose as asses are"
+* Align with devil
+	* Pg 5: "I am not what I am"
+		* Biblical allusion
+		* God: "I am what I am"
+		* Aligns Iago with the devil
+	* Pg 7 (of Othello): "And though he in a fertile climate dwell, plague him
+	  with flies"
+		* Biblical allusion to the flies of Egypt
+	* Pg 13: "Though I do hate him as I do hell's pains"
+		* Further Devil references
+	* Pg 43: "And a super subtle Venetian be not too hard for my wits and all
+	  the tribe of hell"
+* Existentialism
+	* Pg 41: "Our bodies are our gardens, to the which our wills are gardeners"
+	* Pg 41: "Why the power and corrigible authority of this lies in our wills"
+	* Pg 41: "But we have reason to cool our raging motions, or carnal stings,
+	  or unbitted lusts"
+		* We are capable of controlling the human condition
+	* Pg 41/43: "Whereof I take this, that you call love, to be a sect or scion
+	  ... It is merely a lust of the blood and a permission of the will"
+		* Does not believe in true love, only in lust
+* Self motivated
+	* Pg 43: "I could never better stead thee (Roderigo) than now"
+	* Pg 43: "Put money in thy purse"
+		* Repetition
+* Psychopath
+	* Pg 43: "If thou canst cuckold him, thou dost thyself a pleasure, me a
+	  sport"
+		* Takes motiveless pleasure in ruining people's lives
+		* "Motiveless malignity"
+	* Pg 45: "Thus do I ever make my fool my purse"
+		* Exploits people for money
+	* Pg 45: "If I would time expend with such a snipe but for my sport and
+	  profit"
+	* Pg 45: "He holds me well, the better shall my purpose work on him"
+	* Pg 45: "I have't. It is engendered. Hell and night must bring this
+	  monstrous birth to the world's light"
+		* Recognises what he's doing is monstrous, doesn't care, enjoys it as a
+		  sport
+
+
+*Othello*
+* Racism
+	* Roderigo, pg 7: "Thick lips"
+	* Iago, pg 7: "Thieves!"
+	* Iago, pg 7: "Even now, an old black ram is tupping your white ewe"
+		* "black", racially motivated
+		* "tupping", vulgar slang, shocking
+		* "white ewe", Desdemona is pure, beautiful. Othello corrupting such
+		  innocence
+	* Iago, pg 7: "The devil"
+	* Iago, pg 9: "You'll have your daughter covered with a Barbary horse"
+		* "Barbary horse", strong, dark coloured African horse with firey
+		  temperament
+	* Iago, pg 9: "You'll have your nephews neigh to you"
+		* Continual bestial metaphor for black people
+	* Roderigo, pg 11: "Transported with no worse nor better guard, but with a
+	  knave of common hire"
+		* Irony, best soldier in Venice
+		* Underestimate abilities because of race
+	* Roderigo, pg 11: "to the gross clasps of a lacivious Moor"
+	* Brabantio, pg 21: "For if such actions may have passage free, bondslaves
+	  and pagans shall our statesmen be"
+	* Brabantio, pg 29: "To fall in love with what she feared to look on?"
+* Xenophobia
+	* Roderigo, pg 11: "An extravagant and wheeling stranger of here and
+	  everywhere"
+	* Pg 31: "Of being taken by the insolent foe and sold to slavery"
+	* Pg 31: "And the cannibals that each other eat, the Anthropophagi, and men
+	  whose heads do grow beneath their shoulders"
+* Self assuredness
+	* Pg 15: "My services which I have done the signiory shall out-tongue his
+	  complaints"
+	* Pg 17: "My parts, my title, and my perfect soul shall manifest me rightly"
+	* Pg 29: "Not only take away, but let your sentence even fall upon my life"
+* Diplomatic, respectful
+	* Pg 19: "Good signior, you shall more command with years than with your
+	  weapons"
+	* Pg 27: "Most potent, grave, and reverend signiors, my very noble and
+	  approved good masters"
+	* Pg 27: "Rude I am in my speech"
+		* Ironic, as very eloquent
+		* Stereotype so entrenched in society that Othello expects himself to
+		  conform to it
+* Love for Desdemona
+	* Pg 15: "For kow, Iago, but that I love the gentle Desdemona"
+	* Iago, pg 17: "Faith, he tonight hath boarded a land carrack; if it prove
+	  lawful prize, he's made for ever"
+		* "Boarded, carrack", Ship imagery
+	* Pg 29: "How I did thrive in this fair lady's love, and she in mine"
+	* Pg 31: "She gave me for my pains a world of sighs"
+	* Pg 39: "When light-winged toys of feathered Cupid"
+		* Allusion to Roman God of Love (Cupid)
+	* Pg 41: "I have but an hour of love ... to spend with thee"
+* Importance to the state
+	* Cassio, pg 17: "You have been hotly called for"
+	* Senator, pg 25: "Valiant Moor"
+	* Duke, pg 25: "Valiant Othello"
+	* Senator, pg 39: "Brave Moor"
+	* Duke, pg 35: "The fortitude of the place is best known to you"
+	* Duke, pg 35: "yet opinion ... throws a more safer voice on you"
+	* Desdemona, pg 37: "And to his honours and his valiant parts"
+* Mistrust in Iago
+	* Pg 39: "A man he is of honesty and trust"
+		* Dramatic irony
+
+
+*Desdemona*
+* Objectification
+	* Iago, pg 7: "Thieves! Look to your house, your duaghter, and your bags!"
+		* Implies she is something to be stolen
+		* Lists her among other possessions
+	* Iago, pg 7: "Sir, you're robbed!"
+	* Roderigo, pg 11: "Your daughter ... hath made a gross revolt"
+	* Brabantio, pg 13: "O heaven! How got she out? O treason of the blood!"
+	* Othello, pg 31: "But still the house affairs would draw her thence"
+		* Housewife role
+	* Brabantio, pg 33: "Do you perceive in all this noble company where most
+	  you owe obedience?"
+	* Pg 33: "To you I am bound for life and education, my life and education
+	  both do learn me how to respect you"
+	* Pg 33: "You are lord of all my duty, I am hitherto your daughter"
+	* Pg 33: "That I may profess due to the Moor my lord"
+	* Brabantio, pg 35: "For your sake, jewel"
+		* A valuable possession
+	* Iago, pg 43: "The food that to him now is as luscious as locusts"
+		* Biblical allusion to locusts being the food of God
+		* God handing out locusts makes her special?
+* Love for Othello
+	* Pg 37: "That I did love the Moor to live with him"
+
+
+*Brabantio*
+* Powerful
+	* Pg 9: "My spirit and my place have in them power to make this bitter to
+	  thee"
+	* Iago, pg 15: "And hath in his effect a voice potential as double as the
+	  duke's"
+* Contempt for miscegeny
+	* Pg 19: "Down with him, thief!"
+	* Pg 19: "O thou foul thief! Where hast thou stowed my daughter?"
+	* Pg 19: "Thou hast enchanted her"
+	* Pg 19: "Woul ever have ... run from her guardage to the sooty bosom of
+	  such a thing as thou"
+		* Disgust
+		* "thing", pejorative term
+		* "sooty", racially motivated
+	* Pg 19: "Thou hast practiced on her with foul charms, abused her delicate
+	  youth with drugs or minerals"
+		* Supernatural allusion to other Shakespeare plays (eg. Hamlet)
+		* "A practiser of arts inhibited and out of warrant"
+	* Pg 25: "For my particular frief is of so flood-gate and o'erbaring nature
+	  that it engluts and swallows other sorrows"
+	* Pg 27: Brabantio, "O, my daughter!", Senators, "Dead?", Brabantio, "Ay, to
+	  me"
+	* Pg 27: "She is abused, stol'n from me, and corrupted by spells and
+	  medicines"
+	* Pg 27: "Sans witchcraft could not"
+	* Pg 35: "I had rather to adopt a child than get it"
+* Clinging to patriarchy
+	* Pg 35: "I am glad at soul I have no other child, for thy escape would
+	  teach me tyranny"
+* Unreasonableness
+	* Pg 19: Othello, "Where will you that I go to answer this your charge?",
+	  Brabantio, "To prison, till fit time of law"
+
+
+*Cassio*
+* Iago, Pg 1: "Mere prattle without practice is all his soldiership"

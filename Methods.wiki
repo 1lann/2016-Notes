@@ -1,3 +1,7 @@
 
 = Methods =
 	* [[Differentiation]]
+
+
+= Tests =
+	* [[Derivates of Trigonometric Functions EPW]]

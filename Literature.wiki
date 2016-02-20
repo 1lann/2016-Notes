@@ -1,6 +1,6 @@
 
 = Literature =
-	* Othello
+	* [[Othello]]
 	* Heart of Darkness
 	* William Blake
 	* No Sugar

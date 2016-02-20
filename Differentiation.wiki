@@ -1,22 +1,65 @@
 
+= Contents =
+    - [[#Differentiation|Differentiation]]
+        - [[#Differentiation#Polynomials|Polynomials]]
+            - [[#Differentiation#Polynomials#Rule|Rule]]
+            - [[#Differentiation#Polynomials#Common Derivatives|Common Derivatives]]
+        - [[#Differentiation#Product Rule|Product Rule]]
+        - [[#Differentiation#Quotient Rule|Quotient Rule]]
+        - [[#Differentiation#Chain Rule|Chain Rule]]
+        - [[#Differentiation#Trigonometry|Trigonometry]]
+        - [[#Differentiation#Necessary Limits|Necessary Limits]]
+
+
+
+
+
 = Differentiation =
 
+== Polynomials ==
 
-= Polynomials =
-
-
-= Product Rule =
-
-
-= Quotient Rule =
+=== Rule ===
 
 $$
-\frac{dy}{dx} = \frac{du}{dx} v + \frac{dv}{dx} u
+\begin{align*}
+y & = ax^n \\
+\frac{dy}{dx} & = anx^{n - 1} \\
+\end{align*}
+$$
+
+=== Common Derivatives ===
+
+* $y = x^2$, $y' = 2x$
+* $y = \frac{a}{x}$, $y' = -\frac{a}{x^2}$
+* $y = \frac{a}{x^n}$, $y' = -\frac{na}{x^{n + 1}}$
+* $y = a\sqrt{x}$, $y' = \frac{a}{2\sqrt{x}}$
+
+
+== Product Rule ==
+
+$$
+y = uv \\
+\frac{dy}{dx} = \frac{du}{dx} v + \frac{dv}{dx} u \\
 $$
 
 
-= Chain Rule =
+== Quotient Rule ==
 
 $$
-\frac{dy}{dx} = \frac{du}{dx} \frac{dv}{dx}
+y = \frac{u}{v} \\
+\frac{dy}{dx} = \frac{\frac{du}{dx} v - \frac{dv}{dx} u}{v^2} \\
 $$
+
+
+== Chain Rule ==
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx}
+$$
+
+
+== Trigonometry ==
+
+* $y = \sin{x}$, $y' = \cos{x}$
+* $y = \cos{x}$, $y' = -\sin{x}$
+* $y = \tan{x}$, $y' = \frac{1}{\cos^2{x}}$
