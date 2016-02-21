@@ -1,4 +1,5 @@
 
 = Chemistry =
 	* [[Reactions]]
+	* [[Stoichiometry]]
 	* [[Equilibrium]]

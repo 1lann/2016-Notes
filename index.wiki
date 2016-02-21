@@ -6,3 +6,7 @@
 	* [[Physics]]
 	* [[Literature]]
 	* [[Economics]]
+
+
+= Other =
+	* [[Aerodynamics]]

@@ -1,5 +1,9 @@
 
 = Literature =
+	* [[Literary Discourse]]
+
+
+= Texts =
 	* [[Othello]]
 	* Heart of Darkness
 	* William Blake

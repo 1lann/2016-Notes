@@ -1,0 +1,288 @@
+
+= Contents =
+    - [[#Number Sets|Number Sets]]
+    - [[#Complex Numbers|Complex Numbers]]
+        - [[#Complex Numbers#i|i]]
+        - [[#Complex Numbers#Complex Number|Complex Number]]
+        - [[#Complex Numbers#Conjugate|Conjugate]]
+        - [[#Complex Numbers#Arithmetic|Arithmetic]]
+            - [[#Complex Numbers#Arithmetic#Surds|Surds]]
+            - [[#Complex Numbers#Arithmetic#Addition and Subtraction|Addition and Subtraction]]
+            - [[#Complex Numbers#Arithmetic#Multiplication|Multiplication]]
+            - [[#Complex Numbers#Arithmetic#Division|Division]]
+            - [[#Complex Numbers#Arithmetic#Equality|Equality]]
+        - [[#Complex Numbers#Quadratics|Quadratics]]
+            - [[#Complex Numbers#Quadratics#Formula from Roots|Formula from Roots]]
+        - [[#Complex Numbers#Argand Diagrams|Argand Diagrams]]
+            - [[#Complex Numbers#Argand Diagrams#Modulus|Modulus]]
+            - [[#Complex Numbers#Argand Diagrams#Argument|Argument]]
+        - [[#Complex Numbers#Polar Form|Polar Form]]
+        - [[#Complex Numbers#Simplifying|Simplifying]]
+        - [[#Complex Numbers#Arithmetic in Polar Form|Arithmetic in Polar Form]]
+            - [[#Complex Numbers#Arithmetic in Polar Form#Addition and Subtraction|Addition and Subtraction]]
+            - [[#Complex Numbers#Arithmetic in Polar Form#Multiplication|Multiplication]]
+            - [[#Complex Numbers#Arithmetic in Polar Form#Division|Division]]
+            - [[#Complex Numbers#Arithmetic in Polar Form#Conjugate|Conjugate]]
+        - [[#Complex Numbers#Regions in Complex Plane|Regions in Complex Plane]]
+            - [[#Complex Numbers#Regions in Complex Plane#Lines|Lines]]
+            - [[#Complex Numbers#Regions in Complex Plane#Circles|Circles]]
+            - [[#Complex Numbers#Regions in Complex Plane#Perpendicular Bisectors|Perpendicular Bisectors]]
+            - [[#Complex Numbers#Regions in Complex Plane#Rays|Rays]]
+        - [[#Complex Numbers#Roots of Unity|Roots of Unity]]
+        - [[#Complex Numbers#De Moivre's Theorem|De Moivre's Theorem]]
+            - [[#Complex Numbers#De Moivre's Theorem#Proof by Induction|Proof by Induction]]
+            - [[#Complex Numbers#De Moivre's Theorem#Expansion of Trigonometric Functions|Expansion of Trigonometric Functions]]
+            - [[#Complex Numbers#De Moivre's Theorem#Exponent of Complex Numbers in Standard Form|Exponent of Complex Numbers in Standard Form]]
+        - [[#Complex Numbers#Roots of Complex Number|Roots of Complex Number]]
+            - [[#Complex Numbers#Roots of Complex Number#Given a Root|Given a Root]]
+            - [[#Complex Numbers#Roots of Complex Number#Given no Roots|Given no Roots]]
+    - [[#Polynomials|Polynomials]]
+        - [[#Polynomials#Remainder Theorem|Remainder Theorem]]
+        - [[#Polynomials#Factor Theorem|Factor Theorem]]
+        - [[#Polynomials#Division of Polynomials|Division of Polynomials]]
+        - [[#Polynomials#Algebraic Juggling|Algebraic Juggling]]
+
+
+
+
+= Number Sets =
+
+* Natural numbers
+	* Set of all positive integers, including 0
+	* Symbol: $\mathbb{N}$
+* Integers
+	* All negative and positive integers, including 0
+	* Contains all natural numbers
+	* Symbol: $\mathbb{Z}$
+* Rational numbers
+	* All numbers representable as a fraction
+	* Contains all integers
+	* Symbol: $\mathbb{Q}$ (meaning quotient)
+* Irrational numbers
+	* All numbers not representable as a fraction (eg. $\pi$ and $e$)
+* Real numbers
+	* All rational and irrational numbers
+	* Contains all integers, rational, and irrational numbers
+	* Symbol: $\mathbb{R}$
+* Complex numbers
+	* All numbers with a real and imaginary component
+	* Contains all real numbers (imaginary component is 0)
+	* Symbol: $\mathbb{C}$
+
+
+
+
+= Complex Numbers =
+
+== i ==
+
+*Definition*
+* $i^2 = -1$
+* $i = \sqrt{-1}$
+
+*Exponents*
+* ...
+* $i^{-2} = -1$
+* $i^{-1} = -i$
+* $i^0 = 1$
+* $i^1 = i$
+* $i^2 = -1$
+* $i^3 = -i$
+* $i^4 = 1$
+* ...
+* Cycles every 4th power
+
+
+== Complex Number ==
+
+*Definition*
+* A number with real and imaginary components
+* Written as $a + bi$
+	* $a$ and $b$ are real (ie. $a, b \in \mathbb{R}$)
+
+
+*Components*
+* For a complex number $z = a + bi$
+* Real part written as $Re(z)$
+	* $Re(z) = a$
+* Imaginary part written as $Im(z)$
+	* $Im(z) = b$
+
+
+*Complex Pair*
+* For the complex number $a + bi$
+* Can also be expressed as $(a, b)$
+* Or $(r, \theta)$ for polar form
+
+
+== Conjugate ==
+
+*Definition*
+* For the complex number $z = a + bi$
+* The complex conjugate is $\overline{z} = a - bi$
+* Invert the sign of the imaginary part
+* Symbol: $\overline{z}$
+
+
+*i*
+* If $z = bi = 0 + bi$, $\overline{z} = -bi$
+* If $z = a = a + 0i$, $\overline{z} = a$
+
+
+*Properties*
+* $\overline{z_1 \pm z_2} = \overline{z_1} \pm \overline{z_2}$
+* $\overline{z_1 \times z_2} = \overline{z_1} \times \overline{z_2}$
+* $\overline{\frac{z_1}{z_2}} = \frac{\overline{z_1}}{\overline{z_2}}$
+
+
+== Arithmetic ==
+
+=== Surds ===
+
+$$
+\begin{align*}
+\sqrt{-64} & = \sqrt{64 \times -1} \\
+& = \sqrt{64} \times \sqrt{-1} \\
+& = 8i \\
+\\
+\sqrt{-8} & = \sqrt{8} \times \sqrt{-1} \\
+& = 2\sqrt{2}i \\
+\end{align*}
+$$
+
+* Take out $i$ from surd
+* Simplify surd
+
+
+=== Addition and Subtraction ===
+
+$$
+\begin{align*}
+(a + bi) + (c + di) & = (a + c) + (b + d)i \\
+(a + bi) - (c + di) & = (a - c) + (b - d)i \\
+\end{align*}
+$$
+
+* Add or subtract real and imaginary components separately
+* Factor out $i$ from imaginary components
+
+
+=== Multiplication ===
+
+*Real Number*
+* Multiply real and imaginary parts separately
+* $k(a + bi) = ka + kbi, k \in \mathbb{R}$
+
+
+*Complex Number*
+* Multiply out as if it was a quadratic
+* $(a + bi)(c + di) = ac + adi + bci + bdi^2 = (ac - bd) + (ad + bc)i$
+
+
+*Complex Conjugate*
+* Results in difference of perfect squares, but replacing the subtraction with
+  an addition
+* $(a + bi)(a - bi) = a^2 - abi + abi - bi^2 = a^2 + b^2$
+
+
+=== Division ===
+
+*Real Number*
+* Divide real and imaginary parts separately
+* $\frac{a + bi}{k} = \frac{a}{k} + \frac{b}{k}i$
+
+
+*Complex Number*
+* Rationalise the denominator by multiplying by the denominator's conjugate
+* $\frac{a + bi}{c + di} \times \frac{c - di}{c - di}$
+* Example:
+
+$$
+\begin{align*}
+\frac{2 - 3i}{1 + 2i} & = \frac{2 - 3i}{1 + 2i} \times \frac{1 - 2i}{1 - 2i} \\
+& = \frac{2 - 4i - 3i - 6}{5} \\
+& = \frac{-4 - 7i}{5} \\
+\end{align*}
+$$
+
+
+=== Equality ===
+
+
+== Quadratics ==
+
+=== Formula from Roots ===
+
+
+== Argand Diagrams ==
+
+=== Modulus ===
+
+=== Argument ===
+
+===  ===
+
+
+== Polar Form ==
+
+== Simplifying ==
+
+* If r is negative
+
+== Arithmetic in Polar Form ==
+
+=== Addition and Subtraction ===
+
+=== Multiplication ===
+
+*i*
+
+
+=== Division ===
+
+=== Conjugate ===
+
+
+== Regions in Complex Plane ==
+
+=== Lines ===
+
+=== Circles ===
+
+=== Perpendicular Bisectors ===
+
+=== Rays ===
+
+
+== Roots of Unity ==
+
+* Principle root
+
+
+== De Moivre's Theorem ==
+
+=== Proof by Induction ===
+
+=== Expansion of Trigonometric Functions ===
+
+=== Exponent of Complex Numbers in Standard Form ===
+
+
+== Roots of Complex Number ==
+
+=== Given a Root ===
+
+=== Given no Roots ===
+
+
+
+
+= Polynomials =
+
+== Remainder Theorem ==
+
+== Factor Theorem ==
+
+== Division of Polynomials ==
+
+== Algebraic Juggling ==
