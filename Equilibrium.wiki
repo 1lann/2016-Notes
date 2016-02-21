@@ -36,7 +36,6 @@ $\require{mhchem}$
 
 
 
-
 = Energy =
 
 == Enthalpy ==
@@ -128,7 +127,6 @@ $\require{mhchem}$
 === Endothermic ===
 
 {{local:../notes/assets/chemistry/endothermic.svg}}
-
 
 
 
@@ -227,7 +225,6 @@ $\require{mhchem}$
 	* Increase proportion of particles with energy greater than activation
 	  energy
 	* Increase rate of reaction
-
 
 
 

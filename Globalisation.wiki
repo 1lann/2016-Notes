@@ -45,7 +45,6 @@
 
 
 
-
 = Globalisation =
 
 *Definition*
@@ -237,7 +236,6 @@
 
 
 
-
 = Organisations =
 
 *Organisation for Economic Cooperation and Development (OECD)*
@@ -269,7 +267,6 @@
 * Through low or no interest rate loans
 * For infrastructure development projects
 * Since these countries have little access to international credit markets
-
 
 
 
@@ -648,7 +645,6 @@ $$
 
 
 
-
 = Competitiveness =
 
 *Definition*
@@ -732,7 +728,6 @@ $$
 
 
 
-
 = Purchasing Power Parity =
 
 *Definition*
@@ -758,7 +753,6 @@ $$
   the product
 	* Eg. for hamburgers, a tariff on imported beef products would artificially
 	  increase the price
-
 
 
 

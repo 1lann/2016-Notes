@@ -3,7 +3,7 @@
 	* [[Literary Discourse]]
 
 
-= Texts =
+== Texts ==
 	* [[Othello]]
 	* Heart of Darkness
 	* William Blake
