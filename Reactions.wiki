@@ -42,3 +42,57 @@ $$
 * Double arrow meaning reaction is reversible
 * Never completes
 * Mixture of reactants and products present at all times
+
+
+== Ionic Equations ==
+
+* Split aqueous compounds into ions
+* Remove spectator ions (ones which remain aqueous on the right side of the
+  equation)
+* Example:
+	* $\ce{2Na+ + SO4^{2-} + Ba^{2+} + 2NO3- -> 2Na+ + 2NO3- + BaSO4 (s)}$
+	* Without spectator ions: $\ce{Ba^{2+} + SO4^{2-} -> BaSO4 (s)}$
+
+
+== Acid Reactions ==
+
+=== Acid Base ===
+
+$$
+\ce{H2SO4 (aq) + Ba(OH)2 -> BaSO4 (s) + 2H2O (l)} \\
+\ce{H+ + OH- -> H2O (l)} \\
+$$
+
+* Hydrogen ions and hydroxide ions
+* Form water
+
+
+=== Acid Metal ===
+
+$$
+\ce{H2SO4 (aq) + Zn (s) -> ZnSO4 (aq) + H2 (g)}
+$$
+
+* Solid metal and acid
+* Form salt and hydrogen gas
+
+
+=== Acid Carbonate ===
+
+$$
+\ce{H2SO4 (aq) + CaCO3 (s) -> CaSO4 (aq) + CO2 (g) + H2O (l)}
+$$
+
+* Carbonate and acid
+* Form salt, carbon dioxide, and water
+
+
+== Precipitation Reactions ==
+
+$$
+\ce{Ba^{2+} + SO4^{2-} -> BaSO4 (s)}
+$$
+
+* Two aqueous solutions
+* When combined, a combination of ions forms a solid
+* Causes the formation of a precipitate in the solution

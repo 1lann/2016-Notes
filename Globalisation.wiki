@@ -1047,3 +1047,138 @@ $$
 	* Leads to larger deficit in primary income account due to interest
 	  payments on loans and other outflows of capital gains (eg. profits and
 	  dividends on shares)
+
+
+== Trends in Current Account ==
+
+*Factors*
+* Structural
+	* Remain relatively consistent despite changes in the economy
+* Cyclic
+	* Vary over time depending on state of economy (eg. in expansion or trough)
+
+
+*Statistics*
+* Average current account deficit
+	* -4.5% of GDP over last 30 years
+* Average balance of goods and services
+	* -1.0% of GDP over last 30 years
+* Average primary income
+	* -3.5% of GDP over last 30 years
+
+
+=== Structural ===
+
+*Trends*
+* Current account
+	* Consistently a deficit (for over 2 decades)
+* Primary income
+	* Relatively stable, no large volatility
+	* Consistently a deficit
+
+
+*Causes*
+* Imbalance between level of national investment (spending money) and savings
+	* Invest more money than we save
+	* Structural feature of Australian economy
+	* Extra money invested (more than what we've saved) must come from somewhere
+	* Must create a liability (eg. debt)
+	* Liability comes from foreign investment
+		* Credit in financial account
+		* Eg. borrowing money from international banks
+	* Since foreign investors require a return on investment, money must flow
+	  out of Australia
+		* Debit in primary income
+		* Eg. interest repayments on a loan
+	* Causes consistent deficit in primary income
+		* Since no real volatility in primary income debits
+
+
+*Cyclical Factors in Primary Income*
+* Valuation effects
+	* Exchange rates affect size of foreign interest repayments
+	* Exchange rates are volatile, change depending on countrys' economies
+	* Causes cyclic changes in primary income deficit
+* Profitability of Australian businesses
+	* Affects size of dividend repayments to overseas investors
+	* Cyclical factor, changes depending on state of economy
+
+
+=== Cyclic ===
+
+*Trends*
+* Current account
+	* Large volatility over past decade
+* Balance of goods and services (BOGS)
+	* Large volatility
+	* Caused mainly by goods (services much smaller)
+
+
+*Cause for BOGS Deficit*
+* Australia has a high marinal propensity to import
+* Meaning value of imports are very dependent on Australian economic growth
+* Value of exports tied to world economic growth
+* Since Australia has had domestic growth larger than world growth over the past
+  few years, we've imported more than we've exported
+* Since services are a much smaller part of the BOGS
+* BOGS has been a deficit
+
+
+*Cause for Volatility in BOGS*
+* Australia's largest exports are predominantly minerals and rural exports
+* Such goods have few substitutes
+* Meaning demand for goods is relatively inelastic
+* Supply for exports is relatively inelastic
+* Small changes in supply and demand have large changes in price
+* Causes large volatility in value of goods
+
+
+*Cyclical Causes*
+* Terms of trade
+	* Price of our exports
+* Exchange rate
+	* Affects price of exports relative to trading partners
+* International business cycle
+	* Affects volume of exports sold
+* Domestic business cycle
+	* Affects volume
+
+
+== Government Impact on Current Account Deficit ==
+
+*Macroeconomic policy*
+* Fiscal policy
+	* Reduce government budget deficit or increase budget surplus
+	* Based on twin deficits hypothesis
+* Monetary policy
+	* Reduce inflation to increase competitiveness
+	* Increases exports
+	* Increases value of goods
+	* Reduces current account deficit
+* Microeconomic reform
+	* Modify policies to increase efficiency
+	* Reduce regulation
+
+
+== Why CAD is Good ==
+
+* CAD caused by imbalance between national levels of investment and saving
+* We are saving more than other countries
+	* 22.3% of 2010-2012 GDP
+	* Average of OECD countries is 20.4%
+* Australia has many investment opportunities
+* Hence a large amount of money is spend on investment
+	* More than is saved
+	* Financed by foreign investment
+* Structural cause of CAD is repayments on investment in primary income account
+* CAD is financing investment activity and economic growth
+	* Hollistically viewed as a good thing
+* Improves the country's economy
+* Generates future economic growth
+* Becomes a problem if debt isn't being spent on increasing national income
+	* As increasing debt causes increasing interest repayments
+	* Eventually unable to pay back the interest on debt
+	* Not a problem with Australia as national income increasing faster than the
+	  rate debt has increased
+		* Debt has actually become easier to service despite growing so quickly
+		* Ie. size of interest payments relative to income has decreased
