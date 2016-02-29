@@ -8,7 +8,27 @@
         - [[#Differentiation#Quotient Rule|Quotient Rule]]
         - [[#Differentiation#Chain Rule|Chain Rule]]
         - [[#Differentiation#Trigonometry|Trigonometry]]
-        - [[#Differentiation#Necessary Limits|Necessary Limits]]
+            - [[#Differentiation#Trigonometry#Sine|Sine]]
+            - [[#Differentiation#Trigonometry#Cosine|Cosine]]
+            - [[#Differentiation#Trigonometry#Tangent|Tangent]]
+        - [[#Differentiation#e|e]]
+    - [[#Sketching|Sketching]]
+        - [[#Sketching#Interesting Points|Interesting Points]]
+            - [[#Sketching#Interesting Points#Stationary Points|Stationary Points]]
+            - [[#Sketching#Interesting Points#Concavity|Concavity]]
+        - [[#Sketching#Turning Points|Turning Points]]
+            - [[#Sketching#Turning Points#Locating|Locating]]
+            - [[#Sketching#Turning Points#Determining Nature|Determining Nature]]
+        - [[#Sketching#Inflection Points|Inflection Points]]
+            - [[#Sketching#Inflection Points#Locating|Locating]]
+            - [[#Sketching#Inflection Points#Determining Nature|Determining Nature]]
+        - [[#Sketching#Derivatives From Graph|Derivatives From Graph]]
+        - [[#Sketching#Known Points|Known Points]]
+    - [[#Applications|Applications]]
+        - [[#Applications#Rectilinear Motion|Rectilinear Motion]]
+        - [[#Applications#Optimisation|Optimisation]]
+        - [[#Applications#Estimation|Estimation]]
+            - [[#Applications#Estimation#Marginal Rates of Change|Marginal Rates of Change]]
 
 
 
@@ -37,16 +57,20 @@ $$
 == Product Rule ==
 
 $$
-y = uv \\
-\frac{dy}{dx} = \frac{du}{dx} v + \frac{dv}{dx} u \\
+\begin{align*}
+y & = uv \\
+\frac{dy}{dx} & = \frac{du}{dx} v + \frac{dv}{dx} u \\
+\end{align*}
 $$
 
 
 == Quotient Rule ==
 
 $$
-y = \frac{u}{v} \\
-\frac{dy}{dx} = \frac{\frac{du}{dx} v - \frac{dv}{dx} u}{v^2} \\
+\begin{align*}
+y & = \frac{u}{v} \\
+\frac{dy}{dx} & = \frac{\frac{du}{dx} v - \frac{dv}{dx} u}{v^2} \\
+\end{align*}
 $$
 
 
@@ -59,6 +83,229 @@ $$
 
 == Trigonometry ==
 
-* $y = \sin{x}$, $y' = \cos{x}$
-* $y = \cos{x}$, $y' = -\sin{x}$
-* $y = \tan{x}$, $y' = \frac{1}{\cos^2{x}}$
+=== Sine ===
+
+$$
+\begin{align*}
+y & = \sin{x} \\
+\frac{dy}{dx} & = \cos{x} \\
+\end{align*}
+$$
+
+=== Cosine ===
+
+$$
+\begin{align*}
+y & = \cos{x} \\
+\frac{dy}{dx} & = -\sin{x} \\
+\end{align*}
+$$
+
+=== Tangent ===
+
+$$
+\begin{align*}
+y & = \tan{x} \\
+\frac{dy}{dx} & = \frac{1}{\cos^2{x}} \\
+& = \sec^2{x} \\
+\end{align*}
+$$
+
+
+== e ==
+
+$$
+\begin{align*}
+y & = e^u \\
+\frac{dy}{dx} & = \frac{du}{dx} e^u \\
+\end{align*}
+$$
+
+
+
+
+= Sketching =
+
+== Interesting Points ==
+
+*Types*
+* Turning points
+	* Minimum (concave up)
+	* Maximum (concave down)
+* Inflection points
+	* Horizontal
+	* Vertical
+
+
+*Nature*
+* For a turning point:
+	* Whether it is minimum or maximum
+* For an inflection point:
+	* Whether it is a horizontal or vertical inflection point
+	* Whether it is on a rising or falling curve
+
+
+=== Stationary Points ===
+
+*Definition*
+* Where the first derivative is equal to zero
+* Includes:
+	* Minimum turning points
+	* Maximum turning points
+	* Horizontal points of inflection
+
+
+=== Concavity ===
+
+*Definition*
+* Whether a curve is concave up or concave down at a point
+* Determined by sign of second derivative
+* If $f''(x)$ is positive:
+	* Concave up
+* If $f''(x)$ is negative:
+	* Concave down
+
+
+== Turning Points ==
+
+*Definition*
+* Where the first derivative is equal to zero
+* No change in concavity
+
+
+=== Locating ===
+
+* Solve $f'(x) = 0$
+
+
+=== Determining Nature ===
+
+*Sign Test*
+* Find sign of $f'(x - a)$ and $f'(x + a)$ for some small $a$
+* If positive then negative
+	* Maximum turning point
+* If negative then positive
+	* Minimum turning point
+
+
+*Second Derivative Test*
+* Find sign of $f''(x)$
+* If positive:
+	* Minimum turning point
+* If negative:
+	* Maximum turning point
+* If zero:
+	* Inconclusive
+	* Use the sign test
+
+
+== Inflection Points ==
+
+*Definition*
+* Where the second derivative is equal to zero
+* Change in concavity
+
+*Types*
+* Horizontal inflection
+	* Rising horizontal inflection
+	* Falling horizontal inflection
+* Vertical inflection
+	* Rising vertical inflection
+	* Falling vertical inflection
+
+
+=== Locating ===
+
+*First Derivative*
+* Locates horizontal inflection points and turning points
+* Solve $f'(x) = 0$
+
+
+*Second Derivative*
+* Locates horizontal and vertical inflection points
+* Solve $f''(x) = 0$
+
+
+=== Determining Nature ===
+
+*First Derivative*
+* Determines if horizontal or vertical inflection point
+* If $f'(x) = 0$ and $f''(x) = 0$:
+	* Horizontal inflection point
+* Otherwise:
+	* Vertical inflection point
+
+
+*Sign Test*
+* Determines if rising or falling inflection point
+* Find sign of $f'(x - a)$ and $f'(x + a)$ for some small $a$
+* If positive then positive:
+	* Rising inflection point
+* If negative then negative:
+	* Falling inflection point
+
+
+== Derivatives From Graph ==
+
+* Sketch first and second derivative graph from graph of $f(x)$
+* First derivative graph will be a polynomial of order one less than that of
+  $f(x)$
+* Second derivative graph will be polynomial of order two less than that of
+  $f(x)$
+* Technique:
+	* Map out known points
+	* Determine appearance of graph around known points
+	* Imagine general shape of polynomial (both positive and negative variants)
+	* Join up known points
+
+
+== Known Points ==
+
+*First derivative graph*
+* Passes through x axis for local maxima and minima on $f(x)$
+* Graph is above x axis for positive gradients in $f(x)$
+* Below x axis for negative gradients in $f(x)$
+* Local maxima/minima at steepest points on $f(x)$
+
+
+*Second derivative graph*
+* Above x axis for concave up parts of $f(x)$
+* Below x axis for concave down parts of $f(x)$
+
+
+
+
+= Applications =
+
+== Rectilinear Motion ==
+
+* Relationship between position/displacement, velocity, and acceleration
+* Integrate and differentiate with respect to time ($t$)
+
+
+*Components*
+* Displacement ($s$) or position ($x$)
+	* Integrate velocity
+* Velocity ($v$)
+	* Integrate acceleration
+	* Differentiate displacement
+* Acceleration ($a$)
+	* Differentiate velocity
+
+
+*Terminology*
+* At rest
+	* $v = 0$
+* At origin
+	* $x = 0$
+* Constant acceleration
+	* $a = k, k \in \mathbb{R}$
+* Initially, ...
+	* $t = 0$
+
+
+== Optimisation ==
+
+== Estimation ==
+
+=== Marginal Rates of Change ===

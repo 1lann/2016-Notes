@@ -86,8 +86,10 @@ $$
 
 <p>
 $$
-y = uv \\
-\frac{dy}{dx} = \frac{du}{dx} v + \frac{dv}{dx} u \\
+\begin{align*}
+y &amp; = uv \\
+\frac{dy}{dx} &amp; = \frac{du}{dx} v + \frac{dv}{dx} u \\
+\end{align*}
 $$
 </p>
 
@@ -96,8 +98,10 @@ $$
 
 <p>
 $$
-y = \frac{u}{v} \\
-\frac{dy}{dx} = \frac{\frac{du}{dx} v - \frac{dv}{dx} u}{v^2} \\
+\begin{align*}
+y &amp; = \frac{u}{v} \\
+\frac{dy}{dx} &amp; = \frac{\frac{du}{dx} v - \frac{dv}{dx} u}{v^2} \\
+\end{align*}
 $$
 </p>
 
@@ -113,17 +117,275 @@ $$
 
 <div id="Differentiation-Trigonometry"><h2 id="Trigonometry">Trigonometry</h2></div>
 
+<div id="Differentiation-Trigonometry-Sine"><h3 id="Sine">Sine</h3></div>
+
+<p>
+$$
+\begin{align*}
+y &amp; = \sin{x} \\
+\frac{dy}{dx} &amp; = \cos{x} \\
+\end{align*}
+$$
+</p>
+
+<div id="Differentiation-Trigonometry-Cosine"><h3 id="Cosine">Cosine</h3></div>
+
+<p>
+$$
+\begin{align*}
+y &amp; = \cos{x} \\
+\frac{dy}{dx} &amp; = -\sin{x} \\
+\end{align*}
+$$
+</p>
+
+<div id="Differentiation-Trigonometry-Tangent"><h3 id="Tangent">Tangent</h3></div>
+
+<p>
+$$
+\begin{align*}
+y &amp; = \tan{x} \\
+\frac{dy}{dx} &amp; = \frac{1}{\cos^2{x}} \\
+&amp; = \sec^2{x} \\
+\end{align*}
+$$
+</p>
+
+
+<div id="Differentiation-e"><h2 id="e">e</h2></div>
+
+<p>
+$$
+\begin{align*}
+y &amp; = e^u \\
+\frac{dy}{dx} &amp; = \frac{du}{dx} e^u \\
+\end{align*}
+$$
+</p>
+
+
+
+
+<div id="Sketching"><h1 id="Sketching">Sketching</h1></div>
+
+<div id="Sketching-Interesting Points"><h2 id="Interesting Points">Interesting Points</h2></div>
+
+<p>
+<span id="Sketching-Interesting Points-Types"></span><strong id="Types">Types</strong>
+</p>
 <ul>
 <li>
-\(y = \sin{x}\), \(y' = \cos{x}\)
+Turning points
+
+<ul>
+<li>
+Minimum (concave up)
 
 <li>
-\(y = \cos{x}\), \(y' = -\sin{x}\)
-
-<li>
-\(y = \tan{x}\), \(y' = \frac{1}{\cos^2{x}}\)
+Maximum (concave down)
 
 </ul>
+<li>
+Inflection points
+
+<ul>
+<li>
+Horizontal
+
+<li>
+Vertical
+
+</ul>
+</ul>
+
+
+<p>
+<span id="Sketching-Interesting Points-Nature"></span><strong id="Nature">Nature</strong>
+</p>
+<ul>
+<li>
+For a turning point:
+
+<ul>
+<li>
+Whether it is minimum or maximum
+
+</ul>
+<li>
+For an inflection point:
+
+<ul>
+<li>
+Whether it is a horizontal or vertical inflection point
+
+</ul>
+</ul>
+
+
+<div id="Sketching-Interesting Points-Stationary Points"><h3 id="Stationary Points">Stationary Points</h3></div>
+
+<p>
+<span id="Sketching-Interesting Points-Stationary Points-Definition"></span><strong id="Definition">Definition</strong>
+</p>
+<ul>
+<li>
+Where the first derivative is equal to zero
+
+<li>
+Includes
+
+<ul>
+<li>
+Minimum turning points
+
+<li>
+Maximum turning points
+
+<li>
+Horizontal points of inflection
+
+</ul>
+</ul>
+
+
+<div id="Sketching-Turning Points"><h2 id="Turning Points">Turning Points</h2></div>
+
+<div id="Sketching-Turning Points-Locating"><h3 id="Locating">Locating</h3></div>
+
+<ul>
+<li>
+Differentiate \(f(x)\)
+
+<li>
+Solve \(f'(x) = 0\)
+
+</ul>
+
+
+<div id="Sketching-Turning Points-Determining Nature"><h3 id="Determining Nature">Determining Nature</h3></div>
+
+<p>
+<span id="Sketching-Turning Points-Determining Nature-Sign Test"></span><strong id="Sign Test">Sign Test</strong>
+</p>
+<ul>
+<li>
+Differentiate \(f(x)\)
+
+<li>
+Find \(f'(x - a)\) and \(f'(x + a)\) for some small \(a\)
+
+</ul>
+
+<table class='center'>
+<tr>
+<th>
+Nature
+</th>
+<th>
+\(f'(x - a)\)
+</th>
+<th>
+\(f'(x)\)
+</th>
+<th>
+\(f'(x + a)\)
+</th>
+</tr>
+<tr>
+<td>
+Maximum
+</td>
+<td>
++
+</td>
+<td>
+0
+</td>
+<td>
+-
+</td>
+</tr>
+<tr>
+<td>
+Minimum
+</td>
+<td>
+-
+</td>
+<td>
+0
+</td>
+<td>
++
+</td>
+</tr>
+</table>
+
+
+<p>
+<span id="Sketching-Turning Points-Determining Nature-Second Derivative Test"></span><strong id="Second Derivative Test">Second Derivative Test</strong>
+</p>
+<ul>
+<li>
+Differentiate \(f'(x)\) to get \(f''(x)\)
+
+<li>
+Find sign of \(f''(x)\)
+
+<li>
+If positive:
+
+<ul>
+<li>
+Minimum turning point
+
+</ul>
+<li>
+If negative:
+
+<ul>
+<li>
+Maximum turning point
+
+</ul>
+<li>
+If zero:
+
+<ul>
+<li>
+Inconclusive
+
+<li>
+Use the sign test to determine nature
+
+</ul>
+</ul>
+
+
+<div id="Sketching-Turning Points-Sign Test"><h3 id="Sign Test">Sign Test</h3></div>
+
+<div id="Sketching-Turning Points-Second Derivative Test"><h3 id="Second Derivative Test">Second Derivative Test</h3></div>
+
+<div id="Sketching-Turning Points"><h2 id="Turning Points">Turning Points</h2></div>
+
+<div id="Sketching-Horizontal Inflection Points"><h2 id="Horizontal Inflection Points">Horizontal Inflection Points</h2></div>
+
+<div id="Sketching-Vertical Inflection Points"><h2 id="Vertical Inflection Points">Vertical Inflection Points</h2></div>
+
+<div id="Sketching-From Graph"><h2 id="From Graph">From Graph</h2></div>
+
+
+
+
+<div id="Applications"><h1 id="Applications">Applications</h1></div>
+
+<div id="Applications-Rectilinear Motion"><h2 id="Rectilinear Motion">Rectilinear Motion</h2></div>
+
+<div id="Applications-Optimisation"><h2 id="Optimisation">Optimisation</h2></div>
+
+<div id="Applications-Estimation"><h2 id="Estimation">Estimation</h2></div>
+
+<div id="Applications-Estimation-Marginal Rates of Change"><h3 id="Marginal Rates of Change">Marginal Rates of Change</h3></div>
 
 </body>
 

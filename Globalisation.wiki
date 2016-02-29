@@ -9,7 +9,7 @@
     - [[#Trade|Trade]]
         - [[#Trade#Inflows|Inflows]]
         - [[#Trade#Outflows|Outflows]]
-        - [[#Trade#Factors Affecting Trade|Factors Affecting Trade]]
+        - [[#Trade#Factors Affecting International Transactions|Factors Affecting International Transactions]]
         - [[#Trade#Effects|Effects]]
         - [[#Trade#Corporations|Corporations]]
         - [[#Trade#Agreement Types|Agreement Types]]
@@ -37,10 +37,15 @@
         - [[#Balance of Payments#Structure|Structure]]
         - [[#Balance of Payments#Current Account|Current Account]]
         - [[#Balance of Payments#Capital and Financial Account|Capital and Financial Account]]
-        - [[#Balance of Payments#Net Errors and Omissions|Net Errors and Omissions]]
         - [[#Balance of Payments#Balance|Balance]]
         - [[#Balance of Payments#Credits and Debits|Credits and Debits]]
         - [[#Balance of Payments#Cross Account Effects|Cross Account Effects]]
+        - [[#Balance of Payments#Trends in Current Account|Trends in Current Account]]
+            - [[#Balance of Payments#Trends in Current Account#Structural|Structural]]
+            - [[#Balance of Payments#Trends in Current Account#Cyclic|Cyclic]]
+        - [[#Balance of Payments#Government Impact on Current Account Deficit|Government Impact on Current Account Deficit]]
+        - [[#Balance of Payments#Why CAD is Good|Why CAD is Good]]
+    - [[#Questions|Questions]]
 
 
 
@@ -62,6 +67,7 @@
 *Technology*
 * Decreased cost of transportation
 	* Standardisation of transportation systems
+		* Containerisation
 	* Through use of shipping containers
 * Increased speed of transportation
 	* Increased use of airplanes due to improvements in technology
@@ -69,7 +75,10 @@
 * Increased ease of international communication
 	* Eg. email, instant messenger applications
 	* Allows for coordination of international operations
+		* Reduced delay
+		* Increases efficiency and productivity
 	* Allows for constant access to markets across all world timezones
+		* "Eternal" market
 
 
 *Government Policy*
@@ -96,9 +105,14 @@
 	* Outsourcing
 		* Purchasing a good or service from another firm so we don't have to
 		  manufacture/supply it ourselves
+		* Eg. Coles outsourcing the design and production of their website to
+		  Accenture Interactive, a digital marketing and customer experience
+		  company
 	* Offshoring
 		* Moving operations to another country to reduce costs
 		* Usually to reduce labour costs in manufacturing
+		* Eg. Telstra moving their customer service department to India due to
+		  cheaper labour
 * Have established global brands, produced by global manufacturing processes,
   distributed by global networks
 
@@ -107,12 +121,12 @@
 * Global media networks transfer information and knowledge of other cultures to
   consumers in many countries
 * Increases global awareness of popular culture
+	* Caused by advertising, companies building global brands
 	* Reinforced by tourism to other countries
 * Influences consumers to want what the rest of the world has
 	* Creates demand for international products
-* Enhances tolerance of other cultures (eg. tolerance for people of different
-  races and religions)
-* Decreases effects of cultural barriers (eg. language and customs)
+	* Eg. demand for American TV shows in Australia driving growth of online
+	  television viewing sites such as Netflix
 
 
 == Effects ==
@@ -167,12 +181,12 @@
 	* Skill sets of workers become mismatched against the skill sets required by
 	  firms
 	* Increases unemployment
-* Entrenches exploitation of child labour
-	* Firms attempt to reduce costs
 * Decreases wages of low skill workers
 	* Low skilled workers easily replacable
 	* Firms attempt to reduce costs by lowering wages and replacing workers if
 	  needed
+* Entrenches exploitation of child labour
+	* Firms attempt to reduce costs
 * Unfair to developing countries
 	* Unable to compete effectively with large scale multinational corporations
 	* Fail to produce competitive exports
@@ -182,17 +196,20 @@
 	  demand
 	* Can destabilise developing economies
 	* EXPLAIN MORE??
+* Erosion of political sovereignty
+	* Large corporations gaining political influence because of their large
+	  economic influence
+	* Create incentive for politicians to favour corporations over consumers
+	  when making political decisions to maintain economic prosperity
 * Economic shocks are contagious
 	* Economic shocks propagate faster, cause more harm
 	* Due to interdependent economies
 	* Have severe destabilising effects (eg. GFC in 2008)
 * Increased environmental damage and resource depletion
 	* Due to increased industrialisation
-* Erosion of political sovereignty
-	* Large corporations gaining political influence because of their large
-	  economic influence
-	* Create incentive for politicians to favour corporations over consumers
-	  when making political decisions to maintain economic prosperity
+* Destruction of local cultures
+	* Large international consumers push local small businesses out of the
+	  market
 
 
 == Statistics ==
@@ -214,7 +231,7 @@
 
 *Free trade area*
 * Two or more countries
-* Agree to no trade barriers between member countries
+* Agree to reduced trade barriers between member countries
 
 
 *Customs union*
@@ -267,6 +284,7 @@
 * Through low or no interest rate loans
 * For infrastructure development projects
 * Since these countries have little access to international credit markets
+* Eg. creation of water wells in Africa
 
 
 
@@ -293,17 +311,7 @@
 4. Foreign investment in other countries
 
 
-== Factors Affecting Trade ==
-
-*Exchange Rate*
-* Lower exchange rate
-	* Cheaper exports relative to consumer currency
-		* Increased demand for exports
-		* Increased exports
-	* More expensive imports
-		* Decreased demand for imports
-		* Decreased imports
-
+== Factors Affecting International Transactions ==
 
 *World Economic Growth*
 * Increased world economic growth
@@ -322,9 +330,26 @@
 	* Very sensitive to changes in consumer disposable income
 
 
+*Exchange Rate*
+* Depreciation in dollar
+	* Dollar falls in price relative to USD
+	* Imports are more expensive to Australians
+		* Decreased imports
+	* Exports are cheaper to international consumers
+		* Increased exports
+* Appreciation in dollar
+	* Dollar rises in price relative to USD
+	* Imports are cheaper to Australians
+		* Increased imports
+	* Exports are more expensive to international consumers
+		* Decreased exports
+
+
 *Relative Inflation Rate*
 * Relative to trading partners
 * Lower relative inflation rate
+	* Price of Australian goods and services increasing at a lower rate than
+	  that of other countires
 	* Decreases price of exports relative to those of other countries
 	* Increased exports
 
@@ -335,9 +360,11 @@
 	* Increases flow of financial capital into a country
 
 
-*Productivity*
-* Higher productivity
-	* Increases output for a given input input
+*Productivity and Cost Efficiency*
+* Higher productivity and cost efficiency
+	* Increased productivity reduces the amount of labour time required to
+	  produce a unit of output
+	* Increased cost efficiency reduces cost in producing a unit of output
 	* Decreases average cost
 	* Decreases price of exports
 	* Increases competitiveness and demand for exports
@@ -351,18 +378,16 @@
 * Decreased prices
 	* More competition from international producers
 	* International supply chains reduce costs
-* Increased standard of living
-	* More, better paying jobs
-	* Increased real income
-	* Increased economic growth
-	* Increased standard of living
+	* Shared knowledge across borders improving efficiency and reducing costs
+* More, better paying jobs
 
 
 *Producers*
 * Increased competition
-* Increased production volume
-	* Larger market (market is accessible to more consumers)
-	* More demand
+* Diversified markets
+	* Sustained demand for products sold in international markets
+	* Less demand in some countries will be counteracted by more demand in
+	  others
 * Increased revenue
 	* Larger market
 	* Increased demand
@@ -603,7 +628,6 @@ $$
 	* No available substitutes that are produced in Australia
 	* Economy relatively serviced based
 		* Comparative disadvantage in manufacturing
-* WHAT ELSE??
 
 
 == Trade Direction ==
@@ -690,11 +714,9 @@ $$
 
 *Exchange Rate*
 * Price of currency relative to another base currency (eg. $USD)
-* Lower exchange rate
-	* Decreases price of producer's currency when converted to consumer's
-	  currency
-	* Decreases prices of exports when converted to the consumer's currency
-	* Increases competitiveness
+* Depreciation in dollar
+	* Decreases price of exports relative to international consumers
+	* Increases exports
 
 
 == Measurements ==
@@ -723,7 +745,6 @@ $$
 	* Increases competitiveness
 * Statistics
 	* Increased 57% since 2000
-	* Increased Australia's competitiveness
 
 
 
@@ -1079,8 +1100,11 @@ $$
 
 *Causes*
 * Imbalance between level of national investment (spending money) and savings
+	* Small population in Australia
+	* Savings pool that is inadequate to meet national investment needs
+	* Numerous investment opportunities in Australia
+	* High rate of investment
 	* Invest more money than we save
-	* Structural feature of Australian economy
 	* Extra money invested (more than what we've saved) must come from somewhere
 	* Must create a liability (eg. debt)
 	* Liability comes from foreign investment
@@ -1099,6 +1123,8 @@ $$
 	* Exchange rates affect size of foreign interest repayments
 	* Exchange rates are volatile, change depending on countrys' economies
 	* Causes cyclic changes in primary income deficit
+* Interest rates
+	* Affect size of interest payments in primary income account
 * Profitability of Australian businesses
 	* Affects size of dividend repayments to overseas investors
 	* Cyclical factor, changes depending on state of economy
@@ -1120,7 +1146,9 @@ $$
 * Value of exports tied to world economic growth
 * Since Australia has had domestic growth larger than world growth over the past
   few years, we've imported more than we've exported
-* Since services are a much smaller part of the BOGS
+* Rising Australian dollar over the last decade
+	* Decreased competitiveness of services sector
+	* Reduced services exports
 * BOGS has been a deficit
 
 
@@ -1142,6 +1170,14 @@ $$
 	* Affects volume of exports sold
 * Domestic business cycle
 	* Affects volume
+
+* Exchange rate
+* Competitiveness
+	* Exchange rate
+	* Wage rate
+	* Productivity
+	* Inflation rate
+*
 
 
 == Government Impact on Current Account Deficit ==
@@ -1182,3 +1218,56 @@ $$
 	  rate debt has increased
 		* Debt has actually become easier to service despite growing so quickly
 		* Ie. size of interest payments relative to income has decreased
+
+
+
+
+= Questions =
+
+* Define globalisation (2 marks)
+* Outline the causes of globalisation (10 marks)
+* Explain the effects of globalisation (10 marks)
+* Explain the four types of economic integration (4 marks)
+* Describe the role of the OECD, WTO, IMF, and World Bank (4 marks)
+* Define the four inflows and four outflows into and out of a country (8 marks)
+* Explain the factors affecting the amount and value of international
+  transactions (12 marks)
+* Explain 2 effects of increased trade on consumers and 2 on producers (4 marks)
+* Explain the difference between multinational and transnational corporations (2
+  marks)
+* Explain the difference between unilateral, bilateral, and multilateral trade
+  agreements (3 marks)
+* Explain the strategic trade theory (4 marks)
+* Explain the concept of trade diversion (2 marks)
+* Calculate the trade intensity ratio for a country, given some data (2 marks)
+* Describe the composition of Australia's exports and imports (6 marks)
+* Calculate merchandise trade balance, trade balance, services trade balance,
+  invisible trade balance, BOGS (1 mark each)
+* Explain the trends in Australia's composition of trade over the last 3
+  decades (6 marks)
+* Outline Australia's main trade partners (3 marks)
+* Explain Australia's shift in trade direction over the past half century (5
+  marks)
+* Define international competitiveness (1 mark)
+* Explain the factors that affect a country's international competitiveness (8
+  marks)
+* Outline two measurements commonly used to measure a country's international
+  competitiveness and what a change in each measurement indicates for a
+  country's competitiveness (4 marks)
+* Explain the theory of purchasing power parity (2 marks)
+* Explain why a country's purchasing power parity is not necessarily a good
+  indicator of whether their currency is over or undervalued (2 marks)
+* Define the Balance of Payments (2 marks)
+* Define a credit and debit (2 marks)
+* Outline the structure of the current account (8 marks)
+* Outline the structure of the capital and financial account (6 marks)
+* Explain why the balance of payments should balance under a floating exchange
+  rate (3 marks)
+* Give an example of a credit and debit from each category of the current
+  account (8 marks)
+* Explain why the current account has a persistent deficit (4 marks)
+* Explain why the current account deficit fluctuates a lot from year to year (4
+  marks)
+* Explain the Pitchford thesis (4 marks)
+* Explain how the government can attempt to reduce the current account deficit
+  (3 marks)

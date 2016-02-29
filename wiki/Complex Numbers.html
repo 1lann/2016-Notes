@@ -11,6 +11,10 @@
 <body>
 	
 
+<p>
+\(\DeclareMathOperator\cis{cis} \DeclareMathOperator\Arg{Arg}\)
+</p>
+
 <div id="Contents" class="toc"><h1 id="Contents">Contents</h1></div>
 <ul>
 <li>
@@ -56,16 +60,22 @@
 <li>
 <a href="Complex Numbers.html#Complex Numbers-Quadratics-Formula from Roots">Formula from Roots</a>
 
+<li>
+<a href="Complex Numbers.html#Complex Numbers-Quadratics-Roots and Formula Relationship">Roots and Formula Relationship</a>
+
 </ul>
 <li>
-<a href="Complex Numbers.html#Complex Numbers-Argand Diagrams">Argand Diagrams</a>
+<a href="Complex Numbers.html#Complex Numbers-Argand Diagram">Argand Diagram</a>
 
 <ul>
 <li>
-<a href="Complex Numbers.html#Complex Numbers-Argand Diagrams-Modulus">Modulus</a>
+<a href="Complex Numbers.html#Complex Numbers-Argand Diagram-Modulus">Modulus</a>
 
 <li>
-<a href="Complex Numbers.html#Complex Numbers-Argand Diagrams-Argument">Argument</a>
+<a href="Complex Numbers.html#Complex Numbers-Argand Diagram-Argument">Argument</a>
+
+<li>
+<a href="Complex Numbers.html#Complex Numbers-Argand Diagram-Operations">Operations</a>
 
 </ul>
 <li>
@@ -77,26 +87,12 @@
 <li>
 <a href="Complex Numbers.html#Complex Numbers-Arithmetic in Polar Form">Arithmetic in Polar Form</a>
 
-<ul>
-<li>
-<a href="Complex Numbers.html#Complex Numbers-Arithmetic in Polar Form-Addition and Subtraction">Addition and Subtraction</a>
-
-<li>
-<a href="Complex Numbers.html#Complex Numbers-Arithmetic in Polar Form-Multiplication">Multiplication</a>
-
-<li>
-<a href="Complex Numbers.html#Complex Numbers-Arithmetic in Polar Form-Division">Division</a>
-
-<li>
-<a href="Complex Numbers.html#Complex Numbers-Arithmetic in Polar Form-Conjugate">Conjugate</a>
-
-</ul>
 <li>
 <a href="Complex Numbers.html#Complex Numbers-Regions in Complex Plane">Regions in Complex Plane</a>
 
 <ul>
 <li>
-<a href="Complex Numbers.html#Complex Numbers-Regions in Complex Plane-Lines">Lines</a>
+<a href="Complex Numbers.html#Complex Numbers-Regions in Complex Plane-Lines Perpendicular to Axes">Lines Perpendicular to Axes</a>
 
 <li>
 <a href="Complex Numbers.html#Complex Numbers-Regions in Complex Plane-Circles">Circles</a>
@@ -310,6 +306,9 @@ Written as \(a + bi\)
 <ul>
 <li>
 \(a\) and \(b\) are real (ie. \(a, b \in \mathbb{R}\))
+
+<li>
+Called rectangular or cartesian form
 
 </ul>
 </ul>
@@ -540,83 +539,633 @@ $$
 
 <div id="Complex Numbers-Arithmetic-Equality"><h3 id="Equality">Equality</h3></div>
 
+<ul>
+<li>
+Equal iff real and imaginary parts are equal
+
+</ul>
+
 
 <div id="Complex Numbers-Quadratics"><h2 id="Quadratics">Quadratics</h2></div>
 
+<ul>
+<li>
+Complex roots exist if discriminant is less than 0
+
+<li>
+Complex roots for quadratics always appear in conjugate pairs
+
+<li>
+Solve using quadratic formula or by completing the square
+
+</ul>
+
+
 <div id="Complex Numbers-Quadratics-Formula from Roots"><h3 id="Formula from Roots">Formula from Roots</h3></div>
 
+<ul>
+<li>
+Given two roots \(a + bi\) and \(c + di\) for a quadratic
 
-<div id="Complex Numbers-Argand Diagrams"><h2 id="Argand Diagrams">Argand Diagrams</h2></div>
+<li>
+Find formula by expanding \((x - (a + bi))(x - (c + di))\)
 
-<div id="Complex Numbers-Argand Diagrams-Modulus"><h3 id="Modulus">Modulus</h3></div>
+</ul>
 
-<div id="Complex Numbers-Argand Diagrams-Argument"><h3 id="Argument">Argument</h3></div>
 
-<div id="Complex Numbers-Argand Diagrams-"><h3 id=""></h3></div>
+<div id="Complex Numbers-Quadratics-Roots and Formula Relationship"><h3 id="Roots and Formula Relationship">Roots and Formula Relationship</h3></div>
+
+<p>
+<span id="Complex Numbers-Quadratics-Roots and Formula Relationship-Monic"></span><strong id="Monic">Monic</strong>
+</p>
+<ul>
+<li>
+Given a quadratic \(x^2 + bx + c\) with roots \(x_1\) and \(x_2\)
+
+<li>
+\(x_1 + x_2 = -b\)
+
+<li>
+\(x_1 x_2 = c\)
+
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Quadratics-Roots and Formula Relationship-Non-Monic"></span><strong id="Non-Monic">Non-Monic</strong>
+</p>
+<ul>
+<li>
+Given a quadratic \(ax^2 + bx + c\) with roots \(x_1\) and \(x_2\)
+
+<li>
+\(x_1 + x_2 = -\frac{b}{a}\)
+
+<li>
+\(x_1 x_2 = \frac{c}{a}\)
+
+</ul>
+
+
+<div id="Complex Numbers-Argand Diagram"><h2 id="Argand Diagram">Argand Diagram</h2></div>
+
+<ul>
+<li>
+2D number line
+
+<li>
+Real axis on horizontal
+
+<li>
+Imaginary axis on vertical
+
+<li>
+Complex numbers represented as vectors starting at the origin
+
+</ul>
+
+
+<div id="Complex Numbers-Argand Diagram-Modulus"><h3 id="Modulus">Modulus</h3></div>
+<blockquote>
+$$
+|a + bi| = \sqrt{a<sup><small>2 + b</small></sup>2}
+$$
+</blockquote>
+
+<ul>
+<li>
+Magnitude of complex number
+
+<li>
+Written \(|z|\) or \(\mod{z}\)
+
+</ul>
+
+
+<div id="Complex Numbers-Argand Diagram-Argument"><h3 id="Argument">Argument</h3></div>
+
+<p>
+$$
+\arg{a + bi} = \tan^{-1}{\frac{b}{a}}
+$$
+</p>
+
+<ul>
+<li>
+Angle made with positive real axis
+
+<li>
+Written \(\arg{z}\)
+
+<li>
+Usually given symbol \(\theta\)
+
+</ul>
+
+<p>
+<span id="Complex Numbers-Argand Diagram-Argument-Principle Argument"></span><strong id="Principle Argument">Principle Argument</strong>
+</p>
+<ul>
+<li>
+\(-\pi &lt; \theta \leq \pi\)
+
+</ul>
+
+
+<div id="Complex Numbers-Argand Diagram-Operations"><h3 id="Operations">Operations</h3></div>
+
+<p>
+<span id="Complex Numbers-Argand Diagram-Operations-Multiplication"></span><strong id="Multiplication">Multiplication</strong>
+</p>
+<ul>
+<li>
+Add arguments
+
+<li>
+Multiply moduli
+
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Argand Diagram-Operations-Multiplication by i"></span><strong id="Multiplication by i">Multiplication by i</strong>
+</p>
+<ul>
+<li>
+Rotation 90 degrees anti-clockwise
+
+<li>
+Exponents represent rotations that are multiples of 90 degrees
+
+<ul>
+<li>
+\(i^{-1}\) is 90 degrees clockwise
+
+<li>
+\(i^2\) is 180 degrees
+
+</ul>
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Argand Diagram-Operations-Division"></span><strong id="Division">Division</strong>
+</p>
+<ul>
+<li>
+Subtract arguments
+
+<li>
+Divide moduli
+
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Argand Diagram-Operations-Conjugate"></span><strong id="Conjugate">Conjugate</strong>
+</p>
+<ul>
+<li>
+Reflection about real axis (x axis)
+
+</ul>
 
 
 <div id="Complex Numbers-Polar Form"><h2 id="Polar Form">Polar Form</h2></div>
 
-<div id="Complex Numbers-Simplifying"><h2 id="Simplifying">Simplifying</h2></div>
+<ul>
+<li>
+Represent complex number with modulus (magnitude) and angle made with the
+  positive real axis
+
+<li>
+\(z = r(\cos{\theta} + i \sin{\theta})\)
 
 <ul>
 <li>
-If r is negative
+\(r \in \mathbb{R}, r \geq 0\)
+
+<li>
+\(\theta\) in radians, \(-\pi &lt; \theta \leq \theta\)
+
+</ul>
+<li>
+Also written \(z = r \cis{\theta}\)
 
 </ul>
 
-<div id="Complex Numbers-Arithmetic in Polar Form"><h2 id="Arithmetic in Polar Form">Arithmetic in Polar Form</h2></div>
 
-<div id="Complex Numbers-Arithmetic in Polar Form-Addition and Subtraction"><h3 id="Addition and Subtraction">Addition and Subtraction</h3></div>
+<div id="Complex Numbers-Polar Form-Simplifying"><h3 id="Simplifying">Simplifying</h3></div>
 
-<div id="Complex Numbers-Arithmetic in Polar Form-Multiplication"><h3 id="Multiplication">Multiplication</h3></div>
+<ul>
+<li>
+If \(r\) is negative:
+
+<ul>
+<li>
+Add or subtract \(\pi\) and make \(r\) positive
+
+<li>
+\(-2 \cis{\frac{\pi}{2}} = 2 \cis{-\frac{3\pi}{2}}\)
+
+<li>
+\(-3 \cis{\frac{5\pi}{6}} = 3 \cis{-\frac{\pi}{6}}\)
+
+</ul>
+</ul>
+
+
+<div id="Complex Numbers-Polar Form-Arithmetic"><h3 id="Arithmetic">Arithmetic</h3></div>
 
 <p>
-<span id="Complex Numbers-Arithmetic in Polar Form-Multiplication-i"></span><strong id="i">i</strong>
+<span id="Complex Numbers-Polar Form-Arithmetic-Addition and Subtraction"></span><strong id="Addition and Subtraction">Addition and Subtraction</strong>
 </p>
+<ul>
+<li>
+Convert to cartesian form
+
+<li>
+Add normally
+
+<li>
+Convert back
+
+</ul>
 
 
-<div id="Complex Numbers-Arithmetic in Polar Form-Division"><h3 id="Division">Division</h3></div>
+<p>
+<span id="Complex Numbers-Polar Form-Arithmetic-Multiplication"></span><strong id="Multiplication">Multiplication</strong>
+</p>
+<ul>
+<li>
+Add arguments
 
-<div id="Complex Numbers-Arithmetic in Polar Form-Conjugate"><h3 id="Conjugate">Conjugate</h3></div>
+<li>
+Multiply moduli
+
+<li>
+\(r_1 \cis{\theta_1} r_2 \cis{\theta_2} = r_1 r_2 \cis{\theta_1 + \theta_2}\)
+
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Polar Form-Arithmetic-Division"></span><strong id="Division">Division</strong>
+</p>
+<ul>
+<li>
+Subtract arguments
+
+<li>
+Divide moduli
+
+<li>
+\(\frac{r_1 \cis{\theta_1}}{r_2 \cis{\theta_2}} = \frac{r_1}{r_2} \cis{\theta_1 - \theta_2}\)
+
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Polar Form-Arithmetic-Conjugate"></span><strong id="Conjugate">Conjugate</strong>
+</p>
+<ul>
+<li>
+Negate argument
+
+<li>
+\(\overline{r \cis{\theta}} = r \cis{-theta}\)
+
+</ul>
 
 
 <div id="Complex Numbers-Regions in Complex Plane"><h2 id="Regions in Complex Plane">Regions in Complex Plane</h2></div>
 
-<div id="Complex Numbers-Regions in Complex Plane-Lines"><h3 id="Lines">Lines</h3></div>
+<div id="Complex Numbers-Regions in Complex Plane-Lines Perpendicular to Axes"><h3 id="Lines Perpendicular to Axes">Lines Perpendicular to Axes</h3></div>
+
+<p>
+<span id="Complex Numbers-Regions in Complex Plane-Lines Perpendicular to Axes-Real Axis"></span><strong id="Real Axis">Real Axis</strong>
+</p>
+<ul>
+<li>
+\(Re(z) = k\)
+
+<li>
+Line perpendicular to real axis at \(k\)
+
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Regions in Complex Plane-Lines Perpendicular to Axes-Imaginary Axis"></span><strong id="Imaginary Axis">Imaginary Axis</strong>
+</p>
+<ul>
+<li>
+\(Im(z) = k\)
+
+<li>
+Line perpendicular to imaginary axis at \(k\)
+
+</ul>
+
 
 <div id="Complex Numbers-Regions in Complex Plane-Circles"><h3 id="Circles">Circles</h3></div>
 
-<div id="Complex Numbers-Regions in Complex Plane-Perpendicular Bisectors"><h3 id="Perpendicular Bisectors">Perpendicular Bisectors</h3></div>
-
-<div id="Complex Numbers-Regions in Complex Plane-Rays"><h3 id="Rays">Rays</h3></div>
-
-
-<div id="Complex Numbers-Roots of Unity"><h2 id="Roots of Unity">Roots of Unity</h2></div>
+<ul>
+<li>
+\(|z| = k\)
 
 <ul>
 <li>
-Principle root
+Circle of radius \(k\) centred at origin
+
+</ul>
+<li>
+\(|z - (a + bi)| = k\)
+
+<ul>
+<li>
+Circle of radius \(k\) with centre \((a, b)\)
+
+</ul>
+</ul>
+
+
+<div id="Complex Numbers-Regions in Complex Plane-Perpendicular Bisectors"><h3 id="Perpendicular Bisectors">Perpendicular Bisectors</h3></div>
+
+<ul>
+<li>
+\(|z_1 - (a + bi)| = |z_2 - (c + di)|\)
+
+<li>
+Perpendicular bisector between points \((a, b)\) and \((c, d)\)
+
+</ul>
+
+
+<div id="Complex Numbers-Regions in Complex Plane-Rays"><h3 id="Rays">Rays</h3></div>
+
+<ul>
+<li>
+\(\arg{z} = \theta\)
+
+<li>
+Ray extending from origin in direction \(\theta\)
+
+<li>
+Excludes origin as \(\arg{z}\) is undefined for 0
 
 </ul>
 
 
 <div id="Complex Numbers-De Moivre&#39;s Theorem"><h2 id="De Moivre&#39;s Theorem">De Moivre's Theorem</h2></div>
 
+<ul>
+<li>
+\((r \cis{\theta})^n = r^n \cis{n \theta}\)
+
+</ul>
+
+
 <div id="Complex Numbers-De Moivre&#39;s Theorem-Proof by Induction"><h3 id="Proof by Induction">Proof by Induction</h3></div>
+
+<div id="Complex Numbers-De Moivre&#39;s Theorem-Exponent of Complex Numbers in Standard Form"><h3 id="Exponent of Complex Numbers in Standard Form">Exponent of Complex Numbers in Standard Form</h3></div>
+
+<ul>
+<li>
+Convert to \(\cis\) form
+
+<li>
+Solve using De Moivre's Theorem
+
+</ul>
+
 
 <div id="Complex Numbers-De Moivre&#39;s Theorem-Expansion of Trigonometric Functions"><h3 id="Expansion of Trigonometric Functions">Expansion of Trigonometric Functions</h3></div>
 
-<div id="Complex Numbers-De Moivre&#39;s Theorem-Exponent of Complex Numbers in Standard Form"><h3 id="Exponent of Complex Numbers in Standard Form">Exponent of Complex Numbers in Standard Form</h3></div>
+
+
+<div id="Complex Numbers-Roots of Real Number"><h2 id="Roots of Real Number">Roots of Real Number</h2></div>
+
+<ul>
+<li>
+For \(z^n = k\)
+
+<li>
+Has \(n\) complex solutions
+
+<li>
+One solution will be \(z = k\)
+
+<li>
+Are all evenly spaced around a unit circle
+
+<li>
+Divide unit circle into \(n\) equal parts
+
+<li>
+All have modulus \(k\)
+
+<li>
+Appear in conjugate pairs
+
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Roots of Real Number-Example"></span><strong id="Example">Example</strong>
+</p>
+<ul>
+<li>
+Find solutions to \(z^5 = 1\)
+
+<li>
+One solution is \(z = 1\)
+
+<li>
+Will divide unit circle into 5 equal parts
+
+<li>
+In \(\cis\) form:
+
+<ul>
+<li>
+\(z = 1 \cis{0}\)
+
+<li>
+\(z = 1 \cis{\frac{2\pi}{5}}\)
+
+<li>
+\(z = 1 \cis{\frac{4\pi}{5}}\)
+
+<li>
+\(z = 1 \cis{-\frac{4\pi}{5}}\)
+
+<li>
+\(z = 1 \cis{-\frac{2\pi}{5}}\)
+
+</ul>
+</ul>
 
 
 <div id="Complex Numbers-Roots of Complex Number"><h2 id="Roots of Complex Number">Roots of Complex Number</h2></div>
 
 <div id="Complex Numbers-Roots of Complex Number-Given a Root"><h3 id="Given a Root">Given a Root</h3></div>
 
-<div id="Complex Numbers-Roots of Complex Number-Given no Roots"><h3 id="Given no Roots">Given no Roots</h3></div>
+<ul>
+<li>
+Given one root of equation \(z^n = a + bi\)
+
+<li>
+Will be \(n\) roots
+
+<li>
+Other roots have same modulus as given root
+
+<li>
+Other roots will split unit circle into \(n\) equal parts
+
+<li>
+Angle between them will be \(\frac{2\pi}{n}\)
+
+</ul>
 
 
+<p>
+<span id="Complex Numbers-Roots of Complex Number-Given a Root-Example"></span><strong id="Example">Example</strong>
+</p>
+<ul>
+<li>
+Find \(z^6 = -8i\) given one solution is \(1 + i\)
+
+<ul>
+<li>
+Implies \((1 + i)^6 = -8i\)
+
+</ul>
+<li>
+Will divide unit circle into 6 equal parts
+
+<li>
+Angle between will be \(\frac{\pi}{3}\)
+
+<li>
+Solutions are (in \(\cis\) form):
+
+<ul>
+<li>
+\(\sqrt{2} \cis{\frac{\pi}{4}}\) (given)
+
+<li>
+\(\sqrt{2} \cis{\frac{7\pi}{12}}\)
+
+<li>
+\(\sqrt{2} \cis{\frac{11\pi}{12}}\)
+
+<li>
+\(\sqrt{2} \cis{\frac{15\pi}{12}}\)
+
+<li>
+\(\sqrt{2} \cis{\frac{19\pi}{12}}\)
+
+<li>
+\(\sqrt{2} \cis{\frac{23\pi}{12}}\)
+
+</ul>
+<li>
+Since \(-\pi &lt; \theta \leq \pi\), solutions are:
+
+<ul>
+<li>
+\(\sqrt{2} \cis{\frac{\pi}{4}}\) (given)
+
+<li>
+\(\sqrt{2} \cis{\frac{7\pi}{12}}\)
+
+<li>
+\(\sqrt{2} \cis{\frac{11\pi}{12}}\)
+
+<li>
+\(\sqrt{2} \cis{-\frac{3\pi}{4}}\)
+
+<li>
+\(\sqrt{2} \cis{-\frac{5\pi}{12}}\)
+
+<li>
+\(\sqrt{2} \cis{-\frac{\pi}{12}}\)
+
+</ul>
+</ul>
+
+
+<div id="Complex Numbers-Roots of Complex Number-Given No Roots"><h3 id="Given No Roots">Given No Roots</h3></div>
+
+<ul>
+<li>
+Given equation \(z^n = a + bi\)
+
+<li>
+Write \(a + bi\) as \(r \cis{\theta + 2k\pi}, k \in \mathbb{R}\)
+
+<li>
+Therefore solutions are \(\sqrt[n]{r \cis{\theta + 2k\pi}}\)
+
+<ul>
+<li>
+\(= \sqrt[n]{r} \cis{\frac{\theta}{n} + \frac{2k\pi}{n}}\)
+
+</ul>
+<li>
+Simplify
+
+<li>
+Substitute values of \(k\) from 0 through \(n - 1\) to find first \(n\) roots
+
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Roots of Complex Number-Given No Roots-Example"></span><strong id="Example">Example</strong>
+</p>
+<ul>
+<li>
+Find the cube roots of \(4\sqrt{3} + 4i\)
+
+<li>
+In \(\cis\) form: \(8 \cis(\frac{\pi}{6} + 2k\pi), k \in \mathbb{R}\)
+
+<li>
+Require \(z^3 = 8 \cis(\frac{\pi}{6} + 2k\pi)\):
+
+</ul>
+
+<p>
+$$
+\begin{align*}
+z &amp; = (8 \cis(\frac{\pi}{6} + 2k\pi))^{\frac{1}{3}} \\
+&amp; = 2 \cis(\frac{\pi}{18} + \frac{2k\pi}{3}) \\
+\end{align*}
+$$
+</p>
+
+<ul>
+<li>
+For first 3 values of \(k\):
+
+<ul>
+<li>
+\(k = 0\), \(z = 2 \cis{\frac{\pi}{18}}\)
+
+<li>
+\(k = 1\), \(z = 2 \cis{\frac{13\pi}{18}}\)
+
+<li>
+\(k = 2\), \(z = 2 \cis{-\frac{11\pi}{18}}\)
+
+</ul>
+<li>
+For higher values of \(k\), we end up with the same result as earlier roots
+
+</ul>
 
 
 <div id="Polynomials"><h1 id="Polynomials">Polynomials</h1></div>
