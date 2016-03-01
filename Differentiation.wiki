@@ -13,21 +13,22 @@
             - [[#Differentiation#Trigonometry#Tangent|Tangent]]
         - [[#Differentiation#e|e]]
     - [[#Sketching|Sketching]]
-        - [[#Sketching#Interesting Points|Interesting Points]]
-            - [[#Sketching#Interesting Points#Stationary Points|Stationary Points]]
-            - [[#Sketching#Interesting Points#Concavity|Concavity]]
+        - [[#Sketching#Points of Interest|Points of Interest]]
+            - [[#Sketching#Points of Interest#Stationary Points|Stationary Points]]
+            - [[#Sketching#Points of Interest#Concavity|Concavity]]
         - [[#Sketching#Turning Points|Turning Points]]
             - [[#Sketching#Turning Points#Locating|Locating]]
             - [[#Sketching#Turning Points#Determining Nature|Determining Nature]]
         - [[#Sketching#Inflection Points|Inflection Points]]
             - [[#Sketching#Inflection Points#Locating|Locating]]
-            - [[#Sketching#Inflection Points#Determining Nature|Determining Nature]]
-        - [[#Sketching#Derivatives From Graph|Derivatives From Graph]]
-        - [[#Sketching#Known Points|Known Points]]
+        - [[#Sketching#Graphing Derivatives|Graphing Derivatives]]
+        - [[#Sketching#Features|Features]]
     - [[#Applications|Applications]]
+        - [[#Applications#Global Maximum in Domain|Global Maximum in Domain]]
         - [[#Applications#Rectilinear Motion|Rectilinear Motion]]
         - [[#Applications#Optimisation|Optimisation]]
         - [[#Applications#Estimation|Estimation]]
+            - [[#Applications#Estimation#Percentage Changes|Percentage Changes]]
             - [[#Applications#Estimation#Marginal Rates of Change|Marginal Rates of Change]]
 
 
@@ -126,7 +127,21 @@ $$
 
 = Sketching =
 
-== Interesting Points ==
+*Features*
+* Axis intercepts
+	* Roots
+	* Y intercept
+* Turning points
+* Inflection points
+	* Horizontal
+	* Vertical
+* Asymptotes
+	* Horizontal
+	* Vertical
+* Behaviour as $x \to \pm \infty$
+
+
+== Points of Interest ==
 
 *Types*
 * Turning points
@@ -160,9 +175,9 @@ $$
 *Definition*
 * Whether a curve is concave up or concave down at a point
 * Determined by sign of second derivative
-* If $f''(x)$ is positive:
+* If $f''(x) > 0$:
 	* Concave up
-* If $f''(x)$ is negative:
+* If $f''(x) < 0$:
 	* Concave down
 
 
@@ -170,7 +185,8 @@ $$
 
 *Definition*
 * Where the first derivative is equal to zero
-* No change in concavity
+* Local maxima/minima
+* No change in concavity around point
 
 
 === Locating ===
@@ -186,15 +202,18 @@ $$
 	* Maximum turning point
 * If negative then positive
 	* Minimum turning point
+* If positive then positive
+	* Horizontal inflection point on rising curve
+* If negative then negative
+	* Horizontal inflection point on falling curve
 
 
 *Second Derivative Test*
-* Find sign of $f''(x)$
-* If positive:
+* If $f''(x) > 0$:
 	* Minimum turning point
-* If negative:
+* If $f''(x) < 0$:
 	* Maximum turning point
-* If zero:
+* If $f''(x) = 0$:
 	* Inconclusive
 	* Use the sign test
 
@@ -202,52 +221,31 @@ $$
 == Inflection Points ==
 
 *Definition*
-* Where the second derivative is equal to zero
-* Change in concavity
+* Occur when second derivative is zero and there is a change in concavity
 
-*Types*
-* Horizontal inflection
-	* Rising horizontal inflection
-	* Falling horizontal inflection
-* Vertical inflection
-	* Rising vertical inflection
-	* Falling vertical inflection
+
+*Horizontal Inflection Point*
+* Where first derivative is also zero
 
 
 === Locating ===
 
-*First Derivative*
-* Locates horizontal inflection points and turning points
-* Solve $f'(x) = 0$
-
-
-*Second Derivative*
-* Locates horizontal and vertical inflection points
+*All Inflection Points*
 * Solve $f''(x) = 0$
+* Check concavity around each point
+	* Check sign of $f''(x - a)$ and $f''(x + a)$
+	* Ensure signs are different
 
 
-=== Determining Nature ===
-
-*First Derivative*
-* Determines if horizontal or vertical inflection point
-* If $f'(x) = 0$ and $f''(x) = 0$:
-	* Horizontal inflection point
-* Otherwise:
-	* Vertical inflection point
+*Horizontal Inflection Points*
+* Solve $f'(x) = 0$
+* Check $f''(x) = 0$
+* Check concavity changes around each point
 
 
-*Sign Test*
-* Determines if rising or falling inflection point
-* Find sign of $f'(x - a)$ and $f'(x + a)$ for some small $a$
-* If positive then positive:
-	* Rising inflection point
-* If negative then negative:
-	* Falling inflection point
+== Graphing Derivatives ==
 
-
-== Derivatives From Graph ==
-
-* Sketch first and second derivative graph from graph of $f(x)$
+* Sketch a graph of the first and second derivative from a graph of $f(x)$
 * First derivative graph will be a polynomial of order one less than that of
   $f(x)$
 * Second derivative graph will be polynomial of order two less than that of
@@ -259,23 +257,32 @@ $$
 	* Join up known points
 
 
-== Known Points ==
+== Features ==
 
-*First derivative graph*
-* Passes through x axis for local maxima and minima on $f(x)$
-* Graph is above x axis for positive gradients in $f(x)$
+*First Derivative Graph*
+* Passes through x axis for turning points and horizontal inflections on $f(x)$
+* Above x axis for positive gradients in $f(x)$
 * Below x axis for negative gradients in $f(x)$
-* Local maxima/minima at steepest points on $f(x)$
+* Minimum/maximum turning points at points of steepest gradient on $f(x)$
 
 
-*Second derivative graph*
+*Second Derivative Graph*
 * Above x axis for concave up parts of $f(x)$
 * Below x axis for concave down parts of $f(x)$
+* Passes through zero for inflection points
 
 
 
 
 = Applications =
+
+== Global Maximum in Domain ==
+
+* Find the global maximum of a function within a specific domain
+* Solve $f'(x) = 0$ for turning points
+* Find $f(x)$ for turning points and minimum and maximum value in domain
+* Select maximum or minimum point
+
 
 == Rectilinear Motion ==
 
@@ -306,6 +313,60 @@ $$
 
 == Optimisation ==
 
+* Find optimimum value for an expression
+* Differentiate and solve for turning points
+* Find minimum or maximum value
+* For two variables:
+	* Write the equation to optimise in terms of both variables
+	* Write an equation relating the two variables
+	* Rearrange for one of the variables
+	* Substitute into the equation to optimise
+	* Solve for optimimum value
+	* Solve for second variable using relating equation
+
+
 == Estimation ==
 
+$$
+\begin{align*}
+\frac{dy}{dx} & \approx \frac{\delta y}{\delta x} \\
+\delta y & \approx \delta x \frac{dy}{dx} \\
+\end{align*}
+$$
+
+* Be aware we can also use the inverse of the derivative $\frac{dx}{dy}$
+
+
+=== Percentage Changes ===
+
+* What is the approximate percentage change in $y$ when $x$ changes by $k$
+  percent?
+* Given $\frac{\delta x}{x}$
+* Asked for $\frac{\delta y}{y}$
+
+$$
+\begin{align*}
+\frac{\delta x}{x} & = \frac{k}{100} \\
+\frac{dy}{dx} & \approx \frac{\delta y}{\delta x} \\
+\delta y & \approx \frac{dy}{dx} \delta x \\
+\frac{\delta y}{y} & \approx \frac{dy \delta x}{dx y} \\
+\end{align*}
+$$
+
+* This will simplify to some constant multiplied by $\frac{\delta x}{x}$
+
+
 === Marginal Rates of Change ===
+
+*Economic Functions*
+* Cost function, $C(x)$
+* Revenue function, $R(x)$
+* Profit function, $P(x) = R(x) - C(x)$
+
+
+*Marginal Functions*
+* Marginal cost gives the cost of producing the next item at the stage of
+  production where we're currently producing $x$
+* Marginal cost is $C'(x)$
+* Marginal cost of $x$th item is $C'(x - 1)$
+* Same for revenue and profit

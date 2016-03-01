@@ -626,11 +626,12 @@ Complex numbers represented as vectors starting at the origin
 
 
 <div id="Complex Numbers-Argand Diagram-Modulus"><h3 id="Modulus">Modulus</h3></div>
-<blockquote>
+
+<p>
 $$
 |a + bi| = \sqrt{a<sup><small>2 + b</small></sup>2}
 $$
-</blockquote>
+</p>
 
 <ul>
 <li>
@@ -639,6 +640,17 @@ Magnitude of complex number
 <li>
 Written \(|z|\) or \(\mod{z}\)
 
+<li>
+Carries over multiplication and division:
+
+<ul>
+<li>
+\(|z_1 z_2| = |z_1| |z_2|\)
+
+<li>
+\(|\frac{z_1}{z_2}| = \frac{|z_1|}{|z_2|}\)
+
+</ul>
 </ul>
 
 
@@ -838,7 +850,61 @@ Negate argument
 </ul>
 
 
+<div id="Complex Numbers-Polar Form-Identities"><h3 id="Identities">Identities</h3></div>
+
+<ul>
+<li>
+Given \(z = r \cis{\theta}\)
+
+<li>
+\(\overline{z} = r \cis{- \theta}\)
+
+<li>
+\(-z = r \cis{\theta \pm \pi}\) (whichever gives an argument in the correct
+  range)
+
+<li>
+\(\frac{1}{z} = \frac{1}{r} \cis{- \theta}\)
+
+<li>
+\(-\frac{1}{z} = \frac{1}{r} \cis{\pi - \theta}\)
+
+<li>
+\(iz = r \cis{\theta + \frac{\pi}{2}}\)
+
+</ul>
+
+
 <div id="Complex Numbers-Regions in Complex Plane"><h2 id="Regions in Complex Plane">Regions in Complex Plane</h2></div>
+
+<ul>
+<li>
+\(|z_1 - z_2|\) represents distance between complex numbers \(z_1\) and \(z_2\)
+
+<ul>
+<li>
+Eg. \(|z - 1 + 2i|\) represents distance between \(z\) and the point \((1, -2)\)
+
+</ul>
+<li>
+For regions created from inequalities
+
+<ul>
+<li>
+Use a test point to determine where the region lies
+
+<li>
+For a perpendicular bisector inequality, chose the region by picking a
+	  test point on either side of the line
+
+<li>
+Eg. for \(|z - 1| \leq |z + i|\), sketch graph of line, then pick a test
+	  point either side of the line and see if distance to \((1, 0)\) is less than
+	  distance to \((0, -1)\)
+
+</ul>
+</ul>
+
 
 <div id="Complex Numbers-Regions in Complex Plane-Lines Perpendicular to Axes"><h3 id="Lines Perpendicular to Axes">Lines Perpendicular to Axes</h3></div>
 
@@ -887,6 +953,24 @@ Circle of radius \(k\) centred at origin
 Circle of radius \(k\) with centre \((a, b)\)
 
 </ul>
+<li>
+\(|z - (a + bi)| \leq k\)
+
+<ul>
+<li>
+All points within a circle of radius \(k\) with centre \((a, b)\), including
+	  the circumference
+
+</ul>
+<li>
+\(|z - (a + bi)| &lt; k\)
+
+<ul>
+<li>
+All points within a circle of radius \(k\) with centre \((a, b)\), excluding
+	  the circumference
+
+</ul>
 </ul>
 
 
@@ -912,23 +996,105 @@ Perpendicular bisector between points \((a, b)\) and \((c, d)\)
 Ray extending from origin in direction \(\theta\)
 
 <li>
-Excludes origin as \(\arg{z}\) is undefined for 0
+Excludes origin as \(\arg{z}\) is undefined at 0
 
 </ul>
+
+
+
+<div id="Complex Numbers-Cartesian from Complex Equation"><h2 id="Cartesian from Complex Equation">Cartesian from Complex Equation</h2></div>
+
+<ul>
+<li>
+Substitute complex number \(z\) for \(x + iy\)
+
+<li>
+Simplify
+
+<li>
+If \(x\) or \(y\) cancels out
+
+<ul>
+<li>
+Left with single equation in terms of \(x\) or \(y\)
+
+</ul>
+<li>
+Otherwise equate real and imaginary components
+
+<ul>
+<li>
+Form two cartesian equations that describe locus of points
+
+</ul>
+<li>
+Find points from two cartesian equations by:
+
+<ul>
+<li>
+Rearranging one equation for \(y\)
+
+<li>
+Substitute into the other and solve for \(x\)
+
+<li>
+Substitute values of \(x\) back into other equation to find values of \(y\)
+
+</ul>
+</ul>
+
+
+<p>
+<span id="Complex Numbers-Cartesian from Complex Equation-Moduli Example"></span><strong id="Moduli Example">Moduli Example</strong>
+</p>
+<ul>
+<li>
+If we have two moduli of \(z\) equated, then square both sides:
+
+</ul>
+
+<p>
+$$
+\begin{align*}
+|z - 1 + 2i| &amp; = |z - 1| \\
+(x - 1)<sup><small>2 + (y - 2)</small></sup>2 &amp; = (x - 1)<sup><small>2 + y</small></sup>2 \\
+\end{align*}
+$$
+</p>
+
+
+<p>
+<span id="Complex Numbers-Cartesian from Complex Equation-Multiple Equations Example"></span><strong id="Multiple Equations Example">Multiple Equations Example</strong>
+</p>
+<ul>
+<li>
+Equate real and imaginary components to find equations
+
+</ul>
+
+<p>
+$$
+\begin{align*}
+z^2 &amp; = 2i \\
+(x + yi)^2 &amp; = 2i \\
+x<sup><small>2 + 2xyi - y</small></sup>2 &amp; = 2i \\
+x<sup><small>2 - y</small></sup>2 &amp; = 0 \\
+xy &amp; = 1 \\
+\end{align*}
+$$
+</p>
 
 
 <div id="Complex Numbers-De Moivre&#39;s Theorem"><h2 id="De Moivre&#39;s Theorem">De Moivre's Theorem</h2></div>
 
-<ul>
-<li>
-\((r \cis{\theta})^n = r^n \cis{n \theta}\)
+<p>
+$$
+(r \cis{\theta})<sup><small>n = r</small></sup>n \cis{n \theta}
+$$
+</p>
 
-</ul>
 
-
-<div id="Complex Numbers-De Moivre&#39;s Theorem-Proof by Induction"><h3 id="Proof by Induction">Proof by Induction</h3></div>
-
-<div id="Complex Numbers-De Moivre&#39;s Theorem-Exponent of Complex Numbers in Standard Form"><h3 id="Exponent of Complex Numbers in Standard Form">Exponent of Complex Numbers in Standard Form</h3></div>
+<div id="Complex Numbers-De Moivre&#39;s Theorem-Exponent of Complex Numbers in Cartesian Form"><h3 id="Exponent of Complex Numbers in Cartesian Form">Exponent of Complex Numbers in Cartesian Form</h3></div>
 
 <ul>
 <li>
@@ -937,11 +1103,34 @@ Convert to \(\cis\) form
 <li>
 Solve using De Moivre's Theorem
 
+<li>
+Convert back to cartesian form
+
 </ul>
 
 
 <div id="Complex Numbers-De Moivre&#39;s Theorem-Expansion of Trigonometric Functions"><h3 id="Expansion of Trigonometric Functions">Expansion of Trigonometric Functions</h3></div>
 
+<ul>
+<li>
+Express \(\cos{n \theta}\) or \(\sin{n \theta}\) in terms of \(\cos{\theta}\) and
+  \(\sin{\theta}\)
+
+<li>
+Write as \(\cis{n \theta} = \cos{n \theta} + i \sin{n \theta}\)
+
+<li>
+Reverse De Moivre's theorem
+
+<ul>
+<li>
+\(\cos{n \theta} + i \sin{n \theta} = (\cos{\theta} + i \sin{\theta})^n\)
+
+</ul>
+<li>
+Expand using binomial expansion
+
+</ul>
 
 
 <div id="Complex Numbers-Roots of Real Number"><h2 id="Roots of Real Number">Roots of Real Number</h2></div>
@@ -1107,7 +1296,7 @@ Given equation \(z^n = a + bi\)
 Write \(a + bi\) as \(r \cis{\theta + 2k\pi}, k \in \mathbb{R}\)
 
 <li>
-Therefore solutions are \(\sqrt[n]{r \cis{\theta + 2k\pi}}\)
+Roots are \(\sqrt[n]{r \cis{\theta + 2k\pi}}\)
 
 <ul>
 <li>
@@ -1120,6 +1309,11 @@ Simplify
 <li>
 Substitute values of \(k\) from 0 through \(n - 1\) to find first \(n\) roots
 
+<ul>
+<li>
+Further values of \(k\) will cycle through known roots
+
+</ul>
 </ul>
 
 
@@ -1168,15 +1362,70 @@ For higher values of \(k\), we end up with the same result as earlier roots
 </ul>
 
 
+
+
 <div id="Polynomials"><h1 id="Polynomials">Polynomials</h1></div>
 
 <div id="Polynomials-Remainder Theorem"><h2 id="Remainder Theorem">Remainder Theorem</h2></div>
 
+<ul>
+<li>
+Given a polynomial \(f(x)\)
+
+<li>
+\(f(a)\) is the remainder when \(f(x)\) is divided by \(x - a\)
+
+</ul>
+
+
 <div id="Polynomials-Factor Theorem"><h2 id="Factor Theorem">Factor Theorem</h2></div>
+
+<ul>
+<li>
+If \(f(a) = 0\), then \(x - a\) is a factor of \(f(x)\)
+
+</ul>
+
+
+<div id="Polynomials-Derivatives"><h2 id="Derivatives">Derivatives</h2></div>
+
+<ul>
+<li>
+If \((x - a)^2\) is a factor of \(f(x)\)
+
+<li>
+Then \(f(a) = 0\) and \(f'(a) = 0\)
+
+<li>
+Because:
+
+<ul>
+<li>
+If \((x - a)^2\) is a root of \(f(x)\)
+
+<li>
+Then the graph of \(f(x)\) just touches the x axis at \(a\)
+
+<li>
+There is a turning point at \(x = a\)
+
+<li>
+Implies \(f'(a) = 0\)
+
+</ul>
+</ul>
+
 
 <div id="Polynomials-Division of Polynomials"><h2 id="Division of Polynomials">Division of Polynomials</h2></div>
 
-<div id="Polynomials-Algebraic Juggling"><h2 id="Algebraic Juggling">Algebraic Juggling</h2></div>
+<div id="Polynomials-Division of Polynomials-Long Division"><h3 id="Long Division">Long Division</h3></div>
+
+<div id="Polynomials-Division of Polynomials-Algebraic Juggling"><h3 id="Algebraic Juggling">Algebraic Juggling</h3></div>
+
+
+<p>
+==
+</p>
 
 </body>
 
