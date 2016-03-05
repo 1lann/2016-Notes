@@ -8,29 +8,28 @@ $\require{mhchem}$
             - [[#Organic#Alkanes#Substitution Reaction|Substitution Reaction]]
         - [[#Organic#Alkenes|Alkenes]]
             - [[#Organic#Alkenes#Addition Reaction|Addition Reaction]]
-            - [[#Organic#Alkenes#Hydrogenation Reaction|Hydrogenation Reaction]]
         - [[#Organic#Alkynes|Alkynes]]
         - [[#Organic#Hydrocarbons|Hydrocarbons]]
-            - [[#Organic#Hydrocarbons#Saturation|Saturation]]
             - [[#Organic#Hydrocarbons#Combustion Reaction|Combustion Reaction]]
+            - [[#Organic#Hydrocarbons#Fractional Distillation|Fractional Distillation]]
         - [[#Organic#Halogens|Halogens]]
         - [[#Organic#Methyl Groups|Methyl Groups]]
         - [[#Organic#Cyclic Compounds|Cyclic Compounds]]
         - [[#Organic#Isomers|Isomers]]
             - [[#Organic#Isomers#Structural Isomers|Structural Isomers]]
             - [[#Organic#Isomers#Geometric Isomers|Geometric Isomers]]
+        - [[#Organic#Saturation|Saturation]]
         - [[#Organic#Alcohols|Alcohols]]
-            - [[#Organic#Alcohols#Properties|Properties]]
             - [[#Organic#Alcohols#Classification|Classification]]
-            - [[#Organic#Alcohols#Oxidation Reaction|Oxidation Reaction]]
+            - [[#Organic#Alcohols#Isomers|Isomers]]
             - [[#Organic#Alcohols#Hydration Reaction|Hydration Reaction]]
+            - [[#Organic#Alcohols#Oxidation Reaction|Oxidation Reaction]]
         - [[#Organic#Aldehydes|Aldehydes]]
         - [[#Organic#Ketones|Ketones]]
         - [[#Organic#Carboxylic Acids|Carboxylic Acids]]
-        - [[#Organic#Amines|Amines]]
         - [[#Organic#Esters|Esters]]
             - [[#Organic#Esters#Hydrolysis Reaction|Hydrolysis Reaction]]
-        - [[#Organic#Fractional Distillation|Fractional Distillation]]
+        - [[#Organic#Amines|Amines]]
 
 
 
@@ -61,7 +60,7 @@ $\require{mhchem}$
 * Contain only carbon/carbon single bonds
 * No double or triple bonds
 * Formula: $\ce{C_{n}H_{2n + 2}}$
-* Suffix: -ane
+* Suffix: -an
 
 
 *Examples*
@@ -103,7 +102,7 @@ $\require{mhchem}$
 * Contain at least 1 carbon/carbon double bond
 * No triple bonds
 * Formula (for 1 double bond): $\ce{C_{n}H_{2n}}$
-* Suffix: -ene
+* Suffix: -en
 
 
 *Double Bond*
@@ -159,7 +158,7 @@ $\require{mhchem}$
 == Alkynes ==
 
 * Contain at least 1 triple carbon/carbon bond
-* Suffix: -yne
+* Suffix: -yn
 
 
 *Methyne*
@@ -351,33 +350,181 @@ IMAGE HERE
 
 == Alcohols ==
 
-=== Properties ===
+* Contains $\ce{OH}$ functional group somewhere on carbon chain
+	* Location included in name
+* $\ce{OH}$ takes highest priority in numbering
+* Suffix: -ol
+* Structural formula: $\ce{R - C - OH}$
+
+
+*Properties*
+* Higher boiling points than alkanes with similar molar mass
+	* Hydrogen bonding due to hydroxide group
+	* Stronger dispersion forces due to additional oxygen
+* As carbon chain length increases, solubility of alcohols goes down
+
+
+*Examples*
+* Ethanol
+* Butan-1-ol
+* But-2-en-1-ol
+* 3,4-diethyl cyclohexanol
+
 
 === Classification ===
 
 *Primary*
+* Carbon that alcohol is attached to has 0 or 1 other carbon attached to it
+* Examples:
+	* Methanol
+	* Butan-1-ol
+
 
 *Secondary*
+* Carbon that alcohol is attached to has 2 other carbons attached to it
+* Examples:
+	* Butan-2-ol
+
 
 *Tertiary*
+* Carbon that alocohol is attached to has 3 other carbons attached to it
+* Exampels:
+	* 2-methyl propan-2-ol
+
+
+=== Isomers ===
+
+* Additional structural isomers exist
+* No additional geometric isomers
+
+
+*Example*
+* For $\ce{C4H10O}$:
+	* Butan-1-ol
+	* Butan-2-ol
+	* 2-methyl propan-1-ol
+	* 2-methyl propan-2-ol
+
+
+=== Hydration Reaction ===
+
+* Only for alkenes
+* Between alkene and water
+
+
+*Procedure*
+* Remove double bond
+* Add hydrogen to one carbon
+* Add $\ce{OH}$ group to other
+* Forms an alcohol
+
+
+*Examples*
+* Ethene and water, forms ethanol
+
 
 === Oxidation Reaction ===
 
-=== Hydration Reaction ===
+* Add oxygen or remove hydrogen
+* Classification determines how much oxidation an alochol can undergo
+
+
+*Procedure*
+* Oxidise by adding either:
+	* Acidified permanganate ($\ce{H+}$ and $\ce{MnO4-}$)
+	* Acidified dichromate ($\ce{H+}$ and $\ce{Cr2O7^2-}$)
+* Permanganate or dichromate will be reduced
+	* $\ce{MnO4-}$ is reduced to $\ce{Mn^2+}$ ions
+		* Turns from purple to pale pink
+	* $\ce{Cr2O7^2-}$ is reduced to $\ce{Cr^3+}$ ions
+		* Turns from orange to deep green
+
+
+*Primary Alcohol*
+* From primary alcohol
+	* To aldehyde (remove hydrogen)
+	* To carboxylic acid (add oxygen)
+
+
+*Secondary Alcohol*
+* From secondary alcohol
+	* To ketone (remove hydrogen)
+
+
+*Tertiary Alcohol*
+* Doesn't undergo any oxidation
+
+
+*Differentiation of Alcohols*
+* Add acidified permanganate or dichromate
+* Will change color if primary or secondary alcohol
+	* Permaganate: purple to pale pink
+	* Dichromate: orange to deep green
+* Add calcium carbonate
+* Will fizz and produce carbon dioxide gas if a primary alcohol
+	* Since carboxylic acid will be formed
 
 
 == Aldehydes ==
 
+* Suffix: -al
+* Structural formula: $\ce{R - CHO}$
+
 
 == Ketones ==
+
+* Suffix: -one
+* Structural formula: $\ce{R - CO - R'}$
 
 
 == Carboxylic Acids ==
 
-
-== Amines ==
+* Suffix: -oic acid
+* Structural formula: $\ce{R - COOH}$
 
 
 == Esters ==
 
+* Molecule and name consist of alcohol and carboxylic acid part
+* Suffix: -oate
+* Structural formula: $\ce{R - COO - R'}$
+
+
+*Procedure*
+* Mix carboxylic acid and alcohol
+* With $\ce{H+}$ ion catalyst like $\ce{H2SO4}$
+* Produce ester and water
+* Is an equilibrium reaction
+
+
+*Properties*
+* Smell sweet or fruity
+* Often used as a flavouring
+
+
+*Examples*
+* Methyl methanoate
+	* Formed from methanol and methanoic acid
+* Methyl ethanoate
+	* Formed from methanol and ethanoic acid
+* Prop-2-yl ethanoate
+	* Formed from prop-2-ol and ethanoic acid
+
+
 === Hydrolysis Reaction ===
+
+* Break up ester into constituent alcohol and carboxylic acid
+* Add strong acid or base
+
+
+*Acid Procedure*
+* Produces original alcohol and carboxylic acid
+
+
+*Base Procedure*
+* Produces alcohol and salt of carboxylic acid (with the carboxylate ion)
+	* For example, $\ce{NaOH}$ base will produce $\ce{NaCOOH}$ (sodium
+	  carboxylate)
+
+
+== Amines ==
