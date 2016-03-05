@@ -1,5 +1,4 @@
 
 = Physics =
-	* [[Projectile Motion]]
-	* [[Circular Motion]]
-	* [[Gravity]]
+	* [[Vectors]]
+	* [[Motion and Forces]]
