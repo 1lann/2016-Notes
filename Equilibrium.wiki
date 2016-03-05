@@ -121,12 +121,12 @@ $\require{mhchem}$
 
 === Exothermic ===
 
-{{local:../notes/assets/chemistry/exothermic.svg}}
+{{local:../notes/assets/chemistry/equilibrium/exothermic.svg}}
 
 
 === Endothermic ===
 
-{{local:../notes/assets/chemistry/endothermic.svg}}
+{{local:../notes/assets/chemistry/equilibrium/endothermic.svg}}
 
 
 
@@ -143,7 +143,7 @@ $\require{mhchem}$
 
 == Energy Distribution Diagram ==
 
-{{local:../notes/assets/chemistry/energy-distribution.svg}}
+{{local:../notes/assets/chemistry/equilibrium/energy-distribution.svg}}
 
 * Shows number of particles with a particular energy
 
@@ -195,7 +195,7 @@ $\require{mhchem}$
 
 === Temperature ===
 
-{{local:../notes/assets/chemistry/temperature-distribution.svg}}
+{{local:../notes/assets/chemistry/equilibrium/temperature-distribution.svg}}
 
 * Kinetic energy of particles is proportional to temperature
 * Effect on rate of reaction
@@ -214,9 +214,9 @@ $\require{mhchem}$
 
 === Catalyst ===
 
-{{local:../notes/assets/chemistry/catalyst-distribution.svg}}
+{{local:../notes/assets/chemistry/equilibrium/catalyst-distribution.svg}}
 
-{{local:../notes/assets/chemistry/exothermic-catalyst.svg}}
+{{local:../notes/assets/chemistry/equilibrium/exothermic-catalyst.svg}}
 
 * Provides an alternate reaction pathway with a lower activation energy
 * Effect on rate of reaction
@@ -263,7 +263,7 @@ $$
 \ce{H2 (g) + I2 (g) <=> 2HI (g)}
 $$
 
-{{local:../notes/assets/chemistry/equilibrium-rate.svg}}
+{{local:../notes/assets/chemistry/equilibrium/equilibrium-rate.svg}}
 
 * Initial concentration of reactants is high
 	* High initial forward reaction rate due to high frequency of collisions
@@ -283,7 +283,7 @@ $$
 \ce{H2 (g) + I2 (g) <=> 2HI (g)}
 $$
 
-{{local:../notes/assets/chemistry/equilibrium-concentration.svg}}
+{{local:../notes/assets/chemistry/equilibrium/equilibrium-concentration.svg}}
 
 * Initial concentration of reactants is high
 * Initial concentration of products is 0
@@ -324,7 +324,7 @@ $$
 
 == Position of Equilibrium ==
 
-{{local:../notes/assets/chemistry/equilibrium-scale.svg}}
+{{local:../notes/assets/chemistry/equilibrium/equilibrium-scale.svg}}
 
 * Equilibrium is a position on a linear scale
 * Changing environment will shift position of equilibrium

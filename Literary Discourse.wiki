@@ -33,7 +33,6 @@
 
 == Techniques ==
 
-
 * Simile
 	* Comparison of something to something else (like, as)
 	* Associate ideas, emphasise something

@@ -1,6 +1,7 @@
 
 = Economics =
 	* [[Globalisation]]
+	* [[Terms of Trade]]
 
 
 == Study System ==

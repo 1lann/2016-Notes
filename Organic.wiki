@@ -1,0 +1,383 @@
+
+$\require{mhchem}$
+
+= Contents =
+    - [[#Organic|Organic]]
+        - [[#Organic#Carbon Chain Length Prefix|Carbon Chain Length Prefix]]
+        - [[#Organic#Alkanes|Alkanes]]
+            - [[#Organic#Alkanes#Substitution Reaction|Substitution Reaction]]
+        - [[#Organic#Alkenes|Alkenes]]
+            - [[#Organic#Alkenes#Addition Reaction|Addition Reaction]]
+            - [[#Organic#Alkenes#Hydrogenation Reaction|Hydrogenation Reaction]]
+        - [[#Organic#Alkynes|Alkynes]]
+        - [[#Organic#Hydrocarbons|Hydrocarbons]]
+            - [[#Organic#Hydrocarbons#Saturation|Saturation]]
+            - [[#Organic#Hydrocarbons#Combustion Reaction|Combustion Reaction]]
+        - [[#Organic#Halogens|Halogens]]
+        - [[#Organic#Methyl Groups|Methyl Groups]]
+        - [[#Organic#Cyclic Compounds|Cyclic Compounds]]
+        - [[#Organic#Isomers|Isomers]]
+            - [[#Organic#Isomers#Structural Isomers|Structural Isomers]]
+            - [[#Organic#Isomers#Geometric Isomers|Geometric Isomers]]
+        - [[#Organic#Alcohols|Alcohols]]
+            - [[#Organic#Alcohols#Properties|Properties]]
+            - [[#Organic#Alcohols#Classification|Classification]]
+            - [[#Organic#Alcohols#Oxidation Reaction|Oxidation Reaction]]
+            - [[#Organic#Alcohols#Hydration Reaction|Hydration Reaction]]
+        - [[#Organic#Aldehydes|Aldehydes]]
+        - [[#Organic#Ketones|Ketones]]
+        - [[#Organic#Carboxylic Acids|Carboxylic Acids]]
+        - [[#Organic#Amines|Amines]]
+        - [[#Organic#Esters|Esters]]
+            - [[#Organic#Esters#Hydrolysis Reaction|Hydrolysis Reaction]]
+        - [[#Organic#Fractional Distillation|Fractional Distillation]]
+
+
+
+
+= Organic =
+
+* Organic compounds contain:
+	* Only non-metal elements
+	* A carbon atom
+
+
+== Carbon Chain Length Prefix ==
+
+1. meth-
+2. eth-
+3. prop-
+4. but-
+5. pent-
+6. hex-
+7. hept-
+8. oct-
+9. non-
+10. dec-
+
+
+== Alkanes ==
+
+* Contain only carbon/carbon single bonds
+* No double or triple bonds
+* Formula: $\ce{C_{n}H_{2n + 2}}$
+* Suffix: -ane
+
+
+*Examples*
+* Methane
+* Ethane
+* Butane
+
+
+=== Substitution Reaction ===
+
+* Only for alkanes
+* Between alkane and halogen
+* Replaces a hydrogen with a halogen atom
+* Produces a halogen hydride
+
+
+*Properties*
+* Very slow reaction
+* Sped up in the presence of UV light
+
+
+*Multiple Substitutions*
+* The reaction will continue over time until all hydrogens have been replaced
+* Multiple hydrogen atoms will be replaced on the same molecule
+* Naming:
+	* Disubstitution: 2 hydrogen atoms replaced on a molecule
+	* Trisubstitution: 3 hydrogen atoms replaced
+	* Tetrasubstitution: 4 hydrogen atoms
+	* Etc...
+
+
+*Examples*
+* Methane and chlorine (monosubstitution)
+* Chloro-methane and chlorine (disubstitution)
+
+
+== Alkenes ==
+
+* Contain at least 1 carbon/carbon double bond
+* No triple bonds
+* Formula (for 1 double bond): $\ce{C_{n}H_{2n}}$
+* Suffix: -ene
+
+
+*Double Bond*
+* No rotation around double bond
+
+
+*Methene*
+* Doesn't exist
+* No two carbons available to form double bond
+
+
+*Positioning*
+* Position of double bond included in name
+* Carbon atoms are numbered to minimise the position of the double bond
+
+
+*Examples*
+* Ethene
+* Propene
+* But-1-ene
+* Cis-but-2-ene
+
+
+=== Addition Reaction ===
+
+* Only for alkenes
+* Between alkene and halogen or hydrogen
+* Only produces one organic product
+
+
+*Procedure*
+* Remove double bond
+* Add halogen or hydrogen to both carbons that used to be doubly bonded
+
+
+*Properties*
+* Fast reaction
+* No UV light needed
+
+
+*Tricks*
+* Bromine liquid is orange colour
+* When added to alkene, turns colourless quickly
+	* Since addition reaction proceeds quickly
+
+
+*Examples*
+* Ethene and bromine
+* But-2-ene and fluorine
+* Prop-1-ene and hydrogen
+
+
+== Alkynes ==
+
+* Contain at least 1 triple carbon/carbon bond
+* Suffix: -yne
+
+
+*Methyne*
+* Doesn't exist
+* Same reason as for methene above
+
+
+*Examples*
+* Ethyne
+* But-2-yne
+
+
+== Hydrocarbons ==
+
+* Contain hydrogen and carbon only
+* Obtained from crude oil
+	* Separated by fractional distillation
+
+
+=== Combustion Reaction ===
+
+* All hydrocarbons burn in the presence of oxygen
+* Exothermic reaction
+* High activation energy
+* Produces water and carbon dioxide
+
+
+*Complete*
+
+$$
+\ce{CH4 + 2O2 -> CO2 + 2H2O}
+$$
+
+* Occurs in excess oxygen
+* Forms carbon dioxide
+
+
+*Partial*
+
+$$
+\ce{CH4 + O2 -> CO + H2O}
+$$
+
+* Occurs when oxygen supply is limited
+* Forms carbon monoxide (lethal to humans)
+
+
+*Incomplete*
+
+$$
+\ce{CH4 + O2 -> C + 2H2O}
+$$
+
+* Occurs when oxygen supply is very limited
+* Forms carbon
+
+
+=== Fractional Distillation ===
+
+
+== Halogens ==
+
+* Act as hydrogens off carbon atoms
+* Included in name of compound
+* Parts included:
+	* Location (carbon atom number)
+	* Number of halogen
+	* Type of halogen
+
+
+*Location*
+* Keeping the position of the double bond as low as possible takes priority over
+  halogens when numbering carbon atoms
+* For example:
+
+IMAGE HERE
+
+* Is 3-chloro propene, not chloro prop-2-ene
+
+
+*Halogen Type*
+* Fluorine: fluoro
+* Chlorine: chloro
+* Bromine: bromo
+* Iodine: iodo
+
+
+*Number of Halogens*
+1. No suffix
+2. Di-
+3. Tri-
+4. Tetra-
+
+
+*Examples*
+* Chloro methane
+* Dichloro methane
+* 1,2-dichloro ethene
+* 1,1,2-trichloro 2-bromo propane
+
+
+== Methyl Groups ==
+
+* Extra carbon atoms extending off the longest chain
+* Cannot exist off first or last carbon atom
+	* Would form a longer chain
+* Suffix: -yl
+
+
+*Examples*
+* Methyl propane
+* 2,2-dimethyl butane
+* 3-ethyl hexane
+
+
+== Cyclic Compounds ==
+
+* Carbon chain forms circle
+* Prefix: cyclo-
+* Formula: $\ce{C_{n}H_{2n}}$ (same as for alkenes)
+
+
+*Examples*
+* Cyclopropane
+* Cyclobutane
+* 1,2-dichloro cyclohexane
+* Cyclobutene
+
+
+== Isomers ==
+
+* Molecules with the same molecular formula but different physical structures
+* To change one isomer into another, bonds must be broken
+
+
+=== Structural Isomers ===
+
+* Different physical sequence of atoms
+
+*Examples*
+* For $\ce{C4H10}$:
+	* Butane
+	* Methyl propane
+
+
+=== Geometric Isomers ===
+
+* Only for molecules with a double bond (alkenes)
+* Different orientations of atoms around the double bond
+	* Since no rotation can occur around the bond
+* Only occurs when both carbon atoms in the double bond have 2 different
+  elements off of them
+
+
+*Naming*
+* Cis isomers have the two identical atoms on the same side (top or bottom) of
+  the carbon atoms they're attached to
+* Trans isomers have the two identical atoms diagonally opposite each other
+
+
+*Examples*
+* Cis-but-2-ene
+* Trans-but-2-ene
+* 1,2-chloro trans-ethene
+
+
+*Examples with No Geometric Isomerism*
+* Ethene
+* But-1-ene
+
+
+== Saturation ==
+
+* A compound is saturated if every carbon has 4 distinct bonds off of it
+* Contain no double bonds
+* Means compound must be an alkane
+* Includes cyclic compounds
+
+
+*Examples*
+* Saturated
+	* Methane
+	* 1,1-dichloro ethane
+	* 1,3-difluoro Propane
+* Unsaturated
+	* Ethene
+	* 1-bromo propene
+
+
+== Alcohols ==
+
+=== Properties ===
+
+=== Classification ===
+
+*Primary*
+
+*Secondary*
+
+*Tertiary*
+
+=== Oxidation Reaction ===
+
+=== Hydration Reaction ===
+
+
+== Aldehydes ==
+
+
+== Ketones ==
+
+
+== Carboxylic Acids ==
+
+
+== Amines ==
+
+
+== Esters ==
+
+=== Hydrolysis Reaction ===

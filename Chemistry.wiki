@@ -3,3 +3,4 @@
 	* [[Reactions]]
 	* [[Stoichiometry]]
 	* [[Equilibrium]]
+	* [[Organic]]
