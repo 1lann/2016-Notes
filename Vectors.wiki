@@ -3,7 +3,10 @@
 
 *Definition*
 * Value with direction and magnitude
-* Direction usually given as worded description or bearing
+* Direction given as:
+	* Worded description
+	* Bearing
+	* Angle from horizontal or vertical
 * Diagramatically represented as an arrow
 	* Magnitutde represented by length of arrow
 
@@ -50,18 +53,3 @@ v_x & = v \cos{\theta} \\
 v_y & = v \sin{\theta} \\
 \end{align*}
 $$
-
-
-
-= Velocity =
-
-* Direction and speed at which an object is travelling
-
-
-== Change in Velocity ==
-
-$$
-\Delta v = v - u
-$$
-
-* Change in velocity is final velocity ($v$) subtract initial velocity ($u$)

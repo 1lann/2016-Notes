@@ -1,29 +1,41 @@
 
 = Contents =
+    - [[#Velocity|Velocity]]
+        - [[#Velocity#Change in Velocity|Change in Velocity]]
+        - [[#Velocity#Relative Velocity|Relative Velocity]]
+        - [[#Velocity#River Problem|River Problem]]
+    - [[#Forces|Forces]]
+        - [[#Forces#Types|Types]]
     - [[#Laws|Laws]]
         - [[#Laws#Newton's Laws|Newton's Laws]]
             - [[#Laws#Newton's Laws#First Law|First Law]]
             - [[#Laws#Newton's Laws#Second Law|Second Law]]
             - [[#Laws#Newton's Laws#Third Law|Third Law]]
         - [[#Laws#Equations of Motion|Equations of Motion]]
+        - [[#Laws#Momentum|Momentum]]
+            - [[#Laws#Momentum#Conservation of Momentum|Conservation of Momentum]]
+        - [[#Laws#Energy|Energy]]
+            - [[#Laws#Energy#Kinetic Energy|Kinetic Energy]]
+            - [[#Laws#Energy#Gravitational Potential Energy|Gravitational Potential Energy]]
+            - [[#Laws#Energy#Conservation of Energy|Conservation of Energy]]
     - [[#Dynamics|Dynamics]]
+        - [[#Dynamics#Chase Problems|Chase Problems]]
         - [[#Dynamics#Incline Plane|Incline Plane]]
         - [[#Dynamics#Atwood's Machine|Atwood's Machine]]
         - [[#Dynamics#Elevators|Elevators]]
     - [[#Statics|Statics]]
+        - [[#Statics#Tension|Tension]]
     - [[#Projectile Motion|Projectile Motion]]
         - [[#Projectile Motion#Flight Time|Flight Time]]
         - [[#Projectile Motion#Range|Range]]
         - [[#Projectile Motion#Maximum Height|Maximum Height]]
         - [[#Projectile Motion#Final Velocity|Final Velocity]]
         - [[#Projectile Motion#Ground|Ground]]
-            - [[#Projectile Motion#Ground#Flat|Flat]]
-            - [[#Projectile Motion#Ground#High to Low|High to Low]]
-            - [[#Projectile Motion#Ground#Low to High|Low to High]]
-        - [[#Projectile Motion#Energy Considerations|Energy Considerations]]
         - [[#Projectile Motion#Air Resistance|Air Resistance]]
     - [[#Circular Motion|Circular Motion]]
         - [[#Circular Motion#Centripetal Force|Centripetal Force]]
+            - [[#Circular Motion#Centripetal Force#Horizontal Motion|Horizontal Motion]]
+            - [[#Circular Motion#Centripetal Force#Vertical Motion|Vertical Motion]]
         - [[#Circular Motion#Centrifugal Force|Centrifugal Force]]
         - [[#Circular Motion#Conical Pendulum|Conical Pendulum]]
         - [[#Circular Motion#Cambered Road|Cambered Road]]
@@ -35,15 +47,115 @@
 
 
 
+= Velocity =
+
+* Direction and speed at which an object is travelling
+
+
+== Change in Velocity ==
+
+$$
+\Delta v = v - u
+$$
+
+* Change in velocity is final velocity ($v$) subtract initial velocity ($u$)
+
+
+== Relative Velocity ==
+
+$$
+v_{a/b} = v_{a/c} + v_{c/b}
+$$
+
+
+== River Problem ==
+
+* River 30m wide
+* You are standing at A
+* Need to reach point B 10m downstream
+* You can swim at a speed of $2.00\mbox{ ms}^{-1}$
+* The river has a current of $3.20\mbox{ ms}^{-1}$
+* At what angle should you swim to the shore in order to reach B?
+* What will be your resultant speed?
+* How long will it take to reach B?
+
+DIAGRAM
+
+
+*Solution*
+* Find angle directly to B from A using tan, relative to shore
+* Person's velocity and river current must add to a vector pointing in this
+  direction
+* Draw triangle, add calculated angle
+* Solve for remaining angles and sides using sine or cosine rules
+
+
+
+
+= Forces =
+
+* Anything that changes an object's acceleration
+* Vector quantity
+* Units: Newtons (N)
+
+
+== Types ==
+
+*Normal*
+* Contact force between two objects
+* Acts perpendicular to surface
+* Drawn from point of contact
+* Symbol: $N$
+
+
+*Tension*
+* Intermolecular restoring force
+* Acts away from the object along the string
+* Drawn from centre of mass
+* Symbol: $T$
+
+
+*Weight*
+* Due to gravity
+* Acts towards centre of Earth
+* Drawn from centre of mass
+* Symbol: $W$
+
+
+*Friction*
+* Retards motion
+* Acts parallel to surface
+* Drawn at surface
+* Symbol: $F_f$
+
+
+
 = Laws =
 
 == Newton's Laws ==
 
 === First Law ===
 
+* Every object will continue in its current state of rest or straight line,
+  uniform motion unless acted upon by a net non-zero external force
+	* Straight line: not changing direction
+	* Uniform: not changing speed
+
+
 === Second Law ===
 
+$$
+\sum F = ma
+$$
+
+* The acceleration of an object is equal to the net force acting upon it divided
+  by its mass
+
+
 === Third Law ===
+
+* When an object exerts a force on another, the second will also exert a force
+  equal in magnitude but opposite in direction on the first
 
 
 == Equations of Motion ==
@@ -58,62 +170,505 @@ s & = ut + \frac{1}{2}at^2 \\
 $$
 
 
+== Momentum ==
+
+$$
+p = mv
+$$
+
+* Vector quantity
+* Symbol: $p$
+* Units: $\mbox{kg m s}^{-1}
+
+
+=== Conservation of Momentum ===
+
+$$
+\sum p_f = \sum p_i
+$$
+
+* The total final momentum in a system is equal to the total initial momentum
+
+
+== Energy ==
+
+* Units: Joules (J)
+
+
+=== Kinetic Energy ===
+
+$$
+E_k = \frac{1}{2} mv^2
+$$
+
+
+=== Gravitational Potential Energy ===
+
+$$
+E_p = mgh
+$$
+
+
+=== Conservation of Energy ===
+
+$$
+\sum E_f = \sum E_i
+$$
+
+* The total final energy in a system is equal to the total initial energy
+
+
 
 
 = Dynamics =
 
+* For objects in motion
+
+
+*Method*
+* Split forces into horizontal and vertical components (or parallel and
+  perpendicular components)
+* Equate each component to $ma$ (Newton's second law)
+* If there is no acceleration in a direction, equate to 0
+* Solve for unknowns
+
+
+== Chase Problems ==
+
+*Description*
+* Two objects starting at same point
+* One accelerating from an initial velocity
+* Other at constant velocity
+
+
+*Example*
+* A car accelerates north from A at $2.00\mbox{ ms}^{-2}$
+* A motorcyclist passes point A at the same instant the car sets off with a
+  velocity of $6.00\mbox{ ms}^{-1}$
+* Find when the car overtakes the motorcyclist
+
+
+*Method*
+* Find equation for displacement for both objects
+* Equate displacement
+* Solve for unknowns
+
+
+*Variables*
+* Acceleration of car
+* Initial velocity of car
+* Velocity of motorcyclist
+* Distance at which car overtook motorcyclist
+* Time at which car overtook motorcyclist
+
+
 == Incline Plane ==
+
+*Description*
+* Object sitting on inclined slope
+
+
+*Method*
+* Normal force acts perpendicular to plane
+* Weight force acts directly down
+* Perpendicular components of weight and normal sum to 0
+* Weight force will result in an unbalanced force down the plane (parallel
+  component)
+
+
+*Variables*
+* Length of slope
+* Angle of slope
+* Mass of object
+* Friction force
+* Initial velocity of object
+* Acceleration of object down slope
+* Final velocity of object at bottom of slope
+* Time taken to reach bottom of slope
+
 
 == Atwood's Machine ==
 
+*Description*
+* Object on table attached to string
+* Other end of string attached to object suspended in air off the edge of the
+  table
+* String bends at right angle off edge of table
+* Tension in string is the same for both objects
+
+
+*Method*
+* Find expression for sum of forces for both objects
+	* Tension in string
+	* Friction force for object on table
+	* Weight force for object in air
+* Equate sum of forces to $ma$ (Newton's second law)
+* Rearrange for tension in both
+* Equate tensions
+* Solve for unknowns
+
+
+*Variables*
+* Mass of object on table
+* Mass of object in air
+* Acceleration of object on table
+* Acceleration of object in air
+* Tension in string
+
+
 == Elevators ==
 
+*Description*
+* Object in elevator
+* Sitting on set of scales (measures normal force)
+* Elevator will accelerate up or down
+
+
+*Method*
+* Find sum of forces on object in vertical direction
+	* Normal force subtract weight force
+* Equate to $ma$ (Newton's second law)
+* Acceleration of object will be equal to the acceleration of the elevator
+* Solve for unknowns
+
+
+*Variables*
+* Mass of object
+* Mass of elevator
+* Acceleration of elevator
+* Normal force acting on object
+* Apparent mass of object
+	* Normal force divided by gravity
+* Tension in elevator wire
 
 
 
 = Statics =
 
+* For objects at rest
 
+
+*Method*
+* Split forces into horizontal and vertical components
+* Equate to 0
+* Solve for unknowns
+
+
+== Tension ==
+
+*Example*
+* Traffic light weighing 150N suspended by two cables, at 37 and 53 degrees to
+  the horizontal
+* What is the tension in each cable?
+
+
+*Solution*
+* Horizontal components:
+	* $T_1 \cos{37^\circ} - T_2 \cos{53^\circ} = 0$
+* Vertical components:
+	* $T_1 \sin{37^\circ} + T_2 \sin{53^\circ} - 150 = 0$
+* Solve simultaneously for tensions
 
 
 
 
 = Projectile Motion =
 
+* Object in flight
+
+
+*Assumptions*
+* Assume gravity acts directly down
+	* Not towards centre of spherical Earth
+	* Forms parabola instead of ellipse
+* Assume no friction (air resistance)
+	* Horizontal velocity is constant
+	* Vertical velocity changed by gravity
+
+
+*Variables*
+* Range
+	* Distance travelled horizontally before hitting the ground
+* Angle to the horizontal at which the object was fired
+* Initial velocity
+* Flight time
+* Maximum height
+* Final velocity when the object hits the ground
+* Velocity after $t$ seconds
+* Height above ground at which object was fired
+* Height of ground above landing location
+
+
+*Method*
+* Solve for flight time
+* Use flight time to calculate other unknowns
+
+
 == Flight Time ==
+
+$$
+s_y = u_y t + \frac{1}{2} a_y t^2
+$$
+
+* Solve for $t$ using quadratic formula
+
 
 == Range ==
 
+$$
+s_x = u_x \cos{\theta}
+$$
+
+* Equivalent to horizontal displacement
+
+
 == Maximum Height ==
+
+$$
+0 = u_y^2 + 2 a_y s_y
+$$
+
+* Using $v^2 = u^2 + 2as$
+* Since vertical velocity is 0 at maximum height
+* Solve for $s$
+
 
 == Final Velocity ==
 
+$$
+\begin{align*}
+v_x & = u_x \\
+v_y & = u_y + a_y t \\
+\end{align*}
+$$
+
+* Must solve for flight time first
+* Final horizontal velocity is equal to initial horizontal velocity
+	* As no acceleration in horizontal direction
+
+
 == Ground ==
 
-=== Flat ===
+* Changes vertical displacement ($s_y$)
+* Take into consideration when calculating flight time
 
-=== High to Low ===
 
-=== Low to High ===
+*Flat*
+* $s_y$ is zero
 
-== Energy Considerations ==
+
+*High to Low*
+* $s_y$ is negative
+
+
+*Low to High*
+* $s_y$ is positive
+
 
 == Air Resistance ==
+
+DIAGRAM
+
+* Magnitude of air resistance proportional to velocity
+* Projectile will not travel as high or as far
+	* Decreased maximum height
+	* Decreased range
+* Steeper angle to the horizontal when impacting ground
+* Projectile's parabolic trajectory is no longer symmetrical
+* Effect is more pronounced for faster objects
+	* Eg. cannon ball compared to kicked soccer ball
 
 
 
 
 = Circular Motion =
 
+* Object travelling in circular path at a constant radius around a central point
+
+
+*Period*
+* Time taken for object to complete 1 revolution
+* Symbol: $T$
+* Units: seconds (s)
+* $T = \frac{1}{f}$
+
+
+*Frequency*
+* Number of revolutions per second
+* Symbol: $f$
+* Units: Hertz (Hz)
+* $f = \frac{1}{T}$
+
+
+*Velocity*
+* Tangential to the circle
+* Direction constantly changing
+* Magnitude remains constant (assuming no friction)
+* Perpendicular to radius
+* $v = \frac{2 \pi r}{T} = 2 \pi r f$
+
+
+*Acceleration*
+* Always directed towards centre of circle
+* $a = \frac{v^2}{r} = \frac{4 \pi^2 r}{T^2}$
+
+
 == Centripetal Force ==
+
+* Always directed towards centre of circle
+* Never draw on free body diagram
+	* A net unbalanced force due to other forces acting on the object
+	* Not an actual force
+* Symbol: $F_c$
+* $F_c = ma = \frac{mv^2}{r}$
+
+
+*Solid Object*
+* For a solid disk spinning (eg. a CD or DVD)
+* Each part of the disk experiences a centripetal force
+* Parts of the disk further away from the centre experience a larger centripetal
+  force
+	* Larger radius of centripetal motion
+	* Same period as closer parts of the disk
+	* Therefore travelling a futher distance in the same amount of time
+	* Larger velocity
+	* Requires larger acceleration in order to change tangential velocity
+	  constantly as the disk spins
+	* Therefore further away parts experience a larger force since Newton's
+	  second law states that the net force on an object is proportional to its
+	  acceleration
+
+
+=== Horizontal Motion ===
+
+* When circular motion is flat (parallel to ground)
+* Weight force is perpendicular to centripetal force
+* Do not affect each other
+
+
+=== Vertical Motion ===
+
+* If circular motion is not parallel to ground, but perpendicular
+* Velocity will increase on the way down and decrease on the way up due to
+  gravity
+* Assume velocity to be constant usually
+	* The centripetal force will also be constant
+* $\sum F = F_c = T + W$
+
+
+*Top of Path*
+* Centripetal force acts down (towards circle centre)
+* Weight of object acts down
+* Tension in string also acts down
+* Taking up to be positive:
+	* $\sum F = F_c = -T - W$
+* Tension and weight combine to create centripetal force
+
+
+*Bottom of Path*
+* Centripetal force acts up (towards circle centre)
+* Weight of object acts down
+* Tension in string acts up
+* Taking up to be positive:
+	* $\sum F = F_c = T - W$
+* Tension must counteract weight force
+
+
+*Tension*
+* Tension in string at top of path is less than that at bottom of path
+* Since weight always acts down and $F_c$ is constant
+	* Weight and tension act in same direction at top of path, meaning tension
+	  is less
+	* Weight and tension act in opposite directions at bottom of path, meaning
+	  tension is more to produce an upwards $F_c$
+
+
+*Examples*
+* Ball on string in vertical motion
+* Plane doing loop
+	* Normal force on pilot's chair plus pilot's weight provide centripetal
+	  force
+
+
+== Apparent Weightlessness ==
+
+* Normal force is 0
+* Can work out what speed someone must travel in a vertical circular path to
+  feel apparent weightlessness at the top of their path
+* $\sum F = F_c = W + N$
+	* $N = F_c - W = -\frac{mv^2}{r} - (-mg) = 0$
+	* $F_c$ and $mg$ are negative since both are acting down at the top of the
+	  path
+* This velocity is the minimum speed required to maintain the circular motion
+	* Minimum speed to prevent slack in a rope
+	* Minimum speed to prevent people from falling out of a car on a
+	  rollercoaster in a loop
+
+
+*Example*
+* Water in a bucket
+	* Normal is 0
+* Ball on a string
+	* Tension is 0
+	* No slack in the rope
+* Rollercoaster in a loop
+	* Minimum speed is when normal force at top of loop is 0
+
 
 == Centrifugal Force ==
 
-== Conical Pendulum ==
+TODO: Read nelson chapter
+
+
+== Conical Pendulum Problem ==
+
+*Description*
+* Central pivot point above circular path
+* Object attached to string, rotates at an angle to the vertical around pivot
+  point
+* For a given radius, there will be a certain speed the object must travel at to
+  make a particular angle
+
+
+*Variables*
+* Mass of object
+	* Unnecessary value
+	* Cancels out if we work out the math
+* Length of string from pivot point to object (not radius of circular motion)
+* Radius of motion
+* Angle string makes with vertical
+* Velocity of object
+* Centripetal force
+* Acceleration of object
+* Tension in string
+
+
+*Method*
+* Draw triangle combining weight and tension force to make centripetal force
+* Add $\theta$ (angle with vertical) to triangle
+* Find weight force
+* Find centripetal force using $\tan{\theta}$
+* Solve for $v$ using $F_c = \frac{mv^2}{r}$
+
+
+*Examples*
+* Ball on a string
+* Plane at an angle
+	* Lift perpendicular to plane
+	* Acts like tension would for a ball on a string
+
+
+*Trick*
+* Plane in circular motion around a corner
+	* If vertical component of lift is less than weight force
+	* Will start to spiral down
+	* Since there is an unbalanced force in the vertical direction
+
 
 == Cambered Road ==
 
-
+* Tilted road which makes an angle with the horizontal
+*
 
 
 = Gravity =
