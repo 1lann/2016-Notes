@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 597.521 299.174" style="enable-background:new 0 0 597.521 299.174;" xml:space="preserve">
+	 viewBox="0 0 597.521 355.372" style="enable-background:new 0 0 597.521 355.372;" xml:space="preserve">
 <style type="text/css">
 <![CDATA[
 @font-face{font-family:'MyriadPro-Regular';src:url("data:;base64,\
@@ -5061,15 +5061,20 @@ AUoCIgIkAUsCJgIqAU4CLAIsAVMCMgIyAVQCNAI0AVUCRgJJAVYCSwJLAVoCUwJTAVsCWAJhAVwC\
 ZAJlAWYCaAJpAWgCbAMiAWoDJwMnAiEDKQM0AiIDNwM5Ai4DQwNDAjEAAA==")}
 ]]>
 </style>
-<line id="XMLID_1_" style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="31.405" y1="278.512" x2="31.405" y2="0"/>
-<line id="XMLID_2_" style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="31.405" y1="278.512" x2="597.521" y2="278.512"/>
-<path id="XMLID_4_" style="fill:none;stroke:#000000;stroke-miterlimit:10;" d="M31.405,5.567c0,0,0,135.537,338.017,135.537"/>
-<line id="XMLID_3_" style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" x1="369.421" y1="141.104" x2="597.521" y2="141.104"/>
-<path id="XMLID_6_" style="fill:none;stroke:#EF4136;stroke-miterlimit:10;" d="M31.405,278.512c0,0,0-135.537,338.017-135.537"/>
-<line id="XMLID_5_" style="fill:#FFFFFF;stroke:#EF4136;stroke-miterlimit:10;" x1="369.421" y1="142.975" x2="597.521" y2="142.975"/>
-<text id="XMLID_7_" transform="matrix(1 0 0 1 119.0078 89.0377)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Forward rate</text>
-<text id="XMLID_8_" transform="matrix(1 0 0 1 119.008 200.4346)" style="fill:#EF4136; font-family:'MyriadPro-Regular'; font-size:12px;">Reverse rate</text>
-<text id="XMLID_9_" transform="matrix(1 0 0 1 286.3642 293.6942)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Time</text>
-<text id="XMLID_10_" transform="matrix(1 0 0 1 2.1111 139.2564)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Rate</text>
-<text id="XMLID_11_" transform="matrix(1 0 0 1 359.4283 135.3185)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Equilibrium reached</text>
+<line id="XMLID_1_" style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="31.405" y1="334.711" x2="31.405" y2="0"/>
+<line id="XMLID_2_" style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="31.405" y1="334.711" x2="597.521" y2="334.711"/>
+<line id="XMLID_3_" style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" x1="31.405" y1="208.264" x2="259.504" y2="208.264"/>
+<line id="XMLID_5_" style="fill:#FFFFFF;stroke:#EF4136;stroke-miterlimit:10;" x1="31.405" y1="210.136" x2="261.504" y2="210.136"/>
+<text id="XMLID_9_" transform="matrix(1 0 0 1 286.3642 349.8926)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Time</text>
+<text id="XMLID_10_" transform="matrix(1 0 0 1 2.1113 152.4582)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Rate</text>
+<text id="XMLID_11_" transform="matrix(1 0 0 1 114.9844 202.4792)" style="font-family:'MyriadPro-Regular'; font-size:12px;">System in equilibrium</text>
+<text id="XMLID_4_" transform="matrix(1 0 0 1 37.1899 223.9669)" style="fill:#EF4136; font-family:'MyriadPro-Regular'; font-size:12px;">Reverse</text>
+<text id="XMLID_6_" transform="matrix(1 0 0 1 37.1897 202.4791)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Forward</text>
+<path id="XMLID_7_" style="fill:none;stroke:#000000;stroke-miterlimit:10;" d="M259.504,208.264V90.909
+	c0,0,24.793,59.549,198.347,59.549h139.669"/>
+<path id="XMLID_12_" style="fill:none;stroke:#EF4136;stroke-miterlimit:10;" d="M260.702,210.136
+	c1.988-1.813,24.644-57.678,197.149-57.678"/>
+<line id="XMLID_8_" style="fill:none;stroke:#EF4136;stroke-miterlimit:10;" x1="457.851" y1="152.458" x2="597.521" y2="152.458"/>
+<text id="XMLID_13_" transform="matrix(1 0 0 1 186.5207 81.5537)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Increase in concentration of A</text>
+<text id="XMLID_14_" transform="matrix(1 0 0 1 461.5207 145.0537)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Equilibrium re-established</text>
 </svg>

@@ -590,6 +590,30 @@ DIAGRAM
 	  force
 
 
+=== Conical Motion ===
+
+*Angle from Horizontal*
+* Increase velocity
+	* Decreases angle from horizontal since:
+	* Increased velocity requires more centripetal force to maintain a circular
+	  path
+	* Since the centripetal force is supplied by the tension in the string
+	* The angle from horizontal will decrease to increase the size of the
+	  tension component in the horizontal plane
+
+
+*Over Speed Hump*
+* As you go over the hump
+* Move in circular path
+* Weight force contributing to centripetal force
+* At top of hump you have weight force acting down as centripetal force, and
+  normal force acting up
+* So $\sum F = F_N - mg = -\frac{mv^2}{r}$
+	* Hence $F_c = mg - \frac{mv^2}{r}$
+* Feel lighter at top of hump
+* Minimum speed is where $F_N = 0$ (like normal)
+
+
 == Apparent Weightlessness ==
 
 * Normal force is 0
@@ -656,6 +680,12 @@ TODO: Read nelson chapter
 * Plane at an angle
 	* Lift perpendicular to plane
 	* Acts like tension would for a ball on a string
+* Car on cambered road on circular track
+	* Normal force providing centripetal force
+	* Travelling too slow, friction acting up the inclined plane
+		* Stop car from falling down track
+	* Travelling too fast, friction acting down inclined plane
+		* Stop car from spinning off towards wall
 
 
 *Trick*
@@ -665,10 +695,39 @@ TODO: Read nelson chapter
 	* Since there is an unbalanced force in the vertical direction
 
 
-== Cambered Road ==
+== Questions to Expect ==
 
-* Tilted road which makes an angle with the horizontal
-*
+* Velocity
+	* Change in velocity
+	* Crossing river
+* Dynamics
+	* Chase problem
+	* Inclined plane
+	* Elevator problem
+* Statics
+	* Tension in wires
+* Projectile motion
+	* Time, range, velocity after time, final velocity, maximum height
+* Horizontal circular motion
+	* Velocity, acceleration, centripetal force
+* Conical circular motion
+	* Tension in wire
+	* Behaviour of angle if velocity is changed
+	* Over speed humps or hill on rollercoaster
+* Vertical circular motion
+	* Calculate tension at top and bottom of path
+	* Calculate minimum velocity to maintain path
+
+
+== Tricks ==
+
+* Must write $\sum F = ma$ for every question
+* Can't use $F_c = \frac{4m\pi^2r}{T^2}$ as formula, must derive it
+* Remember to convert units to SI
+* $\mbox{kmh}^{-1}$ is always larger than $\mbox{ms}^{-1}$
+* Write $W = \Delta E_k$ for all questions which relate work to kinetic energy
+* Whenever you mention Newton first law, you have to say the object has mass and
+  therefore inertia
 
 
 = Gravity =
@@ -678,3 +737,4 @@ TODO: Read nelson chapter
 == Force ==
 
 == Circular Motion ==
+

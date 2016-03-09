@@ -27,11 +27,16 @@ $\require{mhchem}$
         - [[#Equilibrium#Changes in Equilibrium|Changes in Equilibrium]]
             - [[#Equilibrium#Changes in Equilibrium#Le Châtelier's Principle|Le Châtelier's Principle]]
             - [[#Equilibrium#Changes in Equilibrium#Concentration|Concentration]]
-                - [[#Equilibrium#Changes in Equilibrium#Concentration#Reactants|Reactants]]
-                - [[#Equilibrium#Changes in Equilibrium#Concentration#Products|Products]]
             - [[#Equilibrium#Changes in Equilibrium#Pressure|Pressure]]
             - [[#Equilibrium#Changes in Equilibrium#Temperature|Temperature]]
             - [[#Equilibrium#Changes in Equilibrium#Catalyst|Catalyst]]
+        - [[#Equilibrium#Harber Process|Harber Process]]
+            - [[#Equilibrium#Harber Process#Production of Hydrogen|Production of Hydrogen]]
+                - [[#Equilibrium#Harber Process#Production of Hydrogen#Steam Reforming|Steam Reforming]]
+                - [[#Equilibrium#Harber Process#Production of Hydrogen#Shift Reaction|Shift Reaction]]
+        - [[#Equilibrium#Contact Process|Contact Process]]
+            - [[#Equilibrium#Contact Process#Stage 1|Stage 1]]
+            - [[#Equilibrium#Contact Process#Stage 2|Stage 2]]
 
 
 
@@ -301,10 +306,10 @@ $$
 For the equation:
 
 $$
-\ce{aA + bB -> cC + dD}
+\ce{aA + bB <=> cC + dD}
 $$
 
-The equilibrium constant is:
+The equilibrium constant for a given temperature is:
 
 $$
 K = \frac{[\mbox{C}]^c [\mbox{D}]^d}{[\mbox{A}]^a [\mbox{B}]^b}
@@ -319,7 +324,20 @@ $$
 	* Concentration of products greater than concentration of reactants
 * If $K < 1$:
 	* Concentration of reactants greater than concentration of products
-* Gives no indication about the rate of reaction
+
+
+*Concentrations at Equilibrium*
+* Concentrations of reactants and products will be in stoichiometric ratios at
+  equilibrium
+* Only tells us about reactants and products separately
+	* Can't tell concentration of a product from the concentration of a reactant
+
+
+*Rate from Equilibrium Constant*
+* $\Delta H$, $K$, stoichiometric ratios do not give any indication of rate of
+  reaction
+* If you see a question mentioning rate and it's only given you the above
+  things, then it's indeterminant
 
 
 == Position of Equilibrium ==
@@ -329,6 +347,8 @@ $$
 * Equilibrium is a position on a linear scale
 * Changing environment will shift position of equilibrium
 * Change relative composition of reactant and products
+* Addition of more of a solid or liquid (not counted in equilibrium constant):
+	* Doesn't affect position of equilibrium
 
 *Shift Left*
 * Rate of reverse reaction increases
@@ -352,11 +372,13 @@ $$
 * System will attempt to restore equilibrium
 
 
-=== Le Châtelier's Principle ===
+=== Le Chatelier's Principle ===
 
 * For a system in equilibrium
 * If a change is imposed on the system
-* The system will attempt to counteract the change
+* The system will attempt to counteract the imposed change
+* Can explain equilibrium changes using principle, except for changes in
+  concentration
 
 
 *Examples*
@@ -368,25 +390,352 @@ $$
 
 === Concentration ===
 
-==== Reactants ====
+* Change in concentration of a substance in a reaction in equilibrium
+* Must explain using collision theory
 
-*Increase in a Reactant*
-* System attempt to offset increase in concentration
-*
+$$
+\ce{aA + bB <=> cC + dD}
+$$
 
 
-==== Products ====
+*Increase in Concentration of A*
+* More particles per unit volume of A
+* Increased frequency of collisions with B
+* Sharply increases the rate of the forward reation
+* Decreases the concentration of A and B over time
+	* Decreases the rate of the forward reaction over time due to lowering
+	  frequency of collisions
+* Increases the concentration of C and D over time
+	* Increases the rate of the reverse over time due to higher frequency of
+	  collisions
+* Eventually reaches a stable equilibrium where the rates of the forward and
+  reverse reactions are equal
+
+
+*Decrease in Concentration of A*
+* Less particles per unit volume of A
+* Decreases frequency of collisions with B
+* Sharply decreases the forward reaction rate
+* Increases the concentration of A and B over time
+	* Due to a relatively higher frequency of collisions between C and D
+	  producing more reactants
+* Decreases the concentration of C and D over time
+	* Due to the decreased forward reaction rate
+* Eventually reaches a stable equilibrium where the rates of the forward and
+  reverse reactions are equal
+
+
+*Rate of Reaction Graph*
+* For an increase in concentration of A:
+	* Forward reaction rate will increase sharply
+	* Reverse reaction rate will increase over time, rapidly at first but
+	  slowing
+	* Forward reaction rate will decrease over time, rapidly at first but
+	  slowing
+	* Will reach new equilibrium higher than previous one
+
+
+*Concentration Graph*
+* For an increase in concentration of A:
+	* Sharp increase in concentration of A
+		* Decreases over time as it is used up by forward reaction
+		* Rapidly at first due to the high forward reaction rate, but slowing
+		  over time
+		* Flattens out at a point above the original concentration (never
+		  returns to original concentration)
+	* Decrease over time in concentration of B
+	* Increase over time in concentration of C and D
+
+
+*Ways to Reduce Concentration*
+* Adding acid
+	* Increases concentration of $\ce{H+}$ ions
+	* Decreases concentration of $\ce{OH-}$ ions
+* Adding base
+	* Watch out for $\ce{NH3}$ as a base
+	* Increases concentration of $\ce{OH-}$ ions
+	* Decreases concentration of $\ce{H+}$ ions
+* Forming precipitate
+	* Reaction produces an insoluble salt
+
+
+*Addition of More of a Solid*
+* Adding more of a solid doesn't affect equilibrium
+* Since equilibrium constant doesn't depend on it, cannot change the equilibrium
+  position
 
 
 === Pressure ===
 
-* Identical to concentration
+* "Pressure" implies total pressure of the system
+* "Partial pressure" is analogous to concentration for gasses
 * Can be changed by:
 	* Adding more or removing some of a gas
-	* Decreasing or increasing the volume of the container
+	* Decreasing or increasing the volume of the container at a fixed
+	  temperature
+
+
+*Increase in Total Pressure*
+* Le Chatelier's principle states that when a change is imposed upon a system in
+  equilibrium, the system will attempt to counteract the imposed change
+* Therefore if the total pressure is increased, the system will attempt to
+  decrease the total pressure
+* This is done by shifting the equilibrium position to the side of the reaction
+  that produces the least moles of gas
+* Inverse is true for a decrease in total pressure
+* If both sides have the same moles of gas:
+	* Changing pressure doesn't shift the equilibrium position
+
+
+*Rate of Reaction Graph*
+* Increase in total pressure:
+	* Both the forward and reverse reaction rate will increase sharply
+	* The rate with more moles of gas will increase more, then decrease over
+	  time
+	* The other rate will increase over time
+* Decrease in total pressure:
+	* Both the forward and reverse reaction rate will decrease sharply
+	* The rate with less moles of gas will decrease more, then increase over
+	  time (???)
+	* The other rate will decrease over time
+
+
+*Concentration Graph*
+* Increase in total pressure:
+	* Will sharply increase concentration of reactants and products by
+	  stoichiometric ratios
+		* Eg. $\ce{2A <=> B}$, A will sharply increase twice as much
+	* Concentration of reactants/products (whichever has the least moles of gas)
+	  will increase over time
+	* Other will decrease
+* Opposite will happen for a decrease in total pressure
+
+
+*Example*
+* For the reaction: $\ce{Cl2 (g) + 3F2 (g) <=> 2ClF3 (g)}$
+* If the total pressure was increased
+* The system would favour the forward reaction
+* The equilibrium position would shift right
+* Since the products have fewer moles of gas
+
+
+*Methods of Changing Pressure*
+* Changing volume
+* Adding inert gas at constant volume and temperature
+	* Doesn't change partial pressures of reactants (same volume)
+	* Doesn't change position of equilibrium
+	* Doesn't change amount of any substance
+* Adding inert gas with expansion of volume, constant pressure and temperature
+	* Decreases partial pressure of reactants due to increased volume
+	* Shifts equilibrium to the side with the most moles of gas to increase
+	  pressure
+
+
+*Reaction between Solid and Gasses*
+* For a reaction $\ce{aA (s) <=> bB (g) + cC (g)}$
+* Increase in pressure:
+	* No affect on rate of forward reaction
+	* Increase rate of reverse reaction, increases mass of reactant
 
 
 === Temperature ===
 
+* Will change the equilibrium constant
+
+
+*Increase in Temperature*
+* Le Chatelier's principle states that when a change is imposed upon a system in
+  equilibrium, the system will attempt to counteract the imposed change
+* Therefore if the temperature is increased, the system will attempt to decrease
+  the temperature
+* System will favour the endothermic reaction
+* Will increase forward/reverse reaction rate
+
+
+*Rate of Reaction Graph*
+* For an increase in temperature:
+	* Both the forward and reverse rate of reaction will sharply increase
+	* The endothermic reaction rate will increase more, then decrease over time
+	* The exothermic reaction rate will increase over time
+* For a decrease in temperature:
+	* Both the forward and reverse rates will decrease sharply
+	* The endothermic will decrease more, then increase over time
+	* The exothermic will decrease over time
+
+
+*Concentration Graph*
+* For an increase in temperature:
+	* Concentration of reactants/products (whichever are produced by the
+	  endothermic reaction) will increase over time
+	* Concentration of others will decrease
+* Opposite will happen for a decrease in temperature
+
 
 === Catalyst ===
+
+*Addition of Catalyst*
+* Both the forward and reverse reaction rate will increase by equal amounts
+* No change in concentration
+* No change in amount of products/reactants produced
+* Will speed up how quickly the reaction reaches equilibrium in subsequent
+  changes to the equilibrium
+
+
+*Rate of Reaction Graph*
+* Both rates increase sharply by the same amount
+
+
+*Concentration Graph*
+* No change
+* Remains in equilibrium
+
+
+== Compromise Reactions ==
+
+$$
+\ce{H2 + N2 <=> 2NH3 (g)}
+$$
+
+* $\Delta H = -92\mbox{ kJ}$
+
+*Compromise Temperature*
+* In the above reaction:
+	* A high temperature would increase the proportion of particles with kinetic
+	  energy greater than the activation energy, and increase the frequency of
+	  collisions, increasing the rate of reaction
+	* A low temperature would favour the forward exothermic reaction, resulting
+	  in a higher yield
+* Since we have conflicting temperature requirements, a _moderate_ temperature
+  is required to satisfy both constraints
+* Similar situation occurs for pressure
+
+
+== Harber Process ==
+
+$$
+\ce{N2 (g) + H2 (g) <=> 2NH3 (g)}
+$$
+
+* $\Delta H = -92\mbox{ kJ}$
+* $\ce{N2}$ retrieved from air
+* $\ce{H2}$ produced by steam reforming process
+* Produces ammonia
+
+
+*Conditions*
+* High pressure
+	* 10 - 25 MPa
+	* Increase rate of forward reaction to produce more $\ce{NH3}$
+	* Since the right side of the equilibrium has the least moles of gas
+	* So the system will favour the forward reaction to decrease the pressure
+	* To increase the yield
+* Compromise temperature
+	* $350^\circ$ to $550^\circ$ Celsius
+	* High temperature to increase rate of reaction by an increased proportion
+	  of particles with kinetic energy greater than the activation energy, and
+	  more frequent collisions
+	* Low temperature to favour forward reaction to increase yield, since the
+	  forward reaction is exothermic
+* Catalyst
+	* Porous, so we can pass gases through it
+	* $\ce{Fe3O4}$
+
+
+*Yield*
+* 20 - 30%
+* Increase yield by reusing unreacted $\ce{N2}$ and $\ce{H2}$
+
+
+=== Production of Hydrogen ===
+
+* Performed in two steps
+* Steam reforming produces the hydrogen
+* Shift reaction turns toxic carbon monoxide into carbon dioxide, producing more
+  hydrogen in the process
+
+
+==== Steam Reforming ====
+
+$$
+\ce{CH4 (g) + H2O (g) <=> CO (g) + 3H2 (g)}
+$$
+
+* $\Delta H = +206\mbox{ kJ}$
+
+
+*Conditions*
+* High temperature
+	* $700^\circ$ to $1000^\circ$ Celsius
+* Comprimise pressure
+	* 1 to 2 MPa
+* Catalyst
+	* Nickel
+
+
+==== Shift Reaction ====
+
+$$
+\ce{CO (g) + H2O (g) <=> H2 (g) + CO2 (g)}
+$$
+
+* $\Delta H = -41\mbox{ kJ}$
+
+
+*Conditions*
+* High pressure
+	* 1 to 2 MPa
+	* Same used for the steam reforming
+	* Doesn't matter for yield, as there are the same moles of gas on each side
+	  of the reaction
+* Compromise temperature
+	* $200^\circ$ to $500^\circ$ Celsius
+* Catalyst
+	* Mixture of $\ce{Fe2O4}$, $\ce{Cr2O}$, $\ce{CuO}$, $\ce{ZnO}$
+
+
+== Contact Process ==
+
+* Production of $\ce{H2SO4}$
+* Two stages
+
+
+=== Stage 1 ===
+
+$$
+\ce{SO2 (g) + O2 (g) <=> 2SO3 (g)}
+$$
+
+* $\Delta H = -196\mbox{ kJ}$
+
+*Conditions*
+* High pressure
+	* Just above 1 atmosphere
+	* Around 100 kPa
+* Compromise temperature
+	* $400^\circ$ to $500^\circ$ Celsius
+* Catalyst
+	* $\ce{V2O5}$
+
+
+=== Stage 2 ===
+
+$$
+\ce{H2SO4 + SO3 -> H2S2O7} \\
+\ce{H2S2O7 + H2O -> 2H2SO4} \\
+$$
+
+* $\ce{SO3}$ fed into absorption tower
+* Meets counterflow of 98% $\ce{H2SO4}$
+* $\ce{SO3}$ dissolves forming 100% $\ce{H2SO4}$
+* 100% $\ce{H2SO4}$ is extracted
+* Some is diluted back to 98% and reused
+* Some is diluted and sold
+
+
+*Pure Water*
+* Pure water instead of 98% $\ce{H2SO4}$ is not used
+* Because hydration of $\ce{SO3}$ is highly exothermic
+* Forms a very hot and fine mist of $\ce{H2SO4}$
+* Takes a long time to cool
+* Would also likely cause the container to explode from sudden increase in
+  pressure
