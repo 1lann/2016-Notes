@@ -32,6 +32,9 @@
 
 == Techniques ==
 
+=== General ===
+
+*Abstract*
 * Simile
 	* Comparison of something to something else (like, as)
 	* Associate ideas, emphasise something
@@ -42,34 +45,48 @@
 	* Identifying something as something traditionally associated with humans
 	* Humanise something, make something more personal or likeable, emphasise
 	  ideas
+* Hyperbole
+	* Gross exaggeration of something
+	* Emphasise an idea
+* Symbolism
+	* Where something represents something else
+	* Associates connotations with an idea
+* Juxtaposition
+	* Positioning two contrasting things next to each other
+	* Emphasise their difference, further emphasise an idea
+* Imagery
+	* Descriptive language
+	* Emphasise an idea, might include connotations with specific words used
+	* Visual, Auditory, Kinesthetic (touch), Olfactory (smell), Gustatory
+	  (taste)
+* Tone
+	* General character of a phrase
+	* Eg. sarcastic, endearing, aggressive, etc.
+	* Emphasise idea through emotion expressed
+* Irony
+	* Presents an idea incongruous with another
+* Allusion/intertext
+	* Reference to another text
+	* Emphasise an idea by giving a greater understanding
+* Context of production/reception
+
+
+*Language*
 * Sibilance
 	* Repetition of "s" sound
 	* Sound serpent-like, devilish, evil
 	* Sound soft, inviting, calm
 	* Pretty much whatever you want
+* Assonance
+	* Repetition of a vowel sound in the middle of subsequent words
+	* Pretty much whatever you want
 * Alliteration
 	* Repetition of a sound at the start of subsequent words
 	* Pretty much whatever you want
 	* Eg. plosive "p" sounds are harsh, emphasise negativity of something
-* Juxtaposition
-	* Positioning two contrasting things next to each other
-	* Emphasise their difference, further emphasise an idea
-* Allusion/intertext
-	* Reference to another text
-	* Emphasise an idea by giving a greater understanding
-* Dramatic Irony
-	* Where the effects of a character's actions are only fully understood by
-	  the audience, and not the character themselves
-	* Emphasise an idea
-* Symbolism
-	* Where something represents something else
-	* Associates connotations with an idea
 * Anastrophe
 	* Placing adjectives after nouns, contrary to normal English
 	* Emphasises significance of adjectives
-* Assonance
-	* Repetition of a vowel sound in the middle of subsequent words
-	* Pretty much whatever you want
 * Connotation
 	* Using a word that has ideas associated with it to describe something
 	* Associates ideas with something
@@ -80,25 +97,67 @@
 	* Using a more "politically correct" term for something more shocking
 	* Comment on society's inability to confront serious issues, obsession with
 	  political correctness
-* Foreshadowing
-	* Indicating a future event
-* Hyperbole
-	* Gross exaggeration of something
-	* Emphasise an idea
-* Imagery
-	* Descriptive language
-	* Emphasise an idea, might include connotations with specific words used
 * Oxymoron
 	* Juxtaposition of two contradictory words
 	* Emphasise idea through contrast
-* Tone
-	* General character of a sentence
-	* Eg. sarcastic, loving, etc.
-	* Emphasise idea through emotion expressed
+* Inclusive language
+	* Eg. we, us, as opposed to I, they
+
+
+=== Poetry ===
+
 * Rhyme
 	* Rhyming words at end of lines in poem
 	* 4 lines a stanza, rhyming scheme similar to that of a nursery rhyme,
 	  convey childish connotations, emphasise innocence, etc.
 * Enjambment
 	* Symbolic meaning for ending a line of a poem in the middle of a sentence
-* Context of production/reception
+* Volta
+	* Sudden shift in the tone or perspective of the poem
+* Sonnet
+	* Form of poem, usually associated with love poetry
+	* 14 lines, follows strict rhyming scheme
+* Couplet
+	* Two successive lines in a poem that rhyme
+	* Aid rhythm, draw emphasis to idea
+* Iambic pentameter
+	* Five stressed syllables each preceded by an unstressed one
+
+
+=== Prose ===
+
+* Narrative point of view
+	* First person, third person limited, third person omnipotent
+	* Naive narrator
+* Plot
+	* Create suspense
+* Setting
+	* When and where
+* Foreshadowing
+	* Indicating a future event
+
+
+=== Drama ===
+
+* Dramatic Irony
+	* Where the effects of a character's actions are only fully understood by
+	  the audience, and not the character themselves
+	* Emphasise an idea
+* Foreshadowing
+	* Indicating a future event
+* Hamartia
+	* A character's fatal flaw which leads to their downfall
+
+
+== Reading Theories ==
+
+* Marxism
+	* Classist
+* Post colonialism
+	* Racist
+* Feminism
+	* Sexist
+* Ecocriticism
+	* Concern for the environment
+* Existentialism
+	*
