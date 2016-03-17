@@ -186,6 +186,9 @@
 * To prove a function $f(x)$ is one to one, prove the contrapositive of the
   definition
 * Show that $f(x) = f(y)$ is simplifies to $x = y$
+* Or show the function is strictly increasing or decreasing
+	* This doesn't work for all one to one functions
+	* If it doesn't work, fall back to the above method
 
 
 == Increasing and Decreasing Functions ==
@@ -271,6 +274,8 @@
 *Definition*
 * Separate the function $f(x)$ into two functions $g(x)$ and $h(x)$ such that
   $f(x) = g(h(x))$
+* If we're given $f(g(x))$ and $f(x)$ and asked to find $g(x)$, do it by
+  inspection
 
 
 == Inverse Functions ==
@@ -288,7 +293,6 @@
 *Defined*
 * The inverse of $f(x)$ is only defined if $f(x)$ is one to one
 	* Otherwise the inverse will be a relation and not a function
-* $f(x)$ must pass the horizontal line test
 
 
 *Domain and Range*
@@ -311,6 +315,20 @@
 
 
 = Remainder and Factor Theorem =
+
+== Division Identity ==
+
+$$
+f(x) = D(x)Q(x) + R(x)
+$$
+
+* For the function $f(x)$
+* $D(x)$ is the divisor
+* $Q(x)$ is the quotient
+* $R(x)$ is the remainder
+* The remainder is a polynomial of at least 1 degree less than the divisor
+* The quotient is a polynomial of at least 1 degree less than $f(x)$
+
 
 == Polynomial Division ==
 
@@ -352,6 +370,8 @@ $$
 
 * Given the polynomial $f(x)$
 * The remainder when dividing $f(x)$ by $(x - a)$ is $f(a)$
+* Also works for higher degree polynomials
+	* For example, if $(x^2 + 4)$ is a factor of $f(x)$, then $f(\pm 2i) = 0$
 
 
 *Example*
@@ -362,13 +382,15 @@ $$
 
 === Proof ===
 
-* Given the polynomial $f(x)$
-* $f(x)$ can be written as $f(x) = g(x)(x - a) + k, k \in \mathbb{R}$ for some
-  other polynomial $g(x)$
-* It follows that dividing $f(x)$ by $(x - a)$ will leave us with a remainder
-  of $k$
-* Consider $f(a) = g(a)(a - a) + k = k$
-* Therefore $f(a)$ is the remainder of $f(x)$ when divided by $(x - a)$
+* Consider the division identity $f(x) = D(x)Q(x) + R(x)$
+* Let the divisor $D(x) = x - a$
+* Since the degree of $R(x)$ must be at least 1 less than $D(x)$, $R(x)$ is a
+  constant
+* Therefore let $R(x) = k, k \in \mathbb{R}$
+* $f(x) = (x - a)Q(x) + k$
+* Hence the remainder when $f(x)$ is divided by $(x - a)$ is $k$
+* Consider $f(a) = (a - a)Q(x) + k = k$
+* Therefore the remainder of $f(x)$ when divided by $(x - a)$ is $f(a)$
 
 
 == Factor Theorem ==
@@ -378,34 +400,42 @@ $$
 
 === Proof ===
 
-* If $(x - a)$ is a factor of $f(x)$, then the remainder when $f(x)$ is divided
-  by $(x - a)$ will be 0
-* By the remainder theorem, this implies $f(a) = 0$
+*Forwards*
+* Consider the division identity: $f(x) = Q(x)D(x) + R(x)$
+* Let $(x - a)$ be a factor of $f(x)$
+* Hence $f(x) = (x - a)Q(x)$, where $R(x) = 0$ since $(x - a)$ is a factor
+* Consider $f(a) = (a - a)Q(x) = 0$
+* Hence $f(a) = 0$ when $(x - a)$ is a factor of $f(x)$
 
 
-== General Form ==
-
-* The general form of the polynomial $f(x)$ is
-
-$$
-f(x) = (Q(x))(x - a) + f(a)
-$$
+*Backwards*
+* Consider when $f(x)$ is divided by $(x - a)$
+* $f(x) = (x - a)Q(x) + k, k \in \mathbb{R}$
+	* $k$ is a constant since the degree of the remainder is at least 1 less
+	  than that of the divisor
+* Consider when $f(a) = 0$
+* $f(a) = (a - a)Q(x) + k = 0$
+* It follows that $k = 0$, ie. there is no remainder, hence $(x - a)$ is a
+  factor
 
 
 == Solving Real Polynomials ==
 
-*Goal*
-* Express polynomial as a product of multiple linear factors
+*Process*
+* Express polynomial as a product of multiple linear factors (factorise it)
 * Use null factor law to solve
 
 
 *Factorisation*
 * Find one root by guessing a range of values
 	* Substitute a range of $x$ values into $f(x)$
-	* Find a value of $x$ where $f(x) = 0$
+	* Find a value of $a$ where $f(a) = 0$
 	* $(x - a)$ is therefore a factor
+	* Guesses for $a$ must be a factor of the constant term in the polynomial
 * Divide $f(x)$ by $(x - a)$ using long division or algebraic juggling
-* Repeat for quotient until we have a series of linear factors
+* Repeat for quotient until we have a quadratic remaining
+* Compare coefficients to find the coefficients for the remaining quadratic
+* Factorise the quadratic
 * Watch out for simplifications
 	* Common factor of $x$
 	* Quadratics
@@ -415,3 +445,90 @@ $$
 == Solving Complex Polynomials ==
 
 TODO:
+
+
+*Procedure*
+* Given $f(x)$ and $g(x)$, find $f(g(x))$ and its domain and range
+* Find domain and range of $f(x)$ and $g(x)$
+* If the domain of $f(x)$ can cope with range of $g(x)$
+	* Domain of $f(g(x))$ is the same as that of $g(x)$
+	* Find the range of $f(x)$ given the domain is the same as the range of
+	  $g(x)$. This will be the range of $f(g(x))$
+* If the domain of $f(x)$ cannot cope with the range of $g(x)$
+	* Restrict the range of $g(x)$ by merging its current range with the domain
+	  of $f(x)$
+	* Reverse this range restriction into a restriction on the domain of $g(x)$
+		* For an upper and lower bound on the range
+		* Substitute in the upper and lower numbers and use the most restricted
+		  range for each
+	* The domain of $f(g(x))$ is the same as the newly restricted domain of
+	  $g(x)$
+	* Find the range of $f(g(x))$ using the newly restricted range of $g(x)$ as
+	  the domain for $f(x)$
+		* For an upper and lower bound, substitute in both, and look for turning
+		  points in between, to find the maximum and minimum
+
+
+
+= Questions =
+
+*Polynomials*
+* Division identity
+* Divide a polynomial by a divisor
+* Find quotient and remainder when polynomial is divided by a divisor
+
+
+*Remainder Theorem*
+* Prove the remainder theorem
+* Find the remainder if $f(x)$ is divided by $x - a$ (for complex and real
+  polynomials)
+* Find coefficients of $f(x)$ given remainders of some divisors, or given some
+  factors
+	* Create system of equations using remainder and factor theorem
+	* Or write as the product of its roots and expand, then match up
+	  corresponding coefficients
+	* If given $(x - a)^2$ as a factor, then $f'(a) = 0$ since there is a
+	  turning point at $x = a$
+
+
+*Factor Theorem*
+* Prove the factor theorem
+* Find factors of a polynomial
+* Factorise completely a polynomial
+* Solve a polynomial (for complex and real solutions)
+
+
+*Functions*
+* Find domain and range of a function
+* Restrict the domain and range of a relation so that it becomes a function
+* Restrict the domain of a many to one function so that it becomes a one to one
+  function
+* Prove a function is strictly increasing or decreasing
+* Prove a function is one to one
+* Find the inverse of a function
+* Find the inverse of a function given its graph
+* Explain why the inverse of a function exists
+* Prove $(f \circ g)^{-1} (x) = g^{-1} \circ f^{-1} (x)$
+
+
+*Composite Functions*
+* Find a composite function given original functions
+* Find domain and range of a composite function
+* Restrict the domain of a composite function so that it is defined
+* Decompose a composite function given the inner or outer function
+	* Find $f(x)$ given $f(g(x))$ and $g(x)$
+	* Find $f(x)$ given $g(f(x))$ and $g(x)$
+
+
+*Tricks*
+* Remember to chose the negative solution to $x^2$ when domain is negative
+	* Same for $|x|$
+* When asked for the domain or range of the inverse, look first for the domain
+  and range of the original function to avoid recalculating it
+* Guesses for factors when solving polynomials must be factors of the constant
+  term
+* Look only at the term of $x$ with the largest exponent when considering the
+  behaviour of a function as $x \to \infty$
+* Always visualise the graph
+* Underline information in the question
+* Don't make calculation errors
