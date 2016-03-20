@@ -40,12 +40,12 @@
 
 === Rule ===
 
-$$
+{{$
 \begin{align*}
 y & = ax^n \\
 \frac{dy}{dx} & = anx^{n - 1} \\
 \end{align*}
-$$
+}}$
 
 === Common Derivatives ===
 
@@ -57,70 +57,70 @@ $$
 
 == Product Rule ==
 
-$$
+{{$
 \begin{align*}
 y & = uv \\
 \frac{dy}{dx} & = \frac{du}{dx} v + \frac{dv}{dx} u \\
 \end{align*}
-$$
+}}$
 
 
 == Quotient Rule ==
 
-$$
+{{$
 \begin{align*}
 y & = \frac{u}{v} \\
 \frac{dy}{dx} & = \frac{\frac{du}{dx} v - \frac{dv}{dx} u}{v^2} \\
 \end{align*}
-$$
+}}$
 
 
 == Chain Rule ==
 
-$$
+{{$
 \frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx}
-$$
+}}$
 
 
 == Trigonometry ==
 
 === Sine ===
 
-$$
+{{$
 \begin{align*}
 y & = \sin{x} \\
 \frac{dy}{dx} & = \cos{x} \\
 \end{align*}
-$$
+}}$
 
 === Cosine ===
 
-$$
+{{$
 \begin{align*}
 y & = \cos{x} \\
 \frac{dy}{dx} & = -\sin{x} \\
 \end{align*}
-$$
+}}$
 
 === Tangent ===
 
-$$
+{{$
 \begin{align*}
 y & = \tan{x} \\
 \frac{dy}{dx} & = \frac{1}{\cos^2{x}} \\
 & = \sec^2{x} \\
 \end{align*}
-$$
+}}$
 
 
 == e ==
 
-$$
+{{$
 \begin{align*}
 y & = e^u \\
 \frac{dy}{dx} & = \frac{du}{dx} e^u \\
 \end{align*}
-$$
+}}$
 
 
 
@@ -327,12 +327,12 @@ $$
 
 == Estimation ==
 
-$$
+{{$
 \begin{align*}
 \frac{dy}{dx} & \approx \frac{\delta y}{\delta x} \\
 \delta y & \approx \delta x \frac{dy}{dx} \\
 \end{align*}
-$$
+}}$
 
 * Be aware we can also use the inverse of the derivative $\frac{dx}{dy}$
 
@@ -344,14 +344,14 @@ $$
 * Given $\frac{\delta x}{x}$
 * Asked for $\frac{\delta y}{y}$
 
-$$
+{{$
 \begin{align*}
 \frac{\delta x}{x} & = \frac{k}{100} \\
 \frac{dy}{dx} & \approx \frac{\delta y}{\delta x} \\
 \delta y & \approx \frac{dy}{dx} \delta x \\
 \frac{\delta y}{y} & \approx \frac{dy \delta x}{dx y} \\
 \end{align*}
-$$
+}}$
 
 * This will simplify to some constant multiplied by $\frac{\delta x}{x}$
 

@@ -13,7 +13,7 @@ $\require{mhchem}$
             - [[#Organic#Hydrocarbons#Combustion Reaction|Combustion Reaction]]
             - [[#Organic#Hydrocarbons#Fractional Distillation|Fractional Distillation]]
         - [[#Organic#Halogens|Halogens]]
-        - [[#Organic#Methyl Groups|Methyl Groups]]
+        - [[#Organic#Alkyl Groups|Alkyl Groups]]
         - [[#Organic#Cyclic Compounds|Cyclic Compounds]]
         - [[#Organic#Isomers|Isomers]]
             - [[#Organic#Isomers#Structural Isomers|Structural Isomers]]
@@ -30,15 +30,19 @@ $\require{mhchem}$
         - [[#Organic#Esters|Esters]]
             - [[#Organic#Esters#Hydrolysis Reaction|Hydrolysis Reaction]]
         - [[#Organic#Amines|Amines]]
+        - [[#Organic#Alpha Amino Acids|Alpha Amino Acids]]
+        - [[#Organic#Polymerisation|Polymerisation]]
+            - [[#Organic#Polymerisation#Addition Polymerisation|Addition Polymerisation]]
+                - [[#Organic#Polymerisation#Addition Polymerisation#Polyethene|Polyethene]]
+            - [[#Organic#Polymerisation#Condensation Polymerisation|Condensation Polymerisation]]
 
 
 
 
 = Organic =
 
-* Organic compounds contain:
-	* Only non-metal elements
-	* A carbon atom
+* An organic compound is one that contains only non-metal elements, and at
+  least one carbon atom
 
 
 == Carbon Chain Length Prefix ==
@@ -57,8 +61,8 @@ $\require{mhchem}$
 
 == Alkanes ==
 
-* Contain only carbon/carbon single bonds
-* No double or triple bonds
+* Alkanes contain only carbon/carbon single bonds
+	* Don't contain any double or triple bonds
 * Formula: $\ce{C_{n}H_{2n + 2}}$
 * Suffix: -an
 
@@ -71,8 +75,7 @@ $\require{mhchem}$
 
 === Substitution Reaction ===
 
-* Only for alkanes
-* Between alkane and halogen
+* A substitution reaction is only between an alkane and a halogen
 * Replaces a hydrogen with a halogen atom
 * Produces a halogen hydride
 
@@ -80,13 +83,15 @@ $\require{mhchem}$
 *Properties*
 * Very slow reaction
 * Sped up in the presence of UV light
+	* Acts as a catalyst
 
 
 *Multiple Substitutions*
-* The reaction will continue over time until all hydrogens have been replaced
-* Multiple hydrogen atoms will be replaced on the same molecule
+* The reaction will repeat itself over time until all hydrogens have been
+  replaced by the halogen
+* Multiple hydrogen atoms can be replaced on the same molecule
 * Naming:
-	* Disubstitution: 2 hydrogen atoms replaced on a molecule
+	* Disubstitution: 2 hydrogen atoms replaced on a single molecule
 	* Trisubstitution: 3 hydrogen atoms replaced
 	* Tetrasubstitution: 4 hydrogen atoms
 	* Etc...
@@ -94,19 +99,21 @@ $\require{mhchem}$
 
 *Examples*
 * Methane and chlorine (monosubstitution)
+	* $\ce{CH4 + Cl2 -> CClH3 + HCl}$
 * Chloro-methane and chlorine (disubstitution)
+	* $\ce{CClH3 + Cl2 -> CCl2H2 + HCl}$
 
 
 == Alkenes ==
 
-* Contain at least 1 carbon/carbon double bond
-* No triple bonds
+* Alkenes contain at least 1 carbon/carbon double bond
+	* No triple bonds
 * Formula (for 1 double bond): $\ce{C_{n}H_{2n}}$
 * Suffix: -en
 
 
 *Double Bond*
-* No rotation around double bond
+* Parts of the molecule can't rotate around the double bond
 
 
 *Methene*
@@ -117,6 +124,8 @@ $\require{mhchem}$
 *Positioning*
 * Position of double bond included in name
 * Carbon atoms are numbered to minimise the position of the double bond
+* Minimising the location of the double bond takes priority over any halogens
+  or alkyl groups attached to the main carbon chain
 
 
 *Examples*
@@ -128,14 +137,14 @@ $\require{mhchem}$
 
 === Addition Reaction ===
 
-* Only for alkenes
-* Between alkene and halogen or hydrogen
-* Only produces one organic product
+* Addition reactions are only between alkenes and a halogen or hydrogen
+* Produces only a single organic product
 
 
 *Procedure*
-* Remove double bond
-* Add halogen or hydrogen to both carbons that used to be doubly bonded
+* Replace the double bond with a single bond
+* Add a halogen or hydrogen to both carbons that used to be bonded by the double
+  bond
 
 
 *Properties*
@@ -144,8 +153,8 @@ $\require{mhchem}$
 
 
 *Tricks*
-* Bromine liquid is orange colour
-* When added to alkene, turns colourless quickly
+* Bromine is an orange coloured liquid at room temperature
+* When added to an alkene, the solution turns colourless quickly
 	* Since addition reaction proceeds quickly
 
 
@@ -157,8 +166,10 @@ $\require{mhchem}$
 
 == Alkynes ==
 
-* Contain at least 1 triple carbon/carbon bond
+* Alkynes contain at least 1 triple carbon/carbon bond
 * Suffix: -yn
+* The position of the triple bond is included in the molecule's name similar to
+  the double bond on an alkene
 
 
 *Methyne*
@@ -173,44 +184,45 @@ $\require{mhchem}$
 
 == Hydrocarbons ==
 
-* Contain hydrogen and carbon only
-* Obtained from crude oil
+* Hydrocarbons contain hydrogen and carbon only
+	* Can have any number of single, double, or triple bonds
+* They are obtained from crude oil
 	* Separated by fractional distillation
 
 
 === Combustion Reaction ===
 
 * All hydrocarbons burn in the presence of oxygen
-* Exothermic reaction
-* High activation energy
-* Produces water and carbon dioxide
+* Combustion is a highly exothermic reaction
+* Has a high activation energy
+* Produces only water and carbon dioxide
 
 
-*Complete*
+*Complete Combustion*
 
-$$
+{{$
 \ce{CH4 + 2O2 -> CO2 + 2H2O}
-$$
+}}$
 
 * Occurs in excess oxygen
 * Forms carbon dioxide
 
 
-*Partial*
+*Partial Combustion*
 
-$$
+{{$
 \ce{CH4 + O2 -> CO + H2O}
-$$
+}}$
 
 * Occurs when oxygen supply is limited
 * Forms carbon monoxide (lethal to humans)
 
 
-*Incomplete*
+*Incomplete Combustion*
 
-$$
+{{$
 \ce{CH4 + O2 -> C + 2H2O}
-$$
+}}$
 
 * Occurs when oxygen supply is very limited
 * Forms carbon
@@ -218,28 +230,26 @@ $$
 
 === Fractional Distillation ===
 
+TODO:
+
 
 == Halogens ==
 
-* Act as hydrogens off carbon atoms
-* Included in name of compound
-* Parts included:
-	* Location (carbon atom number)
-	* Number of halogen
-	* Type of halogen
+* Halogens can replace any hydrogen attached to a carbon in an organic molecule
+* The position and type of halogen is included in the name of the molecule
 
 
 *Location*
-* Keeping the position of the double bond as low as possible takes priority over
-  halogens when numbering carbon atoms
-* For example:
+* The number of the carbon the halogen is attached to is used as its location
+* When numbering the carbon atoms in the main carbon chain, minimising the
+  position of the double bond takes priority over minimising the location of any
+  halogens
+	* For example, the following is 3-chloro propene, not chloro prop-2-ene:
 
 IMAGE HERE
 
-* Is 3-chloro propene, not chloro prop-2-ene
 
-
-*Halogen Type*
+*Halogen Types*
 * Fluorine: fluoro
 * Chlorine: chloro
 * Bromine: bromo
@@ -260,11 +270,14 @@ IMAGE HERE
 * 1,1,2-trichloro 2-bromo propane
 
 
-== Methyl Groups ==
+== Alkyl Groups ==
 
-* Extra carbon atoms extending off the longest chain
-* Cannot exist off first or last carbon atom
-	* Would form a longer chain
+* Alkyl groups are smaller carbon chains attached to a carbon on the longest
+  chain
+* An alkyl group cannot be attached to the first or last carbon on the longest
+  chain
+	* This would form a longer main chain, rather than an alkyl group
+* The position and length of the chain is again included in the name
 * Suffix: -yl
 
 
@@ -276,9 +289,10 @@ IMAGE HERE
 
 == Cyclic Compounds ==
 
-* Carbon chain forms circle
+* Where the carbon chain forms a circle
+* Can start numbering the carbon atoms from any carbon in the circle
 * Prefix: cyclo-
-* Formula: $\ce{C_{n}H_{2n}}$ (same as for alkenes)
+* Formula: $\ce{C_{n}H_{2n}}$ (same as alkenes)
 
 
 *Examples*
@@ -290,8 +304,9 @@ IMAGE HERE
 
 == Isomers ==
 
-* Molecules with the same molecular formula but different physical structures
-* To change one isomer into another, bonds must be broken
+* Isomers are molecules with the same molecular formula but different physical
+  structures
+* To change one isomer into another, bonds in the molecule must be broken
 
 
 === Structural Isomers ===
@@ -306,17 +321,21 @@ IMAGE HERE
 
 === Geometric Isomers ===
 
-* Only for molecules with a double bond (alkenes)
-* Different orientations of atoms around the double bond
-	* Since no rotation can occur around the bond
+* Geometric isomers only exist for molecules that contain a double bond (ie.
+  alkenes)
+* Since no rotation can occur around the double bond, a different arrangement of
+  atoms around the double bond will form a new molecule
 * Only occurs when both carbon atoms in the double bond have 2 different
-  elements off of them
+  elements attached to them
 
 
 *Naming*
-* Cis isomers have the two identical atoms on the same side (top or bottom) of
-  the carbon atoms they're attached to
-* Trans isomers have the two identical atoms diagonally opposite each other
+* Cis isomer
+	* The two top or bottom atoms of the two carbons attached by a double
+	  bond are the same
+* Trans isomer
+	* The atoms diagonal of each other across the double bond are the same
+
 
 
 *Examples*
@@ -328,14 +347,15 @@ IMAGE HERE
 *Examples with No Geometric Isomerism*
 * Ethene
 * But-1-ene
+* 2,2-chloro ethene
 
 
 == Saturation ==
 
-* A compound is saturated if every carbon has 4 distinct bonds off of it
-* Contain no double bonds
-* Means compound must be an alkane
-* Includes cyclic compounds
+* A compound is saturated if every carbon has 4 other atoms attached to it
+	* Ie. the molecule contains no double bonds
+* Only alkenes are saturated
+	* Includes cyclic alkenes
 
 
 *Examples*
@@ -350,52 +370,60 @@ IMAGE HERE
 
 == Alcohols ==
 
-* Contains $\ce{OH}$ functional group somewhere on carbon chain
-	* Location included in name
-* $\ce{OH}$ takes highest priority in numbering
+* Alcohols have an $\ce{OH}$ functional group attached to a carbon on the main
+  chain
+	* Also called a hydroxyl group
+* The position of the $\ce{OH}$ takes highest priority in numbering the carbon
+  atoms on the main chain
+	* Higher priority than a double bond
 * Suffix: -ol
-* Structural formula: $\ce{R - C - OH}$
+* Formula: $\ce{R - C - OH}$
 
 
 *Properties*
 * Higher boiling points than alkanes with similar molar mass
-	* Hydrogen bonding due to hydroxide group
-	* Stronger dispersion forces due to additional oxygen
+	* Alcohols experience hydrogen bonding as a result of the hydroxyl group
+	* Also have stronger dispersion forces due to the additional oxygen
 * As carbon chain length increases, solubility of alcohols goes down
 
 
 *Examples*
 * Ethanol
+* Ethenol
 * Butan-1-ol
-* But-2-en-1-ol
+* Cis-but-2-en-1-ol
 * 3,4-diethyl cyclohexanol
 
 
 === Classification ===
 
-*Primary*
-* Carbon that alcohol is attached to has 0 or 1 other carbon attached to it
+*Primary Alcohol*
+* The carbon that the hydroxyl group is attached to has 0 or 1 other carbon
+  atoms attached to it
 * Examples:
 	* Methanol
 	* Butan-1-ol
 
 
-*Secondary*
-* Carbon that alcohol is attached to has 2 other carbons attached to it
+*Secondary Alcohol*
+* The carbon that the hydroxyl group is attached to has 2 other carbon atoms
+  attached to it
 * Examples:
 	* Butan-2-ol
 
 
-*Tertiary*
-* Carbon that alocohol is attached to has 3 other carbons attached to it
-* Exampels:
+*Tertiary Alcohol*
+* The carbon that the hydroxyl group is attached to has 3 other carbon atoms
+  attached to it
+* Examples:
 	* 2-methyl propan-2-ol
 
 
 === Isomers ===
 
-* Additional structural isomers exist
-* No additional geometric isomers
+* For a molecular formula containing an oxygen, there are multiple valid alcohol
+  structures in addition to all the normal structural isomers
+* There are no additional geometric isomers
 
 
 *Example*
@@ -408,47 +436,59 @@ IMAGE HERE
 
 === Hydration Reaction ===
 
-* Only for alkenes
-* Between alkene and water
+* A hydration reaction occurs between alkenes and water
 
 
 *Procedure*
-* Remove double bond
-* Add hydrogen to one carbon
-* Add $\ce{OH}$ group to other
+* Replace the double bond with a single bond
+* Add another hydrogen to one carbon
+* Add an $\ce{OH}$ group to the other carbon
 * Forms an alcohol
 
 
 *Examples*
 * Ethene and water, forms ethanol
+	* $\ce{CH2CH2 + H2O -> CH3CH2OH}$
 
 
 === Oxidation Reaction ===
 
-* Add oxygen or remove hydrogen
-* Classification determines how much oxidation an alochol can undergo
+* The oxidation of an alcohol occurs between an alcohol and a solution
+  containing $\ce{H+}$ ions
+* The alcohol's classification determines how much oxidation an alochol can
+  undergo
 
 
 *Procedure*
-* Oxidise by adding either:
+* An alcohol can be oxidised by adding it to a solution containing either of:
 	* Acidified permanganate ($\ce{H+}$ and $\ce{MnO4-}$)
 	* Acidified dichromate ($\ce{H+}$ and $\ce{Cr2O7^2-}$)
-* Permanganate or dichromate will be reduced
-	* $\ce{MnO4-}$ is reduced to $\ce{Mn^2+}$ ions
+* In this scenario, the permanganate or dichromate will be reduced
+	* $\ce{MnO4-}$ will be reduced to $\ce{Mn^2+}$
 		* Turns from purple to pale pink
-	* $\ce{Cr2O7^2-}$ is reduced to $\ce{Cr^3+}$ ions
+	* $\ce{Cr2O7^2-}$ will be reduced to $\ce{Cr^3+}$
 		* Turns from orange to deep green
+* And the alcohol will be oxidised
+	* Either a hydrogen will be removed, or an oxygen will be added to the
+	  molecule
 
 
 *Primary Alcohol*
-* From primary alcohol
-	* To aldehyde (remove hydrogen)
-	* To carboxylic acid (add oxygen)
+* A primary alcohol can be oxidised twice
+* First oxidisation will form an aldehyde (remove hydrogen)
+* Second oxidisation will form a carboxylic acid (add oxygen)
+* Primary alcohol to aldehyde to carboxylic acid
+* Example:
+	* Ethanol will form ethanal, then ethanoic acid
+	* $\ce{CH3CH2OH -> CH3CHO -> CH3COOH}$
 
 
 *Secondary Alcohol*
-* From secondary alcohol
-	* To ketone (remove hydrogen)
+* A secondary alcohol can be oxidised once
+* Will form a ketone (remove hydrogen)
+* Secondary alcohol to ketone
+* Example:
+	* Propan-2-ol will form propan-2-one
 
 
 *Tertiary Alcohol*
@@ -468,33 +508,66 @@ IMAGE HERE
 == Aldehydes ==
 
 * Suffix: -al
-* Structural formula: $\ce{R - CHO}$
+* Formula: $\ce{R - CHO}$
+* Aldehyde group always attached to the terminal carbon
+* The carbon that's part of the aldehyde group cannot be attached to another
+  carbon using a double bond
+	* As there would be 5 bonds attached to the carbon, when we can only have 4
+
+
+*Examples*
+* Ethanal
+* Butanal
+* Prop-2-enal
 
 
 == Ketones ==
 
 * Suffix: -one
-* Structural formula: $\ce{R - CO - R'}$
+* Formula: $\ce{R - CO - R'}$
+	* $R$ and $R'$ must be an alkyl group containing at least 1 carbon
+* Smallest keytone is propanone
+
+
+*Examples*
+* Propanone
+* Butan-2-one
+* Pentan-3-one
 
 
 == Carboxylic Acids ==
 
 * Suffix: -oic acid
-* Structural formula: $\ce{R - COOH}$
+* Formula: $\ce{R - COOH}$
+	* $R$ can be a hydrogen or an alkyl group
+* Carboxylate group must be attached at the end of the main carbon chain
+	* Similar to aldehydes
+	* Carbon must not be double bonded
+* Act as weak bases
+	* Hydrogen on the end of the carboxylate group ionises
+
+
+*Examples*
+* Methanoic acid
+* Ethanoic acid
+* Pent-2-enoic acid
 
 
 == Esters ==
 
-* Molecule and name consist of alcohol and carboxylic acid part
-* Suffix: -oate
-* Structural formula: $\ce{R - COO - R'}$
+* An ester is a molecule comprised of an alcohol and carboxylic acid
+* The name
+* Suffix: -yl -oate
+* Formula: $\ce{R - COO - R'}$
+	* $R$ can be an alkyl group or hydrogen atom
+	* $R'$ must be an alkyl group
 
 
-*Procedure*
-* Mix carboxylic acid and alcohol
-* With $\ce{H+}$ ion catalyst like $\ce{H2SO4}$
-* Produce ester and water
-* Is an equilibrium reaction
+*Formation*
+* Mix a carboxylic acid and an alcohol with an $\ce{H+}$ ion catalyst (like
+  $\ce{H2SO4}$)
+* Produces an ester and water
+* The reaction is an equilibrium
 
 
 *Properties*
@@ -505,26 +578,147 @@ IMAGE HERE
 *Examples*
 * Methyl methanoate
 	* Formed from methanol and methanoic acid
+	* $\ce{CH3OH + HCOOH <=> HCOOCH3 + H2O}$
 * Methyl ethanoate
 	* Formed from methanol and ethanoic acid
+	* $\ce{CH3OH + CH3COOH <=> HCOOCH2CH3 + H2O}$
 * Prop-2-yl ethanoate
 	* Formed from prop-2-ol and ethanoic acid
 
 
 === Hydrolysis Reaction ===
 
-* Break up ester into constituent alcohol and carboxylic acid
-* Add strong acid or base
+* Break up an ester into its constituent alcohol and carboxylic acid
+* Done by adding a strong acid or base
 
 
 *Acid Procedure*
+* Add a strong acid
 * Produces original alcohol and carboxylic acid
+* $\ce{R - COO - R' -> R - COOH + R' - OH}$
+	* $\ce{H+}$ ions act as catalyst
 
 
 *Base Procedure*
-* Produces alcohol and salt of carboxylic acid (with the carboxylate ion)
-	* For example, $\ce{NaOH}$ base will produce $\ce{NaCOOH}$ (sodium
-	  carboxylate)
+* Add a strong base
+* Produces alcohol and salt of the carboxylic acid
+	* For example, $\ce{NaOH}$ base will produce $\ce{NaCOO}$ (sodium
+	  carboxylate), assuming the ester's carboxylic acid was methanoic acid
+* $\ce{R - COO - R' -> R - COO^- + R' - OH}$
+	* $\ce{OH-}$ ions act as catalyst
+	* $\ce{COO^-}$ combines with metal from base (eg. sodium) to form
+	  $\ce{NaRCOO}$
 
 
 == Amines ==
+
+* Suffix: -amine
+* Formula: $\ce{R - NH2}$
+	* $R$ must be an alkyl group (contain at least 1 carbon)
+	* Can be anywhere on the carbon chain
+* Numbering of amine group takes priority over other groups
+* Primary, secondary, and tertiary amines exist
+	* Only need to know about primary amines
+
+
+*Properties*
+* Lower boiling point than alcohols, but higher than hydrocarbons
+	* Weaker hydrogen bonding than alcohols, since electronegativity of nitrogen
+	  is less than that of oxygen
+* Solubility decreases as carbon chain length increases
+* Fishy smell
+	* Pungent, like ammonia
+* Solutions of amines act as bases
+	* $\ce{CH3NH2 + H2O <=> CH3NH3+ + OH-}$
+
+
+*Examples*
+* Methanamine (primary amine)
+* Propan-1-amine (primary amine)
+* Propan-2-amine (secondary amine)
+* 2-methyl butan-2-amine (tertiary amine)
+
+
+== Alpha Amino Acids ==
+
+* Contain amine and carboxylic acid group on the terminal carbon
+* Amino acids join to form proteins
+
+
+*Properties*
+* Can behave as either an acid or base
+	* At high pH (basic), carboxylic acid group donates $\ce{H+}$
+	* At low pH (acidic), amine group accepts $\ce{H+}$
+* Solid at room temperature
+	* Relatively high melting and boiling points
+* Relatively soluble in water
+
+
+*Bonding*
+* $\ce{H+}$ on carboxylic acid group is only weakly attracted to its oxygen
+* Moves to $\ce{N}$ and forms an $\ce{NH3+}$ group, leaving a $\ce{COO-}$
+  carboxylate group
+* Called zwitterions
+	* Positive charge on one part of the atom and a negative on another
+* Ionically bond with other molecules
+* Act as both the anion and cation
+* Also exist in this state when dissolved in aqueous solution
+
+
+== Polymerisation ==
+
+* A polymer is a large molecule formed by the reaction of smaller monomers to
+  form a long repeating chain
+
+
+=== Addition Polymerisation ===
+
+* Only for unsaturated molecules (ie. alkenes)
+* The original molecule is called the monomer
+* Multiple monomers react together to form a long polymer
+* The double bond in the alkene breaks to form a single bond between a terminal
+  carbon and another monomer
+* The final polymer is named by prepending the prefix poly- to the name of the
+  monomer
+
+
+*Example*
+* Polyethene from ethene
+	* Monomer unit is ethene
+	* Formed polymer is polyethene
+
+
+==== Polyethene ====
+
+*High Density Polyethene*
+* Abbreviated as HDPE
+* Comprised of lots of very linear polymer chains
+* Forms a very strong crystaline structure
+	* Due to the strong dispersion forces between chains
+
+
+*Low Density Polyethene*
+* Abbreviated as LDPE
+* High degree of branching on the polymer chains
+* Causes amorphous regions where polymer chains can't pack together as tightly
+  as in HDPE
+	* Doesn't allow dispersion forces to act as strongly as in HDPE
+	* Causes weaker areas in the final product
+
+
+=== Condensation Polymerisation ===
+
+* Reaction between multiple monomers to form larger polymer
+* Involves elimination of water
+
+
+*Carboxylic Acid and Alcohol*
+* Dicarboxylic acid and diol react to form a polyester and water
+* Links called ester links
+* TODO: image
+
+
+*Carboxylic Acid and Amine*
+* Dicarboxylic acid and a diamine react to form an amide and water
+* Links called amide links
+* TODO: image

@@ -140,7 +140,7 @@ $\DeclareMathOperator\cis{cis} \DeclareMathOperator\Arg{Arg}$
 
 === Surds ===
 
-$$
+{{$
 \begin{align*}
 \sqrt{-64} & = \sqrt{64 \times -1} \\
 & = \sqrt{64} \times \sqrt{-1} \\
@@ -149,7 +149,7 @@ $$
 \sqrt{-8} & = \sqrt{8} \times \sqrt{-1} \\
 & = 2\sqrt{2}i \\
 \end{align*}
-$$
+}}$
 
 * Take out $i$ from surd
 * Simplify surd
@@ -157,12 +157,12 @@ $$
 
 === Addition and Subtraction ===
 
-$$
+{{$
 \begin{align*}
 (a + bi) + (c + di) & = (a + c) + (b + d)i \\
 (a + bi) - (c + di) & = (a - c) + (b - d)i \\
 \end{align*}
-$$
+}}$
 
 * Add or subtract real and imaginary components separately
 * Factor out $i$ from imaginary components
@@ -198,13 +198,13 @@ $$
 * $\frac{a + bi}{c + di} \times \frac{c - di}{c - di}$
 * Example:
 
-$$
+{{$
 \begin{align*}
 \frac{2 - 3i}{1 + 2i} & = \frac{2 - 3i}{1 + 2i} \times \frac{1 - 2i}{1 - 2i} \\
 & = \frac{2 - 4i - 3i - 6}{5} \\
 & = \frac{-4 - 7i}{5} \\
 \end{align*}
-$$
+}}$
 
 
 === Equality ===
@@ -249,9 +249,9 @@ $$
 
 === Modulus ===
 
-$$
+{{$
 |a + bi| = \sqrt{a^2 + b^2}
-$$
+}}$
 
 * Magnitude of complex number
 * Written $|z|$ or $\mod{z}$
@@ -262,9 +262,9 @@ $$
 
 === Argument ===
 
-$$
+{{$
 \arg{a + bi} = \tan^{-1}{\frac{b}{a}}
-$$
+}}$
 
 * Angle made with positive real axis
 * Written $\arg{z}$
@@ -421,18 +421,18 @@ $$
 *Moduli Example*
 * If we have two moduli of $z$ equated, then square both sides:
 
-$$
+{{$
 \begin{align*}
 |z - 1 + 2i| & = |z - 1| \\
 (x - 1)^2 + (y - 2)^2 & = (x - 1)^2 + y^2 \\
 \end{align*}
-$$
+}}$
 
 
 *Multiple Equations Example*
 * Equate real and imaginary components to find equations
 
-$$
+{{$
 \begin{align*}
 z^2 & = 2i \\
 (x + yi)^2 & = 2i \\
@@ -440,14 +440,14 @@ x^2 + 2xyi - y^2 & = 2i \\
 x^2 - y^2 & = 0 \\
 xy & = 1 \\
 \end{align*}
-$$
+}}$
 
 
 == De Moivre's Theorem ==
 
-$$
+{{$
 (r \cis{\theta})^n = r^n \cis{n \theta}
-$$
+}}$
 
 
 === Exponent of Complex Numbers in Cartesian Form ===
@@ -538,12 +538,12 @@ $$
 * In $\cis$ form: $8 \cis(\frac{\pi}{6} + 2k\pi), k \in \mathbb{R}$
 * Require $z^3 = 8 \cis(\frac{\pi}{6} + 2k\pi)$:
 
-$$
+{{$
 \begin{align*}
 z & = (8 \cis(\frac{\pi}{6} + 2k\pi))^{\frac{1}{3}} \\
 & = 2 \cis(\frac{\pi}{18} + \frac{2k\pi}{3}) \\
 \end{align*}
-$$
+}}$
 
 * For first 3 values of $k$:
 	* $k = 0$, $z = 2 \cis{\frac{\pi}{18}}$

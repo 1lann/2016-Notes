@@ -20,9 +20,9 @@ $\require{mhchem}$
 
 == Non-Reversible ==
 
-$$
+{{$
 \ce{CaCO3 + HCl -> CaCl2 + H2O + CO2}
-$$
+}}$
 
 * Reactants left of arrow
 * Products right of arrow
@@ -35,9 +35,9 @@ $$
 
 == Reversible ==
 
-$$
+{{$
 \ce{2NO2 <=> N2O4}
-$$
+}}$
 
 * Double arrow meaning reaction is reversible
 * Never completes
@@ -58,10 +58,10 @@ $$
 
 === Acid Base ===
 
-$$
+{{$
 \ce{H2SO4 (aq) + Ba(OH)2 -> BaSO4 (s) + 2H2O (l)} \\
 \ce{H+ + OH- -> H2O (l)} \\
-$$
+}}$
 
 * Hydrogen ions and hydroxide ions
 * Form water
@@ -69,9 +69,9 @@ $$
 
 === Acid Metal ===
 
-$$
+{{$
 \ce{H2SO4 (aq) + Zn (s) -> ZnSO4 (aq) + H2 (g)}
-$$
+}}$
 
 * Solid metal and acid
 * Form salt and hydrogen gas
@@ -79,9 +79,9 @@ $$
 
 === Acid Carbonate ===
 
-$$
+{{$
 \ce{H2SO4 (aq) + CaCO3 (s) -> CaSO4 (aq) + CO2 (g) + H2O (l)}
-$$
+}}$
 
 * Carbonate and acid
 * Form salt, carbon dioxide, and water
@@ -89,9 +89,9 @@ $$
 
 == Precipitation Reactions ==
 
-$$
+{{$
 \ce{Ba^{2+} + SO4^{2-} -> BaSO4 (s)}
-$$
+}}$
 
 * Two aqueous solutions
 * When combined, a combination of ions forms a solid

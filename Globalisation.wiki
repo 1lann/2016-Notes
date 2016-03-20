@@ -455,9 +455,9 @@
 
 *Formula*
 
-$$
+{{$
 \mbox{Trade intensity} = \frac{\mbox{X} + \mbox{M}}{\mbox{GDP}} \times 100
-$$
+}}$
 
 
 *Definition*

@@ -3,9 +3,9 @@
 
 == Universal Gas Law ==
 
-$$
+{{$
 pV = nRT
-$$
+}}$
 
 * Where:
 	* $p$ is pressure
@@ -17,9 +17,9 @@ $$
 
 === Kelvin ===
 
-$$
+{{$
 T_{\mbox{K}} = T_{^{\circ}\mbox{C}} + 273.15
-$$
+}}$
 
 * Measure of temperature
 * Symbol: $\mbox{K}$
@@ -41,9 +41,9 @@ $$
 
 == Percentage Yield ==
 
-$$
+{{$
 \mbox{yield} = \frac{\mbox{actual yield}}{\mbox{theoretical yield}} \times 100\%
-$$
+}}$
 
 * Actual yield divided by theoretical yield
 

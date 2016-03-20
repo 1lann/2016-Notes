@@ -54,18 +54,18 @@
 
 == Change in Velocity ==
 
-$$
+{{$
 \Delta v = v - u
-$$
+}}$
 
 * Change in velocity is final velocity ($v$) subtract initial velocity ($u$)
 
 
 == Relative Velocity ==
 
-$$
+{{$
 v_{a/b} = v_{a/c} + v_{c/b}
-$$
+}}$
 
 
 == River Problem ==
@@ -144,9 +144,9 @@ DIAGRAM
 
 === Second Law ===
 
-$$
+{{$
 \sum F = ma
-$$
+}}$
 
 * The acceleration of an object is equal to the net force acting upon it divided
   by its mass
@@ -160,21 +160,21 @@ $$
 
 == Equations of Motion ==
 
-$$
+{{$
 \begin{align*}
 s & = vt \\
 v & = u + at \\
 v^2 & = u^2 + 2as \\
 s & = ut + \frac{1}{2}at^2 \\
 \end{align*}
-$$
+}}$
 
 
 == Momentum ==
 
-$$
+{{$
 p = mv
-$$
+}}$
 
 * Vector quantity
 * Symbol: $p$
@@ -183,9 +183,9 @@ $$
 
 === Conservation of Momentum ===
 
-$$
+{{$
 \sum p_f = \sum p_i
-$$
+}}$
 
 * The total final momentum in a system is equal to the total initial momentum
 
@@ -197,23 +197,23 @@ $$
 
 === Kinetic Energy ===
 
-$$
+{{$
 E_k = \frac{1}{2} mv^2
-$$
+}}$
 
 
 === Gravitational Potential Energy ===
 
-$$
+{{$
 E_p = mgh
-$$
+}}$
 
 
 === Conservation of Energy ===
 
-$$
+{{$
 \sum E_f = \sum E_i
-$$
+}}$
 
 * The total final energy in a system is equal to the total initial energy
 
@@ -406,27 +406,27 @@ $$
 
 == Flight Time ==
 
-$$
+{{$
 s_y = u_y t + \frac{1}{2} a_y t^2
-$$
+}}$
 
 * Solve for $t$ using quadratic formula
 
 
 == Range ==
 
-$$
+{{$
 s_x = u_x \cos{\theta}
-$$
+}}$
 
 * Equivalent to horizontal displacement
 
 
 == Maximum Height ==
 
-$$
+{{$
 0 = u_y^2 + 2 a_y s_y
-$$
+}}$
 
 * Using $v^2 = u^2 + 2as$
 * Since vertical velocity is 0 at maximum height
@@ -435,12 +435,12 @@ $$
 
 == Final Velocity ==
 
-$$
+{{$
 \begin{align*}
 v_x & = u_x \\
 v_y & = u_y + a_y t \\
 \end{align*}
-$$
+}}$
 
 * Must solve for flight time first
 * Final horizontal velocity is equal to initial horizontal velocity

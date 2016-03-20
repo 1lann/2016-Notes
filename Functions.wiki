@@ -318,9 +318,9 @@
 
 == Division Identity ==
 
-$$
+{{$
 f(x) = D(x)Q(x) + R(x)
-$$
+}}$
 
 * For the function $f(x)$
 * $D(x)$ is the divisor
@@ -355,7 +355,7 @@ $$
 
 *Example*
 
-$$
+{{$
 \begin{align*}
 \frac{x^2 + 3x + 4}{x + 4} & = \frac{x(x + 4) - 4x + 3x + 4}{x + 4} \\
 & = \frac{x(x + 4) - x + 4}{x + 4} \\
@@ -363,7 +363,7 @@ $$
 & = x + \frac{-(x + 4) + 4 + 4}{x + 4} \\
 & = x - 1 + \frac{8}{x + 4} \\
 \end{align*}
-$$
+}}$
 
 
 == Remainder Theorem ==

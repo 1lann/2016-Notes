@@ -47,9 +47,9 @@
 
 == Components ==
 
-$$
+{{$
 \begin{align*}
 v_x & = v \cos{\theta} \\
 v_y & = v \sin{\theta} \\
 \end{align*}
-$$
+}}$

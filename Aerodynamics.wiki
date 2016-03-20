@@ -43,9 +43,9 @@
 
 === Pressure ===
 
-$$
+{{$
 p = \frac{dF}{dA}
-$$
+}}$
 
 *Definition*
 * Force per unit area
@@ -81,9 +81,9 @@ $$
 
 === Density ===
 
-$$
+{{$
 \rho = \frac{dm}{dV}
-$$
+}}$
 
 *Definition*
 * Mass per unit volume
@@ -98,9 +98,9 @@ $$
 
 === Specific Volume ===
 
-$$
+{{$
 v = \frac{1}{\rho}
-$$
+}}$
 
 *Definition*
 * Volume per unit mass
@@ -110,9 +110,9 @@ $$
 
 === Temperature ===
 
-$$
+{{$
 E_K = \frac{3}{2}kT
-$$
+}}$
 
 *Definition*
 * Measure of the average kinetic energy of the particles in a substance
@@ -154,12 +154,12 @@ $$
 
 == Equation of State ==
 
-$$
+{{$
 \begin{align*}
 p & = \rho R T \\
 pv & = RT \\
 \end{align*}
-$$
+}}$
 
 Where:
 
