@@ -63,6 +63,64 @@
 
 
 
+= Vectors =
+
+*Definition*
+* Value with direction and magnitude
+* Direction given as:
+	* Worded description
+	* Bearing
+	* Angle from horizontal or vertical
+* Diagramatically represented as an arrow
+	* Magnitutde represented by length of arrow
+
+
+*Scalars*
+* Distance
+* Speed
+
+
+*Vectors*
+* Displacement
+* Velocity
+* Acceleration
+* Force
+
+
+== Addition ==
+
+* Place vectors end to end
+* Draw in resultant vector
+* Calculate magnitute using cosine rule
+* Calculate angle using sine or cosine rule
+	* Preferably sine as it's more accurate
+* Split into components for more than 2 vectors
+
+
+== Negation ==
+
+* Reverse direction
+* Magnitude remains the same
+
+
+== Subtraction ==
+
+* Add the vector to the negated verion of the other
+* Split into components for more than 2 vectors
+
+
+== Components ==
+
+{{$
+\begin{align*}
+v_x & = v \cos{\theta} \\
+v_y & = v \sin{\theta} \\
+\end{align*}
+}}$
+
+
+
+
 = Velocity =
 
 * Direction and speed at which an object is travelling
@@ -366,7 +424,7 @@ E_p = mgh
 
 *Method*
 * Split forces into horizontal and vertical components
-* Equate to 0
+* Equate $\sum F_y = 0$ and $\sum F_x = 0$
 * Solve for unknowns
 
 
@@ -657,6 +715,9 @@ DIAGRAM
 
 == Centrifugal Force ==
 
+* Not an actual force
+* An apparent force experienced due to inertia
+
 TODO: Read nelson chapter
 
 
@@ -722,14 +783,20 @@ TODO: Read nelson chapter
 	* Elevator problem
 * Statics
 	* Tension in wires
+* Newton's Laws
+	* Barrel rolling off a truck (Newton first law)
+	* Apparent centrifugal force when turning a corner in a car (Newton first
+	  law)
+	* Pushing the surface of a desk doesn't push the desk through the floor
+	  (Newton third law)
 * Projectile motion
 	* Time, range, velocity after time, final velocity, maximum height
 * Horizontal circular motion
 	* Velocity, acceleration, centripetal force
 * Conical circular motion
 	* Tension in wire
-	* Behaviour of angle if velocity is changed
-	* Over speed humps or hill on rollercoaster
+	* Behaviour of angle made with the horizontal if the velocity is changed
+	* Over speed humps or hill on rollercoaster (reduction in normal force)
 * Vertical circular motion
 	* Calculate tension at top and bottom of path
 	* Calculate minimum velocity to maintain path
@@ -783,10 +850,12 @@ F = \frac{G m_1 m_2}{r^2}
 * Where $G$ is the universal gravitational constant
 	* Units: $\mbox{N m}^{2}\mbox{ kg}^{-2}$
 	* Value: $6.67 \times 10^{-11}$
-* $r$ is the distance from the centre of the object
+* $r$ is the distance between the centres of the objects
 	* Must include (for example) radius of Earth in calculations
 * Force must include direction
 	* For example, towards Earth or towards moon
+	* For force acting on Earth, the direction is towards the moon
+		* And vice versa
 
 
 *Acceleration Due to Gravity*
@@ -1031,7 +1100,7 @@ F_g & = F_c \\
 * A line of action is the line between the point a force acts at and the pivot
   point
 * Symbol: $\tau$
-* Units: $N m$ (Newton metres)
+* Units: $\mbox{N m}$ (Newton metres)
 	* Not Joules
 * It is a vector quantity and has a direction
 	* Usually written clockwise or anticlockwise
@@ -1062,7 +1131,7 @@ F_g & = F_c \\
 
 *Centre of Mass*
 * Point from which an object's weight force acts
-* Assuming object is of uniform density
+* Usually assume object is of uniform density
 
 
 == Stability ==

@@ -20,6 +20,11 @@
 <li>
 <a href="Functions.html#Functions-Domain and Range">Domain and Range</a>
 
+<ul>
+<li>
+<a href="Functions.html#Functions-Domain and Range-Common Examples">Common Examples</a>
+
+</ul>
 <li>
 <a href="Functions.html#Functions-Tests">Tests</a>
 
@@ -28,6 +33,14 @@
 
 <li>
 <a href="Functions.html#Functions-Composite Functions">Composite Functions</a>
+
+<ul>
+<li>
+<a href="Functions.html#Functions-Composite Functions-Domain and Range">Domain and Range</a>
+
+</ul>
+<li>
+<a href="Functions.html#Functions-Decomposition of Functions">Decomposition of Functions</a>
 
 <li>
 <a href="Functions.html#Functions-Inverse Functions">Inverse Functions</a>
@@ -41,9 +54,6 @@
 <a href="Functions.html#Remainder and Factor Theorem-Polynomial Division">Polynomial Division</a>
 
 <ul>
-<li>
-<a href="Functions.html#Remainder and Factor Theorem-Polynomial Division-Long Division">Long Division</a>
-
 <li>
 <a href="Functions.html#Remainder and Factor Theorem-Polynomial Division-Algebraic Juggling">Algebraic Juggling</a>
 
@@ -65,7 +75,13 @@
 
 </ul>
 <li>
-<a href="Functions.html#Remainder and Factor Theorem-Solving Polynomials">Solving Polynomials</a>
+<a href="Functions.html#Remainder and Factor Theorem-General Form">General Form</a>
+
+<li>
+<a href="Functions.html#Remainder and Factor Theorem-Solving Real Polynomials">Solving Real Polynomials</a>
+
+<li>
+<a href="Functions.html#Remainder and Factor Theorem-Solving Complex Polynomials">Solving Complex Polynomials</a>
 
 </ul>
 </ul>
@@ -492,10 +508,51 @@ The functions \(y = k, k \in \mathbb{R}\) and \(f(x)\) should only have 1
 </ul>
 
 
-<div id="Functions-Rising and Falling Functions"><h2 id="Rising and Falling Functions">Rising and Falling Functions</h2></div>
+<div id="Functions-One to One Functions"><h2 id="One to One Functions">One to One Functions</h2></div>
 
 <p>
-<span id="Functions-Rising and Falling Functions-Rising"></span><strong id="Rising">Rising</strong>
+<span id="Functions-One to One Functions-Definition"></span><strong id="Definition">Definition</strong>
+</p>
+<ul>
+<li>
+For all \(a\) and \(b\) where \(a \neq b\), a one to one function satisfies the
+  condition \(f(a) \neq f(b)\)
+
+<li>
+To prove a function is not one to one, find one counterexample
+
+</ul>
+
+
+<p>
+<span id="Functions-One to One Functions-Proof"></span><strong id="Proof">Proof</strong>
+</p>
+<ul>
+<li>
+To prove a function \(f(x)\) is one to one, prove the contrapositive of the
+  definition
+
+<li>
+Show that \(f(x) = f(y)\) is simplifies to \(x = y\)
+
+<li>
+Or show the function is strictly increasing or decreasing
+
+<ul>
+<li>
+This doesn't work for all one to one functions
+
+<li>
+If it doesn't work, fall back to the above method
+
+</ul>
+</ul>
+
+
+<div id="Functions-Increasing and Decreasing Functions"><h2 id="Increasing and Decreasing Functions">Increasing and Decreasing Functions</h2></div>
+
+<p>
+<span id="Functions-Increasing and Decreasing Functions-Increasing"></span><strong id="Increasing">Increasing</strong>
 </p>
 <ul>
 <li>
@@ -508,7 +565,7 @@ Implies that \(f'(x) &gt; 0\) for all \(x\)
 
 
 <p>
-<span id="Functions-Rising and Falling Functions-Falling"></span><strong id="Falling">Falling</strong>
+<span id="Functions-Increasing and Decreasing Functions-Decreasing"></span><strong id="Decreasing">Decreasing</strong>
 </p>
 <ul>
 <li>
@@ -694,15 +751,19 @@ The range is \(y \in \mathbb{R}, y \neq 0\)
 </ul>
 
 
-<div id="Functions-Decomposition of Functions"><h2 id="Decomposition of Functions">Decomposition of Functions</h2></div>
+<div id="Functions-Decomposition"><h2 id="Decomposition">Decomposition</h2></div>
 
 <p>
-<span id="Functions-Decomposition of Functions-Definition"></span><strong id="Definition">Definition</strong>
+<span id="Functions-Decomposition-Definition"></span><strong id="Definition">Definition</strong>
 </p>
 <ul>
 <li>
-Separating the function \(f(x)\) into two components \(g(x)\) and \(h(x)\) such that
+Separate the function \(f(x)\) into two functions \(g(x)\) and \(h(x)\) such that
   \(f(x) = g(h(x))\)
+
+<li>
+If we're given \(f(g(x))\) and \(f(x)\) and asked to find \(g(x)\), do it by
+  inspection
 
 </ul>
 
@@ -745,9 +806,6 @@ The inverse of \(f(x)\) is only defined if \(f(x)\) is one to one
 Otherwise the inverse will be a relation and not a function
 
 </ul>
-<li>
-\(f(x)\) must pass the horizontal line test
-
 </ul>
 
 
@@ -799,6 +857,34 @@ The graph of \(f^{-1}(x)\) is the graph of \(f(x)\) reflected about the line
 
 
 <div id="Remainder and Factor Theorem"><h1 id="Remainder and Factor Theorem">Remainder and Factor Theorem</h1></div>
+
+<div id="Remainder and Factor Theorem-Division Identity"><h2 id="Division Identity">Division Identity</h2></div>
+
+\[
+f(x) = D(x)Q(x) + R(x)
+\]
+
+<ul>
+<li>
+For the function \(f(x)\)
+
+<li>
+\(D(x)\) is the divisor
+
+<li>
+\(Q(x)\) is the quotient
+
+<li>
+\(R(x)\) is the remainder
+
+<li>
+The remainder is a polynomial of at least 1 degree less than the divisor
+
+<li>
+The quotient is a polynomial of at least 1 degree less than \(f(x)\)
+
+</ul>
+
 
 <div id="Remainder and Factor Theorem-Polynomial Division"><h2 id="Polynomial Division">Polynomial Division</h2></div>
 
@@ -853,8 +939,7 @@ Stop when we have a proper fraction remaining
 <span id="Remainder and Factor Theorem-Polynomial Division-Algebraic Juggling-Example"></span><strong id="Example">Example</strong>
 </p>
 
-<p>
-$$
+\[
 \begin{align*}
 \frac{x^2 + 3x + 4}{x + 4} &amp; = \frac{x(x + 4) - 4x + 3x + 4}{x + 4} \\
 &amp; = \frac{x(x + 4) - x + 4}{x + 4} \\
@@ -862,8 +947,7 @@ $$
 &amp; = x + \frac{-(x + 4) + 4 + 4}{x + 4} \\
 &amp; = x - 1 + \frac{8}{x + 4} \\
 \end{align*}
-$$
-</p>
+\]
 
 
 <div id="Remainder and Factor Theorem-Remainder Theorem"><h2 id="Remainder Theorem">Remainder Theorem</h2></div>
@@ -875,6 +959,14 @@ Given the polynomial \(f(x)\)
 <li>
 The remainder when dividing \(f(x)\) by \((x - a)\) is \(f(a)\)
 
+<li>
+Also works for higher degree polynomials
+
+<ul>
+<li>
+For example, if \((x^2 + 4)\) is a factor of \(f(x)\), then \(f(\pm 2i) = 0\)
+
+</ul>
 </ul>
 
 
@@ -898,21 +990,29 @@ Therefore \(f(x) = (x + 4)(Q(x)) + 8\)
 
 <ul>
 <li>
-Given the polynomial \(f(x)\)
+Consider the division identity \(f(x) = D(x)Q(x) + R(x)\)
 
 <li>
-\(f(x)\) can be written as \(f(x) = g(x)(x - a) + k, k \in \mathbb{R}\) for some
-  other polynomial \(g(x)\)
+Let the divisor \(D(x) = x - a\)
 
 <li>
-It follows that dividing \(f(x)\) by \((x - a)\) will leave us with a remainder
-  of \(k\)
+Since the degree of \(R(x)\) must be at least 1 less than \(D(x)\), \(R(x)\) is a
+  constant
 
 <li>
-Consider \(f(a) = g(a)(a - a) + k = k\)
+Therefore let \(R(x) = k, k \in \mathbb{R}\)
 
 <li>
-Therefore \(f(a)\) is the remainder of \(f(x)\) when divided by \((x - a)\)
+\(f(x) = (x - a)Q(x) + k\)
+
+<li>
+Hence the remainder when \(f(x)\) is divided by \((x - a)\) is \(k\)
+
+<li>
+Consider \(f(a) = (a - a)Q(x) + k = k\)
+
+<li>
+Therefore the remainder of \(f(x)\) when divided by \((x - a)\) is \(f(a)\)
 
 </ul>
 
@@ -921,47 +1021,72 @@ Therefore \(f(a)\) is the remainder of \(f(x)\) when divided by \((x - a)\)
 
 <ul>
 <li>
-\((x - a)\) is a factor of \(f(x)\) if \(f(a) = 0\)
+\((x - a)\) is a factor of \(f(x)\) if and only if \(f(a) = 0\)
 
 </ul>
 
 
 <div id="Remainder and Factor Theorem-Factor Theorem-Proof"><h3 id="Proof">Proof</h3></div>
 
+<p>
+<span id="Remainder and Factor Theorem-Factor Theorem-Proof-Forwards"></span><strong id="Forwards">Forwards</strong>
+</p>
 <ul>
 <li>
-If \((x - a)\) is a factor of \(f(x)\), then the remainder when \(f(x)\) is divided
-  by \((x - a)\) will be 0
+Consider the division identity: \(f(x) = Q(x)D(x) + R(x)\)
 
 <li>
-By the remainder theorem, this implies \(f(a) = 0\)
+Let \((x - a)\) be a factor of \(f(x)\)
+
+<li>
+Hence \(f(x) = (x - a)Q(x)\), where \(R(x) = 0\) since \((x - a)\) is a factor
+
+<li>
+Consider \(f(a) = (a - a)Q(x) = 0\)
+
+<li>
+Hence \(f(a) = 0\) when \((x - a)\) is a factor of \(f(x)\)
 
 </ul>
 
-
-<div id="Remainder and Factor Theorem-General Form"><h2 id="General Form">General Form</h2></div>
-
-<ul>
-<li>
-The general form of the polynomial \(f(x)\) is
-
-</ul>
 
 <p>
-$$
-f(x) = (Q(x))(x - a) + f(a)
-$$
+<span id="Remainder and Factor Theorem-Factor Theorem-Proof-Backwards"></span><strong id="Backwards">Backwards</strong>
 </p>
+<ul>
+<li>
+Consider when \(f(x)\) is divided by \((x - a)\)
+
+<li>
+\(f(x) = (x - a)Q(x) + k, k \in \mathbb{R}\)
+
+<ul>
+<li>
+\(k\) is a constant since the degree of the remainder is at least 1 less
+	  than that of the divisor
+
+</ul>
+<li>
+Consider when \(f(a) = 0\)
+
+<li>
+\(f(a) = (a - a)Q(x) + k = 0\)
+
+<li>
+It follows that \(k = 0\), ie. there is no remainder, hence \((x - a)\) is a
+  factor
+
+</ul>
 
 
 <div id="Remainder and Factor Theorem-Solving Real Polynomials"><h2 id="Solving Real Polynomials">Solving Real Polynomials</h2></div>
 
 <p>
-<span id="Remainder and Factor Theorem-Solving Real Polynomials-Goal"></span><strong id="Goal">Goal</strong>
+<span id="Remainder and Factor Theorem-Solving Real Polynomials-Process"></span><strong id="Process">Process</strong>
 </p>
 <ul>
 <li>
-Express polynomial as a product of multiple linear factors
+Express polynomial as a product of multiple linear factors (factorise it)
 
 <li>
 Use null factor law to solve
@@ -981,17 +1106,26 @@ Find one root by guessing a range of values
 Substitute a range of \(x\) values into \(f(x)\)
 
 <li>
-Find a value of \(x\) where \(f(x) = 0\)
+Find a value of \(a\) where \(f(a) = 0\)
 
 <li>
 \((x - a)\) is therefore a factor
+
+<li>
+Guesses for \(a\) must be a factor of the constant term in the polynomial
 
 </ul>
 <li>
 Divide \(f(x)\) by \((x - a)\) using long division or algebraic juggling
 
 <li>
-Repeat for quotient until we have a series of linear factors
+Repeat for quotient until we have a quadratic remaining
+
+<li>
+Compare coefficients to find the coefficients for the remaining quadratic
+
+<li>
+Factorise the quadratic
 
 <li>
 Watch out for simplifications
@@ -1011,6 +1145,237 @@ Difference of perfect squares
 
 
 <div id="Remainder and Factor Theorem-Solving Complex Polynomials"><h2 id="Solving Complex Polynomials">Solving Complex Polynomials</h2></div>
+
+<p>
+<span class="todo">TODO:</span>
+</p>
+
+
+<p>
+<span id="Remainder and Factor Theorem-Solving Complex Polynomials-Procedure"></span><strong id="Procedure">Procedure</strong>
+</p>
+<ul>
+<li>
+Given \(f(x)\) and \(g(x)\), find \(f(g(x))\) and its domain and range
+
+<li>
+Find domain and range of \(f(x)\) and \(g(x)\)
+
+<li>
+If the domain of \(f(x)\) can cope with range of \(g(x)\)
+
+<ul>
+<li>
+Domain of \(f(g(x))\) is the same as that of \(g(x)\)
+
+<li>
+Find the range of \(f(x)\) given the domain is the same as the range of
+	  \(g(x)\). This will be the range of \(f(g(x))\)
+
+</ul>
+<li>
+If the domain of \(f(x)\) cannot cope with the range of \(g(x)\)
+
+<ul>
+<li>
+Restrict the range of \(g(x)\) by merging its current range with the domain
+	  of \(f(x)\)
+
+<li>
+Reverse this range restriction into a restriction on the domain of \(g(x)\)
+
+<ul>
+<li>
+For an upper and lower bound on the range
+
+<li>
+Substitute in the upper and lower numbers and use the most restricted
+		  range for each
+
+</ul>
+<li>
+The domain of \(f(g(x))\) is the same as the newly restricted domain of
+	  \(g(x)\)
+
+<li>
+Find the range of \(f(g(x))\) using the newly restricted range of \(g(x)\) as
+	  the domain for \(f(x)\)
+
+<ul>
+<li>
+For an upper and lower bound, substitute in both, and look for turning
+		  points in between, to find the maximum and minimum
+
+</ul>
+</ul>
+</ul>
+
+
+
+<div id="Questions"><h1 id="Questions">Questions</h1></div>
+
+<p>
+<span id="Questions-Polynomials"></span><strong id="Polynomials">Polynomials</strong>
+</p>
+<ul>
+<li>
+Division identity
+
+<li>
+Divide a polynomial by a divisor
+
+<li>
+Find quotient and remainder when polynomial is divided by a divisor
+
+</ul>
+
+
+<p>
+<span id="Questions-Remainder Theorem"></span><strong id="Remainder Theorem">Remainder Theorem</strong>
+</p>
+<ul>
+<li>
+Prove the remainder theorem
+
+<li>
+Find the remainder if \(f(x)\) is divided by \(x - a\) (for complex and real
+  polynomials)
+
+<li>
+Find coefficients of \(f(x)\) given remainders of some divisors, or given some
+  factors
+
+<ul>
+<li>
+Create system of equations using remainder and factor theorem
+
+<li>
+Or write as the product of its roots and expand, then match up
+	  corresponding coefficients
+
+<li>
+If given \((x - a)^2\) as a factor, then \(f'(a) = 0\) since there is a
+	  turning point at \(x = a\)
+
+</ul>
+</ul>
+
+
+<p>
+<span id="Questions-Factor Theorem"></span><strong id="Factor Theorem">Factor Theorem</strong>
+</p>
+<ul>
+<li>
+Prove the factor theorem
+
+<li>
+Find factors of a polynomial
+
+<li>
+Factorise completely a polynomial
+
+<li>
+Solve a polynomial (for complex and real solutions)
+
+</ul>
+
+
+<p>
+<span id="Questions-Functions"></span><strong id="Functions">Functions</strong>
+</p>
+<ul>
+<li>
+Find domain and range of a function
+
+<li>
+Restrict the domain and range of a relation so that it becomes a function
+
+<li>
+Restrict the domain of a many to one function so that it becomes a one to one
+  function
+
+<li>
+Prove a function is strictly increasing or decreasing
+
+<li>
+Prove a function is one to one
+
+<li>
+Find the inverse of a function
+
+<li>
+Find the inverse of a function given its graph
+
+<li>
+Explain why the inverse of a function exists
+
+<li>
+Prove \((f \circ g)^{-1} (x) = g^{-1} \circ f^{-1} (x)\)
+
+</ul>
+
+
+<p>
+<span id="Questions-Composite Functions"></span><strong id="Composite Functions">Composite Functions</strong>
+</p>
+<ul>
+<li>
+Find a composite function given original functions
+
+<li>
+Find domain and range of a composite function
+
+<li>
+Restrict the domain of a composite function so that it is defined
+
+<li>
+Decompose a composite function given the inner or outer function
+
+<ul>
+<li>
+Find \(f(x)\) given \(f(g(x))\) and \(g(x)\)
+
+<li>
+Find \(f(x)\) given \(g(f(x))\) and \(g(x)\)
+
+</ul>
+</ul>
+
+
+<p>
+<span id="Questions-Tricks"></span><strong id="Tricks">Tricks</strong>
+</p>
+<ul>
+<li>
+Remember to chose the negative solution to \(x^2\) when domain is negative
+
+<ul>
+<li>
+Same for \(|x|\)
+
+</ul>
+<li>
+When asked for the domain or range of the inverse, look first for the domain
+  and range of the original function to avoid recalculating it
+
+<li>
+Guesses for factors when solving polynomials must be factors of the constant
+  term
+
+<li>
+Look only at the term of \(x\) with the largest exponent when considering the
+  behaviour of a function as \(x \to \infty\)
+
+<li>
+Always visualise the graph
+
+<li>
+Underline information in the question
+
+<li>
+Don't make calculation errors
+
+</ul>
 
 </body>
 

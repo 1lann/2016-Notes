@@ -2,3 +2,4 @@
 = Specialist =
 	* [[Complex Numbers]]
 	* [[Functions]]
+	* [[Vectors]]

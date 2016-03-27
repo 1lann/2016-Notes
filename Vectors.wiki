@@ -1,55 +1,50 @@
 
+= Contents =
+    - [[#Vectors|Vectors]]
+
+
+
+
 = Vectors =
 
 *Definition*
-* Value with direction and magnitude
-* Direction given as:
-	* Worded description
-	* Bearing
-	* Angle from horizontal or vertical
-* Diagramatically represented as an arrow
-	* Magnitutde represented by length of arrow
+* A vector specifies a direction or point in $n$ dimensional space
 
 
-*Scalars*
-* Distance
-* Speed
+*In 2 Dimensions*
+* $\boldsymbol{i}$ is the unit vector along the x axis
+* $\boldsymbol{j}$ is the unit vector along the y axis
 
 
-*Vectors*
-* Displacement
-* Velocity
-* Acceleration
-* Force
-
+== Mangitude ==
 
 == Addition ==
 
-* Place vectors end to end
-* Draw in resultant vector
-* Calculate magnitute using cosine rule
-* Calculate angle using sine or cosine rule
-	* Preferably sine as it's more accurate
-* Split into components for more than 2 vectors
+== Parallel ==
 
+== Position Vectors ==
 
-== Negation ==
+== Dot Product ==
 
-* Reverse direction
-* Magnitude remains the same
+== Projection ==
 
-
-== Subtraction ==
-
-* Add the vector to the negated verion of the other
-* Split into components for more than 2 vectors
-
-
-== Components ==
+== Vector Equation of a Line ==
 
 {{$
-\begin{align*}
-v_x & = v \cos{\theta} \\
-v_y & = v \sin{\theta} \\
-\end{align*}
+\boldsymbol{r} = \boldsymbol{a} + \lambda \bolsymbol{b}, \lambda \in \mathbb{R}
 }}$
+
+* Equation for the line $\bolsymbol{r}$
+* $\boldsymbol{a}$ is the position vector of any point on the line
+* $\boldsymbol{b}$ is the direction of the line as a vector
+
+
+*Parallel to a Vector*
+
+*From Two Points*
+
+=== Parametric Equation ===
+
+=== Cartesian Equation ===
+
+== Line Intersection ==

@@ -4,21 +4,24 @@
         - [[#Functions#Domain and Range|Domain and Range]]
             - [[#Functions#Domain and Range#Common Examples|Common Examples]]
         - [[#Functions#Tests|Tests]]
-        - [[#Functions#Rising and Falling Functions|Rising and Falling Functions]]
+        - [[#Functions#One to One Functions|One to One Functions]]
+        - [[#Functions#Increasing and Decreasing Functions|Increasing and Decreasing Functions]]
+        - [[#Functions#Continuity|Continuity]]
         - [[#Functions#Composite Functions|Composite Functions]]
             - [[#Functions#Composite Functions#Domain and Range|Domain and Range]]
-        - [[#Functions#Decomposition of Functions|Decomposition of Functions]]
+        - [[#Functions#Decomposition|Decomposition]]
         - [[#Functions#Inverse Functions|Inverse Functions]]
     - [[#Remainder and Factor Theorem|Remainder and Factor Theorem]]
+        - [[#Remainder and Factor Theorem#Division Identity|Division Identity]]
         - [[#Remainder and Factor Theorem#Polynomial Division|Polynomial Division]]
             - [[#Remainder and Factor Theorem#Polynomial Division#Algebraic Juggling|Algebraic Juggling]]
         - [[#Remainder and Factor Theorem#Remainder Theorem|Remainder Theorem]]
             - [[#Remainder and Factor Theorem#Remainder Theorem#Proof|Proof]]
         - [[#Remainder and Factor Theorem#Factor Theorem|Factor Theorem]]
             - [[#Remainder and Factor Theorem#Factor Theorem#Proof|Proof]]
-        - [[#Remainder and Factor Theorem#General Form|General Form]]
         - [[#Remainder and Factor Theorem#Solving Real Polynomials|Solving Real Polynomials]]
         - [[#Remainder and Factor Theorem#Solving Complex Polynomials|Solving Complex Polynomials]]
+    - [[#Questions|Questions]]
 
 
 
@@ -201,6 +204,32 @@
 *Decreasing*
 * Where $f(a) < f(b)$ for all $a > b$
 * Implies that $f'(x) < 0$ for all $x$
+
+
+== Continuity ==
+
+*Limits*
+* $\lim_{x \to a} f(x)$ is defined when
+  $\lim_{x \to a^{+}} f(x) = \lim_{x \to a^{-}} f(x)$
+* The function must approach the same value at a point from the left and right
+  for the limit at that point to be defined
+
+
+*Continuity*
+* A function is continuous if the limit of $f(x)$ is defined for all $x$, and
+  $\lim_{x \to a} f(x) = f(a)$ for all $a$
+* Informally, you can draw the graph of the function without lifting your pen
+
+
+*Differentiable*
+* Must be continuous
+* The gradient of the tangent at a point when approaching from the left and
+  right must be equal
+* Formally:
+
+{{$
+\lim_{h \to 0^{-}} \frac{f(x + h) - f(x)}{h} = \lim_{h \to 0^{+}} \frac{f(x + h) - f(x)}{h}
+}}$
 
 
 == Composite Functions ==

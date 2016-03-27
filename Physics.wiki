@@ -1,4 +1,3 @@
 
 = Physics =
-	* [[Vectors]]
 	* [[Motion and Forces]]
