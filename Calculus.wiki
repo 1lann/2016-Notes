@@ -1,0 +1,619 @@
+
+= Contents =
+    - [[#Differentiation|Differentiation]]
+        - [[#Differentiation#Polynomials|Polynomials]]
+            - [[#Differentiation#Polynomials#Rule|Rule]]
+            - [[#Differentiation#Polynomials#Common Derivatives|Common Derivatives]]
+        - [[#Differentiation#Product Rule|Product Rule]]
+        - [[#Differentiation#Quotient Rule|Quotient Rule]]
+        - [[#Differentiation#Chain Rule|Chain Rule]]
+        - [[#Differentiation#Trigonometry|Trigonometry]]
+            - [[#Differentiation#Trigonometry#Sine|Sine]]
+            - [[#Differentiation#Trigonometry#Cosine|Cosine]]
+            - [[#Differentiation#Trigonometry#Tangent|Tangent]]
+        - [[#Differentiation#e|e]]
+    - [[#Sketching Graphs|Sketching Graphs]]
+        - [[#Sketching Graphs#Global Maximum in Domain|Global Maximum in Domain]]
+        - [[#Sketching Graphs#Points of Interest|Points of Interest]]
+            - [[#Sketching Graphs#Points of Interest#Stationary Points|Stationary Points]]
+            - [[#Sketching Graphs#Points of Interest#Concavity|Concavity]]
+        - [[#Sketching Graphs#Turning Points|Turning Points]]
+            - [[#Sketching Graphs#Turning Points#Locating|Locating]]
+            - [[#Sketching Graphs#Turning Points#Determining Nature|Determining Nature]]
+        - [[#Sketching Graphs#Inflection Points|Inflection Points]]
+            - [[#Sketching Graphs#Inflection Points#Locating|Locating]]
+        - [[#Sketching Graphs#Graphing Derivatives|Graphing Derivatives]]
+        - [[#Sketching Graphs#Features|Features]]
+    - [[#Integration|Integration]]
+        - [[#Integration#Properties|Properties]]
+        - [[#Integration#Polynomial Functions|Polynomial Functions]]
+        - [[#Integration#Exponential Functions|Exponential Functions]]
+        - [[#Integration#Trigonometric Functions|Trigonometric Functions]]
+        - [[#Integration#Common Integrals|Common Integrals]]
+        - [[#Integration#Definite Integrals|Definite Integrals]]
+    - [[#Rectilinear Motion|Rectilinear Motion]]
+    - [[#Optimisation|Optimisation]]
+    - [[#Estimation|Estimation]]
+        - [[#Estimation#Percentage Change|Percentage Change]]
+        - [[#Estimation#Marginal Rates of Change|Marginal Rates of Change]]
+
+
+
+
+= Differentiation =
+
+== Polynomials ==
+
+=== Rule ===
+
+{{$
+\begin{align*}
+y & = ax^n \\
+\frac{dy}{dx} & = anx^{n - 1} \\
+\end{align*}
+}}$
+
+
+=== Common Derivatives ===
+
+* $y = x^2$, $y' = 2x$
+* $y = \frac{a}{x}$, $y' = -\frac{a}{x^2}$
+* $y = \frac{a}{x^n}$, $y' = -\frac{na}{x^{n + 1}}$
+* $y = a\sqrt{x}$, $y' = \frac{a}{2\sqrt{x}}$
+
+
+== Product Rule ==
+
+{{$
+\begin{align*}
+y & = uv \\
+\frac{dy}{dx} & = \frac{du}{dx} v + \frac{dv}{dx} u \\
+\end{align*}
+}}$
+
+
+== Quotient Rule ==
+
+{{$
+\begin{align*}
+y & = \frac{u}{v} \\
+\frac{dy}{dx} & = \frac{\frac{du}{dx} v - \frac{dv}{dx} u}{v^2} \\
+\end{align*}
+}}$
+
+
+== Chain Rule ==
+
+{{$
+\frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx}
+}}$
+
+
+== Trigonometry ==
+
+=== Sine ===
+
+{{$
+\begin{align*}
+y & = \sin{x} \\
+\frac{dy}{dx} & = \cos{x} \\
+\end{align*}
+}}$
+
+
+=== Cosine ===
+
+{{$
+\begin{align*}
+y & = \cos{x} \\
+\frac{dy}{dx} & = -\sin{x} \\
+\end{align*}
+}}$
+
+
+=== Tangent ===
+
+{{$
+\begin{align*}
+y & = \tan{x} \\
+\frac{dy}{dx} & = \frac{1}{\cos^2{x}} \\
+& = \sec^2{x} \\
+\end{align*}
+}}$
+
+
+== e ==
+
+{{$
+\begin{align*}
+y & = e^u \\
+\frac{dy}{dx} & = \frac{du}{dx} e^u \\
+\end{align*}
+}}$
+
+
+
+
+= Sketching Graphs =
+
+*Features*
+* Axis intercepts
+	* Roots
+	* Y intercept
+* Turning points
+* Inflection points
+	* Horizontal
+	* Vertical
+* Asymptotes
+	* Horizontal
+	* Vertical
+* Behaviour as $x \to \pm \infty$
+
+
+== Global Maximum in Domain ==
+
+* Find the global maximum of a function within a specific domain
+* Solve $f'(x) = 0$ for turning points
+* Find $f(x)$ for turning points and minimum and maximum value in domain
+* Select maximum or minimum point
+
+
+== Points of Interest ==
+
+*Types*
+* Turning points
+	* Minimum (concave up)
+	* Maximum (concave down)
+* Inflection points
+	* Horizontal
+	* Vertical
+
+
+*Nature*
+* For a turning point:
+	* Whether it is minimum or maximum
+* For an inflection point:
+	* Whether it is a horizontal or vertical inflection point
+	* Whether it is on a rising or falling curve
+
+
+=== Stationary Points ===
+
+*Definition*
+* Where the first derivative is equal to zero
+* Includes:
+	* Minimum turning points
+	* Maximum turning points
+	* Horizontal points of inflection
+
+
+=== Concavity ===
+
+*Definition*
+* Whether a curve is concave up or concave down at a point
+* Determined by sign of second derivative
+* If $f''(x) > 0$:
+	* Concave up
+* If $f''(x) < 0$:
+	* Concave down
+
+
+== Turning Points ==
+
+*Definition*
+* Where the first derivative is equal to zero
+* Local maxima/minima
+* No change in concavity around point
+
+
+=== Locating ===
+
+* Solve $f'(x) = 0$
+
+
+=== Determining Nature ===
+
+*Sign Test*
+* Find sign of $f'(x - a)$ and $f'(x + a)$ for some small $a$
+* If positive then negative
+	* Maximum turning point
+* If negative then positive
+	* Minimum turning point
+* If positive then positive
+	* Horizontal inflection point on rising curve
+* If negative then negative
+	* Horizontal inflection point on falling curve
+
+
+*Second Derivative Test*
+* If $f''(x) > 0$:
+	* Minimum turning point
+* If $f''(x) < 0$:
+	* Maximum turning point
+* If $f''(x) = 0$:
+	* Inconclusive
+	* Use the sign test
+
+
+== Inflection Points ==
+
+*Definition*
+* Occur when second derivative is zero and there is a change in concavity
+
+
+*Horizontal Inflection Point*
+* Where first derivative is also zero
+
+
+=== Locating ===
+
+*All Inflection Points*
+* Solve $f''(x) = 0$
+* Check concavity around each point
+	* Check sign of $f''(x - a)$ and $f''(x + a)$
+	* Ensure signs are different
+
+
+*Horizontal Inflection Points*
+* Solve $f'(x) = 0$
+* Check $f''(x) = 0$
+* Check concavity changes around each point
+
+
+== Graphing Derivatives ==
+
+* Sketch a graph of the first and second derivative from a graph of $f(x)$
+* First derivative graph will be a polynomial of order one less than that of
+  $f(x)$
+* Second derivative graph will be polynomial of order two less than that of
+  $f(x)$
+* Technique:
+	* Map out known points
+	* Determine appearance of graph around known points
+	* Imagine general shape of polynomial (both positive and negative variants)
+	* Join up known points
+
+
+== Features ==
+
+*First Derivative Graph*
+* Passes through x axis for turning points and horizontal inflections on $f(x)$
+* Above x axis for positive gradients in $f(x)$
+* Below x axis for negative gradients in $f(x)$
+* Minimum/maximum turning points at points of steepest gradient on $f(x)$
+
+
+*Second Derivative Graph*
+* Above x axis for concave up parts of $f(x)$
+* Below x axis for concave down parts of $f(x)$
+* Passes through zero for inflection points
+
+
+
+
+= Integration =
+
+Given the function:
+
+{{$
+f(x) = \frac{dy}{dx}
+}}$
+
+The integral of this function is $y$:
+
+{{$
+\int f(x) dx = y + c
+}}$
+
+Where $c$ is a real number.
+
+
+== Properties ==
+
+{{$
+\begin{align*}
+\int k f(x) dx & = k \int f(x) dx
+\int (f(x) \pm g(x)) dx & = \int f(x) dx \pm \int g(x) dx \\
+\int (f(x) g(x)) dx & = \int f(x) dx \int g(x) dx \\
+\int (\frac{f(x)}{g(x)}) dx & = \frac{\int f(x) dx}{\int g(x) dx} \\
+\end{align*}
+}}$
+
+
+== Polynomial Functions ==
+
+Given the function:
+
+{{$
+f(x) = ax^n
+}}$
+
+The indefinite integral is:
+
+{{$
+\int f(x) dx = \frac{ax^{n + 1}}{n + 1} + c
+}}$
+
+
+*Procedure*
+* Pick the main term (with the exponent) and ignore the coefficient
+* Increase the power by 1
+* Differentiate and observe the coefficient of this derivative
+* Manipulate the original term with its increased exponent so that its
+  coefficient when differentiated will produce the same coefficient as in the
+  original function
+	* Divide the original coefficient by the derivative's coefficient
+
+
+*Examples*
+
+{{$
+\begin{align*}
+\int 2x + 3x^2 dx & = x^2 + x^3 + c \\
+\int x^2 + x^4 dx & = \frac{x^3}{3} + \frac{x^5}{5} + c \\
+\int \frac{3}{x^2} dx & = \frac{-3}{x} + c \\
+\end{align*}
+}}$
+
+
+*With Chain Rule*
+
+{{$
+\begin{align*}
+\int 12x(x^2 + 3)^2 & = 2(x^2 + 3)^3 + c \\
+\int (6x^2 + 8x)(x^3 + 2x^2 + 4)^2 & = \frac{2}{3}(x^3 + 2x^2 + 4)^3 \\
+\end{align*}
+}}$
+
+
+*Expanding Brackets*
+* If we're asked to integrate a composite function (eg. $12x(x^2 + 3)^4$)
+* The coefficient out the front of the brackets must be a scalar multiple of
+  the derivative of the function inside the brackets
+* Otherwise we have to expand the brackets and integrate each term separately
+* For example:
+	* $12x(x^2 + 3)^4$ is doable
+	* $(x^2 + 23)(x - 10)$ is not
+
+
+== Exponential Functions ==
+
+Given the function:
+
+{{$
+f(x) = ae^{g(x)}
+}}$
+
+The indefinite integral is:
+
+{{$
+\int f(x) dx = \frac{a}{g'(x)} e^{g(x)} + c
+}}$
+
+
+*Examples*
+
+{{$
+\begin{align*}
+\int e^{2x} dx & = \frac{1}{2} e^{2x} + c \\
+\int 4e^{3x + 1} dx & = \frac{4}{3} e^{3x + 1} + c \\
+\end{align*}
+}}$
+
+
+== Trigonometric Functions ==
+
+The indefinite integrals of the trigonometric functions are ($\tan{x}$ isn't
+required):
+
+{{$
+\begin{align*}
+\int \sin{x} dx & = -\cos{x} + c \\
+\int \cos{x} dx & = \sin{x} + c \\
+\end{align*}
+}}$
+
+
+*Examples*
+
+{{$
+\begin{align*}
+\int \sin{2x + 1} dx & = -\frac{1}{2}\cos{2x + 1} + c \\
+\int 3\cos{5x} dx & = \frac{3}{5}\sin{5x} + c \\
+\end{align*}
+}}$
+
+
+== Common Integrals ==
+
+{{$
+\begin{align*}
+\int x^n dx & = \frac{x^{n + 1}}{n + 1} \\
+\int \frac{1}{x^n} dx & = -\frac{n - 1}{x^{n - 1}} \\
+\int e^x dx & = e^x \\
+\end{align*}
+}}$
+
+
+== Definite Integrals ==
+
+* The definite integral of a function finds the area under a curve between two
+  points
+
+{{$
+\int^b_a f'(x) dx = f(b) - f(a) \\
+}}$
+
+
+*Inscribed and Circumscribed Area*
+* Value of an integral can be approximated by averaging the inscribed and
+  circumscribed area
+* Inscribed area is the area below the curve approximated with rectangles that
+  do not extend above the curve
+* Circumscribed area is area below the curve approximated with rectangles that
+  extend above the curve
+* Value will be between inscribed and circumscribed area
+
+
+*Negative Area*
+* Area below the x axis is negative, and above is positive
+* If we're finding the area between two points, and the graph goes below the x
+  axis
+	* Then the portion under the x axis will cancel out with the portion above
+	* Since it acts as a negative value
+* To find the true area between a curve and the x axis
+	* Either split the function up into sections where it intersects with the x
+	  axis and negate the sections below the x axis
+	* Or find the definite integral of the absolute value of the function
+
+
+*Area Between Curves*
+* Find the intersection between the curves
+	* Equate the two equations and solve for $x$
+* Area between the two curves is the area under the top curve subtract the area
+  under the bottom one:
+
+{{$
+\int^b_a f(x) - \int^b_a g(x)
+}}$
+
+* Same equation applies even if part of the curve lies below the x axis
+* If the upper graph becomes the lower graph between two intersections
+	* Split up by finding the intersections between the two functions
+	* Split the integral into multiple components and negate the opposing parts
+
+
+*Find Integral from Derivative*
+* Given the derivative for something involving product or quotient rule
+* Asks to find the integration of a term of the above derivative
+* Must write the integral of the derivative equals the original function
+* Split the integral up over the terms of the derivative
+* Isolate the integral of the desired term
+* Solve the rest of the integrals
+
+
+
+
+= Rectilinear Motion =
+
+* Relationship between position/displacement, velocity, and acceleration
+* Find velocity from displacement, or acceleration from velocity, by
+  differentiating with respect to time
+* Find displacement from velocity, or velocity from acceleration, by integrating
+  with respect to time
+
+
+*Components*
+* Displacement ($s$) or position ($x$)
+	* Integrate velocity
+* Velocity ($v$)
+	* Integrate acceleration
+	* Differentiate displacement
+* Acceleration ($a$)
+	* Differentiate velocity
+
+
+*Terminology*
+* At rest
+	* $v = 0$
+* At origin
+	* $x = 0$
+* Constant acceleration
+	* $a = k, k \in \mathbb{R}$
+* Initially, ...
+	* $t = 0$
+
+
+*Speed and Velocity*
+* Velocity is a vector quantity and requires a direction
+	* Direction given in the form of a positive or negative value
+* Speed is a scalar quantity and should always be positive
+	* Take the absolute value of the velocity
+
+
+*Distance and Displacement*
+* Displacement is the straight line distance between two points
+	* Calculated by $s(x_1) - s(x_2)$
+	* Take the definite integral between the two points
+		* Ie. $\int_{x_1}^{x_2} s(x) dx$
+* Distance is the distance travelled by the object in moving between two points
+	* Find turning points of the graph and add up the distance between them and
+	  the end points
+	* Or take the definite integral of the absolute value of the function
+		* Ie. $\int_{x_1}^{x_2} |s(x)| dx$
+
+
+
+
+= Optimisation =
+
+* Find optimimum value for an expression
+* Differentiate and solve for turning points
+* Find minimum or maximum value
+
+
+*Two Variables*
+* Write the equation to optimise in terms of both variables
+* Write an equation relating the two variables
+* Rearrange for one of the variables
+* Substitute into the equation to optimise
+* Solve for optimimum value
+* Solve for second variable using relating equation
+
+
+
+
+= Rates of Change =
+
+{{$
+\begin{align*}
+\frac{dy}{dx} & \approx \frac{\delta y}{\delta x} \\
+\delta y & \approx \delta x \frac{dy}{dx} \\
+\end{align*}
+}}$
+
+* Be aware we can also use the inverse of the derivative $\frac{dx}{dy}$
+
+
+== Percentage Change ==
+
+* What is the approximate percentage change in $y$ when $x$ changes by $k$
+  percent?
+* Given $\frac{\delta x}{x}$
+* Asked for $\frac{\delta y}{y}$
+
+{{$
+\begin{align*}
+\frac{\delta x}{x} & = \frac{k}{100} \\
+\frac{dy}{dx} & \approx \frac{\delta y}{\delta x} \\
+\delta y & \approx \frac{dy}{dx} \delta x \\
+\frac{\delta y}{y} & \approx \frac{dy \delta x}{dx y} \\
+\end{align*}
+}}$
+
+* This will simplify to some constant multiplied by $\frac{\delta x}{x}$
+
+
+== Marginal Rates of Change ==
+
+*Economic Functions*
+* Cost function, $C(x)$
+* Revenue function, $R(x)$
+* Profit function, $P(x) = R(x) - C(x)$
+
+
+*Marginal Functions*
+* Marginal cost gives the cost of producing the next item at the stage of
+  production where we're currently producing $x$
+* Marginal cost is $C'(x)$
+* Marginal cost of $x$th item is $C'(x - 1)$
+* Same for revenue and profit
+
+
+== Total Rate of Change ==
+
+* Given the derivative function
+* Asked to find the total change in a function between two values
+	* Find the definite integral between the two values
+* Find total change in (for example) the 4th second, or the 3rd week
+	* Find definite integral between $n - 1$ and $n$

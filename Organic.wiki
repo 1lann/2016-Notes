@@ -564,6 +564,7 @@ IMAGE HERE
 
 
 *Formation*
+* A reaction producing an ester is called esterification
 * Mix a carboxylic acid and an alcohol with an $\ce{H+}$ ion catalyst (like
   $\ce{H2SO4}$)
 * Produces an ester and water
@@ -722,3 +723,6 @@ IMAGE HERE
 * Dicarboxylic acid and a diamine react to form an amide and water
 * Links called amide links
 * TODO: image
+
+
+==

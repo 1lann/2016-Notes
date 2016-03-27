@@ -36,13 +36,29 @@
         - [[#Circular Motion#Centripetal Force|Centripetal Force]]
             - [[#Circular Motion#Centripetal Force#Horizontal Motion|Horizontal Motion]]
             - [[#Circular Motion#Centripetal Force#Vertical Motion|Vertical Motion]]
+            - [[#Circular Motion#Centripetal Force#Conical Motion|Conical Motion]]
+        - [[#Circular Motion#Apparent Weightlessness|Apparent Weightlessness]]
         - [[#Circular Motion#Centrifugal Force|Centrifugal Force]]
-        - [[#Circular Motion#Conical Pendulum|Conical Pendulum]]
-        - [[#Circular Motion#Cambered Road|Cambered Road]]
+        - [[#Circular Motion#Conical Pendulum Problem|Conical Pendulum Problem]]
+        - [[#Circular Motion#Questions to Expect|Questions to Expect]]
+        - [[#Circular Motion#Tricks|Tricks]]
     - [[#Gravity|Gravity]]
         - [[#Gravity#Gravitational Fields|Gravitational Fields]]
         - [[#Gravity#Force|Force]]
         - [[#Gravity#Circular Motion|Circular Motion]]
+        - [[#Gravity#Kepler's Laws|Kepler's Laws]]
+        - [[#Gravity#Centre of Mass|Centre of Mass]]
+    - [[#Torque|Torque]]
+        - [[#Torque#Stability|Stability]]
+        - [[#Torque#Equilibrium|Equilibrium]]
+            - [[#Torque#Equilibrium#Types of Equilibrium|Types of Equilibrium]]
+        - [[#Torque#Process|Process]]
+        - [[#Torque#See Saw Problem|See Saw Problem]]
+        - [[#Torque#Painter's Scaffolding Problem|Painter's Scaffolding Problem]]
+        - [[#Torque#Ladder Problem|Ladder Problem]]
+        - [[#Torque#Crane Problem|Crane Problem]]
+        - [[#Torque#Door Hinge Problem|Door Hinge Problem]]
+        - [[#Torque#Questions to Expect|Questions to Expect]]
 
 
 
@@ -738,3 +754,255 @@ TODO: Read nelson chapter
 
 == Circular Motion ==
 
+== Kepler's Laws ==
+
+== Centre of Mass ==
+
+
+
+
+= Torque =
+
+*Definition*
+* Torque is a turning effect on an object about a point
+* The point about which the object rotates is called the pivot point
+* A line of action is the line between the point a force acts at and the pivot
+  point
+* Symbol: $\tau$
+* Units: $N m$ (Newton metres)
+	* Not Joules
+* It is a vector quantity and has a direction
+	* Usually written clockwise or anticlockwise
+
+
+*Formula*
+* Torque is proportional to the distance from the pivot a force acts, and the
+  mangitude of the component of the force perpendicular to the line of action
+* Formula: $\tau = r F$
+* A force can act at an angle to the line of action
+	* Only care about perpendicular force
+	* We can also use the perpendicular distance to the force instead of the
+	  perpendicular force itself
+	* $\tau = r F \sin{\theta}$
+
+
+*Increasing Torque*
+* Ways to increase the amount of torque applied include:
+	* Increase the distance from the pivot ($r$)
+	* Increase the mangitude of the force
+	* Make $\theta$ closer to $90^\circ$
+
+
+*Acceleration*
+* We are only dealing with statics
+* No acceleration involved
+
+
+*Centre of Mass*
+* Point from which an object's weight force acts
+* Assuming object is of uniform density
+
+
+== Stability ==
+
+* If the net force acting on an object acts outside its base, the object will
+  fall over
+	* Since the net force will produce a torque that acts in the opposite
+	  direction as the force moves outside the base of the object
+
+
+*Increasing Stability*
+* Lower centre of mass (move towards the base)
+	* Move net force (usually just weight) to within the object's base
+* Increase width of base
+	* Moves net force back within object's base
+
+
+== Equilibrium ==
+
+*Translational Equilibrium*
+* No net translational force acting on the object
+* No change in translational acceleration
+
+
+*Rotational Equilibrium*
+* No net torque acting on the object
+* No change in rotational acceleration
+
+
+=== Types of Equilibrium ===
+
+*Stable*
+* Cylinder standing on circular base
+* Won't topple over if a force is exerted on it
+	* No unbalanced torque
+	* No change in velocity
+
+
+*Neutral*
+* Cylinder on side
+* Will roll if pushed
+	* Doesn't create an unbalanced torque
+	* Causes momentary acceleration and hence a change in velocity
+
+
+*Unstable*
+* Cylinder balanced on edge
+* Centre of mass directly over pivot point
+* Will topple if pushed
+	* Creates unbalanced force
+	* Causes acceleration
+
+
+== Process ==
+
+*Process*
+* Since all objects will be in translational and rotational equilibrium
+* Set $\sum \tau = 0$ and solve for unknown
+* Set $\sum F_y = 0$ and solve for vertical component of reaction force
+* Set $\sum F_x = 0$ and solve for horizontal component of reaction force
+
+
+== See Saw Problem ==
+
+*Description*
+* Multiple objects on a see saw at different distances away from a pivot point
+* Find the location of a missing mass in order to balance the system
+* Find the mass of an object at a location in order to balance the system
+
+
+*Variables*
+* Mass of objects
+* Distance of objects from pivot
+* Location of pivot
+* Reaction force at pivot
+	* Will be vertical
+
+
+*Method*
+* Set $\sum \tau = 0$ and solve for unknown mass/radius
+* Set $\sum F_y = 0$ and solve for reaction force at pivot
+
+
+*Examples*
+* Children on a see saw
+* Weights on a balance
+
+
+== Painter's Scaffolding Problem ==
+
+*Description*
+* Platform suspended by multiple cables
+* Multiple masses acting down on platform
+* Solve for unknown masses, distances, or tension in cables
+
+
+*Variables*
+* Mass of objects
+* Distances of objects from a side of the plank
+* Length of plank
+	* Same as solving for the distance of an object from the pivot
+* Tension in cables
+
+
+*Method*
+* Let one cable at either end of the plank be the pivot point
+	* Tension in that cable therefore doesn't exert a torque as its distance
+	  from the pivot is 0
+* Set $\sum \tau = 0$ and solve for unknown tension
+* Set $\sum F_y = 0$ and solve for other tension
+
+
+== Ladder Problem ==
+
+*Description*
+* Ladder resting against a wall at an angle
+* Weight force acts down
+* Normal force provided by wall counteracts torque due to weight
+	* Normal force acts perpendicular to wall
+
+
+*Variables*
+* Mass of ladder
+* Length of ladder
+* Angle made with wall
+* Normal force produced by wall
+* Friction force exerted by ground on base of ladder
+	* Opposite of the wall's normal force
+* Normal force produced by ground
+	* Opposite of the ladder's weight force
+
+
+*Method*
+* Treat point of contact with ground as pivot point
+* Find the angle the normal force exerted by wall is relative to the ladder
+* Find the angle the ladder's weight force makes with the ladder
+* Set $\sum \tau = 0$ and solve for reaction force
+	* Use $\tau = r F \sin{\theta}$ and the provided angles
+* Set $\sum F_y = 0$ and solve for normal force exerted by ground
+* Set $\sum F_x = 0$ and solve for friction force provided by ground
+* Combine friction and normal force to find total reaction force
+
+
+== Crane Problem ==
+
+*Description*
+* Crane arm suspended at angle above horizontal
+* Supported by cable fixed to a central vertical tower
+* Load attached at end of arm
+
+
+*Variables*
+* Mass of arm
+* Mass of load
+* Angle arm makes with horizontal
+* Tension in cable
+
+
+*Method*
+* Assign angles for all forces acting on crane arm
+* Set $\sum \tau = 0$ and solve for unknown tension (usually)
+* Set $\sum F_y = 0$ and solve for vertical reaction force at pivot
+* Set $\sum F_x = 0$ and solve for horizontal reaction force
+* Combine horizontal and vertical components for the total reaction force
+
+
+== Door Hinge Problem ==
+
+*Description*
+* Door attached at two hinges on left edge of door
+* Centre of mass acting downwards in the middle of the door
+* Door attempts to rotate clockwise around lower hinge
+* Upper hinge exerts a reaction force to the left to prevent the door from
+  rotating
+* There are multiple lines of action from the pivot point to the forces acting
+* Can either take the perpendicular forces to these lines of actions
+	* Or can take the perpendicular distance to the forces acting
+
+
+*Variables*
+* Mass of door
+* Dimensions of door
+* Location of hinges
+
+
+*Method*
+* Find perpendicular distance to centre of mass and reaction force at upper
+  hinge
+* Set $\sum \tau = 0$ and solve for reaction force at upper hinge
+* Set $\sum F_y = 0$ and solve for vertical reaction force at lower hinge
+* Set $\sum F_x = 0$ and solve for horizontal reaction force at lower hinge
+
+
+== Questions to Expect ==
+
+* Horizontal platform around central pivot
+	* See saw
+* Horizontal platform supported by multiple forces
+	* Painter's scaffolding problem
+* Non-horizontal platform with forces
+	* Crane problem
+	* Ladder problem
+* Location of forces not co-linear
+	* Door hinge problem
+	* Projector on a support arm
