@@ -746,17 +746,279 @@ TODO: Read nelson chapter
   therefore inertia
 
 
+
+
 = Gravity =
 
 == Gravitational Fields ==
 
-== Force ==
+*Definition*
+* Anything with mass creates a gravitational field
+* Gravitational field can inflence other masses with a force
+* Units: $\mbox{N m}^{-1}$ (Newtons per metre)
+	* As it's force exerted by the gravitational field per unit mass
+	* Equivalent to $\mbox{m s}^{-2}$ (ie. acceleration)
+
+
+*Field Lines*
+* Drawn around a mass to indicate direction of gravitational field
+* The field is uniform around a mass - not stronger in one location
+* Strength is proportional to the density of the field lines at a point
+	* Density of lines decreases as distance from the object increases
+* Drawing conditions:
+	* Straight lines
+	* Symmetrical around mass
+	* Equal in length
+	* Arrows pointing towards the centre of mass
+	* Size of arrows proportional to strength of field
+		* Draw small arrows for a small mass
+
+
+== Universal Law of Gravitation ==
+
+{{$
+F = \frac{G m_1 m_2}{r^2}
+}}$
+
+* Where $G$ is the universal gravitational constant
+	* Units: $\mbox{N m}^{2}\mbox{ kg}^{-2}$
+	* Value: $6.67 \times 10^{-11}$
+* $r$ is the distance from the centre of the object
+	* Must include (for example) radius of Earth in calculations
+* Force must include direction
+	* For example, towards Earth or towards moon
+
+
+*Acceleration Due to Gravity*
+* Equate universal law of gravitation to Newton's second law
+
+{{$
+\begin{align*}
+m_1 a & = \frac{G m_1 m_2}{r^2} \\
+a & = \frac{G m_2}{r^2} \\
+\end{align*}
+}}$
+
+
+*Implications of Newton's Third Law*
+* Becasue of Newton's third law, the gravitational force exerted by a body on
+  another causes the second body to exert a force back on the first
+* For example, the Earth will exert a gravitational force on the moon, and the
+  moon exerts a gravitational force on the Earth
+* Acceleration of Earth due to the moon's gravity is much smaller than that of
+  the moon's due to Earth's gravity
+	* Since mass of Earth is much larger than the moon's
+
+
+*Altitude*
+* Gravitational force decreases as distance from centre of object increases
+	* By a factor of $r^2$
+* Travelling to a higher altitude decreases the gravitational force exerted on
+  a person
+
 
 == Circular Motion ==
 
-== Kepler's Laws ==
+* On Earth, an object experiences a centripetal acceleration due to the Earth's
+  rotation
+* This reduces the normal force exerted on the object due to the object's
+  inertia
+	* Creates a centripetal force
+* This reduces the object's apparent mass
+
+{{$
+\begin{align*}
+-F_c & = N - W \\
+N & = W - F_c \\
+& = mg - \frac{mv^2}{r} \\
+\end{align*}
+}}$
+
+* Could also calculate the mass of the object using $\frac{G m_o m_E}{r_E^2}$
+
+
+== Orbital Velocity ==
+
+{{$
+\begin{align*}
+F_g & = F_c \\
+\frac{G m_E m_o}{r_o^2} & = \frac{m_o v^2}{r_o} \\
+v^2 & = \frac{G m_E}{r_o} \\
+\end{align*}
+}}$
+
+* Velocity of an object orbiting around a planet at a specific altitude ($r$)
+* Doesn't depend on the mass of the object orbiting the planet
+* Must show derivation in test (equate gravitational and centripetal forces)
+
+
+*Increasing Forward Velocity*
+* Rockets on satellite momentarily fire forwards
+* Give satellite increased kinetic energy
+* Increases tangental velocity of satellite
+* Gravity can no longer provide the required centripetal force to sustain the
+  circular path at that radius
+* Satellite will move further away from the Earth, increasing its radius of
+  orbit
+* Increases its gravitational potential energy as the object is further from the
+  Earth
+* Decreases its kinetic energy due to the law of conservation of energy
+* Decreases its orbital velocity
+
+
+== Escape Velocity ==
+
+{{$
+v = \sqrt{\frac{2 G m_E}{r_E}}
+}}$
+
+* Velocity an object is required to travel at to escape the gravitational field
+  of the Earth
+
+
+== Lagrangian Points ==
+
+*Definition*
+* Altitude of orbit above Earth where the gravitational force exerted by the
+  Earth and the moon are equal
+* Objects at this point will not fall towards either the Earth or moon
+
+
+*Derivation*
+
+{{$
+\begin{align*}
+\frac{G m_E m_o}{x^2} & = \frac{G m_m m_o}{(r - x)^2} \\
+\frac{m_E}{m_m} & = \frac{x^2}{(r - x)^2} \\
+x & = \frac{r\sqrt{\frac{m_E}{m_m}}}{1 + \sqrt{\frac{m_E}{m_m}}} \\
+\end{align*}
+}}$
+
+* Where:
+	* $r$ is the distance from the centre of the Earth to the centre of the moon
+	* $x$ is the distance from the centre of the Earth of the Lagrangian point
+* Point is independent of the mass of the orbiting object
+
+
+== Kepler's Third Law ==
+
+*Derivation*
+
+{{$
+\begin{align*}
+F_g & = F_c \\
+\frac{G m_E m_o}{r_o^2} & = \frac{m_o 4 \pi^2 r}{T^2} \\
+\frac{r_o^3}{T^2} & = \frac{G m_E}{4 \pi^2} \\
+\end{align*}
+}}$
+
+
+*Variables*
+* Mass of larger object being orbited (in this case, Earth)
+* Radius of orbit
+* Period of orbit
+
+
+== Geosynchronous Orbit ==
+
+* Period of orbit of an object around a planet matches the period of revolution
+  of the planet
+* Revolution must be around equator
+* Period of orbit equals period of revolution of planet
+	* Ie. period of orbit must be 24 hours
+
+
+*Variables*
+* Period of geosynchronous orbit
+	* Must be 24 hours (to match Earth's period of revolution)
+* Radius of geosynchronous orbit
+	* Use Kepler's law
+* Orbital velocity
+	* Use $\frac{2 \pi r}{T}$ or derive orbital velocity formula
+* Acceleration of object
+
+
+== Kepler's Other Laws ==
+
+*First Law*
+* The path of the planets around the sun are elliptical
+* One foci of the ellipse is the sun
+* The other is an imaginary point out in space
+
+
+*Second Law*
+* The planets sweep out equal areas in equal time
+* Regardless of their position in their elliptical orbit
+
 
 == Centre of Mass ==
+
+*Definition*
+* Two objects will orbit around their centre of mass
+
+
+*Relevance*
+* Most of the time, the mass of the planet is much larger than the mass of the
+  orbiting object
+* This means the centre of mass is very close to the centre of the planet
+* This makes it insignificant (when dealing with 3 significant figures) in
+  calculations
+* Becomes significant when the mass of the orbiting object is similar to the
+  mass of the planet its orbiting
+
+
+*Formula*
+
+{{$
+\mbox{centre of mass} = \frac{m_2 s}{m_1 + m_2}
+}}$
+
+* Where:
+	* $m_1$ is the mass of the first object
+	* $m_2$ is the mass of the second object
+	* $s$ is the distance between the objects
+
+
+== Barycentre ==
+
+*Definition*
+* Point around which two objects rotate
+* Rotate around barycentre with equal periods
+	* Always the same distance from each other and from the barycentre
+* See centre of mass above
+
+
+*Kepler's Third Law*
+* Cannot use the equation of Kepler's third law when dealing with planets that
+  orbit around a Barycentre
+* In deriving Kepler's law, we assumed the radius of orbit (for centripetal
+  force) was equal to the distance the objects were apart (for the gravitational
+  force)
+* The radius of orbit is the distance between the Barycentre and the planet
+* The distance the objects are apart is greater than this
+
+
+== Questions to Expect ==
+
+* Draw gravitational field lines
+* Calculate centre of mass of two objects
+* Find gravitational force exerted by one object on another
+* Find acceleration due to gravity on another planet
+* Find velocity of an object orbiting at an altitude
+* Explain what happens when a tangental force is applied to an object in orbit
+* Find escape velocity of an object from a planet
+* Find location of Lagrangian point between two bodies
+* Find period, radius, velocity of a geosynchronous orbit
+* Find location of barycentre between two objects
+
+
+== Tricks ==
+
+* Ensure all variables are in SI units
+	* Period in seconds
+	* Radius in metres
+	* Number of days in a year is 365.25 (account for leap year)
+* Radius of orbit is altitude plus radius of earth
 
 
 
