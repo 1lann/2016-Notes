@@ -1,7 +1,9 @@
 
 = Economics =
 	* [[Globalisation]]
+	* [[Balance of Payments]]
 	* [[Terms of Trade]]
+	* [[Exchange Rates]]
 
 
 == Study System ==

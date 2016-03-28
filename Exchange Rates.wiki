@@ -1,0 +1,391 @@
+
+= Contents =
+    - [[#Exchange Rates|Exchange Rates]]
+        - [[#Exchange Rates#Measurements|Measurements]]
+            - [[#Exchange Rates#Measurements#Bilateral|Bilateral]]
+            - [[#Exchange Rates#Measurements#Trade Weighted Index|Trade Weighted Index]]
+        - [[#Exchange Rates#Formula|Formula]]
+        - [[#Exchange Rates#Model|Model]]
+        - [[#Exchange Rates#Movements|Movements]]
+        - [[#Exchange Rates#Types|Types]]
+            - [[#Exchange Rates#Types#Floating|Floating]]
+            - [[#Exchange Rates#Types#Fixed|Fixed]]
+            - [[#Exchange Rates#Types#Managed|Managed]]
+        - [[#Exchange Rates#Factors Affecting|Factors Affecting]]
+        - [[#Exchange Rates#Effects|Effects]]
+            - [[#Exchange Rates#Effects#Depreciation|Depreciation]]
+            - [[#Exchange Rates#Effects#Dutch Disease|Dutch Disease]]
+        - [[#Exchange Rates#Historical Data|Historical Data]]
+            - [[#Exchange Rates#Historical Data#Mining Boom|Mining Boom]]
+            - [[#Exchange Rates#Historical Data#GFC|GFC]]
+            - [[#Exchange Rates#Historical Data#Slowing Growth in China|Slowing Growth in China]]
+
+
+
+
+= Exchange Rates =
+
+*Definition*
+* The price of one country's currency in terms of another country's currency
+
+
+*Foreign Exchange Market*
+* Market where the currency of other countries is bought and sold
+
+
+== Measurements ==
+
+=== Bilateral ===
+
+*Definition*
+* The bilateral exchange rate measures the value of one country's currency in
+  terms of another country's currency
+* Also called the cross exchange rate
+
+
+*Example*
+* For example, AUD in terms of USD
+	* 1 AUD = 0.90 USD
+	* 1 USD = 0.71 British pounds
+
+
+*Quoting*
+* Most commonly quoted exchange rate is the bilateral exchange rate against USD
+* There are two ways to quote a currency using the bilateral exchange rate:
+	* In terms of a country's purchasing power
+		* 1 AUD = 0.75 USD
+	* In terms of a common currency
+		* 1 USD = 1.33 AUD
+
+
+=== Trade Weighted Index ===
+
+*Definition*
+* The trade weighted index is a measure of movements in the Australian dollar
+  against a weighted average of 20 other currencies
+* The currencies are weighted according to their importance to Australia's
+  international trade flows
+
+
+*Advantages Over Bilateral Measure*
+* TWI is more accurate and more significant than the bilateral exchange rate
+  holistically
+	* Though the bilateral rate is more significant for an individual travelling
+	  to South Africa, for example
+* As it is trade weighted, it relates to changes in performance of Australia's
+  balance of payments over time
+
+
+== Formula ==
+
+* Price of good in foreign currency
+	* Multiply price of good in domestic currency by the bilateral rate, quoted
+	  in terms of the domestic currency (ie. domestic currency is 1)
+* Price of good in domestic currency
+	* Multiply price of good in foreign currency by the bilateral rate, quoted
+	  in terms of the foreign currency (ie. foreign currency is 1)
+
+
+*Example*
+* Price in foreign currency
+	* Given a good costs $60 AUD
+	* The exchange rate is 1 AUD = 0.75 USD
+	* The good costs $60 \times 0.75 = 45$ USD
+* Price in domestic currency
+	* Given a good costs $80 USD
+	* The exchange rate is 1 AUD = 0.75 USD
+	* The exchange rate in terms of the USD is 1 USD = $\frac{1}{0.75}$ = 1.33
+	  AUD
+	* The good costs $80 \times 1.33 = 106.4$ AUD
+
+
+== Model ==
+
+* The exchange rate is determined by supply and demand of the currency in the
+  foreign exchange market
+* Whenever a firm or individual needs to move money into another country, it
+  usually needs to convert the money into the country's currency
+	* This involves a transaction in the foreign exchange market
+* All credits in the country's balance of payments represent demand for the
+  currency
+	* A credit requires converting foreign currency into Australian dollars
+	* This is a purchase of Australian dollars (ie. demand for it)
+* All debits represent supply of the currency
+	* A debit requires converting Australian dollars into foreign currency to
+	  perform a transaction overseas
+	* This is the sale of Australian dollars (ie. supplying it to the market)
+
+
+*Increased Demand for the AUD*
+* Increased demand for Australian exports
+	* Exports are sold in AUD
+	* Overseas consumers require AUD to purchase the exports
+	* These consumers must therefore purchase AUD (demand for the dollar)
+	* Examples: purchase of iron ore, overseas students studying in
+	  Australia, overseas tourists travelling to Australia
+* Increased foreign investment into Australia
+	* Foreign investment in Australia requires AUD to perform domestic
+	  transactions
+	* Overseas investors must convert their money into AUD to perform these
+	  transactions
+	* Requires the purchase of AUD
+	* Examples: construction of new mining infrastructure by an overseas
+	  mining company in Australia
+* Increased income receipts for Australians working overseas
+	* Australians are paid in AUD
+	* Companies hiring Australians must convert the income for these employees
+	  into AUD
+	* Requires the purchase of AUD
+* Increased dividend payments to Australians who have invested in overases
+  companies
+	* Dividend payments must be converted to Australian dollars before being
+	  paid to Australian investors
+	* Requires purchasing AUD
+* Increased profit flows to Australian companies with operations overseas
+	* Profit flows are converted to Australian dollars before being returned to
+	  multinational companies with their headquaters in Australia
+
+
+*Increased Supply of the AUD*
+* Increased spending on imports
+	* Imports in other countries are sold in that country's currency
+	* Requires converting AUD into foreign currency
+	* This is the sale of AUD in the foreign exchange market, suppling AUD to
+	  the market
+	* Examples: Purchase of cars from Japan, Australian tourists travelling
+	  overseas, Australian students studying in overseas universities
+* Increased foreign investment in other countries
+	* Transactions in foreign countries that arise from investment in those
+	  countries take place in the foreign country's currency
+	* Requires converting AUD into foreign currency
+	* Examples: an Australian company building a manufacturing plant in China
+* Increased income payments to overseas residents working in Australia
+	* Overseas residents are paid in their country's currency
+	* Requires converting AUD to foreign currency
+* Increased dividend payments to overseas investors who have invested in
+  Australian companies
+	* Overseas investors expect to be paid in their country's currency
+	* Requires converting AUD into foreign currency
+* Increased profit flows to overseas companies with operations in Australia
+	* Overseas companies will convert profit made from operations in Australia
+	  into the currency of the country the company's headquarters are in
+	* Requires converting AUD into foreign currency
+
+
+== Movements ==
+
+*Appreciation*
+* Rise in the bilateral exchange rate for a country relative to another (usually
+  the USD)
+* Or a rise in a country's trade weighted index
+
+
+*Depreciation*
+* Fall in the bilateral exchange rate for a country relative to another (usually
+  the USD)
+* Or a fall in a country's trade weighted index
+
+
+== Types ==
+
+=== Floating ===
+
+*Definition*
+* Where the market forces of supply and demand alone in the foreign exchange
+  market determine the price of a country's currency
+
+
+*Advantages*
+* Currency can act as a shock absorber for economic shocks to the country
+	* TODO:
+* Makes monetary policy more effective
+	* TODO:
+
+
+*Disadvantages*
+* TODO:
+
+
+=== Fixed ===
+
+*Definition*
+* Where the price of a country's currency is set at a particular value and
+  maintained by the country's central bank
+* Central bank may change the value they set the currency at
+	* Increasing the value of the currency is called a revaluation
+	* Decreasing the value of the currency is called a devaluation
+
+
+*Advantages*
+* TODO:
+
+
+*Disadvantages*
+* Requires repeated intervention by the central bank to adjust the exchange rate
+	* A value too low would cause a shortage of funds in the market (deficit)
+	* A value too high would cause a surplus of funds in the market (surplus)
+
+
+=== Managed ===
+
+*Definition*
+* Where the value of a currency is allowed to fluctuate between an acceptable
+  upper and lower limit in accordance with the market forces of demand and
+  supply in the foreign exchange market
+* The country's central bank will intervene to prevent the currency from moving
+  outside of these acceptable levels
+	* Can raise or lower interest rates
+	* Or buy and sell large volumes of the currency to increase supply or demand
+
+
+*Advantages*
+* TODO:
+
+
+*Disadvantages*
+* TODO:
+
+
+=== Sepculating ===
+
+*Against Fixed Exchange Rate*
+* Predicting the direction of the movement (revaluation or devaluation) is easy
+* Knowing when the change will be made is much more difficult
+
+
+*Against Floating Exchange Rate*
+* You know the exchange rate will change every day
+* Can't easily predict the direction of the movement (appreciation or
+  depreciation)
+
+
+== Factors Affecting ==
+
+* Australian dollar is depreciating when looking at mid-term trends
+* Depreciating since 2012
+* Listed below in order of significance
+
+
+*Terms of Trade*
+* Recent unfavourable movement in the terms of trade since 2012
+* Especially from 2014 onwards where the world saw a large decrease in the price
+  of commodities
+	* Indicated the end of the commodities price boom
+* This caused a large decrease in the export price index
+* Caused a significant unfavourable movement in the terms of trade
+* Due to the inelasticity of our exports, this fall in price did not result in
+  any significant change in volume sold
+	* Inelasticity due to the lack of available substitutes for our exports
+	* Intrinsic to our exports due to their composition constisting primarily of
+	  natural minerals
+		* Iron ore, coal, natural gas are our 3 largest exports
+* This decreased our export income
+	* Reduced demand for the AUD
+	* Caused depreciation
+* This is perhaps the most significant factor causing the depreciation over the
+  last 4 years
+
+
+*World Economic Growth*
+* Slowing growth from China over recent years
+	* Average growth over the past decade has been 10%
+	* Forecasts for 2016 are 6 to 7%
+* Since China is a major trading partner with Australia
+	* The number 1 consumer of Australian exports
+	* The number 1 country that Australia imports from
+* Decrease demand for Australian exports
+	* Decrease demand for AUD
+	* Depreciation of AUD
+* In addition, from 2014 onwards
+	* There has been a surplus in the supply of base metals, particularly iron
+	  ore
+		* Due to large infrastruture investment during the mining boom riding on
+		  the back of high commodity prices
+		* Created large production capacity for commodities
+	* Since iron ore is Australia's number 1 export
+	* This has dramatically reduced demand for Australia's exports
+	* Decrease in demand for AUD
+	* Caused depreciation in AUD
+
+
+*Interest Rate Differential*
+* Australia currently has a higher inflation rate relative to other countries
+* But we are in an expansionary phase of our monetary policy
+	* Reserve bank is in the process of reducing the cash rate
+* This is reducing the return investors are receiving on their investments in
+  Australia
+* Makes investors more likely to shift their holdings to overseas markets
+	* As other countries lift their cash rates
+* This increases supply of the Australian dollar in the foreign exchange market,
+  causing a depreciation
+
+
+*International Capital Flows and Foreign Investment*
+* The stabilisation of key markets such as the US in 2013
+* Combined with slowing growth in the Australian economy due to the lower growth
+  in important sectors such as mining
+* Caused investors to shift their holdings overseas
+	* To more attractive investment destinations
+* Caused decreased direct and portfolio investment in Australia
+	* Decrease in demand for AUD
+	* Causes a depreciation
+
+
+*Relative Inflation Rate*
+* Australia has benefitted from lower relative inflation rates over the previous
+  two decades
+	* This increased the competitiveness of our exports
+	* As the prices of our exports were lower when compared to countries with
+	  higher inflation rates
+	* This aided in appreciating our exchange rate during the mining boom
+* Australia's inflation rate was 1.7% as of December 2015
+* Despite this being below the RBA's target inflation rate of between 2 and 3%
+* Most other trade competing nations have had similarly low levels of inflation
+	* European Union was 1.2% as of December 2015
+* Hence the inflation rate has not been of major influence over the Australian
+  dollar's depreciation recently
+
+
+*Domestic Economic Growth*
+* Australia has a high marginal propensity to import
+	* Meaning strong domestic growth directly correlates with higher spending on
+	  imports
+	* Increases supply of AUD
+	* Causes depreciation
+* As of December 2015, Australia's annual GDP growth rate was 3%
+	* Higher than expected
+* Despite this, domestic growth is reasonably volatile
+* Does not have a large influence on the exchange rate
+
+
+*Speculation*
+* The exchange rate is significantly influenced by speculation on the part of
+  investors in the short term
+* Since 2014, the improved performance of the US economy
+* Combined with the slowing growth of the Australian economy
+* Has seen demand for the AUD decrease as central banks around the world no
+  longer view the AUD as an alternate, stable currency
+	* Other markets have better investment opportunities
+* Causes depreciation
+
+
+== Effects ==
+
+=== Depreciation ===
+
+*International Competitiveness*
+* Increases international competitiveness of Australian exporters
+	* Exports become cheaper for foreign consumers
+*
+
+
+=== Dutch Disease ===
+
+
+== Historical Data ==
+
+=== Mining Boom ===
+
+=== GFC ===
+
+=== Slowing Growth in China ===
