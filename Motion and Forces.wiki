@@ -72,6 +72,7 @@
         - [[#Torque#Crane Problem|Crane Problem]]
         - [[#Torque#Door Hinge Problem|Door Hinge Problem]]
         - [[#Torque#Questions to Expect|Questions to Expect]]
+        - [[#Torque#Tricks|Tricks]]
 
 
 
@@ -1350,3 +1351,19 @@ F_g & = F_c \\
 * Location of forces not co-linear
 	* Door hinge problem
 	* Projector on a support arm
+
+
+== Tricks ==
+
+* Read the units of distance and time
+	* Don't mistake km for m
+* For weightlessness question:
+	* Normal force provides apparent weight
+	* Both are accelerating towards earth at same rate
+	* Not in contact
+	* No normal force
+	* Feel weightless
+* For person climbing up a ladder:
+	* Remember to mention rotational and translational equilibrium
+* Don't make fucking calc errors
+* Don't fucking misread the question

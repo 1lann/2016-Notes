@@ -33,9 +33,10 @@
         - [[#Integration#Definite Integrals|Definite Integrals]]
     - [[#Rectilinear Motion|Rectilinear Motion]]
     - [[#Optimisation|Optimisation]]
-    - [[#Estimation|Estimation]]
-        - [[#Estimation#Percentage Change|Percentage Change]]
-        - [[#Estimation#Marginal Rates of Change|Marginal Rates of Change]]
+    - [[#Rates of Change|Rates of Change]]
+        - [[#Rates of Change#Percentage Change|Percentage Change]]
+        - [[#Rates of Change#Marginal Rates of Change|Marginal Rates of Change]]
+        - [[#Rates of Change#Total Rate of Change|Total Rate of Change]]
 
 
 

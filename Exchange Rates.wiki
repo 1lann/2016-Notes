@@ -11,6 +11,7 @@
             - [[#Exchange Rates#Types#Floating|Floating]]
             - [[#Exchange Rates#Types#Fixed|Fixed]]
             - [[#Exchange Rates#Types#Managed|Managed]]
+            - [[#Exchange Rates#Types#Sepculating|Sepculating]]
         - [[#Exchange Rates#Factors Affecting|Factors Affecting]]
         - [[#Exchange Rates#Effects|Effects]]
             - [[#Exchange Rates#Effects#Depreciation|Depreciation]]

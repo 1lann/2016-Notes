@@ -5,6 +5,12 @@ $\require{mhchem}$
     - [[#Reactions|Reactions]]
         - [[#Reactions#Non-Reversible|Non-Reversible]]
         - [[#Reactions#Reversible|Reversible]]
+        - [[#Reactions#Ionic Equations|Ionic Equations]]
+        - [[#Reactions#Acid Reactions|Acid Reactions]]
+            - [[#Reactions#Acid Reactions#Acid Base|Acid Base]]
+            - [[#Reactions#Acid Reactions#Acid Metal|Acid Metal]]
+            - [[#Reactions#Acid Reactions#Acid Carbonate|Acid Carbonate]]
+        - [[#Reactions#Precipitation Reactions|Precipitation Reactions]]
 
 
 
