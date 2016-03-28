@@ -1,0 +1,251 @@
+
+$\require{mhchem}$
+
+
+= Experiment 4 =
+
+*Description*
+
+{{$
+\ce{2NO2 (g) <=> N2O4 (g)}
+}}$
+
+* Forward reaction is exothermic ($\Delta H = 57\mbox{ kJ}$)
+* $\ce{NO2}$ is brown
+* $\ce{N2O4}$ is colourless
+
+
+== Pressure ==
+
+*Description*
+* Contained in gas syringe
+* Instantaneously increase pressure by forcing syrine down quickly
+* Hold syringe at this new pressure
+
+
+*Observations*
+* Turns very dark quickly
+* Then gradually becomes more colourless over time
+
+
+*Explanation*
+* Sudden increase in concentration of $\ce{NO2}$
+	* Causes gas to turn darker brown
+* LCP states that the system will attempt to reduce the pressure after the
+  sudden increase
+	* Shift equilibrium to the right
+	* As it is the side with fewer moles of gas
+	* Decreases concentration of $\ce{NO2}$
+	* Makes gas more colourless
+
+
+== Temperature ==
+
+*Description*
+* Two sealed containers of gas
+* One submerged in an ice bath
+* Other heated over a bunsen burner
+
+
+*Observations*
+* Container in ice bath will turn colourless
+* Container over bunsen burner will turn darker brown
+
+
+*Explanation*
+* LCP states that if the temperature of a system is increased or decreased, the
+  system will favour the exothermic or endothermic reaction to try and offset
+  the change in temperature
+* When submerged in the ice bath, the system will favour the exothermic reaction
+  (the forward reaction)
+	* Turns colourless
+* When heated, system will favour the endothermic reaction (the reverse
+  reaction)
+	* Turns darker brown
+
+
+= Experiment 5 =
+
+== Chromate Equilibrium ==
+
+*Description*
+
+{{$
+\ce{2CrO4^{2-} + 2H+ <=> Cr2O7^{2-} + H2O}
+}}$
+
+* $\ce{CrO4^{2-}}$ ion is yellow (left)
+* $\ce{Cr2O7^{2-}}$ ion is orange (right)
+
+
+*Addition of Acid*
+* Increases concentration of $\ce{H+}$ ions
+* Increases frequency of collisions between $\ce{H+}$ and chromate ion
+* Instantaneously increases rate of forward reaction
+* Reverse rate increases over time as more products are produced
+	* Decreases concentration of $\ce{H+}$ ion over time
+	* Increases concentration of dichromate ion above its original level
+		* Turns more orange
+* Forward rate decreases over time as reactants are used up in producing more
+  products
+* System approaches a new equilibrium
+* Shifts equilibrium to the right
+	* Turns more orange
+
+
+*Addition of Base*
+* Neutralises $\ce{H+}$ ions, reducing their concentration
+* Reduces the frequency of collisions between $\ce{H+}$ and chromate ions
+* Instantaneously decreases rate of forward reaction
+* Forward reaction rate increases over time as products are used up in producing
+  more reactants
+	* Increases concentration of $\ce{H+}$ ion over time
+	* Increases concentration of chromate ion above its original level
+		* Turns more yellow
+* Reverse rate decreases over time as products are used up in the reverse
+  reaction
+* System reaches new equilibrium
+* Equilibrium shifts left
+	* Turns more yellow
+
+
+== Cobalt Equilibrium ==
+
+{{$
+Co(H2O)6^{2+} + 4Cl- <=> CoCl4^{2-} + 6H2O
+}}$
+
+* $\ce{Co(H2O)6^{2+}}$ ion is pale pink (almost colourless)
+* $\ce{CoCl4^{2-}}$ ion is blue
+* Forward reaction is endothermic
+
+
+*Addition of Hydrochloric Acid*
+* Increases concentration of chloride ion (due to $\ce{Cl-}$ ion in the acid)
+* Shifts equilibrium right
+* Turns solution more blue
+
+
+*Addition of Water after Hydrochloric Acid*
+* Reduces the chloride ion concentration
+* Shifts equilibrium left
+* Turns solution more pale pink
+
+
+*Heating over Bunsen Burner*
+* Increases temperature
+* LCP states the system will attempt to offset this temperature increase by
+  favouring the endothermic reaction (the forward reaction)
+* Turns more blue
+
+
+= Experiment 25 =
+
+*Alcohols Used*
+* Ethanol (primary): $\ce{CH3CH2OH}$
+* Butan-1-ol (primary): $\ce{CH3CH2CH2CH2OH}$
+* Butan-2-ol (secondary): $\ce{CH3CH2CH(OH)CH3}$
+* 2-methyl propan-2-ol (tertiary): $\ce{CH3C(CH3)(OH)CH3}$
+
+
+== Dichromate ==
+
+*Description*
+* Add acidified dichromate to each (orange)
+	* Will be reduced to chromate ion (deep green) as alcohol is oxidised
+* Requires hot water bath
+	* TODO: Why??
+
+
+*Explanation*
+* Ethanol:
+	* Primary alcohol
+	* Will be oxidsed into an aldehyde, then into a carboxylic acid
+		* Ethanal, then ethanoic acid
+		* Ethanal will smell sweet, fruity
+		* Ethanoic acid will smell quite sharp (vinegar)
+	* Will reduce the dichromate ion, turning the solution from orange to deep
+	  green
+* Butan-1-ol:
+	* Primary alcohol
+	* Oxidised first to butanal, then butanoic acid
+	* Solution turns deep green
+* Butan-2-ol:
+	* Secondary alcohol
+	* Oxidised to a ketone
+		* Butanone, smells like butterscotch
+	* Solution turns deep green (TODO: Check this)
+* 2-methyl propan-2-ol:
+	* Tertiary alcohol
+	* Not oxidised at all
+	* Solution stays orange
+
+
+== Permanganate ==
+
+*Description*
+* Add acidified permanganate to each (purple)
+	* Will be reduced to manganese ion (pale pink) as alcohol is oxidised
+* Requires hot water bath
+
+
+*Explanation*
+* Ethanol:
+	* Fully oxidised into an aldehyde, then carboxylic acid
+	* Turns pale pink as permaganate ion is reduced
+* Butan-1-ol:
+	* Same as ethanol
+* Butan-2-ol:
+	* Oxidises into a ketone
+	* Turns pale pink
+* 2-methyl porpan-2-ol:
+	* Nothing happens
+	* Solution remains purple
+
+
+= Experiment 26 =
+
+*Description*
+* Form esters from alcohols and carboxylic acids
+* Add sulfuric acid
+* Place in hot water bath
+* Pour product into water before smelling
+
+
+*Explanation*
+* Hot water bath:
+	* Higher temperature increases rate of reaction
+	* Explain why
+* Sulfuric acid:
+	* Acts as a catalyst for the reaction
+	* Explain effect on rate of reaction
+* Water:
+	* Alcohol and carboxylic acid are quite potent and their smell would
+	  override the smell of the ester
+	* Dissolve the acid and alcohol in water so that we only smell the ester
+	* Explain the solubility of the acid, alcohol, and ester
+
+
+= Investigation 15 =
+
+* How could a better yield be obtained?
+* Memorise main points of prepared investigation
+
+
+= Required Knowledge =
+
+*Equilibrium*
+* LCP
+* Collision theory
+* Effects of pressure, concentration, and temperature
+
+
+*Organic*
+* Oxidation of alcohols
+	* Primary, secondary, and tertiary alcohols
+	* Catalyst
+* Esterification
+	* Catalyst
+	* Solubility of acid, alcohol, and ester
+
+TODO: Answer all questions in the textbook

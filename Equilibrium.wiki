@@ -317,8 +317,8 @@ K = \frac{[\mbox{C}]^c [\mbox{D}]^d}{[\mbox{A}]^a [\mbox{B}]^b}
 }}$
 
 * Products divided by reactants
-* Value remains constant at a given temperatue
-	* Changes if temperature changes
+* Value remains constant for a given temperatue
+	* Equilibrium constant will change if temperature changes
 * Only includes concentration of gases and aqueous substances
 	* Solids and pure liquids are ignored
 * If $K > 1$:
@@ -606,7 +606,7 @@ K = \frac{[\mbox{C}]^c [\mbox{D}]^d}{[\mbox{A}]^a [\mbox{B}]^b}
 	  collisions, increasing the rate of reaction
 	* A low temperature would favour the forward exothermic reaction, resulting
 	  in a higher yield
-* Since we have conflicting temperature requirements, a _moderate_ temperature
+* Since we have conflicting temperature requirements, a moderate temperature
   is required to satisfy both constraints
 * Similar situation occurs for pressure
 

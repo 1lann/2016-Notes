@@ -377,7 +377,8 @@ IMAGE HERE
   atoms on the main chain
 	* Higher priority than a double bond
 * Suffix: -ol
-* Formula: $\ce{R - C - OH}$
+* Formula: $\ce{R - OH}$
+	* Where $R$ is an alkyl chain with at least 1 carbon
 
 
 *Properties*
@@ -531,7 +532,7 @@ IMAGE HERE
 
 *Examples*
 * Propanone
-* Butan-2-one
+* Butanone
 * Pentan-3-one
 
 
@@ -543,7 +544,7 @@ IMAGE HERE
 * Carboxylate group must be attached at the end of the main carbon chain
 	* Similar to aldehydes
 	* Carbon must not be double bonded
-* Act as weak bases
+* Act as weak acids
 	* Hydrogen on the end of the carboxylate group ionises
 
 
@@ -558,6 +559,7 @@ IMAGE HERE
 * An ester is a molecule comprised of an alcohol and carboxylic acid
 * The name
 * Suffix: -yl -oate
+	* Alcohol written first
 * Formula: $\ce{R - COO - R'}$
 	* $R$ can be an alkyl group or hydrogen atom
 	* $R'$ must be an alkyl group

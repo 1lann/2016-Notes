@@ -12,6 +12,7 @@
             - [[#Exchange Rates#Types#Fixed|Fixed]]
             - [[#Exchange Rates#Types#Managed|Managed]]
             - [[#Exchange Rates#Types#Sepculating|Sepculating]]
+        - [[#Exchange Rates#Balance of Payments|Balance of Payments]]
         - [[#Exchange Rates#Factors Affecting|Factors Affecting]]
         - [[#Exchange Rates#Effects|Effects]]
             - [[#Exchange Rates#Effects#Depreciation|Depreciation]]
@@ -176,15 +177,13 @@
 == Movements ==
 
 *Appreciation*
-* Rise in the bilateral exchange rate for a country relative to another (usually
-  the USD)
-* Or a rise in a country's trade weighted index
+* Where one unit of a currency is able to buy more units of another currency
+  than it previously could
 
 
 *Depreciation*
-* Fall in the bilateral exchange rate for a country relative to another (usually
-  the USD)
-* Or a fall in a country's trade weighted index
+* Where one unit of a currency is only able to buy less units of another
+  currency than it previously could
 
 
 == Types ==
@@ -194,6 +193,7 @@
 *Definition*
 * Where the market forces of supply and demand alone in the foreign exchange
   market determine the price of a country's currency
+* Referred to colloquially as a "clean" float
 
 
 *Advantages*
@@ -201,10 +201,15 @@
 	* TODO:
 * Makes monetary policy more effective
 	* TODO:
+* Will aid in reducing volatility in the current account balance
 
 
 *Disadvantages*
 * TODO:
+
+
+*Australia*
+* Australia floated our currency in December 1983
 
 
 === Fixed ===
@@ -237,6 +242,20 @@
   outside of these acceptable levels
 	* Can raise or lower interest rates
 	* Or buy and sell large volumes of the currency to increase supply or demand
+* Most countries use this system, albeit with a fairly large acceptable range
+	* Referred to colloquially as a "dirty" float
+
+
+*Raising the Exchange Rate*
+* To raise the exchange rate because it is reaching too low levels, the reserve
+  bank could:
+	* Use its reserves of foreign currency to purchase a large amount of
+	  Australian dollars
+		* Increases demand, causing an appreciation
+	* Increase interest rates
+		* Increases foreign investment into Australia, increasing demand for the
+		  Australian dollar
+		* Causes an appreciation
 
 
 *Advantages*
@@ -258,6 +277,19 @@
 * You know the exchange rate will change every day
 * Can't easily predict the direction of the movement (appreciation or
   depreciation)
+
+
+== Balance of Payments ==
+
+* A floating exchange rate causes a country's balance of payments to balance
+	* Current account and capital and financial account sum to 0
+* Exchange rate varies to change the price of transactions in the balance of
+  payments
+* For example:
+	* If there is an excess supply of AUD because of Australians purchasing a
+	  large number of imports
+	* Will cause a depreciation in the AUD
+	* Raises the price of imports, decreasing demand for them
 
 
 == Factors Affecting ==
