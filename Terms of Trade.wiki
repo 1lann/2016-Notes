@@ -184,6 +184,9 @@
 		  mining boom to $40 a tonne recently
 	* Decreases XPI
 	* Causes unfavourable movement in TOT
+* End of commodities price boom
+	* Price of iron ore dropping from 160 per tonne at height of boom to 40 a
+	  tonne recently
 * Productive capacity
 	* Due to the commodities price boom
 	* Large increase in production capacity of commodities across the world

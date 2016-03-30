@@ -106,8 +106,8 @@
 
 == Model ==
 
-* The exchange rate is determined by supply and demand of the currency in the
-  foreign exchange market
+* The price of a currency is determined by the market forces of supply and
+  demand in the foreign exchange market
 
 
 *Demand*
@@ -341,7 +341,7 @@
 
 
 *Interest Rate Differential*
-* Australia currently has a higher inflation rate relative to other countries
+* Australia currently has a higher interest rate relative to other countries
 * But we are in an expansionary phase of our monetary policy
 	* Reserve bank is in the process of reducing the cash rate
 * This is reducing the return investors are receiving on their investments in
@@ -361,6 +361,10 @@
 * Caused decreased direct and portfolio investment in Australia
 	* Decrease in demand for AUD
 	* Causes a depreciation
+* Australian investors may also shift their investments overseas, rather than
+  keep their holdings in Australia
+	* Supply Australian dollars to the market
+	* Compound depreciation
 
 
 *Relative Inflation Rate*
@@ -463,6 +467,15 @@
   this deficit
 
 
+*Current Account Deficit*
+* Balance of goods and services is expected to improve
+* Primary income deficit is expect to increase
+* Since goods and services is roughly 4 times as large as primary income in
+  dollar value terms, and given the inelastic nature of Australia's exports and
+  imports
+* Results in the CAD decreasing
+
+
 *Foreign Debt*
 * As a significant portion of Australia's foreign debt is denominated in foreign
   currency
@@ -471,15 +484,6 @@
 * The instant the AUD depreciates, there is an increase in the size of foreign
   debt in AUD terms
 	* Referred to as the valuation effect
-
-
-*Current Account Deficit*
-* Balance of goods and services is expected to improve
-* Primary income deficit is expect to increase
-* Since goods and services is roughly 4 times as large as primary income in
-  dollar value terms, and given the inelastic nature of Australia's exports and
-  imports
-* Results in the CAD decreasing
 
 
 *Inflation*
@@ -568,7 +572,83 @@ and explain the factors that have cause the Australian dollar to depreciate
 recently
 
 
-*Essay*
+*Essay Plan*
+* TOT
+	* Unfavourable movement since 2012
+		* End of mining boom causing high commodities prices to fall
+			* Iron ore selling for 160 a tonne now only for 40 recently
+			* Commodities our largest exports (iron ore, coal, natural gas)
+	* Made worse by excess supply
+		* Large productive capacity increase during mining boom with companies
+		  attempting to profit off high prices
+		* Large increase in supply
+		* Creates "glut" (market surplus)
+		* Decreases price of commodities further
+	* Falling export income due to inelasticity of our exports
+		* Few substitutes due to composition of exports
+	* Decreasing demand for AUD
+	* Depreciate dollar
+
+* World growth
+	* Decline in growth in China since 2012
+		* Most significant trade partner for Australia
+			* Use our raw minerals in manufacturing
+		* Forecasts 6-7% for 2016, 10% average over last decade
+	* Decline in demand for our exports
+	* Decrease export income
+	* Decrease demand for AUD
+	* Depreciate
+
+* Interest rate differential
+	* Australia in period of expansionary monetary policy
+	* Decreasing our cash rate
+		* 4.5% November 2011, 2.0% December 2015
+	* While other countries are increasing their cash rates
+		* US 0.5% December 2015
+	* Makes Australia a less attractive location for foreign investors
+		* Other markets would likely make them a higher return
+	* Decrease foreign investment into Australia
+	* Decrease demand for AUD
+	* Depreciate
+
+* Foreign investment
+	* Stabilisation of key economies such as the USA since 2013
+	* Combined with slowing growth in Australia due to decline of the important
+	  mining sector
+	* Makes investors skeptical of the potential return when investing in
+	  Australia
+	* Decreases foreign investment in Australia
+	* Decreases demand for AUD
+	* Depreciate
+	* Compounded by Australian investors investing overseas instead of at home
+		* Supplying AUD to the market
+
+* Inflation
+	* Australia has a typically low level of inflation
+		* 1.7% as of December 2015
+		* RBA target is 2-3%
+	* Would usually bestow a competitive advantage on Australia due to lower
+	  export prices
+		* Increase international competitiveness
+		* Increasing sales of exports, demand for the AUD, and appreciating the
+		  dollar
+	* But, other countries also currently have low or even lower levels of
+	  inflation
+		* EU 1.2% December 2015
+	* Hence not a large factor, isn't counteracting the overall depreciation
+
+* Speculation
+	* Speculation has a large influence on the AUD
+		* $180 billion turnover daily
+		* 8th highest currency
+	* Current investor opinion of Australia is relatively negative in recent
+	  years
+		* Declining growth
+		* Stabilisation of other markets (USA since 2013)
+		* Skeptical of the return on investment in Australia
+		* Shift holdings elsewhere
+	* Decrease demand for AUD
+	* Depreciate
 
 
 == Effects ==
@@ -578,3 +658,86 @@ Explain the likely effects of this depreciation on the Australian economy
 
 
 *Essay*
+* Exports
+	* Depreciation reduces price of exports for international consumers
+	* Increases international competitiveness
+	* After a time lag, this can result in the increase in sales of exports due
+	  to the competitive advantage from a lower dollar
+		* J curve theory
+	* If the Australian producer imports intermediate goods in the production of
+	  the final consumption good
+		* The depreciation will cause these imports to be more expensive
+		* Increases costs for the business
+		* May eliminate any profit incurred from a lower dollar
+	* Can cause structural change in the economy
+		* Conclusion of mining boom over recent years has seen the Australian
+		  economy begin shifting towards the manufacturing and services sectors
+		* Away from the mining sectors
+		* Depreciation impacts positively on these other sectors
+
+* Imports
+	* Depreciation increases the price of imports for Australian consumers in
+	  Australian dollar terms
+	* Decreases the demand for imports as they become more expensive
+	* Decreases import spending
+	* Bestows a competitive advantage on import competing industries
+		* Become comparatively cheaper
+		* Increases growth in these industries
+	* For example, tourism
+		* Declining outbound tourist numbers as people chose to travel in
+		  Australia instead
+
+* BOGS
+	* Increase in export income (credits)
+	* Decrease in import spending (debits)
+	* BOGS should move towards a surplus
+	* After a time lag from J curve
+
+* Foreign Debt
+	* Valuation effect
+	* Denominated in foreign currencies
+	* ...
+
+* Primary income
+	* Since a significant portion of Australia's foreign debt is denominated in
+	  foreign currency (40 - 60%)
+	* Depreciation immediately increases the size of this foreign debt in
+	  Australian dollar terms
+	* Increases the size of the interest repayments that must be paid
+	* These interest payments are recorded as debits in the primary income
+	  category of the current account
+	* Increases the size of the deficit in the primary income account
+
+* Current Account Deficit
+	* The goods and services category is roughly 4 times the size of the primary
+	  income category
+	* The effect of the exchange rate on the primary income is also relatively
+	  weak, as there are many other factors that also influence it
+	* This means that the CAD is likely to trend towards a surplus with the
+	  improvement in the BOGS
+
+* Domestic growth
+	* Lower import spending
+	* Higher export income
+	* Growth in import-competing industries
+	* Larger aggregate expenditure
+	* Two speed economy
+		* One sector growing much faster than another
+
+* Inflation
+	* Increase in export income and decrease in import spending
+	* Increases aggregate demand
+	* Will increase demand pull inflation
+	* In addition, higher import prices for intermediate goods will cost
+	  producers more money
+		* Cost push inflation
+
+
+* Unemployment
+	* Increased domestic growth
+	* Increase demand for labour
+	* Cyclical unemployment should decrease
+	* Structural changes in the economy can also cause structural unemployment
+		* Eg. Mining boom caused Australia's car manufacturing business to
+		  suffer
+		* Ford leaving Australia in 2016, Holden and Toyota 2017
