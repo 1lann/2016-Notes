@@ -15,12 +15,14 @@
         - [[#Exchange Rates#Balance of Payments|Balance of Payments]]
         - [[#Exchange Rates#Factors Affecting|Factors Affecting]]
         - [[#Exchange Rates#Effects|Effects]]
-            - [[#Exchange Rates#Effects#Depreciation|Depreciation]]
-            - [[#Exchange Rates#Effects#Dutch Disease|Dutch Disease]]
         - [[#Exchange Rates#Historical Data|Historical Data]]
             - [[#Exchange Rates#Historical Data#Mining Boom|Mining Boom]]
             - [[#Exchange Rates#Historical Data#GFC|GFC]]
+            - [[#Exchange Rates#Historical Data#Second Mining Boom|Second Mining Boom]]
             - [[#Exchange Rates#Historical Data#Slowing Growth in China|Slowing Growth in China]]
+    - [[#Example Essays|Example Essays]]
+        - [[#Example Essays#Mechanism|Mechanism]]
+        - [[#Example Essays#Effects|Effects]]
 
 
 
@@ -29,6 +31,7 @@
 
 *Definition*
 * The price of one country's currency in terms of another country's currency
+* Defined so that transactions can occur between countries
 
 
 *Foreign Exchange Market*
@@ -105,17 +108,31 @@
 
 * The exchange rate is determined by supply and demand of the currency in the
   foreign exchange market
-* Whenever a firm or individual needs to move money into another country, it
-  usually needs to convert the money into the country's currency
-	* This involves a transaction in the foreign exchange market
-* All credits in the country's balance of payments represent demand for the
-  currency
-	* A credit requires converting foreign currency into Australian dollars
-	* This is a purchase of Australian dollars (ie. demand for it)
-* All debits represent supply of the currency
-	* A debit requires converting Australian dollars into foreign currency to
-	  perform a transaction overseas
-	* This is the sale of Australian dollars (ie. supplying it to the market)
+
+
+*Demand*
+* In an international transaction where an international consumer wishes to buy
+  an export produced by an Australian producer:
+	* The Australian producer will expect to be paid in Australian dollars
+	* The international consumer will need to convert their country's currency
+	  into Australian dollars
+	* They will purchase Australian dollars on the foreign exchange market,
+	  creating demand for AUD
+	* The purchase of the export is a credit in Australia's BOP
+	* Hence the credit in the BOP represents demand for AUD
+* All credits in a country's BOP represent demand for the country's currency
+
+
+*Supply*
+* In an international transaction where an Australian consumer wishes to buy an
+  export produced by an international producer in another country:
+	* Producer will expect to be paid in their country's currency
+	* Australian consumer will convert AUD into the foreign currency to purchase
+	  the import
+	* Supplies Australian dollars to the market
+	* The purchase of an import is a debit in Australia's BOP
+	* Hence the debit in the BOP represents supply of AUD
+* All debits in a country's BOP represents supply of the country's currency
 
 
 *Increased Demand for the AUD*
@@ -138,7 +155,7 @@
 	* Companies hiring Australians must convert the income for these employees
 	  into AUD
 	* Requires the purchase of AUD
-* Increased dividend payments to Australians who have invested in overases
+* Increased dividend payments to Australians who have invested in overseas
   companies
 	* Dividend payments must be converted to Australian dollars before being
 	  paid to Australian investors
@@ -198,14 +215,8 @@
 
 *Advantages*
 * Currency can act as a shock absorber for economic shocks to the country
-	* TODO:
 * Makes monetary policy more effective
-	* TODO:
 * Will aid in reducing volatility in the current account balance
-
-
-*Disadvantages*
-* TODO:
 
 
 *Australia*
@@ -220,10 +231,6 @@
 * Central bank may change the value they set the currency at
 	* Increasing the value of the currency is called a revaluation
 	* Decreasing the value of the currency is called a devaluation
-
-
-*Advantages*
-* TODO:
 
 
 *Disadvantages*
@@ -258,14 +265,6 @@
 		* Causes an appreciation
 
 
-*Advantages*
-* TODO:
-
-
-*Disadvantages*
-* TODO:
-
-
 === Sepculating ===
 
 *Against Fixed Exchange Rate*
@@ -296,7 +295,7 @@
 
 * Australian dollar is depreciating when looking at mid-term trends
 * Depreciating since 2012
-* Listed below in order of significance
+* Factors listed below in order of significance
 
 
 *Terms of Trade*
@@ -394,7 +393,9 @@
 *Speculation*
 * The exchange rate is significantly influenced by speculation on the part of
   investors in the short term
-* Since 2014, the improved performance of the US economy
+	* Daily turnover according to the RBA is $180 billion
+	* Eighth largest market in the world
+* Since 2013, the improved performance of the US economy
 * Combined with the slowing growth of the Australian economy
 * Has seen demand for the AUD decrease as central banks around the world no
   longer view the AUD as an alternate, stable currency
@@ -404,21 +405,176 @@
 
 == Effects ==
 
-=== Depreciation ===
+*Exports*
+* As dollar depreciates, international competitiveness of exporters improve
+	* Exports become cheaper for international consumers to buy
+* Improvement in growth in export industries
+* Can cause structural change in economy
+	* For example, the conclusion of the mining boom (commodities price and TOT
+	  boom) in 2012
+	* Causing depreciation in Australian dollar
+	* Impacts positively on other manufacturing and service providing industries
+* For exporters whose contracts are denominated in foreign currency rather than
+  Australian dollars
+	* Rather than changing the price of their exports
+	* A depreciation increases their revenue when converted back into Australian
+	  dollars
+* May see the beginnings of the effects of Dutch disease
+	* Where displaced workers from the declining mining sector add to
+	  unemployment
+* Depreciation is generally good for exporters
+	* May be harmful if they must import intermediate goods
+	* Depreciation will cause these to cost more
+	* May eliminate any additional profit incurred from the depreciation
 
-*International Competitiveness*
-* Increases international competitiveness of Australian exporters
-	* Exports become cheaper for foreign consumers
-*
+
+*Imports*
+* As the dollar depreciates
+* Imports become more expensive for Australian consumers
+* Increases the competitiveness of import-competing industries
+* Encourages substitution of imported products with locally made goods
+* Decreases import spending
+* For example, the tourism and education sectors
+	* People choosing to travel and study in Australia rather than overseas
+	  because it's cheaper
 
 
-=== Dutch Disease ===
+*Balance of Goods and Services*
+* Improvement in international competitiveness
+* Increase in export income
+	* After a time lag
+	* As predicted by the J curve theory (??)
+* Decrease in import spending
+* Balance of goods and services is expected to improve
+	* Move towards a surplus in the long term
+
+
+*Primary Income Category of Current Account*
+* Depreciation makes foreign investment in Australia cheaper
+	* Australian assets are cheaper to purchase for overseas investors
+* Greater foreign direct and portfolio investment will increase dividend
+  payments and profit flows out of Australia
+	* In addition, since a significant portion of foreign debt (between 40 and
+	  60%) is denominated in foreign currency
+	* Increases size of interest payments
+	* Known as the valuation effect
+* Thus increases deficit in primary income category
+* This effect is pretty weak, as there are a lot of other factors that affect
+  this deficit
+
+
+*Foreign Debt*
+* As a significant portion of Australia's foreign debt is denominated in foreign
+  currency
+	* Between 40 and 60%
+	* Mainly USD, Yen, Euro, and British Pound
+* The instant the AUD depreciates, there is an increase in the size of foreign
+  debt in AUD terms
+	* Referred to as the valuation effect
+
+
+*Current Account Deficit*
+* Balance of goods and services is expected to improve
+* Primary income deficit is expect to increase
+* Since goods and services is roughly 4 times as large as primary income in
+  dollar value terms, and given the inelastic nature of Australia's exports and
+  imports
+* Results in the CAD decreasing
+
+
+*Inflation*
+* Depreciation leads to increased price of imports
+* This causes tradables inflation to increase
+* Given tradables represent a signficant proportion of CPI
+* This could have a considerable impact on the inflation rate
+* In addition, increased input costs for domestic producers
+	* Due to higher prices of imported intermediate goods
+	* Can also increase cost push inflation
+* Increase in net exports and any multiplier effects can increase the price of
+  non tradables and thus demand pull inflation
+	* TODO: What??
+
+
+*Economic Growth*
+* Improvement in export industry
+* Improvement in domestic import competing industries
+* Causes increase in economic growth
+* In addition to declining import spending improving aggregate demand
+	* Seen most in declining outbound tourist numbers
+* Since 2013 the declining mining sector has reduced this economic growth
+* Can result in a two speed economy
+	* Where one sector is growing rapidly, while others are slowing
+
+
+*Employment*
+* With increased economic growth, should cause a derived increase in demand for
+  labour as output increases
+* Decreases cyclical unemployment
+* Increase in aggregate demand can cause a rise in output, decreasing levels of
+  under employment
+* Mining boom also caused structural unemployment
+	* Massive appreciation of dollar
+	* A factor that played a part in causing Ford to cease Australian operations
+	  in 2016, Holden and Toyota in 2017
 
 
 == Historical Data ==
 
 === Mining Boom ===
 
+*Effect*
+* Massive appreciation between 2001 - 2008
+
+
+*Cause*
+* Increasing demand for raw minerals on the back of large growth in countries
+  with economies based heavily around manufacturing (China)
+* Caused commodities price boom
+* Since Australia's top exports are such commodities (Iron Ore top, 20.2% of all
+  goods and services exports as at June 2015)
+* Increased demand for Australian exports
+* Due to large price boom, increased export income
+* Increased demand for AUD
+* Caused appreciation
+
+
 === GFC ===
 
+*Effect*
+* Massive depreciation between 2008 - 2009
+
+
+=== Second Mining Boom ===
+
+*Effect*
+* Massive appreciation between 2009 - 2011
+* Returned to levels above those of before the GFC
+
+
 === Slowing Growth in China ===
+
+*Effect*
+* Depreciation since 2012
+
+
+
+= Example Essays =
+
+== Mechanism ==
+
+*Question*
+Discuss the mechanism by which the exchange rate for a currency is determined
+and explain the factors that have cause the Australian dollar to depreciate
+recently
+
+
+*Essay*
+
+
+== Effects ==
+
+*Question*
+Explain the likely effects of this depreciation on the Australian economy
+
+
+*Essay*

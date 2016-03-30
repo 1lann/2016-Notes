@@ -469,7 +469,7 @@ IMAGE HERE
 		* Turns from purple to pale pink
 	* $\ce{Cr2O7^2-}$ will be reduced to $\ce{Cr^3+}$
 		* Turns from orange to deep green
-* And the alcohol will be oxidised
+* The alcohol will be oxidised
 	* Either a hydrogen will be removed, or an oxygen will be added to the
 	  molecule
 
@@ -479,6 +479,10 @@ IMAGE HERE
 * First oxidisation will form an aldehyde (remove hydrogen)
 * Second oxidisation will form a carboxylic acid (add oxygen)
 * Primary alcohol to aldehyde to carboxylic acid
+* If the oxidising agent is added in stoichiometric ratio, the result will be a
+  mixture of aldehyde and carboxylic acid
+* If excess oxidising agent is added, then all alcohol will oxidise into
+  carboxylic acid
 * Example:
 	* Ethanol will form ethanal, then ethanoic acid
 	* $\ce{CH3CH2OH -> CH3CHO -> CH3COOH}$
@@ -504,6 +508,10 @@ IMAGE HERE
 * Add calcium carbonate
 * Will fizz and produce carbon dioxide gas if a primary alcohol
 	* Since carboxylic acid will be formed
+* Can also fully oxidise a primary and secondary alcohol and then heat them
+  using a bunsen burner
+	* Carboxylic acid has a much higher boiling point than ketone due to
+	  Hydrogen bonding
 
 
 == Aldehydes ==
