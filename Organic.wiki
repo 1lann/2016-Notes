@@ -19,22 +19,42 @@ $\require{mhchem}$
             - [[#Organic#Isomers#Structural Isomers|Structural Isomers]]
             - [[#Organic#Isomers#Geometric Isomers|Geometric Isomers]]
         - [[#Organic#Saturation|Saturation]]
-        - [[#Organic#Alcohols|Alcohols]]
-            - [[#Organic#Alcohols#Classification|Classification]]
-            - [[#Organic#Alcohols#Isomers|Isomers]]
-            - [[#Organic#Alcohols#Hydration Reaction|Hydration Reaction]]
-            - [[#Organic#Alcohols#Oxidation Reaction|Oxidation Reaction]]
-        - [[#Organic#Aldehydes|Aldehydes]]
-        - [[#Organic#Ketones|Ketones]]
-        - [[#Organic#Carboxylic Acids|Carboxylic Acids]]
-        - [[#Organic#Esters|Esters]]
-            - [[#Organic#Esters#Hydrolysis Reaction|Hydrolysis Reaction]]
-        - [[#Organic#Amines|Amines]]
-        - [[#Organic#Alpha Amino Acids|Alpha Amino Acids]]
-        - [[#Organic#Polymerisation|Polymerisation]]
-            - [[#Organic#Polymerisation#Addition Polymerisation|Addition Polymerisation]]
-                - [[#Organic#Polymerisation#Addition Polymerisation#Polyethene|Polyethene]]
-            - [[#Organic#Polymerisation#Condensation Polymerisation|Condensation Polymerisation]]
+    - [[#Functional Groups|Functional Groups]]
+        - [[#Functional Groups#Alcohols|Alcohols]]
+            - [[#Functional Groups#Alcohols#Classification|Classification]]
+            - [[#Functional Groups#Alcohols#Isomers|Isomers]]
+            - [[#Functional Groups#Alcohols#Hydration Reaction|Hydration Reaction]]
+            - [[#Functional Groups#Alcohols#Oxidation Reaction|Oxidation Reaction]]
+        - [[#Functional Groups#Aldehydes|Aldehydes]]
+        - [[#Functional Groups#Ketones|Ketones]]
+        - [[#Functional Groups#Carboxylic Acids|Carboxylic Acids]]
+        - [[#Functional Groups#Amines|Amines]]
+    - [[#Esters|Esters]]
+            - [[#Esters#Hydrolysis Reaction|Hydrolysis Reaction]]
+    - [[#Polymerisation|Polymerisation]]
+            - [[#Polymerisation#Addition Polymerisation|Addition Polymerisation]]
+                - [[#Polymerisation#Addition Polymerisation#Polyethene|Polyethene]]
+            - [[#Polymerisation#Condensation Polymerisation|Condensation Polymerisation]]
+    - [[#Proteins|Proteins]]
+        - [[#Proteins#Alpha Amino Acids|Alpha Amino Acids]]
+        - [[#Proteins#Polypeptides|Polypeptides]]
+        - [[#Proteins#Proteins|Proteins]]
+        - [[#Proteins#Primary Structure|Primary Structure]]
+        - [[#Proteins#Secondary Structures|Secondary Structures]]
+        - [[#Proteins#Tertiary Structures|Tertiary Structures]]
+            - [[#Proteins#Tertiary Structures#Side Chain Bonding|Side Chain Bonding]]
+        - [[#Proteins#Quaternary Structures|Quaternary Structures]]
+    - [[#Soaps and Detergents|Soaps and Detergents]]
+        - [[#Soaps and Detergents#Fatty Acids|Fatty Acids]]
+        - [[#Soaps and Detergents#Triglycerides|Triglycerides]]
+        - [[#Soaps and Detergents#Saponification|Saponification]]
+        - [[#Soaps and Detergents#Emulsification|Emulsification]]
+        - [[#Soaps and Detergents#Scum|Scum]]
+        - [[#Soaps and Detergents#Detergents|Detergents]]
+    - [[#Biodiesel|Biodiesel]]
+        - [[#Biodiesel#Transesterification|Transesterification]]
+        - [[#Biodiesel#Base Catalysed|Base Catalysed]]
+        - [[#Biodiesel#Lipase Catalysed|Lipase Catalysed]]
 
 
 
@@ -368,6 +388,10 @@ IMAGE HERE
 	* 1-bromo propene
 
 
+
+
+= Functional Groups =
+
 == Alcohols ==
 
 * Alcohols have an $\ce{OH}$ functional group attached to a carbon on the main
@@ -562,7 +586,38 @@ IMAGE HERE
 * Pent-2-enoic acid
 
 
-== Esters ==
+== Amines ==
+
+* Suffix: -amine
+* Formula: $\ce{R - NH2}$
+	* $R$ must be an alkyl group (contain at least 1 carbon)
+	* Can be anywhere on the carbon chain
+* Numbering of amine group takes priority over other groups
+* Primary, secondary, and tertiary amines exist
+	* Only need to know about primary amines
+
+
+*Properties*
+* Lower boiling point than alcohols, but higher than hydrocarbons
+	* Weaker hydrogen bonding than alcohols, since electronegativity of nitrogen
+	  is less than that of oxygen
+* Solubility decreases as carbon chain length increases
+* Fishy smell
+	* Pungent, like ammonia
+* Solutions of amines act as bases
+	* $\ce{CH3NH2 + H2O <=> CH3NH3+ + OH-}$
+
+
+*Examples*
+* Methanamine (primary amine)
+* Propan-1-amine (primary amine)
+* Propan-2-amine (secondary amine)
+* 2-methyl butan-2-amine (tertiary amine)
+
+
+
+
+= Esters =
 
 * An ester is a molecule comprised of an alcohol and carboxylic acid
 * The name
@@ -621,62 +676,9 @@ IMAGE HERE
 	  $\ce{NaRCOO}$
 
 
-== Amines ==
-
-* Suffix: -amine
-* Formula: $\ce{R - NH2}$
-	* $R$ must be an alkyl group (contain at least 1 carbon)
-	* Can be anywhere on the carbon chain
-* Numbering of amine group takes priority over other groups
-* Primary, secondary, and tertiary amines exist
-	* Only need to know about primary amines
 
 
-*Properties*
-* Lower boiling point than alcohols, but higher than hydrocarbons
-	* Weaker hydrogen bonding than alcohols, since electronegativity of nitrogen
-	  is less than that of oxygen
-* Solubility decreases as carbon chain length increases
-* Fishy smell
-	* Pungent, like ammonia
-* Solutions of amines act as bases
-	* $\ce{CH3NH2 + H2O <=> CH3NH3+ + OH-}$
-
-
-*Examples*
-* Methanamine (primary amine)
-* Propan-1-amine (primary amine)
-* Propan-2-amine (secondary amine)
-* 2-methyl butan-2-amine (tertiary amine)
-
-
-== Alpha Amino Acids ==
-
-* Contain amine and carboxylic acid group on the terminal carbon
-* Amino acids join to form proteins
-
-
-*Properties*
-* Can behave as either an acid or base
-	* At high pH (basic), carboxylic acid group donates $\ce{H+}$
-	* At low pH (acidic), amine group accepts $\ce{H+}$
-* Solid at room temperature
-	* Relatively high melting and boiling points
-* Relatively soluble in water
-
-
-*Bonding*
-* $\ce{H+}$ on carboxylic acid group is only weakly attracted to its oxygen
-* Moves to $\ce{N}$ and forms an $\ce{NH3+}$ group, leaving a $\ce{COO-}$
-  carboxylate group
-* Called zwitterions
-	* Positive charge on one part of the atom and a negative on another
-* Ionically bond with other molecules
-* Act as both the anion and cation
-* Also exist in this state when dissolved in aqueous solution
-
-
-== Polymerisation ==
+= Polymerisation =
 
 * A polymer is a large molecule formed by the reaction of smaller monomers to
   form a long repeating chain
@@ -691,6 +693,10 @@ IMAGE HERE
   carbon and another monomer
 * The final polymer is named by prepending the prefix poly- to the name of the
   monomer
+
+
+*Orientation*
+* Polymer units can be oriented differently when the polymer is formed
 
 
 *Example*
@@ -735,4 +741,358 @@ IMAGE HERE
 * TODO: image
 
 
-==
+
+
+= Proteins =
+
+== Alpha Amino Acids ==
+
+* Contain amine ($\ce{NH2}$) and carboxylic acid ($\ce{COOH}$) group on the
+  same terminal carbon
+* Amino acids join to form proteins
+* Differ in structure through their side chains
+	* What comes off the alpha carbon is different
+
+
+*Properties*
+* Can behave as either an acid or base
+	* At high pH (basic), carboxylic acid group donates $\ce{H+}$
+	* At low pH (acidic), amine group accepts $\ce{H+}$
+* Solid at room temperature
+	* Relatively high melting and boiling points
+* Relatively soluble in water
+
+
+*Bonding*
+* $\ce{H+}$ on carboxylic acid group is only weakly attracted to its oxygen
+* Moves to $\ce{N}$ and forms an $\ce{NH3+}$ group, leaving a $\ce{COO-}$
+  carboxylate group
+* Called zwitterions
+	* Positive charge on one part of the atom and a negative on another
+* Ionically bond with other molecules
+	* Only for neutral pH
+* Act as both the anion and cation
+* Also exist in this state when dissolved in aqueous solution
+
+
+*Naming*
+* Each amino acid is given a full name, a 3 letter designation, or a 1 letter
+  designation
+* Each amino acid can be classified as acidic, neutral, or basic
+* Essential amino acids are ones that must be obtained through diet
+	* Not produced by body
+
+
+== Polypeptides ==
+
+* Formed from condensation polymerisation reaction between alpha amino acids
+* Forms amide (also called peptide) linkages between carboxylic acid and amine
+  group
+	* Bond between carbon and nitrogen called the peptide bond
+
+*Ends*
+* At one end of the polypeptide will be an unreacted amine group
+	* Called the N-terminus or amino-terminus
+* At other end will be an unreacted carboxylic acid group
+	* Called the C-terminus or carboxy-terminus
+
+
+== Proteins ==
+
+* Long polypeptide that has folded over on itself into different secondary
+  structures
+* Has different notations for its structure showing different levels of detail
+
+
+== Primary Structure ==
+
+* List of all amino acids in sequence that make up the protein
+* N-terminus is written on the left by convention
+* Designated letters for amino acids are used
+	* Eg. GlyArg ... ArgTyr
+* Full structure can be drawn (including peptide links) from this
+* Doesn't give detail about how the protein has folded over on itself (secondary
+  structures)
+
+
+== Secondary Structures ==
+
+* The polypeptide chain will fold over on itself in different ways, forming
+  different structures
+* These structures don't show the side chains that extend off the alpha carbon
+	* Don't differentiate between amino acids
+	* The structures focus on the organisation of the peptide links, and the
+	  hydrogen bonds between them
+
+
+*Alpha Helix*
+* Where the polypeptide chain forms a right handed spiral (goes around clockwise
+  when looking down at it)
+* Hydrogen bonds form between two adjacent layers of the spiral
+	* Form between $\ce{C=O}$ and $\ce{N-H}$
+	* Holds structure together
+
+
+*Beta-Pleated Sheet*
+
+{{https://upload.wikimedia.org/wikipedia/commons/b/b7/Beta_sheet_bonding_antiparallel-color.svg}}
+{{https://upload.wikimedia.org/wikipedia/commons/e/e7/Beta_sheet_bonding_parallel-color.svg}}
+
+* Where the polypeptide chain folds over on itself like a sheet
+* Hydrogen bonds form between layers
+* Two types of folding:
+	* Antiparallel folding
+		* Where upper part of the fold has N-terminus at one end, and the lower
+		  fold has C-terminus at that end
+		* Form straight hydrogen bonds between alternating $\ce{N-H}$ and
+		  $\ce{C=O}$ groups
+	* Parallel folding
+		* Where upper part of the fold has N-terminus at one end, and the lower
+		  fold has N-terminus at that end as well
+		* Form diagonal hydrogen bonds between offset $\ce{N-H}$ and $\ce{C=O}$
+		  groups
+
+
+*Amorphous Regions*
+* No discernible structure
+* Twisting array of unorganised polypeptide chain
+
+
+== Tertiary Structures ==
+
+* Show the sequence of secondary structures that make up the protein
+
+
+=== Side Chain Bonding ===
+
+* Since the polypeptide is so long and folds over on itself, different types of
+  bonding can occur between different parts of the molecule
+* Occur between different side chains off the alpha carbons
+	* Side chains extend out from the main backbone of peptide linkages
+
+
+*Ionic Bonding*
+* Some side chains have an amine off of them ($\ce{NH2}$)
+* Some side chains have a carboxyl group off of them ($\ce{COOH}$)
+* The carboxyl group will donate its $\ce{H+}$ to the amine group
+	* Forms a zwitterion
+	* Ionic bonding occurs between side chains
+
+
+*Hydrogen Bonding*
+* Some side chains have an oxygen with lone electron pairs
+* Some side chains have an oxygen bonded to nitrogen or oxygen
+* Will form hydrogen bonds between side chains in the polypeptide
+
+
+*Dispersion Forces*
+* Some side chains have very long carbon chains
+* Dispersion forces between two very long chains may be enough to form a strong
+  attraction between two side chains
+
+
+*Disulfide Bridges*
+* Two cysteine amino acids which end up next to each other in the folded protein
+  can react to form a disulfide bridge
+* Covalent bond between sulfur atoms occurs
+* Can hold the side chains together
+
+
+== Quaternary Structures ==
+
+* Shows how a protein made up of multiple polypeptide chains fits together in 3D
+
+
+
+= Soaps and Detergents =
+
+== Fatty Acids ==
+
+* Carboxylic acids
+* Usually found in natural fats and oils (hence the name)
+* Long carbon chains
+	* Between 10 and 20 carbons
+	* No branching in carbon chain
+
+
+*Saturated Fat*
+* Fatty acid which is saturated (only single bonds)
+
+
+*Unsaturated Fat*
+* Fatty acid which is unsaturated (at least 1 double bond)
+* Monounsaturated
+	* Only 1 double bond
+* Polyunsaturated
+	* More than 1 double bond
+* Trans fat
+	* A class of unsaturated fats where the trans isomer is present
+
+
+== Triglycerides ==
+
+* A triester formed from glycerol and 3 fatty acids
+
+
+*Glycerol*
+* An alcohol (triol)
+* Propan-1,2,3-triol
+* Fatty acids attach at each hydroxyl group on each carbon
+
+
+== Saponification ==
+
+* Soap is made from triglycerides
+* Made through a process called saponification
+* Soap is the salt of a fatty acid
+
+
+*Process*
+* Hydrolyse a triglyceride with a base (usually a sodium base)
+* Forms glycerol and the sodium salt of a fatty acid
+* The sodium salt of a fatty acid is a solid and precipitates from the solution
+* It is removed by filtration and used as soap
+
+
+== Emulsification ==
+
+* An emulsifying agent is a substance that forces two substances that usually
+  remain separate to mix
+	* Eg. forces oil and water to mix
+
+
+*Process*
+* The emulsifying agent consists of a molecule where
+	* One part of the molecule is very soluble in the first substance
+	* And the second part of the molecule is very soluble in the second
+	  substance
+* For example, a carboxyl ion with a very long carbon chain:
+	* Long carbon chain is non polar
+		* Hydrophobic (isn't soluble in water)
+		* Soluble in fats
+	* Carboxyl group at head of molecule is polar
+		* Isn't soluble in fats or oils
+		* Soluble in water
+* Droplets of fats are surrounded by these emulsifying molecules with their non
+  polar tails dissolved in the fat, and polar heads sticking out
+	* Droplets now appear soluble in the water because they are surrounded by
+	  the polar heads of the emulsifying molecules
+
+
+*Soaps*
+* Long carbon chain from fatty acid acts as the non polar tail
+* Carboxyl functional group at head of molecule acts as polar head
+* Allows fats to dissolve in water, washing them off dirty surfaces
+
+
+*Solid Soap*
+* Soap is made solid by forming ionic compounds using sodium or potassium ions
+* When dissolved in water, the compound dissociates into its ions
+
+
+== Scum ==
+
+*Hard Water Areas*
+* Hard water areas (like Perth) have $\ce{Ca^{2+}}$ and $\ce{Mg^{2+}}$ ions in
+  the water supply
+* When things are washed with soap and left to dry, these form solid ionic
+  compounds with the carboxyl ions
+	* Called soap scum
+* Leads to white residue on surfaces, stiff clothes, etc.
+
+
+*Prevention*
+* For places where everything must be very clean (eg. hospitals)
+* Can soften the water
+	* Use ion exchange resin
+	* Removes $\ce{Ca^{2+}}$ and $\ce{Mg^{2+}}$ ions
+
+
+== Detergents ==
+
+* Sulfonate group $\ce{SO3^-}$ used in place of carboxylic acid group
+* Doesn't form scum
+
+
+*Process*
+* Concentrated sulfuric acid added to organic compound
+* Adds sulfonate group to organic, producing water
+* Organic ionises, $\ce{H+}$ from sulfonate group detaches
+* Add strong base (eg. $\ce{NaOH}$) to neutralise $\ce{H+}$, producing water
+* Forms sodium salt with the organic
+
+
+
+
+= Biodiesel =
+
+* Made from collected fats and oils from restaurants, etc.
+	* Sunflower oil common
+
+
+== Transesterification ==
+
+{{$
+\ce{R_1-COO-R_2 + R_3-OH <=>[OH-] R_1-COO-R_3 + R_2-OH}
+}}$
+
+* Take ester and alcohol
+* React in the presence of a base
+* Produces a different ester and alcohol
+	* The alcohol's carbon chain is now the alcohol part of the original ester
+	* The ester's alcohol part is the carbon chain on the original alcohol
+	* The alcohol carbon chains have swapped
+
+
+== Base Catalysed ==
+
+*Process (Transesterification)*
+
+{{$
+\ce{\mbox{Triglyceride} + 3 R_1-OH <=>[OH-] 3 R_2-COO-R_1 + \mbox{Glycerol}}
+}}$
+
+* Take:
+	* Fats (ie. triglyceride, triester composed of glycerol and 3 fatty acids)
+	* Excess of a small alcohol (usually methanol)
+* React in the presence of a base
+* Form:
+	* Glycerol
+	* 3 separate esters, where the carboxylic acid part is the fatty acid from
+	  the original ester, and the alcohol part is the carbon chain from the
+	  small alcohol
+* These 3 esters are the biodiesel
+
+
+*Disadvantages*
+* Glycerol is insoluble in the biodiesel
+	* Forms a separate layer
+	* Can be removed
+* Glycerol is harmful to the engine, so if not removed properly, then the engine
+  may be damaged
+
+
+== Lipase Catalysed ==
+
+*Process*
+
+{{$
+\ce{\mbox{Triglyceride} + 3 CH3COOCH3 <=>[\mbox{lipase}] 3 R_1COOCH3 + \mbox{Glycerol triacetate}}
+}}$
+
+* Take:
+	* Fat (ie. triglyceride)
+	* Excess of another ester (usually methyl ethanoate)
+* React in the presence of lipase (an enzyme)
+* Lipase cuts off and swaps the alcohol parts of each ester
+
+
+*Advantages*
+* Glycerol triacetate is soluble in the biodiesel
+	* Doesn't need to be removed before using the biodiesel
+
+
+*Equilibrium Considerations*
+* Adding double the stoichiometric ratio of methanol or methyl ethanoate is
+  enough to shift equilibrium far to the right to give an almost 100% yield of
+  biodiesel
