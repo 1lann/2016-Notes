@@ -357,7 +357,6 @@ IMAGE HERE
 	* The atoms diagonal of each other across the double bond are the same
 
 
-
 *Examples*
 * Cis-but-2-ene
 * Trans-but-2-ene
@@ -410,6 +409,8 @@ IMAGE HERE
 	* Alcohols experience hydrogen bonding as a result of the hydroxyl group
 	* Also have stronger dispersion forces due to the additional oxygen
 * As carbon chain length increases, solubility of alcohols goes down
+	* Dispersion forces become the predominant intermolecular force over
+	  hydrogen bonding
 
 
 *Examples*
@@ -480,7 +481,7 @@ IMAGE HERE
 
 * The oxidation of an alcohol occurs between an alcohol and a solution
   containing $\ce{H+}$ ions
-* The alcohol's classification determines how much oxidation an alochol can
+* The alcohol's classification determines how much oxidation an alcohol can
   undergo
 
 
@@ -535,7 +536,7 @@ IMAGE HERE
 * Can also fully oxidise a primary and secondary alcohol and then heat them
   using a bunsen burner
 	* Carboxylic acid has a much higher boiling point than ketone due to
-	  Hydrogen bonding
+	  hydrogen bonding
 
 
 == Aldehydes ==
@@ -609,10 +610,10 @@ IMAGE HERE
 
 
 *Examples*
-* Methanamine (primary amine)
-* Propan-1-amine (primary amine)
-* Propan-2-amine (secondary amine)
-* 2-methyl butan-2-amine (tertiary amine)
+* Methanamine
+* Propan-1-amine
+* Propan-2-amine
+* 2-methyl butan-2-amine
 
 
 
@@ -620,12 +621,11 @@ IMAGE HERE
 = Esters =
 
 * An ester is a molecule comprised of an alcohol and carboxylic acid
-* The name
 * Suffix: -yl -oate
 	* Alcohol written first
 * Formula: $\ce{R - COO - R'}$
-	* $R$ can be an alkyl group or hydrogen atom
-	* $R'$ must be an alkyl group
+	* $R$ (carboxylic acid part) can be an alkyl group or hydrogen atom
+	* $R'$ (alcohol part) must be an alkyl group
 
 
 *Formation*
@@ -661,8 +661,7 @@ IMAGE HERE
 *Acid Procedure*
 * Add a strong acid
 * Produces original alcohol and carboxylic acid
-* $\ce{R - COO - R' -> R - COOH + R' - OH}$
-	* $\ce{H+}$ ions act as catalyst
+* $\ce{R - COO - R' ->[H+] R - COOH + R' - OH}$
 
 
 *Base Procedure*
@@ -670,8 +669,7 @@ IMAGE HERE
 * Produces alcohol and salt of the carboxylic acid
 	* For example, $\ce{NaOH}$ base will produce $\ce{NaCOO}$ (sodium
 	  carboxylate), assuming the ester's carboxylic acid was methanoic acid
-* $\ce{R - COO - R' -> R - COO^- + R' - OH}$
-	* $\ce{OH-}$ ions act as catalyst
+* $\ce{R - COO - R' ->[OH-] R - COO^- + R' - OH}$
 	* $\ce{COO^-}$ combines with metal from base (eg. sodium) to form
 	  $\ce{NaRCOO}$
 
@@ -697,12 +695,16 @@ IMAGE HERE
 
 *Orientation*
 * Polymer units can be oriented differently when the polymer is formed
+* Monomer units are the same, final product can be different
 
 
 *Example*
 * Polyethene from ethene
 	* Monomer unit is ethene
 	* Formed polymer is polyethene
+* Poly(chloro ethene)
+	* Monomer unit is chloro ethene
+	* Use brackets to denote monomer unit
 
 
 ==== Polyethene ====
@@ -757,7 +759,10 @@ IMAGE HERE
 *Properties*
 * Can behave as either an acid or base
 	* At high pH (basic), carboxylic acid group donates $\ce{H+}$
+		* Forms $\ce{COO-}$ group
 	* At low pH (acidic), amine group accepts $\ce{H+}$
+		* Forms $\ce{NH3+}$ group
+	* Amphiprotic
 * Solid at room temperature
 	* Relatively high melting and boiling points
 * Relatively soluble in water
@@ -785,6 +790,8 @@ IMAGE HERE
 
 == Polypeptides ==
 
+* Polypeptide name only applies to condensation polymerisation of alpha amino
+  acids
 * Formed from condensation polymerisation reaction between alpha amino acids
 * Forms amide (also called peptide) linkages between carboxylic acid and amine
   group
@@ -948,7 +955,8 @@ IMAGE HERE
 
 
 *Process*
-* Hydrolyse a triglyceride with a base (usually a sodium base)
+* Hydrolyse a triglyceride with a strong base
+	* Either $\ce{NaOH}$ or $\ce{KOH}$
 * Forms glycerol and the sodium salt of a fatty acid
 * The sodium salt of a fatty acid is a solid and precipitates from the solution
 * It is removed by filtration and used as soap
@@ -1096,3 +1104,149 @@ IMAGE HERE
 * Adding double the stoichiometric ratio of methanol or methyl ethanoate is
   enough to shift equilibrium far to the right to give an almost 100% yield of
   biodiesel
+
+
+
+
+= Content Summary =
+
+*Basics*
+* Alkanes
+	* Substitution reactions
+		* Reactants and products
+		* Di-substitution, etc.
+* Alkenes
+	* Addition reactions
+		* Reactants and products
+		* Differentiation between alkane and alkene
+	* Geometric isomers
+* Alkynes
+* Hydrocarbons
+	* Combustion
+		* Complete, partial, incomplete
+* Halogens
+* Alkyl groups
+* Cyclic compounds
+* Saturation
+* Solubility
+
+
+*Functional Groups*
+* Alcohols
+	* Solubility in water decreases as carbon chain length increases
+	* Classification
+		* Primary, secondary, tertiary
+	* Hydration reaction
+		* Reactants and products
+	* Oxidation
+		* Catalysts (acidified permanganate and acidified dichromate)
+		* Progression
+	* Differentiation of alcohols
+* Aldehydes
+* Ketones
+	* Boiling point (larger than hydrocarbon, less than others)
+* Carboxylic acids
+	* Boiling point (higher than alcohol as more sites for hydrogen bonding)
+* Amines
+	* Boiling point (less than alcohol, more than hydrocarbons)
+	* Smell (fishy)
+	* Solubility in water decreases as carbon chain length increases
+
+
+*Esters*
+* Formation
+	* Catalyst ($\ce{H+}$)
+* Smell
+* Hydrolysis reaction
+	* Acid or base reactions
+	* Reactants and products
+
+
+*Polymerisation*
+* Addition polymerisation
+* Polyethene
+	* HDPE
+		* Strong structure from dispersion forces between parallel strands
+	* LDPE
+		* Weaker structure, higher degree of branching, more amorphous regions
+		  so structure can't pack as tightly together
+		* More malleable
+* Condensation polymerisation
+	* Ester links
+	* Amide links
+	* Types of monomers
+		* Carboxylic acid and alcohol on same molecule
+		* Dicarboxylic acid and diol as two monomers
+
+
+*Proteins*
+* Amino acids
+	* Structure
+	* Properties
+		* Amphiprotic, solid at room temperature, relatively soluble in water
+	* Zwitterions
+* Polypeptides
+	* Formation
+	* Terminal amino acids (N terminus and C terminus)
+* Proteins
+	* Primary structure
+	* Secondary structures
+		* Alpha helices
+		* Beta pleated sheets
+		* Amorphous regions
+	* Tertiary structures
+	* Side chain bonding
+		* Ionic bonding
+		* Hydrogen bonding
+		* Disperion forces
+		* Disulfide bridges
+
+
+*Soaps and Detergents*
+* Fats
+	* Saturated, unsaturated, monounsaturated, polyunsaturated, trans fat
+	* Triglyceride structure
+* Fatty acids
+* Saponification
+	* Reactants and products
+	* Reaction equation
+	* Equilibrium considerations
+* Emulsifying property of soaps
+	* Explain solubility
+	* Long non-polar tail, polar carboxyl group head capable of accepting H
+	  bonds
+	* Long non-polar tail is only capable of bonding through dispersion forces.
+	  Dispersion forces are not strong enough to compensate the energy required
+	  to break the solvent/solvent bonds between water (H bonds), thus the
+	  non-polar tail doesn't dissolve in water
+	* The non-polar tail is capable of dissolving in fats and oils though,
+	  because of its strong dispersion forces
+	* The polar, H bonding head is capable of compensating the required energy
+	  to break water's solvent/solvent bonds, and thus is able to dissolve in
+	  water
+	* Thus the long tail will dissolve in droplets of fats, with the polar head
+	  exposed. This will surround droplets of fats, causing them to appear
+	  soluble in water as they are surrounded by the soluble carboxyl heads of
+	  the soap molecules
+	* Allows soap to remove and clean fats from surfaces
+* Solidification of soap
+* Scum
+	* Hard water areas
+* Detergents
+	* Production process
+
+
+*Biodiesel*
+* Transesterification
+* Base catalysed
+	* Reaction equation
+	* Reactants and products
+* Lipase catalysed
+	* Reaction equation
+	* Reactants and products
+* Equilibrium considerations
+
+
+*Practice Questions*
+* Naming alkanes, alkenes (with trans/cis isomerism), cyclics, alcohols,
+  carboxylic acids, aldehydes, ketones, amines
