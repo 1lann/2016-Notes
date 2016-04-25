@@ -4,6 +4,7 @@
 	* [[Stoichiometry]]
 	* [[Equilibrium]]
 	* [[Organic]]
+	* [[Acids and Bases]]
 
 
 == Investigation Validation ==

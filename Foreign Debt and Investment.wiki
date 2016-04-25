@@ -1,0 +1,238 @@
+
+= Contents =
+    - [[#External Stability|External Stability]]
+    - [[#Foreign Investment|Foreign Investment]]
+        - [[#Foreign Investment#Classification|Classification]]
+            - [[#Foreign Investment#Classification#Type|Type]]
+            - [[#Foreign Investment#Classification#Size|Size]]
+    - [[#Foreign Debt|Foreign Debt]]
+
+
+
+
+= External Stability =
+
+*Definition*
+* The ability for a country to meet its financial obligations with the rest of
+  the world
+
+
+== Components ==
+
+*Export Income*
+* Export income is sufficient to finance import spending
+	* CAD greater than 5% of GDP is considered unsustainable by the IMF
+* With a CAD, the value of all debits is greater than the value of all credits
+	* Spending more than we are earning
+	* Can only be financed by creating a liability
+	* This is only sustainable if we grow our income at a similar rate to which
+	  total liabilities grow
+
+
+*Foreign Debt*
+* Managable level of foreign debt
+	* Public sector debt greater than 50% of GDP considered unsustainable by the
+	  IMF
+* Public sector debt is seen as unproductive
+	* As it usually finances necessary components of a government
+		* But these components aren't productive for the economy
+		* They don't generate output or drive economic growth
+* Private sector debt is seen as positive
+	* As it is usually used to grow a firm's productivity
+	* Improves output and increases economic growth
+
+
+*Exchange Rate*
+* Stability in the exchange rate
+	* A belief that the currency is stable
+
+
+
+
+= Foreign Investment =
+
+*Definition*
+* Foreign investment is the stock of financial assets in Australia owned by
+  foreign residents, and financial transactions recorded in Australia's balance
+  of payments that increase or decrease this stock
+
+
+== Classification ==
+
+=== Type ===
+
+*Equity*
+* The sale of ownership of an asset
+* Recorded in financial account
+* The sale of an Australian asset to an overseas investor is foreign investment
+  into Australia
+* Effects:
+	* Dividend payments and profit flows to overseas investors
+		* Debit in the primary income category
+	* The issue of foreign ownership
+
+
+*Borrowing*
+* The loaning of financial capital from an overseas entity
+* Recorded in the financial account
+* Effects:
+	* Interest repayments to overseas investors
+		* Debit in the primary income category
+	* The issue of foreign debt
+
+
+=== Size ===
+
+* This method of classification is used in the financial account of the balance
+  of payments
+
+
+*Direct*
+* Ownership of a significant controlling interest in an asset
+	* Significant controlling interest defined as ownership of 10% or more of
+	  the asset
+* Only contains equity transactions
+	* All borrowings are classified as portfolio investment
+	* As borrowing any amount of money never gives a significant controlling
+	  interest in an asset
+* Value of transactions are often large
+	* Usually used to create output and generate growth
+	* Productive based
+	* Good for the economy
+* Dividend payments are usually quite stable
+	* Due to size of initial transaction
+* Effects:
+	* Dividend repayments and profit flows
+		* Debit in the primary income category
+	* Issue of foreign ownership
+
+
+*Portfolio*
+* Ownership of less than 10% of an asset
+	* Not a significant controlling interest
+* Includes all borrowings (no matter how large the value of the transaction is)
+* Characteristically speculative and short term
+	* Most business ventures funded by venture capital
+		* Purchase of small amount of equity
+		* Or borrowing money
+	* Since most business ventures fail
+	* Leads to volatility
+
+
+*Comparison*
+* Australians usually prefer borrowing over sale of equity
+	* When equity is sold, you lose a share of the future profits
+	* By borrowing, you still hold the right to a share of future profits
+
+
+== Balance of Payments ==
+
+*Financial Account*
+* Balance on the financial account represents Australia's net investment
+  transactions with the rest of the world
+	* Total foreign investment into Australia, subtract Australia's investment
+	  in foreign countries
+
+
+== Causes ==
+
+* Australia is a net importer of financial capital
+
+
+=== Saving and Investment Imbalance ===
+
+
+
+
+== Effects ==
+
+=== Balance of Payments ===
+
+*Pitchford Thesis*
+* The surplus on the capital and financial account is derived from the
+  international community's willingness to invest into Australia
+* Creates a net liability for Australia, which must be repaid
+	* Through dividends, profit flows, or interest repayments on borrowed funds
+* These are all recorded as debits in the primary incomes category of the
+  current account
+* Causes the deficit on the current account
+
+
+=== Productive Capacity ===
+
+* As foreign investment into Australia increases:
+	* Firms have more financial capital to increase their productive capacity
+		* Through enhanced ability to construct infrastructure, expand labour
+		  force, etc.
+	* Increases export sales and thus national export income
+	* Increases BOGS surplus in the long term
+* This is a medium to long term effect
+
+
+=== Aggregate Demand ===
+
+* Foreign investment into Australia is a component of aggregate demand
+* As foreign investment increases:
+	* Increases aggregate demand
+	* Increases consumer demand for imports
+	* Increases demand from firms for intermediate capital goods
+		* Further driven by increasing productive capacity, as outlined above
+	* Increases import spending
+	* Decrease BOGS surplus in the short term
+* This is a short to medium term effect
+
+
+
+== Advantages ==
+
+=== Standard of Living ===
+
+
+== Disadvantages ==
+
+
+
+= Foreign Debt =
+
+== Foreign Liabilities ==
+
+*Definition*
+* A liability is a legal obligation for an entity to pay back something of value
+  to another entity
+
+
+*Foreign Liabilities*
+* Foreign liabilities are things of value that are owed to entities outside the
+  country in which they were bought
+* Includes all investment which causes money to flow into Australia (credit in
+  financial account)
+	* Foreign borrowings (debt)
+	* Sale of an Australian asset to overseas investors
+
+
+*Total Foreign Liabilities*
+* The sum of all Australia's equity sales to overseas investors and borrowings
+  from abroad
+	* Equity plus borrowings
+* Increased dramatically over past 2 decades
+	* $366 million AUD in 1992
+	* To $1006 billion AUD in 2014
+
+
+*Net Foreign Liabilities*
+* Total Australian liabilities subtract total Australian investment abroad
+
+
+
+
+= Questions =
+
+* Define external stability and discuss how it is measured
+* Discuss the different ways foreign investment can be classified
+* Discuss the trend in foreign investment into Australia over the last decade
+  and the factors that have caused this trend
+* Discuss the effects of this trend in foreign investment on the Australian
+  economy
+* Discuss the trend in Australia's foreign liabilities over the last decade and
+  factors that have caused this trend
+* Evaluate the benefits and costs of increased foreign investment

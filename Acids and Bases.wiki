@@ -1,0 +1,50 @@
+
+= Acids and Bases =
+
+== Electrolytes ==
+
+== Strong and Weak Acids and Bases ==
+
+== Arrhenius Theory ==
+
+== Bronsted Lowry Theory ==
+
+== Conjugate Acids and Bases ==
+
+*Find Conjugate Acid/Base of Substance*
+* Find the conjugate acid of a substance
+	* Implies the substance is acting as a base
+	* The substance will accept a proton
+	* The answer will have one more proton
+* Find the conjugate base of a substance
+	* Implies the substance is acting as an acid
+	* The substance will donate a proton
+	* The answer will have one less proton
+
+
+== Multiprotic Acids ==
+
+== Amphiprotic Substances ==
+
+== Reactions With Acids ==
+
+* Acid and base
+* Acid and reactive metal
+* Acid and metal hydroxide
+* Acid and metal oxide
+* Acid and metal carbonate
+
+== Reactions With Ammonium Ions ==
+
+
+
+
+= pH =
+
+=== Tests ===
+
+*Litmus Paper*
+* Blue litmus paper turns red
+	* Acid
+* Red litmus paper turns blue
+	* Base

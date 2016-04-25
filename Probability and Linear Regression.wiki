@@ -1,0 +1,157 @@
+
+= Probability =
+
+*Definitions*
+* Population
+	* Set containing all possible values
+* Population parameters
+	* Statistics about the population
+	* Eg. its mean and standard deviation
+* Population mean ($\mu$)
+	* Mean of all values in the population
+* Population standard deviation ($\sigma$)
+	* Standard deviation of all values in the population
+* Random sampling
+	* No restrictions are placed on choosing the elements that make up a sample
+* Sample
+	* A subset of the population chosen randomly
+* Sample size ($n$)
+	* Number of elements in a sample
+	* Constant across all samples taken
+* Number of samples
+	* Number of samples taken
+* Sample means ($\bar{X}$)
+	* The set containing the mean of all samples taken from the population
+* Mean of sample means ($\bar{x}$)
+	* The mean of all values in the sample means set
+
+
+== Central Limit Theorem ==
+
+*Conditions*
+* Samples must be randomly chosen
+* Sample size must be constant across all samples
+* Only applies to the set of sample means
+	* Not to other statistics
+	* For example, doesn't apply to the set of all sample standard deviations
+
+
+*Distribution*
+* If the population is known to be normally distributed
+	* Sample means distribution will be normally distributed for any sample size
+	  $n$
+* Otherwise
+	* The distribution of sample means approaches a normal distribution as the
+	  sample size is increased
+	* A sample size greater than or equal to 30 is acceptable
+
+
+*Mean*
+* The mean of all sample means approaches the population mean
+
+
+*Standard Deviation*
+* The standard deviation of a set of sample means approaches
+  $\frac{\sigma}{\sqrt{n}}$
+* Where:
+	* $\sigma$ is the population mean
+	* $n$ is the sample size
+
+
+== Probability Distributions ==
+
+*Definition*
+* Table showing the probability of getting a particular value from the
+  population
+
+
+*Properties*
+* If the population ($X$) is fair
+	* Probability of chosing each element is the same
+	* We say $X$ is a random variable
+* Probabilities sum to 1
+
+
+*Uniform Distribution*
+* Probability of getting each element is the same
+
+
+*Normal Distribution*
+* Probability of getting elements close to the mean is higher than that of ones
+  further away from the mean
+
+
+=== Graphs ===
+
+*Axes*
+* Probabilities on y axis
+* Values on x axis
+
+
+*Drawing*
+* Bar chart
+* Bars centred on x axis numbers
+* Gaps between bars
+* Labelled axes
+
+
+== Frequency Tables ==
+
+* Table holding frequency of means between ranges of values
+
+
+*Statistics on ClassPad*
+* Find mean and standard deviation on ClassPad by:
+	* Input midpoint of ranges in list 1
+	* Input frequency in list 2
+	* Go to Calc, One Variable
+	* Select list 1 as the value
+	* Select list 2 as the frequency
+* Use $s_x$ instead of $\sigma_x$ on ClassPad for standard deviation of the
+  sample means set
+
+
+
+
+= Linear Regression =
+
+*Process*
+* Write equation $s$ for area of squares
+	* Summation of $y_1 - (x_1 m + c)$ across all points
+* Derive $s$ with respect to $m$ and $c$
+* Minimise $s$ by equating the derivatives to 0
+* Solve for $m$ and $c$ simultaneous
+
+
+*ClassPad*
+* Input all points in list 1 and 2
+* Go to Calc, Regression, Linear Reg
+
+
+
+= Questions =
+
+*Probability*
+* Find probability distribution of a population
+* Find mean and standard deviation of a probability distribution
+* Graph probability distribution
+* Find mean and standard deviation of population from a probability distribution
+  table
+* Find mean and standard deviation of a sample
+* Find mean and standard deviation of sample from a grouped frequency table
+	* Find mean and standard deviation approximately from these values
+
+
+*Central Limit Theorem*
+* Approximate mean and standard deviation of population from a set of sample
+  means
+* Know that sample means approaches normal distribution
+	* As sample size increases
+* Know that mean of sample means approaches mean of population
+* Know that standard deviation of sample means approaches
+  $\frac{\sigma}{\sqrt{n}}$
+
+
+*Linear Regression*
+* Find regression line of arbitrary points
+* Derive equation for regression line of 3 points
