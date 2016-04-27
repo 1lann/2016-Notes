@@ -285,7 +285,7 @@
 	* Improves standard of living
 
 
-*Risk*
+*Risks*
 * If the foreign funds are used to service existing debt, this is known as the
   "debt trap"
 	* The funds aren't invested into the economy to improve economic growth
@@ -306,8 +306,6 @@
 * Interest repayments on borrowings, or dividend and profit payments are
   recorded as debits in the primary incomes category of the current account
 	* Increases current account deficit
-* In the short to medium term:
-	* Increases
 
 
 *Aggregate Demand*

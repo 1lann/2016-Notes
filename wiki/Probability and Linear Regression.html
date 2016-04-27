@@ -1,0 +1,439 @@
+<html>
+
+<head>
+	<title>Probability and Linear Regression</title>
+	<link rel="stylesheet" type="text/css" href="../templates/style.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,300,300italic,400italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,300italic,300,200italic,200,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body>
+	
+
+<div id="Probability"><h1 id="Probability">Probability</h1></div>
+
+<p>
+<span id="Probability-Definitions"></span><strong id="Definitions">Definitions</strong>
+</p>
+<ul>
+<li>
+Population
+
+<ul>
+<li>
+Set containing all possible values
+
+</ul>
+<li>
+Population parameters
+
+<ul>
+<li>
+Statistics about the population
+
+<li>
+Eg. its mean and standard deviation
+
+</ul>
+<li>
+Population mean (\(\mu\))
+
+<ul>
+<li>
+Mean of all values in the population
+
+</ul>
+<li>
+Population standard deviation (\(\sigma\))
+
+<ul>
+<li>
+Standard deviation of all values in the population
+
+</ul>
+<li>
+Random sampling
+
+<ul>
+<li>
+No restrictions are placed on choosing the elements that make up a sample
+
+</ul>
+<li>
+Sample
+
+<ul>
+<li>
+A subset of the population chosen randomly
+
+</ul>
+<li>
+Sample size (\(n\))
+
+<ul>
+<li>
+Number of elements in a sample
+
+<li>
+Constant across all samples taken
+
+</ul>
+<li>
+Number of samples
+
+<ul>
+<li>
+Number of samples taken
+
+</ul>
+<li>
+Sample means (\(\bar{X}\))
+
+<ul>
+<li>
+The set containing the mean of all samples taken from the population
+
+</ul>
+<li>
+Mean of sample means (\(\bar{x}\))
+
+<ul>
+<li>
+The mean of all values in the sample means set
+
+</ul>
+</ul>
+
+
+<div id="Probability-Central Limit Theorem"><h2 id="Central Limit Theorem">Central Limit Theorem</h2></div>
+
+<p>
+<span id="Probability-Central Limit Theorem-Conditions"></span><strong id="Conditions">Conditions</strong>
+</p>
+<ul>
+<li>
+Samples must be randomly chosen
+
+<li>
+Sample size must be constant across all samples
+
+<li>
+Only applies to the set of sample means
+
+<ul>
+<li>
+Not to other statistics
+
+<li>
+For example, doesn't apply to the set of all sample standard deviations
+
+</ul>
+</ul>
+
+
+<p>
+<span id="Probability-Central Limit Theorem-Distribution"></span><strong id="Distribution">Distribution</strong>
+</p>
+<ul>
+<li>
+If the population is known to be normally distributed
+
+<ul>
+<li>
+Sample means distribution will be normally distributed for any sample size
+	  \(n\)
+
+</ul>
+<li>
+Otherwise
+
+<ul>
+<li>
+The distribution of sample means approaches a normal distribution as the
+	  sample size is increased
+
+<li>
+A sample size greater than or equal to 30 is acceptable
+
+</ul>
+</ul>
+
+
+<p>
+<span id="Probability-Central Limit Theorem-Mean"></span><strong id="Mean">Mean</strong>
+</p>
+<ul>
+<li>
+The mean of all sample means approaches the population mean
+
+</ul>
+
+
+<p>
+<span id="Probability-Central Limit Theorem-Standard Deviation"></span><strong id="Standard Deviation">Standard Deviation</strong>
+</p>
+<ul>
+<li>
+The standard deviation of a set of sample means approaches
+  \(\frac{\sigma}{\sqrt{n}}\)
+
+<li>
+Where:
+
+<ul>
+<li>
+\(\sigma\) is the population mean
+
+<li>
+\(n\) is the sample size
+
+</ul>
+</ul>
+
+
+<div id="Probability-Probability Distributions"><h2 id="Probability Distributions">Probability Distributions</h2></div>
+
+<p>
+<span id="Probability-Probability Distributions-Definition"></span><strong id="Definition">Definition</strong>
+</p>
+<ul>
+<li>
+Table showing the probability of getting a particular value from the
+  population
+
+</ul>
+
+
+<p>
+<span id="Probability-Probability Distributions-Properties"></span><strong id="Properties">Properties</strong>
+</p>
+<ul>
+<li>
+If the population (\(X\)) is fair
+
+<ul>
+<li>
+Probability of chosing each element is the same
+
+<li>
+We say \(X\) is a random variable
+
+</ul>
+<li>
+Probabilities sum to 1
+
+</ul>
+
+
+<p>
+<span id="Probability-Probability Distributions-Uniform Distribution"></span><strong id="Uniform Distribution">Uniform Distribution</strong>
+</p>
+<ul>
+<li>
+Probability of getting each element is the same
+
+</ul>
+
+
+<p>
+<span id="Probability-Probability Distributions-Normal Distribution"></span><strong id="Normal Distribution">Normal Distribution</strong>
+</p>
+<ul>
+<li>
+Probability of getting elements close to the mean is higher than that of ones
+  further away from the mean
+
+</ul>
+
+
+<div id="Probability-Probability Distributions-Graphs"><h3 id="Graphs">Graphs</h3></div>
+
+<p>
+<span id="Probability-Probability Distributions-Graphs-Axes"></span><strong id="Axes">Axes</strong>
+</p>
+<ul>
+<li>
+Probabilities on y axis
+
+<li>
+Values on x axis
+
+</ul>
+
+
+<p>
+<span id="Probability-Probability Distributions-Graphs-Drawing"></span><strong id="Drawing">Drawing</strong>
+</p>
+<ul>
+<li>
+Bar chart
+
+<li>
+Bars centred on x axis numbers
+
+<li>
+Gaps between bars
+
+<li>
+Labelled axes
+
+</ul>
+
+
+<div id="Probability-Frequency Tables"><h2 id="Frequency Tables">Frequency Tables</h2></div>
+
+<ul>
+<li>
+Table holding frequency of means between ranges of values
+
+</ul>
+
+
+<p>
+<span id="Probability-Frequency Tables-Statistics on ClassPad"></span><strong id="Statistics on ClassPad">Statistics on ClassPad</strong>
+</p>
+<ul>
+<li>
+Find mean and standard deviation on ClassPad by:
+
+<ul>
+<li>
+Input midpoint of ranges in list 1
+
+<li>
+Input frequency in list 2
+
+<li>
+Go to Calc, One Variable
+
+<li>
+Select list 1 as the value
+
+<li>
+Select list 2 as the frequency
+
+</ul>
+<li>
+Use \(s_x\) instead of \(\sigma_x\) on ClassPad for standard deviation of the
+  sample means set
+
+</ul>
+
+
+
+
+<div id="Linear Regression"><h1 id="Linear Regression">Linear Regression</h1></div>
+
+<p>
+<span id="Linear Regression-Process"></span><strong id="Process">Process</strong>
+</p>
+<ul>
+<li>
+Write equation \(s\) for area of squares
+
+<ul>
+<li>
+Summation of \(y_1 - (x_1 m + c)\) across all points
+
+</ul>
+<li>
+Derive \(s\) with respect to \(m\) and \(c\)
+
+<li>
+Minimise \(s\) by equating the derivatives to 0
+
+<li>
+Solve for \(m\) and \(c\) simultaneous
+
+</ul>
+
+
+<p>
+<span id="Linear Regression-ClassPad"></span><strong id="ClassPad">ClassPad</strong>
+</p>
+<ul>
+<li>
+Input all points in list 1 and 2
+
+<li>
+Go to Calc, Regression, Linear Reg
+
+</ul>
+
+
+
+<div id="Questions"><h1 id="Questions">Questions</h1></div>
+
+<p>
+<span id="Questions-Probability"></span><strong id="Probability">Probability</strong>
+</p>
+<ul>
+<li>
+Find probability distribution of a population
+
+<li>
+Find mean and standard deviation of a probability distribution
+
+<li>
+Graph probability distribution
+
+<li>
+Find mean and standard deviation of population from a probability distribution
+  table
+
+<li>
+Find mean and standard deviation of a sample
+
+<li>
+Find mean and standard deviation of sample from a grouped frequency table
+
+<ul>
+<li>
+Find mean and standard deviation approximately from these values
+
+</ul>
+</ul>
+
+
+<p>
+<span id="Questions-Central Limit Theorem"></span><strong id="Central Limit Theorem">Central Limit Theorem</strong>
+</p>
+<ul>
+<li>
+Approximate mean and standard deviation of population from a set of sample
+  means
+
+<li>
+Know that sample means approaches normal distribution
+
+<ul>
+<li>
+As sample size increases
+
+</ul>
+<li>
+Know that mean of sample means approaches mean of population
+
+<li>
+Know that standard deviation of sample means approaches
+  \(\frac{\sigma}{\sqrt{n}}\)
+
+</ul>
+
+
+<p>
+<span id="Questions-Linear Regression"></span><strong id="Linear Regression">Linear Regression</strong>
+</p>
+<ul>
+<li>
+Find regression line of arbitrary points
+
+<li>
+Derive equation for regression line of 3 points
+
+</ul>
+
+</body>
+
+</html>
