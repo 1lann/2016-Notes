@@ -1,4 +1,0 @@
-
-= Physics =
-	* [[Motion and Forces]]
-	* [[Electromagnetism]]

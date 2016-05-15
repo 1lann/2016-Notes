@@ -1,6 +1,0 @@
-
-= Specialist =
-	* [[Complex Numbers]]
-	* [[Functions]]
-	* [[Vectors]]
-	* [[Probability and Linear Regression]]
