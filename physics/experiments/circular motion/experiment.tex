@@ -1,0 +1,365 @@
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+
+\begin{document}
+
+\title{Circular Motion Experiment}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+
+
+\section{Results}
+
+Mass of stopper: 0.0582 kg
+
+
+\subsection{Varying Force}
+
+Constant radius: 0.600 m
+
+\begin{center}
+\begin{tabularx}{\textwidth}{Y Y Y Y Y}
+\multirow{2}{*}{Force (N)} & \multicolumn{4}{c}{Period For 20 Revolutions (s)} \\
+& Trial 1 & Trial 2 & Trial 3 & Average \\
+\hline
+1.50 & 19.24 & 19.20 & 19.23 & 19.22 \\
+2.00 & 16.72 & 17.02 & 16.88 & 16.87 \\
+2.50 & 14.34 & 14.33 & 14.39 & 14.35 \\
+3.00 & 12.90 & 12.65 & 12.79 & 12.78 \\
+3.50 & 12.05 & 12.45 & 12.08 & 12.19 \\
+4.00 & 9.92  & 9.84  & 10.05 & 9.94  \\
+\end{tabularx}
+\end{center}
+
+
+\hspace*{-1.2cm}
+\begin{tabularx}{1.2\textwidth}{Y Y Y Y}
+Force (N) & Average Period (s) & Speed ($\mbox{ms}^{-1}$) &  $v^2$ ($\mbox{m}^{2}\mbox{s}^{-2}$) \\
+\hline
+1.50 & 0.961 & 3.92 & 15.4 \\
+2.00 & 0.844 & 4.47 & 20.0 \\
+2.50 & 0.718 & 5.25 & 27.6 \\
+3.00 & 0.639 & 5.90 & 34.8 \\
+3.50 & 0.610 & 6.19 & 38.3 \\
+4.00 & 0.497 & 7.59 & 57.6 \\
+\end{tabularx}
+\hspace*{-1.2cm}
+
+
+\subsection{Varying Radius}
+
+Constant force: 3.00 N
+
+\begin{center}
+\begin{tabularx}{\textwidth}{Y Y Y Y Y}
+\multirow{2}{*}{Radius (m)} & \multicolumn{4}{c}{Period For 20 Revolutions (s)} \\
+& Trial 1 & Trial 2 & Trial 3 & Average \\
+\hline
+0.200 & 8.90  & 9.05  & 8.96  & 8.97  \\
+0.400 & 11.62 & 11.78 & 11.30 & 11.53 \\
+0.600 & 13.66 & 13.20 & 13.72 & 13.53 \\
+0.800 & 16.25 & 16.48 & 16.10 & 16.28 \\
+1.00  & 18.89 & 18.79 & 18.95 & 18.88 \\
+\end{tabularx}
+\end{center}
+
+
+\hspace*{-1.2cm}
+\begin{tabularx}{1.2\textwidth}{Y Y Y Y}
+Radius (m) & Average Period (s) & Speed ($\mbox{ms}^{-1}$) & $v^2$ ($\mbox{m}^{2}\mbox{s}^{-2}$) \\
+\hline
+0.200 & 0.449 & 2.80 & 7.84 \\
+0.400 & 0.577 & 4.36 & 19.0 \\
+0.600 & 0.677 & 5.57 & 31.0 \\
+0.800 & 0.814 & 6.18 & 38.2 \\
+1.00  & 0.944 & 6.66 & 44.4 \\
+\end{tabularx}
+\hspace*{-1.2cm}
+
+
+\section{Analysis}
+
+\subsection{Gradient of $F_c$ vs $v^2$}
+
+\addtolength{\jot}{0.5em}
+\begin{align*}
+	\mbox{gradient} & = \frac{\mbox{rise}}{\mbox{run}} \\
+					& = \frac{6.97 - 1.0}{65 - 11} \\
+					& = 0.111\mbox{ N s}^{2}\mbox{ m}^{-2} \\
+\end{align*}
+
+
+\subsection{Gradient of $r$ vs $v^2$}
+
+\begin{align*}
+	\mbox{gradient} & = \frac{\mbox{rise}}{\mbox{run}} \\
+					& = \frac{0.97 - 0.1}{45 - 4.8} \\
+					& = 0.0216\mbox{s}^{2}\mbox{ m}^{-1} \\
+\end{align*}
+
+
+\section{Questions}
+
+\subsection{Question 1}
+
+The centripetal force is provided by the tension in the string attached to the
+rubber stopper. The tension is caused by the movement of the person's arm in a
+repeating pattern.
+
+
+\subsection{Question 2}
+
+\begin{align*}
+				F_c & = \frac{mv^2}{r} \\
+	\frac{F_c}{v^2} & = \frac{m}{r} \\
+	\mbox{gradient} & = \frac{m}{r} \\
+\end{align*}
+
+The gradient of the graph of $F_c$ vs $v^2$ is equivalent to the mass of the
+stopper divided by the radius of its motion.
+
+\begin{align*}
+	\frac{m}{r} & = \frac{0.0582}{0.600} \\
+				& = 0.0970\mbox{ kg m}^{-1} \\
+\end{align*}
+
+The gradient of our graph was $0.111\mbox{ N s}^{2}\mbox{ m}^{-2}$. The mass of
+the stopper divided by the radius of its motion is $0.0970\mbox{ kg m}^{-1}$.
+Our measured value is reasonably close to the theoretical value, with a
+percentage difference of:
+
+$$
+\frac{0.111 - 0.0970}{0.0970} \times 100 = 14.4\%
+$$
+
+
+\subsection{Question 3}
+
+\begin{align*}
+				F_c & = \frac{mv^2}{r} \\
+	  \frac{r}{v^2} & = \frac{m}{F_c} \\
+	\mbox{gradient} & = \frac{m}{F_c} \\
+\end{align*}
+
+The gradient of the graph of $r$ vs $v^2$ is equivalent to the centripetal force
+divded by the mass of the stopper, which is equivalent to the inverse of
+centripetal acceleration.
+
+\begin{align*}
+	\frac{m}{F_c} & = \frac{0.0582}{3.00} \\
+				  & = 0.0194\mbox{ kg N}^{-1} \\
+\end{align*}
+
+The gradient of our graph was $0.0216\mbox{ s}^{2}\mbox{ m}^{-1}$. The mass of
+the stopper divided by the radius of its motion is $0.0194\mbox{ kg N}^{-1}$.
+Our measured value is again reasonably close to the theoretical one, with a
+percentage difference of:
+
+$$
+\frac{0.0216 - 0.0194}{0.0194} \times 100 = 11.3\%
+$$
+
+
+\subsection{Question 4}
+
+No, the string not being perfectly horizontal does not influence the
+relationship between $F_c$ and $v$. \\
+
+In our experiment, we make the assumption that the value displayed by the force
+guage is the centripetal force. This value is in fact the tension in the string.
+This fact is demonstrated in diagram 1 below. The centripetal force is actually
+$F_c = T \cos{\theta}$, where $\theta$ is the angle the string makes with the
+horizontal. \\
+
+Similarly, the radius of centripetal motion we measured was the distance between
+the top of the glass tube and the stopper (labelled $l$ in diagram 2). Again,
+this is not the actual radius of centripetal motion, which is instead
+$r = l \cos{\theta}$. \\
+
+The relationship between $F_c$ and $v$ can be represented by the ratio between
+these two values:
+
+\begin{align*}
+	\frac{F_c}{v} & = \frac{F_c}{\sqrt{\frac{F_c r}{m}}} \\
+	& = \frac{T \cos{\theta}}{\sqrt{\frac{(T \cos{\theta}) (l \cos{\theta})}{m}}} \\
+	& = \frac{T \cos{\theta}}{\sqrt{\frac{T l \cos^2{\theta}}{m}}} \\
+	& = \frac{T \cos{\theta}}{\sqrt{\frac{T l}{m}} \cos{\theta}} \\
+	& = \frac{T}{\sqrt{\frac{T l}{m}}} \\
+\end{align*}
+
+It follows from the above equation that the relationship between $F_c$ and $v$
+does not depend on $\theta$, the angle from the horizontal. Hence the
+relationship between $F_c$ and $v$ doesn't change if the string is not exactly
+horizontal (when $\theta = 0$).
+
+% Yes, the relationship between $F_c$ and $v$ is affected by the string not being
+% exactly horizontal. \\
+
+% The stopper's circular motion is always in a single horizontal plane. The
+% radius of this motion is the horizontal distance between the stopper and glass
+% tube, labelled as $r$ on diagrams 1 and 2 below. When the stopper is not held
+% exactly horizontal, it forms an angle $\theta$ with the horizontal (as seen in
+% diagram 3). The radius of circular motion therefore varies with the cosine of
+% $\theta$. If we let the length of string between the stopper and the top of the
+% glass tube (the pivot point) be $l$, then the radius of circular motion is $r
+% = l \cos{\theta}$. Hence substituting this into the equation for centripetal
+% force:
+
+% \begin{align*}
+% 	F_c & = \frac{mv^2}{l \cos{\theta}} \\
+% 	  v & = \sqrt{\frac{F_c l \cos{\theta}}{m}} \\
+% \end{align*}
+
+% Let the velocity of the stopper when the string is perfectly horizontal be
+% $v_1$, and the centripetal force required to maintain this velocity be $F_{c1}$.
+% It follows from the above two equations that when $\theta > 0$ (ie. the string
+% isn't perfectly horizontal), the radius of circular motion will decrease, and
+% the centripetal force required to maintain the velocity $v_1$ will be greater
+% than $F_{c1}$. Hence the relationship between $F_c$ and $v$ has been affected.
+
+
+\section{Sources of Error}
+
+\subsection{One}
+
+In our experiment, we assumed the stopper's motion was perfectly horizontal, and
+made no downward angle with the horizontal. \\
+
+In reality, it is impossible for the stopper to travel in a perfectly horizontal path around
+the top of the glass tube, and will always make some downward angle $\theta$
+with the horizontal. This is because the stopper has mass, and therefore a
+downwards weight force due to gravity is exerted on it. Since the centripetal
+force is the sum of the tension force in the string and the weight force, and
+since the centripetal force acts horizontally (perpendicular to the
+weight force), the tension force in the string must act at an angle, and cannot
+be perfectly horizontal. \\
+
+Let the distance between the stopper and top of the glass tube (the pivot point)
+be $l$. In our experiment, we assumed this distance was the radius of circular
+motion of the stopper. The actual radius of motion is instead
+$r = l \cos{\theta}$, since the string must make some downward angle $\theta$
+with the horizontal (as established above). \\
+
+We calculated our experimental velocity values from our measured radius ($l$)
+using the equation:
+
+$$
+v = \frac{2 \pi l}{T}
+$$
+
+Substituting $l$ from the equation above, we find:
+
+$$
+v = \frac{2 \pi r}{T \cos{\theta}}
+$$
+
+We see that our calculated velocities are larger than what they should have
+been by a factor of $\frac{1}{\cos{\theta}}$. This is a systematic error in our
+experiment, reducing the accuracy of our results. \\
+
+For example, consider our velocity of $5.90\mbox{ ms}^{-1}$ for a force of
+3.00 N and a constant radius of 0.600 m, which had an average period of 0.639 s.
+If we assume that the string made an angle of $10^\circ$ with the horizontal,
+the actual radius of circular motion would be
+$r = l \cos{\theta} = 0.6 \cos{10^\circ} = 0.591\mbox{ m}$. If we recalculate
+our velocity value from this:
+
+\begin{align*}
+	v & = \frac{2 \pi r}{T} \\
+	  & = \frac{2 \pi 0.591}{0.639} \\
+	  & = 5.81\mbox{ ms}^{-1} \\
+\end{align*}
+
+Hence the actual velocity, assuming the angle with the horizontal was
+$10^\circ$, is $5.81\mbox{ ms}^{-1}$, less than our experimental value, as
+expected.
+
+% In addition, the force measured in the experiment was the tension in the string, and not the
+% centripetal force. These are related similarly, $F_c = T \cos{\theta}$ \\
+
+% The gradient of our graph was calculated
+
+% If we rearrange the formula for centripetal force for velocity:
+
+% $$
+% v = \sqrt{\frac{F_c r}{m}}
+% $$
+
+% We can see that since both our measured force and radius were greater than their
+% actual values, our calculated velocity is larger also. \\
+
+% For example, if use the experimental values for a force of 3.00 N with a
+% constant radius of 0.600 m, we found a velocity of $5.90\mbox{ ms}^{-1}$. If we
+% assume that the string made an angle of 10 degrees below the horizontal, then we
+% can calculate the expected velocity:
+
+% \begin{align*}
+% 	v & = \sqrt{\frac{F_c r}{m}} \\
+% 	  & = \sqrt{\frac{3.00 \cos{10} \times 0.600 \cos{10}}{0.0582}} \\
+% 	  & = 5.48\mbox{ ms}^{-1} \\
+% \end{align*}
+
+% Which is less than our measured value, as expected.
+
+
+\subsection{Two}
+
+A possible source of error in the experiment is that when the tension force in the
+string increases, the spring the string is attached to inside the force guage
+extends, causing the length of string to increase. This increases the radius of
+circular motion of the stopper. Since the tension force in the string was kept
+constant, this will increase the velocity of the stopper, causing our results to
+be systematically greater than the correct values of velocity. \\
+
+For example, consider our results for a force of 4.00 N with a constant radius
+of 0.600 m. Our measured velocity was $7.59\mbox{ ms}^{-1}$, yet theoretically
+it should be:
+
+\begin{align*}
+	v & = \sqrt{\frac{F_c r}{m}} \\
+	  & = \sqrt{\frac{4.00 \times 0.6}{0.0582}} \\
+	  & = 6.42\mbox{ ms}^{-1} \\
+\end{align*}
+
+Consider if the string extended 4 cm, making the length of string 0.64 m. If we
+assume the string is perfectly horizontal, then the radius of circular motion
+is also 0.64 m. This creates a new theoretical velocity value of:
+
+\begin{align*}
+	v & = \sqrt{\frac{F_c r}{m}} \\
+	  & = \sqrt{\frac{4.00 \times 0.64}{0.0582}} \\
+	  & = 6.63\mbox{ ms}^{-1} \\
+\end{align*}
+
+An increase of $0.210\mbox{ ms}^{-1}$ over the previous value. Hence it can be
+seen that this source of error has caused our measured velocities to be larger
+than their correct values.
+
+
+\section{Conclusion}
+
+By considering the relatively small difference between the gradients of our graphs and their
+corresponding theoretical values, it can be seen that our results verify the theoretical
+relationship between the variables in a system rotating in a circular path.
+Hence we have achieved our aim. \\
+
+For the relationship between $F_c$ and $v^2$, we arrived at a gradient of
+$0.111\mbox{ N s}^{2}\mbox{ m}^{-2}$. The theoretical value for this gradient
+was $0.0970\mbox{ kg m}^{-1}$, a percentage difference of 14.4\%. \\
+
+For the relationship between $r$ and $v^2$, we arrived at a gradient of
+$0.0216\mbox{ s}^{2}\mbox{ m}^{-1}$. This is compared to a theoretical value of
+$0.0194\mbox{ kg N}^{-1}$, a percentage difference of 11.3\%.
+
+\end{document}

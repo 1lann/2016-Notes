@@ -1,0 +1,208 @@
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Science Inquiry Skills}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+
+\pagebreak
+
+
+
+\section{Errors}
+
+\subsection{Accuracy}
+
+Accuracy is how close a value is to the accepted value.
+
+
+\subsection{Precision}
+
+Precision is how spread out a set of values are. Values with lower uncertainty
+are more precise.
+
+If a set of results is precise, it does not necessarily mean they are close to
+the accepted value.
+
+
+\subsection{Reliability}
+
+A set of results is more reliable if it can be readily reproduced. More trials
+and lower percentage error make a set of results more reliable.
+
+
+\subsection{Systematic Error}
+
+Error intrinsic to measurement devices and instruments, which cause results to
+be consistently higher or lower than the accepted value by a near constant
+amount.
+
+
+\subsection{Random Error}
+
+Error that causes the results to appear more scattered, to vary more
+significantly between trials. Doesn't cause values to be consistenly higher or
+lower than the accepted value.
+
+
+
+
+\section{Uncertainties}
+
+Uncertainty gives a range that a value may be between, for example:
+
+$$
+20.0 \pm 0.1
+$$
+
+The uncertainty must be rounded so that it is in the last significant figure of
+the value.
+
+
+\subsection{For a Measurement}
+
+The uncertainty for a value read off a measuring device is half the smallest
+scale step.
+
+We must read a value on a measuring device to 1 significant figure more than its
+smallest scale step.
+
+For example, if we measure 20.00 cm using a ruler with 1 mm increments, the
+value with its uncertainty is:
+
+$$
+20.00 \pm 0.05\text{ cm}
+$$
+
+
+\subsection{Absolute Uncertainty}
+
+The uncertainty associated with a value in the same units as the value.
+
+
+\subsection{Relative Uncertainty}
+
+Also called fractional uncertainty.
+
+Calculated as:
+
+$$
+\frac{\text{uncertainty}}{\text{value}}
+$$
+
+
+\subsection{Percentage Uncertainty}
+
+The fractional uncertainty multiplied by 100.
+
+Calculated as:
+
+$$
+\frac{\text{uncertainty}}{\text{value}} \times 100\%
+$$
+
+
+\subsection{Percentage Difference}
+
+The difference between a value and the associated accepted value measured as a
+percentage of the accepted value.
+
+Calculated as:
+
+$$
+\frac{\text{measured value} - \text{accepted value}}{\text{accepted value}} \times 100\%
+$$
+
+
+
+
+\section{Significant Figures}
+
+\subsection{Addition and Subtraction}
+
+Give the answer to the least number of decimal places used in one of the values
+in the operation.
+
+
+\subsection{Multiplication and Division}
+
+Give the answer to the least number of significant figures used in one of the
+values in the operation.
+
+
+
+
+\section{Operations with Uncertainties}
+
+\subsection{With a Constant}
+
+The uncertainty does not change when adding, subtracting, multiplying, or
+dividing by a constant.
+
+
+\subsection{Over a Number of Repetitions}
+
+If a value is measured over a number of repetitions (eg. the time for 20 swings
+of a pendulum), then the error associated with the result is divided by the
+number of repetitions.
+
+
+\subsection{Addition and Subtraction}
+
+Add the absolute uncertainties.
+
+
+\subsection{Multiplication and Division}
+
+Add the fractional uncertainties and convert back to an absolute uncertainty by
+multiplying by the final rounded value.
+
+
+
+
+\section{Linearising Graphs}
+
+Manipulate the given data to give an equation in the form $y = mx + c$, allowing
+us to plot a linear graph.
+
+
+\subsection{Polynomials}
+
+For the relation $A = mB^2 + C$, plot a graph of $A$ vs. $B^2$, which has a
+gradient of $m$ and y intercept of $C$.
+
+For the relation $A^3 = mB^4 + C$, plot a graph of $A^3$ vs. $B^4$, which has a
+gradient of $m$ and y intercept of $C$.
+
+
+\subsection{Hyperbolas}
+
+For the relation $A = m \frac{1}{B} + C$, plot a graph of $A$ vs. $\frac{1}{B}$.
+
+
+\subsection{Square Roots}
+
+For the relation $A = m \sqrt{B} + C$, plot a graph of $A$ vs. $\sqrt{B}$.
+
+
+\subsection{Units of Gradient}
+
+The units of the gradient of a graph is the units on the y axis divided by the
+units on the x axis.
+
+\end{document}

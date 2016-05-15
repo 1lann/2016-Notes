@@ -1,3 +1,9 @@
 .DS_Store
-illustrator
 *.swp
+*.aux
+*.log
+*.pdf
+*.toc
+*.out
+other/*
+literature/assignments/*

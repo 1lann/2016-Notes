@@ -1,0 +1,522 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+
+% Chemistry
+\usepackage{mhchem}
+\usepackage{chemfig}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+% Set style for diagrams
+\setdoublesep{0.35700 em}
+\setatomsep{1.78500 em}
+\setbondoffset{0.18265 em}
+\newcommand{\bondwidth}{0.06642 em}
+\setbondstyle{line width = \bondwidth}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+
+\begin{document}
+
+\title{Esters Investigation}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+
+
+% CONTENTS
+% - Aim
+% - Calculations of the mass of ethanol and mass of ethanoic acid required
+% - Equipment
+% - Procedure
+% - Results
+% - Explanation for why we might have no ester layer
+% 	- Water bath not hot enough
+% 	- Not enough H2SO4
+% 	- H2SO4 is dense so it might have sunk to the bottom and not mixed throughout solution
+% 	- Not left in water bath for long enough due to time restrictions in class
+% 	- Didn't rinse with water thoroughly enough to dissolve all alcohol and ethanoic acid
+% 	- Didn't shake hard enough
+% 	- Didn't add enough water
+% - Results taken from another group
+% - Calculation for theoretical yield
+% - Percentage yield
+% - Reasons for lower percentage yield
+% 	- Equilibrium reaction
+% 	- transfer costs
+% - Measures taken and ones that could have been taken to increase percentage yield
+% 	- High temperature
+% 		- Endothermic reaction
+% 		- Rate of reaction
+% 	- Concentration
+% 	- Leave in water bath for longer
+% 		- Allow reaction more time to reach equilibrium
+% 	- Continually stir mixture to ensure sulfuric acid is mixed throughout
+% - Justification for separation
+% 	- Solubility of ethanol and ethanoic acid
+% 	- Bonding (hydrogen bonding vs. dispersion)
+% - Errors
+% 	- Solubility of alcohol and acid
+% 		- Could perform more washes to reduce this
+% 		- Would also wash out more ester because of its solubility
+% 	- Excess water in weighing product
+% 		-
+% - Conclusion
+
+
+\section{Aim}
+
+The aim of the investigation is to synthesise ethyl ethanoate, extract it from
+any unreacted acid and alcohol, and measure our percentage yield of ester.
+
+
+\section{Preliminary Calculations}
+
+$$
+\ce{CH3CH2OH + CH3COOH <=> CH3COOCH2CH3 + H2O}
+$$
+
+$$
+\ce{\chemfig{C(-[:90]H)(-[:180]H)(-[:270]H)(-[:0]C(-[:90]H)(-[:270]H)(-[:0]O(-[:0]H)))} +
+	\chemfig{C(-[:90]H)(-[:180]H)(-[:270]H)(-[:0]C(=[:45]O)(-[:315]O(-[:0]H)))} <=>
+	\chemfig{C(-[:90]H)(-[:180]H)(-[:270]H)(-[:0]C(=[:45]O)(-[:315]O(-[:0]C(-[:90]H)(-[:270]H)(-[:0]C(-[:90]H)(-[:0]H)(-[:270]H)))))} + H2O}
+$$
+
+We want the total volume of the esterification mixture to be about 25 mL. We want to
+react the ethanol and ethanoic acid in a stoichiometric ratio, which means we
+need to add an equal number of moles of the reactants. \\
+
+If we use 0.2 mol of ethanol:
+
+$$
+\begin{aligned}
+	\mbox{M($\ce{CH3CH2OH}$)} & = 2 \times 12.01 + 6 \times 1.008 + 16 \\
+			& = 46.086\mbox{ g mol}^{-1} \\
+	\mbox{m($\ce{CH3CH2OH}$)} & = 46.086 \times 0.2 \\
+			& = 9.217\mbox{ g} \\
+	\rho\mbox{($\ce{CH3CH2OH}$)} & = 0.789\mbox{ g mL}^{-1} \\
+	\mbox{V($\ce{CH3CH2OH}$)} & = \frac{9.217}{0.789} \\
+			& = 11.68\mbox{ mL} \\
+\end{aligned}
+$$
+
+And 0.2 mol of ethanoic acid:
+
+$$
+\begin{aligned}
+	\mbox{M($\ce{CH3COOH}$)} & = 2 \times 12.01 + 4 \times 1.008 + 2 \times 16 \\
+							& = 60.052\mbox{ g mol}^{-1} \\
+	\mbox{m($\ce{CH3COOH}$)} & = 60.052 \times 0.2 \\
+			& = 12.01\mbox{ g} \\
+	\rho\mbox{($\ce{CH3COOH}$)} & = 1.05\mbox{ g mL}^{-1} \\
+	\mbox{V($\ce{CH3COOH}$)} & = \frac{12.01}{1.05} \\
+			& = 11.44\mbox{ mL} \\
+\end{aligned}
+$$
+
+This results in a total volume of $11.68 + 11.44 = 23.12\mbox{ mL}$ of
+reactants. Since we will be adding an additional 2 mL of concentrated
+$\ce{H2SO4}$ as a catalyst, this will make up our target of 25 mL. \\
+
+Therefore the required masses are 9.217 g of ethanol, and 12.01 g of ethanoic
+acid.
+
+% Let the number of moles of ethanol and ethanoic acid be $x$. For ethanol:
+
+% $$
+% \begin{aligned}
+% 	\mbox{M} & = 2 \times 12.01 + 6 \times 1.008 + 16 \\
+% 			& = 46.086\mbox{ g mol}^{-1} \\
+% 	\mbox{m} & = 46.086 x \\
+% 	\rho & = 0.789\mbox{ g mL}^{-1} \\
+% 	\mbox{V} & = \frac{46.086x}{0.789} \\
+% \end{aligned}
+% $$
+
+% For ethanoic acid:
+
+% $$
+% \begin{aligned}
+% 	\mbox{M} & = 2 \times 12.01 + 4 \times 1.008 + 2 \times 16 \\
+% 							& = 60.052\mbox{ g mol}^{-1} \\
+% 	\mbox{m} & = 60.052 x \\
+% 	\rho & = 1.05\mbox{ g mL}^{-1} \\
+% 	\mbox{V} & = \frac{60.052x}{1.05} \\
+% \end{aligned}
+% $$
+
+% Therefore:
+
+% $$
+% \begin{aligned}
+% 	\frac{46.086 x}{0.789} + \frac{60.052 x}{1.05} & = 25 \\
+% 	x & = 0.216\mbox{ mol} \\
+% \end{aligned}
+% $$
+
+% Hence we need 0.216 mol of ethanol and ethanoic acid. \\
+
+% The required mass of each substance is:
+
+% $$
+% \begin{aligned}
+% \mbox{m}(\ce{CH3CH2OH}) & = 46.086 \times 0.216 \\
+% 							& = 9.955\mbox{ g} \\
+% \mbox{m}(\ce{CH3COOH}) & = 60.052 \times 0.216 \\
+% 							& = 12.97\mbox{ g} \\
+% \end{aligned}
+% $$
+
+% The required volume of solution for each substance is:
+
+% $$
+% \begin{aligned}
+% 	\mbox{V}(\ce{CH3CH2OH}) & = \frac{9.955}{0.789} \\
+% 							& = 12.6\mbox{ mL} \\
+% 	\mbox{V}(\ce{CH3COOH}) & = \frac{12.97}{1.05} \\
+% 							& = 12.4\mbox{ mL} \\
+% \end{aligned}
+% $$
+
+% Hence we need 12.6 mL of ethanol and 12.4 mL of ethanoic acid.
+
+
+
+
+\section{Equipment}
+
+\begin{itemize}
+\item Ethanol
+\item Ethanoic acid
+\item Concentrated sulfuric acid
+\item Set of scales
+\item 300 mL of tap water
+\item Kettle
+\item 300 mL beaker
+\item 100 mL beaker
+\item Distilled water
+\item Funnel
+\item Separation flask and glass stopper
+\item Retort stand
+\item Clamp
+\item Pipette
+\end{itemize}
+
+
+\section{Procedure}
+
+\begin{enumerate}
+\item Weigh the empty separation flask and record its mass
+\item Weigh out 9.217 g of ethanol in the 100 mL beaker using the set of scales
+\item Add the ethanol to the boiling tube
+\item Weigh out 12.01 g of ethanoic acid in the 100 mL beaker using the set of
+	scales
+\item Add the ethanoic acid to the boiling tube
+\item Add roughly 2 mL of concentrated sulfuric to the boiling tube using the pipette
+\item Boil 300 mL of tap water in a kettle
+\item Add the boiling water to the 300 mL beakers
+\item Place the boiling tube in the hot water bath
+\item Leave for at least 30 minutes
+\item Place a funnel into the top of the separation flask
+\item Pour contents of boiling tube into separation flask
+\item Wash any residual mixture left in the boiling tube and on the funnel into the separation flask using distilled water
+\item Add more distilled water to the separation flask to make up at least 50 mL
+	of solution
+\item Remove the funnel and plug the top of the separation flask with the glass stopper
+\item Thoroughly shake the separation flask to completely mix its contents
+\item Attach the separation flask to the retort stand using the clamp
+\item Leave the separation flask still to allow its contents to separate into two
+	distinct layers
+\item Discard the contents of the 300 mL beaker and place it below the separation flask
+\item Carefully open the tap on the separation flask to let the lower aqueous layer drain into the beaker
+\item Close the tap just before all of the aqueous layer has been removed
+\item Plug the top of the separation flask with the glass stopper
+\item Remove the separation flask from the retort stand and weigh it and its
+	contents using the set of scales, recording the measured mass
+
+
+% \item Measure out 12.6 mL of ethanol using the measuring cylinder and add it to the boiling tube
+% \item Measure out 12.4 mL of ethanoic acid using the measuring cylinder and add it to the boiling tube
+% \item Place the boiling tube in the hot water bath
+% \item Leave for 30 minutes
+% \item Place a funnel into the top of the separation flask
+% \item Pour contents of boiling tube into separation flask
+% \item Wash any residual mixture left in the boiling tube and on the funnel into the separation flask using distilled water
+% \item Add more distilled water to the separation flask to make up at least 50 mL of the mixture
+% \item Plug the top of the separation flask using the rubber stopper
+% \item Shake the separation flask so its contents are thoroughly mixed
+% \item Attach the separation flask to the retort stand *EXPAND ON THIS POINT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*
+% \item Let the contents of the flask settle into two distinct layers
+% \item Place the second 500 mL beaker below the separation flask
+% \item Remove the rubber stopper from the top of the separation flask
+% \item Open the tap on the separation flask to let the lower aqueous layer drain into the beaker
+% \item Close the tap just before all of the aqueous layer has been removed
+% \item Discard the contents of the beaker
+% \item Repeat steps something to something another two times
+% \item Plug the top of the separation flask with the rubber stopper
+% \item Weigh the separation flask and its contents and record the mass
+\end{enumerate}
+
+
+\section{Results}
+
+Unfortunately, the contents of our separation flask failed to separate into two
+distinct layers, preventing us from obtaining a valid result. Some potential
+reasons for this are discussed below. I have acquired another successful group's
+set of results, which are used in a percentage yield calculation below: \\
+
+The mass of the empty separation flask was 191.6 g. \\
+
+The mass of the separation flask with the synthesised ester was 202.1 g. \\
+
+The mass of ester produced is therefore $202.1 - 191.6 = 10.5\mbox{ g}$. \\
+
+The theoretical yield of ester using 0.2 mol of ethanol and ethanoic acid is:
+
+$$
+\begin{aligned}
+	\mbox{n(ester)} & = \mbox{n(ethanol)} \\
+					& = 0.2\mbox{ mol} \\
+	\mbox{M(ester)} & = 4 \times 12.01 + 8 \times 1.008 + 2 \times 16 \\
+			& = 88.104\mbox{ g mol}^{-1} \\
+	\mbox{m(ester)} & = 88.104 \times 0.2 \\
+			& = 17.62\mbox{ g} \\
+\end{aligned}
+$$
+
+Therefore the percentage yield is:
+
+$$
+\begin{aligned}
+	& = \frac{10.5}{17.62} \times 100 \\
+	& = 59.6 \% \\
+\end{aligned}
+$$
+
+
+\section{Discussion}
+
+\subsection{Justification for Separation}
+
+Hydrogen bonding is where a hydrogen atom bonded to one of nitrogen, oxygen or
+fluorine in a molecule is strongly attracted to a lone pair of electrons on an
+oxygen atom in another molecule. Both ethanol and ethanoic acid are capable of
+hydrogen bonding, with ethanol
+having 1 potential site, and ethanoic acid with 2. Water also experiences
+hydrogen bonding between its molecules. Therefore when dissolving ethanol and
+ethanoic acid in water, the solute/solute and solvent/solvent bonds broken
+(hydrogen bonds) are
+of comparable strength to the solute/solvent bonds formed (also hydrogen
+bonds), allowing both ethanol and ethanoic acid to dissolve in the added
+water. \\
+
+Ethyl ethanoate is not capable of forming hydrogen bonds with itself - only
+dispersion and dipole/dipole forces. It is, however, capable of forming hydrogen
+bonds with
+water when partially dissolved in it, due to the lone pairs of electrons on the
+oxygen atoms in the molecule. This means the solvent/solute bonds
+formed when dissolved in water (hydrogen bonds) are not of comparable
+strength to the
+solute/solute bonds (dispersion and dipole/dipole) and solvent/solvent
+bonds (hydrogen bonds) broken, meaning ethyl ethanoate is not very soluble in
+water. \\
+
+Hence by adding distilled water to the solution in the separation flask, we
+dissolve any unreacted alcohol and acid in the water, but do not dissolve much
+of the ester (although some is dissolved, discussed below). Due to the different
+densities of the aqueous component of the solution (water containing the
+dissolved alcohol and acid) and the ester, two distinct
+layers will form, with the aqueous layer on the bottom. This allows the aqueous
+layer to be removed using the tap on the separation flask, leaving only the
+ester. Therefore we have effectively separated the ester from any unreacted
+alcohol and acid.
+
+
+\subsection{Reasons for Less Than 100\% Yield}
+
+One assumption we made in the experiment was that the reaction producing the
+ester proceeded to 100\% completion. The reality is that the reaction between
+the alcohol and carboxylic acid to produce ethyl ethanoate is an equilibrium,
+meaning that it is not possible for all the alcohol and acid to react to form
+ester, but rather the system will approach an equilibrium concentration of ester,
+alcohol, and acid. Therefore it is not possible to achieve a 100\% yield, as it
+is impossible for all the alcohol and acid to react, resulting in a lower number
+of moles and thus mass of ester than the corresponding theoretical value. \\
+
+Another assumption we made in conducting the experiment was that none of the ester
+dissolved in the added distilled water when separating the ester
+from any unreacted alcohol and acid. In reality, the ester does dissolve
+slightly in the water. This dissolved ester will then be removed when the
+aqueous layer in the separation flask is drained. Therefore we remove some ester
+during the separation process, reducing our final mass of ester, which reduces
+our overall percentage yield. \\
+
+Another possible reason for not achieving a 100\% yield includes failing to
+transfer all of the
+alcohol and acid from the original 100 mL beaker they were measured out in
+before being
+transferred to the boiling tube, as well as potentially leaving residual ester
+in the boiling
+tube after transferring it to the separation flask. Under the former scenario,
+we would have reduced the moles of alcohol and acid reacting in the boiling
+tube, reducing the amount of ester produced. The latter situation would have
+also reduced the final amount of ester present in our separation flask. Both of
+these aspects of the investigation would have reduced the percentage yield of
+ester.
+
+
+\subsection{Increasing Percentage Yield}
+
+One feature of the investigation that was included in an attempt to increase our
+percentage yield was the use of a hot water bath. This increased the rate of the
+reaction producing the ester, as
+a higher temperature increases the frequency of collisions between particles in
+the system, and increases the proportion of particles with energy greater than
+the activation energy of the reaction. This means the system would reach
+equilibrium faster, meaning it was closer to equilibrium than it would've been
+otherwise when we removed the boiling tube from the water bath (since we likely removed
+the boiling tube before equilibrium was reached). This would have increased our
+mass of produced ester, increasing the percentage yield. In addition, the
+forward reaction is an
+endothermic reaction, meaning that, according to Le Chatelier's Principle, if we
+increase the temperature of the system, the system will attempt to counteract
+this change by decreasing the temperature through favouring the endothermic
+reaction. This shifts the position of
+the equilibrium to the right, producing more ester. Both of these factors
+would have worked to increase our percentage yield. \\
+
+One thing we could have done in the experiment to increase the percentage yield of
+ester further is to have left the boiling tube in the water bath for longer. This would
+have allowed the system more time to reach equilibrium, since we likely removed
+the tube from the water bath before this occurred. This would have increased the
+mass of ester present in the final solution, increasing our percentage yield. \\
+
+Another possible method of increasing the percentage yield is to continually
+stir the mixture throughout the period it is in the water bath. The sulfuric
+acid catalyst is quite dense relative to the ester, acid, and alcohol, with a density of
+$1.84\mbox{ g mL}^{-1}$, compared to that of $0.902\mbox{ g mL}^{-1}$,
+$0.789\mbox{ g mL}^{-1}$, and $1.05\mbox{ g mL}^{-1}$ for the ester, ethanol,
+and ethanoic acid respectively. This means it is likely that the sulfuric acid
+sunk to the bottom of the mixture, causing it to fail to catalyse the
+reaction, reducing the rate of reaction. This means the
+system would've taken more time to reach equilibrium, making it more likely that
+we removed the boiling tube from the water bath before equilibrium was
+established, which
+would have reduced the amount of ester produced, and thus our percentage yield
+would be lower.
+
+
+\subsection{Reasons for Separation Failure}
+
+There are a number of reasons that explain why our solution in the separation
+flask failed to separate into two distinct layers. It is likely a combination of
+the following aspects that caused this to happen. \\
+
+One possible reason for the failure is that not enough sulfuric acid was added
+to the solution before placing it in the hot water bath. The sulfuric acid acts
+as a catalyst in this reaction, which reduces the time needed for the reaction
+between the ethanol and ethanoic acid to reach equilibrium by increasing the
+proportion of particles in the system with energy greater than the
+activation energy for the reaction, which is achieved through providing an
+alternate pathway for the reaction that has a lower activation energy. By not
+adding enough of this catalyst, the rate of reaction would be so slow that the
+system would not have come close to reaching equilibrium by the time we removed
+the boiling tube from the water bath. This means very little ester would have
+been produced, meaning that two distinct layers were unable to form in the
+separation flask, or were simply not visible. \\
+
+Another possible reason includes the fact that sulfuric acid is quite dense
+relative to the ester, ethanol, and ethanoic acid, as described in the previous
+section. This means that if the sulfuric acid was not
+mixed into the solution sufficiently when it was first added, it would have sunk
+to the bottom of the boiling tube and failed to catalyse the reaction
+effectively. It follows from similar reasoning as in the previous paragraph that
+little ester would have been produced, failing to create two distinct layers in
+the separation flask. \\
+
+A third possible reason includes that the water bath was not hot enough. The hot
+water bath is used to increase the rate of reaction and shift the equilibrium
+position to the right, as explained above. If the water was not sufficiently hot
+enough, then the rate of reaction may not have been fast enough and the position
+of the equilibrium would not have been far enough to the right to produce enough ester
+so that we could achieve a successful separation of layers when the mixture is
+added to the separation flask. \\
+
+Another reason includes if the mixture was not left in the hot water bath for long enough,
+the reaction wouldn't have had time to reach equilibrium (or somewhere close to
+equilibrium), meaning not much ester would've been produced. This would also
+cause the separation of layers in the separation flask to fail.
+
+
+\subsection{Errors}
+
+\subsubsection{Solubility of Alcohol and Acid}
+
+In the investigation, we assumed that all of the alcohol and acid will dissolve
+in the distilled water, allowing us to successfully remove all of it, leaving
+only the ester. In fact, dissolving the alcohol and acid is an equilibrium
+process. Not all of
+the alcohol and acid will dissolve - some will remain in the final solution.
+This will increase the mass of the final solution, increasing the apparent mass
+of ester measured, thus increasing our percentage yield value. This decreases
+the accuracy of our results. \\
+
+One way to possibly reduce the impact of this error on the results is to perform
+multiple washes with water, where steps 14 to 21 in the procedure
+are repeated an additional 3 or 4 times. This would have the effect of
+dissolving more ethanol and acid in the water with each wash, removing it from
+the solution and thus increasing the accuracy of our results (by the same logic
+as above). The downside to doing this is that, since the ester is partially
+soluble in the water (as explained in a previous section), some ester will
+dissolve in the
+water with each wash, meaning we end up removing some product with each
+wash. This reduces the final mass of ester in the separation flask, reducing our
+percentage yield value, although increasing its accuracy by increasing the
+purity of the final product.
+
+
+\subsubsection{Excess Water}
+
+Another source of error in the investigation includes failing to remove all of
+the aqueous layer during the separation process. In order to not remove any
+ester from our separation flask, we closed the tap on the flask just before all
+the aqueous layer had been removed. This would have left a small amount of
+the acid and alcohol dissolved in water in the flask, increasing the apparent
+mass of ester we measured, artificially increasing our percentage yield. This
+would also have reduced the accuracy of our results.
+
+
+\subsubsection{Incorrect Theoretical Value}
+
+A third source of error in the investigation is the method used to calculate the
+theoretical mass of ester produced, used in the percentage yield calculation. In
+calculating this theoretical mass, we assumed the reaction would proceed to
+100\% completion, and thus the moles of ester produced would be equal to the
+moles of ethanol and ethanoic acid reacted. Since this reaction is an
+equilibrium in reality, such an assumption is false. In fact, the system would
+reach an equilibrium concentration of ester. This means that not all ethanol and
+ethanoic acid are reacted to form ester, making the number of moles of ester
+produced less than the number of moles of acid and alcohol, meaning our
+theoretical mass of ester for a ``100\% yield" is larger than what it should be. This would have
+decreased our percentage yield, systematically reducing the accuracy of our
+results.
+
+
+\section{Conclusion}
+
+Unfortunately, we failed at achieving our aim, as our solution in the separation
+flask failed to separate into two distinct layers, rendering us unable to
+retrieve any ester. \\
+
+Using another group's results, we were able to calculate a percentage yield of
+59.6\%, which is relatively close to the expected percentage yield of 65\% when
+this process when performed at an industrial scale.
+
+\end{document}

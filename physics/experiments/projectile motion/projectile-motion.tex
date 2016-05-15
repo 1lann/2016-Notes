@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+
+\begin{document}
+
+\title{Projectile Motion Experiment}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+
+\section{Results}
+
+\begin{tabularx}{\textwidth}{|Y|Y|Y|Y|Y|Y|Y|}
+\hline
+\multirow{2}{1cm}{Setting} & \multicolumn{6}{c|}{Height (m)} \\
+\cline{2-7}
+& Trial 1 & Trial 2 & Trial 3 & Trial 4 & Trial 5 & Average \\
+\hline
+Low & 0.447 & 0.450 & 0.435 & 0.434 & 0.435 & 0.440 \\
+Medium & 1.06 & 1.07 & 1.06 & 1.06 & 1.04 & 1.06 \\
+\hline
+\end{tabularx}
+
+\section{Calculations}
+
+\subsection{Low Setting}
+
+\begin{align*}
+v_y^2 & = u_y^2 + 2 a_y s_y \\
+0 & = u_y^2 + 2 (-9.8) (0.440) \\
+u_y & = 2.94\mbox{ ms}^{-1} \\
+\end{align*}
+
+\subsection{Medium Setting}
+
+\begin{align*}
+v_y^2 & = u_y^2 + 2 a_y s_y \\
+0 & = u_y^2 + 2 (-9.8) (1.06) \\
+u_y & = 4.56\mbox{ ms}^{-1} \\
+\end{align*}
+
+\end{document}

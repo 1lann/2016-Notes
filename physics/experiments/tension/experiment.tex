@@ -1,0 +1,418 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+
+\begin{document}
+
+\title{Equilibrium Experiment}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+
+
+\section{Results}
+
+Mass of aluminium beam: 0.0827 kg
+
+\subsection{Part 1}
+
+$$
+\begin{aligned}
+h & = 0.430\mbox{ m} \\
+x & = 0.490\mbox{ m} \\
+r & = 0.455\mbox{ m} \\
+s & = 0.300\mbox{ m} \\
+\end{aligned}
+$$
+
+\begin{center}
+\begin{tabular}{c|c}
+Mass (kg) & Tension (N) \\
+\hline
+0.00  & 0.7 \\
+0.100 & 1.8 \\
+0.200 & 3.7 \\
+0.300 & 5.5 \\
+0.400 & 7.4 \\
+0.500 & 9.4 \\
+0.600 & 11.2 \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Part 2}
+
+Mass of load: 0.500 kg
+
+Mass of counterbalance: 0.300 kg
+
+$$
+\begin{aligned}
+h & = 0.430\mbox{ m} \\
+d & = 0.045\mbox{ m} \\
+\end{aligned}
+$$
+
+
+\subsubsection{Trial 1}
+
+$$
+\begin{aligned}
+r & = 0.455\mbox{ m} \\
+s & = 0.455\mbox{ m} \\
+\end{aligned}
+$$
+
+\begin{center}
+\begin{tabular}{c|c}
+$x$ (m) & Tension (N) \\
+\hline
+0.145 & 1.9 \\
+0.200 & 2.5 \\
+0.290 & 3.6 \\
+0.365 & 4.6 \\
+0.455 & 5.7 \\
+0.505 & 6.2 \\
+0.550 & 6.7 \\
+0.605 & 7.3 \\
+0.702 & 8.4 \\
+\end{tabular}
+\end{center}
+
+
+\subsubsection{Trial 2}
+
+$$
+\begin{aligned}
+r & = 0.300\mbox{ m} \\
+s & = 0.300\mbox{ m} \\
+\end{aligned}
+$$
+
+\begin{center}
+\begin{tabular}{c|c}
+$x$ (m) & Tension (N) \\
+\hline
+0.160 & 2.6 \\
+0.205 & 2.8 \\
+0.232 & 3.0 \\
+0.286 & 3.5 \\
+0.345 & 4.3 \\
+0.403 & 5.0 \\
+0.448 & 5.4 \\
+0.505 & 6.1 \\
+0.577 & 6.5 \\
+\end{tabular}
+\end{center}
+
+
+\section{Analysis}
+
+\subsection{Part 1}
+
+\subsubsection{Equation}
+
+$$
+\begin{aligned}
+\sum \tau & = 0 \\
+\sum \tau_{cw} & = \sum \tau_{acw} \\
+\tau & = r F \sin{\theta} \\
+\\
+T s \sin{\theta} & = m_b g a + m_l g r \\
+T s \frac{h}{x} & = m_b g a + m_l g r \\
+\end{aligned}
+$$
+
+Where $m_b$ is the mass of the beam and $m_l$ is the mass of the load hung from the beam.
+
+
+\subsubsection{Gradient}
+
+$$
+\begin{aligned}
+\mbox{gradient} & = \frac{10.4 - 1}{0.567 - 0.04} \\
+	& = 17.8\mbox{ N kg}^{-1} \\
+\mbox{y-intercept} & = 0.3\mbox{ N} \\
+\end{aligned}
+$$
+
+Rearranging the equation above for $T$:
+
+$$
+\begin{aligned}
+T s \frac{h}{x} & = m_b g a + m_l g r \\
+T & = \frac{m_b g a x + m_l g r x}{h s} \\
+T & = \frac{g r x}{h s} m_l + \frac{m_b g a x}{h s} \\
+\mbox{gradient} & = \frac{g r x}{h s} \\
+\mbox{y-intercept} & = \frac{m_b g a x}{h s} \\
+\end{aligned}
+$$
+
+Solving for $a$:
+
+$$
+\begin{aligned}
+\mbox{y-intercept} & = \frac{m_b g a x}{h s} \\
+0.3 & = \frac{0.0827 \times 9.8 \times a \times 0.49}{0.43 \times 0.3} \\
+a_1 & = \frac{0.3 \times 0.43 \times 0.3}{0.0827 \times 9.8 \times 0.49}
+a_1 & = 0.0975\mbox{ m from the pivot} \\
+\end{aligned}
+$$
+
+Hence the centre of mass of the beam is 9.75 cm to the left of the pivot.
+
+
+\subsection{Part 2}
+
+\subsubsection{Equation}
+
+$$
+\begin{aligned}
+\sum \tau & = 0 \\
+\sum \tau_{cw} & = \sum \tau_{acw} \\
+\tau & = r F \sin{\theta} \\
+\\
+T s \sin{\theta} + m_c g d \sin{\phi} & = m_b g a \sin{\phi} + m_l g r \sin{\phi} \\
+T s \frac{\sin{\theta}}{\sin{\phi}} + m_c g d & = m_b g a + m_l g r \\
+T s \frac{h}{x} + m_c g d & = m_b g a + m_l g r \\
+\end{aligned}
+$$
+
+Where $m_b$ is the mass of the beam, $m_l$ is the mass of the load hung from the
+beam, and $m_c$ is the mass of the counterbalance.
+
+
+\subsubsection{Gradient for Trial 1}
+
+$$
+\begin{aligned}
+\mbox{gradient} & = \frac{10.2 - 1}{0.85 - 0.065} \\
+	& = 11.7\mbox{ N m}^{-1} \\
+\mbox{y-intercept} & = 0.3\mbox{ N} \\
+\end{aligned}
+$$
+
+Rearranging the above equation for $T$:
+
+$$
+\begin{aligned}
+T s \frac{h}{x} + m_c g d & = m_b g a + m_l g r \\
+T s \frac{h}{x} & = m_b g a + m_l g r - m_c g d \\
+T & = \frac{m_b g a + m_l g r - m_c g d}{h s} x \\
+\mbox{gradient} & = \frac{m_b g a + m_l g r - m_c g d}{h s} \\
+\end{aligned}
+$$
+
+Although our line of best fit has a positive y intercept, we can see from the
+above formula for $T$ that the y intercept should be zero. This could be due to
+any number of errors in the experiment.
+
+Solving for $a$:
+
+$$
+\begin{aligned}
+\mbox{gradient} & = \frac{m_b g a + m_l g r - m_c g d}{h s} \\
+11.7 & = \frac{0.0827 \times 9.8 \times a_2 + 0.5 \times 9.8 \times 0.455 - 0.3 \times 9.8 \times 0.045}{0.43 \times 0.455} \\
+a_2 & = \frac{11.7 \times 0.43 \times 0.455 + 0.3 \times 9.8 \times 0.045 - 0.5 \times 9.8 \times 0.455}{9.8 \times 0.0827} \\
+a_2 & = 0.237\mbox{ m} \\
+\end{aligned}
+$$
+
+The centre of mass of the beam is 23.7 cm to the left of the pivot.
+
+
+\subsubsection{Gradient for Trial 2}
+
+$$
+\begin{aligned}
+\mbox{gradient} & = \frac{9.4 - 1}{0.85 - 0.2} \\
+& = 12.9\mbox{ N m}^{-1} \\
+\mbox{y-intercept} & = 0.84\mbox{ N} \\
+\end{aligned}
+$$
+
+Similarly as above, we record a positive y intercept, when in fact it should be
+zero in accordance with our equation for $T$.
+
+Solving for $a$ using the same equation for $T$ and for the gradient as above:
+
+$$
+\begin{aligned}
+\mbox{gradient} & = \frac{m_b g a + m_l g r - m_c g d}{h s} \\
+12.9 & = \frac{0.0827 \times 9.8 \times a_3 + 0.5 \times 9.8 \times 0.3 - 0.3 \times 9.8 \times 0.045}{0.43 \times 0.3} \\
+a_3 & = \frac{12.9 \times 0.43 \times 0.3 + 0.3 \times 9.8 \times 0.045 - 0.5 \times 9.8 \times 0.3}{9.8 \times 0.0827} \\
+a_3 & = 0.403\mbox{ m} \\
+\end{aligned}
+$$
+
+The centre of mass of the beam is 40.3 cm to the left of the pivot.
+
+
+\subsection{Average Centre of Mass}
+
+$$
+\begin{aligned}
+a & = \frac{a_1 + a_2 + a_3}{3} \\
+& = \frac{0.403 + 0.237 + 0.0975}{3} \\
+& = 0.246\mbox{ m} \\
+\end{aligned}
+$$
+
+The average centre of mass of the beam from the three calculated values is
+24.6 cm to the left of the pivot.
+
+\section{Questions}
+
+\subsection{Question 1}
+
+\begin{itemize}
+\item The force measuring device measures the net force acting in the vertical direction
+\item There are two tension forces exerted on the device
+\item In order to measure the tension in the string, we must only measure one of the two tension forces
+	exerted on the force measuring device
+\item This is possible if we hold the string parallel to the table, where the second tension thus has no
+	component acting in the vertical direction (see diagram 1)
+\end{itemize}
+
+\subsubsection{Part A}
+
+\begin{itemize}
+\item If the string is held above the horizontal (ie. pulled upwards), there will be a vertical component
+	of the second tension force acting upwards
+\item This increases the net force in the vertical direction (see diagram 2)
+\item Thus the force reading will increase
+\end{itemize}
+
+\subsubsection{Part B}
+
+\begin{itemize}
+\item If the string is held below the horizontal (ie. pulled downwards), the vertical component
+of the second tension acts downwards
+\item This reduces the net force in the vertical direction (see diagram 3)
+\item Thus the force reading will decrease
+\end{itemize}
+
+
+\subsection{Question 2}
+
+\subsubsection{Part A}
+
+\begin{itemize}
+\item As the mass of the load is increased, the weight force exerted on the beam by the load increases
+\item The mangitude of the anticlockwise torque exerted on the beam will increase, since $\tau = r F \sin{\theta}$
+\item Thus a larger clockwise torque is required to keep the beam in rotational equilibrium
+\item The only force acting on the beam that provides a clockwise torque is the tension in the string
+\item Thus the tension in the string must increase to increase the clockwise torque to maintain rotational equilibrium
+\end{itemize}
+
+\subsubsection{Part B}
+
+\begin{itemize}
+\item Moving the load closer to the pivot decreases its radius from the pivot
+\item Since $\tau = r F \sin{\theta}$, this decreases the anticlockwise torque
+exerted on the beam by the load, decreasing the total anticlockwise torque exerted on the beam
+\item Thus a smaller clockwise torque is required to keep the beam in rotational equilibrium
+\item The only force acting on the beam that provides the clockwise torque is the tension in the string
+\item Thus the tension in the string will decrease to maintain rotational equilibrium
+\end{itemize}
+
+
+\subsection{Question 3}
+
+As the beam is raised, $\theta$ increases and $\phi$ decreases.
+
+
+\subsection{Question 4}
+
+Consider our equation for tension, derived again below:
+
+$$
+\begin{aligned}
+\sum \tau & = 0 \\
+\sum \tau_{cw} & = \sum \tau_{acw} \\
+\tau & = r F \sin{\theta} \\
+\\
+T s \sin{\theta} + m_c g d \sin{\phi} & =  m_b g a \sin{\phi} + m_l g r \sin{\phi} \\
+T s \frac{h}{x} + m_c g d & = m_b g a + m_l g r \\
+T s \frac{h}{x} & = m_b g a + m_l g r - m_c g d \\
+T & = \frac{m_b g a + m_l g r - m_c g d}{h s} x \\
+\end{aligned}
+$$
+
+\begin{itemize}
+\item As the beam is raised, the distance between the point at which the string is attached to the beam and the
+	point at which it makes contact with the pulley (ie. the distance $x$) decreases
+\item In the above equation, the coefficient of $x$ is a constant
+\item Hence $T$ is directly proportional to $x$ (ie. $T \propto x$)
+\item Thus when raising the beam, decreasing $x$, the tension in the string must also decrease to maintain rotational equilibrium
+\end{itemize}
+
+% \begin{itemize}
+% \item As the beam is raised, the angle between the string and the line of action ($\theta$) increases
+% \item This increases the magnitude of the component of the tension force that is perpendicular to the line of action
+% \item Thus less total tension force is required to provide the same amount of clockwise torque
+% \item In addition, the angle $\phi$ between the weight force of the load and beam, and the line of action, decreases
+% \item This decreases the component of both weight forces that is perpendicular to the line of action
+% \item This decreases the total anticlockwise torque acting on the beam
+% \item Since the beam is in rotational equilibrium, this should decrease the tension in the string
+% \end{itemize}
+
+% We must also consider the counterbalance on the beam:
+
+% \begin{itemize}
+% \item As the beam is raised, the angle between the counterbalance's weight force
+% 	and the line of action ($\theta$) decreases
+% \item This decreases the component of the counterbalance's weight force that is perpendicular to the line of action
+% \item This decreases the clockwise torque exerted on the beam by the counterbalance
+% \item Since the only other source of clockwise torque is the tension in the string,
+% 	this will increase the torque that must be provided by the tension to maintain rotational equilibrium
+% \item The magnitude of the counterbalance's weight force is $0.3 \times 9.8$ N, whereas the magnitude of
+% 	the beam's and load's weight force is $(0.5 + 0.0827) \times 9.8$ N
+% \item Since they both decrease by the same factor as the beam is raised ($\sin{\theta}$), and since the
+% 	counterbalance's weight force is less than that of the beam's and load's, the amount by which the anticlockwise
+% 	torque produced by the beam and load decreases is greater than the amount by which the counterbalance's clockwise
+% 	torque decreases, as $\tau = r F \sin{\theta}$
+% EXPAND HERE
+% \item Thus tension in the string will still decrease
+% \end{itemize}
+
+
+\subsection{Question 5}
+
+\begin{itemize}
+\item The total anticlockwise torque exerted on the beam is composed of the anticlockwise torque
+	produced by the weight force of the load attached to the beam, and the weight force of the beam itself
+\item To maintain rotational equilibrium, this anticlockwise torque must be opposed by an equal clockwise torque
+\item This clockwise torque is composed of the clockwise torques produced by the tension in the string, and the weight force of the included counterbalance
+\item Thus part of this total clockwise torque is provided by the counterbalance
+% \item Since the torque produced by the counterbalance's weight force and the tension force act in the same direction,
+% 	the torque produced by the counterbalance provides part of this total clockwise torque
+\item This reduces the required clockwise torque the tension in the string must produce
+\item Since $\tau = r F \sin{\theta}$, this decreases the required tension in the string
+\item Thus the tension in the string decreases with the inclusion of the counterbalance
+% \item The inclusion of the counterbalance decreases the amount of torque that the tension in the string must produce in order to maintain rotational equilibrium
+% \item This is because the torque produced by the counterbalance and by the tension in the string act in the same direction
+% \item Thus the tension in the string required to raise the beam is lower when the counterbalance is included
+\end{itemize}
+
+
+\section{Conclusion}
+
+We have successfully achieved our aim of investigating the tension in a string
+attached to a metal bar as the bar is raised, and locating the centre of mass of
+this bar. The three values for the centre of mass of the bar we calculated were
+9.75 cm, 23.7 cm, and 40.3 cm to the left of the pivot. The average of these
+three values, which constitutes our final caculated centre of mass of the beam,
+was 24.6 cm to the left of the pivot.
+
+\end{document}

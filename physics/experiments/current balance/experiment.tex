@@ -1,0 +1,240 @@
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+
+\begin{document}
+
+\title{Current Balance Experiment}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+
+
+\section{Results}
+
+$l = 0.025\mbox{ m}$
+
+6000 squares have a mass of 0.00201 kg.
+
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c}
+\multirow{2}{*}{I (A)} & \multicolumn{4}{c|}{Number of Squares} & \multirow{2}{*}{Mass ($\times 10^{-6}\mbox{ kg}$)} \\
+\cline{2-5}
+& Trial 1 & Trial 2 & Trial 3 & Average & \\
+\hline
+0.580 & 20  & 20  & 19  & 20  & 6.70 \\
+1.00  & 47  & 52  & 49  & 50  & 16.8 \\
+1.60  & 112 & 110 & 110 & 110 & 36.9 \\
+2.12  & 180 & 179 & 180 & 180 & 60.3 \\
+2.55  & 261 & 258 & 260 & 260 & 87.1 \\
+2.70  & 280 & 278 & 281 & 280 & 93.8 \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{c|c}
+Measured I (A) & Calculated I (A) \\
+\hline
+0.580 & 0.658 \\
+1.00  & 1.04  \\
+1.60  & 1.54  \\
+2.12  & 1.97  \\
+2.55  & 2.37  \\
+2.70  & 2.46  \\
+\end{tabular}
+\end{center}
+
+
+\section{Sample Calculations}
+
+Mass of paper squares (using the number of squares for a measured current of
+0.58 A as an example):
+
+$$
+\begin{aligned}
+m & = n \times \frac{0.00201}{6000} \\
+& = 20 \times \frac{0.00201}{6000} \\
+& = 6.70 \times 10^{-6}\mbox{ kg} \\
+\end{aligned}
+$$
+
+Derivation of the formula for calculated current:
+
+$$
+\begin{aligned}
+	F & = BIl \\
+	F & = mg \\
+	B & = \mu_0 NI \\
+	\frac{F}{Il} & = \mu_0 NI \\
+	I^2 & = \frac{F}{l \mu_0 N} \\
+	I & = \sqrt{\frac{mg}{l \mu_0 N}} \\
+\end{aligned}
+$$
+
+Calculation of $N$:
+
+$$
+\begin{aligned}
+	N & = \frac{\mbox{turns}}{\mbox{length of solenoid}} \\
+	& = \frac{770}{0.16} \\
+	& = 4810\mbox{ m}^{-1} \\
+\end{aligned}
+$$
+
+Sample calculation for the first measured current value (of 0.58 A):
+
+$$
+\begin{aligned}
+	I & = \sqrt{\frac{m g}{l \mu_0 N}} \\
+	& = \sqrt{\frac{6.70 \times 10^{-6} \times 9.8}{0.025 \times 1.26 \times 10^{-6} \times 4810}} \\
+	& = 0.658\mbox{ A} \\
+\end{aligned}
+$$
+
+
+\section{Analysis}
+
+\subsection{Gradient}
+
+$$
+\begin{aligned}
+\mbox{gradient} & = \frac{\mbox{rise}}{\mbox{run}} \\
+& = \frac{2.52 - 0.24}{2.32 - 0.4} \\
+& = 1.19 \\
+\end{aligned}
+$$
+
+The gradient of our graph is 1.19.
+
+
+\subsection{Y Intercept}
+
+The y intercept of our graph is -0.24 A.
+
+
+\subsection{Calibration Factor}
+
+Thus the equation for the line of best fit for our graph is:
+
+$$
+y = 1.19 x - 0.24
+$$
+
+This represents the calibration factor for the ammeter.
+
+
+\section{Sources of Error}
+
+\subsection{Varying Torque}
+
+An assumption made in the experiment was that the distance the paper squares
+were from the pivot was equal to the distance from the pivot to the point at
+which the magnetic force due to the solenoid was exerted. This allowed us to
+assume the torques exerted on the balance by the weight of the paper squares and
+the force due to the magnetic field were equal (since $\tau = r F$, where $r$
+was assumed to be constant), allowing us to equate the forces they exerted
+(ie. $mg = BIl$). \\
+
+In reality, each of the paper squares was not placed the exact same distance
+from the pivot. This would have caused the torque exerted by some of the squares
+to be greater than the others, as some would've been further away than others. \\
+
+Let the distance between the pivot and the point at which the force due to the
+magnetic field is exerted be $r$. If the average distance between the pivot and
+the centre of mass of each square was less than $r$, then the torque exerted by
+the weight force of the paper would be less than that exerted by the force due
+to the magnetic field (since $\tau = r F$). Thus more paper squares would be
+required to create equal torques and level the current balance, increasing the
+mass of paper squares
+measured, increasing our measured current values. This would decrease the
+accuracy of our results. The reverse would happen if the average distance was
+greater than $r$. \\
+
+Quantitatively, the distance between the pivot and the point at which the force
+due to the magnetic field was exerted was 0.11 m. If we assume that on average
+the squares were placed a distance of 0.10 m from the pivot (rather than 0.11
+m):
+
+$$
+\begin{aligned}
+F & = BIl \\
+F & = mg \\
+\tau & = r F \\
+\sum \tau_{\mbox{cw}} & = \sum \tau_{\mbox{acw}} \\
+0.11 B I l & = 0.10 m g \\
+BIl & = 0.909 mg \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+B & = \mu_0 NI \\
+\frac{F}{Il} & = \mu_0 NI \\
+I^2 & = \frac{F}{l \mu_0 N} \\
+I & = \sqrt{\frac{0.909 mg}{l \mu_0 N}} \\
+I & = 0.953 \times \sqrt{\frac{mg}{l \mu_0 N}} \\
+\end{aligned}
+$$
+
+As can be seen from the above equation, the final measured current value is
+approximately 4.7\% less than what it would have been had the paper squares been
+placed an equal distance from the pivot. \\
+
+For example, our first result (a measured current of 0.58 A) recalculated
+using the above equation results in a calculated current of 0.627 A,
+rather than our actual result of 0.658 A.
+
+
+\subsection{Inaccurate Cutting}
+
+Another possible source of error includes inaccuracy when cutting out the small
+paper squares. When conducting the experiment, we measured the mass of 6000
+squares and used this to calculate the mass of the number of squares placed on
+the end of the current balance. Due to inaccuracy in our cutting of the paper
+squares, there may be more or less paper present on the balance than what was
+measured - we had assumed that our cutting was infinitely accurate. \\
+
+If we added more paper than measured, our measured number of paper squares would
+be smaller than the actual value, causing the calculated mass of squares to be
+less than the actual value, decreasing our calculated current values. The
+reverse would happen if less paper was added than measured. This decreases the
+precision of our results. \\
+
+For example, if we had actually placed 20.2 squares instead of 20 (as recorded)
+on the balance for our first result (a measured current of 0.58 A),
+this would've increased the mass of squares from $6.70 \times 10^{-6}\mbox{ kg}$,
+to $6.77 \times 10^{-6}\mbox{ kg}$. \\
+
+The calculated current based on this mass is:
+
+$$
+\begin{aligned}
+	I & = \sqrt{\frac{m g}{l \mu_0 N}} \\
+	& = \sqrt{\frac{6.77 \times 10^{-6} \times 9.8}{0.025 \times 1.26 \times 10^{-6} \times 4810}} \\
+	& = 0.662\mbox{ A} \\
+\end{aligned}
+$$
+
+Thus the calculated current would increase from 0.658 A to 0.662 A. This
+highlights the potential effect of this error on the precision of our results.
+
+
+\section{Conclusion}
+
+We have successfully determined the calibration factor of an ammeter by using a
+simple current balance to 'weigh' an electric current. The graph of our
+measured current values plotted against our calculated current had a gradient of
+1.19, with a y intercept of -0.24 A. Thus the equation for the line of best fit
+for our graph is $y = 1.19 x - 0.24$, which represents the calibration factor
+for the ammeter.
+
+\end{document}
