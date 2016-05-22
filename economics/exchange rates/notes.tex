@@ -1,0 +1,331 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% AI files
+\usepackage{graphicx}
+\DeclareGraphicsRule{.ai}{pdf}{.ai}{}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Protection}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Exchange Rates}
+
+\subsection{Definition}
+
+The price of one country's currency in terms of another's.
+
+\subsection{Foreign Exchange Market}
+
+The international market where the currencies of different countries are bought
+and sold.
+
+
+
+
+\section{Measurement}
+
+\subsection{Bilateral Exchange Rate}
+
+The price of one country's currency directly in terms of another's.
+
+Also called the cross exchange rate.
+
+
+\subsubsection{Quoting}
+
+Can be quoted in terms of a country's purchasing power:
+
+$$
+\$1.00\text{ AUD} = \$0.77\text{ USD}
+$$
+
+Or in terms of a common currency:
+
+$$
+\$1.00\text{ USD} = \$1.30\text{ AUD}
+$$
+
+
+\subsubsection{Calculation}
+
+Given a bilateral exchange rate:
+
+$$
+\$1.00\text{ AUD} = \$x \text{ USD}
+$$
+
+To invert the rate, divide by $x$:
+
+$$
+\$\frac{1.00}{x}\text{ AUD} = \$1.00\text{ USD}
+$$
+
+To convert \$AUD to \$USD, modify the rate such that it is
+$\$1\text{ AUD} = \$x\text{ USD}$, and multiply each side by the required
+amount of \$AUD.
+
+To convert \$USD to \$AUD, modify the rate such that it is
+$\$1\text{ USD} = \$x\text{ AUD}$, and multiply each side by the required
+amount of \$USD.
+
+
+\subsection{Trade Weighted Index}
+
+A measure of the movements in the Australian Dollar against a weighted average
+of the currencies of 20 other currencies.
+
+The other currencies are weighted in accordance with their importance to
+Australia's international trade flows.
+
+
+\subsubsection{Advantages over Bilateral Rate}
+
+\begin{description}
+\item [Accuracy] The TWI is more accurate and significant holistically.
+\item [Balance of Payments] Due to the weighting in accordance with trade flow
+	importance, the TWI reflects the performance in Australia's Balance of
+	Payments over time.
+\end{description}
+
+
+
+
+\section{Types}
+
+\subsection{Floating}
+
+Where the market forces of supply and demand in the foreign exchange market
+alone determine the price of a currency.
+
+Australia floated our currency in 1983.
+
+
+\subsection{Fixed}
+
+Where the price of a country's currency is set at a particular value and
+adjusted periodically by the country's central bank.
+
+
+\subsection{Managed}
+
+Where the price of a country's currency is allowed to fluctuate between an
+accceptable upper and lower limit in accordance with the market forces of
+supply and demand in the foreign exchange market.
+
+The country's central bank will intervene if the exchange rate strays out of
+these limits.
+
+Referred to as a "dirty" float.
+
+
+\subsubsection{Controlling the Exchange Rate}
+
+To lower the exchange rate because it is approaching the upper limit, the
+central bank could:
+
+\begin{description}
+\item [Increase Supply] Sell its reserves of Australian dollars into the market
+	to increase supply, decreasing the price.
+\item [Decrease Cash Rate] Make Australia less attractive for foreign
+	investors by reducing the cash rate, decreasing demand, decreasing the
+	price.
+\end{description}
+
+
+
+
+\section{Movements}
+
+\begin{center}
+\begin{tabular}{c|c}
+Name & Definition \\
+\hline
+Appreciation & Increase in a floating exchange rate
+Depreciation & Decrease in a floating exchange rate
+Revaluation & Increase in a fixed exchange rate
+Devaluation & Decrease in a fixed exchange rate
+\end{tabular}
+\end{center}
+
+
+
+
+\section{Model}
+
+The price of a country's currency is determined by the market forces of supply
+and demand in the foreign exchange market.
+
+
+\subsection{Demand}
+
+For an international consumer purchasing an Australian export:
+
+\begin{itemize}
+\item Australian producer will expect to be paid in \$AUD.
+\item International consumer will convert their domestic currency to \$AUD on
+	the foreign exchange market.
+\item The consumer demands \$AUD from the market.
+\end{itemize}
+
+Thus all credits in Australia's Balance of Payments represents demand for the
+\$AUD.
+
+
+\subsection{Supply}
+
+For an Australian consumer purchasing an international export:
+
+\begin{itemize}
+\item International producer will expect to be paid in their domestic currency.
+\item Australian consumer will convert \$AUD to the producer's domestic
+	currency.
+\item The consumer supplies \$AUD to the market.
+\end{itemize}
+
+Thus all debits in Australia's Balance of Payments represents supply of the
+\$AUD.
+
+
+\subsection{Factors Affecting Demand}
+
+\subsubsection{Exports}
+
+Since Australian exports are sold in \$AUD.
+
+Increased demand for Australian exports will increase demand for the \$AUD.
+
+For example: purchase of iron ore, international students studying in Australia,
+tourists travelling to Australia.
+
+
+\subsubsection{Foreign Investment Into Australia}
+
+Foreign investment into Australia involves purchases made in \$AUD.
+
+Increased foreign investment into Australia will increase demand for the \$AUD.
+
+For example: construction of new mining infrastructure by an overseas firm.
+
+
+\subsubsection{Income Receipts}
+
+Australians working overseas are paid in \$AUD.
+
+Increased income receipts for Australians working overseas increases demand for
+the \$AUD.
+
+
+\subsubsection{Dividend Payments and Profit Flows to Australian Firms}
+
+Australian companies with operations overseas must convert profits into \$AUD.
+
+Australian investors in overseas companies expect their dividends to be paid
+in \$AUD.
+
+Increase in dividends to Australian investors or profit flows to Australian
+firms will increase demand for the \$AUD.
+
+
+\subsection{Factors Affecting Supply}
+
+\subsubsection{Imports}
+
+Importing requires converting \$AUD into foreign currency.
+
+Increased spending on imports increases supply of \$AUD.
+
+
+\subsubsection{Foreign Investment Overseas}
+
+Foreign investment into other countries requires converting \$AUD into foreign
+currency to purchase investments.
+
+Increased foreign investment abroad increases supply of \$AUD.
+
+
+\subsubsection{Income Payments}
+
+Overseas residents working in Australia expect to be paid in their domestic
+currency.
+
+Increased employment of international workers increases supply of \$AUD.
+
+
+\subsubsection{Dividend Payments and Profit Flows Overseas}
+
+Overseas firms and investors expect their profits and dividend payments to be
+in their domestic currency.
+
+Increased dividend payments or profit flows overseas increases supply of \$AUD.
+
+
+
+
+\section{Factors Affecting}
+
+\subsection{Terms of Trade}
+
+\subsection{World Growth}
+
+\subsection{Interest Rate Differential}
+
+\subsection{International Foreign Investment}
+
+\subsection{Relative Inflation Rate}
+
+\subsection{Domestic Growth}
+
+\subsection{Speculation}
+
+
+\section{Effects}
+
+\subsection{Exports}
+
+\subsection{Imports}
+
+\subsection{Balance of Goods and Services}
+
+\subsection{Current Account Deficit}
+
+\subsection{Foreign Debt}
+
+\subsection{Inflation}
+
+\subsection{Economic Growth}
+
+\subsection{Employment}
+
+\end{document}
