@@ -1,0 +1,827 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Calculus}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Differentiation}
+
+\subsection{Notation}
+
+The first derivative of the function $f(x)$ with respect to $x$ is $f'(x)$.
+
+The second derivative is $f''(x)$.
+
+The derivative of $y$ with respect to $x$ is $\frac{dy}{dx}$.
+
+The second derivative of $y$ is $\frac{d^2y}{dx^2}$.
+
+
+\subsection{First Principles}
+
+The derivative of $f(x)$ is defined as:
+
+$$
+f'(x) = \lim_{h \to \infty} \frac{f(x + h) - f(x)}{h}
+$$
+
+This is referred to as differentiating using first principles.
+
+
+\subsection{Addition and Subtraction}
+
+Given the function $f(x) = g(x) + h(x)$, its derivative is:
+
+$$
+f'(x) = g'(x) + h'(x)
+$$
+
+Differentiation distributes across addition.
+
+
+\subsection{Polynomials}
+
+Given the polynomial function $f(x) = ax^n$, its derivative is:
+
+$$
+f'(x) = anx^{n - 1}
+$$
+
+Multiply by the current power and decrease the power by 1.
+
+$n$ may be a negative or fractional exponent.
+
+
+\subsection{Trigonometric Functions}
+
+The derivative of $\sin{x}$:
+
+$$
+\frac{d}{dx} \sin{x} = \cos{x}
+$$
+
+The derivative of $\cos{x}$:
+
+$$
+\frac{d}{dx} \cos{x} = -\sin{x}
+$$
+
+The derivative of $\tan{x}$:
+
+$$
+\frac{d}{dx} \tan{x} = \frac{1}{\cos^2{x}}
+$$
+
+
+
+\subsection{Exponential Functions}
+
+The derivative of $e^x$:
+
+$$
+\frac{d}{dx} e^x = e^x
+$$
+
+The derivative of $e^{f(x)}$:
+
+$$
+\frac{d}{dx} e^{f(x)} = f(x)e^{f(x)}
+$$
+
+
+\subsection{Common Derivatives}
+
+Some common derivatives:
+
+$$
+\begin{aligned}
+\frac{d}{dx} x^2 & = 2x \\
+\frac{d}{dx} \frac{a}{x} & = -\frac{a}{x^2} \\
+\frac{d}{dx} \sqrt{x} & = \frac{1}{2\sqrt{x}} \\
+\end{aligned}
+$$
+
+
+\subsection{Product Rule}
+
+Given the function $f(x) = g(x) h(x)$, its derivative is:
+
+$$
+f'(x) = g'(x) h(x) + h'(x) g(x)
+$$
+
+
+\subsection{Quotient Rule}
+
+Given the function $f(x) = \frac{g(x)}{h(x)}$, its derivative is:
+
+$$
+f'(x) = \frac{h(x) g'(x) - g(x) h'(x)}{h(x)^2}
+$$
+
+
+\subsection{Chain Rule}
+
+Given the function $f(x) = g(h(x))$, its derivative is:
+
+$$
+f'(x) = g'(h(x)) h'(x)
+$$
+
+Or for a function $y$:
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \times \frac{du}{dx}
+$$
+
+
+
+
+\section{Indefinite Integrals}
+
+\subsection{Notation}
+
+The indefinite integral of the function $f(x)$ is:
+
+$$
+\int f(x) dx
+$$
+
+Must add the constant of integration $c$ to all indefinite integrals.
+
+
+\subsection{Polynomials}
+
+Given the polynomial function $f(x) = ax^n$, the indefinite integral is:
+
+$$
+\int f(x) dx = \frac{ax^{n + 1}}{n + 1}
+$$
+
+Raise the power by 1, and divide by the new power.
+
+$n$ can be a negative or fractional exponent.
+
+
+\subsection{Trigonometric Functions}
+
+The integral of $\sin{x}$ is:
+
+$$
+\int \sin{x} dx = -\cos{x}
+$$
+
+The integral of $\cos{x}$ is:
+
+$$
+\int \cos{x} dx = \sin{x}
+$$
+
+
+\subsection{Exponential Functions}
+
+The integral of $e^x$ is:
+
+$$
+\int e^x dx = e^x
+$$
+
+The integral of $e^{f(x)}$ is:
+
+$$
+\int e^{f(x)} dx = \frac{e^{f(x)}}{f(x)}
+$$
+
+
+\subsection{Composite Functions}
+
+For a composite function (eg. $12x(x^2 + 3)$), the coefficient must be a scalar
+multiple of the derivative of the inner function.
+
+Otherwise, expand the brackets and integrate the polynomial normally.
+
+
+\subsection{Examples}
+
+Polynomial example:
+
+$$
+\int 2x + 3x^2 dx = x^2 + x^3 + c
+$$
+
+Hyperbola example:
+
+$$
+\int \frac{3}{x^2} dx = -\frac{3}{x} + c
+$$
+
+With the chain rule:
+
+$$
+\int 16(2x + 3)^3 dx = 2(2x + 3)^4
+$$
+
+
+
+
+\section{Definite Integrals}
+
+\subsection{Notation}
+
+The definite integral of $f(x)$ from $a$ to $b$ is:
+
+$$
+\int_a^b f(x) dx
+$$
+
+Will result in a constant value.
+
+
+\subsection{Calculating}
+
+To calculate the definite integral of $f'(x)$ from $a$ to $b$:
+
+$$
+\int_a^b f'(x) dx = f(b) - f(a)
+$$
+
+
+\subsection{Inverting an Integral}
+
+The definite integral of $f(x)$ can be inverted:
+
+$$
+\int_a^b f(x) dx = -\int_b^a f(x) dx
+$$
+
+
+\subsection{Inscribed and Circumscribed Area}
+
+The value of a definite integral can be approximated by calculating the area of
+rectangles under the curve.
+
+Inscribed area is the area of rectangles that touch the function, not extending
+above the function.
+
+Circumscribed area is the area of rectangles that extend above the function.
+
+Best approximation for the integral is the average of the inscribed and
+circumscribed areas.
+
+
+\subsection{Area Under a Curve}
+
+The definite integral of a function for a section below the x axis is negative.
+
+Thus the area between a curve and the x axis between two x values is not the
+definite integral between the two values.
+
+
+\subsubsection{Splitting the Integral}
+
+Solve for the points at which the function crosses the x axis ($f(x) = 0$).
+
+Determine which parts are above and below the x axis.
+
+Split the integral into sections, negating the sections below the x axis.
+
+
+\subsubsection{Absolute Value}
+
+Solve the definite integral using the absolute value of the function:
+
+$$
+\int_a^b \lvert f(x) \rvert dx
+$$
+
+
+\subsection{Area Between Curves}
+
+Find the area enclosed by two curves $f(x)$ and $g(x)$.
+
+Solve for the x coordinates at which they intersect ($f(x) = g(x)$). In this
+example, $x_1$ and $x_2$.
+
+Determine which function is above the other between these two points. In this
+example, $f(x)$ is above $g(x)$.
+
+Solve the definite integral between the two points:
+
+$$
+\int_{x_1}^{x_2} f(x) - g(x) dx
+$$
+
+
+
+
+\section{Graphs}
+
+\subsection{Stationary Points}
+
+Where the first derivative is 0 ($f'(x) = 0$).
+
+Includes turning and horizontal inflection points.
+
+
+\subsection{Turning Points}
+
+A local maximum or minimum point.
+
+Solve for $f'(x) = 0$ and perform either the sign or second derivative test.
+
+
+\subsubsection{Nature}
+
+The nature of a turning point refers to whether it is a maximum or minimum.
+
+
+\subsection{Concavity}
+
+Whether a function is concave up or concave down at a point.
+
+If $f''(x) > 0$, the function is concave up at $x$.
+
+If $f''(x) < 0$, the function is concave down at $x$.
+
+If $f''(x) = 0$, there is likely to be an inflection point. Verify further using
+concavity or sign test.
+
+
+\subsection{Sign Test}
+
+Given $f(x)$ has a stationary point at $x_1$.
+
+Find the sign of the first derivative either side of $x_1$.
+
+\begin{center}
+\begin{tabular}{c|c|c|c}
+& $x < x_1$ & $x = x_1$ & $x > x_1$ \\
+\hline
+Minimum Turning Point         & - & 0 & + \\
+Maximum Turning Point         & + & 0 & - \\
+Rising Horizontal Inflection  & + & 0 & + \\
+Falling Horizontal Inflection & - & 0 & - \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Second Derivative Test}
+
+Given $f(x)$ has a stationary point at $x_1$.
+
+Find the sign of the second derivative at $x_1$ ($f''(x_1)$).
+
+\begin{center}
+\begin{tabular}{c|c}
+Sign & Meaning \\
+\hline
++ & Minimum turning point \\
+- & Maximum turning point \\
+0 & Inconclusive, use sign test \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Concavity Test}
+
+Given $f(x)$ has a stationary or inflection point at $x_1$.
+
+Find the sign of the second derivative either side of $x_1$.
+
+\begin{center}
+\begin{tabular}{c|c|c}
+& $x < x_1$ & $x > x_1$ \\
+\hline
+Minimum Turning Point    & + & + \\
+Maximum Turning Point    & - & - \\
+Rising Inflection Point  & + & - \\
+Falling Inflection Point & - & + \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Inflection Points}
+
+Occur when there is a change in concavity.
+
+Solve for $f''(x) = 0$ and verify change in concavity either side of the point
+using the concavity test.
+
+A horizontal inflection occurs when the first derivative is also 0.
+
+
+\subsection{Summary}
+
+\begin{center}
+\begin{tabular}{cl}
+$f'(x) = 0$ & Stationary point at $x$ \\
+$f'(x) = 0$ and $f''(x) > 0$ & Minimum turning point at $x$ \\
+$f'(x) = 0$ and $f''(x) < 0$ & Maximum turning point at $x$ \\
+$f'(x) = 0$ and $f''(x) = 0$ & Inconclusive, use sign test \\
+$f'(x) \neq 0$ and $f''(x) = 0$ & Likely point of inflection, verify with sign test \\
+$f'(x) > 0$ & Rising curve \\
+$f'(x) < 0$ & Falling curve \\
+$f''(x) > 0$ & Concave up \\
+$f''(x) < 0$ & Concave down \\
+\end{tabular}
+\end{center}
+
+
+
+
+\section{Graphing Derivatives}
+
+\subsection{First Derivative}
+
+For stationary points on $f(x)$, $f'(x)$ will pass through the x axis.
+
+For portions of $f(x)$ with a positive gradient, $f'(x)$ will be above the x
+axis.
+
+For portions of $f(x)$ with a negative gradient, $f'(x)$ will be below the x
+axis.
+
+For rising inflection points on $f(x)$, $f'(x)$ will have a turning point above
+the x axis.
+
+For falling inflection points on $f(x)$, $f'(x)$ will have a turning point
+below the x axis.
+
+
+\subsection{Second Derivative}
+
+Take derivative of first derivative graph.
+
+For inflection points on $f(x)$, $f''(x)$ will pass through the x axis.
+
+For concave up portions of $f(x)$, $f''(x)$ will be above the x axis.
+
+For concave down portions of $f(x)$, $f''(x)$ will be below the x axis.
+
+
+
+
+\section{Rates of Change}
+
+Given the rate of change of a quantity with respect to another.
+
+For example, the rate at which water is leaking from a bucket:
+
+$$
+\frac{dV}{dt}
+$$
+
+
+\subsection{Water Remaining}
+
+Use an indefinite integral to find a function for the amount of water leaked
+from the bucket:
+
+$$
+V = \int \frac{dV}{dt} dt
+$$
+
+And solve for the integrating constant ($c$).
+
+
+\subsection{Water Leaked}
+
+Use a definite integral to find the amount of water leaked within a certain
+time period of $t_1$ to $t_2$:
+
+$$
+\int_{t_1}^{t_2} \frac{dV}{dt} dt
+$$
+
+
+\subsection{Time for Water to Leak}
+
+To find the amount of time it takes for $k$ litres of water to leak from the
+bucket, solve the equation:
+
+$$
+\int_0^a \frac{dV}{dt} dt = k
+$$
+
+For $a$.
+
+
+
+
+\section{Marginal Rates of Change}
+
+There are 3 economic functions, where $x$ is the number of items sold:
+
+\begin{enumerate}
+\item The cost function, $C(x)$
+\item The revenue function, $R(x)$
+\item The profit function, $P(x) = R(x) - C(x)$
+\end{enumerate}
+
+The marginal cost $C'(x)$ gives the cost associated with producing one more
+item when we are currently producing $x$ items.
+
+The marginal cost of the $x$th item is $C'(x - 1)$.
+
+
+
+
+\section{Rectilinear Motion}
+
+Relates position/displacement ($x$), velocity ($v$), and acceleration ($a$) as
+functions of time.
+
+Differentiating:
+
+$$
+\begin{aligned}
+v & = \frac{dx}{dt} \\
+a & = \frac{dv}{dt} \\
+\end{aligned}
+$$
+
+Integrating:
+
+$$
+\begin{aligned}
+x & = \int v dt \\
+v & = \int a dt \\
+\end{aligned}
+$$
+
+Position, velocity, and acceleration should be left as positive or negative
+values, as they are vectors and have a direction.
+
+
+\subsection{Terminology}
+
+At the origin implies $x = 0$.
+
+At rest or stationary implies $v = 0$.
+
+"Initially" implies $t = 0$.
+
+
+\subsection{Speed}
+
+Speed is the absolute value of velocity. It is a scalar and should not have an
+associated direction.
+
+
+\subsection{Displacement}
+
+If finding the displacement of an object between two times, integrate velocity
+using a definite integral.
+
+If finding the velocity of an object between two times, integrate acceleration
+using a definite integral.
+
+
+\subsection{Distance}
+
+To find the distance an object travels between two times, integrate the absolute
+value of the velocity function using a definite integral.
+
+Or solve the displacement function for its turning points, and calculate the
+total distance travelled between these points.
+
+
+
+
+\section{Optimisation}
+
+Problems that involve finding the maximum or minimum value of a function.
+
+
+\subsection{Within a Domain}
+
+Given the function $f(x)$, to find the maximum value within the domain
+$a \leq f(x) \leq b$.
+
+Solve for the turning points of $f(x)$ ($f'(x) = 0$).
+
+Find the value of $f(x)$ at each turning point.
+
+Find the value of $f(x)$ at $a$ and $b$ (the boundaries of the domain).
+
+Chose whichever is the largest.
+
+
+\subsection{Worded Problem}
+
+Find an equation to optimise.
+
+Differentiate and solve for turning points ($f'(x) = 0$).
+
+
+\subsection{Two Variables}
+
+Find two equations relating the two variables.
+
+Rearrange one equation for a variable, and substitute it into the other
+equation.
+
+Optimise this equation as above.
+
+Find the value of the other variable by substituting back into one of the
+original equations.
+
+
+
+
+\section{Small Change}
+
+The derivative of a function will approximate a small change in the function:
+
+$$
+\frac{dy}{dx} \approx \frac{\delta y}{\delta x}
+$$
+
+This gives us the small change formula:
+
+$$
+\delta y \approx \frac{dy}{dx} \delta x
+$$
+
+Given a value of $x$, and a small change in $x$ at this value ($\delta x$), the
+formula tells us the resulting small change in $y$ ($\delta y$).
+
+The new value of $y$ can be found by adding the small change in $y$
+($\delta y$) to the original value of $y$ at $x$.
+
+
+\subsection{Percentage Change}
+
+Find the approximate percentage change in $y$ when $x$ changes by $k$ percent.
+
+A $k$ percent change in $x$ implies:
+
+$$
+\frac{\delta x}{x} = k
+$$
+
+The percentage change in $y$ as a result is:
+
+$$
+\frac{\delta y}{y}
+$$
+
+Given the small change formula:
+
+$$
+\delta y \approx \frac{dy}{dx} \delta x
+$$
+
+If we divide through by $y$:
+
+$$
+\frac{\delta y}{y} \approx \frac{dy}{dx} \times \frac{\delta x}{y}
+$$
+
+Substitute in the derivative and the function $y$.
+
+The equation will simplify to some constant times $\frac{\delta x}{x}$
+(ie. $k$).
+
+
+
+\section{Fundamental Theorem of Calculus}
+
+\subsection{Indefinite Integrals}
+
+Integrating a derivative:
+
+$$
+\int f'(x) dx = f(x) + c
+$$
+
+Where $f(x)$ does not include the original constant term, replacing it with $c$.
+
+Deriving an integral:
+
+$$
+\frac{d}{dx} \int f(x) dx = f(x)
+$$
+
+
+\subsection{Definite Integrals}
+
+Integrating a derivative:
+
+$$
+\int_a^b \frac{d}{dx} f(x) dx = f(b) - f(a)
+$$
+
+Deriving an integral:
+
+$$
+\frac{d}{dx} \int_a^b f(t) dt = 0
+$$
+
+As the definite integral will be a constant, resulting in a derivative of 0.
+
+
+\subsection{Definite Integrals with Chain Rule}
+
+Deriving an integral:
+
+$$
+\frac{d}{dx} \int_a^{g(x)} f(t) dt = f(g(x)) g'(x)
+$$
+
+The function of $x$ (ie. $g(x)$) must always be on the top of the integral.
+Invert the integral if it isn't.
+
+Will not be asked to integrate a derivative (as the integrating constant
+complicates the equation).
+
+
+\subsection{Definite Integrals with Multiple Functions}
+
+Deriving an integral with multiple functions of $x$:
+
+$$
+\frac{d}{dx} \int_{g(x)}^{h(x)} f(t) dt = \frac{d}{dx} \int_{0}^{h(x)} f(t) dt - \frac{d}{dx} \int_{0}^{g(x)} f(t) dt
+$$
+
+Split the integral into two integrals and invert the second.
+
+Use the rule above for each of the two integrals.
+
+
+
+
+\section{Limits}
+
+Required to calculate the value of some limits.
+
+
+\subsection{First Principles Limits}
+
+If given a limit which fits the format of the definition of a derivative:
+
+$$
+\lim_{h \to \infty} \frac{f(x + h) - f(x)}{h}
+$$
+
+Convert to the derivative of $f(x)$ and derive normally to solve the limit.
+
+
+\subsection{Required Limits}
+
+The required limits are:
+
+$$
+\begin{aligned}
+\lim_{x \to \infty} (1 + \frac{1}{x})^x & = e \\
+\lim_{x \to \infty} (1 + \frac{1}{kx})^x & = e^{\frac{1}{k}} \\
+\lim_{x \to 0} \frac{e^x - 1}{x} & = 1 \\
+\lim_{x \to 0} \frac{\sin{x}}{x} & = 1 \\
+\lim_{x \to 0} \frac{1 - \cos{x}}{x} & = 0 \\
+\end{aligned}
+$$
+
+
+\subsection{L'Hopital's Rule}
+
+To solve the last 3 required limits, apply L'Hopital's Rule:
+
+$$
+\lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f'(x)}{g'(x)}
+$$
+
+Derive the numerator and denominator, and substitute in $c$ for $x$.
+
+\end{document}

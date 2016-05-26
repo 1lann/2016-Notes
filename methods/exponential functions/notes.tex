@@ -1,0 +1,157 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Exponential Functions}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{e}
+
+$e$ is defined as:
+
+$$
+\lim_{x \to \infty} (1 + \frac{1}{x})^x = e
+$$
+
+
+
+
+\section{Exponential Functions}
+
+Functions of base $e$, with $x$ in the exponent:
+
+$$
+f(x) = ae^{kx}
+$$
+
+
+\subsection{Derivative}
+
+$e^x$ is the only function where:
+
+$$
+f'(x) = f(x)
+$$
+
+And:
+
+$$
+\int f(x) dx = f(x)
+$$
+
+
+\subsection{Multiple of Derivative}
+
+When given the derivative of a function is a constant multiplied by the
+original function:
+
+$$
+\frac{dy}{dx} = ky
+$$
+
+This implies the function $y$ is:
+
+$$
+y = ae^{kx}
+$$
+
+
+\subsection{Decay}
+
+An exponential decay function has a negative coefficient in front of $x$ in the
+exponent:
+
+$$
+y = ae^{-kx}
+$$
+
+
+
+
+\section{Half Life}
+
+A radioactive substance which decays exponentially has a half life of 60 days.
+
+After 43 days, 200 g of a lump of the substance remains.
+
+The amount of substance remaining is given by the equation, where $t$ is the
+time in days:
+
+$$
+y = a e^{kt}
+$$
+
+Solving for $k$:
+
+$$
+\begin{aligned}
+\frac{a}{2} & = a e^{kt} \\
+\frac{1}{2} & = e^{60k} \\
+k & = -0.01155 \\
+\end{aligned}
+$$
+
+Solving for $a$:
+
+$$
+\begin{aligned}
+200 & = a e^{-0.01155 \times 43} \\
+a & = 328.6\text{ g} \\
+\end{aligned}
+$$
+
+Thus 328.6 g of the substance was present initially.
+
+
+\subsection{Without Using e}
+
+The amount of substance can also be expressed as:
+
+$$
+y = a 0.5^{\frac{t}{60}}
+$$
+
+Where the exponent represents the fractional progress towards the next half
+life.
+
+Solving for $a$:
+
+$$
+\begin{aligned}
+200 & = a 0.5^{\frac{43}{60}} \\
+a & = 328.6\text{ g} \\
+\end{aligned}
+$$
+
+\end{document}

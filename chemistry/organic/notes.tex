@@ -1,0 +1,407 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+\usepackage{mhchem}
+\usepackage{chemfig}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% AI files
+\usepackage{graphicx}
+\DeclareGraphicsRule{.ai}{pdf}{.ai}{}
+
+% Style for organic diagrams
+\setdoublesep{0.35700 em}
+\setatomsep{1.78500 em}
+\setbondoffset{0.18265 em}
+\newcommand{\bondwidth}{0.06642 em}
+\setbondstyle{line width = \bondwidth}
+
+
+\begin{document}
+
+\title{Organic}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Organic Molecules}
+
+A molecule that contains only non-metal elements, and at least one carbon.
+
+\subsection{Chain Length}
+
+Carbon chain length prefixes:
+
+\begin{enumerate}
+\item meth-
+\item eth-
+\item prop-
+\item but-
+\item pent-
+\item hex-
+\item hept-
+\item oct-
+\item non-
+\item dec-
+\end{enumerate}
+
+
+
+
+\section{Alkanes}
+
+Suffix: -an
+
+Only contain Carbon/Carbon single bonds.
+
+They have the general formula $\ce{C_{n}H_{2n + 2}}$
+
+
+\subsection{Examples}
+
+Methane:
+
+\begin{center}
+\chemfig{C(-[::0]H)(-[::90]H)(-[::180]H)(-[::270]H)}
+\end{center}
+
+Butane:
+
+\begin{center}
+\chemfig{C(-[::0]C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)}
+\end{center}
+
+
+\subsection{Substitution Reaction}
+
+Reaction between an alkane and a halogen.
+
+Replaces a Hydrogen off a Carbon on the alkane.
+
+Produces the hydride of the halogen.
+
+A slow reaction, sped up in the presence of UV light.
+
+
+\subsubsection{Multiple Substitutions}
+
+Multiple Hydrogen atoms can be substituted for the halogen on the same molecule.
+
+\begin{description}
+\item [Monosubstitution] Replacement of 1 Hydrogen atom
+\item [Disubstitution] Replacement of 2 Hydrogen atoms
+\item [Trisubstitution] ...
+\end{description}
+
+
+\subsubsection{Examples}
+
+Methane and chlorine mono-substitution:
+
+\begin{center}
+\ce{\chemfig{C(-[::0]H)(-[::90]H)(-[::180]H)(-[::270]H)} + Cl2 ->
+	\chemfig{C(-[::0]H)(-[::90]Cl)(-[::180]H)(-[::270]H)} + HCl}
+\end{center}
+
+Methane and chlorine di-substitution:
+
+\begin{center}
+\ce{\chemfig{C(-[::0]H)(-[::90]Cl)(-[::180]H)(-[::270]H)} + Cl2 ->
+	\chemfig{C(-[::0]Cl)(-[::90]Cl)(-[::180]H)(-[::270]H)} + HCl}
+\end{center}
+
+
+
+
+\section{Alkenes}
+
+Suffix: -en
+
+Contain at least 1 Carbon/Carbon double bond.
+
+Formula (for 1 double bond): $\ce{C_{n}H_{2n}}$
+
+Methene doesn't exist.
+
+
+\subsection{Naming}
+
+Position of double bond included in name.
+
+Carbon atoms are numbered in sequence to minimise the number assigned to the
+double bond.
+
+
+\subsection{Examples}
+
+Ethene:
+
+\begin{center}
+\chemfig{C(=[::0]C(-[::45]H)(-[::-45]H))(-[::135]H)(-[::-135]H)}
+\end{center}
+
+Propene:
+
+\begin{center}
+\chemfig{C(=[::0]C(-[::45]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::-45]H))(-[::135]H)(-[::-135]H)}
+\end{center}
+
+But-1-ene:
+
+\begin{center}
+\chemfig{C(=[::0]C(-[::45]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::-45]H))(-[::135]H)(-[::-135]H)}
+\end{center}
+
+
+\subsection{Addition Reaction}
+
+Reaction between an alkene and a halogen.
+
+Replaces the double bond with a single bond, adding a halogen to each Carbon.
+
+Fast reaction, no UV light needed.
+
+
+\subsubsection{Examples}
+
+Ethene and chlorine:
+
+\begin{center}
+\ce{\chemfig{C(=[::0]C(-[::45]H)(-[::-45]H))(-[::135]H)(-[::-135]H)} + Cl2 ->
+	\chemfig{C(-[::0]C(-[::0]H)(-[::90]Cl)(-[::270]H))(-[::90]Cl)(-[::180]H)(-[::270]H)}}
+\end{center}
+
+But-1-ene and bromine:
+
+\begin{center}
+\ce{\chemfig{C(=[::0]C(-[::45]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::-45]H))(-[::135]H)(-[::-135]H)}
+	+ Br2 ->
+	\chemfig{C(-[::0]C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::90]Br)(-[::270]H))(-[::90]Br)(-[::180]H)(-[::270]H)}}
+\end{center}
+
+
+\subsection{Differentiate Between Alkene and Alkane}
+
+Add liquid bromine (orange coloured).
+
+Will turn colourless in an alkene due to the fast addition reaction.
+
+Will remain orange in an alkane.
+
+
+
+
+\section{Alkynes}
+
+Suffix: -yn
+
+Contains at least 1 Carbon/Carbon triple bond.
+
+Position of the triple bond included in the name, like an alkene.
+
+Methyne doesn't exist.
+
+
+\subsection{Examples}
+
+Ethyne:
+
+\begin{center}
+\chemfig{C(~[::0]C(-[::0]H))(-[::180]H)}
+\end{center}
+
+But-1-yne:
+
+\begin{center}
+\chemfig{C(~[::0]C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H)))(-[::180]H)}
+\end{center}
+
+
+
+
+\section{Hydrocarbons}
+
+Molecules containing only Carbon and Hydrogen.
+
+Will combust in presence of Oxygen and a flame (activation energy).
+
+
+\subsection{Complete Combustion}
+
+$$
+\ce{CH4 + 2O2 -> CO2 + H2O}
+$$
+
+Any hydrocarbon will combust in an excess of oxygen.
+
+Will form only carbon dioxide and water.
+
+
+\subsection{Partial Combustion}
+
+$$
+\ce{CH4 + O2 -> CO + H2O}
+$$
+
+Occurs when Oxygen supply is limited.
+
+Forms leathal carbon monoxide.
+
+
+\subsection{Incomplete Combustion}
+
+$$
+\ce{CH4 + O2 -> C + 2H2O}
+$$
+
+Occurs when Oxygen supply is very limited.
+
+Forms just Carbon.
+
+
+
+
+\section{Halogens}
+
+A halogen can replace any carbon on an organic molecule.
+
+
+\subsection{Naming}
+
+The position and type of halogen are included in the name of the molecule.
+
+The number of the carbon the halogen is attached to is used as its position.
+
+Each halogen has an associated prefix:
+
+\begin{center}
+\begin{tabular}{c|c}
+Chlorine & chloro- \\
+Fluorine & fluoro- \\
+Iodine   & iodo-   \\
+Bromine  & bromo-  \\
+\end{tabular}
+\end{center}
+
+More than 1 of the same halogen attached to the same carbon applies another
+prefix specifying the number.
+
+Minimising the number of the double bond takes precedence over any halogens.
+
+
+\subsection{Examples}
+
+Chloro methane:
+
+\begin{center}
+\chemfig{C(-[::0]H)(-[::90]Cl)(-[::180]H)(-[::270]H)}
+\end{center}
+
+Diiodo methane:
+
+\begin{center}
+\chemfig{C(-[::0]I)(-[::90]I)(-[::180]H)(-[::270]H)}
+\end{center}
+
+1,2-difluoro ethane:
+
+\begin{center}
+\chemfig{C(-[::0]C(-[::0]H)(-[::90]F)(-[::270]H))(-[::90]F)(-[::180]H)(-[::270]H)}
+\end{center}
+
+4,4-dibromo 2-iodo but-1-ene:
+
+\begin{center}
+\chemfig{C(=[::0]C(-[::45]C(-[::0]C(-[::0]H)(-[::90]Br)(-[::270]Br))(-[::90]H)(-[::270]H))(-[::-45]I))(-[::135]H)(-[::-135]H)}
+\end{center}
+
+
+
+\section{Alkyl Groups}
+
+Suffix: -yl
+
+Side Carbon chains branching off the main Carbon chain.
+
+Position and length of chain is included in the name.
+
+Numbering of the double bond takes precedence over alkyl groups.
+
+
+\subsection{Examples}
+
+Methyl propane:
+
+\begin{center}
+\chemfig{C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)}
+\end{center}
+
+2-methyl butane:
+
+\begin{center}
+\chemfig{C(-[::0]C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::90]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)}
+\end{center}
+
+2-ethyl butane:
+
+\begin{center}
+\chemfig{C(-[::0]C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::90]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)}
+\end{center}
+
+2-ethyl 3-methyl pentane:
+
+\begin{center}
+\chemfig{C(-[::0]C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::90]H)(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)}
+\end{center}
+
+
+
+
+\section{Cyclic Compounds}
+
+
+\section{Isomers}
+
+\subsection{Structural Isomers}
+
+\subsection{Geometric Isomers}
+
+
+\section{Saturation}
+
+
+
+\section{Functional Groups}
+
+\subsection{Alcohols}
+
+\subsection{Aldehydes}
+
+\subsection{Ketones}
+
+\subsection{Carboxylic Acids}
+
+\subsection{Amines}
+
+
+\section{Esters}
+
+
+\section{Polymerisation}
+
+
+\section{Proteins}
+
+\end{document}

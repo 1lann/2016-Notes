@@ -1,0 +1,421 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% Other functions
+\DeclareMathOperator\Bin{Bin}
+\DeclareMathOperator\Var{Var}
+\DeclareMathOperator\SD{SD}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Discrete Probability}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Variables}
+
+\subsection{Random}
+
+The value a variable takes on is determined by a random process, sampling from
+a probability distribution.
+
+The value of the variable is weighted according to the weightings given in by
+the probability distribution.
+
+
+\subsection{Discrete}
+
+The variable can take on only a finite number of values.
+
+
+
+
+\section{Probability Distributions}
+
+\subsection{Probability Distribution}
+
+A function that assigns a weighting to all possibile values of a random
+variable.
+
+Also called probability distribution function.
+
+An example distribution:
+
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c}
+$x$ & 1 & 2 & 3 & 4 & 5 & 6 \\
+\hline
+$P(X = x)$ & $\frac{1}{6}$ & $\frac{1}{12}$ & $\frac{1}{3}$ & $\frac{1}{12}$ & $\frac{1}{6}$ & $\frac{1}{6}$ \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Restrictions}
+
+All probabilities in a distribution sum to 1.
+
+All probabilities must be positive.
+
+
+\subsection{Probability Function}
+
+For a random variable $X$, the probability that it takes on the value of $x$ is:
+
+$$
+P(X = x)
+$$
+
+
+\subsection{Cumulative Distribution}
+
+Where each column in the table represents the value of $P(X \leq x)$.
+
+Each value in a cumulative probability distribution is the sum of all values to
+the left of it in the probability distribution.
+
+The value in the right-most column must be 1.
+
+
+\subsection{Graph}
+
+For a graph of a probability distribution function.
+
+X axis has values that the random variable can take.
+
+Y axis has probabilities.
+
+Bar graph is drawn, with each bar centred on the corresponding x axis value.
+
+
+
+\section{Expected Value}
+
+Symbol: $\mu$.
+
+The average/mean of all values in a probability distribution.
+
+Calculated as the sum of the probability multiplied by the value for all
+values in the distribution:
+
+$$
+E(X) = \sum^{n}_{i = 0} x_i p_i
+$$
+
+Where $x_i$ is the $i$th value, and $p_i$ the $i$th probability.
+
+
+\subsection{Payout on a Game}
+
+Given a random game with a probability distribution giving the respective
+probabilities of different payouts.
+
+The long term profit of playing the game is the expected value of this
+distribution.
+
+A fair game is one where the long term payout of the game equals the cost of
+playing the game.
+
+
+\subsection{Transformations}
+
+Given the expected value $E(X)$ for a random variable $X$.
+
+If all values in $X$ are transformed in the same manner, the expected value
+will also undergo the same transformations:
+
+$$
+E(aX + b) = aE(X) + b
+$$
+
+
+
+
+\section{Variance}
+
+A measure of how spread out values are in a probability distribution.
+
+Effectively the average distance of each value from the mean.
+
+Calculated as the sum of the probability multiplied by the value subtract the
+mean squared for each value in the distribution:
+
+$$
+\Var(X) = \sum^{n}_{i = 0} p_i (x_i - \mu)^2
+$$
+
+Where $x_i$ is the $i$th value, $p_i$ the $i$th probability, and $\mu$ the mean
+of $X$.
+
+
+\subsection{Additional Formula}
+
+Another equivalent way of calculating the variance is:
+
+$$
+\Var(X) = E(X^2) - E(X)^2
+$$
+
+
+\subsection{Transformations}
+
+Given the variance $\Var(X)$ for a random variable $X$.
+
+If all values in $X$ undergo the same transformation, the variance will be
+transformed by the square of any linear multiple applied to $X$:
+
+$$
+\Var(aX + b) = a^2 \Var(X)
+$$
+
+As translating the values does not affect their average distance from the mean.
+
+
+
+
+\section{Standard Deviation}
+
+Symbol $\sigma$.
+
+The square root of the variance:
+
+$$
+\SD(X) = \sqrt{\Var(X)}
+$$
+
+
+\subsection{Transformations}
+
+Given the standard deviation $\SD(X)$ for a random variable $X$.
+
+The standard deviation is transformed only by linear multiples applied to $X$:
+
+$$
+\SD(aX + b) = a \SD(X)
+$$
+
+As translating the values does not affect their average distance from the mean.
+
+
+
+
+\section{Uniform Distribution}
+
+The probability of each value of a random variable is equal.
+
+
+\subsection{Distribution}
+
+For a fair six sided dice, the probability distribution is uniform:
+
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c}
+$x$ & 1 & 2 & 3 & 4 & 5 & 6 \\
+\hline
+$P(X = x)$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$ \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Probability Function}
+
+For a random variable $X$ which can take on values between 0 and $n$, the
+probability function is:
+
+$$
+P(X = x) = \frac{1}{n}
+$$
+
+
+
+
+\section{Hypergeometric Distribution}
+
+A finite population is divided into two categories. A sample is taken from this
+population.
+
+A hypergeometric distribution gives the probability that a certain number of
+one of the categories will be found in the sample.
+
+
+\subsection{Example}
+
+A manufacturer orders 500 items. 20 are faulty and unusable. Consider a sample
+of 50 items from the 500.
+
+The probability there are 5 faulty items in the sample of 10:
+
+$$
+P(X = 5) = \frac{\binom{20}{5} \binom{480}{5}}{\binom{500}{10}}
+$$
+
+The probability that there are less than 3 faulty items in the sample of 10:
+
+$$
+P(X \leq 3) = \frac{\binom{20}{2} \binom{480}{8}}{\binom{500}{10}} +
+\frac{\binom{20}{1} \binom{480}{9}}{\binom{500}{10}} +
+\frac{\binom{20}{0} \binom{480}{10}}{\binom{500}{10}}
+$$
+
+
+
+
+\section{Bernoulli Trial}
+
+A random event with a certain probability of success.
+
+The probability distribution is:
+
+\begin{center}
+\begin{tabular}{c|c|c}
+& Success & Failure \\
+$x$ & 1 & 0 \\
+\hline
+$P(X = x)$ & $p$ & $1 - p$ \\
+\end{tabular}
+\end{center}
+
+The distribution is parameterised by $p$.
+
+For example, the probability of correctly guessing a multi-choice question from
+5 possible choices is:
+
+\begin{center}
+\begin{tabular}{c|c|c}
+$x$ & 1 & 0 \\
+\hline
+$P(X = x)$ & $\frac{1}{5}$ & $\frac{4}{5}$ \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Expected Value}
+
+The expected value of a Bernoulli trial is:
+
+$$
+E(X) = p
+$$
+
+
+\subsection{Variance}
+
+The variance of a Bernoulli trial is:
+
+$$
+\Var(X) = p(1 - p)
+$$
+
+
+
+
+\section{Binomial Distribution}
+
+The probability of achieving $x$ successes after performing a number of
+Bernoulli trials.
+
+The probability function of $x$ successes from $n$ Bernoulli trials with a
+probability of succes $p$ is:
+
+$$
+P(X = x) = \binom{n}{x} p^x (1 - p)^{n - x}
+$$
+
+To achieve $x$ successes in $n$ trials, we must have $x$ successes and $n - x$
+failures, which are multiplied together. There are $\binom{n}{x}$ ways of
+arranging these multiplications.
+
+
+\subsection{Notation}
+
+If $X$ is a random variable sampled from a binomial distribution with $n$
+trials and a probability of success $p$, this can be written:
+
+$$
+X \sim \Bin(n, p)
+$$
+
+
+\subsection{Expected Value}
+
+The expected value for a binomial distribution is:
+
+$$
+E(X) = np
+$$
+
+
+\subsection{Variance}
+
+The variance for a binomial distribution is:
+
+$$
+\Var(X) = np(p - 1)
+$$
+
+
+\subsection{Example}
+
+The probability a car has to stop at all intersections is 0.2. A road has
+10 intersections along it.
+
+The probability the car will have to stop at exactly 4 intersections:
+
+$$
+P(X = 4) = \binom{10}{4} 0.2^4 0.8^6
+$$
+
+The probability the car will have to stop at at least 8 intersections:
+
+$$
+P(X \geq 8) = \binom{10}{8} 0.2^8 0.8^2 + \binom{10}{9} 0.2^9 0.8 + \binom{10}{10} 0.2^{10}
+$$
+
+
+\subsection{ClassPad}
+
+Calculate $P(X = x)$ for a binomial distribution using:
+
+$$
+\text{binomialPDf}(x, n, p)
+$$
+
+PDf stands for probability distribution function.
+
+Calculate $P(X \leq x)$ for a binomial distribution using:
+
+$$
+\text{binomialCDf}(0, x, n, p)
+$$
+
+CDf stands for cumulative distribution function.
+
+\end{document}
