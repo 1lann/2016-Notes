@@ -1,0 +1,230 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Systems of Linear Equations}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Systems of Equations}
+
+Multiple variables to be solved simultaneously:
+
+$$
+\begin{cases}
+\begin{aligned}
+3x + 4y - z & = 4 \\
+2x + 9y + 5z & = 10 \\
+-x - 5y + z & = 12 \\
+\end{aligned}
+\end{cases}
+$$
+
+We require as many unique equations as variables in order to fully solve the
+system.
+
+
+\subsection{Matrix Form}
+
+Each column represents a variable.
+
+The final column represents the constant on the right side of each of the
+equations.
+
+Each row represents the coefficients of the variables in one equation.
+
+For example, the system of equations:
+
+$$
+\begin{cases}
+\begin{aligned}
+ 3x + 4y - z & = 4  \\
+2x + 9y + 5z & = 10 \\
+ -x - 5y + z & = 12 \\
+\end{aligned}
+\end{cases}
+$$
+
+In matrix form is:
+
+$$
+\begin{bmatrix}
+ 3 &  4 & -1 & 4  \\
+ 2 &  9 &  5 & 10 \\
+-1 & -5 &  1 & 12 \\
+\end{bmatrix}
+$$
+
+
+\subsection{Elementary Row Operations}
+
+Elementary row operations on a system of equations in matrix form include:
+
+\begin{itemize}
+\item Reordering rows.
+\item Adding or subtracting two rows from each other.
+\item Multiplying or dividing a row by a constant.
+\end{itemize}
+
+To perform a series of elementary row operations, we assign a row to the desired
+combination of these operations.
+
+
+\subsection{Row Echelon Form}
+
+Where all coefficients below the leading diagonal for a system of equations in
+matrix form are 0.
+
+For example:
+
+$$
+\begin{bmatrix}
+8 & 1 & -3 & -2 \\
+0 & 2 &  2 &  4 \\
+0 & 0 & -1 &  5 \\
+\end{bmatrix}
+$$
+
+Manipulate the matrix into row echelon form using the elementary row operations.
+
+
+\subsection{Solving}
+
+Once a matrix is in row echelon form, we can solve the system of equations.
+
+In the example above:
+
+$$
+\begin{aligned}
+z & = -5 \\
+2y + 2 \times -5 & = 4 \\
+y & = 7 \\
+8x + 1 \times 7 - 3 \times -5 & = -2 \\
+x & = -3 \\
+\end{aligned}
+$$
+
+Using this process to solve simultaneous equations is called Gaussian
+Elimination.
+
+
+
+\section{No Solutions}
+
+If any row in a row echelon form matrix has coefficients of 0 for all variables,
+with a non-zero constant in the final column:
+
+$$
+\begin{bmatrix}
+a & b & c & d \\
+0 & e & f & g \\
+0 & 0 & 0 & h \\
+\end{bmatrix}
+$$
+
+This implies $0x + 0y + 0z = h$.
+
+This system has no solutions.
+
+
+
+
+\section{Infinite Solutions}
+
+If any row in a row echelon form matrix has coefficients of 0 for all variables,
+and 0 in the final column:
+
+$$
+\begin{bmatrix}
+a & b & c & d \\
+0 & e & f & g \\
+0 & 0 & 0 & 0 \\
+\end{bmatrix}
+$$
+
+This implies $0x + 0y + 0z = 0$.
+
+There is not enough information to uniquely solve the system.
+
+The system has infinitely many solutions.
+
+
+\subsection{Recognition}
+
+If any of the equations is a scalar multiple of another, the system has an
+infinite number of solutions.
+
+
+
+
+\section{Conditions for Infinite or No Solutions}
+
+Given the system of equations:
+
+$$
+\begin{cases}
+\begin{aligned}
+x - y + 2z & = 1 \\
+2x - 5y + 5z & = 9 \\
+3x + 3y + pz & = q \\
+\end{aligned}
+\end{cases}
+$$
+
+The row echelon form matrix for this system is:
+
+$$
+\begin{bmatrix}
+1 & -1 & 2 & 1 \\
+0 & -3 & 1 & 7 \\
+0 & 0 & p - 4 & q + 11 \\
+\end{bmatrix}
+$$
+
+The system has a unique solution when the coefficient of $z$ in the final row
+is non-zero:
+
+$$
+\begin{aligned}
+p - 4 \neq 0 \\
+p \neq 4 \\
+\end{aligned}
+$$
+
+Written as: $p, q \in \mathbb{R}, p \neq 4$
+
+The system has no solutions when $p = 4$ and $q \in \mathbb{R}, q \neq -11$.
+
+The system has infinite solutions when $p = 4$ and $q = -11$.
+
+\end{document}
