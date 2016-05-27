@@ -53,8 +53,8 @@ $|\bb{a}|$ is the magnitude of vector $\bb{a}$, which is defined as:
 
 $$
 \begin{aligned}
-\lvert \begin{pmatrix} x\\ y \end{pmatrix} \rvert & = \sqrt{x^2 + y^2} \\
-\lvert \begin{pmatrix} x\\ y\\ z \end{pmatrix} \rvert & = \sqrt{x^2 + y^2 + z^2} \\
+\lvert \begin{pmatrix} x \\ y \end{pmatrix} \rvert & = \sqrt{x^2 + y^2} \\
+\lvert \begin{pmatrix} x \\ y \\ z \end{pmatrix} \rvert & = \sqrt{x^2 + y^2 + z^2} \\
 \end{aligned}
 $$
 
@@ -63,6 +63,15 @@ $$
 
 Two vectors are equal if and only if the magnitude and direction of both vectors
 are equal.
+
+For vectors in component form, we can form multiple equations from each
+component:
+
+$$
+\begin{pmatrix} 3a \\ 4 \end{pmatrix} = \begin{pmatrix} 6 \\ 2b \end{pmatrix}
+$$
+
+This implies $3a = 6$ and $4 = 2b$.
 
 
 \subsection{Parallel}
@@ -73,11 +82,11 @@ $$
 \bb{a} = k \bb{b}
 $$
 
-If $k$ is positive, the vectors are said to be like parallel vectors, as they
-point in the same direction.
+If $k$ is positive, the vectors are like parallel vectors. They point in the
+same direction.
 
-If $k$ is negative, the vectors are said to be unlike parallel vectors, as they
-point in opposite directions.
+If $k$ is negative, the vectors are unlike parallel vectors. They point in
+opposite directions.
 
 If $h \bb{a} = k \bb{b}$ given that $\bb{a}$ and $\bb{b}$ are not parallel, then
 $h = k = 0$.
@@ -86,9 +95,11 @@ $h = k = 0$.
 \subsection{Position Vectors}
 
 The position of a point P in space given as a direction and distance from the
-origin O.
+origin O:
 
-$\bb{p} = \vv{OP}$
+$$
+\bb{p} = \vv{OP}
+$$
 
 
 \subsection{Relative Vectors}
@@ -114,7 +125,7 @@ away from a common point.
 It can also be calculated as:
 
 $$
-\begin{pmatrix} x_1\\ y_1 \end{pmatrix} \cdot \begin{pmatrix} x_2\\ y_2 \end{pmatrix} = x_1 x_2 + y_1 y_2
+\begin{pmatrix} x_1 \\ y_1 \end{pmatrix} \cdot \begin{pmatrix} x_2 \\ y_2 \end{pmatrix} = x_1 x_2 + y_1 y_2
 $$
 
 If $\bb{a}$ and $\bb{b}$ are perpendicular, then:
@@ -232,33 +243,26 @@ If P lies outside the line segment $\vv{AB}$, then use point B as the central
 one and rearrange the above equation for $\vv{OP}$.
 
 
+
+
 \section{Lines}
 
 \subsection{Vector Equation}
 
-The general equation for a line in direction $\bb{d}$ that passes through a
-point with position vector $\bb{a}$ is:
+Vector equation for a line in direction $\bb{d}$ that passes through a point
+with position vector $\bb{a}$:
 
 $$
-\bb{r} = \bb{a} + \lambda \bb{d}, \lambda \in \mathbb{R}
+\bb{r} = \bb{a} + \lambda \bb{d} \qquad \lambda \in \mathbb{R}
 $$
 
 
-\subsubsection{From 2 Points}
+\subsection{Dot Product Equation}
 
-Given the two points A and B at position vectors $\bb{a}$ and $\bb{b}$.
+2D only.
 
-The direction of the line is $\vv{AB} = \bb{b} - \bb{a}$.
-
-The equation of the line is thus $\bb{r} = \bb{a} + \lambda (\bb{b} - \bb{a})$
-
-
-\subsection{Dot Product Form}
-
-This applies to 2D only.
-
-The dot product form of a line perpendicular to $\bb{n}$ (the normal) and
-passing through a point with position vector $\bb{a}$ is:
+Dot product form of a line perpendicular to $\bb{n}$ (the normal) that passes
+through a point with position vector $\bb{a}$ is:
 
 $$
 \bb{r} \cdot \bb{n} = \bb{a} \cdot \bb{n}
@@ -267,143 +271,253 @@ $$
 The right hand side evaluates to a constant, leaving:
 
 $$
-\bb{r} \cdot \bb{n} = c, c \in \mathbb{R}
+\bb{r} \cdot \bb{n} = c \qquad c \in \mathbb{R}
 $$
 
 
 \subsection{Parametric Equation}
 
-Given the standard equation of a line $\bb{r} = \bb{a} + \lambda \bb{b}$, the
-parametric equation is:
+Given the vector equation of a line $\bb{r} = \bb{a} + \lambda \bb{b}$.
+
+The parametric equation is:
 
 $$
 \begin{cases}
-	x & = a_x + \lambda b_x \\
-	y & = a_y + \lambda b_y \\
+x & = \bb{a}_x + \lambda \bb{b}_x \\
+y & = \bb{a}_y + \lambda \bb{b}_y \\
 \end{cases}
 $$
 
 
 \subsection{Cartesian Equation}
 
-Write each part of the parametric equation in terms of $\lambda$:
+The cartesian equation of a line in 2D is:
+
+$$
+ax + by = c
+$$
+
+The cartesian equation of a line in 3D is:
+
+$$
+ax + b = cy + d = ez + f
+$$
+
+
+\subsection{Conversion}
+
+\subsubsection{Vector to Dot Product in 2D}
+
+Given the vector equation of a line:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{d} \qquad \lambda \in \mathbb{R}
+$$
+
+Find a vector perpendicular to the direction for the normal.
+
+$\bb{a}$ is a point on the line.
+
+Substitute these values into the dot product equation of a line.
+
+
+\subsubsection{Dot Product to Vector in 2D}
+
+Given the dot product equation of a line:
+
+$$
+\bb{r} \cdot \bb{n} = c
+$$
+
+Find a vector perpendicular to the normal for the direction of the line.
+
+Find a point $\bb{a}$ that satisfies the dot product equation as a point on the
+line.
+
+Substitute these values into the vector equation of a line.
+
+
+\subsubsection{Vector to Parametric}
+
+Let $\bb{r} = \begin{pmatrix} x \\ y \end{pmatrix}$ and write two equations
+from this:
+
+$$
+\begin{pmatrix} x \\ y \end{pmatrix} = \bb{a} + \lambda \bb{d} \qquad \lambda \in \mathbb{R}
+$$
+
+Gives the parametric equation:
 
 $$
 \begin{cases}
-	\lambda & = \frac{x - a_1}{b_1} \\
-	\lambda & = \frac{y - a_2}{b_2} \\
+\begin{aligned}
+x & = \bb{a}_x + \lambda \bb{d}_x \\
+y & = \bb{a}_y + \lambda \bb{d}_y \\
+\end{aligned}
 \end{cases}
 $$
 
-Equate each part and simplify:
 
-$$
-\frac{x - a_1}{b_1} = \frac{y - a_2}{b_2}
-$$
+\subsubsection{Parametric to Vector}
 
-We arrive at a linear equation - the standard cartesian form for a line.
+Perform by inspection from the coefficient of $\lambda$ and the additional
+term.
 
 
-\subsubsection{From Dot Product Form}
+\subsubsection{Vector to Cartesian}
 
-Given the dot product form of a line $\bb{r} \cdot \bb{n} = c$, the cartesian
-equation can be found by evaluating the dot product:
+Find the two parametric equations:
 
 $$
 \begin{aligned}
-	\bb{r} \cdot \bb{n} & = c \\
-	\begin{pmatrix} x\\ y \end{pmatrix} \cdot \bb{n} & = c \\
-	x \bb{n}_x + y \bb{n}_y & = c
+x & = \bb{a}_x + \lambda \bb{d}_x \\
+y & = \bb{a}_y + \lambda \bb{d}_y \\
 \end{aligned}
 $$
 
-
-\subsection{Point Lies on Line}
-
-Given the point C at position vector $\bb{c}$, and the line
-$\bb{r} = \bb{a} + \lambda \bb{b}$.
-
-Equate $\bb{c}$ and the line:
-
-$$
-\bb{c} = \bb{a} + \lambda \bb{b}
-$$
-
-Form 2 equations for $\lambda$:
+Rearrange for $\lambda$ (assuming both components of $\bb{d}$ are non-zero):
 
 $$
 \begin{aligned}
-	c_x & = a_x + \lambda b_x \\
-	c_y & = a_y + \lambda b_y \\
+\lambda & = \frac{x - \bb{a}_x}{\bb{d}_x} \\
+\lambda & = \frac{y - \bb{a}_y}{\bb{d}_y} \\
 \end{aligned}
 $$
 
-Solve for $\lambda$ twice using each equation. If the two values of $\lambda$
-are consistent, the point lies on the line.
-
-
-\subsection{Intersection With Another Line}
-
-Given the two lines $\bb{r}_1 = \bb{a} + \lambda \bb{b}$ and
-$\bb{r}_2 = \bb{c} + \mu \bb{d}$.
-
-Equate them and solve for $\lambda$ and $\mu$ simultaneously:
+Equate the two equations:
 
 $$
-\bb{a} + \lambda \bb{b} = \bb{c} + \mu \bb{d}
+\frac{x - \bb{a}_x}{\bb{d}_x} = \frac{y - \bb{a}_y}{\bb{d}_y}
 $$
+
+If either component of $\bb{d}$ is 0, we ignore the equation formed using the
+other component.  This results in a line that is perpendicular to one of the
+axes.
+
+For example, if $\bb{d}_x = 0$:
+
+$$
+\begin{aligned}
+x & = \bb{a}_x \\
+y & = \bb{a}_y + \lambda \bb{d}_y \\
+\end{aligned}
+$$
+
+Gives the cartesian equation:
+
+$$
+x = \bb{a}_x
+$$
+
+A line parallel to the y axis.
+
+
+\subsubsection{Dot Product to Cartesian in 2D}
+
+Expand $\bb{r}$:
+
+$$
+\begin{pmatrix} x \\ y \end{pmatrix} \cdot \bb{n} = c
+$$
+
+Gives the cartesian equation:
+
+$$
+\bb{n}_x x + \bb{n}_y y = c
+$$
+
+
+\subsubsection{Cartesian to Dot Product in 2D}
+
+Use the coefficients of $x$ and $y$ to determine the components of the normal.
+
+
+\subsection{Construction}
+
+\subsection{From Two Points}
+
+Given the points $\bb{a}$ and $\bb{b}$, the direction of the line is:
+
+$$
+\bb{d} = \bb{a} - \bb{b}
+$$
+
+The vector equation is:
+
+$$
+\bb{r} = \bb{a} + \lambda (\bb{a} - \bb{b})
+$$
+
+
+\subsection{Parallel Lines}
+
+Two lines are parallel if:
+
+\begin{itemize}
+\item The two direction vectors are parallel.
+\item The direction vector and the normal are perpendicular.
+\item The two normals are parallel.
+\end{itemize}
+
+
+\subsection{Perpendicular Lines}
+
+Two lines are perpendicular if:
+
+\begin{itemize}
+\item The two direction vectors are perpendicular.
+\item The direction vector and normal are parallel.
+\item The two normals are perpendicular.
+\end{itemize}
 
 
 \subsection{Collisions}
 
 Two objects travelling with constant velocity must be in the same location at
-the same time in order to collide. Thus:
+the same time to collide:
 
 $$
 \bb{r}_1 + t_1 \bb{v}_1 = \bb{r}_2 + t_2 \bb{v}_2
 $$
 
-If $t_1 = t_2$, then the objects collide.
-
-If $t_1 < 0$ or $t_2 < 0$, then the objects don't collide.
+The objects collide if $t_1 = t_2$ and $t_1 \geq 0$.
 
 
 
-\section{Circles}
 
-The vector equation for a 2D circle is:
+\section{Circles and Spheres}
+
+The vector equation for a circle or sphere with centre at position vector
+$\bb{d}$ and radius $r$ is:
 
 $$
 \lvert \bb{r} - \bb{d} \rvert = r
 $$
 
-Where $\bb{d}$ is the position vector of the circle's centre, and $r$ is its
-radius.
-
 
 \subsection{Cartesian Equation}
 
-Expanding the vector equation in component form:
+Expanding the vector equation:
 
 $$
 \begin{aligned}
-	\lvert \begin{pmatrix} x\\ y \end{pmatrix} - \begin{pmatrix} a\\ b \end{pmatrix} \rvert & = r \\
-	(x - a)^2 + (y - b)^2 & = r^2 \\
+\lvert \begin{pmatrix} x \\ y \end{pmatrix} - \begin{pmatrix} a \\ b \end{pmatrix} \rvert & = r \\
+(x - a)^2 + (y - b)^2 & = r^2 \\
 \end{aligned}
 $$
 
-Where $(a, b)$ is the circle's centre and $r$ its radius.
-
 
 \subsection{Parametric Equation}
+
+The parametric equation for a sphere is unnecessary.
 
 A circle with centre $(a, b)$ and radius $r$ can be written in parametric form
 as:
 
 $$
 \begin{cases}
-	x = r \cos{\theta} + a \\
-	y = r \sin{\theta} + b \\
+x = r \cos{\theta} + a \\
+y = r \sin{\theta} + b \\
 \end{cases}
 $$
 
@@ -412,141 +526,641 @@ the cartesian equation:
 
 $$
 \begin{cases}
-	(x - a)^2 = r^2 \cos^2{\theta} \\
-	(y - b)^2 = r^2 \sin^2{\theta} \\
+(x - a)^2 = r^2 \cos^2{\theta} \\
+(y - b)^2 = r^2 \sin^2{\theta} \\
 \end{cases}
 $$
 
+Add both equations together:
+
 $$
 \begin{aligned}
-	(x - a)^2 + (y - b)^2 & = r^2 \cos^2{\theta} + r^2 \sin^2{\theta} \\
-	(x - a)^2 + (y - b)^2 & = r^2 \\
+(x - a)^2 + (y - b)^2 & = r^2 \cos^2{\theta} + r^2 \sin^2{\theta} \\
+(x - a)^2 + (y - b)^2 & = r^2 \\
 \end{aligned}
 $$
-
-
-\subsection{Intersection With Line}
-
-Given the line $\bb{r} = \bb{a} + \lambda \bb{b}$ and circle
-$\lvert \bb{r} - \bb{c} \rvert = r$.
-
-Substitute the equation of the line for $\bb{r}$ in the circle equation:
-
-$$
-\lvert \bb{a} + \lambda \bb{b} - \bb{c} \rvert = r
-$$
-
-Expand the magnitude to a quadratic and solve for $\lambda$.
-
-Two solutions means the line passes right through the circle.
-
-One solution implies the line touches the circle tangentially.
-
-No solutions implies the line doesn't intersect the circle.
-
-
-
-
-\section{Closest Approach}
-
-The closest distance between a point and a line is always the perpendicular
-distance.
-
-
-\subsection{Calculus}
-
-Given a point at position vector $\bb{p}$ and line
-$\bb{r} = \bb{a} + \lambda \bb{b}$.
-
-Express the distance between the point and the line as a function:
-
-$$
-f(\lambda) = \lvert \bb{p} - (\bb{a} + \lambda \bb{b}) \rvert
-$$
-
-Minimise the function using calculus, or the $\text{fMin}$ function on the
-ClassPad.
-
-
-\subsection{Dot Product}
-
-Given a point at position vector $\bb{p}$ and line
-$\bb{r} = \bb{a} + \lambda \bb{b}$.
-
-The closest distance between the point and line is the perpendicular distance.
-
-The vector between the point and the line is
-$\bb{p} - (\bb{a} + \lambda \bb{b})$.
-
-This will be perpendicular to the direction of the line:
-
-$$
-\bb{b} \cdot (\bb{p} - \bb{a} - \lambda \bb{b}) = 0
-$$
-
-Expand the dot product and solve for $\lambda$, then substitute it back into the
-equation for the line to find the closest point on the line.
-
-
-\subsubsection{Line in Dot Product Form}
-
-Given a point at position vector $\bb{p}$ and line $\bb{r} \cdot \bb{n} = c$.
-
-Form another line passing through $\bb{p}$ in the direction of the normal
-$\bb{n}$, $\bb{r} = \bb{p} + \lambda \bb{n}$.
-
-Substitute this into the original line and solve for $\lambda$:
-
-$$
-(\bb{p} + \lambda \bb{n}) \cdot \bb{n} = c
-$$
-
-Substitute $\lambda$ back into the original equation for the line to find the
-closest point.
-
-
-\subsection{Cross Product}
 
 
 
 
 \section{Planes}
 
+3D only.
+
+
 \subsection{Vector Equation}
 
-The general equation for a plane is:
+The vector equation for a plane that passes through a point with position
+vector $\bb{a}$ and extends in directions $\bb{b}$ and $\bb{c}$.
 
 $$
 \bb{r} = \bb{a} + \lambda \bb{b} + \mu \bb{c}
 $$
 
-Where $\bb{a}$ is a point on the plane, and $\bb{b}$ and $\bb{c}$ are two
-vectors parallel to the plane.
+$\bb{b}$ and $\bb{c}$ are two vectors parallel to the plane.
 
 
 \subsection{Dot Product Form}
 
-The equation for a plane in dot product form is:
+The equation for a plane in dot product form with normal $\bb{n}$ that passes
+through a point with position vector $\bb{a}$:
 
 $$
 \bb{r} \cdot \bb{n} = \bb{n} \cdot \bb{a}
 $$
 
-Where $\bb{n}$ is a vector perpendicular to the plane (the normal), and $\bb{a}$
-is a point on the plane.
+Since the right hand side evaluates to a constant, this is equivalent to:
 
-This is also written as $\bb{r} \cdot \bb{n} = c, c \in \mathbb{R}$, as the
-right hand side evaluates to a constant.
+$$
+\bb{r} \cdot \bb{n} = c \qquad c \in \mathbb{R}
+$$
 
 
 \subsection{Parametric Form}
 
+The parametric form of a plane from its vector equation is:
+
+$$
+\begin{cases}
+\begin{aligned}
+x & = \bb{a}_x + \lambda \bb{b}_x + \mu \bb{c}_x \\
+y & = \bb{a}_y + \lambda \bb{b}_y + \mu \bb{c}_y \\
+z & = \bb{a}_z + \lambda \bb{b}_z + \mu \bb{c}_z \\
+\end{aligned}
+\end{cases}
+$$
+
 
 \subsection{Cartesian Form}
 
+The cartesian form of a plane is:
+
+$$
+ax + by + cz = d
+$$
+
+
+\subsection{Conversions}
+
+\subsubsection{Vector to Dot Product}
+
+Given the equation of a plane in vector form:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{b} + \mu \bb{c}
+$$
+
+The normal is the cross product of $\bb{b}$ and $\bb{c}$:
+
+$$
+\bb{n} = \bb{b} \times \bb{c}
+$$
+
+$\bb{a}$ is a point on the plane.
+
+Substitute these values into the dot product equation for a plane.
+
+
+\subsubsection{Dot Product to Vector}
+
+Find any two non-parallel vectors that are perpendicular to the normal (dot
+product is 0).
+
+Find a point that satisfies the dot product equation for the plane.
+
+Substitute these values into the vector equation for a plane.
+
+
+\subsubsection{Dot Product to Cartesian}
+
+Expand $\bb{r}$ into its components:
+
+$$
+\begin{pmatrix} x \\ y \\ z \end{pmatrix} \cdot \bb{n} = c
+$$
+
+Simplify the dot product:
+
+$$
+\bb{n}_x x + \bb{n}_y y + \bb{n}_z z = c
+$$
+
+
+\subsubsection{Cartesian to Dot Product}
+
+Use the coefficients of $x$, $y$, and $z$ to find the components of the normal.
+
+
+\subsubsection{Vector to Cartesian}
+
+Convert the vector equation into dot product form.
+
+
+\subsubsection{Cartesian to Vector}
+
+Convert the cartesian into dot product form, then convert the dot product form
+to vector form.
+
+
+\subsection{Construction}
+
+\subsubsection{From 2 Points and Parallel Vector}
+
+Given two points at position vectors $\bb{a}$ and $\bb{b}$ that lie on the
+plane, and a vector $\bb{c}$ parallel to the plane.
+
+Find a second direction from the two points:
+
+$$
+\bb{d} = \bb{a} - \bb{b}
+$$
+
+Substitute into the vector equation for a plane:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{c} + \mu (\bb{a} - \bb{b})
+$$
+
+
+\subsubsection{From 3 Points}
+
+Given three points at position vectors $\bb{a}$, $\bb{b}$ and $\bb{c}$ that lie
+on the plane.
+
+Find 2 direction vectors from the 3 points and substitute into the vector
+equation of a plane:
+
+$$
+\bb{r} = \bb{a} + \lambda (\bb{a} - \bb{b}) + \mu (\bb{a} - \bb{c})
+$$
+
+
+\subsubsection{From 2 Lines}
+
+Use the directions of the two lines as two vectors parallel to the plane, and
+any point on either of the lines as a point on the plane.
 
 
 
-\section{Circles and Spheres}
+\section{Angle Between}
+
+\subsection{Two Lines}
+
+Find the angle between the two direction vectors of the lines.
+
+
+\subsection{Line and Plane}
+
+\subsubsection{Plane in Dot Product Form}
+
+Find the angle $\theta$ between the direction of the line and the plane's normal.
+
+The angle between the plane and line is then $\frac{\pi}{2} - \theta$.
+
+Convert to an acute angle.
+
+
+\subsubsection{Plane in Vector Form}
+
+Convert the plane to dot product form and use the method above.
+
+
+\subsection{Two Planes}
+
+Convert both planes to dot product form and find the angle between the two
+normals.
+
+
+
+\section{Point On Surface}
+
+Given the point with position vector $\bb{p}$.
+
+
+\subsection{Line}
+
+Equate the point and the equation of the line:
+
+$$
+\bb{p} = \bb{a} + \lambda \bb{b}
+$$
+
+Form 2 or 3 equations for $\lambda$:
+
+$$
+\begin{aligned}
+\bb{p}_x & = \bb{a}_x + \lambda \bb{b}_x \\
+\bb{p}_y & = \bb{a}_y + \lambda \bb{b}_y \\
+\end{aligned}
+$$
+
+Solve for $\lambda$ using each equation.
+
+If the values of $\lambda$ are consistent, the point lies on the line.
+
+
+\subsection{Plane}
+
+\subsubsection{Vector Form}
+
+Equate the point and the equation of the plane:
+
+$$
+\bb{p} = \bb{a} + \lambda \bb{b} + \mu \bb{c}
+$$
+
+Solve for $\lambda$ and $\mu$ using equations formed from the x and y
+components.
+
+Substitute these values into the equation formed from the z components. If the
+values are consistent, the point lies on the plane.
+
+
+\subsubsection{Dot Product Form}
+
+Substitute the point into the equation of the plane:
+
+$$
+\bb{p} \cdot \bb{n} = c
+$$
+
+Calculate the dot product and if it is consistent with the constant $c$, the
+point lies on the plane.
+
+
+\subsection{Sphere}
+
+Substitute the point into the equation for the sphere:
+
+$$
+\lvert \bb{p} - \bb{d} \rvert = r
+$$
+
+If the left hand side is less than $r$, the point lies inside the sphere.
+
+If the left hand side equals $r$, the point lies on the sphere.
+
+If the left hand side is greater than $r$, the point lies outside the sphere.
+
+
+
+
+\section{Line On Surface}
+
+\subsection{Plane}
+
+A line lies on a plane if its direction is parallel to the plane, and the line
+and plane have a common point.
+
+If the normal of the plane is perpendicular to the direction of the line, and
+any point on the line satisfies the equation for the plane, the line lies on
+the plane.
+
+
+
+
+\section{Intersections}
+
+\subsection{Line and Line}
+
+Given the equations of two lines:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a}_1 + \lambda \bb{d}_1 \\
+\bb{r}_2 & = \bb{a}_2 + \mu \bb{d}_2 \\
+\end{aligned}
+$$
+
+Equate them:
+
+$$
+\bb{a}_1 + \lambda \bb{d}_1 = \bb{a}_2 + \mu \bb{d}_2
+$$
+
+Solve for $\lambda$ and $\mu$ using equations formed from the x and y
+components.
+
+Substitute the two values into the equation formed from the z component. If it
+is consistent, the lines intersect.
+
+Substitute $\lambda$ or $\mu$ back into one of the original line equations to
+find the point of intersection.
+
+
+\subsection{Line and Plane}
+
+\subsubsection{Vector Equation}
+
+Given the equation of a line and plane:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a} + \lambda \bb{b} \\
+\bb{r}_2 & = \bb{c} + \mu \bb{d} + \alpha \bb{e} \\
+\end{aligned}
+$$
+
+Equate them:
+
+$$
+\bb{a} + \lambda \bb{b}  = \bb{c} + \mu \bb{d} + \alpha \bb{e}
+$$
+
+Solve for $\lambda$, $\mu$, and $\alpha$.
+
+Substitute $\lambda$ back into the original line equation to find the point of
+intersection.
+
+
+\subsubsection{Dot Product Equation}
+
+Given the equation of a line and plane:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a} + \lambda \bb{b} \\
+\bb{r}_2 \cdot \bb{n} & = c \\
+\end{aligned}
+$$
+
+Substitute the line equation into the plane equation:
+
+$$
+(\bb{a} + \lambda \bb{b}) \cdot \bb{n} = c
+$$
+
+Expand the dot product and solve for $\lambda$.
+
+Substitute $\lambda$ back into the original line equation to find the point of
+intersection.
+
+
+\subsection{Line and Circle}
+
+Given the equation of a line and circle:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a} + \lambda \bb{b} \\
+\lvert \bb{r}_2 - \bb{c} \rvert & = r \\
+\end{aligned}
+$$
+
+Substitute the line equation into the circle equation:
+
+$$
+\lvert \bb{a} + \lambda \bb{b} - \bb{c} \rvert = r
+$$
+
+This will simplify to a quadratic in terms of $\lambda$.
+
+If there are two solutions, the line intersects the circle and is not
+tangential to it.
+
+If there is one solution, the line is tangent to the circle.
+
+If there are no solutions, the line does not intersect the circle.
+
+
+\subsection{Plane and Plane}
+
+Two planes intersect along a line.
+
+The line has a direction perpendicular to the two normals of the planes.
+
+A point on the line is a point common to both planes (satisfies both plane
+equations).
+
+
+\subsection{Circle and Axis Plane}
+
+For the xy-plane, $z = 0$.
+
+For the xz-plane, $y = 0$.
+
+For the yz-plane, $x = 0$.
+
+Find the cartesian equation of a sphere:
+
+$$
+(x - a)^2 + (y - b)^2 + (z - c)^2 = r^2
+$$
+
+Substitute either $x = 0$, $y = 0$, or $z = 0$ depending on the axis plane.
+
+The equation is the cartesian equation for the intersecting circle on this
+plane.
+
+
+
+
+\section{Minimum Distance}
+
+The minimum distance between two vector surfaces.
+
+
+\subsection{Point and Line}
+
+Given a point at position vector $\bb{p}$ and line:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{d}
+$$
+
+
+\subsubsection{Dot Product}
+
+The closest distance is when the vector between an arbitrary point on the line
+and $\bb{p}$ and the direction of the line are perpendicular.
+
+The vector between $\bb{p}$ and an aribtrary point on the line is:
+
+$$
+\bb{p} - \bb{r} = \bb{p} - \bb{a} - \lambda \bb{d}
+$$
+
+This must be perpendicular to the direction of the line:
+
+$$
+(\bb{p} - \bb{a} - \lambda \bb{d}) \cdot \bb{d} = 0
+$$
+
+Solve for $\lambda$.
+
+Substitute $\lambda$ back into the line equation to get the closest point on
+the line (point $\bb{c}$)
+
+Find the magnitude $\lvert \bb{p} - \bb{c} \rvert$ for distance between the
+point and the closest point on the line ($\bb{c}$).
+
+
+\subsubsection{Cross Product}
+
+Chose some aribtrary point on the line Q.
+
+Let the point closest to P on the line be C.
+
+Form a right angled triangle QPC.
+
+Let $\theta$ be the angle at Q (ie. the angle between $\vv{QP}$ and
+$\vv{QC}$).
+
+The perpendicular distance is thus $\lvert \vv{QP} \rvert \sin{\theta}$.
+
+This can be written as:
+
+$$
+\begin{aligned}
+& = \frac{\lvert \vv{QP} \rvert \lvert \vv{QC} \rvert \sin{\theta}}{\lvert \vv{QC} \rvert} \\
+& = \frac{\lvert \vv{QP} \times \vv{QC} \rvert}{\lvert \vv{QC} \rvert} \\
+\end{aligned}
+$$
+
+Which is equivalent to:
+
+$$
+\frac{\lvert \bb{p} - \bb{a} \times \bb{d} \rvert}{\lvert \bb{d} \rvert}
+$$
+
+
+\subsection{Point and Plane}
+
+Given the point $\bb{p}$.
+
+
+\subsubsection{Vector Equation of Plane}
+
+Given the vector equation of a plane:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{b} + \mu \bb{c}
+$$
+
+The vector between an arbitrary point on the plane and $\bb{p}$ will be
+perpendicular to the directions of the plane:
+
+$$
+\begin{aligned}
+(\bb{p} - \bb{a} - \lambda \bb{b} - \mu \bb{c}) \cdot \bb{b} & = 0 \\
+(\bb{p} - \bb{a} - \lambda \bb{b} - \mu \bb{c}) \cdot \bb{c} & = 0 \\
+\end{aligned}
+$$
+
+Solve simultaneously for $\lambda$ and $\mu$.
+
+Substitute back into the equation for the plane to find the closest point and
+distance.
+
+Alternatively, determine the normal and use the below method.
+
+
+\subsubsection{Dot Product Equation of Plane}
+
+Given the dot product equation of a plane:
+
+$$
+\bb{r} \cdot \bb{n} = c
+$$
+
+Find a point on the plane $\bb{a}$.
+
+Find the vector between $\bb{a}$ and $\bb{p}$, $\vv{AP}$.
+
+Find the scalar projection of this onto the normal $\bb{n}$.
+
+
+\subsection{Point and Sphere}
+
+Equivalent to the distance between the point and the centre of the sphere,
+subtract the radius.
+
+
+\subsection{Line and Line}
+
+\subsubsection{Not Parallel}
+
+Find a vector $\bb{n}$ perpendicular to the directions of both lines.
+
+Find the vector between two points on the lines.
+
+Find the scalar projection of this onto $\bb{n}$.
+
+
+\subsubsection{Parallel}
+
+Pick a point on one of the lines.
+
+Find the closest distance between this point and the other line using the
+method above.
+
+
+\subsection{Line and Parallel Plane}
+
+Pick a point on the line.
+
+Find the closest distance between this point and the plane using the method
+above.
+
+
+\subsection{Line and Sphere}
+
+Find the closest distance between the line and the centre of the sphere, then
+subtract the radius.
+
+
+\subsection{Plane and Parallel Plane}
+
+Pick a point on one of the planes.
+
+Find the closest distance between this point and the other plane using the
+method above.
+
+
+\subsection{Plane and Sphere}
+
+Find closest distance between plane and centre of sphere, then subtract the
+radius.
+
+
+\subsection{Sphere and Sphere}
+
+Find the distance between the two centres, then subtract both radii.
+
+
+
+
+\section{Closest Approach}
+
+The closest distance between two objects travelling in defined paths.
+
+Cannot be solved as above, as the objects may be at different locations at a
+certain time.
+
+Requires calculus to solve.
+
+
+\subsection{Approach}
+
+Find an expression for the distance between the two objects at time $t$.
+
+Minimise the function using calculus.
+
+
+\subsection{Lines}
+
+Given two objects travelling in the lines:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a}_1 + t \bb{v}_1 \\
+\bb{r}_2 & = \bb{a}_2 + t \bb{v}_2 \\
+\end{aligned}
+$$
+
+The distance between them is $\lvert \bb{r}_1 - \bb{r}_2 \rvert$.
+
+Minimise this function for $t$ using calculus to determine the minimum distance
+between them.
 
 \end{document}
