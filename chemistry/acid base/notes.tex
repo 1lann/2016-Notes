@@ -7,6 +7,16 @@
 \usepackage{esvect}
 \usepackage{mhchem}
 
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
 % No indent on new paragraphs
 \setlength{\parindent}{0mm}
 \setlength{\parskip}{0.2cm}
@@ -154,6 +164,20 @@ $$
 $$
 
 
+\subsection{Weak Acids}
+
+For all components of the equation, we write the most dominant species.
+
+Weak acids exist mostly as the non-dissociated ion, and are written as such.
+
+For example, ethanoic acid and calcium carbonate:
+
+$$
+\ce{CH3COOH (aq) + CaCO3 (s) -> CH3COO- (aq) + CO2 (g) + H2O (l)}
+$$
+
+
+
 
 \section{Definitions}
 
@@ -226,7 +250,7 @@ Strong acids include $\ce{HCl}$, $\ce{HNO3}$, $\ce{H2SO4}$.
 Strong bases include $\ce{NaOH}$, $\ce{Ba(OH)2}$, all other oxide and hydroxide
 salts.
 
-Weak acids include $\ce{CH3COOH}$, $\ce{H3PO4}$, $\ce{H2CO3}$.
+Weak acids include $\ce{CH3COOH}$, $\ce{H3PO4}$, $\ce{H2CO3}$, $\ce{HNO2}$.
 
 Weak bases include $\ce{NH3}$.
 
@@ -354,6 +378,31 @@ The equilibrium constant for this reaction is:
 $$
 [\ce{H+}][\ce{OH-}] = 10^{-14}
 $$
+
+
+\subsubsection{Self-Ionisation of Other Substances}
+
+Given the equilibrium constant at a different temperature or of the
+self-ionisation reaction of a different substance.
+
+The concentration of $\ce{H+}$ and $\ce{OH-}$ ions are equal in a neutral
+solution, thus:
+
+$$
+[\ce{H+}]^2 = K
+$$
+
+
+\subsection{Neutral Solution}
+
+A solution is neutral if $[\ce{OH-}] = [\ce{H+}]$.
+
+In a solution not at $25^\circ\mbox{ C}$, the pH of the solution may not be 7,
+yet the solution is still neutral.
+
+This is because the position of the equilibrium has changed, thus both the
+concentration of $\ce{OH-}$ and $\ce{H+}$ have increased or decreased, but are
+still equal.
 
 
 \subsection{pH From a Base}
@@ -493,6 +542,7 @@ acidic solution.
 
 
 
+
 \section{Buffers}
 
 Solutions that resist changes to pH when small amounts of acid or base are
@@ -604,5 +654,142 @@ To maximise buffer capacity:
 \item Highest possible concentration of the acid/base and its conjugate. Allows
 	for a larger shift in the equilibrium position.
 \end{itemize}
+
+
+
+
+\section{Titrations}
+
+Determine concentration of unknown solution using a solution of known
+concentration.
+
+
+\subsection{Equivalence Point}
+
+Where excess $\ce{OH-}$ or $\ce{H+}$ ions are neutralised in a solution being
+titrated.
+
+
+\subsection{Primary Standards}
+
+Solution of known concentration.
+
+
+\subsubsection{Properties}
+
+Properties of effective primary standards:
+
+\begin{itemize}
+\item Solid
+\item High purity
+\item Stable (doesn't react with any compounds in the air)
+\item High molar mass (minimise fractional uncertainty when weighing)
+\end{itemize}
+
+
+\subsubsection{Examples}
+
+Common primary standards include:
+
+\begin{itemize}
+\item \ce{Na2CO3}
+\item \ce{H2C2O4.H2O}
+\end{itemize}
+
+
+\subsubsection{Preparation Procedure}
+
+To produce a primary standard solution from a solid:
+
+\begin{enumerate}
+\item Wash out beaker with distilled water
+\item Weigh mass of solid primary standard in beaker.
+\item Dissolve in small amount of distilled water.
+\item Wash volumetric flask with distilled water.
+\item Add beaker contents to volumetric flask.
+\item Rinse beaker multiple times into volumetric flask with distilled water.
+\item Make up to line in volumetric flask.
+\item Mix thoroughly.
+\item Rinse container using some of the solution.
+\item Add to storage container.
+\end{enumerate}
+
+
+\subsection{Indicators}
+
+Coloured solution added to the titration solution.
+
+Should change colour close to the equivalence point.
+
+Indicates neutralisation of the solution and when to stop the titration.
+
+
+\subsubsection{End Point}
+
+The point at which the indicator changes colour, and the titration ends.
+
+
+\subsubsection{Selection}
+
+Indicator must be chosen such that the end point is close to the equivalence
+point.
+
+
+\subsubsection{Common Indicators}
+
+\begin{description}
+\item [Methyl Orange] Changes colour in acidic pH range (4 - 6).
+\item [Phenolphthalein] Changes colour in basic pH range (8 - 10).
+\end{description}
+
+For neutral titration solutions, use either indicator.
+
+
+\subsection{Strong Acid Added to Strong Base}
+
+Forms a neutral solution at the equivalence point.
+
+Can use either indicator.
+
+For example, $\ce{HCl}$ added to $\ce{NaOH}$:
+
+$$
+\ce{H+ + OH- -> H2O}
+$$
+
+
+\subsection{Weak Acid Added to Strong Base}
+
+Forms a basic solution at the equivalence point.
+
+Must use an indicator that changes colour in the basic range.
+
+For example, $\ce{CH3COOH}$ added to $\ce{NaOH}$.
+
+The $\ce{CH3COO-}$ ion reacts with water to form a basic solution (hydrolysis
+of salts):
+
+$$
+\ce{CH3COO- + H2O <=> CH3COOH + OH-}
+$$
+
+
+\subsection{Strong Acid Added to Weak Base}
+
+Forms an acidic solution at the equivalence point.
+
+Must use an indicator that changes colour in the acidic range.
+
+For example, $\ce{HCl}$ added to $\ce{NH3}$ forms the salt $\ce{NH4Cl}$ (the
+neutralisation reaction).
+
+This dissociates into $\ce{NH4+}$ and $\ce{Cl-}$.
+
+The $\ce{NH4+}$ ion reacts with water to form an acidic solution (hydrolysis
+of salts);
+
+$$
+\ce{NH4+ + H2O <=> H3O+ + NH3}
+$$
 
 \end{document}

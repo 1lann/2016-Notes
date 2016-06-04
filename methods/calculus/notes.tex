@@ -117,7 +117,7 @@ $$
 The derivative of $e^{f(x)}$:
 
 $$
-\frac{d}{dx} e^{f(x)} = f(x)e^{f(x)}
+\frac{d}{dx} e^{f(x)} = f'(x)e^{f(x)}
 $$
 
 
@@ -221,7 +221,7 @@ $$
 The integral of $e^{f(x)}$ is:
 
 $$
-\int e^{f(x)} dx = \frac{e^{f(x)}}{f(x)}
+\int e^{f(x)} dx = \frac{e^{f(x)}}{f'(x)}
 $$
 
 
@@ -645,6 +645,8 @@ Find an equation to optimise.
 
 Differentiate and solve for turning points ($f'(x) = 0$).
 
+Must prove the turning point is a minimum/maximum using second derivative test.
+
 
 \subsection{Two Variables}
 
@@ -750,7 +752,13 @@ $$
 \frac{d}{dx} \int_a^b f(t) dt = 0
 $$
 
-As the definite integral will be a constant, resulting in a derivative of 0.
+As the definite integral will be a constant.
+
+When $x$ is in the upper limit of the integral:
+
+$$
+\frac{d}{dx} \int_a^x f(t) dt = f(x)
+$$
 
 
 \subsection{Definite Integrals with Chain Rule}
