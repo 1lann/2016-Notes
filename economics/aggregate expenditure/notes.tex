@@ -1,0 +1,812 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% AI files
+\usepackage{graphicx}
+\DeclareGraphicsRule{.ai}{pdf}{.ai}{}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.3cm}
+
+
+\begin{document}
+
+\title{Aggregate Expenditure}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Variables}
+
+\subsection{Autonomous Variable}
+
+A variable independent of the level of income.
+
+\subsection{Induced Variable}
+
+A variable influenced by the level of income.
+
+
+
+
+\section{Aggregate Expenditure}
+
+A measure of national income equal to the total value of all expenditures
+by all entities in an economy.
+
+Just under \$1.6 trillion in 2013 - 2014.
+
+
+
+
+\section{Consumption}
+
+Spending on all durable and non-durable goods and services.
+
+Autonomous consumption is the value of spending on all durable and non-durable
+goods and services when the level of national income is 0.
+
+
+\subsection{Size}
+
+56\% of aggregate expenditure.
+
+
+\subsection{Nature}
+
+Largest and most stable component of aggregate expenditure.
+
+This is because of autonomous consumption, which remains relatively stable over
+time as the goods and services that society deems necessities do not change
+rapidly.
+
+
+\subsection{Components}
+
+\subsubsection{Non Durable Goods}
+
+Goods that are consumed quickly after purchase.
+
+35\% of total consumption.
+
+
+\subsubsection{Durable Goods}
+
+Goods that are expected to last or provide satisfaction for three or more
+years after purchase.
+
+Spending tends to be discretionary, where purchases can be delayed or advanced
+depending on economic circumstances.
+
+15\% of total consumption, because:
+
+\begin{itemize}
+\item Last for a long time.
+\item Usually are more expensive than non durables.
+\item These factors mean durables have a low frequency of purchase.
+\end{itemize}
+
+
+\subsubsection{Services}
+
+Spending on non-commodities such as education, healthcare, and recreation.
+
+50\% of total consumption.
+
+
+\subsection{Breakeven}
+
+$$
+C = Y
+$$
+
+Consumption is at equilibrium (called the breakeven point) when consumption
+spending is equal to national income.
+
+
+\subsection{Consumption Function}
+
+$$
+C = a + bY
+$$
+
+Consumption can be split into its autonomous ($a$) and induced ($b$) components.
+
+Autonomous consumption ($a$) is spending to finance basic needs for survivial,
+which exists even when income is 0.
+
+
+\subsubsection{Marginal Propensity to Consume}
+
+$$
+\mbox{MPC} = \frac{\Delta C}{\Delta Y}
+$$
+
+$b$ is the marginal propensity to consume (MPC). It is the proportion of one
+additional dollar of income at the current level of national income that is
+spent on consumption.
+
+The MPC is a value between 0 and 1.
+
+As income rises, the MPC remains constant.
+
+
+\subsubsection{Average Propensity to Consume}
+
+$$
+\mbox{APC} = \frac{C}{Y}
+$$
+
+Average propensity to consume (APC) is the proportion of total income spent on
+consumption.
+
+As income rises, the APC falls.
+
+
+\subsubsection{Graph}
+
+\begin{description}
+\item [Y Axis] Consumption spending (\$)
+\item [X Axis] Income, output (\$)
+\item [Scale] The scale on each axis must be equal
+\item [Equilibrium Line] A line drawn at $45^\circ$ represents all possible
+	points of equilibrium (where $C = Y$).
+\item [Y Intercept] Autonomous spending
+\item [Gradient] The marginal propensity to consume
+\item [Breakeven] Where the consumption function intersects the $45^\circ$ line
+\end{description}
+
+A point on the $45^\circ$ line represents the level of output at that level of
+national income.
+
+
+\subsubsection{Inventories}
+
+The distance between the $45^\circ$ line and the consumption function is the
+change in inventories experienced by firms.
+
+A change in inventories will prompt firms to either increase or decrease
+output:
+
+\begin{itemize}
+\item When $C > Y$ and $S < 0$, inventories will fall, prompting firms to
+	increase output.
+\item When $C < Y$ and $S > 0$, inventories will increase, prompting firms to
+	decrease output.
+\end{itemize}
+
+
+\subsubsection{Changes}
+
+\begin{description}
+\item [Autonomous Consumption] The consumption function will shift parallel
+	(gradient remains constant, Y intercept changes).
+\item [MPC] The graph pivots about its Y intercept (gradient changes, Y
+	intercept remains constant as autonomous spending doesn't change).
+\end{description}
+
+
+\subsubsection{Solving for Breakeven}
+
+Find the consumption function and equate it to income ($Y$).
+
+For example, given the consumption function $C = 50 + 0.4Y$:
+
+$$
+\begin{aligned}
+Y & = 50 + 0.6Y \\
+0.4Y & = 50 \\
+Y & = 125 \\
+\end{aligned}
+$$
+
+Thus breakeven is at an income level of \$125.
+
+
+\subsection{Savings Function}
+
+$$
+S = -a + (1 - b)Y
+$$
+
+The savings function can be split into its autonomous ($-a$) and induced
+($1 - b$) components.
+
+\begin{description}
+\item [Dissavings] Where $S < 0$ (ie. $Y < C$), there is dissavings (where we
+	spend more than our income).
+\item [Autonomous] When $Y = 0$, no income is available to save, yet there is
+	still spending on autonomous consumption. Thus savings is negative autonomous
+	spending ($-a$).
+\item [Breakeven] When $C = Y$ (ie. breakeven point), $S = 0$, since we are
+	spending all our income on consumption, there is nothing
+\end{description}
+
+
+\subsubsection{Marginal Propensity to Save}
+
+$$
+\begin{aligned}
+\mbox{MPS} & = \frac{\Delta S}{\Delta Y} \\
+& = 1 - \mbox{MPC} \\
+\end{aligned}
+$$
+
+$1 - b$ is the marginal propensity to save (MPS). It is the proportion of one
+additional dollar of income at the current national income level that is saved.
+
+The MPS is a value between 0 and 1.
+
+As income rises, the MPS remains constant.
+
+
+\subsubsection{Average Propensity to Save}
+
+$$
+\mbox{APS} = \frac{S}{Y}
+$$
+
+The average propensity to save (APS) is the proportion of total income that is
+saved.
+
+As income rises, the APS rises.
+
+
+
+\subsubsection{Graph}
+
+\begin{description}
+\item [Y Intercept] Negative autonomous consumption
+\item [Gradient] The marginal propensity to save
+\item [X Intercept] Breakeven point (where $S = 0$ and $C = Y$)
+\item [Dissavings] Where savings is negative ($S < 0$ and $C > Y$)
+\item [Savings] Where savings is positive ($S > 0$ and $Y > C$)
+\end{description}
+
+
+\subsection{Factors Affecting}
+
+\subsubsection{Disposable Income}
+
+This is the most important factor that affects consumption.
+
+For an increase in disposable income:
+
+\begin{itemize}
+\item Increases a consumer's ability to purchase desired goods which are not
+	critical to their survival.
+\item Increases their MPC, increasing aggregate consumption.
+\end{itemize}
+
+For a redistribution of income to lower income households:
+
+\begin{itemize}
+\item Consumers individually all have different levels of consumption (ie.
+	different MPCs).
+\item Lower income households have a higher MPC due to a greater proportion of
+	their income being spent on necessities.
+\item Thus they are more likely to spend any additional disposable income,
+	rather than save it.
+\item An increase in their disposable income will increase aggregate
+	consumption.
+\end{itemize}
+
+
+\subsubsection{Interest Rates}
+
+For an increase in the interest rate:
+
+\begin{description}
+\item [New Debt] Credit becomes more difficult and expensive to obtain, causing
+	consumers to delay purchases they intended to finance through credit,
+	reducing consumption.
+\item [Existing Debt] Increases interest repayments on existing debt, reducing
+	disposable income and thus consumption.
+\end{description}
+
+
+\subsubsection{Taxation}
+
+Increased taxation rates by the government:
+
+\begin{itemize}
+\item Increases the personal income tax paid by consumers.
+\item Decreases their disposable income.
+\item Decreases their MPC, reducing aggregate consumption.
+\end{itemize}
+
+May increase government expenditure in the economy, slightly offseting the
+decrease in consumption in terms of total aggregate expenditure.
+
+
+\subsubsection{Assets}
+
+For a sudden fall in the value of a household's assets:
+
+\begin{itemize}
+\item Households will have a target level of assets and wealth at every stage
+	in their life.
+\item A sudden fall will prompt them to consolidate their financial position by
+	increasing their level of savings.
+\item This will increase their marginal propensity to save, decreasing their
+	marginal propensity to consume, and thus reducing consumption.
+\end{itemize}
+
+For a sudden increase in the value of a household's assets (eg. increase in
+stock market, property prices, commodity prices):
+
+\begin{itemize}
+\item Reduced emphasis on savings, decreasing the marginal propensity to save.
+\item Increases the marginal propensity to consume, increasing consumption.
+\end{itemize}
+
+
+\subsubsection{Expectations}
+
+Individual consumers' attitudes to the economy will affect their level of
+consumption, and thus aggregate consumption overall.
+
+Expectations are influenced by numerous factors, which can include:
+
+\begin{itemize}
+\item Levels of debt
+\item Employment stability
+\item Volatility of markets
+\end{itemize}
+
+Poor expectations will cause consumers to delay purchases until expectations
+improve, decreasing their MPC, reducing aggregate consumption.
+
+High expectations will make consumers more likely to make a higher frequency of
+purchases, likely of more expensive goods and services. This will increase their
+MPC, increasing aggregate consumption.
+
+
+
+
+\section{Investment}
+
+Spending on producer or capital goods that are used by firms to produce final
+goods and services.
+
+Funds for investment can be obtained from undistributed profits, share issues,
+or borrowing funds from financial markets.
+
+Assumed to be autonomous in the Keynesian model (doesn't change depending on
+the level of income).
+
+Expenditure on new housing by consumers is not consumption, but investment,
+as it increases the stock of physical capital.
+
+
+\subsection{Size}
+
+14 to 26\% of aggregate expenditure.
+
+
+\subsection{Nature}
+
+Investment is the most volatile component of aggregate expenditure.
+
+This is because the success of investment projects is based on unpredictable
+economic activity in the future. Causes volatility in the levels of investment
+in the economy.
+
+Over 50\% of small business ventures fail within the first 3 years.
+
+
+\subsection{Components}
+
+\begin{description}
+\item [Depreciation Investment] Investment to replace aging capital.
+\item [Additional Investment] New investment to increase the stock of physical
+	capital.
+\end{description}
+
+
+\subsubsection{Net Investment}
+
+Gross investment in the economy subtract depreciation investment.
+
+
+\subsection{Model}
+
+Investment can be modelled using an investment demand curve:
+
+\begin{description}
+\item [Y Axis] Real interest rates
+\item [X Axis] Quantity of investment
+\item [Gradient] The graph has a negative gradient, representing an inverse
+	relationship between interest rates and the level of investment.
+\end{description}
+
+Movements along the curve:
+
+\begin{description}
+\item [Expansion] A movement down the curve, increasing the quantity of
+	investment due to a decrease in interest rates.
+\item [Contraction] A movement up the curve, decreasing the quantity of
+	investment due to an increase in interest rates.
+\end{description}
+
+The curve itself is moved when a non interest rate factor changes, which has an
+effect on the level of investment.
+
+
+\subsubsection{Marginal Efficiency of Capital}
+
+Also called the net productivity of capital.
+
+Calculated by subtracting the cost of investment in new capital from the
+expected return of the investment (revenue from sales).
+
+The cost of investment is determined by:
+
+\begin{description}
+\item [Interest Rates] When the funds for the investment are borrowed, the cost
+	of investing is the interest repayments on the loan.
+\item [Opportunity Cost] When reinvesting profits (the value of other activity
+	funded by these profits which would be foregone by undertaking the
+	investment).
+\end{description}
+
+As interest rates fall, ceritus paribus:
+
+\begin{itemize}
+\item The cost of investing decreases.
+\item The expected return remains constant.
+\item The marginal efficiency of capital increases.
+\end{itemize}
+
+
+\subsection{Factors Affecting}
+
+\subsubsection{Expectations}
+
+Expectations is the main determinant of investment.
+
+Expectations are influenced by:
+
+\begin{description}
+\item [Sales and Profits] Strong sales increase the profit firms have available
+	to invest, and indicate that the investment is more likely to be successful.
+\item [Uncertainty] Investing involves the assessment of risk and uncertainty
+	in the economy. A higher degree of uncertainty will discourage investment.
+	Influenced by factors like political decisions, overseas events, and
+	changes in consumer preferences.
+\item [Competition] Increased competition will prompt a producer to consolidate
+	their position within a market, increasing investment to provide more
+	attractive goods and services.
+\item [Technology] A high level of advancement of technology in a producer's
+	industry may prompt them to invest in improving their own technologies, so
+	that they remain competitive in their industry and sustain profit levels.
+\item [World Events] Domestic natural diasters or international economic shocks
+	will reduce the level of investment due to increased market uncertainty
+	and potential falls in sales and profits.
+\item [Taxation] Increased government taxation in an industry will reduce the
+	expected return on investment, discouraging investment.
+\item [Government Policies] Increased rules and regulations in a certain
+	industry imposed by changing government policies discourages investment in
+	that industry.
+\item [Inflation] Increased levels of inflation will increase the cost of
+	investing by raising the price of capital equipment and potentially
+	increasing the interest rate, discouraging firms from investing. High
+	inflation also makes determining accurate costings for investment projects
+	more difficult, introducing uncertainty, discouraging investment.
+\end{description}
+
+
+\subsubsection{Real Interest Rate}
+
+Higher real interest rates:
+
+\begin{description}
+\item [Interest Repayments] Increase the cost of borrowing by increasing the
+	size of interest repayments.
+\item [Opportunity Cost] Increase the opportunity cost of the money used to
+	fund the investment, since the size of interest repayments becomes larger.
+\end{description}
+
+Interest rates are particularly influential in boom conditions, because:
+
+\begin{itemize}
+\item Strong sales, profits, and economic expectations encourage firms to
+	invest.
+\item This places increased emphasis on the cost of investing for firms, which
+	is determined by the interest rate.
+\item Thus the interest rate is more influential in changing the level of
+	investment in the economy.
+\item In a recession, poor economic expectations, sales, profits, and growth
+	discourage firms from even considering the affordability of investing.
+\end{itemize}
+
+
+\subsubsection{Output Levels}
+
+Decreasing sales and demand for a firm's output reduces the need to replace
+aging capital equipment (depreciation investment).
+
+This is the reverse condition of the accelerator principle.
+
+
+
+
+\section{Government Expenditure}
+
+The total amount of spending by the public sector.
+
+
+\subsection{Components}
+
+\begin{description}
+\item [G1] Expenditure that funds the day to day operating costs of the
+	government and its core functions.
+\item [G2] Expenditure on infrastructure or social overhead capital which
+	provides for the needs of society in the future.
+\end{description}
+
+
+\subsection{Expenditure Types}
+
+Structural expenditure involves ongoing spending commitments which do not
+change dramatically over time. Includes:
+
+\begin{description}
+\item [Allocative Role] Public goods and services (roads, education, healthcare,
+	etc).
+\item [Regulatory Role] Influence in business activity.
+\item [Redistributive Role] Welfare payments (Centrelink, aged pensions).)
+\end{description}
+
+Cyclical expenditure involves spending to stabilise the busines cycle.
+
+
+\subsection{Size}
+
+23\% of aggregate expenditure.
+
+
+\subsection{Nature}
+
+Very stable, second to consumption. This is because:
+
+\begin{description}
+\item [Compulsory] Much of the government's expenditure is compulsory, and must
+	be spent despite whatever economic circumstances prevail at the time.
+\item [Concerns] Government spending is also influenced by social and political
+	issues, rather than just economic ones.
+\end{description}
+
+
+\section{Factors Affecting}
+
+\begin{description}
+\item [Policies] The level of government expenditure is determined predominantly
+	by the prevailing government's policies.
+\item [Size] The size of government will affect the cost of wages for government
+	employees.
+\end{description}
+
+
+
+
+\section{Net Exports}
+
+Net exports is the total value of exports subtract the total value of imports.
+
+Exports are assumed to be autonomous in the Keynesian model.
+
+Imports are assumed to be induced, and are subtracted from aggregate expenditure
+as they represent activity for another economy, since money leaves Australia.
+
+
+\subsection{Size}
+
+-2\% of aggregate expenditure (imports exceed exports).
+
+Usually a deficit, sitting around -4\% of aggregate expenditure during the
+last boom phase.
+
+Reached a surplus of \$20 billion in 2011, following a balance of goods and
+services surplus in the current account.
+
+
+\subsection{Nature}
+
+Volatile component of aggregate expenditure, second to investment.
+
+This is because of exports:
+
+\begin{itemize}
+\item The majority of our exports are primary goods (eg.  iron ore, coal, and
+	natural gas account for 37\% of total exports).
+\item Demand for our exports is inelastic as these goods have few substitutes.
+\item Supply of our exports is inelastic as it requires expensive and time
+	consuming investment in infrastructure to increase productive capacity.
+\item Thus any small changes in demand or supply for our exports causes large
+	changes in price, but small changes in quantity.
+\item This causes large volatility in the value of our exports.
+\end{itemize}
+
+This volatility is made more severe by the volatility in the exchange rate.
+
+
+\subsection{Factors Affecting}
+
+\subsubsection{Structural Factors}
+
+\begin{description}
+\item [Exchange Rate] A depreciation in the exchange rate will increase the
+	competitiveness of our export industries, increasing export sales. It will
+	raise the price of imports for consumers, decreasing import sales. This
+	will increase net exports.
+\item [Terms of Trade] An unfavourable movement in our terms of trade will
+	decrease the total value of exports (due to inelastic demand), and increase
+	the value of imports. This will decrease net exports.
+\item [Trade Policy] An increase in the number of bilateral and multilateral
+	free trade agreements will increase export sales and import purchases,
+	affecting net exports.
+\end{description}
+
+
+\subsubsection{Cyclical Factors}
+
+\begin{description}
+\item [World Growth] Falling world growth (especially in China) has decreased
+	demand for exports, decreasing export sales and our net exports.
+\item [Domestic Growth] Strong domestic growth will increase imports due to
+	Australia's high marginal propensity to import, decreasing net exports.
+\item [Shocks] Natural disasters (drought, floods) and economic shocks (GFC)
+	causes volatility in the demand for exports and import, affecting net
+	exports.
+\end{description}
+
+
+
+
+\section{Multiplier Effect}
+
+A coefficient by which any injections or leakages (represented through an
+autonomous change in aggregate expenditure) in the economy are multiplied,
+resulting in a larger change in national income.
+
+
+\subsection{Concept}
+
+When an individual receives some form of income:
+
+\begin{itemize}
+\item Part of this income is spent on consumption (determined by the person's
+	marginal propensity to consume).
+\item The other part is saved (a leakage).
+\item The income spent on consumption becomes another individual's income.
+\item This action is repeated through a cyclical process.
+\item The resulting change in national income is much larger than the initial
+	increase in autonomous aggregate expenditure.
+\end{itemize}
+
+
+\subsection{Formula}
+
+$$
+\Delta \mbox{autonomous AE} \times k = \Delta Y
+$$
+
+Where $k$ is the multiplier coefficient.
+
+
+\subsubsection{Coefficient}
+
+The multiplier coefficient is determined by the size of the leakages in the
+economy.
+
+The simple multipler considers leakages only in the financial sector (ie. to
+savings):
+
+$$
+\begin{aligned}
+k & = \frac{1}{\mbox{MPS}} \\
+& = \frac{1}{1 - \mbox{MPC}} \\
+& = \frac{\Delta Y}{\Delta \mbox{autonomous AE}} \\
+\end{aligned}
+$$
+
+The complex multiplier considers other forms of leakages in addition to savings,
+such as tax and imports:
+
+$$
+k = \frac{1}{\mbox{MPS} + \mbox{MPT} + \mbox{MPM}}
+$$
+
+Where MPT is the marginal propensity of tax, and MPM is the marginal propensity
+to import.
+
+The complex multiplier will be smaller than the simple one, as more leakages
+are included.
+
+
+\subsection{Example}
+
+Consider an investment of \$100 into an economy where the MPC is 0.8:
+
+\begin{center}
+\begin{tabular}{c|c c c}
+Stage & Income & Consumption & Savings \\
+\hline
+Initial & \$100   & \$80    & \$20    \\
+2       & \$80    & \$64    & \$16    \\
+3       & \$64    & \$51.20 & \$12.80 \\
+4       & \$51.20 & \$40.96 & \$10.24 \\
+\end{tabular}
+\end{center}
+
+The stages in this table will continue indefinitely.
+
+The multiplier is:
+
+$$
+\begin{aligned}
+k & = \frac{1}{1 - \mbox{MPC}} \\
+& = \frac{1}{1 - 0.8} \\
+& = 5 \\
+\end{aligned}
+$$
+
+The final change in national income is:
+
+$$
+\begin{aligned}
+\Delta Y & = 100 \times 5 \\
+& = \$500 \\
+\end{aligned}
+$$
+
+
+\subsection{Model}
+
+The multiplier effect can be demonstrated on an aggregate expenditure diagram
+as a movement between the two points of equilibrium:
+
+\begin{itemize}
+\item From the intial equilibrium position, draw an arrow upwards the size of
+	the autonomous change in aggregate expenditure. This represents the initial
+	autonomous change in the economy (eg. an investment).
+\item Draw an arrow of equal size to the right. This represents the increase in
+	income for an individual due to this initial autonomous change.
+\item Draw an arrow up, smaller by a factor determined by the MPC. This
+	represents the second stage of consumption.
+\item Draw an arrow right of equal size. This represents the second stage
+	consumption forming another individual's income.
+\item Continue this with increasingly smaller arrows until we reach the new
+	equilibrium position.
+\end{itemize}
+
+
+\subsection{Reverse}
+
+The multiplier principle also operates in reverse, where an autonomous decrease
+in aggregate expenditure will have a reverse multiplier effect on national
+income.
+
+\end{document}

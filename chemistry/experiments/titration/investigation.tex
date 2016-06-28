@@ -1,0 +1,544 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+
+% Chemistry
+\usepackage{mhchem}
+\usepackage{chemfig}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+% Set style for diagrams
+\setdoublesep{0.35700 em}
+\setatomsep{1.78500 em}
+\setbondoffset{0.18265 em}
+\newcommand{\bondwidth}{0.06642 em}
+\setbondstyle{line width = \bondwidth}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+
+\begin{document}
+
+\title{Wine Acidity Investigation}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+
+
+\section{Aim}
+
+The aim of this investigation is to determine the total acidity of a sample of
+white wine, in both $\mbox{gL}^{-1}$ and percentage by mass.
+
+
+\section{Introduction}
+
+Wine consists of a number of acids that exist in varying concentrations. The
+most significant is tartaric acid, but others such as malic, lactic, and citric
+acid exist in lesser concentrations. For the purposes of this investigation, we
+will assume a wine sample consists of only tartaric acid, a weak diprotic
+acid. This will simplify our calculation of total acidity.
+
+Tartaric acid is shown below:
+
+\begin{center}
+\chemfig{C(=[:135]O)(-[:-135]HO)(-[:0]C(-[:90]OH)(-[:-90]H)(-[:0]C(-[:90]H)(-[:-90]OH)(-[:0]C(=[:45]O)(-[:-45]OH))))}
+\end{center}
+
+
+\section{Equipment}
+
+Required equipment for this investigation includes:
+
+\begin{itemize}
+\item White wine
+\item 50 mL burette
+\item 25 mL pipette
+\item 50 mL beaker
+\item 250 mL conical flask
+\item Distilled water
+\item Standardised $\ce{NaOH}$ solution
+\item Phenolphthalein indicator solution
+\item Pipette filler
+\item Retort stand
+\item Burette clamp
+\item Funnel
+\item Electronic scales
+\end{itemize}
+
+The concentration of the standard $\ce{NaOH}$ solution used in this experiment
+is $0.1016\mbox{ molL}^{-1}$, with an associated percentage uncertainty of
+$0.1\%$.
+
+
+\subsection{Indicator Justification}
+
+Tartaric acid is known to be a weak acid, which we are titrating against a
+strong base ($\ce{NaOH}$). Tartaric acid will react with the $\ce{NaOH}$
+solution according to the following equilibrium:
+
+$$
+\ce{
+\chemfig{C(=[:135]O)(-[:-135]HO)(-[:0]C(-[:90]OH)(-[:-90]H)(-[:0]C(-[:90]H)(-[:-90]OH)(-[:0]C(=[:45]O)(-[:-45]OH))))} +
+2OH- <=>
+\chemfig{C(=[:135]O)(-[:-135]O^{-})(-[:0]C(-[:90]OH)(-[:-90]H)(-[:0]C(-[:90]H)(-[:-90]OH)(-[:0]C(=[:45]O)(-[:-45]O^{-}))))} +
+2H2O
+}
+$$
+
+This produces tartrate dianions, the conjugate base of a weak acid. These will
+react with water according to the reverse reaction of the above equilibrium to
+produce excess $\ce{OH-}$ ions.
+
+This reduces the concentration of $\ce{H+}$ ions at the equivalence point,
+shifting it into the basic region. Thus we must chose an indicator such that
+the end point of the titration is also in the basic region.
+
+Phenolphthalein indicator changes colour in the pH range 8.2 to 10.0 (the basic
+region), making it suitable for this titration.
+
+It will change from colourless to pink, as the solution in the conical flask
+is initially acidic, but becomes basic as more $\ce{NaOH}$ is added.
+
+
+\subsection{Pipette Justification}
+
+A 25 mL pipette was selected for use in this experiment over a 20 mL one.
+
+Both pipettes have the same absolute uncertainty in their measurements
+($\pm 0.03\mbox{ mL}$). But, if we compare the percentage uncertainties for
+each pipette:
+
+$$
+\begin{aligned}
+\mbox{20 mL} & = \frac{0.03}{20} \times 100 \\
+& = 0.15\% \\
+\mbox{25 mL} & = \frac{0.03}{25} \times 100 \\
+& = 0.12\% \\
+\end{aligned}
+$$
+
+The 25 mL has a lower percentage uncertainty. Thus if the 25 mL pipette is
+used, our final result (the total acidity of the wine) will have a lower
+uncertainty associated with it, increasing its accuracy.
+
+This justifies the use of a 25 mL pipette over a 20 mL one.
+
+
+\section{Procedure}
+
+To conduct this investigation:
+
+\begin{enumerate}
+\item Rinse the funnel with the $\ce{NaOH}$ solution.
+\item Using the funnel, rinse the burette with the $\ce{NaOH}$ solution.
+\item Rinse the 50 mL beaker with white wine.
+\item Fill the 50 mL beaker with white wine.
+\item Rinse the pipette using the pipette filler with white wine from the
+	beaker
+\item Set up the equipment as shown in the diagram below.
+\item Rinse the conical flask with distilled water twice.
+\item Place the conical flask on the set of scales and record its mass.
+\item Measure a 25 mL aliquot of white wine from the beaker using the pipette
+	and pipette filler.
+\item Empty the contents of the pipette into the conical flask.
+\item Record the mass of the conical flask and white wine together.
+\item Add 2 drops of phenolphthalein indicator into the conical flask.
+\item Place the conical flask under the burette as in the diagram.
+\item Record the initial volume of $\ce{NaOH}$ in the burette.
+\item Open the burette tap to add $\ce{NaOH}$ solution to the conical flask
+	while swirling the flask with the other hand, to ensure $\ce{NaOH}$ is
+	evenly distributed throughout the solution.
+\item Close the tap just as the solution changes colour permanently.
+\item Record the final volume of $\ce{NaOH}$ in the burette.
+\item Subtract the initial volume from the final volume to calculate the titre
+	titre volume.
+\item Repeat steps 7 to 18 until three concordant results are obtained, using
+	this initial rough titre volume as an indication of when to slow the flow
+	of $\ce{NaOH}$ solution from the burette to obtain a more accurate titre
+	volume. Ignore the instructions to calculate the mass of white wine any
+	additional times.
+\item Average the three concordant results to obtain the average titre volume.
+\end{enumerate}
+
+% For diagram
+\pagebreak
+
+
+\subsection{Dilution Justification}
+
+Commonly in titrations, the solution of unknown concentration is diluted before
+use in order to achieve an average titre volume between 20 and 25 mL.
+
+The wine is known to have a total acidity between $6.0\mbox{ gL}^{-1}$ and
+$8.5\mbox{ gL}^{-1}$.
+
+If the total acidity of the wine is $6.0\mbox{ gL}^{-1}$, the expected average
+titre volume, assuming no dilution is performed, is:
+
+$$
+\begin{aligned}
+\big[\mbox{tartaric}\big] & = \frac{6.0}{150.088} \\
+& = 0.03998\mbox{ molL}^{-1} \\
+n(\mbox{tartaric}) & = 0.025 \times 0.03998 \\
+& = 0.0009995\mbox{ mol} \\
+n(\ce{NaOH}) & = 0.0009995 \times 2 \\
+& = 0.001999 \\
+V(\ce{NaOH}) & = \frac{0.001999}{0.1016} \\
+& = 19.68\mbox{ mL} \\
+\end{aligned}
+$$
+
+If the total acidity of the wine is $8.5\mbox{ gL}^{-1}$, the expected average
+titre volume, assuming no dilution is performed, is:
+
+$$
+\begin{aligned}
+\big[\mbox{tartaric}\big] & = \frac{8.5}{150.088} \\
+& = 0.05663\mbox{ molL}^{-1} \\
+n(\mbox{tartaric}) & = 0.025 \times 0.05663 \\
+& = 0.001416\mbox{ mol} \\
+n(\ce{NaOH}) & = 0.001416 \times 2 \\
+& = 0.002832 \\
+V(\ce{NaOH}) & = \frac{0.002832}{0.1016} \\
+& = 27.87\mbox{ mL} \\
+\end{aligned}
+$$
+
+Thus the expected average titre volume, assuming no dilution is performed, will
+lie between 19.68 mL and 27.87 mL, which is sufficiently close to our desired
+range of 20 mL to 25 mL to justify not performing any dilution.
+
+
+\section{Uncertainty}
+
+Measurements from the burette have an uncertainty of $\pm 0.05\mbox{ mL}$.
+
+Measurements from the pipette have an uncertainty of $\pm 0.03\mbox{ mL}$.
+
+The uncertainty in the concentration of the standardised $\ce{NaOH}$ solution
+is $\pm 0.1\%$. This is a fractional uncertainty of $\frac{0.1}{100} = 0.001$.
+
+Measurements from the set of scales have an uncertainty of
+$\pm 0.005\mbox{ g}$.
+
+The mass of 25 mL of wine was measured by subtracting the mass of the conical
+flask from the mass of the conical flask and sample of wine. Thus the
+uncertainty in this measurement is twice the uncertainty in a single
+measurement from the set of scales.
+
+Similarly, the final titre volume was calculated by subtracting the initial
+volume in the burette from the final volume. Thus the uncertainty in this
+measurement is also twice the uncertainty in a single measurement from the
+burette.
+
+
+\section{Results}
+
+The mass of 25 mL of wine is $24.63 \pm 0.01\mbox{ g}$.
+
+\makebox[\textwidth][c]{
+\begin{tabular}{c|c c c c c}
+& Rough Titre & Titre 1 & Titre 2 & Titre 3 & Titre 4 \\
+\hline
+Initial Volume ($\pm 0.05\mbox{ mL}$) &  0.40 &  0.90 &  0.70 &  0.40 &  0.90 \\
+Final Volume ($\pm 0.05\mbox{ mL}$)   & 24.65 & 26.15 & 25.90 & 25.10 & 26.10 \\
+Titre Volume ($\pm 0.10\mbox{ mL}$)   & 24.25 & 25.25 & 25.20 & 24.70 & 25.20 \\
+\end{tabular}
+}
+
+Titre 1, 2, and 4 are concordant, and give an average titre volume of:
+
+$$
+\begin{aligned}
+& = \frac{25.25 + 25.20 + 25.20}{3} \\
+& = 25.22 \pm 0.10 \mbox{ mL} \\
+\end{aligned}
+$$
+
+
+\section{Concentration Calculation}
+
+We have the following measurements:
+
+$$
+\begin{aligned}
+V(\ce{NaOH}) & = 25.22 \pm 0.10\mbox{ mL} \\
+\big[\ce{NaOH}\big] & = 0.1016 \pm 0.0001\mbox{ molL}^{-1} \\
+V(\mbox{tartaric}) & = 25.00 \pm 0.03\mbox{ mL} \\
+m(\mbox{wine}) & = 24.63 \pm 0.01\mbox{ g} \\
+\end{aligned}
+$$
+
+The equilibrium reaction occurring is:
+
+$$
+\ce{
+\chemfig{C(=[:135]O)(-[:-135]HO)(-[:0]C(-[:90]OH)(-[:-90]H)(-[:0]C(-[:90]H)(-[:-90]OH)(-[:0]C(=[:45]O)(-[:-45]OH))))} +
+2OH- <=>
+\chemfig{C(=[:135]O)(-[:-135]O^{-})(-[:0]C(-[:90]OH)(-[:-90]H)(-[:0]C(-[:90]H)(-[:-90]OH)(-[:0]C(=[:45]O)(-[:-45]O^{-}))))} +
+2H2O
+}
+$$
+
+
+To determine the total acidity of the wine in $\mbox{gL}^{-1}$:
+
+$$
+\begin{aligned}
+n(\ce{NaOH}) & = 0.02522 \times 0.1016 \\
+& = 0.002562\mbox{ mol} \\
+n(\mbox{tartaric}) & = 0.5 \times n(\ce{NaOH}) \\
+& = 0.001281\mbox{ mol} \\
+M(\mbox{tartaric}) & = 4 \times 12.01 + 6 \times 16 + 6 \times 1.008 \\
+& = 150.088\mbox{ gmol}^{-1} \\
+m(\mbox{tartaric}) & = 0.001281 \times 150.088 \\
+& = 0.1923\mbox{ g} \\
+\big[\mbox{tartaric}\big] & = \frac{0.1923}{0.02500} \\
+& = 7.692\mbox{ gL}^{-1} \\
+\end{aligned}
+$$
+
+The percentage mass of tartaric acid in the wine is, using the mass of tartaric
+acid calculated above:
+
+$$
+\begin{aligned}
+\%(\mbox{tartaric}) & = \frac{0.1923}{24.63} \times 100 \\
+& = 0.7808\% \\
+\end{aligned}
+$$
+
+
+\subsection{Uncertainty}
+
+The uncertainty in the total acidity of the wine is the combination of the
+uncertainty in the average titre volume, $\ce{NaOH}$ solution concentration,
+and pipette:
+
+$$
+\begin{aligned}
+\mbox{fractional} & = \frac{0.10}{25.22} + 0.001 + \frac{0.03}{25.00} \\
+& = 0.006165 \\
+\mbox{absolute} & = 0.006165 \times 7.692 \\
+& = 0.047 \\
+\end{aligned}
+$$
+
+The total acidity of the wine, including the associated uncertainty, is
+$7.692 \pm 0.047\mbox{ gL}^{-1}$.
+
+The uncertainty in the percentage mass of tartaric acid is the combination of
+the uncertainty in the average titre volume, $\ce{NaOH}$ solution concentration,
+and the mass of wine:
+
+$$
+\begin{aligned}
+\mbox{fractional} & = \frac{0.10}{25.22} + 0.001 + \frac{0.01}{24.63} \\
+& = 0.005371 \\
+\mbox{absolute} & = 0.005371 \times 0.7808 \\
+& = 0.0042 \\
+\end{aligned}
+$$
+
+The percentage mass of tartaric acid in the wine, including the associated
+uncertainty, is $0.7808 \pm 0.0042\%$.
+
+
+\section{Errors}
+
+\subsection{Rinsing}
+
+\subsubsection{Burette}
+
+The burette was correctly rinsed using the $\ce{NaOH}$ solution in this
+experiment.
+
+Had it been rinsed with distilled water instead, this would have diluted the
+$\ce{NaOH}$ solution later added to it. This would increase the volume of $\ce{NaOH}$ required to
+neutralise the acid in the wine sample, increasing the average titre volume.
+This would have increased the apparent number of moles of tartaric acid in the
+sample of wine, increasing the calculated total acidity and percentage mass.
+
+Had it been rinsed with wine, this would have
+also reduced the concentration of the $\ce{NaOH}$ solution, as acid present
+in the wine would react with the $\ce{OH-}$ ions from the $\ce{NaOH}$ solution,
+decreasing the concentration of $\ce{OH-}$ ions in the solution. This would increase the
+volume of solution required to neutralise the acid in the wine sample, increasing the
+average titre volume and thus the calculated total acidity and percentage mass.
+
+
+\subsubsection{Pipette}
+
+The pipette was correctly rinsed with the wine in this experiment.
+
+Had it been rinsed with distilled water, this would have diluted the wine sample
+added to the conical flask, reducing the number of moles of tartaric acid
+present in the sample. This would have decreased the moles of $\ce{NaOH}$
+required to neutralise the sample and reach the equivalence point, decreasing
+the average titre volume. This would decrease the calculated total acidity and
+percentage mass.
+
+Had it been rinsed with $\ce{NaOH}$ solution, this would react with the wine
+solution later added to the pipette, reducing the concentration of tartaric
+acid in the wine. This would reduce the number of moles of $\ce{NaOH}$ required
+to neutralise the remaining tartaric acid in the sample during
+titration, decreasing the average titre volume. This would decrease the
+calculated total acidity and percentage mass.
+
+
+\subsubsection{Conical Flask}
+
+The conical flask was correctly rinsed with distilled water in this experiment.
+
+Had it been rinsed with wine instead, this would have increased the number of
+moles of tartaric acid in the conical flask, requiring more moles of
+$\ce{NaOH}$ to neutralise it during the titration. This would increase the
+average titre volume, increasing the calculated percentage mass and total
+acidity.
+
+Had it been rinsed with $\ce{NaOH}$ solution, this would have reacted with the
+wine sample when added, reducing the concentration of tartaric acid in the
+sample. This would result in fewer moles of $\ce{NaOH}$ required to neutralise
+the solution, reducing the average titre volume, decreasing the calculated
+total acidity and percentage mass.
+
+
+\subsection{Indicator Choice}
+
+An indicator was chosen in this investigation such that the end point was in the
+basic region, in order to be close to the equivalence point.
+
+Consider if we had selected an indicator (like methyl orange or bromophenol blue) such that the end point of the
+titration was in the acidic region. Since the solution in the conical flask was initially acidic, the end
+point would occur before the equivalence point, decreasing the volume of $\ce{NaOH}$
+solution added before the wine sample changes colour, decreasing the average
+titre volume. This would decrease the apparent moles of tartaric acid in the sample of wine,
+decreasing the calculated total acidity and percentage mass.
+
+
+\subsection{Systematic Errors}
+
+Systematic errors involve uncertainty in measurements due to inherent flaws
+in the measuring equipment.
+
+
+\subsubsection{Calibration Error}
+
+There is a degree of error in the manufacture of glassware such as the burette,
+conical flask, and pipette used in the experiment, as the manufacturing
+processes used to produce these pieces of equipment cannot be infinitely
+accurate. This decreases the accuracy of readings taken from these devices,
+causing a certain uncertainty to be associated with every measurement. This
+increases the uncertainty in our final calculated total acidity and percentage
+mass. This decreases the overall accuracy of our experiment.
+
+
+\subsection{Random Errors}
+
+Random errors involve uncertainty in measurements due to inaccuracy in taking a
+reading from a piece of equipment.
+
+
+\subsubsection{Poor Technique}
+
+Poor pipetting or titrating technique will decrease the accuracy of our results.
+
+In regards to pipetting, if we had aligned the top of the wine's meniscus
+to the measuring mark on the pipette, instead of the bottom, this would have resulted in less than 25 mL
+of wine in the conical flask. This would have decreased our average titre
+volume as less moles of $\ce{NaOH}$ would be required to neutralise the sample,
+decreasing our calculated percentage mass and total acidity.
+
+In regards to titrating using the burette, if we had not controlled the flow of
+$\ce{NaOH}$ solution from the burette properly by opening the tap too far such
+that the solution poured out too fast, we
+may have not accurately closed the tap just as the indicator changed colour.
+This would result in too much solution being added to the conical flask,
+increasing our average titre volume and thus the calculated percentage mass and
+total acidity.
+
+Another potential issue is failing to effectively distribute the added $\ce{NaOH}$
+solution throughout the wine sample in the conical flask by failing to swirl the flask properly.
+This increases the difficulty in determining when the indicator has permanently
+changed colour, decreasing our accuracy in closing the tap on the burette once
+the end point has been reached. This decreases the accuracy of our average
+titre volume, and calculated total acidity and percentage mass.
+
+
+\subsubsection{Human Error}
+
+Another source of random error in the experiment is in relation to reading
+values off measuring devices such as the pipette and burette. There is a degree
+of uncertainty associated with our ability to take effective measurements from
+equipment, as our eyes are not infinitely accurate. This leads to uncertainty
+in the volume of wine added to the conical flask (due to inaccuracy when using
+the pipette), and the average titre volume (due to inaccuracy when using the
+burette). This increases the uncertainty in our final calculated percentage
+mass and total acidity.
+
+Another factor that would contribute to this is parallax. This is where the position of
+an object or line relative to a measuring device changes when viewed from
+different positions. This makes reading measurements from the burette and
+pipette more difficult for the human eye, contributing to the uncertainty
+associated with these measurements.
+
+
+\section{Reliability}
+
+For an experiment to be reliable, it must be readily reproducible by an
+independent third party using the same method to produce very similar
+results. This is usually achieved through repetition of the experiment to
+record multiple trials, which are then averaged.
+
+Our experiment included averaging three concordant results from separate
+trials, making it reasonably reliable.
+
+
+\section{Accuracy}
+
+Accuracy is a measure of how close our results are to an accepted value.
+
+The percentage uncertainty in our final total acidity was:
+
+$$
+\begin{aligned}
+& = \frac{0.047}{7.692} \times 100 \\
+& = 0.6110\%
+\end{aligned}
+$$
+
+This is a relatively small value, indicating our results are likely to be
+reasonably accurate.
+
+
+\section{Validity}
+
+Validity is a measure of how well an experiment tests a hypothesis. This includes
+assessing its reliability and accuracy.
+
+Since this experiment (like many in Chemistry) did not test a hypothesis, but
+rather performed an analysis, validity is not an applicable consideration.
+
+
+\section{Conclusion}
+
+We successfully achieved our aim of determining the total acidity of a sample
+of white wine, expressing it both as a concentration in $\mbox{gL}^{-1}$ and
+a percentage mass.
+
+We determined the total acidity to be $7.692 \pm 0.047\mbox{ gL}^{-1}$, and
+the percentage mass to be $0.7808 \pm 0.0042\%$.
+
+We also concluded that our experiment was both reasonably reliable and
+accurate.
+
+\end{document}

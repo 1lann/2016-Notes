@@ -163,6 +163,8 @@ $\bb{b}$, called the normal.
 The cross product of two parallel vectors (like or unlike parallel) is 0 (as
 the angle between them is 0).
 
+The cross product of a vector with itself is 0.
+
 
 \subsubsection{Area of Parallelogram}
 
@@ -538,6 +540,78 @@ $$
 (x - a)^2 + (y - b)^2 & = r^2 \cos^2{\theta} + r^2 \sin^2{\theta} \\
 (x - a)^2 + (y - b)^2 & = r^2 \\
 \end{aligned}
+$$
+
+
+
+
+\section{Ellipses}
+
+2D only.
+
+
+\subsection{Parametric Equation}
+
+An ellipse with centre $(a, b)$, horizontal radius $r_h$ and vertical radius
+$r_v$ has the parametric equation:
+
+$$
+\begin{cases}
+\begin{aligned}
+x & = r_h \cos{\lambda} + a \\
+y & = r_v \sin{\lambda} + b \\
+\end{aligned}
+\end{cases}
+$$
+
+
+\subsection{Cartesian Equation}
+
+An ellipse with centre $(a, b)$, horizontal radius $r_h$ and vertical radius
+$r_v$ has the Cartesian equation:
+
+$$
+(\frac{x - a}{r_h})^2 + (\frac{y - b}{r_v})^2 = 1
+$$
+
+
+\subsection{Conversions}
+
+\subsubsection{Parametric to Cartesian}
+
+Given the parametric equation for an ellipse:
+
+$$
+\begin{cases}
+\begin{aligned}
+x & = r_h \cos{\lambda} + a \\
+y & = r_v \sin{\lambda} + b \\
+\end{aligned}
+\end{cases}
+$$
+
+Move $a$ and $b$ to the left hand side of the equations and divide by the
+radii:
+
+$$
+\begin{cases}
+\begin{aligned}
+\frac{x - a}{r_h} & = \cos{\lambda} \\
+\frac{y - b}{r_v} & = \sin{\lambda} \\
+\end{aligned}
+\end{cases}
+$$
+
+Square each equation and add them together:
+
+$$
+(\frac{x - a}{r_h})^2 + (\frac{y - b}{r_v})^2 = \cos^2{\lambda} + \sin^2{\lambda}
+$$
+
+Use the Pythagorean identity to eliminate $\lambda$:
+
+$$
+(\frac{x - a}{r_h})^2 + (\frac{y - b}{r_v})^2 = 1
 $$
 
 
@@ -1132,19 +1206,15 @@ Find the distance between the two centres, then subtract both radii.
 
 \section{Closest Approach}
 
-The closest distance between two objects travelling in defined paths.
+The closest distance between two objects travelling in defined paths. Cannot
+use above methods, as the position of the objects depends on the time.
 
-Cannot be solved as above, as the objects may be at different locations at a
-certain time.
+For two objects travelling in straight lines, this can be solved using relative
+velocities and the methods above.
 
-Requires calculus to solve.
-
-
-\subsection{Approach}
-
-Find an expression for the distance between the two objects at time $t$.
-
-Minimise the function using calculus.
+For objects not travelling in straight lines, requires calculus to solve.
+Find an expression for the distance between the two objects at any time, then
+minimise this function.
 
 
 \subsection{Lines}
@@ -1158,9 +1228,97 @@ $$
 \end{aligned}
 $$
 
-The distance between them is $\lvert \bb{r}_1 - \bb{r}_2 \rvert$.
+Find the position of object 2 relative to object 1, $_2\bb{r}_1$.
 
-Minimise this function for $t$ using calculus to determine the minimum distance
-between them.
+Find the velocity of object 2 relative to object 1, $_2\bb{v}_1$.
+
+Form an equation of motion for object 2 relative to object 1:
+
+$$
+\bb{r} = \'_2\bb{r}_1 + \'_2\bb{v}_1
+$$
+
+Minimise the distance between this line and the origin (the location of object
+1) to find the closest time and distance they are apart.
+
+
+
+
+\section{Vector Calculus}
+
+\subsection{Derivative}
+
+Given the vector function:
+
+$$
+\bb{r} = \binom{2 + 3t}{3t + t^2}
+$$
+
+Derive each component of the vector function to find its derivative:
+
+$$
+\frac{d\bb{r}}{dt} = \binom{3}{3 + 2t}
+$$
+
+
+\subsection{Indefinite Integral}
+
+Given the vector function:
+
+$$
+\bb{r} = \binom{2 + 4t}{8t + 3t^2}
+$$
+
+Integrate each component to find its indefinite integral:
+
+$$
+\int \bb{r} dt = \binom{2t + 2t^2 + c_1}{4t^2 + t^3 + c_2}
+$$
+
+
+\subsection{Definite Integral}
+
+Find the indefinite integral, then perform the subtraction similar to one
+dimensional calculus.
+
+
+\subsection{Rectilinear Motion}
+
+\subsubsection{Distance Travelled}
+
+The distance travelled by a body moving with a velocity between two moments in
+time is the definite integral of the magnitude of the velocity function:
+
+$$
+\int_{t_1}^{t_2} \lvert \bb{v}(t) \rvert dt
+$$
+
+
+\subsubsection{Circular or Elliptical Motion}
+
+For a body travelling in a circle or an ellipse around a fixed point.
+
+The velocity is perpendicular to the acceleration and to the direction of
+motion:
+
+$$
+\begin{aligned}
+\bb{v} \cdot \bb{r} & = 0
+\bb{v} \cdot \bb{a} & = 0
+\end{aligned}
+$$
+
+
+\subsubsection{Graphing Circular Motion}
+
+To indicate the direction of motion, find $\bb{r}(0)$ to find the initial
+position of the body, then find $\bb{r}(1)$ to find where it moves to next,
+indicating its direction of motion.
+
+
+\subsubsection{Projectile Motion}
+
+To find the maximum height reached, solve for when the $\bb{j}$ component of
+the velocity is 0.
 
 \end{document}
