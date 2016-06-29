@@ -48,7 +48,7 @@
 
 An investigation into bridge design, accompanied by the construction and testing
 of a bridge produced from spaghetti, with the aim of achieving the highest load
-to mass ratio in the cohort.
+to mass ratio in the class.
 
 
 
@@ -57,19 +57,180 @@ to mass ratio in the cohort.
 
 \subsection{Forces}
 
-\subsubsection{Tensile Strength}
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{figures/forces.png}
+\end{center}
+\caption{Tension, compression, and shear forces}
+\label{research:forces}
+\end{figure}
 
-\subsubsection{Flexural Strength}
+The most important consideration in designing a bridge is to enable it to
+carry a sufficient load in order to prevent it from collapsing.
+Bridges are designed in order to reduce the forces acting in different
+components when a load force is applied, because applying stresses on a
+component beyond what is it capable of withstanding will likely cause the bridge
+to fail.
+
+There are two main forces which components in a bridge will experience: tension
+and compression. See Figure \ref{research:forces}.
+
+
+\subsubsection{Tension}
+
+When a component of a bridge is under tension, the component experiences a
+pulling force exerted in opposite directions on each end.
+
+Tension is sustained by electrostatic attraction between atoms in the material.
+If the tension force experienced by the component exceeds the maximum restoring
+force that can be provided by this electrostatic attraction, the component will
+fail.
+
+
+\subsubsection{Compression}
+
+Compression is where a component of the bridge experiences a ``pushing" force
+inwards.
+
+Compression is sustained by electrostatic repulsion between atoms in the
+material.
+It may cause the material to buckle and fail if the compression force exceeds
+the maximum the material can withstand.
+
+
+\subsubsection{Shear}
+
+A shear force is one with a component in the plane perpendicular to the
+material's surface.
+
+
+\subsubsection{Torsion}
+
+A torsion force is one that exerts a twisting moment in a component of the
+bridge.
+
+
+\subsubsection{Young's Modulus}
+
+Young's modulus is a measure of a material's ability to withstand tension forces
+(a measure of tensile strength), and is defined as the ratio of stress over
+strain in a plane parallel to the material.
+
+Spaghetti has relatively high Young's Modulus, with a value of 69 GPa,
+comparable to that of aluminium.
+
+
+\subsubsection{Compressive Strength}
+
+The compressive strength of spaghetti, although still relatively high, is
+smaller than its tensile strength.
+Spaghetti can withstand approximately 7.5 times less force under compression
+when compared to tension.
+
+Spaghetti's compressive strength also depends upon the length of the segment, as
+shorter pieces are able to withstand higher compression forces before buckling
+and breaking.
+This can be demonstrated by observing the formula for buckling strength:
+
+$$
+F = k \frac{d^4}{l^2}
+$$
+
+Where $d$ is the diameter of the spaghetti strand, $l$ its length, and $k$ the
+constant of proportionality.
+
+$F$ is inversely proportional to the square of the length of the spaghetti
+strand.
+Thus halving the length of a piece of spaghetti quadruples its buckling
+strength.
+
 
 \subsubsection{Shear Strength}
 
+Shear strength is a measure of a material's ability to withstand shear forces (a
+measure of shear strength), and is defined as the ratio of shear stress over
+shear strain in a plane perpendicular to the material.
+
+Spaghetti has a relatively low shear strength, with a value of only 0.4 GPa,
+compared to aluminium's 25.5 GPa.
+This is about 99.42\% less than its tensile strength.
+
+
+\subsubsection{Torsion Strength}
+
+Spaghetti also has a relatively low torsion strength, shattering if exposed to
+such forces.
+
+
+\subsubsection{Conclusions}
+
+From this information regarding the tensile and shear strength of spaghetti, we
+can conclude that a bridge design that maximises tension and compression forces
+on the spaghetti, and minimises shearing an torsion forces, will be most
+effective in achieving a high load to mass ratio.
+
+Additionally, the compressive strength of spaghetti is approximately 7.5 times
+worse than its tensile strength. Thus maximising tension forces over compression
+will also aid in increasing the bridge's load to mass ratio.
+
+
 \subsection{Features of Bridges}
+
+There are many varied bridge designs that exist, but most have some common
+features due to their proven strength.
+
 
 \subsubsection{Triangles}
 
-\subsubsection{Arcs}
+Most bridges feature triangular shapes throughout the design, due to the
+inherent structural characteristics unique to this polygon.
+
+Triangles are inherently strong because they are the only polygon in which the
+a change in any of the 3 angles must cause a change in its corresponding side.
+Thus the force required to change a triangle's shape is equivalent to the force
+required to deform a side of the triangle.
+The strength of other polygons depends only the strength of their corners (for
+example, a rectangle can become a parallelogram through only a change in the
+corner angles).
+
+This inherent strength in their geometry has resulted in their pervasive use
+throughout bridge design.
+
+
+\subsubsection{Arches}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{figures/arch.png}
+\end{center}
+\caption{Forces acting on an arch}
+\label{research:arch}
+\end{figure}
+
+Many bridge designs also depend on the strength of semi-cirular or parabolic
+arcs in distributing compressive forces to abutments on the ground either side
+of the bridge.
+
+A load force placed on an arch induces a compression force within each segment
+of the arch, eventually exerting a force on the abutments, which in turn exert
+a reaction force on the bridge.
+This distributes the load force to the ground.
+
+See Figure \ref{research:arch} for a diagramatic representation of these forces.
+The load force $F_L$ causes compression in the arch, causing the abutments to
+exert reaction forces $R_A$ and $R_B$ on the bridge.
+
+
+\subsection{Bridge Designs}
+
+Of the innumerous bridge designs in existence, only a few were decidedly
+feasible to construct from spaghetti.
+
 
 \subsection{Beam Bridge}
+
+A beam bridge is one of the simplest designs in existence.
+
 
 \subsection{Truss Bridge}
 
@@ -77,12 +238,15 @@ to mass ratio in the cohort.
 
 \subsubsection{Warren Truss}
 
-\subsection{Suspension Bridge}
+\subsection{Arch Bridge}
 
-\subsection{Through Arch Bridge}
-
-
-SOURCES OF ERROR IN EACH PRETEST
+These forces cause the arch to push outwards horizontally on its base, called
+thrust.
+As the height of the arch ($h$ in the diagram) decreases, the thrust increases.
+Thrust must be kept at a managable level in order to prevent the bridge from
+collapsing.
+This is usually achieved either through external bracing (abutments), or
+internal spokes.
 
 
 
@@ -690,7 +854,7 @@ Load (kg) & Load to Mass \\
 \begin{center}
 \includegraphics[width=10cm]{figures/bundles.png}
 \end{center}
-\caption{Load to mass ratio vs. bundle size.}
+\caption{Load to mass ratio vs. bundle size}
 \label{bundles:graph}
 \end{figure}
 
@@ -712,7 +876,7 @@ This phenomenon can be explained by packing theory in mathematics.
 \begin{center}
 \includegraphics[width=5cm]{figures/bundle-3.png}
 \end{center}
-\caption{Circle packing where $n = 3$.}
+\caption{Circle packing where $n = 3$}
 \label{bundles:bundle-3}
 \end{figure}
 
@@ -720,7 +884,7 @@ This phenomenon can be explained by packing theory in mathematics.
 \begin{center}
 \includegraphics[width=10cm]{figures/density.png}
 \end{center}
-\caption{Packing density vs. number of smaller circles.}
+\caption{Packing density vs. number of smaller circles}
 \label{bundles:density}
 \end{figure}
 
@@ -798,9 +962,9 @@ for the smaller size of these testing bridges:
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{figures/config-photo.png}
+\includegraphics[width=\textwidth]{figures/config-photo.png}
 \end{center}
-\caption{A photograph of the arch and truss bridges.}
+\caption{A photograph of the arch and truss bridges}
 \label{config:photo}
 \end{figure}
 
@@ -892,7 +1056,7 @@ $$
 \begin{center}
 \includegraphics[width=5cm]{figures/arch-2.png}
 \end{center}
-\caption{The forces in an arch bridge.}
+\caption{The forces in an arch bridge}
 \label{config:arch}
 \end{figure}
 
@@ -900,7 +1064,7 @@ $$
 \begin{center}
 \includegraphics[width=5cm]{figures/truss-1.png}
 \end{center}
-\caption{The forces in a truss bridge.}
+\caption{The forces in a truss bridge}
 \label{config:truss}
 \end{figure}
 
@@ -1029,7 +1193,7 @@ between consecutive radii is $\frac{180}{7}$:
 $$
 \begin{aligned}
 & = \sqrt{2 \times 5^2 - 2 \times 5^2 \times \cos{\frac{180}{7}}} \\
-& = 2.225 \\
+& = 2.225\mbox{ units} \\
 \end{aligned}
 $$
 
@@ -1192,7 +1356,7 @@ Compression (N) \\
 \begin{center}
 \includegraphics[width=10cm]{figures/spokes.png}
 \end{center}
-\caption{Average Spoke Tension vs. Number of Arch Segments}
+\caption{Average spoke tension vs. number of arch segments}
 \end{figure}
 
 
@@ -1200,7 +1364,7 @@ Compression (N) \\
 \begin{center}
 \includegraphics[width=10cm]{figures/segments.png}
 \end{center}
-\caption{Average Segment Compression vs. Number of Arch Segments}
+\caption{Average segment compression vs. number of arch segments}
 \end{figure}
 
 
@@ -1229,7 +1393,7 @@ number of segments.
 \begin{center}
 \includegraphics[width=5cm]{figures/arch-1.png}
 \end{center}
-\caption{An arch with 8 segments.}
+\caption{An arch with 8 segments}
 \label{arch:8-segments}
 \end{figure}
 
@@ -1237,7 +1401,7 @@ number of segments.
 \begin{center}
 \includegraphics[width=5cm]{figures/arch-2.png}
 \end{center}
-\caption{An arch with 7 segments.}
+\caption{An arch with 7 segments}
 \label{arch:7-segments}
 \end{figure}
 
@@ -1291,18 +1455,399 @@ Thus we chose to build an arch of 11 arch segments, because:
 
 
 
+
 \section{Construction}
 
 \subsection{Final Design}
 
-\subsection{Method}
+The final design of the bridge was to be a semi-circular arch bridge of 11
+segments.
+
+The height of the arch was decided by the maximum length of the available
+spaghetti to be used as spokes connecting the arches to the base.
+This, on average, was just over 25 cm.
+Thus the base of the arch was to be 50 cm in length, leaving 5 cm of bridge
+overlapping the table either side of the 40 cm gap.
+
+The width of the arch was decided to be the minimum length possible, in order to
+reduce the weight of the bridge.
+The bridge must be capable of carrying a 5 cm wide car along it.
+Thus the inner width of the base was to be 5 cm.
+The external width of the base would be larger (by 1.6 cm) due to the width of
+the two arches attached to either side of the base.
+
+
+\subsection{Arch Internal Angle}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{figures/schematic.png}
+\end{center}
+\caption{Arch schematic}
+\label{construction:schematic}
+\end{figure}
+
+To create an effective semicircular bridge shape, the two initial segments of
+the arch were designed to be perpendicular to the base.
+In order to achieve this, we required 11 segments of an icosagon (a 20 sided
+polygon) - 1 more segment than half of the polygon.
+This can be seen in the schematic shown in Figure \ref{construction:schematic}.
+
+The internal angle of an icosagon is given by:
+
+$$
+\begin{aligned}
+& = \frac{180(n - 2)}{n} \\
+& = \frac{180 \times 18}{20} \\
+& = 162^\circ \\
+\end{aligned}
+$$
+
+Thus each interior angle in the arch was to be $162^\circ$, as shown in the
+schematic.
+
+
+\subsection{Bundle Sizes}
+
+As mentioned in the previous testing section, the most important parts of the
+bridge were made from bundles of 7 spaghetti.
+These consisted of the outer rectangle of the base of the bridge, the joining
+lengths between the two sides of the base, and the two arches.
+
+More minor components were made out of bundles of 3 spaghetti, and
+included diagonal joins along the base, and horizontal joins between the two
+arches.
+
+Components formed from single strands of spaghetti include the diagonals between
+horizontal joins between the two archs, and the spokes connecting the arches to
+the base.
+
+
+\subsection{Base Construction}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/base.png}
+\end{center}
+\caption{Photograph of base}
+\label{construction:base}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/constructed-bundles.png}
+\end{center}
+\caption{The angled ends of the spaghetti bundles}
+\label{construction:bundles}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/struts.png}
+\end{center}
+\caption{The horizontal struts that sit across the base}
+\label{construction:struts}
+\end{figure}
+
+The first component of the bridge we constructed was the base.
+A photograph of the completed base is shown in Figure \ref{construction:base}.
+
+Firstly, the outer rectangle of the base was constructed from bundles of
+spaghetti of size 7.
+These bundles were created by applying Araldite epoxy to the ends of a group of
+7 spaghetti, then binding it with masking tape and letting the glue set.
+
+The two 50 cm side lengths were formed by joining two 25 cm bundles.
+Each end of each bundle was sanded using an electric belt sanding machine to
+achieve an angle of $45^\circ$, before applying epoxy to join the two pieces.
+This angled sanding flattened the ends of the bundles, allowing both pieces to
+fit together easily. It also increased the available surface area for contact
+between the two pieces, increasing the area over which the glue could adhere to.
+This increased the strength of the joint.
+A photograph of these angled ends of the spgaghetti bundles is shown in Figure
+\ref{construction:bundles}.
+
+The two side lengths were joined by 5 cm lengths of spaghetti bundles at either
+end. The edges of these were also sanded to $45^\circ$ for the aforementioned
+reasons.
+
+Finally, shorter bundles of 7 spaghetti were placed horizontally across the base
+to ensure its structural integrity and rigidity.
+Since the load force would be applied onto these struts through the strapping
+tape that was to hang over them, we required them to be extremely strong.
+The ends of these segments were shaped using a circular metal file such that
+they would sit on top of the side lengths of the base, which can be seen in
+Figure \ref{construction:struts}.
+They were then joined to the base using epoxy.
+We also increased the frequency of these struts at the centre of the base,
+where the load would be suspended from, to ensure the base would not fail.
+
+
+\subsection{Arch Segments}
+
+A diagram of an arch segment:
+
+\vspace{4cm}
+
+To construct the arch, 11 segments of spaghetti bundles were needed.
+The length of these pieces of spaghetti, assuming the radius of the arch is 25
+cm, can be calculated by the cosine rule:
+
+$$
+\begin{aligned}
+& = \sqrt{2 \times 25^2 - 2 \times 25^2 \cos{\frac{180}{11}}} \\
+& = 7.12\mbox{ cm} \\
+\end{aligned}
+$$
+
+In order to have the arch curve around once the segments were fitted together,
+we needed to sand one end of each segment to a particular angle, assuming the
+other end was left at $90^\circ$.
+This angle is calculated by:
+
+$$
+\begin{aligned}
+& = 360 - 90 - 162 \\
+& = 108^\circ \\
+\end{aligned}
+$$
+
+This is shown in the above diagram.
+
+These pieces were fashioned from bundles of spaghetti of size 7, and sanded to
+the correct length and with the correct angles.
+The arches were initially glued using hot glue, as we could easily adjust the
+joins between segments in order to have the two arches line up exactly.
+Once this was complete, the joints were coated in epoxy to increase their
+rigidity (as mentioned earlier).
+
+
+\subsection{Spokes}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/final.png}
+\end{center}
+\caption{Photograph of constructed bridge}
+\label{construction:final}
+\end{figure}
+
+After constructing the base and two arches, these were joined together using
+epoxy.
+Spaghetti bundles of size 3 were glued horizontally at each of the 10 joints
+between arch segments to ensure the arches remained upright and in a rigid
+position.
+Again, hot glue was used initially to ensure the placement of each of these
+segments was correct, before the joints were coated in epoxy and left to dry.
+These bundles were cut to size using a pair of pliers as the bridge was built,
+to ensure a perfect fit.
+
+Diagonals constructed from single strands of spaghetti were then glued between
+each of these horizontal segments, again using hot glue initially, before
+coating in epoxy.
+Again, pliers were used to cut these strands as the bridge was constructed.
+
+Single strands of spaghetti were then connected between each of the 10 arch
+segments and the base, initially using hot glue, before coating each joint in
+epoxy.
+These were also cut to size using the pliers as construction progressed.
+
+All gluing at this stage was performed on top of baking paper, as it was found
+that neither the hot glue nor the Araldite epoxy adhered to it.
+This allowed us to leave the structure in one position for the glue to set,
+without worrying about having to remove it from the table or a piece of paper.
+
+A final photograph of the bridge can be seen in Figure \ref{construction:final}.
+
 
 
 
 \section{Failure}
 
+\subsection{Load to Mass}
+
+Our final bridge had a mass of 251.06 g, and supported a load of 25 kg.
+Thus the load to mass ratio was:
+
+$$
+\begin{aligned}
+& = \frac{25}{251.06 \times 10^{-3}} \\
+& = 99.6 \\
+\end{aligned}
+$$
+
+This was an appreciable achievement for such a comparatively heavy bridge.
+
+
+\subsection{Failure Points}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{figures/frames.png}
+\end{center}
+\caption{Frame by frame analysis of bridge failure}
+\label{failure:frames}
+\end{figure}
+
+A frame by frame analysis of the bridge as it broke is shown in Figure
+\ref{failure:frames}.
+
+As can be seen, the failure point occurred at one of the segments in the arch
+furthest from the camera - specifically, the segment to the right of the
+central one in the image.
+This breakage would have resulted in the rear arch collapsing, applying large
+torsion forces on the remaining spokes, and the closer arch.
+This in turn caused the closer arch to fail, causing the bridge to collapse
+inwards and for the base to break as the attached load fell to the ground.
+
+
+\subsubsection{Arch Segment}
+
+Earlier, when conducting research into bridge design, we noted that the
+compressive strength of spaghetti is relatively weaker than its tensile
+strength (spaghetti is better at withstanding tension forces than compressive
+ones).
+Since the segments of the arch are under compression, whereas the spokes and
+base of the bridge were under tension, it is logical that the failure point of
+our bridge would be in the arch.
+This is confirmed by the fact that the bridge, once broken, begins to collapse
+inwards starting at the top of the arch.
+
+
+\subsubsection{Location of Segment}
+
+The arch segment that failed was offset towards the right from the centre of
+the bridge.
+This implies that our construction of the bridge was slightly asymmetric,
+subjecting the right side of the arch to slightly greater compressive forces
+than the left, causing it to fail sooner.
+
+In addition, it can be deduced from the images above that the failing arch
+segment was one on the far side of the bridge, releative to the camera.
+The top right image in Figure \ref{failure:frames} shows the closer arch
+remaining intact, as the one behind it begins to break.
+This implies that the farther arch was weaker in its construction than the
+closer one, suggesting the two arches were not identical.
+
+The segment that broke was also located near the top of the arch.
+This breakage location was unexpected, considering that these top segments
+undergo lesser compression forces than those nearer to the base.
+This is because lower arch segments must sustain the compressive forces exerted
+on them by a larger number of other segments above them.
+This can be seen in Figure \ref{arch:8-segments}, where arch segments closer to
+the base experienced slightly higher compression forces.
+This unexpected breakage point suggests that the construction of the arches was
+inaccurate in such a way that it increased the compression forces experienced by
+segments of the arch near the top of the bridge.
+
+
+\subsubsection{Base}
+
+As the arch failed, the base, as seen in Figure \ref{failure:frames}, remained
+intact, simply sagging at its centre, where the load force was applied.
+This suggests that our base would have been able to continue to sustain higher
+load forces had the arch not collapsed.
+
+
+\subsubsection{Spokes}
+
+Additionally, the spokes connecting the arches to the base also remained
+relatively intact for a few moments after the arch began to fail.
+This suggests that the spokes, similar to the base, were capable of withstanding
+a higher load force before failure, had the arch not broken.
+
+
+
+
 \section{Improvements}
 
+\subsection{Design}
+
+Several possible design changes would work to improve the overall compressive
+strength of the arch segments in the bridge (this was the initial failure
+point in our design).
+
+The most significant one would be to increase the number of arch segments from
+11 to (for example) 15 segments.
+This would decrease the average compression force across the segments as the
+arch becomes a better approximation of a semi-circle.
+This would allow for the bridge to sustain a higher load.
+
+In addition, an increased number of segments would also increase the number of
+spokes between the arches and the base, decreasing the average tension in these
+spokes, further improving the bridge's load carrying capabilities.
+
+Finally, a larger number of arch segments would decrease the length of each.
+Shorter pieces of spaghetti have a higher buckling strength, as noted in the
+initial research section of this investigation.
+This would increase the maximum compression force each segment could withstand
+before breaking, increasing the maximum load force the bridge could sustain
+before breaking, increasing its load to mass ratio.
+
+A second possible improvement, although largely impractical, would be to
+increase the number of spaghetti used in the bundles the arches were constructed
+from.
+The next highest bundle size with a high packing density is 19 spaghetti, as
+discussed earlier.
+This would increase the total compression force (independent of mass) each
+segment of arch could withstand before breaking, without sacrificing the load to
+mass ratio of the bridge.
+
+
+\subsection{Gluing}
+
+During the construction of our bridge, we coated several joints multiple times
+with epoxy.
+This lead to use of excessive volumes of glue in many cases, increasing the
+overall mass of the bridge unnecessarily, and reducing the bridge's aesthetic
+appeal.
+
+An improvement on the bridge's design would be to reduce the amount of epoxy
+used in coating each joint, to decrease its mass and improve its aesthetic
+appearence.
+
+
+\subsection{Bundles}
+
+To construct the many bundles of 7 spaghetti in our bridge, we glued 25 cm
+lengths of spaghetti together by placing glue at regular 8 cm intervals, letting
+it set, and then sawing the bundles into multiple pieces using a bansaw
+afterwards.
+In some cases, the inaccurate placement of glue within the middle of these long
+bundles meant that, once cut, some ends of several segments had very little
+epoxy holding them together.
+This would have reduced the strength of the segment, and the overall load to
+mass ratio of the bridge.
+
+An improvement would be to firstly measure and cut 7 individual strands of
+spaghetti of the required length, and then to epoxy these together, to ensure a
+sufficient amount of glue is used in forming each bundled segment.
+
+
+
+\section{Conclusion}
+
+Through the careful testing of various spaghetti and glue types, and bridge
+structures and designs, we were able to construct a spaghetti bridge which,
+which tested, had a load to mass ratio of 99.6.
+
+
+
 \section{Bibliography}
+
+A list of website links used for research and testing are listed below:
+
+\begin{itemize}
+\item \url{http://pghbridges.com/basics.htm}
+\item \url{http://engineering.jhu.edu/ei/wp-content/uploads/sites/29/2014/01/Spaghetti-Bridge-Construction-Hints.pdf}
+\item \url{http://www.warwickallen.com/bridges/ArchBridges.htm}
+\item \url{http://science.howstuffworks.com/engineering/civil/bridge5.htm}
+\item \url{https://en.wikipedia.org/wiki/Arch_bridge}
+\item \url{http://www2.hesston.edu/Physics/ArchBridge/research.htm}
+\item \url{https://en.wikipedia.org/wiki/Truss_bridge}
+\item \url{http://ojhsbridges.weebly.com/truss-bridges.html}
+\item \url{http://pages.jh.edu/~virtlab/bridge/bridge.htm}
+\item \url{http://people.virginia.edu/~pjm8f/engr162/beam/stress_and_strain.htm}
+\end{itemize}
 
 \end{document}
