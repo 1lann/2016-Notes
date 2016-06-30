@@ -65,15 +65,18 @@ to mass ratio in the class.
 \label{research:forces}
 \end{figure}
 
-The most important consideration in designing a bridge is to enable it to
-carry a sufficient load in order to prevent it from collapsing.
-Bridges are designed in order to reduce the forces acting in different
-components when a load force is applied, because applying stresses on a
-component beyond what is it capable of withstanding will likely cause the bridge
-to fail.
+Bridge design is based around the need to build structures that withstand high
+load forces without collapsing.
+Such load forces in the real world consist usually of cars or people using the
+bridge as a method of transportation.
+A bridge will fail when the applied load causes components of the bridge to
+experience stresses beyond that which the material they are constructed from can
+withstand.
+Thus, bridges are designed in order to reduce the forces acting in different
+components when a load is applied.
 
-There are two main forces which components in a bridge will experience: tension
-and compression. See Figure \ref{research:forces}.
+There are two main forces which components in a bridge will experience:
+tension and compression. See Figure \ref{research:forces}.
 
 
 \subsubsection{Tension}
@@ -100,14 +103,41 @@ the maximum the material can withstand.
 
 \subsubsection{Shear}
 
-A shear force is one with a component in the plane perpendicular to the
-material's surface.
+\begin{figure}
+\begin{center}
+\includegraphics[width=3cm]{figures/shear.png}
+\end{center}
+\caption{Shear forces}
+\label{research:shear}
+\end{figure}
+
+Shear forces are ones that are exerted in opposing directions on different parts
+of an object.
+A more elucidating diagram is shown in Figure \ref{research:shear}
+
+The maximum shear force of many materials is relatively weak compared to its
+maximum tension and compression forces.
+This means that most bridge designs attempt to minimise shear forces in favour
+of tension and compression.
 
 
 \subsubsection{Torsion}
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=5cm]{figures/torsion.png}
+\end{center}
+\caption{Torsion force}
+\label{research:torsion}
+\end{figure}
+
 A torsion force is one that exerts a twisting moment in a component of the
 bridge.
+A diagram of a torsion force is shown in Figure \ref{research:torsion}
+
+Similar to shear forces, a material's ability to withstand torsion forces is
+also relatively weak compared to its maximum tension and compression.
+Bridge designs also attempt to minimise torsion forces.
 
 
 \subsubsection{Young's Modulus}
@@ -207,7 +237,7 @@ throughout bridge design.
 \label{research:arch}
 \end{figure}
 
-Many bridge designs also depend on the strength of semi-cirular or parabolic
+Many bridge designs also depend on the strength of semi-circular or parabolic
 arcs in distributing compressive forces to abutments on the ground either side
 of the bridge.
 
@@ -216,37 +246,253 @@ of the arch, eventually exerting a force on the abutments, which in turn exert
 a reaction force on the bridge.
 This distributes the load force to the ground.
 
-See Figure \ref{research:arch} for a diagramatic representation of these forces.
+See Figure \ref{research:arch} for a diagrammatic representation of these
+forces.
 The load force $F_L$ causes compression in the arch, causing the abutments to
 exert reaction forces $R_A$ and $R_B$ on the bridge.
 
 
-\subsection{Bridge Designs}
-
-Of the innumerous bridge designs in existence, only a few were decidedly
-feasible to construct from spaghetti.
-
-
 \subsection{Beam Bridge}
 
-A beam bridge is one of the simplest designs in existence.
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/beam.jpg}
+\end{center}
+\caption{A beam bridge}
+\label{research:beam}
+\end{figure}
+
+A beam bridge is perhaps the simplest bridge design.
+A diagram of one is shown in Figure \ref{research:beam}.
+It consists of a long, flat platform supported by vertical pillars at both ends,
+and at regular intervals along the platform.
+
+A load placed at any point on the bridge causes the under side of the platform
+to experience tension as the platform deforms under stress, while the upper side
+experiences compression.
+These forces are distributed by the platform to the vertical support pillars,
+which undergo compression.
+The pillars experience a reaction force upwards at the ground.
+
+Considering the simplicity of this design, it is no surprise that it is one of
+the weakest.
+This is because the design has no additional structures that attempt to reduce
+the tension and compression forces experienced by horizontal platform or
+vertical supports, impeding its ability to sustain large load forces.
+Beam bridges are commonly used in place of alternatives only for small spans,
+where cost effectiveness is one of the most important factors.
+
+This bridge design would be rather infeasible to construct from spaghetti given
+the criteria of this investigation.
+It requires vertical support structures that make contact with the ground,
+which violates one of the criteria for our design.
 
 
 \subsection{Truss Bridge}
 
-\subsubsection{Pratt Truss}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/truss.png}
+\end{center}
+\caption{A truss bridge}
+\label{research:truss}
+\end{figure}
+
+A truss bridge design is one of the most common in use across the world, and a
+number of different variations exist.
+All truss bridges display several common design features, which include
+several lateral supports spanning the width of the bridge, containing repeated,
+tessellating triangular units.
+A diagram of one such truss design is shown in Figure \ref{research:truss}.
+
+A truss bridge can be seen as an extension of the beam bridge, with the addition
+of further structural features that dissipate applied load forces across
+different members through a variety of tension and compression forces.
+Its construction from purely triangular units, as outlined above, improves its
+ability to sustain higher loads compared to a beam bridge due to increased
+rigidity and overall strength.
+
+Another benefit of this design is that there are virtually no shear or torsion
+forces present in members.
+The design instead, in dissipating applied load forces, relies upon the tensile
+and compressive strength of the materials from which it is constructed.
+
+The strength of a truss is determined primarily by two variables, its height and
+spanning width.
+Taller truss triangles decrease the compression forces experienced by lateral
+members, improving the design's overall strength.
+But, at the side lengths of the design's triangles increase, their ability to
+withstand compression forces decreases, as the buckling strength of spaghetti is
+inversely proportional to the square of its length (as discussed above).
+Thus, truss designs must compromise segment length width reduced compression
+forces.
+
+Several variations of truss designs were considered in designing our spaghetti
+bridge, which are discussed below.
+
 
 \subsubsection{Warren Truss}
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=5cm]{figures/warren.png}
+\end{center}
+\caption{A Warren truss bridge}
+\label{research:warren}
+\end{figure}
+
+Figure \ref{research:warren} shows a Warren truss bridge.
+This design is the simplest form of a truss bridge, and consists of tessellating
+congruent isosceles triangles.
+
+Forces are distributed by a tension force in the lower lateral member causing
+alternating tension and compression forces in the diagonal sides of the
+isosceles triangles.
+This induces a compressive force in the upper lateral member.
+
+This distribution of forces is far more effective than a beam bridge when
+considering the  the bridge's load to mass ratio.
+
+
+\subsubsection{Pratt Truss}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5cm]{figures/pratt.png}
+\end{center}
+\caption{A Pratt truss bridge}
+\label{research:pratt}
+\end{figure}
+
+Figure \ref{research:pratt} shows a Pratt truss design.
+This is another simple structure, consisting of tessellating right angled
+triangles, rather than the isosceles ones used in Warren trusses.
+
+Similar to a Warren truss, a central load force on the lower member creates a
+tension force within it, inducing tension forces in the vertical segments of the
+right angled triangles, and compression forces in the diagonals.
+
+When compared to a Warren truss, a Pratt truss will, on average, use more
+spaghetti in its construction to hold a similar load force, simply due to
+differences in design.
+Thus, in comparing trusses, a Warren truss would likely achieve a higher load to
+mass ratio than a Pratt truss.
+
+
+\subsubsection{Parker Truss}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5cm]{figures/parker.png}
+\end{center}
+\caption{A Parker truss bridge}
+\label{research:parker}
+\end{figure}
+
+Figure \ref{research:parker} shows a Parker truss bridge.
+This design employs the central characteristic of truss bridges (tessellating
+triangles), while also incorporating an arch.
+
+The use of an arch better distributes compression and tension forces in the
+structure, directing the vertical load force outwards towards the edges of the
+bridge, as discussed above.
+
+This design, because of its use of an arch in addition to strong tessellating
+triangles, is the most effective truss design for a spaghetti bridge tested
+under the imposed conditions for this investigation, where the load force is
+concentrated at the centre of the base.
+
+
 \subsection{Arch Bridge}
 
-These forces cause the arch to push outwards horizontally on its base, called
-thrust.
-As the height of the arch ($h$ in the diagram) decreases, the thrust increases.
-Thrust must be kept at a managable level in order to prevent the bridge from
-collapsing.
-This is usually achieved either through external bracing (abutments), or
-internal spokes.
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{figures/arch-bridge.png}
+\end{center}
+\caption{An arch bridge}
+\label{research:arch-bridge}
+\end{figure}
+
+
+An arch bridge consists of a main platform supported by a semi-circular or
+parabolic structure either above or below the platform, which aids in
+distributing the compression and tension forces exerted by a load.
+The style of arch bridge considered for this investigation is a through arch
+bridge, where a semi-circular structure sits above the main roadway.
+A diagram of such a bridge is shown in Figure \ref{research:arch-bridge}
+
+
+\subsubsection{Forces}
+
+A load force exerted at the centre of the base of the arch causes tension forces
+in the spokes around this point, which induce compressive forces in the segments
+of the arch, as discussed earlier.
+These forces are distributed evenly to the base of the arch either
+side of the bridge, where the ground or abutments exert a reactionary force on
+the structure.
+
+This causes the arch to push outwards horizontally on its base, called thrust.
+As the height of the arch decreases, the thrust increases.
+Thrust must be kept at a manageable level in order to prevent the bridge from
+failing, which is usually achieved either through external bracing (abutments),
+or internal spokes (ties).
+
+
+\subsubsection{Spokes}
+
+There are two dominant designs to consider for the position of the spokes
+connecting the arch structure to the roadway.
+
+The first is as shown in Figure \ref{research:arch-bridge}, where spokes extend
+vertically from the arch down to the platform.
+This design is most effective for bridges where load forces will be exerted
+at any point along the base of the bridge, as would occur under real world
+conditions.
+
+The second is where all spokes connect in a radial fashion to the centre of the
+base, with a constant angle between spokes.
+This design is most effective when load forces are concentrated around the
+centre of the base, since this design would be more effective in transferring
+such forces to tension in the spokes, and compression in the arch segments.
+
+
+\subsubsection{Break Point}
+
+Arches typically break due to compressive buckling forces in the segments
+overcoming the compressive strength of the material the arch is constructed
+from.
+This is a particularly pertinent consideration in regards to spaghetti, which
+has a relatively weaker buckling strength in comparison to its tensile strength.
+
+This is one of the potentially negative features of using an arch design, but
+is relatively insignificant when considering its overall effectiveness in
+achieving a high load to mass ratio.
+
+
+\subsection{Comparison}
+
+Truss bridges are most effective in distributing load forces in conditions where
+the location of these load forces vary, and are not known at the time of
+construction.
+This is the case for most real world bridges, which must sustain the weight of
+cars and people as they walk across the bridge, thus making truss designs more
+practical in most scenarios.
+
+Contrary to the real world, the conditions under which our bridge design will be
+tested are known in advance.
+Thus we are able to optimise our design for these condition in order to achieve
+a higher load to mass ratio.
+
+The specifications for our bridge tell us that the load force during testing will
+be concentrated around the centre of the base of the bridge.
+Despite the aforementioned positives in regards to truss designs and their
+effective use of triangular geometry, an arch bridge will be far more
+effective under these conditions.
+
+This decision is justified thoroughly under the Testing Configurations section
+of this report, where a more complete comparison between truss and arch designs
+is made.
+
 
 
 
@@ -286,7 +532,7 @@ withstand before breaking.
 	and cut each piece to 25 cm.
 \item Record the mass of the bundle.
 \item Form a circular bundle of 5 pieces of spaghetti and place it over the gap,
-	centering it such that 5 cm of spaghetti overlaps the desks on each side.
+	centring it such that 5 cm of spaghetti overlaps the desks on each side.
 \item Place the spaghetti through the hook on the force metre.
 \item Gradually pull down vertically on the force metre, stopping once the
 	spaghetti breaks.
@@ -679,7 +925,7 @@ Hot Glue                   & 14.1 \\
 
 The above data suggests that hot glue is capable of withstanding the largest
 tensile force before breaking.
-The second strongest glue is Araldite 5 minute expoxy, only slightly weaker
+The second strongest glue is Araldite 5 minute epoxy, only slightly weaker
 than hot glue.
 
 In a spaghetti bridge, the main determining factors of its load to mass ratio
@@ -954,8 +1200,8 @@ for the smaller size of these testing bridges:
 \begin{itemize}
 \item The bridge is to span a gap of 10 cm.
 \item The base is to be 20 cm in length.
-\item The bridge is to be constructed using San Remo tubular spaghett.
-\item The joints are to be formed using a juducious volume of hot glue.
+\item The bridge is to be constructed using San Remo tubular spaghetti.
+\item The joints are to be formed using a judicious volume of hot glue.
 \item The bridge is to be constructed from single strands of spaghetti (no
 	bundles).
 \end{itemize}
@@ -1281,13 +1527,13 @@ In accordance with the previous testing of configurations, it was decided that
 an arch bridge would be most optimal.
 In order to construct such a bridge, we would have to create two semi-circular
 lengths of spaghetti to form two parallel arches. Spokes would then be attached
-between each arch and the center of the base.
+between each arch and the centre of the base.
 
 It was decided that these arches would be constructed by approximating their
 shape using a number of small, straight segments of spaghetti glued together,
 rather than attempting to create a long piece of spaghetti and bend it into a
 semi-circular shape.
-This is because, in order to bend a piece of spaghett, we would have had to
+This is because, in order to bend a piece of spaghetti, we would have had to
 soften it by partially hydrating it, then hardening it again.
 This would weaken the tensile and compressive strength of the spaghetti by
 making it more brittle, a very undesirable outcome.
@@ -1445,7 +1691,7 @@ Such a bridge is also not overly time consuming to construct.
 Thus we chose to build an arch of 11 arch segments, because:
 
 \begin{itemize}
-\item 11 segments is an odd number, thus elmininating a single spoke extending
+\item 11 segments is an odd number, thus eliminating a single spoke extending
 	from the top of the arch to the base.
 \item An arch of 11 segments is not too difficult or time consuming to
 	construct.
@@ -1519,7 +1765,7 @@ included diagonal joins along the base, and horizontal joins between the two
 arches.
 
 Components formed from single strands of spaghetti include the diagonals between
-horizontal joins between the two archs, and the spokes connecting the arches to
+horizontal joins between the two arches, and the spokes connecting the arches to
 the base.
 
 
@@ -1543,7 +1789,7 @@ the base.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{figures/struts.png}
+\includegraphics[width=8cm]{figures/struts.png}
 \end{center}
 \caption{The horizontal struts that sit across the base}
 \label{construction:struts}
@@ -1564,7 +1810,7 @@ This angled sanding flattened the ends of the bundles, allowing both pieces to
 fit together easily. It also increased the available surface area for contact
 between the two pieces, increasing the area over which the glue could adhere to.
 This increased the strength of the joint.
-A photograph of these angled ends of the spgaghetti bundles is shown in Figure
+A photograph of these angled ends of the spaghetti bundles is shown in Figure
 \ref{construction:bundles}.
 
 The two side lengths were joined by 5 cm lengths of spaghetti bundles at either
@@ -1723,7 +1969,7 @@ subjecting the right side of the arch to slightly greater compressive forces
 than the left, causing it to fail sooner.
 
 In addition, it can be deduced from the images above that the failing arch
-segment was one on the far side of the bridge, releative to the camera.
+segment was one on the far side of the bridge, relative to the camera.
 The top right image in Figure \ref{failure:frames} shows the closer arch
 remaining intact, as the one behind it begins to break.
 This implies that the farther arch was weaker in its construction than the
@@ -1804,14 +2050,16 @@ appeal.
 
 An improvement on the bridge's design would be to reduce the amount of epoxy
 used in coating each joint, to decrease its mass and improve its aesthetic
-appearence.
+appearance.
+This would likely not reduce the bridge's maximum load, improving its load to
+mass ratio.
 
 
 \subsection{Bundles}
 
 To construct the many bundles of 7 spaghetti in our bridge, we glued 25 cm
 lengths of spaghetti together by placing glue at regular 8 cm intervals, letting
-it set, and then sawing the bundles into multiple pieces using a bansaw
+it set, and then sawing the bundles into multiple pieces using a bandsaw
 afterwards.
 In some cases, the inaccurate placement of glue within the middle of these long
 bundles meant that, once cut, some ends of several segments had very little
@@ -1848,6 +2096,7 @@ A list of website links used for research and testing are listed below:
 \item \url{http://ojhsbridges.weebly.com/truss-bridges.html}
 \item \url{http://pages.jh.edu/~virtlab/bridge/bridge.htm}
 \item \url{http://people.virginia.edu/~pjm8f/engr162/beam/stress_and_strain.htm}
+\item \url{http://www.garrettsbridges.com/design/bridge-height/}
 \end{itemize}
 
 \end{document}
