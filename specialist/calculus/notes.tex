@@ -1,0 +1,822 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Calculus}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Vector Calculus}
+
+\subsection{Derivative}
+
+Given the vector function:
+
+$$
+\bb{r} = \binom{2 + 3t}{3t + t^2}
+$$
+
+Derive each component of the vector function to find its derivative:
+
+$$
+\frac{d\bb{r}}{dt} = \binom{3}{3 + 2t}
+$$
+
+
+\subsection{Indefinite Integral}
+
+Given the vector function:
+
+$$
+\bb{r} = \binom{2 + 4t}{8t + 3t^2}
+$$
+
+Integrate each component to find its indefinite integral:
+
+$$
+\int \bb{r} dt = \binom{2t + 2t^2 + c_1}{4t^2 + t^3 + c_2}
+$$
+
+
+\subsection{Definite Integral}
+
+Same as normal calculus:
+
+$$
+\int_a^b \frac{d}{dt}\bb{r}(t) dt = \bb{r}(b) - \bb{r}(a)
+$$
+
+
+
+
+\section{Rectilinear Motion}
+
+\subsection{Distance Travelled}
+
+The distance travelled by a body between two points in time is the definite
+integral of the magnitude of the velocity function:
+
+$$
+\int_{t_1}^{t_2} \lvert \bb{v}(t) \rvert dt
+$$
+
+
+\subsection{Circular or Elliptical Motion}
+
+For a body travelling in a circle or an ellipse around a fixed point.
+
+The velocity is perpendicular to the acceleration and to the direction of
+motion:
+
+$$
+\begin{aligned}
+\bb{v} \cdot \bb{r} & = 0
+\bb{v} \cdot \bb{a} & = 0
+\end{aligned}
+$$
+
+
+\subsection{Cartesian Equation of Path}
+
+Convert $\bb{r}(t)$ to a cartesian equation.
+
+
+\subsection{Graphing Circular Motion}
+
+For increasing values of $t$, plot the corresponding value of $\bb{r}(t)$ on a
+cartesian plane.
+
+
+To indicate the direction of motion, find $\bb{r}(0)$ to find the initial
+position of the body, then find $\bb{r}(1)$ to find where it moves to next,
+indicating its direction of motion.
+
+
+\subsection{Projectile Motion}
+
+To find the maximum height reached, solve for when the $\bb{j}$ component of
+the velocity is 0.
+
+
+
+
+\section{Integration Techniques}
+
+\subsection{Basic}
+
+If given an integral in the form:
+
+$$
+\int f'(x) f(x) dx
+$$
+
+Then use standard integration techniques to solve it.
+
+
+\subsection{Substitution}
+
+Involves changing the variable used in the integration.
+
+Given:
+
+$$
+\int 56x(2x - 3)^5 dx
+$$
+
+Find an appropriate substitution. Chose a part of the function which is raised
+to a power.
+
+Let $u = 2x - 3$:
+
+$$
+\int 56xu^5 dx
+$$
+
+Convert $dx$ to $du$:
+
+$$
+\begin{aligned}
+\frac{du}{dx} & = 2 \\
+dx & = \frac{du}{2} \\
+\end{aligned}
+$$
+
+Thus:
+
+$$
+\int 56xu^5 \frac{1}{2} du
+$$
+
+Convert $x$ to $u$ by rearranging $u = 2x - 3$ for $x$:
+
+$$
+\int 14u^5(u + 3) du
+$$
+
+Expand the brackets:
+
+$$
+\int 14u^6 + 42u^5 du
+$$
+
+Perform the integration:
+
+$$
+2u^7 + 7u^6 + c
+$$
+
+Substitute in $u = 2x - 3$:
+
+$$
+2(2x - 3)^7 + 7(2x - 3)^6 + c
+$$
+
+
+\subsection{Substitution with Definite Integrals}
+
+When solving definite integrals using substitution, convert the limits of the
+integral to be in terms of $u$.
+
+Given:
+
+$$
+\int_1^2 56x(2x - 3)^5 dx
+$$
+
+Let $u = 2x - 3$.
+
+$u$ given $x = 1$ is -1, and given $x = 2$ is 1.
+
+From above:
+
+$$
+\begin{aligned}
+& = \int_{-1}^1 14u^6 + 42u^5 du \\
+& = \big[2u^7 + 7u^6\big]_{-1}^1 \\
+& = 2 + 7 - (-2 + 7) \\
+& = 4 \\
+\end{aligned}
+$$
+
+
+\subsection{Trigonometric Identities}
+
+\subsubsection{Odd Power}
+
+For $\sin^n{x}$ or $\cos^n{x}$, where $n$ is odd, pull out a $\sin{x}$ or
+$\cos{x}$ to make the power even, then substitute $1 - \cos^2{x}$ or
+$1 - \sin^2{x}$ from the Pythagorean identity:
+
+$$
+\begin{aligned}
+\int \sin^3{x} dx & = \int \sin{x}\sin^2{x} dx \\
+& = \int \sin{x}(1 - \cos^2{x}) dx \\
+& = \int \sin{x} - \sin{x}\cos^2{x} dx \\
+& = -\cos{x} + \frac{1}{3} \cos^3{x} + c \\
+\end{aligned}
+$$
+
+
+\subsubsection{Even Power}
+
+For $\sin^n{x}$ or $\cos^n{x}$, where $n$ is even, use the double angle formula
+for $\cos{2x}$:
+
+$$
+\begin{aligned}
+\cos{2x} & = 1 - 2\sin^2{x} \\
+& = 2\cos^2{x} - 1 \\
+\end{aligned}
+$$
+
+Rearrange the equation in terms of $\cos{2x}$:
+
+$$
+\begin{aligned}
+\int \sin^2{x} dx & = \int \frac{1}{2} - \frac{1}{2}\cos{2x} dx \\
+& = \frac{x}{2} - \frac{1}{4}\sin{2x} + c \\
+\end{aligned}
+$$
+
+
+\subsubsection{Secant}
+
+For $\tan^2{x}$, substitute $\sec^2{x} - 1$ from the identity:
+
+$$
+\sec^2{x} = \tan^2{x} + 1
+$$
+
+
+\subsubsection{Product to Sum}
+
+For:
+
+$$
+\int \sin{ax}\cos{bx} dx
+$$
+
+Use the product to sum identities (these should be given in the question).
+
+
+
+
+\subsection{Logarithmic Integration}
+
+$$
+\begin{aligned}
+\int \frac{1}{x} dx & = \ln{|x|} + c \qquad x \neq 0 \\
+\int \frac{f'(x)}{f(x)} dx & = \ln(|f(x)|) + c \qquad f(x) \neq 0 \\
+\end{aligned}
+$$
+
+\subsubsection{Improper Fractions}
+
+Given an improper fraction to integrate:
+
+$$
+\int \frac{2x}{x + 1} dx
+$$
+
+Convert the fraction to a proper one (use algebraic juggling):
+
+$$
+\int 2 - \frac{2}{x + 1} dx
+$$
+
+And integrate:
+
+$$
+2x - 2\ln{|x + 1|} + c
+$$
+
+
+\subsection{Logarithmic Definite Integrals}
+
+Given:
+
+$$
+\int_a^b \frac{f'(x)}{f(x)} dx
+$$
+
+If $f(x) = 0$ for any $x$ in the interval $a \leq x \leq b$, then the integral
+is undefined.
+
+
+\subsection{Partial Fractions}
+
+For proper fractions with a series of factors in the denominator.
+
+The number of unknowns in the numerator will be the same as the degree of the
+denominator.
+
+
+\subsubsection{Linear Factors}
+
+Given a proper fraction with a series of linear factors in the denominator:
+
+$$
+\int \frac{4x - 3}{(x + 3)(2x + 1)} dx
+$$
+
+Consider the inner fraction:
+
+$$
+\frac{4x - 3}{(x + 3)(2x + 1)}
+$$
+
+Split the fraction into parts, where the denominator of each is one of the
+linear factors, and the numerator is some polynomial of one degree less than
+the denominator:
+
+$$
+\frac{4x - 3}{(x + 3)(2x + 1)} = \frac{A}{x + 3} + \frac{B}{2x + 1}
+$$
+
+Multiply by $(x + 3)(2x + 1)$:
+
+$$
+4x - 3 = A(2x + 1) + B(x + 3)
+$$
+
+Compare coefficients to solve for $A$ and $B$:
+
+$$
+\begin{aligned}
+4 & = 2A + B \\
+-3 & = A + 3B \\
+\end{aligned}
+$$
+
+Solve the system of equations by elimination:
+
+$$
+\begin{aligned}
+10 & = -5B \\
+B & = -2 \\
+A & = 3 \\
+\end{aligned}
+$$
+
+Thus the partial fractions are:
+
+$$
+\frac{3}{x + 3} - \frac{2}{2x + 1}
+$$
+
+Use logarithms to solve the integral:
+
+$$
+\begin{aligned}
+\int \frac{4x - 3}{(x + 3)(2x + 1)} dx & = \int \frac{3}{x + 3} - \frac{2}{2x + 1} dx \\
+& = 3\ln{|x + 3|} - \ln{|2x + 1|} \\
+\end{aligned}
+$$
+
+
+\subsubsection{Cover Up Method}
+
+A method to easily find the required partial fractions.
+Only applies to fractions with linear factors.
+
+Again, consider the fraction:
+
+$$
+\frac{4x - 3}{(x + 3)(2x + 1)}
+$$
+
+We require an expression in the form:
+
+$$
+\frac{A}{x + 3} + \frac{B}{2x + 1}
+$$
+
+For each linear factor, solve for $x$ when the factor equals 0.
+
+Then cover up this linear factor in the original fraction, and substitute in
+the value for $x$ to find the corresponding constant in the partial fractions.
+
+To find $A$, solve $x + 3 = 0$, hence $x = -3$. Cover up the factor $x + 3$ in
+the original fraction to give:
+
+$$
+\frac{4x - 3}{2x + 1}
+$$
+
+And substitute $x = -3$ to give $A = -3$.
+
+To find $B$, solve $2x + 1 = 0$, hence $x = -0.5$. Substitute this into:
+
+$$
+\frac{4x - 3}{x + 3}
+$$
+
+To give $B = -2$.
+
+
+
+\subsubsection{Quadratic Factors}
+
+To find the integral:
+
+$$
+\int \frac{7x^2 - 2x + 5}{(x - 1)(x^2 + 1)} dx
+$$
+
+Use the partial fractions:
+
+$$
+\frac{A}{x - 1} + \frac{Bx + C}{x^2 + 1}
+$$
+
+Solve for the constants by equating this to the original fraction:
+
+$$
+\frac{7x^2 - 2x + 5}{(x - 1)(x^2 + 1)}  = \frac{A}{x - 1} + \frac{Bx + C}{x^2 + 1}
+$$
+
+Multiply through by $(x - 1)(x^2 + 1)$:
+
+$$
+7x^2 - 2x + 5  = A(x^2 + 1) + (Bx + C)(x - 1)
+$$
+
+Solve for $A$, $B$, and $C$ by comparing coefficients:
+
+$$
+\begin{aligned}
+7 & = A + B \\
+5 & = A - C \\
+-2 & = -B + C \\
+\end{aligned}
+$$
+
+Solve the system of equations by elimination:
+
+$$
+\begin{aligned}
+5 & = A + C \\
+10 & = 2A \\
+A & = 5 \\
+B & = 2 \\
+C & = 0 \\
+\end{aligned}
+$$
+
+Substitute these values into the partial fractions and solve the integral using
+logarithms.
+
+
+\subsubsection{Repeated Factors}
+
+Given the integral:
+
+$$
+\int \frac{6x^2 + 6x - 20}{(x + 3)(x - 1)^2} dx
+$$
+
+Use the partial fractions:
+
+$$
+\frac{A}{x + 3} + \frac{B}{x - 1} + \frac{C}{(x - 1)^2}
+$$
+
+Solve for the constants by equating the two:
+
+$$
+\frac{6x^2 + 6x - 20}{(x + 3)(x - 1)^2} = \frac{A}{x + 3} + \frac{B}{x - 1} + \frac{C}{(x - 1)^2}
+$$
+
+Multiply by the denominator:
+
+$$
+6x^2 + 6x - 20 = A(x - 1)^2 + B(x + 3)(x - 1) + C(x + 3)
+$$
+
+Solve by comparing coefficients:
+
+$$
+\begin{aligned}
+6 & = A + B \\
+-20 & = A + 2B + 3C \\
+6 & = -2A + B + C \\
+\end{aligned}
+$$
+
+Solve the system of equations:
+
+$$
+\begin{aligned}
+A & = -4 \\
+B & = 10 \\
+C & = -12 \\
+\end{aligned}
+$$
+
+Perform the integration using logarithms.
+
+
+\subsection{Integration by Parts}
+
+Used to integrate expressions with two functions multiplied together.
+
+The formula is derived from the product rule:
+
+$$
+\begin{aligned}
+(f(x)g(x))' & = f'(x)g(x) + g'(x)f(x) \\
+f(x)g(x) & = \int f'(x)g(x) dx + \int g'(x)f(x) dx \\
+\int f'(x)g(x) dx & = f(x)g(x) - \int g'(x)f(x) dx \\
+\end{aligned}
+$$
+
+Given the integral:
+
+$$
+\int e^x x dx
+$$
+
+Let $f'(x) = e^x$ and $g(x) = x$.
+
+Hence $f(x) = e^x$ (ignore the integrating constant) and $g'(x) = 1$.
+
+Using the formula from above:
+
+$$
+\begin{aligned}
+\int e^x x dx & = e^x x - \int 1 \times e^x dx \\
+& = x e^x - e^x + c \\
+\end{aligned}
+$$
+
+
+\subsection{Summary}
+
+Given a certain function in different forms, use several different methods for
+integration:
+
+Basic:
+
+$$
+\int f'(x) f(x) dx
+$$
+
+Substitution (let $u = f(x)$):
+
+$$
+\int g(x) (f(x))^n dx
+$$
+
+Use trigonometric identities for an integration involving some combination of
+trigonometric functions.
+
+Logarithms:
+
+$$
+\int \frac{f'(x)}{f(x)} dx
+$$
+
+Partial fractions, using the cover up method:
+
+$$
+\int \frac{f(x)}{(x + a)(x + b)}
+$$
+
+Partial fractions with a quadratic factor:
+
+$$
+\int \frac{f(x)}{(x^2 + bx + c)(x + d)}
+$$
+
+Partial fractions with a repeated factor:
+
+$$
+\int \frac{f(x)}{(x + a)^2 (x + b)}
+$$
+
+Integration by parts:
+
+$$
+\int f(x)g(x) dx
+$$
+
+
+
+
+\section{Numerical Integration}
+
+Several functions cannot be algebraically integrated.
+Numerical integration approximates a definite integral of such functions.
+
+Given the definite integral:
+
+$$
+\int^2_0 e^{x^2} dx
+$$
+
+Different rules express the integral as an infinite sum of the areas of adjacent
+shapes.
+
+The integral can be approximated by taking a finite number of terms from such
+sequences.
+
+Summing more terms improves the accuracy of the approximation.
+
+
+\subsection{Trapezium Rule}
+
+The area of a trapezium with parallel side lengths $y_0$ and $y_1$, and
+perpendicular height $h$ is:
+
+$$
+h\frac{y_0 + y_1}{2}
+$$
+
+Summing the areas of these trapeziums:
+
+$$
+\begin{aligned}
+& = \sum_{i = 1}^n h\frac{y_{i - 1} + y_i}{2} \\
+& = \frac{h}{2} \sum_{i = 1}^n y_{i - 1} + y_i \\
+& = \frac{h}{2} (y_0 + 2\sum_{i = 1}^{n - 1} y_i + y_n) \\
+\end{aligned}
+$$
+
+Given some definite integral:
+
+$$
+\int^a_b f(x) dx
+$$
+
+We have:
+
+$$
+\begin{aligned}
+h & = \frac{a - b}{n} \\
+y_0 & = f(b) \\
+y_n & = f(a) \\
+y_i & = f(b + ih) \\
+\end{aligned}
+$$
+
+
+\subsection{Simpson's Rule}
+
+Models the tops of the strips as parabolas.
+
+Only applies for an even number of strips.
+
+$$
+\frac{h}{3}(y_0 + \sum_{i = 1}^{n - 2} (4y_i + 2y_{i + 2}) + 4y_{n - 1} + y_n)
+$$
+
+$h$ and $y_i$ are calculated the same as when applying the Trapezium rule.
+
+
+
+
+\section{Volumes of Revolution}
+
+The volume of the solid formed when an area under a curve is rotated in 3D
+around a line (usually an axis).
+
+
+\subsection{Around X Axis}
+
+Split the area into vertical disks of thickness $\delta x$.
+
+The volume of one of these disks is:
+
+$$
+\pi y^2 \delta x
+$$
+
+Summing the volume of an infinite number of these disks between $x = a$ and
+$x = b$ gives:
+
+$$
+\lim_{\delta x \to 0} \sum_{x = a}^{b} \pi y^2 \delta x
+$$
+
+Using the definition of integration:
+
+$$
+\pi \int^b_a y^2 dx
+$$
+
+
+\subsubsection{Area with the Y Axis Rotated About the X Axis}
+
+The volume of a solid formed when an area bounded by a function $f(x)$, the x
+axis, and the lines $x = a$ and $x = b$ is rotated about the y axis.
+
+Consider the inner surface area of a cylinder of radius $x$ and height $y$:
+
+$$
+2 \pi x y
+$$
+
+The volume of the solid is the sum of an infinite number of these cylinders
+between $x = a$ and $x = b$:
+
+$$
+2 \pi \int^b_a x y dx
+$$
+
+
+\subsection{Around Y Axis}
+
+Split the area into horizontal disks of thickness $\delta y$.
+
+The volume of one disk is:
+
+$$
+\pi x^2 \delta y
+$$
+
+Summing the volumes of these disks between $y = a$ and $y = b$ gives:
+
+$$
+\lim_{\delta y \to 0} \sum_{y = a}^{b} \pi x^2 \delta y
+$$
+
+Using the definition of integration:
+
+$$
+\pi \int^b_a x^2 dy
+$$
+
+
+\subsubsection{Area with the X Axis Rotated About the Y Axis}
+
+The volume of a solid formed when an area bounded by a function $f(x)$, the y
+axis, and the lines $y = a$ and $y = b$ is rotated about the x axis.
+
+Consider the inner surface area of a cylinder of radius $y$ and height $x$:
+
+$$
+2 \pi x y
+$$
+
+The volume of the solid is the sum of an infinite number of these cylinders
+between $y = a$ and $y = b$:
+
+$$
+2 \pi \int^b_a x y dy
+$$
+
+
+\subsection{Around a Line}
+
+Change the origin of the function to be centred around an axis.
+
+
+\subsection{Area Between Two Curves}
+
+The volume of a solid formed when the area between the curves $f(x)$ and $g(x)$
+is rotated about one of the axes.
+
+Given $f(x)$ is above $g(x)$ for the interval over which we're rotating,
+subtract the volume of the solid formed using $g(x)$ from that of $f(x)$:
+
+For example, rotating about the $x$ axis and bound by the lines $x = a$ and
+$x = b$:
+
+$$
+\pi \int^b_a (f(x))^2 dx - \pi \int^b_a (g(x))^2 dx
+$$
+
+Use a graph of the two functions to determine the required areas in more
+complicated scenarios.
+
+\end{document}
