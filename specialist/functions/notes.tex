@@ -60,24 +60,24 @@ value. For example, $f(x) = x^2$.
 A one-to-many relation means one input value will map to multiple output values.
 For example, $f(x) = \pm \sqrt{x}$.
 
-A many-to-many relation means multiple input values will map to the same set of
-multiple output values. For example, $x^2 + y^2 = 9$.
+A many-to-many relation means multiple input values will map to multiple output
+values. For example, $x^2 + y^2 = 9$.
 
 
 \subsection{Vertical Line Test}
 
 Where a vertical line is moved from left to right over a graph.
 
-If it intersects the curve more than once at any point, the graph is not of a
-function (it is a relation).
+If it intersects the curve more than once at any point, the graph is a relation,
+not a function.
 
 
 \subsection{Horizontal Line Test}
 
 Where a horizontal line is moved from top to bottom over a graph.
 
-If it intersects the curve more than once at any point, the graph is of a
-one-to-many function (not a one-to-one function).
+If it intersects the curve more than once at any point, the function is
+one-to-many (not one-to-one).
 
 
 
@@ -86,8 +86,6 @@ one-to-many function (not a one-to-one function).
 
 The set of all possible input values for a function.
 
-
-\subsection{Calculating Domain}
 
 \subsection{Polynomials}
 
@@ -111,6 +109,31 @@ Solve $h(x) = 0$ to determine the values of $x$ which are not in the domain.
 \subsection{Square Root}
 
 The contents of the square root must be greater than or equal to 0 (positive).
+
+For example:
+
+$$
+f(x) = \sqrt{g(x)}
+$$
+
+Solve $g(x) > 0$ to determine the values of $x$ in the domain.
+
+
+\subsection{Sine and Cosine}
+
+The domain for $\sin{x}$ and $\cos{x}$ is $x \in \mathbb{R}$.
+
+
+\subsection{Tangent}
+
+The domain for $\tan{x}$ excludes all vertical asymptotes,
+$x \neq \frac{\pi}{2} + n\pi, n \in \mathbb{Z}$.
+
+
+\subsection{Logarithm}
+
+The domain for $\ln{x}$ is $x > 0$, for $\ln{|x|}$ its $x \neq 0$.
+
 
 
 
@@ -153,8 +176,8 @@ function has a maximum or minimum turning point).
 
 \subsubsection{Hyperbolas}
 
-Draw a rough sketch of the graph to determine what methods to use to determine
-the range of $y$ values which the function never outputs.
+Draw a rough sketch of the graph to determine the range of $y$ values which the
+function never outputs.
 
 
 \subsubsection{Square Root}
@@ -250,7 +273,7 @@ Approaching the asymptote $x = -4$ from the right. Consider $f(-4^+)$:
 
 A function will have at most 1 oblique asymptote.
 
-It occurs when the degree of the numerator is 1 larger than the denominator.
+It only occurs when the degree of the numerator is 1 larger than the denominator.
 
 The linear equation for the asymptote can be found by simplifying the fraction
 using algebraic juggling.
@@ -389,6 +412,8 @@ $(2y - 9)(2y - 1)$ & + & - & + \\
 Thus the range for $f(x)$ is $y < 0.5$ and $y > 4.5$.
 
 
+
+
 \section{Composite Functions}
 
 Using the output of one function as the input for another:
@@ -405,7 +430,8 @@ $$
 Find the resulting expression for the composite function, and determine the
 domain and range of it.
 
-Beware of simplifying, as it can lead to a wrong answer.
+Beware of simplifying (especially with square roots), as it can lead to a wrong
+answer.
 
 
 \subsubsection{Method 2}
@@ -463,20 +489,19 @@ relation), $f(x)$ must be a one-to-one function.
 $f(x)$ must pass the horizontal line test.
 
 
-\subsubsection{Quadratics}
+\subsection{Domain and Range}
 
-The domain and range of the inverse may need to be restricted to accurately
-reflect the original function.
+The domain of $f^{-1}(x)$ is the range of $f(x)$.
 
-The inverse of $f(x) = \sqrt{x - 5}$ is $f^{-1}(x) = x^2 + 5$.
+The range of $f^{-1}(x)$ is the domain of $f(x)$.
 
-The domain of the inverse must be restricted to accurately reflect $f(x)$.
 
-The domain of $f^{-1}(x)$ will be the range of $f(x)$, thus
-$x \in \mathbb{R}, x \geq 0$.
+\subsection{Graphical Relation}
 
-We must decide whether to chose the positive or negative side of the quadratic
-depending on the original function.
+The inverse of a function represents a reflection about the line $y = x$.
+
+The points at which $f(x)$ will intersect with its inverse are the same as the
+intersection between $f(x)$ and the line $y = x$.
 
 
 \subsection{Calculating}
@@ -498,21 +523,6 @@ f^{-1}(x) & = \frac{x - 4}{3} \\
 $$
 
 
-\subsection{Domain and Range}
-
-The domain of $f^{-1}(x)$ is the range of $f(x)$.
-
-The range of $f^{-1}(x)$ is the domain of $f(x)$.
-
-
-\subsection{Graphical Relation}
-
-The inverse of a function represents a reflection about the line $y = x$.
-
-The points at which $f(x)$ will intersect with its inverse are the same as the
-intersection between $f(x)$ and the line $y = x$.
-
-
 \subsection{Many-To-One Functions}
 
 The domain or range of many-to-one (or many-to-many) functions can be
@@ -521,9 +531,26 @@ restricted to make them one-to-one functions.
 An inverse function can then be defined for the restricted domain or range.
 
 
+\subsubsection{Quadratics}
+
+We must decide whether to chose the positive or negative side of the quadratic
+depending on the original function.
+
+The inverse of $f(x) = x^2$ for $x < 0$ is $f^{-1}(x) = -\sqrt{x}$. We must
+chose the negative square root (rather than using $\pm\sqrt{x}$) due to the
+original restriction on the domain of $f(x)$.
+
+The inverse of $f(x) = \sqrt{x - 5}$ is $f^{-1}(x) = x^2 + 5$. We must restrict
+the domain of this inverse to accurately reflect $f(x)$.
+
+The range of $f(x)$ is the domain of $f^{-1}(x)$, thus
+$x \in \mathbb{R}, x \geq 0$.
+
+
 \subsubsection{Example}
 
-The function $f(x) = (x - 1)^2$ does not have an inverse for its natural domain.
+The function $f(x) = (x - 1)^2$ does not have an inverse function for its
+natural domain.
 
 $f(x)$ has a range $y \in \mathbb{R}, y \geq 0$.
 
@@ -577,6 +604,56 @@ Each solution must be checked by substituting it back into the original
 equation, as false solutions can arise.
 
 
+\subsection{Solving Complicated Equations}
+
+Given an equation such as $2 - \lvert x + 1 \rvert = \lvert 3x + 2 \rvert$.
+
+There are four possible equations that can be formed:
+
+\begin{itemize}
+\item $2 - (x + 1) = 3x + 2$
+\item $2 - (x + 1) = -(3x + 2)$
+\item $2 + (x + 1) = 3x + 2$
+\item $2 + (x + 1) = -(3x + 2)$
+\end{itemize}
+
+These represent the intersection of each branch of the left hand function with
+each branch of the right hand one.
+
+Two of these equations will give invalid solutions, so substitute each result
+back into the original equation to check its validity.
+
+
+\subsubsection{Given a Graph}
+
+Given a graph of the left and right hand sides of the equation, we can eliminate
+the two equations which give invalid solutions.
+
+For each intersection between the two functions in the graph, determine on which
+branch of each function the intersection point lies.
+
+Equate the equation of each of these branches to solve for $x$.
+
+
+\subsubsection{Squaring}
+
+Given the equation $\lvert x + 1 \rvert = \lvert 3x + 2 \rvert$.
+
+We can also use the definition of the absolute value as $\sqrt{x^2}$ to solve
+the equation.
+
+Square both sides:
+
+$$
+(x + 1)^2 = (3x + 2)^2
+$$
+
+Expand the brackets and solve the resulting quadratic.
+
+Substitute each solution back into the original inequality to ensure their
+validity.
+
+
 \subsection{Solving Inequalities}
 
 $\lvert x \rvert < a$ implies the distance from $x$ to the origin is less than
@@ -593,36 +670,57 @@ $$
 x < -a \qquad x > a
 $$
 
+$\lvert x - b \rvert < a$ implies the distance from $x$ to $b$ on a number line
+is less than $a$.
+
+$\lvert x - b \rvert > a$ implies the distance from $x$ to $b$ on a number line
+is greater than $a$.
+
+Since $\lvert x \rvert$ is always positive, $\lvert x \rvert > -a$ implies
+$x \in \mathbb{R}$.
+
+Also, $\lvert x \rvert < -a$ has no solutions for $x$.
+
 
 \subsection{Solving Complicated Inequalities}
 
 Given an inequality such as $2 - \lvert x + 1 \rvert > \lvert 3x + 2 \rvert$.
 
-There are four possible equations to be formed from this:
+Solve for each intersection point by equating the left and right hand sides.
+
+Given two solutions, $x_1$ and $x_2$, there are 2 possible cases:
 
 \begin{itemize}
-\item $2 - (x + 1) > 3x + 2$
-\item $2 - (x + 1) > -(3x + 2)$
-\item $2 + (x + 1) > 3x + 2$
-\item $2 + (x + 1) > -(3x + 2)$
+\item $x_1 < x < x_2$
+\item $x < x_1$ and $x > x_2$
 \end{itemize}
 
-Only two solutions from these four inequalities will satisfy the original
-inequality.
+Find a test value of $x$ for each case, substitute into the original inequality,
+and eliminate the incorrect case.
 
-Solve each of the four inequalities for four values of $x$, then substitute
-each into the original inequality to eliminate false solutions.
+Given there is only one solution, $x_1$, to the equation, there are also 2
+possible cases:
+
+\begin{itemize}
+\item $x < x_1$
+\item $x > x_1$
+\end{itemize}
+
+Again, find a test value of $x$ for each case, substitute into the original
+inequality, and eliminate the incorrect case.
 
 
 \subsubsection{Given a Graph}
 
-Given a graph of the two inequalities ($2 - \lvert x + 1 \rvert$ and
-$\lvert 3x + 2 \rvert$).
+A graph of the two functions ($2 - \lvert x + 1 \rvert$ and
+$\lvert 3x + 2 \rvert$) allows us to determine which of the two possible cases
+is correct by inspection.
 
-Allows us to eliminate the two invalid inequalities above.
+Solve the inequality for 1 or 2 solutions, $x_1$ and $x_2$, using the graph to
+chose the correct branches to equate.
 
-Use only the two inequalities which include the branches of the absolute value
-functions that intersect in the graph.
+For each case, observe which function is on top of the other, and select the
+correct range of $x$ values.
 
 
 
@@ -638,28 +736,32 @@ $$
 
 \subsection{Graphing}
 
-Any roots of $f(x)$ will be vertical asymptotes on the reciprocal graph.
+Given a graph of $f(x)$ and asked to find the reciprocal:
 
-The $x$ coordinate of any stationary points for $f(x)$ will also be the $x$
-coordinate for a stationary point on the reciprocal graph.
-
-Positive/negative values of $f(x)$ will also be positive/negative on the
-reciprocal graph.
-
-$f(x)$ and its reciprocal will intersect where ever $f(x) = 1$.
+\begin{itemize}
+\item Roots of $f(x)$ will be vertical asymptotes on the reciprocal.
+\item The $x$ coordinate of stationary points on $f(x)$ will also be the $x$
+	coordinate of a stationary point on the reciprocal.
+\item Positive and negative points on $f(x)$ will also be positive or negative
+	on the reciprocal.
+\item $f(x)$ and its reciprocal will intersect wherever $f(x) = 1$.
+\end{itemize}
 
 
 \subsubsection{Behaviour Around Asymptotes}
 
-Given $f(x)$ has a root at $x_1$.
+Given $f(x)$ has a root at $x_1$, the reciprocal will have a vertical asymptote
+with the equation $x = x_1$.
+We must determine the behaviour of the reciprocal around this asymptote.
 
-Consider approaching the root from the left.
+When approaching the asymptote from the left:
 
-If $f(x)$ approaches $x_1$ from above the x axis (positive), the asymptote at
-$x_1$ on the reciprocal graph will approach positive infinity from the left.
+\begin{itemize}
+\item If $f(x)$ is positive, the asymptote will approach positive infinity.
+\item If $f(x)$ is negative, the asymptote will approach negative infinity.
+\end{itemize}
 
-If $f(x)$ approaches $x_1$ from below the x axis (negative), the asymptote at
-$x_1$ on the reciprocal graph will approach negative infinity from the left.
+Use the same method for approaching the asymptote from the right.
 
 
 
@@ -680,26 +782,31 @@ when approaching $a$ from the right.
 
 \subsection{Continuous}
 
-A function is continuous if it can be drawn without lifting the pen from the
-page.
+A function $f(x)$ is continuous at a point $x = a$ if:
 
-A more formal definition is that the limit is defined at every point on the
-function, and that:
+\begin{enumerate}
+\item $f(a)$ is defined
+\item $\lim_{x \to a} f(x)$ is defined
+\item $\lim_{x \to a} f(x) = f(a)$
+\end{enumerate}
 
-$$
-\lim_{x \to a} f(x) = f(a)
-$$
+A function is continuous if it satisifes the above conditions for all $x$ in
+the function's domain.
+
+Informally, a function is continuous if it can be drawn without lifting the pen
+from the page.
 
 
 \subsection{Differentiable}
 
-A function is differentiable if it is continuous, and for all $x$ in its domain:
+A function $f(x)$ is differentiable at point $x = a$ if it is continuous at $a$,
+and:
 
 $$
-\lim_{x \to h^+} \frac{f(x + h) - f(x)}{h} = \lim_{x \to h^-} \frac{f(x + h) - f(x)}{h}
+\lim_{h \to 0^+} \frac{f(a + h) - f(a)}{h} = \lim_{h \to 0^-} \frac{f(a + h) - f(a)}{h}
 $$
 
-A function is differentiable at $x = a$ if the function is continuous at $a$
-and the above equation holds when $x = a$.
+A function is differentiable if it is continuous and satisfies the above
+equation for all $x$ in its domain.
 
 \end{document}

@@ -58,8 +58,8 @@ system.
 
 Each column represents a variable.
 
-The final column represents the constant on the right side of each of the
-equations.
+The final column represents the constant on the right hand side of each of the
+three equations.
 
 Each row represents the coefficients of the variables in one equation.
 
@@ -75,7 +75,7 @@ $$
 \end{cases}
 $$
 
-In matrix form is:
+Can be written in matrix form as:
 
 $$
 \begin{bmatrix}
@@ -85,6 +85,9 @@ $$
 \end{bmatrix}
 $$
 
+The leading diagonal is the diagonal line of coefficients starting at the top
+left corner, moving down and to the right.
+
 
 \subsection{Elementary Row Operations}
 
@@ -92,8 +95,8 @@ Elementary row operations on a system of equations in matrix form include:
 
 \begin{itemize}
 \item Reordering rows.
-\item Adding or subtracting two rows from each other.
 \item Multiplying or dividing a row by a constant.
+\item Adding or subtracting two rows from each other.
 \end{itemize}
 
 To perform a series of elementary row operations, we assign a row to the desired
@@ -102,7 +105,7 @@ combination of these operations.
 
 \subsection{Row Echelon Form}
 
-Where all coefficients below the leading diagonal for a system of equations in
+Where all coefficients below the leading diagonal of a system of equations in
 matrix form are 0.
 
 For example:
@@ -115,12 +118,14 @@ $$
 \end{bmatrix}
 $$
 
-Manipulate the matrix into row echelon form using the elementary row operations.
+Matrices can be manipulated using elementary row operations into row echelon
+form.
 
 
 \subsection{Solving}
 
-Once a matrix is in row echelon form, we can solve the system of equations.
+To solve a system of equations, write them in matrix form, manipulate the matrix
+into row echelon form, and solve for each variable.
 
 In the example above:
 
@@ -141,8 +146,11 @@ Elimination.
 
 \section{No Solutions}
 
-If any row in a row echelon form matrix has coefficients of 0 for all variables,
-with a non-zero constant in the final column:
+Once a system of equations in matrix form is reduced to row echelon form, the
+system has no solutions if all variables in one row have coefficients of 0,
+with a non-zero constant in the final column.
+
+For example:
 
 $$
 \begin{bmatrix}
@@ -152,17 +160,21 @@ a & b & c & d \\
 \end{bmatrix}
 $$
 
-This implies $0x + 0y + 0z = h$.
+The final row implies $0x + 0y + 0z = h$, where $h \neq 0$. This equation has
+no solutions.
 
-This system has no solutions.
+Thus the system itself has no solutions.
 
 
 
 
 \section{Infinite Solutions}
 
-If any row in a row echelon form matrix has coefficients of 0 for all variables,
-and 0 in the final column:
+Once a system of equations in matrix form is reduced to row echelon form, the
+system has no solutions if all variables in one row have coefficients of 0,
+with an additional 0 in the final column.
+
+For example:
 
 $$
 \begin{bmatrix}
@@ -172,24 +184,20 @@ a & b & c & d \\
 \end{bmatrix}
 $$
 
-This implies $0x + 0y + 0z = 0$.
+The final row implies $0x + 0y + 0z = 0$.
 
-There is not enough information to uniquely solve the system.
+There is not enough information to uniquely solve the system, thus the system
+has infinitely many solutions.
 
-The system has infinitely many solutions.
-
-
-\subsection{Recognition}
-
-If any of the equations is a scalar multiple of another, the system has an
-infinite number of solutions.
+If any row in the system is a multiple of another, the system has infinite
+solutions.
 
 
 
 
 \section{Conditions for Infinite or No Solutions}
 
-Given the system of equations:
+Given the system of equations, where $p, q \in \mathbb{R}$:
 
 $$
 \begin{cases}
@@ -201,7 +209,7 @@ x - y + 2z & = 1 \\
 \end{cases}
 $$
 
-The row echelon form matrix for this system is:
+The row echelon form matrix is:
 
 $$
 \begin{bmatrix}
@@ -221,10 +229,23 @@ p \neq 4 \\
 \end{aligned}
 $$
 
-Written as: $p, q \in \mathbb{R}, p \neq 4$
+This is written as: $p, q \in \mathbb{R}, p \neq 4$
 
 The system has no solutions when $p = 4$ and $q \in \mathbb{R}, q \neq -11$.
 
 The system has infinite solutions when $p = 4$ and $q = -11$.
+
+
+
+
+\section{Graphical Representation}
+
+Each equation in the system can be represented by a 3D plane:
+
+\begin{description}
+\item [Unique Solution] When the 3 planes intersect at a single point.
+\item [Infinite Solutions] When the 3 planes intersect in a single line.
+\item [No Solutions] When the 3 planes intersect in 3 separate lines.
+\end{description}
 
 \end{document}

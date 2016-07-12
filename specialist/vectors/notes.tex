@@ -64,8 +64,10 @@ $$
 Two vectors are equal if and only if the magnitude and direction of both vectors
 are equal.
 
-For vectors in component form, we can form multiple equations from each
-component:
+For vectors in component form, all components must be equal for the vectors to
+be equal.
+
+Two or three equations can be formed form equating two vectors:
 
 $$
 \begin{pmatrix} 3a \\ 4 \end{pmatrix} = \begin{pmatrix} 6 \\ 2b \end{pmatrix}
@@ -88,7 +90,7 @@ same direction.
 If $k$ is negative, the vectors are unlike parallel vectors. They point in
 opposite directions.
 
-If $h \bb{a} = k \bb{b}$ given that $\bb{a}$ and $\bb{b}$ are not parallel, then
+If $h \bb{a} = k \bb{b}$ where $\bb{a}$ and $\bb{b}$ are not parallel, then
 $h = k = 0$.
 
 
@@ -131,7 +133,7 @@ $$
 If $\bb{a}$ and $\bb{b}$ are perpendicular, then:
 
 $$
-\bb{a} . \bb{b} = 0
+\bb{a} \cdot \bb{b}\cdot = 0
 $$
 
 
@@ -141,10 +143,10 @@ The dot product has the following properties:
 
 $$
 \begin{aligned}
-	\bb{a} \cdot \bb{b} & = \bb{b} \cdot \bb{a} \\
-	\bb{a} \cdot (k \bb{b}) & = (k \bb{a}) \cdot \bb{b} = k (\bb{a} \cdot \bb{b}) \\
-	\bb{a} \cdot \bb{a} & = \lvert \bb{a} \rvert^2 \\
-	\bb{a} \cdot (\bb{b} + \bb{c}) & = \bb{a} \cdot \bb{b} + \bb{a} \cdot \bb{c} \\
+\bb{a} \cdot \bb{b} & = \bb{b} \cdot \bb{a} \\
+\bb{a} \cdot (k \bb{b}) & = (k \bb{a}) \cdot \bb{b} = k (\bb{a} \cdot \bb{b}) \\
+\bb{a} \cdot \bb{a} & = \lvert \bb{a} \rvert^2 \\
+\bb{a} \cdot (\bb{b} + \bb{c}) & = \bb{a} \cdot \bb{b} + \bb{a} \cdot \bb{c} \\
 \end{aligned}
 $$
 
@@ -163,7 +165,11 @@ $\bb{b}$, called the normal.
 The cross product of two parallel vectors (like or unlike parallel) is 0 (as
 the angle between them is 0).
 
-The cross product of a vector with itself is 0.
+The cross product of a vector with itself is 0:
+
+$$
+\bb{a} \times \bb{a} = 0
+$$
 
 
 \subsubsection{Area of Parallelogram}
@@ -206,8 +212,8 @@ $$
 
 \subsection{Scalar Projection}
 
-The scalar projection is the distance along one vector another vector reaches if
-projected onto it.
+The scalar projection of a vector onto another is the distance it extends along
+it.
 
 The scalar projection of $\bb{a}$ onto $\bb{b}$ is:
 
@@ -226,7 +232,7 @@ the scalar projection of another vector onto that vector.
 The vector projection of $\bb{a}$ onto $\bb{b}$ is:
 
 $$
-\lvert \bb{a} \rvert \cos{\theta} \hat{\bb{b}} = \bb{a} \cdot \hat{\bb{b}} \hat{\bb{b}}
+\lvert \bb{a} \rvert \cos{\theta} \hat{\bb{b}} = (\bb{a} \cdot \hat{\bb{b}}) \hat{\bb{b}}
 $$
 
 
@@ -242,7 +248,7 @@ $$
 $$
 
 If P lies outside the line segment $\vv{AB}$, then use point B as the central
-one and rearrange the above equation for $\vv{OP}$.
+point and rearrange the above equation for $\vv{OP}$.
 
 
 
@@ -341,8 +347,7 @@ Substitute these values into the vector equation of a line.
 
 \subsubsection{Vector to Parametric}
 
-Let $\bb{r} = \begin{pmatrix} x \\ y \end{pmatrix}$ and write two equations
-from this:
+Let $\bb{r} = \begin{pmatrix} x \\ y \end{pmatrix}$:
 
 $$
 \begin{pmatrix} x \\ y \end{pmatrix} = \bb{a} + \lambda \bb{d} \qquad \lambda \in \mathbb{R}
@@ -362,7 +367,7 @@ $$
 
 \subsubsection{Parametric to Vector}
 
-Perform by inspection from the coefficient of $\lambda$ and the additional
+Perform by inspection from the coefficient of $\lambda$ and the constant
 term.
 
 
@@ -392,11 +397,10 @@ $$
 \frac{x - \bb{a}_x}{\bb{d}_x} = \frac{y - \bb{a}_y}{\bb{d}_y}
 $$
 
-If either component of $\bb{d}$ is 0, we ignore the equation formed using the
-other component.  This results in a line that is perpendicular to one of the
-axes.
+If one of the components of $\bb{d}$ is 0, the line will be perpendicular to
+one of the axes.
 
-For example, if $\bb{d}_x = 0$:
+For example, if $\bb{d}_x = 0$, the parametric equations are:
 
 $$
 \begin{aligned}
@@ -411,12 +415,12 @@ $$
 x = \bb{a}_x
 $$
 
-A line parallel to the y axis.
+Which is a line parallel to the y axis.
 
 
 \subsubsection{Dot Product to Cartesian in 2D}
 
-Expand $\bb{r}$:
+Let $\bb{r} = \begin{pmatrix} x \\ y \end{pmatrix}$:
 
 $$
 \begin{pmatrix} x \\ y \end{pmatrix} \cdot \bb{n} = c
@@ -432,6 +436,8 @@ $$
 \subsubsection{Cartesian to Dot Product in 2D}
 
 Use the coefficients of $x$ and $y$ to determine the components of the normal.
+
+The constant on the right hand side remains the same.
 
 
 \subsection{Construction}
@@ -727,13 +733,14 @@ Use the coefficients of $x$, $y$, and $z$ to find the components of the normal.
 
 \subsubsection{Vector to Cartesian}
 
-Convert the vector equation into dot product form.
+Convert the vector equation into dot product form, then the dot product form
+to cartesian.
 
 
 \subsubsection{Cartesian to Vector}
 
-Convert the cartesian into dot product form, then convert the dot product form
-to vector form.
+Convert the cartesian into dot product form, then the dot product form to
+vector.
 
 
 \subsection{Construction}
@@ -776,7 +783,12 @@ any point on either of the lines as a point on the plane.
 
 
 
+
 \section{Angle Between}
+
+Usually, a question will ask for the acute angle. If the angle found is obtuse,
+use $180^\circ - \theta$.
+
 
 \subsection{Two Lines}
 
@@ -808,7 +820,7 @@ normals.
 
 \section{Point On Surface}
 
-Given the point with position vector $\bb{p}$.
+Given a point with position vector $\bb{p}$.
 
 
 \subsection{Line}
@@ -886,9 +898,10 @@ If the left hand side is greater than $r$, the point lies outside the sphere.
 A line lies on a plane if its direction is parallel to the plane, and the line
 and plane have a common point.
 
-If the normal of the plane is perpendicular to the direction of the line, and
-any point on the line satisfies the equation for the plane, the line lies on
-the plane.
+Calculate the normal to the plane, and check it is perpendicular to the line's
+direction.
+
+Check a point on the line satisfies the equation for the plane.
 
 
 
@@ -1235,7 +1248,7 @@ Find the velocity of object 2 relative to object 1, $_2\bb{v}_1$.
 Form an equation of motion for object 2 relative to object 1:
 
 $$
-\bb{r} = \'_2\bb{r}_1 + \'_2\bb{v}_1
+\bb{r} = _2\bb{r}_1 + _2\bb{v}_1 t
 $$
 
 Minimise the distance between this line and the origin (the location of object
