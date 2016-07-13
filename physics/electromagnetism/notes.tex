@@ -64,7 +64,7 @@ Charge is quantised (exists in discrete units).
 The charge on any particle is some integer multiple of the charge on an
 electron.
 
-1 electron has a charge of $1.60 \times 10^{-19}$.
+1 electron has a charge of $1.60 \times 10^{-19}\mbox{ C}$.
 
 1 Coulomb of charge contains $6.25 \times 10^{18}$ electrons.
 
@@ -82,9 +82,9 @@ The requirements in drawing field lines around point charges:
 
 \begin{itemize}
 \item Symmetrical about every axis.
-\item Point towards negative charge, away from positive charge.
-\item Density of lines indicates the relative strength of the field at a point
-	around the charge.
+\item Arrows point from positive towards negative.
+\item Density of lines around the charge indicates the relative strength of the
+	electric field.
 \end{itemize}
 
 
@@ -108,8 +108,8 @@ The required electric field line diagrams are:
 
 Work must be done to move two particles with like charges close together.
 
-Potential energy stored by a particle with a charge when work is done in moving
-it close to another particle with the same charge.
+A charge gains electrical potential energy when work is done in moving it close
+to another particle with like charge.
 
 
 \subsection{Voltage}
@@ -138,39 +138,83 @@ Units: Amperes ($A$), equivalent to Coulombs per second ($Cs^{-1}$)
 The rate of flow of charge through a certain point in a circuit.
 
 
-\subsection{Conventional Current}
+\subsubsection{Conventional Current}
 
 The direction of flow of positive charge in a circuit.
 
-Use this unless stated otherwise.
+Assume all given current directions are conventional unless stated otherwise.
 
 
-\subsection{Electron Current}
+\subsubsection{Electron Current}
 
 The direction of flow of negative charge (electrons) in a circuit.
 
+Opposite to conventional current.
 
-\subsection{Electric Field}
+
+\subsection{Resistance}
+
+Symbol: $R$
+
+Units: Ohms ($\Omega$)
+
+A measure of by how much a circuit or element in a circuit impedes the flow of
+charge.
+
+
+\subsection{Voltage Drop}
+
+Voltage drop is how much energy per Coulomb of charge is lost over a segment of
+a circuit.
+
+This means that the electrons just before the entering the component have a
+higher electrical potential energy than after they leave.
+
+This difference in potential energy is equivalent to a drop in voltage across
+the component.
+
+
+\subsection{Ohms Law}
 
 $$
-\begin{aligned}
-E & = \frac{F}{q} \\
-E & = \frac{V}{d} \\
-\end{aligned}
+V = IR
+$$
+
+Where $V$ is the voltage drop across a component of a circuit with resistance
+$R$, when a current $I$ flows through it.
+
+
+
+
+\section{Electric Fields}
+
+\subsection{Eletric Field Strength}
+
+$$
+E = \frac{F}{q}
 $$
 
 Symbol: $E$
 
 Units: Newtons per Coulomb ($NC^{-1}$)
 
-An electric field exists at a point in space when a force is exerted on a
-charge at that point.
+Requires a direction.
+
+An electric field exists at a certain point in space only when a point charge
+$q$ experiences a force $F$ at this point.
 
 The electric field strength at a point in space is defined as the force exerted
 per unit of charge at that point.
 
-The electric field strength around a point charge decays with the square of
-the distance (inverse square law).
+
+\subsection{Electric Field Between Two Plates}
+
+$$
+E = \frac{V}{d}
+$$
+
+The eletric field strength between two metal plates separated by a distance of
+$d$ metres, with a potential difference of $V$ across them.
 
 
 \subsection{Force on a Charged Particle}
@@ -182,53 +226,24 @@ $$
 The force on a particle with charge $q_1$ positioned $r$ metres away from
 another particle with charge $q_2$ is $F$.
 
-The direction of the force will depend on whether the charges are positive or
-negative.
+The direction of this force will either be ``attraction" or ``repulsion", for
+unlike or like charges respectively.
+
+The electric field strength around a point charge decays with the square of
+the distance from the point (inverse square law).
 
 
-\subsection{Field Strength on a Test Charge}
+\subsection{Field Strength due to a Point Charge}
 
 $$
-E = \frac{1}{4\pi \epsilon_0} \times \frac{q_2}{r^2}
+E = \frac{1}{4\pi \epsilon_0} \times \frac{q}{r^2}
 $$
 
-The force experienced per unit charge by a test charge at a certain radius from
-the source of an electric field.
+The electric field strength a distance of $r$ metres away from a point charge
+with a charge of $q$.
 
-
-
-
-\section{Electricity Problems}
-
-\subsection{Acceleration Across a Plate}
-
-Given two metal plates separated by a distance with a potential difference
-across them.
-
-Calculate the electric field strength between the two plates.
-
-Calculate the force on a positive charge positioned at the positive plate.
-
-Calculate its acceleration by dividing by its mass.
-
-
-\subsection{Forces Between Multiple Particles}
-
-To calculate the resultant force on a set of more than 2 particles positioned
-near each other.
-
-For each particle, calculate the force exerted on it by every other particle,
-then sum these vectors to find the resultant force.
-
-
-\subsection{Projectile Motion Across Plates}
-
-Where a particle enters horizontally between two plates with a potential
-difference between them, where it experiences a force downwards due to an
-electric field.
-
-This downwards force will act similar to gravity in a projectile motion
-question.
+Derived from the equation for the force on a charged particle, when divided by
+$q_2$.
 
 
 
@@ -245,19 +260,24 @@ The regions of aligned electron spin are called domains.
 Only ferromagnetic metals can form permanent magnets (eg. iron, nickel,
 cobalt).
 
+Ferromagnetic metals can have their domains aligned when exposed to an external
+magnetic field, becoming permanent magnets.
+
 
 \subsection{Paramagnetism}
 
-Where the domains in a metal when in the presence of an external magnetic field
-temporarily align in the same direction as those of the external field.
+Where the domains in a metal temporarily align when in the presence of an
+external magnetic field.
+The domains align in the same direction as those of the external field.
 
 Causes an attraction between the paramagnet and the external magnet.
 
 
 \subsection{Diamagnetism}
 
-Where the domains in a metal when in the presence of an external magnetic field
-temporarily align in the opposite direction to that of the exernal field.
+Where the domains in a metal temporarily align when in the presence of an
+external magnetic field.
+The domains align in the opposite direction as those of the external field.
 
 Causes a repulsion between the diamagnet and the external magnet.
 
@@ -270,26 +290,16 @@ Only occurs for certain metals below a critical temperature.
 
 \subsection{Convention}
 
-Conditions for drawing magnetic field lines:
+Conventions for drawing magnetic field lines:
 
 \begin{itemize}
 \item Symmetrical about every axis.
-\item Lines point from north to south.
+\item Arrows point from North to South.
 \item Density of lines indicates the relative field strength.
 \end{itemize}
 
-The required magnetic field diagrams are:
-
-\begin{itemize}
-\item A single dipole magnet.
-\item Two dipole magnets placed vertically side by side, either repelling or
-	attracting each other.
-\item Two dipole magnets placed horizontally side by side, either repelling or
-	attracting each other.
-\end{itemize}
-
-
-\subsubsection{Convention}
+In addition to arrows, we can represent magnetic fields travelling into and
+out of the page using the symbols:
 
 \begin{description}
 \item [Cross] Field lines pointing out of the page.
@@ -297,29 +307,55 @@ The required magnetic field diagrams are:
 \end{description}
 
 
+\subsection{Required Diagrams}
+
+The required magnetic field diagrams are:
+
+\begin{itemize}
+\item A single dipole magnet.
+\item A single bar magnet
+\item Two bar magnets placed side by side, where the North pole of each is at
+	the top of the page
+\item Two bar magnets placed side by side, where the North pole of one is placed
+	next to the South pole of the other
+\item Two bar magnets placed end to end, where the two North poles are closest
+\item Two bar magnets placed end to end, where the North pole of one is closest
+	to the South pole of the other
+\item Magnetic field around a wire.
+\item Magnetic field around two wires with current flowing in either the same
+	or opposite directions (showing an attraction or repulsion between the
+	wires).
+\end{itemize}
+
+
 \subsection{Magnetic Field Lines Around Earth}
 
 The Earth acts as a large bar.
 
-The south magnetic pole is at the geographic north pole.
+The South magnetic pole is at the geographic North pole.
 
-The north magnetic pole is at the south geographic pole.
+The North magnetic pole is at the South geographic pole.
 
 
 \subsubsection{Direction of Field Lines}
 
-At the equator, the magnetic field lines have no vertical component. They point
-directly towards the north geographic pole.
+Above the equator, the Earth's magnetic field lines have no vertical component.
+They point directly towards the North geographic pole.
 
-At the north geographic pole, the magnetic field lines point directly down.
+At the North geographic pole, the magnetic field lines point directly down.
 
-At the south geographic pole, the magnetic field lines point directly up.
+At the South geographic pole, the magnetic field lines point directly up.
 
 
 \subsubsection{Angle of Dip}
 
-The angle at which, to a tangent at a point on Earth's surface, the magnetic
+The angle above a tangent at a point on Earth's surface which the magnetic
 field lines point.
+
+
+\subsubsection{Angle of Declination}
+
+The angle between the North-South magnetic and geographic axes.
 
 
 
@@ -334,10 +370,13 @@ Units: Tesla ($T$)
 
 Requires a direction.
 
-Exists wherever a permanent magnet would experience a force.
+A magnetic field exists at a certain point in space only when a permanent
+magnet would experience a force at this point.
+
+Also called magnetic flux density.
 
 
-\subsection{Moving Charge}
+\subsection{Charge Moving Through a Magnetic Field}
 
 A moving charge experiences a force when travelling through a magnetic field:
 
@@ -345,8 +384,8 @@ $$
 F = qvB
 $$
 
-Only want the component of the magnetic field perpendicular to the velocity
-of the particle.
+Use only the component of the magnetic field perpendicular to the particle's
+velocity.
 
 
 \subsubsection{Direction}
@@ -363,16 +402,16 @@ your right hand):
 
 \subsection{Current in a Wire}
 
-A current flowing through a wire that is in the presence of a magnetic field
-will cause the wire to experience a force:
+A current flowing through a wire in the presence of a magnetic field will
+cause the wire to experience a force:
 
 $$
 F = BIl
 $$
 
-Only the component of the magnetic field perpendicular to the wire is used.
+Only use the component of the magnetic field perpendicular to the wire.
 
-The direction of the force is determined by the right hand rule above.
+The direction of the force is determined by the right hand rule.
 
 
 
@@ -397,14 +436,14 @@ right hand):
 
 \subsection{Induced Magnetic Field Strength}
 
-The strength of an induced magnetic field in a wire depends on the current in
-the wire (how fast charge is flowing), and the distance from the wire:
-
 $$
 B = \frac{\mu_0}{2\pi} \times \frac{I}{r}
 $$
 
-Where $\mu_0$ is the permeability of free space:
+The magnetic field strength of an induced field around a wire with a current
+$I$ flowing through it, a distance of $r$ metres away.
+
+$\mu_0$ is the permeability of free space:
 
 $$
 \mu_0 = 4\pi \times 10^{-7}
@@ -443,7 +482,7 @@ From the direction of flow of current, use the right grip rule to determine the
 direction of the field lines around the solenoid.
 
 Use the direction of field lines to determine the polarity of the solenoid
-(which end is north and south).
+(which end is North and South).
 
 
 \subsubsection{Soft Iron Core}
@@ -478,13 +517,13 @@ Units: Tesla metres squared ($\text{Tm}^2$) or Webber ($\text{Wb}$)
 The amount of magnetic field that passes through a given area perpendicular to
 the magnetic field.
 
-In the equation above, $\theta$ is the angle between the normal to the area,
+In the equation above, $\theta$ is the angle between the normal to the area
 and the magnetic field.
 
 
 \subsubsection{Maximum Flux}
 
-When the normal to the area is parallel to the magnetic field ($\theta$ is 0).
+When the area is perpendicular to the magnetic field (the normal is parallel).
 
 
 \subsection{Change in Magnetic Flux}
@@ -497,9 +536,9 @@ Ways to change magnetic flux:
 
 \begin{itemize}
 \item Change the area in the magnetic field.
+\item Move the area outside the magnetic field.
 \item Change the angle between the area and the magnetic field.
 \item Change the magnetic field strength.
-\item Move the area outside the magnetic field.
 \end{itemize}
 
 
@@ -522,7 +561,8 @@ into the page:
 \item A change in out of the page.
 \end{itemize}
 
-For example, increasing the area in a magnetic field directed into the page:
+For example, increasing the area inside a magnetic field directed into the
+page:
 
 \begin{itemize}
 \item Initial magnetic flux is a small into the page.
@@ -554,7 +594,7 @@ be opposite to the change in flux that caused it.
 
 \subsection{Reason}
 
-The reason for induced EMF:
+Induced EMF occurs because:
 
 \begin{itemize}
 \item A wire moving through a magnetic field represents the motion of charge
@@ -564,15 +604,19 @@ The reason for induced EMF:
 \item This induces a potential difference across the two ends of the wire.
 \end{itemize}
 
-For example, a wire moving left through a magnetic field that is coming out of
-the page:
+For example, a wire moving left through a magnetic field directed into the
+page:
 
 \begin{itemize}
 \item Positive charges are moving left.
 \item Will experience a force up.
 \item Positive charge will accumulate at the top of the wire.
 \item Negative charge will accumulate at the bottom of the wire.
+\item Induces a potential difference across the wire.
 \end{itemize}
+
+In a circuit with a changing magnetic flux, this potential difference will
+induce a current in the wire.
 
 
 \subsection{Faraday's Law}
@@ -594,6 +638,7 @@ EMF is:
 
 $$
 \begin{aligned}
+\phi & = BA \\
 \varepsilon & = -\frac{\Delta \phi}{\Delta t} \\
 & = -\frac{Blvt}{t} \\
 & = Blv \\
@@ -613,21 +658,15 @@ experience a changing magnetic flux ($\Delta \phi$).
 Only occurs in metals, as they have free moving electrons that are capable of
 forming eddy currents.
 
-Power lost to eddy currents:
-
-$$
-P = I^2 R
-$$
-
 
 \subsection{Energy Transformation}
 
-Convert mechanical or kinetic energy in a moving magnetised object (which
+Converts mechanical or kinetic energy in a moving magnetised object (which
 causes a changing magnetic flux) into heat (increasing the kinetic energy of
 particles in the metal).
 
 As the velocity of the moving object increases, so does the changing magnetic
-flux, increasing the magnitude of the eddy currents in the metal and the power
+flux, increasing the magnitude of the eddy currents in the metal and the energy
 loss.
 
 
@@ -636,18 +675,22 @@ loss.
 As the magnet falls through an aluminium pipe:
 
 \begin{itemize}
-\item Sections of the pipe experience a change in magnetic flux.
+\item Sections of the pipe experience a changing magnetic flux.
+\item Faraday's law states that the magnitude of the induced EMF in the pipe
+	will be proportional to the changing magnetic flux.
 \item Lenz's law states that the direction of the induced EMF in the pipe will
 	be opposite to that of the change in flux.
 \item This produces spirals of moving charge (eddy currents) in the pipe.
-\item This exerts a magnetic repulsion force on the falling magnet, slowing its
-	descent.
+\item This exerts a magnetic repulsion force on the falling magnet opposite to
+	its direction of motion.
+\item This slows its descent and causes it to take longer to fall through the
+	pipe.
 \end{itemize}
 
 
 \subsubsection{Direction of Eddy Current Spirals}
 
-Consider a magnet falling through a pipe, with its north end closest to the
+Consider a magnet falling through a pipe, with its North end closest to the
 ground.
 
 Just below the magnet:
@@ -685,7 +728,7 @@ Stovetops:
 
 \begin{itemize}
 \item Solenoid is placed below the stovetop, with a non conducting substance
-	placed above it (where the pan sits on top of).
+	placed above it (which the pan sits on top of).
 \item This non-conducting substance does not have free moving electrons,
 	preventing eddy currents from forming in it due to the changing magnetic
 	flux produced by the solenoid.
@@ -718,21 +761,7 @@ forces (one up, one down).
 The two sides parallel to the magnetic field will experience no force.
 
 There is no net translational force, but there is an unbalanced rotational
-force.
-
-
-\subsection{Under Rotation}
-
-The unbalanced rotational force exerts a torque on the motor, causing it to
-rotate.
-
-The direction and magnitude of the force exerted on the two sides does not
-change.
-
-The angle between the force and the line of action will increase, reaching
-$180^\circ$ when the coil has rotated $90^\circ$.
-
-This will cause the coil to remain vertical, not continuing its motion.
+torque.
 
 
 \subsection{Torque}
@@ -743,7 +772,7 @@ perpendicular to the line of action):
 $$
 \begin{aligned}
 \tau & = rF \\
-\sum \tau_{\mbox{cw}} & = \sum \tau_{\mbox{acw}} \\
+\sum \tau_{cw} & = \sum \tau_{acw} \\
 \tau & = 2rF \\
 & = 2rBIl \\
 \end{aligned}
@@ -771,7 +800,7 @@ For the total torque exerted on the motor:
 
 $$
 \begin{aligned}
-\sum \tau_{\mbox{cw}} & = \sum \tau_{\mbox{acw}} \\
+\sum \tau_{cw} & = \sum \tau_{acw} \\
 \tau & = rF \\
 & = 2r BILn \\
 & = BAIn \\
@@ -790,80 +819,94 @@ $$
 The root mean squared torque (average torque) is:
 
 $$
-\tau_{\mbox{RMS}} = \frac{\tau}{\sqrt{2}}
+= \frac{\tau}{\sqrt{2}}
 $$
+
+
+\subsection{Design Limitations}
+
+The unbalanced rotational force exerts a torque on the motor, causing it to
+rotate.
+
+Once the coil passes $90^\circ$, the direction of applied torque will reverse
+since the direction of force applied on each side of the coil doesn't change.
+
+This torque opposes the angular velocity of the coil, causing it to rotate in
+the opposite direction.
+
+This stops the motor from continuing its motion.
 
 
 
 
 \section{DC Motor}
 
-When a basic DC motor reaches $90^\circ$, it will become stuck since the force
-is always directly upwards (it may wobble slightly).
+The design limitations of the basic DC motor are resolved by flipping the
+direction of current in the wire at $90^\circ$.
 
-This is solved by flipping the direction of current in the wire when the coil
-reaches $90^\circ$, flipping the direction of the force, allowing it to
-continue rotating.
+This swaps the direction of the forces exerted on the sides of the coil,
+maintaining a constant direction of torque, allowing it to continue to rotate.
 
-This is done using a commutator.
+This is achieved using a split ring commutator.
 
 
-\subsection{Commutator}
+\subsection{Split Ring Commutator}
 
-Two C-shaped semicircles connected to the rotating coil, which rotate as the
-coil does.
+Two C-shaped semicircles connected to the rotating coil and rotate with it.
 
-Brushes fixed to the battery circuit come in contact with the commutators to
-complete the circuit.
+Brushes fixed to the battery circuit come in contact with the moving commutators
+to close the circuit.
 
-After $90^\circ$, the commutators swap the brushes they are in contact with,
-reversing the direction of current.
+At $90^\circ$, the brushes change which commutator they are in contact with,
+reversing the current direction.
 
 
 \subsection{Torque Curve}
 
-A graph of the magnitude of torque against time.
+A graph of torque against time.
 
 Appears as the graph of $\lvert \cos{\theta} \rvert$ (absolute value of a
 cosine graph).
 
-The maximum torque in this graph will be when the force exerted by the magnetic
-field is perpendicular to the line of action ($\tau_{\text{max}}$).
+The maximum torque in this graph will be when the forces exerted on the sides
+of the coil is perpendicular to the line of action.
 
-The average torque will be less than this maximum torque (drawn as a dotted
-line).
+The average torque will be less than this maximum torque (drawn as a dotted,
+horizontal line).
 
 
 \subsection{Curving Permanent Magnets}
 
-The permanent magnets are curved around the circular path of the coils.
+The permanent magnets supplying the magnetic field can be curved around the
+circular path of the coils.
 
 This causes the applied force to act perpendicular to the line of action for
-a larger rotation angle.
+a larger part of the coil's rotation.
 
-This increases the average torque applied, but leaves the maximum torque
-constant.
+This increases the average torque of the motor, but doesn't affect the maximum
+torque.
 
 The torque curve graph appears flatter at the peaks, more like a table.
 
 
 \subsection{Multiple Coils}
 
-Where another set of C-shaped commutators and another coil are added,
-perpendicular to the existing coil, using a curved magnet.
+Another split ring commutator pair and coil can be added, perpendicular to the
+existing coil.
 
-Only the commutator and coil in the optimal location within the magnet for
-maximum torque is in contact with the brushes at any time.
+Only the commutator pair and coil at the optimal rotation angle will form a
+circuit with the brushes.
 
-Torque curve graph appears as two or more overlapping cosine graphs that are
-$90^\circ$ out of phase.
+Torque curve graph appears as two overlapping cosine graphs $90^\circ$ out of
+phase.
 
 Maximum torque remains the same, but increases the average torque.
 
 
 \subsection{Increase Maximum Torque}
 
-Increase any variables in the equation:
+Increase any variables in the equation to increase the maximum torque of a DC
+motor:
 
 $$
 \tau = B A I n \sin{\theta}
@@ -872,13 +915,13 @@ $$
 \begin{itemize}
 \item Increase magnetic field strength
 \item Increase number of coils
-\item Increase current running through coils
+\item Increase current in the circuit
 \item Increase the width of the coil (radius from pivot)
 \end{itemize}
 
-Note for a constant voltage supply, increasing the length of the wire would
-increase the resistance and decrease the current. This would result in no
-change in the maximum torque.
+Note that, for a constant voltage supply, increasing the length of the wire
+would increase the resistance and decrease the current. This would result in
+little change in the maximum torque.
 
 
 \subsection{Increase Average Torque}
@@ -900,8 +943,7 @@ torque of a motor:
 \begin{itemize}
 \item Sparking when the brushes jump the small gap between commutators,
 	causing carbon build up on the copper commutators, increasing the
-	resistance and reducing the current through the circuit (due to a constant
-	supplied voltage).
+	resistance and reducing the current through the circuit.
 \item The carbon brushes may disintegrate, decreasing the time in one full
 	revolution during which they are in contact with the commutators,
 	decreasing the average current flow, decreasing maximum torque.
@@ -940,9 +982,9 @@ How it works:
 The benefits of using an AC motor over a DC one include:
 
 \begin{itemize}
-\item Using solenoids for magnets allows for much stronger magnetic fields than
-	can be achieved with the permanent magnets in a DC motor. Allows for much
-	higher maximum torque.
+\item Using stator coils allows for much stronger magnetic fields than can be
+	achieved with the permanent magnets in a DC motor. Allows for a higher
+	maximum torque.
 \item DC motors produce a rectified DC wave, with a lower average voltage.
 	Average voltage for AC motors is not considered.
 \end{itemize}
@@ -952,17 +994,20 @@ The benefits of using an AC motor over a DC one include:
 
 \section{Back EMF}
 
-Back EMF can be explained as the following:
+Back EMF:
 
 \begin{itemize}
-\item As the coil in the motor is rotated, an EMF is induced in the coil
-	opposite to the direction of charge from the DC power source.
-\item As the coil's velocity increases, the back EMF increases, reducing the
-	potential difference across the coil.
-\item This reduces the current flowing in the coil, since the coil's resistance
-	is constant.
-\item The motor eventually reaches a constant RPM as the back EMF approaches
-	the supplied voltage.
+\item The rotation of the coil exposes the coil to a changing magnetic flux.
+\item Faraday's law states that the magnitude of the induced EMF in the coil
+	is proportional to this changing magnetic flux.
+\item Lenz's law states that the direction of this induced EMF in the coil
+	opposes that of the magnetic flux that induced it.
+\item This reduces the net EMF in the coil, reducing the current flowing through
+	the wire.
+\item This decreases the torque of the motor.
+\item As the angular velocity of the coil increases over time, so does the
+	changing magnetic flux, further reducing the net EMF in the wire, causing
+	the motor to eventually reach a constant RPM.
 \end{itemize}
 
 Back EMF applies to both DC and AC motors.
@@ -974,53 +1019,38 @@ After a period of time, the motor's back EMF will approach a constant:
 
 $$
 \begin{aligned}
-V_{\mbox{effective}} = \varepsilon - \varepsilon_{\mbox{back}}
-I = \frac{\varepsilon - \varepsilon_{\mbox{back}}}{R}
+V = \varepsilon - \varepsilon_b \\
+I = \frac{\varepsilon - \varepsilon_b}{R} \\
 \end{aligned}
 $$
 
-The current that accounts for the back EMF is the operating current of the
-motor.
+Where $V$ is the operating current, and $\varepsilon_b$ is the back EMF
+induced in the coil.
 
-
-\subsection{Current Drop}
-
-Initially as the coils being to move:
-
-\begin{itemize}
-\item Frequency of rotation of the coils is low.
-\item Results in a low back EMF induced in the coils.
-\item High effective voltage.
-\item High current.
-\end{itemize}
-
-As the coils spin faster, the motor reaches its operating current.
-
-It takes little time for this operating current to be reached.
+This calculated current, incorporating the back EMF, is the operating current
+of the motor.
 
 
 \subsection{Damage}
 
-\begin{itemize}
-\item The motor provides a near constant average torque.
-\item If a high load is placed on the motor, the frequency of revolution of the
-	motor will decrease.
-\item This reduces the back EMF (since $\varepsilon = 2 \pi BAnf$) in the coils.
-\item This increases the voltage in the coils.
-\item Since the resistance of the wire is constant, this will increase the
-	current in the coil.
-\item If this current exceeds the maximum current for which the motor was
-	designed for an extended period of time, this will damage the motor.
-\end{itemize}
+Motors have a maximum load limit because:
 
-This explains why motors are designed for a maximum load.
+\begin{itemize}
+\item If a high load is placed on the motor, the velocity of the coil will
+	decrease.
+\item This reduces the magnitude of the changing magnetic flux, reducing the
+	back EMF in the coil.
+\item This increases the net voltage in the coil, increasing the current.
+\item If this current exceeds the maximum current for which the motor was
+	designed, the motor may be damaged.
+\end{itemize}
 
 
 
 
 \section{AC Generator}
 
-Generators produce an AC current using an induced EMF in a wire.
+Generators produce an AC current using induced EMF in a wire.
 
 There is a retarding force exerted on the coil when the generator is turned due
 to induced EMF (similar to back EMF in a motor).
@@ -1029,15 +1059,15 @@ to induced EMF (similar to back EMF in a motor).
 \subsection{Workings}
 
 \begin{itemize}
-\item Generators are a coil free to rotate on an axis that can be manually
-	turned.
+\item A coil, free to rotate on an axis, is manually turned.
 \item The coil sits in a permanent magnetic field.
-\item Each end of the wire is attached to a slip ring which rotates in contact
+\item Each end of the coil is attached to a slip ring which rotates in contact
 	with a carbon brush attached to a wire.
-\item As the coil is rotated, this produces a changing effective area.
-\item Since the magnetic field is constant, this produces a changing magnetic
-	flux proportional to this change in area.
-\item This induces an EMF in the wire, producing an AC voltage.
+\item As the coil is rotated, this produces a changing effective area and thus
+	a changing magnetic flux.
+\item Faraday's law states that the induced EMF in the wire is proportional to
+	this changing magnetic flux.
+\item This produces an AC voltage in the wire.
 \end{itemize}
 
 
@@ -1046,8 +1076,8 @@ to induced EMF (similar to back EMF in a motor).
 The graph of effective area against time is a sine curve offset depending on
 the initial rotation of the coil.
 
-The change in effective area against time (equivalent to the change in magnetic
-flux since the magnetic field is constant) is the derivative of this graph.
+The change in effective area against time (equivalent to the graph of change in
+magnetic flux) is the derivative of the effective area graph.
 
 The EMF graph is the negative of the change in flux graph (since Lenz's law,
 where the direction of the induced EMF is opposite to that of the change in
@@ -1089,7 +1119,7 @@ $$
 The root mean squared (RMS) EMF is:
 
 $$
-\varepsilon_{\mbox{RMS}} = \frac{\varepsilon}{\sqrt{2}}
+= \frac{\varepsilon}{\sqrt{2}}
 $$
 
 
@@ -1141,9 +1171,6 @@ $$
 
 Raises or lowers AC voltages in wires.
 
-Since power must remain constant (due to conservation of energy), the current
-in the wire is inversely raised or lowered as well.
-
 
 \subsection{Construction}
 
@@ -1154,8 +1181,7 @@ The construction of a transformer:
 \item One side has a number of coils of wire (the primary coils), through which
 	the initial AC current is passed.
 \item The other side has a different number of coils (the secondary coils),
-	in which a potential difference is induced due to the changing magnetic
-	field.
+	in which an EMF is induced due to a changing magnetic field.
 \end{itemize}
 
 How it works:
@@ -1177,9 +1203,9 @@ How it works:
 Lamination is where:
 
 \begin{itemize}
-\item Soft iron core is cut into thin pieces and laminated.
+\item Soft iron core is cut into thin strips and laminated.
 \item This reduces the amount of bulk metal in which eddy currents can form.
-\item Reduces power lost to resistive heating in the core
+\item Reduces energy lost to resistive heating in the core
 \end{itemize}
 
 
@@ -1211,7 +1237,7 @@ from what would exist in an ideal transformer.
 \section{Electricity Transmission}
 
 When electricity is travelling large distances, power is lost to heat in the
-wires it travels through according to:
+wires it travels through, according to:
 
 $$
 \begin{aligned}
@@ -1229,7 +1255,7 @@ Electricity should be transmitted at high voltage as:
 \item Since the power at the generator is constant, a large voltage will
 	result in a low current ($P = IV$).
 \item This decreases voltage drop across the wires ($V = IR$) and decreases
-	power lost to resistive heating ($P = I^2R$)
+	power lost to resistive heating ($P = I^2R$).
 \end{itemize}
 
 Transmitted as AC because:
@@ -1237,8 +1263,7 @@ Transmitted as AC because:
 \begin{itemize}
 \item Transformers are used to step up and down the voltage in the wires.
 \item Transformers require AC voltage as they must produce a changing magnetic
-	field (ie. changing magnetic flux) to induce an EMF in the secondary coils
-	(Faraday's law).
+	field to induce an EMF in the secondary coils.
 \end{itemize}
 
 
@@ -1257,13 +1282,13 @@ Draw electric or magnetic field lines around:
 \item Two positive charges placed apart
 \item Two negative charges placed apart
 \item A single bar magnet
-\item Two bar magnets placed side by side, where the north pole of each is at
+\item Two bar magnets placed side by side, where the North pole of each is at
 	the top of the page
-\item Two bar magnets placed side by side, where the north pole of one is placed
-	next to the south pole of the other
-\item Two bar magnets placed end to end, where the two north poles are closest
-\item Two bar magnets placed end to end, where the north pole of one is closest
-	to the south pole of the other
+\item Two bar magnets placed side by side, where the North pole of one is placed
+	next to the South pole of the other
+\item Two bar magnets placed end to end, where the two North poles are closest
+\item Two bar magnets placed end to end, where the North pole of one is closest
+	to the South pole of the other
 \end{enumerate}
 
 

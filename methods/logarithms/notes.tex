@@ -1,0 +1,212 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Logarithmic Functions}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Logarithm}
+
+A logarithmic function is the inverse of an exponential function.
+
+Given:
+
+$$
+a^x = b
+$$
+
+Then:
+
+$$
+\log_a{b} = x
+$$
+
+The logarithm of a negative number does not produce a real valued result.
+
+
+\subsection{Base}
+
+The base of the logarithm is written in subscript below the function:
+
+$$
+\log_a{x}
+$$
+
+$\log{x}$ without any specified base is assumed to be base 10.
+
+$\ln{x}$ is assumed to be base $e$.
+
+
+\subsection{Identities}
+
+The logarithm of 1 (in any base) is always 0:
+
+$$
+\log_a{1} = 0
+$$
+
+This is because any number raised to the 0th power is 1:
+
+$$
+a^0 = 1
+$$
+
+The logarithm of the base is 1:
+
+$$
+\log_a{a} = 1
+$$
+
+This is because any number raised to the power of 1 is itself:
+
+$$
+a^1 = a
+$$
+
+
+
+\section{Laws}
+
+\subsection{Exponents}
+
+Any exponent of a value in a logarithm can be brought out the front as a
+coefficient:
+
+$$
+\log_a{b^n} = n \log_a{b}
+$$
+
+
+\subsection{Negation}
+
+To simplify a negative logarithm:
+
+$$
+-\log_a{b} = \log_a(\frac{1}{b})
+$$
+
+
+\subsection{Addition}
+
+The sum of two logarithms with the same base can be combined:
+
+$$
+\log_a{b} + \log_a{c} = \log_a{bc}
+$$
+
+This can be generalised to:
+
+$$
+\sum_{i = 1} \log_a{x_i} = \log_a(\prod_{i = 1} x_i)
+$$
+
+
+\subsection{Subtraction}
+
+Applying the rule for negation and addition of logarithms, we can devise a rule
+for the subtraction of logarithmic functions:
+
+$$
+\log_a{b} - \log_a{c} = \log_a{\frac{b}{c}}
+$$
+
+
+\subsection{Change of Base}
+
+To change the base of a logarithm:
+
+$$
+\log_a{b} = \frac{\log_c{b}}{\log_c{a}}
+$$
+
+More usefully, we can convert logarithms to base 10:
+
+$$
+\log_a{b} = \frac{\log{b}}{\log{a}}
+$$
+
+
+
+
+\section{Graphs}
+
+The graph of $\log{x}$ has the following features:
+
+\begin{itemize}
+\item A domain of $x \in \mathbb{R}, x > 0$.
+\item An x intercept at $x = 1$.
+\item A point at $(10, 1)$.
+\item A vertical asymptote with equation $x = 0$
+\item No y intercept.
+\item No stationary points.
+\end{itemize}
+
+For a graph of $\log_a{x}$:
+
+\begin{itemize}
+\item Still has an x intercept at $x = 1$ and vertical asymptote $x = 0$.
+\item A point at $(a, 1)$.
+\end{itemize}
+
+For a graph of $\log_a{x + b} + c$:
+
+\begin{itemize}
+\item Shifted $c$ units up.
+\item Shifted $b$ units left.
+\end{itemize}
+
+For a graph of $b \log_a{cx}$:
+
+\begin{itemize}
+\item Vertical dilation of scale factor $b$.
+\item Horizontal dilation of scale factor $\frac{1}{c}$.
+\end{itemize}
+
+
+\subsection{Semi-Logarithmic Graph Paper}
+
+Where the y axis uses a logarithmic scale, and the x axis a linear one.
+
+Exponential functions such as:
+
+$$
+y = ab^{cx}
+$$
+
+Appear as straight lines.
+
+Any vertical or horizontal translations to the original exponential function
+will no longer make it appear linear on a logarithmic scale.
+
+\end{document}

@@ -121,6 +121,21 @@ $$
 $$
 
 
+\subsection{Logarithmic Functions}
+
+The derivative of $\ln{x}$:
+
+$$
+\frac{d}{dx} \ln{x} = \frac{1}{x}
+$$
+
+The derivative of $\ln{f(x)}$:
+
+$$
+\frac{d}{dx} \ln{f(x)} = \frac{f'(x)}{f(x)}
+$$
+
+
 \subsection{Common Derivatives}
 
 Some common derivatives:
@@ -187,7 +202,7 @@ Must add the constant of integration $c$ to all indefinite integrals.
 Given the polynomial function $f(x) = ax^n$, the indefinite integral is:
 
 $$
-\int f(x) dx = \frac{ax^{n + 1}}{n + 1}
+\int f(x) dx = \frac{ax^{n + 1}}{n + 1} + c
 $$
 
 Raise the power by 1, and divide by the new power.
@@ -200,13 +215,19 @@ $n$ can be a negative or fractional exponent.
 The integral of $\sin{x}$ is:
 
 $$
-\int \sin{x} dx = -\cos{x}
+\int \sin{x} dx = -\cos{x} + c
 $$
 
 The integral of $\cos{x}$ is:
 
 $$
-\int \cos{x} dx = \sin{x}
+\int \cos{x} dx = \sin{x} + c
+$$
+
+The integral of $\sec^2{x}$ is:
+
+$$
+\int \sec^2{x} dx = \tan{x} + c
 $$
 
 
@@ -221,7 +242,24 @@ $$
 The integral of $e^{f(x)}$ is:
 
 $$
-\int e^{f(x)} dx = \frac{e^{f(x)}}{f'(x)}
+\int e^{f(x)} dx = \frac{e^{f(x)}}{f'(x)} + c
+$$
+
+
+\subsection{Logarithmic Functions}
+
+The integral of $\frac{1}{x}$ for $x > 0$ is:
+
+$$
+\int \frac{1}{x} dx = \ln{x} + c
+$$
+
+For the purposes of this course, we ignore the restriction on the domain.
+
+The integral of $\frac{f'(x)}{f(x)}$ is:
+
+$$
+\int \frac{f'(x)}{f(x)} dx = \ln{f(x)} + c
 $$
 
 
@@ -250,7 +288,13 @@ $$
 With the chain rule:
 
 $$
-\int 16(2x + 3)^3 dx = 2(2x + 3)^4
+\int 16(2x + 3)^3 dx = 2(2x + 3)^4 + c
+$$
+
+Logarithm with the chain rule:
+
+$$
+\int \frac{8x + 6}{2x^2 + 3x} dx = 2 \ln(2x^2 + 3x) + c
 $$
 
 
@@ -342,6 +386,18 @@ Solve the definite integral between the two points:
 $$
 \int_{x_1}^{x_2} f(x) - g(x) dx
 $$
+
+
+\subsection{Logarithms}
+
+If given the definite integral:
+
+$$
+\int_a^b \frac{f'(x)}{f(x)} dx
+$$
+
+If $f(x) = 0$ for any $x$ in the range $a \leq x \leq b$, then the integral is
+undefined, since $\ln{x}$ has a vertical asymptote at $x = 0$.
 
 
 
