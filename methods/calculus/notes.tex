@@ -40,13 +40,29 @@
 
 \subsection{Notation}
 
-The first derivative of the function $f(x)$ with respect to $x$ is $f'(x)$.
+Using Leibnitz notation, the first derivative of $y$ with respect to $x$ is:
 
-The second derivative is $f''(x)$.
+$$
+\frac{dy}{dx}
+$$
 
-The derivative of $y$ with respect to $x$ is $\frac{dy}{dx}$.
+The second dervative is:
 
-The second derivative of $y$ is $\frac{d^2y}{dx^2}$.
+$$
+\frac{dy^2}{d^2x}
+$$
+
+Using Lagrange notation, the first derivative of $f(x)$ is:
+
+$$
+f'(x)
+$$
+
+The second derivative is:
+
+$$
+f''(x)
+$$
 
 
 \subsection{First Principles}
@@ -54,10 +70,11 @@ The second derivative of $y$ is $\frac{d^2y}{dx^2}$.
 The derivative of $f(x)$ is defined as:
 
 $$
-f'(x) = \lim_{h \to \infty} \frac{f(x + h) - f(x)}{h}
+f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
 $$
 
-This is referred to as differentiating using first principles.
+Simplifying this limit to eliminate $h$ is referred to as differentiating using
+first principles.
 
 
 \subsection{Addition and Subtraction}
@@ -68,7 +85,7 @@ $$
 f'(x) = g'(x) + h'(x)
 $$
 
-Differentiation distributes across addition.
+Differentiation distributes across addition and subtraction.
 
 
 \subsection{Polynomials}
@@ -79,7 +96,7 @@ $$
 f'(x) = anx^{n - 1}
 $$
 
-Multiply by the current power and decrease the power by 1.
+Multiply by the current power and reduce the exponent by 1.
 
 $n$ may be a negative or fractional exponent.
 
@@ -310,7 +327,7 @@ $$
 \int_a^b f(x) dx
 $$
 
-Will result in a constant value.
+This will evaluate to a real number.
 
 
 \subsection{Calculating}
@@ -324,7 +341,7 @@ $$
 
 \subsection{Inverting an Integral}
 
-The definite integral of $f(x)$ can be inverted:
+The definite integral of $f(x)$ can be negated:
 
 $$
 \int_a^b f(x) dx = -\int_b^a f(x) dx
@@ -337,7 +354,7 @@ The value of a definite integral can be approximated by calculating the area of
 rectangles under the curve.
 
 Inscribed area is the area of rectangles that touch the function, not extending
-above the function.
+above it.
 
 Circumscribed area is the area of rectangles that extend above the function.
 
@@ -357,9 +374,8 @@ definite integral between the two values.
 
 Solve for the points at which the function crosses the x axis ($f(x) = 0$).
 
-Determine which parts are above and below the x axis.
-
-Split the integral into sections, negating the sections below the x axis.
+Split the integral into sections, negating the sections below the x axis, or
+taking the absolute value of each section.
 
 
 \subsubsection{Absolute Value}
@@ -408,7 +424,7 @@ undefined, since $\ln{x}$ has a vertical asymptote at $x = 0$.
 
 Where the first derivative is 0 ($f'(x) = 0$).
 
-Includes turning and horizontal inflection points.
+Includes turning points and horizontal inflection points.
 
 
 \subsection{Turning Points}
@@ -432,7 +448,7 @@ If $f''(x) > 0$, the function is concave up at $x$.
 If $f''(x) < 0$, the function is concave down at $x$.
 
 If $f''(x) = 0$, there is likely to be an inflection point. Verify further using
-concavity or sign test.
+concavity around the point, or the sign test.
 
 
 \subsection{Sign Test}
@@ -493,7 +509,8 @@ Falling Inflection Point & - & + \\
 Occur when there is a change in concavity.
 
 Solve for $f''(x) = 0$ and verify change in concavity either side of the point
-using the concavity test.
+using the concavity test, or use the sign test to confirm there is no change
+in the sign of the gradient either side of the point.
 
 A horizontal inflection occurs when the first derivative is also 0.
 
@@ -598,7 +615,8 @@ For $a$.
 
 \section{Marginal Rates of Change}
 
-There are 3 economic functions, where $x$ is the number of items sold:
+In relation to economics, there are 3 important functions of the number of items
+sold:
 
 \begin{enumerate}
 \item The cost function, $C(x)$
@@ -616,8 +634,8 @@ The marginal cost of the $x$th item is $C'(x - 1)$.
 
 \section{Rectilinear Motion}
 
-Relates position/displacement ($x$), velocity ($v$), and acceleration ($a$) as
-functions of time.
+Relates position/displacement ($x$, $r$, or $s$), velocity ($v$), and
+acceleration ($a$) as functions of time.
 
 Differentiating:
 
@@ -640,6 +658,8 @@ $$
 Position, velocity, and acceleration should be left as positive or negative
 values, as they are vectors and have a direction.
 
+Distance and speed must be converted to absolute values.
+
 
 \subsection{Terminology}
 
@@ -647,13 +667,7 @@ At the origin implies $x = 0$.
 
 At rest or stationary implies $v = 0$.
 
-"Initially" implies $t = 0$.
-
-
-\subsection{Speed}
-
-Speed is the absolute value of velocity. It is a scalar and should not have an
-associated direction.
+``Initially" implies $t = 0$.
 
 
 \subsection{Displacement}
