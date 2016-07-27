@@ -43,32 +43,196 @@
 
 \section{Variables}
 
-\subsection{Random}
+\subsection{Random Variable}
 
-The value a variable takes on is determined by a random process, sampling from
-a probability distribution.
-
-The value of the variable is weighted according to the weightings given in by
-the probability distribution.
+A random variable randomly takes on the value of any within a certain
+probability distribution according to the probabilities the distribution assigns
+to each value.
 
 
-\subsection{Discrete}
+\subsection{Discrete Variable}
 
-The variable can take on only a finite number of values.
+A discrete random variable can only be assigned a value from a finite set of
+possible values.
+
+A discrete random variable does not necessarily have to be an integer.
+
+
+\subsection{Continuous Variable}
+
+A continuous random variable can be assigned an infinite number of possible
+values.
+
+
+\subsection{Notation}
+
+A random variable is usually assigned an upper case letter as its symbol.
+
+For example, $X$ could be a random variable.
+
+The probability that $X$ takes on the value of 2 is written as:
+
+$$
+P(X = 2)
+$$
+
+The probability that $X$ takes on a value less than 2 is written as:
+
+$$
+P(X < 2)
+$$
+
+Similar notation is used for greater than, etc.
 
 
 
 
-\section{Probability Distributions}
+\section{Probability}
 
-\subsection{Probability Distribution}
+\subsection{Converse}
 
-A function that assigns a weighting to all possibile values of a random
-variable.
+The converse of $A$ is $\overline{A}$:
 
-Also called probability distribution function.
+$$
+P(\overline{A}) = 1 - P(A)
+$$
 
-An example distribution:
+
+\subsection{Mutual Exclusivity}
+
+Events $A$ and $B$ are mutually exclusive if they do not occur at the same time:
+
+$$
+\begin{aligned}
+P(A \cap B) & = 0 \\
+P(A \cup B) & = P(A) + P(B) \\
+\end{aligned}
+$$
+
+
+\subsection{Independence}
+
+Events $A$ and $B$ are independent if one event does not influence the other:
+
+$$
+\begin{aligned}
+P(A|B) & = P(A) \\
+P(B|A) & = P(B) \\
+P(A \cap B) & = P(A) \times P(B) \\
+\end{aligned}
+$$
+
+
+\subsection{Or}
+
+To find the probability of event $A$ or event $B$ occurring, given they are not
+mutually exclusive:
+
+$$
+P(A \cup B) = P(A) + P(B) - P(A \cap B)
+$$
+
+
+\subsection{Conditional Probability}
+
+To find the probability of event $A$, given that we know event $B$ has occurred:
+
+$$
+P(A|B) = \frac{P(A \cap B)}{P(B)}
+$$
+
+
+\subsection{Expected Value}
+
+Symbol: $\mu$ or $E(X)$
+
+Also called the average or mean.
+
+The average of all values in a probability distribution, weighted according to
+the assigned probabilities.
+
+
+\subsubsection{Transformations}
+
+If all values within a data set are linearly transformed in the same way, then
+the corresponding change in the expected value can be calculated.
+
+Given a random variable $X$, where all values are linearly scaled and translated
+so that each new value is $aX + b$.
+
+The expected value will be transformed in the same way:
+
+$$
+E(aX + b) = |a| E(X) + b
+$$
+
+
+\subsection{Variance}
+
+Symbol: $\sigma^2$ or $\Var(X)$
+
+A measure of how spread out a set of data is.
+
+It is always positive.
+
+
+\subsubsection{Transformations}
+
+If all values within a data set are linearly transformed in the same way, then
+the corresponding change in the variance can be calculated.
+
+If a random variable $X$ is transformed according to $aX + b$:
+
+$$
+\Var(aX + b) = a^2 \Var(X)
+$$
+
+Ignore any translation, as it does not affect how spread out the data is.
+
+
+\subsection{Standard Deviation}
+
+Symbol: $\sigma$ or $\SD(X)$
+
+Another measure of how spread out a set of data is.
+
+The square root of the variance:
+
+$$
+\SD(X) = \sqrt{\Var(X)}
+$$
+
+It is always positive.
+
+
+\subsubsection{Transformations}
+
+If all values within a data set are linearly transformed in the same way, then
+the corresponding change in the standard deviation can be calculated.
+
+If a random variable $X$ is transformed according to $aX + b$:
+
+$$
+\SD(aX + b) = |a| \SD(X)
+$$
+
+Ignore any translation, as it does not affect how spread out the data is.
+
+
+
+
+
+\section{Discrete Probability Distribution}
+
+A discrete probability distribution assigns a probability to every value within
+a finite set.
+
+
+\subsection{Table}
+
+The probabilities can be assigned through the use of a table.
+
+For example:
 
 \begin{center}
 \begin{tabular}{c|c|c|c|c|c|c}
@@ -79,162 +243,107 @@ $P(X = x)$ & $\frac{1}{6}$ & $\frac{1}{12}$ & $\frac{1}{3}$ & $\frac{1}{12}$ & $
 \end{center}
 
 
-\subsection{Restrictions}
+\subsection{Function}
 
-All probabilities in a distribution sum to 1.
+The probabilities could also be assigned through a function defined only for
+a finite domain.
 
-All probabilities must be positive.
-
-
-\subsection{Probability Function}
-
-For a random variable $X$, the probability that it takes on the value of $x$ is:
+For example:
 
 $$
-P(X = x)
+f(x) = \frac{x}{10} \qquad x \in \mathbb{Z}, 1 \leq x \leq 4
 $$
 
 
-\subsection{Cumulative Distribution}
+\subsection{Properties}
 
-Where each column in the table represents the value of $P(X \leq x)$.
+All probabilities the distribution assigns must be positive.
 
-Each value in a cumulative probability distribution is the sum of all values to
-the left of it in the probability distribution.
-
-The value in the right-most column must be 1.
+The sum of all probabilities in a distribution must be 1.
 
 
 \subsection{Graph}
 
-For a graph of a probability distribution function.
+We can graph a discrete probability distribution using a bar graph.
 
-X axis has values that the random variable can take.
+The x axis corresponds to the possible values the random variable can take.
 
-Y axis has probabilities.
+The y axis corresponds to the probability the distribution assigns to each $x$
+value.
 
-Bar graph is drawn, with each bar centred on the corresponding x axis value.
+A bar is drawn for each value the distribution assigns a probability to, which
+is centred on the corresponding x axis value.
 
 
+\subsection{Expected Value}
 
-\section{Expected Value}
-
-Symbol: $\mu$.
-
-The average/mean of all values in a probability distribution.
-
-Calculated as the sum of the probability multiplied by the value for all
-values in the distribution:
+The expected value of a discrete probability distribution can be calculated as:
 
 $$
-E(X) = \sum^{n}_{i = 0} x_i p_i
+E(X) = \sum^{b}_{i = 0} x_i p_i
 $$
 
-Where $x_i$ is the $i$th value, and $p_i$ the $i$th probability.
+Where $x_i$ and $p_i$ are the $i$th value and probability pair defined by the
+distribution. $n$ is the number of such pairings that exist.
 
 
-\subsection{Payout on a Game}
+\subsubsection{Payout on a Game}
 
-Given a random game with a probability distribution giving the respective
-probabilities of different payouts.
+The long term profit or loss for a person playing a random game is calculated
+as the expected value.
 
-The long term profit of playing the game is the expected value of this
-distribution.
-
-A fair game is one where the long term payout of the game equals the cost of
+A fair game is one where the player's long term profit equals the cost of
 playing the game.
 
 
-\subsection{Transformations}
+\subsection{Variance}
 
-Given the expected value $E(X)$ for a random variable $X$.
-
-If all values in $X$ are transformed in the same manner, the expected value
-will also undergo the same transformations:
+The variance for a discrete probability distribution is calculated as:
 
 $$
-E(aX + b) = aE(X) + b
+\Var(X) = \sum^n_{i = 0} p_i (x_i - \mu)^2
 $$
 
+Where $x_i$ and $p_i$ are the $i$th value and probability pair, $n$ is the
+number of pairs, and $\mu$ the expected value.
 
 
 
-\section{Variance}
 
-A measure of how spread out values are in a probability distribution.
+\section{Discrete Cumulative Distribution}
 
-Effectively the average distance of each value from the mean.
-
-Calculated as the sum of the probability multiplied by the value subtract the
-mean squared for each value in the distribution:
-
-$$
-\Var(X) = \sum^{n}_{i = 0} p_i (x_i - \mu)^2
-$$
-
-Where $x_i$ is the $i$th value, $p_i$ the $i$th probability, and $\mu$ the mean
-of $X$.
-
-
-\subsection{Additional Formula}
-
-Another equivalent way of calculating the variance is:
+For a discrete random variable $X$, a cumulative probability distribution
+function $P(x)$ is defined as:
 
 $$
-\Var(X) = E(X^2) - E(X)^2
+P(x) = P(X \leq x)
 $$
 
+The probability for each value in the cumulative distribution is the sum of all
+probabilities less than in the probability distribution.
 
-\subsection{Transformations}
-
-Given the variance $\Var(X)$ for a random variable $X$.
-
-If all values in $X$ undergo the same transformation, the variance will be
-transformed by the square of any linear multiple applied to $X$:
-
-$$
-\Var(aX + b) = a^2 \Var(X)
-$$
-
-As translating the values does not affect their average distance from the mean.
+The graph of a cumulative distribution function is also called an ogive.
 
 
+\subsection{Properties}
+
+For the largest possible value of $X$, the cumulative distribution has a value
+of 1.
 
 
-\section{Standard Deviation}
+\subsection{Probability Distribution}
 
-Symbol $\sigma$.
-
-The square root of the variance:
-
-$$
-\SD(X) = \sqrt{\Var(X)}
-$$
-
-
-\subsection{Transformations}
-
-Given the standard deviation $\SD(X)$ for a random variable $X$.
-
-The standard deviation is transformed only by linear multiples applied to $X$:
-
-$$
-\SD(aX + b) = a \SD(X)
-$$
-
-As translating the values does not affect their average distance from the mean.
+To find the probability distribution from the cumulative one, subtract each
+value from the one before it.
 
 
 
 
-\section{Uniform Distribution}
+\section{Discrete Uniform Distribution}
 
-The probability of each value of a random variable is equal.
+Where the probability of each possible value in the distribution is the same.
 
-
-\subsection{Distribution}
-
-For a fair six sided dice, the probability distribution is uniform:
+For example, demonstrated in a table:
 
 \begin{center}
 \begin{tabular}{c|c|c|c|c|c|c}
@@ -245,13 +354,13 @@ $P(X = x)$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\f
 \end{center}
 
 
-\subsection{Probability Function}
+\subsection{Function}
 
-For a random variable $X$ which can take on values between 0 and $n$, the
-probability function is:
+A discrete uniform distribution with $n$ possible values, the probability of
+the distribution assigning any value $a$ is:
 
 $$
-P(X = x) = \frac{1}{n}
+P(X = a) = \frac{1}{n}
 $$
 
 
@@ -292,7 +401,8 @@ $$
 
 A random event with a certain probability of success.
 
-The probability distribution is:
+If the probability of success of the trial is $p$, where $0 \leq p \leq 1$, the
+discrete probability distribution for the trial is:
 
 \begin{center}
 \begin{tabular}{c|c|c}
@@ -303,10 +413,11 @@ $P(X = x)$ & $p$ & $1 - p$ \\
 \end{tabular}
 \end{center}
 
-The distribution is parameterised by $p$.
 
-For example, the probability of correctly guessing a multi-choice question from
-5 possible choices is:
+\subsection{Example}
+
+The probability of correctly guessing a multi-choice question from 5 possible
+answers is:
 
 \begin{center}
 \begin{tabular}{c|c|c}
@@ -339,29 +450,42 @@ $$
 
 \section{Binomial Distribution}
 
-The probability of achieving $x$ successes after performing a number of
-Bernoulli trials.
-
-The probability function of $x$ successes from $n$ Bernoulli trials with a
-probability of succes $p$ is:
-
-$$
-P(X = x) = \binom{n}{x} p^x (1 - p)^{n - x}
-$$
-
-To achieve $x$ successes in $n$ trials, we must have $x$ successes and $n - x$
-failures, which are multiplied together. There are $\binom{n}{x}$ ways of
-arranging these multiplications.
+A discrete probability distribution that gives the probability of achieving
+$a$ successful results after performing $n$ Bernoulli trials.
 
 
 \subsection{Notation}
 
-If $X$ is a random variable sampled from a binomial distribution with $n$
-trials and a probability of success $p$, this can be written:
+If $X$ is a random variable modelled by a binomial distribution with $n$
+trials and a probability of success $p$, this is written as:
 
 $$
 X \sim \Bin(n, p)
 $$
+
+
+\subsection{Function}
+
+The probability of achieving $a$ successes from $n$ Bernoulli trials with a
+probability of success $p$ is:
+
+$$
+P(X = a) = \binom{n}{a} p^a (1 - p)^{n - a}
+$$
+
+
+\subsubsection{Explanation}
+
+In $n$ trials, we will have $a$ successes, and $n - a$ failures.
+
+The probability of success is $p$, and the probability of failure is $1 - p$.
+
+The probability of achieving $a$ successes is $p^a$.
+
+The probability of achieving $n - a$ failures is $(1 - p)^{n - a}$.
+
+There are $\binom{n}{a}$ ways of arranging these multiplications (since order
+doesn't matter).
 
 
 \subsection{Expected Value}
@@ -382,40 +506,369 @@ $$
 $$
 
 
+\subsection{ClassPad}
+
+Given a binomial distribution $X \sim \Bin(n, p)$.
+
+To calculate $P(X = a)$:
+
+$$
+P(X = a) = \text{binomialPDf}(a, n, p)
+$$
+
+To calculate $P(X \leq a)$:
+
+$$
+P(X \leq a) = \text{binomialCDf}(0, a, n, p)
+$$
+
+To calculate $P(a \leq X \leq b)$:
+
+$$
+P(a \leq X \leq b) = \text{binomialCDf}(a, b, n, p)
+$$
+
+PDf stands for probability distribution function.
+
+CDf stands for cumulative distribution function.
+
+
 \subsection{Example}
 
-The probability a car has to stop at all intersections is 0.2. A road has
-10 intersections along it.
+The probability a car has to stop at any intersection is 0.2. A road has 10
+intersections along it.
 
-The probability the car will have to stop at exactly 4 intersections:
+The probability the car will have to stop at exactly 4 intersections is:
 
 $$
 P(X = 4) = \binom{10}{4} 0.2^4 0.8^6
 $$
 
-The probability the car will have to stop at at least 8 intersections:
+The probability the car will have to stop at at least 8 intersections is:
 
 $$
 P(X \geq 8) = \binom{10}{8} 0.2^8 0.8^2 + \binom{10}{9} 0.2^9 0.8 + \binom{10}{10} 0.2^{10}
 $$
 
 
+
+\section{Continuous Probability Distribution}
+
+A continuous probability distribution assigns a probability to all values in an
+infinite set.
+
+It cannot be defined using a table, unlike a discrete distribution.
+
+
+\subsection{Function}
+
+The probabilities are assigned through a function.
+
+For example:
+
+$$
+f(x) = \frac{4}{25} x \qquad x \in \mathbb{R}, 1 \leq x \leq 4
+$$
+
+
+\subsection{Probabilities}
+
+Given a continuous random variable $X$.
+
+The probability that it takes the value of $a$ is always 0 for any continuous
+probability distribution:
+
+$$
+P(X = a) = 0
+$$
+
+Thus the difference between $P(X \leq a)$ and $P(X < a)$ is negligible:
+
+$$
+P(X \leq a) = P(X < a)
+$$
+
+This also applies to $P(X \geq a)$ and $P(X > a)$.
+
+The probability that $X$ takes a value between $a$ and $b$ is equivalent to the
+area under the probability function between $a$ and $b$:
+
+$$
+P(a < X < b) = \int_b^a f(x) dx
+$$
+
+The probability that $X$ is less than $a$ is:
+
+$$
+P(X < a) = \int_{-\infty}^a f(x) dx
+$$
+
+The probability that $X$ is greater than $a$ is:
+
+$$
+P(X > a) = \int_a^{\infty} f(x) dx
+$$
+
+
+\subsection{Properties}
+
+All probabilities the distribution assigns must be positive for all values in
+the function's domain:
+
+$$
+f(x) > 0 \forall x
+$$
+
+The area under the graph must equal 1:
+
+$$
+\int_{-\infty}^{\infty} f(x) dx = 1
+$$
+
+
+\subsection{Graph}
+
+We can graph a continuous probability distribution by graphing the distribution
+function $f(x)$ normally.
+
+
+\subsection{Expected Value}
+
+The expected value for a continuous distribution is:
+
+$$
+E(X) = \inf_{-\infty}^{\infty} x f(x) dx
+$$
+
+
+\subsection{Variance}
+
+The variance for a continuous distribution is
+
+$$
+\Var(X) = \int_{-\infty}^{\infty} (x - \mu)^2 f(x) dx
+$$
+
+
+
+
+\section{Continuous Cumulative Distribution}
+
+A continuous cumulative distribution is defined much in the same way as a
+discrete one.
+
+Given a continuous distribution function $f(x)$, the cumulative distribution
+function $P(x)$ is:
+
+$$
+P(x) = \int_{-\infty}^x f(t) dt
+$$
+
+
+\subsection{Properties}
+
+If $P(x)$ is defined for all $x \in \mathbb{R}$, it should satisfy the limits:
+
+$$
+\begin{aligned}
+\lim_{x \to \infty} P(x) & = 1 \\
+\lim_{x \to -\infty} P(x) & = 0 \\
+\end{aligned}
+$$
+
+Otherwise, if $P(x)$ is defined only for the range $a \leq x \leq b$, it should
+satisfy the equations:
+
+$$
+\begin{aligned}
+P(a) & = 0 \\
+P(b) & = 1 \\
+\end{aligned}
+$$
+
+
+
+
+\section{Continuous Uniform Distribution}
+
+Where the probability of every possible value of $X$ is the same:
+
+$$
+f(x) = k
+$$
+
+
+\subsection{Function}
+
+If the distribution is defined for all $x$ in the range $a < x < b$, we can
+solve for $k$ by:
+
+$$
+\begin{aligned}
+\int_b^a f(x) dx & = 1 \\
+\int_b^a k dx & = 1 \\
+k(a - b) & = 1 \\
+k & = \frac{1}{a - b} \\
+\end{aligned}
+$$
+
+
+
+
+\section{Normal Distribution}
+
+A continuous probability distribution where data is located mostly around the
+mean, and appears as a bell-curve shape.
+
+Also called a Gaussian distribution.
+
+
+\subsection{Notation}
+
+For a random variable $X$ modelled by a normal distribution with mean $\mu$ and
+standard deviation $\sigma$:
+
+$$
+X \sim N(\mu, \sigma^2)
+$$
+
+$\sigma^2$ is the variance.
+
+
+\subsection{Function}
+
+The probability distribution function for a normal distribution with $\mu = 0$
+and $\sigma = 1$ is:
+
+$$
+f(x) = \frac{1}{\sqrt{2 \pi}} e^{-\frac{x^2}{2}}
+$$
+
+
+\subsection{Standardisation}
+
+Given the mean $\mu$ and standard deviation $\sigma$ of a population.
+
+For a particular value in the population $x$, the standard score, or z-score
+represents $x$ as a multiple of the standard deviation above or below the mean:
+
+$$
+x = z\sigma + \mu
+$$
+
+To standardise a score $x$:
+
+$$
+z = \frac{x - \mu}{\sigma}
+$$
+
+Negative z-scores indicate a value below the mean, positive ones indicate a
+score above.
+
+
+\subsection{Proportion Rules}
+
+The table summarises the proportion of the population within $n$ standard
+deviations of the mean:
+
+\begin{center}
+\begin{tabular}{c|c}
+$n$ & Proportion \\
+\hline
+1 & 68\% \\
+2 & 95\% \\
+3 & 99.7\% \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Ranges}
+
+There are 4 types of ranges on a normal distribution:
+
+\begin{center}
+\begin{tabular}{c|c}
+Type & Probability \\
+\hline
+Left tailed & $P(X < a)$ \\
+Right tailed & $P(X > a)$ \\
+Centred & $P(\mu - a < X < \mu + a)$ \\
+Bounded & $P(a < X < b)$ \\
+\end{tabular}
+\end{center}
+
+
+\subsection{Quantiles}
+
+The $p$th percentile is the value of $X$ which $p$\% of the population lie
+below.
+
+The $q$th quantile is similar, but refers to fractional probability rather
+than a percentage. It is the value of $X$ which $100q$\% of the population lie
+below:
+
+$$
+P(X < a) = q
+$$
+
+Where $a$ is the value of $X$ that corresponds to the $q$th quantile.
+
+
+\subsection{Modelling Discrete Data}
+
+We can approximate normally distributed discrete data using a continuous
+distribution.
+
+Discrete data can be modelled by a normal distribution if:
+
+\begin{itemize}
+\item It is roughly symmetrical about the mean.
+\item Roughly 68\% of the data is within 1 standard deviation of the mean.
+\item Roughly 95\% of the data is within 2 standard deviations of the mean.
+\item Roughly 99.7\% of the data is within 3 standard deviations of the mean.
+\end{itemize}
+
+
+\subsubsection{Adjusting Boundaries}
+
+Adjustments must be made to the boundaries of probability ranges when modelling
+discrete data with a continuous function.
+
+Examples:
+
+$$
+\begin{aligned}
+P(X < 8) & = P(X < 7.5) \\
+P(X \leq 8) & = P(X \leq 8.5) \\
+P(X > 8) & = P(X > 8.5) \\
+P(X \geq 8) & = P(X \geq 7.5) \\
+P(6 < X < 10) & = P(6.5 < X < 9.5) \\
+P(6 \leq X \leq 10) & = P(5.5 < X < 10.5) \\
+\end{aligned}
+$$
+
+
 \subsection{ClassPad}
 
-Calculate $P(X = x)$ for a binomial distribution using:
+Given a normally distributed random variable $X$ with mean $\mu$ and standard
+deviation $\sigma$.
+
+Left-tailed probability:
 
 $$
-\text{binomialPDf}(x, n, p)
+P(X < a) = \text{normCDf}(-\infty, a, \sigma, \mu)
 $$
 
-PDf stands for probability distribution function.
-
-Calculate $P(X \leq x)$ for a binomial distribution using:
+Right-tailed probability:
 
 $$
-\text{binomialCDf}(0, x, n, p)
+P(X > a) = \text{normCDf}(a, \infty, \sigma, \mu)
 $$
 
-CDf stands for cumulative distribution function.
+Bounded probability:
+
+$$
+P(a < X < b) = \text{normCDf}(a, b, \sigma, \mu)
+$$
 
 \end{document}
