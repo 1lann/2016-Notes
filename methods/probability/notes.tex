@@ -219,6 +219,15 @@ $$
 Ignore any translation, as it does not affect how spread out the data is.
 
 
+\subsection{Median}
+
+The median is the middle number of the data. This is where (given $m$ is the
+median):
+
+$$
+P(X < m) = 0.5
+$$
+
 
 
 
@@ -870,5 +879,22 @@ Bounded probability:
 $$
 P(a < X < b) = \text{normCDf}(a, b, \sigma, \mu)
 $$
+
+
+\subsubsection{Simulatenous Calculations}
+
+If asked to simultaneously find the mean and standard deviation of a normal
+distribution from two other pieces of information.
+
+We cannot use ClassPad normal distribution functions in the simultaneous
+equation solver.
+
+Use the inverse normal distribution to find the corresponding z-scores for
+given probabilities, with $\mu = 0$ and $\sigma = 1$.
+
+Then use the equation for converting an x-score to a z-score using $\mu$ and
+$\sigma$, equating this to the calculated z-score.
+
+Then simultaneously solve these for the required answer.
 
 \end{document}
