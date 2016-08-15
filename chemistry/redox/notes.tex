@@ -1,0 +1,359 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+\usepackage{mhchem}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+
+\begin{document}
+
+\title{Reduction and Oxidation}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\section{Redox Reactions}
+
+Redox reactions involve the transfer of electrons between species.
+
+\subsection{Oxidation}
+
+A species is oxidised when it loses electrons.
+
+It is called the reductant or reducing agent, as it reduces the other species
+in the reaction.
+
+\subsection{Reduction}
+
+A species is reduced when it gains electrons.
+
+It is called the oxidant or the oxidising agent, as it oxidises the other
+species in the reaction.
+
+\subsection{Example}
+
+$$
+\ce{2Mg + O2 -> 2MgO}
+$$
+
+\begin{itemize}
+\item $\ce{Mg}$ and $\ce{O2}$ both have a charge of 0 on the left side of the
+	equation.
+\item $\ce{Mg}$ donates 2 electrons to an $\ce{O}$ atom.
+\item $\ce{Mg}$ has a charge of 2+ and $\ce{O}$ a charge of 2- on the right side
+	of the equation.
+\item Electrons have been transferred.
+\item $\ce{Mg}$ has lost electrons, meaning it has been oxidised (it is the
+	reductant).
+\item $\ce{O}$ has gained electrons, meaning it has been reduced (it is the
+	oxidant).
+\end{itemize}
+
+
+
+\section{Half Equations}
+
+Half equations split a redox reaction into the interactions of each species
+with electrons.
+
+For the equation:
+
+$$
+\ce{2Mg (s) + O2 (g) -> 2MgO}
+$$
+
+The oxidation half equation is:
+
+$$
+\ce{Mg (s) -> Mg^{2+} + 2e^{-}}
+$$
+
+The reduction half equation is:
+
+$$
+\ce{O2 (g) + 4e^{-} -> 2O^{2-}}
+$$
+
+Each half equation must be simplified from the reaction so the ratios between
+species are as low as possible.
+
+\subsection{Example}
+
+Another example, for the equation:
+
+$$
+\ce{Cl2 (g) + 2KI (aq) -> I2 (aq) + 2KCl (aq)}
+$$
+
+The ionic equation is:
+
+$$
+\ce{Cl2 (g) + 2I^{-} -> I2 (aq) + 2Cl^{-}}
+$$
+
+The oxidation half equation is:
+
+$$
+\ce{Cl2 (g) + 2e^{-} -> 2Cl^{-}}
+$$
+
+The reduction half equation is:
+
+$$
+\ce{2I^{-} -> I2 (aq) + 2e^{-}}
+$$
+
+\subsection{Balancing Half Equations}
+
+In acidic conditions:
+
+\begin{enumerate}
+\item Balance the atoms in the equation as it is, before adding any other
+	species.
+\item Add $\ce{H2O}$ to balance oxygen.
+\item Add $\ce{H+}$ to balance hydrogen.
+\item Add electrons to balance charge.
+\end{enumerate}
+
+In basic conditions:
+
+\begin{enumerate}
+\item Balance the equation as if it were in acidic conditions.
+\item Add $\ce{OH-}$ ions to each side of the equation to neutralise all
+	$\ce{H+}$ ions.
+\item Cancel out common species on each side of the equation (specifically,
+	$\ce{H2O}$).
+\end{enumerate}
+
+\subsection{Combining Half Equations}
+
+\begin{enumerate}
+\item Multiply each species in each half equation by a factor such that the
+	number of electrons in the oxidation and reduction half equations are
+	equal.
+\item Add all species on each side of each equation together to form one, larger
+	equation.
+\item Cancel out common species on each side of the equation.
+\end{enumerate}
+
+
+
+\section{Oxidation Numbers}
+
+An oxidation number can be assigned to each atom in each molecule of an
+equation.
+
+A set of rules is used to determine the oxidation number of an atom.
+
+\subsection{Rules}
+
+Rules to determine an atom's oxidation number, listed in order of priority:
+
+\begin{enumerate}
+\item If a species is in its elemental state (eg. $\ce{Cl2} or \ce{P4}$), each
+	atom has an oxidation number of 0.
+\item Monoatomic ions have an oxidation number equal to the charge on the ion
+	(eg. $\ce{Na^{+}}$ is +1, $\ce{Al^{3+}}$ is +3).
+\item Oxygen is always -2, except in peroxides (eg. $\ce{H2O2}$) where it is -1,
+	and in $\ce{F2O}$ where it is +2.
+\item Hydrogen is always +1, except in metal hydrides (eg. $\ce{NaH}$) where the
+	charge on the metal ion takes precedence.
+\item \label{neutral} The oxidation numbers of all atoms in a neutral molecule
+	add to 0.
+\item \label{ions} The oxidation numbers of all atoms in a polyatomic ion add
+	to the charge on the ion.
+\end{enumerate}
+
+\subsubsection{Example}
+
+Rule \ref{neutral}:
+
+\begin{itemize}
+\item For $\ce{PH3}$, each $\ce{H}$ is +1, so $\ce{P}$ is -3.
+\item For $\ce{Na2S2O3}$, each $\ce{Na}$ is +1, each $\ce{O}$ is -2, so each
+	$\ce{S}$ is +2.
+\item For $\ce{CH3OH}$, $\ce{C}$ is -2.
+\end{itemize}
+
+Rule \ref{ions}:
+
+\begin{itemize}
+\item For $\ce{NO2^{-}}$, each $\ce{O}$ is -2, so $\ce{N}$ is +3.
+\item For $\ce{PO4^{3-}}$, each $\ce{O}$ is -2, so $\ce{P}$ is +5.
+\end{itemize}
+
+\subsection{Determining if an Equation is Redox}
+
+An equation is redox if a species has a different oxidation number on each side
+of the equation.
+
+\subsection{Determining the Oxidant and Reductant}
+
+A species is oxidised if the oxidation number of an atom in it increases
+(consistent with a loss of electrons).
+
+A species is reduced if the oxidation number of an atom in it decreases
+(consistent with a gain in electrons).
+
+
+
+\section{Standard Reduction Potentials Table}
+
+Used to determine if a redox reaction will occur.
+
+\begin{itemize}
+\item Lists a number of common reduction half equations.
+\item Gives the electrical potential ($E^\circ$) for each equation under
+	standard laboratory conditions.
+\end{itemize}
+
+\subsection{Structure}
+
+\begin{itemize}
+\item Each half equation is given as a reduction.
+\item Reactions that are more readily reduced are at the top of the table.
+\itme The strongest oxidants are at the top of the table.
+\item Reactions that are more readily oxidised are at the bottom of the table.
+\item The strongest reductants are at the bottom of the table.
+\end{itemize}
+
+\subsection{Oxidation Half Equation}
+
+Given the reduction half equation in the table, the equivalent oxidation half
+equation is the reverse reaction.
+
+To find the $E^\circ$ of an oxidation half equation, negate the value given for
+the reduction half equation in the table.
+
+\subsection{Electrical Potential}
+
+Symbol: $E^\circ$
+
+An indication of how spontaneous a redox half reaction is.
+
+\begin{itemize}
+\item Reactions with positive $E^\circ$ will occur spontaneously (with no
+	activiation energy required from the surroundings).
+\item Reactions with more positive $E^\circ$ will occur more readily than those
+	with lower $E^\circ$.
+\item Reactions with negative $E^\circ$ require energy input from the
+	surroundings to occur.
+\item $E^\circ$ values in the table are only valid for standard laboratory
+	conditions.
+\end{itemize}
+
+\subsection{Standard Laboratory Conditions}
+
+Standard laboratory conditions are:
+
+\begin{description}
+\item [Temperature] $25^\circ$ Celsius
+\item [Pressure] 101.3 kPa
+\item [Concentration] $1\text{ mol L}^{-1}$
+\end{description}
+
+\subsection{Determining if a Redox Reaction Occurs}
+
+For a redox reaction to occur spontaneously (without energy input), the oxidant
+(the species being reduced) must be a stronger oxidant than the reducant (the
+species being oxidised).
+
+A simple rule:
+
+\begin{itemize}
+\item On the standard reduction potentials table, find the reduction half
+	equation with your left hand.
+\item Find the oxidation half equation with your right hand.
+\item If your left hand is above your right, the reaction occurs spontaneously.
+\end{itemize}
+
+The table is only a predictor. There are some exceptions (reactions that occur
+spontaneously that are not predicted by the table to do so).
+
+
+
+\section{Reactions}
+
+\subsection{Disproportionation Reaction}
+
+\subsection{Metal Displacement Reaction}
+
+$$
+\ce{Zn (s) + Cu^{2+} -> Cu (s) + Zn^{2+}}
+$$
+
+\begin{itemize}
+\item Solid metal placed in aqueous solution containing ions of another metal.
+\item Redox reaction may occur (depending on reduction potentials).
+\item Coats the surface of the solid metal with another metal.
+\end{itemize}
+
+Observations for the above reaction:
+
+\begin{itemize}
+\item Silvery solid added to blue solution solution.
+\item Salmon pink deposit on the surface of the silvery solid.
+\item Blue colour fades from the solution.
+\end{itemize}
+
+\subsection{Halogen Displacement Reaction}
+
+$$
+\ce{Cl2 (aq) + 2I^{-} -> 2Cl^{-} + I2 (aq)}
+$$
+
+Aqueous solution of a halogen added to an ionic solution of another halogen.
+
+Observations for the above reaction:
+
+\begin{itemize}
+\item Pale yellow solution added to colourless solution.
+\item Solution turns brown.
+\end{itemize}
+
+\subsection{Oxidation of Alcohols}
+
+
+
+\section{Electrolysis}
+
+
+
+
+\section{Electroplating}
+
+
+
+\section{Electrorefining}
+
+
+
+\section{Electrochemical Cells}
+
+
+
+\section{Comercial Cells}
+
+\end{document}

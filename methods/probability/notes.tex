@@ -897,4 +897,127 @@ $\sigma$, equating this to the calculated z-score.
 
 Then simultaneously solve these for the required answer.
 
+
+
+\section{Random Sampling}
+
+\subsection{Terminology}
+
+\begin{description}
+\item [Population] The whole area under consideration.
+\item [Sample] A subgroup of the population we use to make inferences about the
+	whole population.
+\item [Sample Statistic] Statistics specific to a sample.
+\item [Population Parameters] Statistics specific to the whole population.
+\end{description}
+
+\subsection{Sampling Techniques}
+
+\begin{description}
+\item [Random Sampling] Where each member of the population has an equal chance
+	of being included in a sample.
+\item [Stratified Sampling] Where the population is divided up into strata
+	(groups). A sample is selected by choosing members so that the proportions
+	of each strata in the sample are reflective of the proportions in the
+	population.
+\item [Systematic Sampling] For a sample size of $n$, we first chose a random
+	starting point between 1 and $n$, then choose every $n$th person after this,
+	until we have our sample. Unsuitable when there's a periodic feature in our
+	data.
+\item [Quota Sampling] Where specific quotas from subgroups in the population
+	must be filled in the sample. Similar to stratified sampling.
+\item [Convenience Sampling] Where a sample is chosen from the population
+	because it is convenient.
+\item [Volunteer Sampling] Where a sample is taken from individuals who actively
+	decide to participate in the study.
+\end{description}
+
+\subsection{Capture Recapture}
+
+Used to estimate the size of a population, or the proportion of members in a
+population with a common characteristic.
+
+\begin{itemize}
+\item Given a population with $n$ members.
+\item $n_1$ members of the population are tagged.
+\item $n_2$ members of the population are then randomly selected. There are
+	$n_3$ tagged members in this sample.
+\item The proportion of tagged members in the sample is $\frac{n_3}{n_2}$.
+\item If the sample is reflective of the whole population, this will be equal
+	to the proportion of tagged members in the whole population $\frac{n_1}{n}$.
+\end{itemize}
+
+$$
+\frac{\text{tagged in sample}}{\text{sample size}} = \frac{\text{tagged in population}}{\text{population size}}
+$$
+
+\subsection{Generating Random Numbers}
+
+$$
+\text{rand}()
+$$
+
+Generates a continuous random number between 0 and 1 (inclusive).
+
+$$
+a\text{rand}() + b
+$$
+
+Generates a continuous random number between $b$ and $a + b$ (inclusive).
+
+$$
+\text{rand}(a, b)
+$$
+
+Generates a discrete (integer) random number between $a$ and $b$ (inclusive).
+
+$$
+\text{randList}(n)
+$$
+
+Generates a list of $n$ elements, each being a continuous random number between
+0 and 1 (inclusive).
+
+$$
+a \text{randList}(n) + b
+$$
+
+Generates a list of $n$ elements, each being a continuous random number between
+$b$ and $a + b$ (inclusive).
+
+$$
+\text{randList}(n, a, b)
+$$
+
+Generates a list of $n$ elements, each being a discrete (integer) random number
+between $a$ and $b$ (inclusive).
+
+$$
+\text{randBin}(n, p)
+$$
+
+Performs $n$ Bernoulli trials with a probability of success $p$, and returns the
+number of trials that are successful.
+
+$$
+\text{randBin}(n, p, n_l)
+$$
+
+Generates a list of $n_l$ elements, each being the number of successes found out
+of $n$ Bernoulli trials with a probability of success $p$.
+
+$$
+\text{randNorm}(\sigma, \mu)
+$$
+
+Generates a random value in a population that is normally distributed with a
+standard deviation $\sigma$ and mean $\mu$.
+
+$$
+\text{randNorm}(\sigma, \mu, n)
+$$
+
+Generates a list of $n$ elements, each being a value randomly chosen from a
+normal distribution with standard deviation $\sigma$ and mean $\mu$.
+
 \end{document}
