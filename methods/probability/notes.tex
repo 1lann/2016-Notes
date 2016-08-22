@@ -1020,4 +1020,204 @@ $$
 Generates a list of $n$ elements, each being a value randomly chosen from a
 normal distribution with standard deviation $\sigma$ and mean $\mu$.
 
+
+
+\section{Sample Proportions}
+
+\subsection{Population Proportion}
+
+Symbol: $p$
+
+The proportion of the population with a certain characteristic.
+
+\subsection{Sample Proportion}
+
+Symbol: $\hat{p}$
+
+The proportion of a sample of a population with a certain characteristic.
+
+If the sample is representative of the population, the sample proportion should
+be close to, but not necessarily equal to the population proportion.
+
+If the sample is biased, the sample proportion will likely be far away from the
+population proportion.
+
+If a sample has $n$ elements, and $a$ of these elements have a certain
+characteristic, then the sample proportion $\hat{p}$ is:
+
+$$
+\hat{p} = \frac{a}{n}
+$$
+
+\subsection{Distribution of Sample Proportions}
+
+Consider:
+
+\begin{itemize}
+\item We have a collection of $N$ samples.
+\item Each sample has a sample size $n$, which is the number of elements in the
+	sample.
+\item Each sample has a sample proportion $\hat{p}$, which represents the
+	proportion of elements in the sample that share a certain characteristic.
+\end{itemize}
+
+If we construct a histogram of these sample proportions, they will form a
+certain sample proportion distribution.
+
+\subsection{Central Limit Theorem}
+
+The distribution of sample proportions approaches a normal distribution as the
+number of samples ($N$) increases.
+
+This normal distribution will have a mean $p$ (the population proportion), and
+standard deviation:
+
+$$
+\sigma = \sqrt{\frac{p(1 - p)}{n}}
+$$
+
+As the sample size $n$ increases, the standard deviation becomes smaller.
+
+\subsubsection{Approximating Using a Sample}
+
+If the population proportion $p$ is unknown, we can approximate this sample
+distribution using a single sample proportion $\hat{p}$.
+
+The distribution of sample porportions will approximate a normal distribution
+with mean $\hat{p}$ and standard deviation:
+
+$$
+\sigma = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}
+$$
+
+\subsubsection{Confidence in Our Approximation}
+
+We can be confident that the distribution of sample proportions will approximate
+a normal distribution if:
+
+\begin{itemize}
+\item The number of samples is greater than or equal to 30 ($N \geq 30$).
+\item $np \geq 10$
+\item $n(1 - p) \geq 10$
+\end{itemize}
+
+\subsection{Point Estimates}
+
+Given one sample with size $n$, where $a$ elements have a particular
+characteristic, we can find the sample proportion:
+
+$$
+\hat{p} = \frac{a}{n}
+$$
+
+This $\hat{p}$ is a \textbf{point estimate} of the population proportion $p$.
+
+
+
+\section{Confidence Intervals}
+
+Confidence intervals tell us how likely it is for the population proportion or
+for a sample propotion to lie between two values.
+
+\subsection{Approximating the Population Proportion}
+
+If we're given a sample proportion $\hat{p}$, then we can approximate the
+distribution of sample proportions using a normal distribution with mean
+$\hat{p}$ and standard deviation:
+
+$$
+\sigma = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}
+$$
+
+From this:
+
+\begin{itemize}
+\item 90\% of sample proportions lie within 1.645 standard deviations of the
+	mean.
+\item 95\% of sample proportions lie within 1.96 standard deviations of the
+	mean.
+\item 99\% of sample proportions lie within 2.576 standard deviations of the
+	mean.
+\end{itemize}
+
+Thus:
+
+\begin{itemize}
+\item We can be be 90\% confident that the population proportion will lie within
+	1.645 standard deviations of the mean.
+\item We can be be 95\% confident that the population proportion will lie within
+	1.96 standard deviations of the mean.
+\item We can be be 99\% confident that the population proportion will lie within
+	2.576 standard deviations of the mean.
+\end{itemize}
+
+\subsection{Approximating Sample Proportions}
+
+Similarly, if we're given the population proportion $p$ and asked to approximate
+a sample porportion:
+
+\begin{itemize}
+\item We can be be 90\% confident that a sample proportion will lie within
+	1.645 standard deviations of the mean.
+\item We can be be 95\% confident that a sample proportion will lie within
+	1.96 standard deviations of the mean.
+\item We can be be 99\% confident that a sample proportion will lie within
+	2.576 standard deviations of the mean.
+\end{itemize}
+
+\subsection{Calculating}
+
+If we're given a sample proportion $\hat{p}$, then we can approximate the
+distribution of sample proportions using a normal distribution with mean
+$\hat{p}$ and standard deviation:
+
+$$
+\sigma = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}
+$$
+
+From this we can write a confidence interval:
+
+$$
+\hat{p} - k\sigma \leq \hat{p} \leq \hat{p} + k\sigma
+$$
+
+Where $k$ is the corresponding number of standard deviations for a particular
+confidence interval (the \textbf{critical value}). For a 95\% confidence
+interval for example, $k = 1.96$.
+
+This is also written:
+
+$$
+\hat{p} \pm k\sigma
+$$
+
+\subsection{Error Margin}
+
+$$
+k\sigma = k\sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}
+$$
+
+The error margin refers to how far above and below the mean the confidence
+interval extends.
+
+Increasing the sample size $n$ decreases the error margin.
+
+\subsection{Repeated Confidence Intervals}
+
+If we were to take $n$ samples and construct a $q$\% confidence interval from
+each, we would expect $q$\% of these confidence intervals to actually contain
+the population proportion.
+
+For example, if we take 100 samples and construct 100 individual 95\% confidence
+intervals, we would expect 95 of these intervals to actually contain the
+population proportion.
+
+\subsection{Different Critical Values}
+
+To calculate the critical value for a $q$\% confidence interval, use an inverse
+normal distribution with mean 0 and standard deviation 1.
+
+This finds the number of standard deviations away from the mean the confidence
+interval requires such that it contains $q$\% of the population.
+
 \end{document}
