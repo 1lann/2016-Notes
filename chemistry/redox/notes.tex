@@ -6,6 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{esvect}
 \usepackage{mhchem}
+\usepackage{chemfig}
 
 % Hyperlink contents page
 \usepackage{hyperref}
@@ -20,6 +21,13 @@
 % No indent on new paragraphs
 \setlength{\parindent}{0mm}
 \setlength{\parskip}{0.2cm}
+
+% Style for organic diagrams
+\setdoublesep{0.35700 em}
+\setatomsep{1.78500 em}
+\setbondoffset{0.18265 em}
+\newcommand{\bondwidth}{0.06642 em}
+\setbondstyle{line width = \bondwidth}
 
 
 \begin{document}
@@ -204,12 +212,12 @@ Rule \ref{ions}:
 \item For $\ce{PO4^{3-}}$, each $\ce{O}$ is -2, so $\ce{P}$ is +5.
 \end{itemize}
 
-\subsection{Determining if an Equation is Redox}
+\subsection{Determine if Redox}
 
-An equation is redox if a species has a different oxidation number on each side
-of the equation.
+A reaction is a redox reaction if a species has a different oxidation number on
+each side of the equation.
 
-\subsection{Determining the Oxidant and Reductant}
+\subsection{Determine Oxidant and Reductant}
 
 A species is oxidised if the oxidation number of an atom in it increases
 (consistent with a loss of electrons).
@@ -234,7 +242,7 @@ Used to determine if a redox reaction will occur.
 \begin{itemize}
 \item Each half equation is given as a reduction.
 \item Reactions that are more readily reduced are at the top of the table.
-\itme The strongest oxidants are at the top of the table.
+\item The strongest oxidants are at the top of the table.
 \item Reactions that are more readily oxidised are at the bottom of the table.
 \item The strongest reductants are at the bottom of the table.
 \end{itemize}
@@ -262,6 +270,8 @@ An indication of how spontaneous a redox half reaction is.
 	surroundings to occur.
 \item $E^\circ$ values in the table are only valid for standard laboratory
 	conditions.
+\item All values are measured relative to the standard Hydrogen electrode (which
+	has a value of 0).
 \end{itemize}
 
 \subsection{Standard Laboratory Conditions}
@@ -274,7 +284,7 @@ Standard laboratory conditions are:
 \item [Concentration] $1\text{ mol L}^{-1}$
 \end{description}
 
-\subsection{Determining if a Redox Reaction Occurs}
+\subsection{Spontaneous Reactions}
 
 For a redox reaction to occur spontaneously (without energy input), the oxidant
 (the species being reduced) must be a stronger oxidant than the reducant (the
@@ -292,11 +302,52 @@ A simple rule:
 The table is only a predictor. There are some exceptions (reactions that occur
 spontaneously that are not predicted by the table to do so).
 
+\subsection{Exceptions}
+
+The standard reduction potential table is only a predictor of whether a redox
+reaction will occur. There are exceptions to these predictions.
+
+Acidified permanganate does not react with water:
+
+$$
+\begin{aligned}
+\ce{MnO4- + 8H+ + 5e- & -> Mn^{2+} + 4H2O} \\
+\ce{2H2O & -> O2 + 4H+ + 4e-} \\
+\end{aligned}
+$$
+
+Acidified dichromate does not react with water:
+
+$$
+\begin{aligned}
+\ce{Cr2O7^{2-} + 14H+ + 6e- & -> 2Cr^{3+} + 7H2O} \\
+\ce{2H2O & -> O2 + 4H+ + 4e-} \\
+\end{aligned}
+$$
+
 
 
 \section{Reactions}
 
 \subsection{Disproportionation Reaction}
+
+A disproportionation reaction is where the same species is both oxidised and
+reduced.
+
+For example:
+
+$$
+\ce{2NO2 + H2O -> HNO3 + HNO2}
+$$
+
+This reaction has the half equations:
+
+$$
+\begin{aligned}
+\ce{NO2 + H2O & -> HNO3 + H+ + e-} \\
+\ce{NO2 + H+ + e- & -> HNO2} \\
+\end{aligned}
+$$
 
 \subsection{Metal Displacement Reaction}
 
@@ -333,27 +384,669 @@ Observations for the above reaction:
 \item Solution turns brown.
 \end{itemize}
 
-\subsection{Oxidation of Alcohols}
+\subsection{Oxidation of Primary Alcohols}
 
+A primary alcohol first oxidises to an aldehyde, then to a carboxylic acid.
 
+Using ethanol, the oxidation half equation is:
 
-\section{Electrolysis}
+\begin{center}
+\ce{\chemfig{C(-[::0]C(-[::0]OH)(-[::90]H)(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)} ->
+\chemfig{C(-[::0]C(=[::45]O)(-[::-45]H))(-[::90]H)(-[::180]H)(-[::270]H)} + 2H+ + 2e-}
+\end{center}
 
+Using acidified potassium permanganate ($\ce{KMnO4}$) as the oxidising agent,
+the reduction half equation is:
 
+$$
+\ce{MnO4- + 8H+ + 5e- -> Mn^{2+} + 4H2O}
+$$
 
+The full redox equation is:
 
-\section{Electroplating}
+\begin{center}
+\ce{5\chemfig{C(-[::0]C(-[::0]OH)(-[::90]H)(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)} + 2MnO4- + 6H+ ->
+5\chemfig{C(-[::0]C(=[::45]O)(-[::-45]H))(-[::90]H)(-[::180]H)(-[::270]H)} + 2Mn^{2+} + 8H2O}
+\end{center}
 
+The second stage oxidation half equation is:
 
+\begin{center}
+\ce{\chemfig{C(-[::0]C(=[::45]O)(-[::-45]H))(-[::90]H)(-[::180]H)(-[::270]H)} + H2O ->
+\chemfig{C(-[::0]C(=[::45]O)(-[::-45]OH))(-[::90]H)(-[::180]H)(-[::270]H)} + 2H+ + 2e-}
+\end{center}
 
-\section{Electrorefining}
+The reduction half equation is the same as in the first stage. The full redox
+equation is:
+
+\begin{center}
+\ce{5\chemfig{C(-[::0]C(=[::45]O)(-[::-45]H))(-[::90]H)(-[::180]H)(-[::270]H)} + 2MnO4- + 6H+ ->
+\chemfig{5C(-[::0]C(=[::45]O)(-[::-45]OH))(-[::90]H)(-[::180]H)(-[::270]H)} + 2Mn^{2+} + 3H2O}
+\end{center}
+
+\subsection{Oxidation of Secondary Alcohols}
+
+A secondary alcohol oxidises to a keytone.
+
+Using propan-2-ol, the oxidation half equation is:
+
+\begin{center}
+\ce{\chemfig{C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]O(-[::0]H))(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)} ->
+\chemfig{C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(=[::90]O))(-[::90]H)(-[::180]H)(-[::270]H)} + 2H+ + 2e-}
+\end{center}
+
+The reduction half equation is the same as for a primary alcohol. The full redox
+equation is:
+
+\begin{center}
+\ce{5\chemfig{C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(-[::90]O(-[::0]H))(-[::270]H))(-[::90]H)(-[::180]H)(-[::270]H)} + 2MnO4- + 6H+ ->
+5\chemfig{C(-[::0]C(-[::0]C(-[::0]H)(-[::90]H)(-[::270]H))(=[::90]O))(-[::90]H)(-[::180]H)(-[::270]H)} + 2Mn^{2+} + 8H2O}
+\end{center}
+
+\subsection{Oxidation of Tertiary Alcohols}
+
+Tertiary alcohols do not undergo redox reactions.
 
 
 
 \section{Electrochemical Cells}
 
+Electrochemical cells produce a voltage across a wire:
+
+\begin{itemize}
+\item Redox reactions require the transfer of electrons.
+\item We can separate the sites at which oxidation and reduction occur, and
+	connect them via a wire.
+\item This forces the electron transfer to occur through the wire, producing a
+	voltage and current.
+\end{itemize}
+
+\subsection{Construction}
+
+% TODO: Diagram
+
+For the construction of an electrochemical cell with the two half equations:
+
+$$
+\begin{aligned}
+\ce{Ag+ + e- & -> Ag} \\
+\ce{Cu^{2+} + 2e- & -> Cu} \\
+\end{aligned}
+$$
+
+\begin{itemize}
+\item Two \textbf{half cells} (beakers) are constructed by filling one beaker
+	with $\ce{Cu^{2+}}$ ions, and the other with $\ce{Ag+}$ ions.
+\item Two metal \textbf{electrodes} are inserted into each half cell. One made
+	from solid $\ce{Cu}$ is inserted into the $\ce{Cu^{2+}}$ beaker. One made
+	from solid $\ce{Ag}$ is inserted into the $\ce{Ag+}$ beaker.
+\item A wire connects the two electrodes.
+\item A \textbf{salt bridge} is placed across the two beakers.
+\end{itemize}
+
+\subsection{Half Cells}
+
+Since $\ce{Ag+}$ is a stronger oxidant than $\ce{Cu^{2+}}$ (left above right
+rule), it will be reduced spontaneously.
+
+The half equations of the two reactions occurring in the cell are therefore:
+
+$$
+\begin{aligned}
+\ce{Ag+ + e- & -> Ag} \\
+\ce{Cu & -> Cu^{2+} + 2e-} \\
+\end{aligned}
+$$
+
+The full redox equation is:
+
+$$
+\ce{2Ag+ + Cu -> 2Ag + Cu^{2+}}
+$$
+
+When specifying which substances to use to construct an electrochemical cell,
+full formula must be given. For example, we must write:
+
+\begin{itemize}
+\item $\ce{AgNO3}$ solution, rather than a solution of $\ce{Ag+}$ ions.
+\item $\ce{CuSO4}$ solution, rather than a solution of $\ce{Cu^{2+}}$ ions.
+\end{itemize}
+
+\subsection{Anode and Cathode}
+
+The reduction half equation occurs in the reduction half cell or
+\textbf{cathode}:
+
+$$
+\ce{Ag+ + e- -> Ag}
+$$
+
+The oxidation half equation occurs in the oxidation half cell or
+\textbf{anode}:
+
+$$
+\ce{Cu -> Cu^{2+} + 2e-}
+$$
+
+\subsection{Salt Bridge}
+
+The salt bridge completes the circuit and allows the flow of charge.
+
+It must not form a solid precipitate with any ions in solution in either half
+cell.
+
+It can be constructed from:
+
+\begin{itemize}
+\item Usually a piece of filter paper soaked in a Group 1 nitrate (eg.
+	$\ce{NaNO3}$ or $\ce{KNO3}$).
+\item A tube filled with a solution of ions.
+\item A porous membrane.
+\end{itemize}
+
+\subsection{Cell Potential}
+
+Each half cell has an associated potential given on the Standard Reduction
+Potentials Table, in standard conditions.
+
+The reduction half cell produces +0.80 V.
+
+The oxidation half cell -0.34 V. The table lists +0.34 V, but we negate this
+value since we require an oxidation potential, and the table lists reduction
+potentials.
+
+The \textbf{emf} (voltage) produced by the cell is:
+
+$$
+0.80 - 0.34 = +0.43\text{ V}
+$$
+
+\subsection{Workings}
+
+\begin{itemize}
+\item The solid $\ce{Cu}$ in the anode's electrode wants to be reduced (gain
+	electrons).
+\item This causes it to oxidise the $\ce{Ag+}$ in the cathode, producing
+	electrons.
+\item The electrons travel through the wire and allow the reduction of the
+	$\ce{Cu}$.
+\end{itemize}
+
+Electron production:
+
+\begin{itemize}
+\item Electrons are produced by oxidation, making the anode the negative
+	terminal.
+\item Electrons are consumed in reduction, making the cathode the positive
+	terminal.
+\end{itemize}
+
+Electron flow:
+
+\begin{itemize}
+\item Electrons flow from where they are produced by oxidation to where they
+	are consumed by reduction.
+\item Thus electrons flow from the anode to the cathode.
+\item Conventional current is the flow of positive charge, opposite to the flow
+	of electrons, and travels from the cathode to the anode.
+\end{itemize}
+
+Flow of ions in the salt bridge:
+
+\begin{itemize}
+\item Consider a salt bridge made from filter paper soaked in $\ce{NaNO3}$
+	solution.
+\item A surplus of positive ions forms at the anode (where $\ce{Cu^{2+}}$ ions
+	are produced). The $\ce{NO3-}$ ions move toward the anode to counteract
+	this.
+\item A deficit of positive ions forms at the cathode (where $\ce{Ag+}$ ions
+	are consumed). The $\ce{Na+}$ ions move toward the cathode to counteract
+	this.
+\end{itemize}
+
+Ion concentration:
+
+\begin{itemize}
+\item The concentration of $\ce{Cu^{2+}}$ ions in the anode increases as the
+	copper is reduced according to its half equation.
+\item The concentration of $\ce{Ag+}$ ions in the cathode decreases as the
+	silver is oxidised.
+\end{itemize}
+
+Electrode mass:
+
+\begin{itemize}
+\item The mass of the $\ce{Cu}$ electrode decreases as solid copper is oxidised,
+	according to the oxidation half equation.
+\item The mass of the $\ce{Ag}$ electrode increases as solid silver forms
+	through reduction, according to the reduction half equation.
+\end{itemize}
+
+Observations:
+
+\begin{itemize}
+\item The solution of $\ce{Cu^{2+}}$ ions becomes more blue (as the ion
+	concetration increases).
+\item The copper electrode becomes smaller, decreasing in mass.
+\item The silver electrode becomes larger, increasing in mass.
+\end{itemize}
+
+\subsection{Label Convention}
+
+For an electrochemical cell constructed using $\ce{Ag}$ and $\ce{Cu}$, we write:
+
+$$
+\ce{Cu^{2+}} / \ce{Cu} // \ce{Ag+} / \ce{Ag}
+$$
+
+Where the first pair undergoes oxidation and the second reduction.
+
+\subsection{Gaseous Half Cells}
+
+% TODO: Diagram
+
+Instead of using a solid and a solution of ions, we can use a gas and solution
+of ions to construct a half cell:
+
+\begin{itemize}
+\item A beaker is filled with the ion solution.
+\item A flared, open-ended glass container with a gas valve is partially
+	submerged in the ion solution in the beaker.
+\item An inert, platinum electrode connected to the wire is suspended in the
+	glass container.
+\item Gas is bubbled through the solution using the valve on the container.
+\end{itemize}
 
 
-\section{Comercial Cells}
+
+\section{Electrolysis}
+
+Electrolysis is splitting a compound into its constituent elements through the
+use of electricity.
+
+\subsection{Purpose}
+
+Consider molten $\ce{NaCl}$ salt in a beaker. This will ionise into $\ce{Na+}$
+and $\ce{Cl-}$.
+
+The goal is to produce solid $\ce{Na}$ and gaseous $\ce{Cl2}$.
+
+The two half equations involving these ions are:
+
+$$
+\begin{aligned}
+\ce{Cl2 + 2e- & -> 2Cl-} \qquad E^\circ = +1.36\text{ V} \\
+\ce{Na+ + e- & -> Na} \qquad E^\circ = -2.71\text{ V} \\
+\end{aligned}
+$$
+
+To achieve the goal, we must reduce $\ce{Na+}$ and oxidise $\ce{Cl-}$.
+
+This reaction does not happen simultaneously, as $\ce{Cl}$ is a stronger
+oxidant than $\ce{Na}$.
+
+Thus we must force the redox reaction to occur by supplying electrical energy
+from an outside source (a battery).
+
+\subsection{Electrical Potential}
+
+The $E^\circ$ value for the above reaction where $\ce{Na+}$ is reduced and
+$\ce{Cl-}$ is oxidised is:
+
+$$
+-2.71 - 1.36 = -4.07\text{ V}
+$$
+
+The negative voltage demonstrates that this reaction does not occur
+simultaneously.
+
+For the reaction to occur, we must supply at least 4.07 V.
+
+\subsection{Construction}
+
+% TODO: Diagram
+
+Consider an electrolytic cell using molten $\ce{NaCl}$.
+
+\begin{itemize}
+\item A single beaker contains a molten salt (in this case, $\ce{NaCl}$).
+\item Two inert electrodes (usually graphite) are partially submerged in the
+	molten salt.
+\item The two electrodes are connected to a battery that supplies a voltage of
+	at least 4.07 V.
+\end{itemize}
+
+\subsection{Workings}
+
+For reduction:
+
+\begin{itemize}
+\item The attached battery causes a surplus of electrons in the electrode
+	attached to the negative terminal.
+\item This acts as the supply of electrons for the reduction process.
+\item Since $\ce{Cl-}$ in the molten salt can't be reduced, $\ce{Na+}$ must be
+	reduced by these electrons.
+\item This forms solid $\ce{Na}$ on the electrode.
+\end{itemize}
+
+For oxidation:
+
+\begin{itemize}
+\item The attached battery causes a deficit of electrons (surplus of positive
+	charge) in the electrode attached to the positive terminal.
+\item This allows $\ce{Cl-}$ to be oxidised at this electrode, supplying an
+	electron to the wire.
+\item This forms $\ce{Cl2}$ gas.
+\end{itemize}
+
+Terminals:
+
+\begin{itemize}
+\item As in an electrochemical cell, oxidation occurs at the anode, reduction
+	at the cathode.
+\item Unlike an electrochemical cell, the anode is the positive terminal, the
+	cathode the negative terminal.
+\end{itemize}
+
+
+
+\section{Electrorefining}
+
+The process of refining a metal to increase its purity.
+
+\subsection{Construction}
+
+% TODO: Diagram
+
+Consider the electrorefining of copper:
+
+\begin{itemize}
+\item A solution of \textbf{acidified} $\ce{Cu^{2+}}$ ions (usually
+	$\ce{CuSO4}$) is placed in a beaker.
+\item An impure and a pure copper electrode are partially submerged in the
+	solution.
+\item Connect the impure electrode to the positive terminal to force oxidation
+	to occur at it, making it the anode.
+\item Connect the pure electrode to the negative terminal to force reduction
+	to occur at it, making it the cathode.
+\end{itemize}
+
+\subsection{Equations}
+
+Electrorefining involves:
+
+\begin{itemize}
+\item Take an impure copper anode, containing impurities like $\ce{Ag}$,
+	$\ce{Zn}$, $\ce{Fe}$, etc.
+\item Oxidise the substances in the anode to form ions in solution, or
+	insoluble anodic sludge below the anode.
+\item Reduce the $\ce{Cu^{2+}}$ ions in the solution to form pure copper on the
+	cathode.
+\end{itemize}
+
+For example, consider a copper anode containing mostly $\ce{Cu}$, with some
+$\ce{Ag}$, $\ce{Pb}$, and $\ce{Zn}$ as impurities.
+
+The reduction half equations are:
+
+$$
+\begin{aligned}
+\ce{Ag+ + e- & -> Ag} \qquad E^\circ = +0.80\text{ V} \\
+\ce{Cu^{2+} + 2e- & -> Cu} \qquad E^\circ = +0.34\text{ V} \\
+\ce{Pb^{2+} + 2e- & -> Pb} \qquad E^\circ = -0.13\text{ V} \\
+\ce{Zn^{2+} + 2e- & -> Zn} \qquad E^\circ = -0.76\text{ V} \\
+\end{aligned}
+$$
+
+\begin{itemize}
+\item Solid $\ce{Cu}$ will be oxidised, increasing the concentration of
+	$\ce{Cu^{2+}}$ ions in solution.
+\item When a piece of solid $\ce{Pb}$ or $\ce{Zn}$ is encountered, these will
+	be oxidised instead of the copper, as they are stronger reductants (meaning
+	they are more readily reduced). These will form $\ce{Pb^{2+}}$ and
+	$\ce{Zn^{2+}}$ ions in solution.
+\item $\ce{Zn^{2+}}$ ions will remain as ions in solution. They will not form
+	solid $\ce{Zn}$ on the cathode as they are less readily reduced compared to
+	the $\ce{Cu^{2+}}$ ions in solution.
+\item $\ce{Pb^{2+}}$ ions will form an insoluble precipitate with the
+	$\ce{SO4^{2-}}$ ions from the original $\ce{CuSO4}$ solution, falling to the
+	bottom as anodic sludge.
+\item $\ce{Ag+}$ will remain as a solid and fall to the bottom of the beaker
+	as anodic sludge, as it will not form ions due to being less readily
+	oxidised than the copper, which makes up the majority of the anode.
+\end{itemize}
+
+\subsection{Observations}
+
+\begin{itemize}
+\item The impure anode will reduce in size.
+\item The pure copper cathode will increase in size.
+\end{itemize}
+
+
+
+\section{Electroplating}
+
+Coating a material with a thin layer of another metal.
+
+\subsection{Construction}
+
+% TODO: Diagram
+
+Consider electroplating a copper cathode with silver:
+
+\begin{itemize}
+\item Fill a beaker with a solution of $\ce{Ag+}$ ions (eg. $\ce{AgNO3}$).
+\item Submerge the copper and silver electrodes in the solution.
+\item Connect the copper electrode to the negative terminal to force reduction
+	to occur at it, making it the cathode.
+\item Connect the silver electrode to the positive terminal to force oxidation
+	to occur at it, making it the anode.
+\end{itemize}
+
+\subsection{Equations}
+
+Electroplating involves:
+
+\begin{itemize}
+\item Take a silver anode and oxidise the silver to form $\ce{Ag+}$ ions in
+	solution.
+\item Reduce the $\ce{Ag+}$ ions at the copper cathode to coat it in a thin
+	layer of silver metal.
+\end{itemize}
+
+The reduction half equations are:
+
+$$
+\begin{aligned}
+\ce{Ag+ + e- & -> Ag} \qquad E^\circ = +0.80\text{ V} \\
+\ce{Cu^{2+} + 2e- & -> Cu} \qquad E^\circ = +0.34\text{ V} \\
+\end{aligned}
+$$
+
+
+
+\section{Lead Acid Battery}
+
+An electrochemical cell that is rechargeable.
+
+\subsection{Construction}
+
+% TODO: Diagram
+
+\begin{itemize}
+\item A beaker is filled with $\ce{H2SO4}$.
+\item Solid $\ce{Pb}$ and $\ce{PbO2}$ electrodes are submerged in the solution.
+\item A wire connects the two electrodes.
+\end{itemize}
+
+\subsection{Discharging}
+
+\textbf{Discharging} is the state of operation where a voltage is produced via
+a redox reaction.
+
+$\ce{PbO2}$ is reduced at the cathode, and $\ce{Pb}$ is oxidised at the anode.
+
+The reduction half reaction at the cathode is:
+
+$$
+\ce{PbO2 + SO4^{2-} + 4H+ + 2e- -> PbSO4 + 2H2O} \qquad E^\circ = +1.69\text{ V}
+$$
+
+The oxidation half reaction at the anode is:
+
+$$
+\ce{Pb -> Pb^{2+} + 2e-} \qquad E^\circ = +0.13\text{ V}
+$$
+
+The $\ce{Pb^{2+}}$ ions form a solid precipitate with $\ce{SO4^{2-}}$ ions in
+solution:
+
+$$
+\ce{Pb^{2+} + SO4^{2-} -> PbSO4}
+$$
+
+Thus the overall reaction at the anode is:
+
+$$
+\ce{Pb + SO4^{2-} -> PbSO4 + 2e-} \qquad E^\circ = +0.13\text{ V}
+$$
+
+The overall redox reaction is:
+
+$$
+\ce{Pb + PbO2 + 2SO4^{2-} + 4H+ -> 2PbSO4 + 2H2O} \qquad E^\circ = +1.82\text{ V}
+$$
+
+The solid $\ce{PbSO4}$ is formed at both the anode and cathode, and is deposited
+as a thin layer on each.
+
+Electron flow:
+
+\begin{itemize}
+\item Electrons are produced at the anode where $\ce{Pb}$ is oxidised, making
+	it the negative terminal.
+\item These flow to the cathode where they are consumed in the reduction of
+	$\ce{PbO2}$, making it the positive terminal.
+\end{itemize}
+
+Changes in mass:
+
+\begin{itemize}
+\item At the anode, the mass of $\ce{Pb}$ decreases, the mass of $\ce{PbSO4}$
+	increases.
+\item At the cathode, the mass of $\ce{PbO2}$ decreases, the mass of
+	$\ce{PbSO4}$ increases by the same amount as it did at the anode.
+\end{itemize}
+
+\subsection{Charging}
+
+\textbf{Charging} is the state of operation where the battery is returned to a
+condition where it is capable of continuing to discharge electricity.
+
+$\ce{PbO2}$ is oxidised at the anode, and $\ce{Pb}$ is reduced at the cathode.
+
+The reduction half reaction at the cathode is:
+
+$$
+\ce{PbSO4 + 2e- -> Pb + SO4^{2-}} \qquad E^\circ = -0.36\text{ V}
+$$
+
+The oxidation half reaction at the anode is:
+
+$$
+\ce{PbSO4 + 2H2O -> PbO2 + SO4^{2-} + 4H+ + 2e-} \qquad E^\circ = -1.69\text{ V}
+$$
+
+The full redox reaction is:
+
+$$
+\ce{2PbSO4 + 2H2O -> Pb + PbO2 + 2SO4^{2-} + 4H+} \qquad E^\circ = -1.82\text{ V}
+$$
+
+This is an example of a disproportionation reaction.
+
+Electron flow:
+
+\begin{itemize}
+\item Electrons are produced at the anode where $\ce{PbSO4}$ is oxidised, making
+	it the negative terminal.
+\item These are consumed in the reduction of $\ce{PbSO4}$ at the cathode, making
+	it the positive terminal.
+\end{itemize}
+
+Changes in mass:
+
+\begin{itemize}
+\item The mass of $\ce{PbSO4}$ on both the anode and cathode decreases by the
+	same amount.
+\item The mass of $\ce{Pb}$ increases on the cathode, where $\ce{PbSO4}$ is
+	reduced.
+\item The mass of $\ce{PbO2}$ increases on the anode, where $\ce{PbSO4}$ is
+	oxidised.
+\end{itemize}
+
+
+
+\section{Hydrogen Fuel Cell}
+
+An electrochemical cell that never stops producing a voltage as long as fuel is
+supplied.
+
+\subsection{Construction}
+
+% TODO: Diagram
+
+\begin{itemize}
+\item Oxygen and Hydrogen gas are supplied on either side of a porous membrane.
+\item Hydrogen is oxidised, producing electrons that travel across a wire to the
+	other side of the membrane (supplying a voltage).
+\item Oxygen gas is reduced using the Hydrogen ions that travel across the
+	membrane, producing water.
+\end{itemize}
+
+\subsection{In Acidic Conditions}
+
+$\ce{O2}$ is reduced at the cathode according to the half equation:
+
+$$
+\ce{O2 + 4H+ + 4e- -> 2H2O}
+$$
+
+$\ce{H2}$ is oxidised at the anode according to the half equation:
+
+$$
+\ce{H2 -> 2H+ + 2e-}
+$$
+
+The full redox equation is:
+
+$$
+\ce{O2 + 2H2 -> 2H2O}
+$$
+
+\subsection{In Alkaline Conditions}
+
+The reduction half equation is:
+
+$$
+\ce{O2 + 2H2O + 4e- -> 4OH-}
+$$
+
+The oxidation half equation is:
+
+$$
+\ce{H2 + 2OH- -> 2H2O + 2e-}
+$$
+
+The full redox equation is (as in acidic conditions):
+
+$$
+\ce{O2 + 2H2 -> 2H2O}
+$$
+
+
+
+\section{Corrosion}
 
 \end{document}

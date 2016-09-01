@@ -1,0 +1,3304 @@
+
+\documentclass[a4paper,11pt]{report}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Physics Notes}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+
+
+\chapter{Motion}
+
+\section{Vectors}
+
+A value with both magnitude and direction.
+
+Diagramatically represented as an arrow.
+
+\subsection{Components}
+
+A vector can be split into its horizontal or vertical components:
+
+$$
+\begin{aligned}
+v_x & = v \cos{\theta} \\
+v_y & = v \sin{\theta} \\
+\end{aligned}
+$$
+
+\subsection{Negation}
+
+Reverses the direction of the vector.
+
+Negate each component separately.
+
+\subsection{Addition}
+
+Place two vectors end to end and determine magnitude and direction of
+resultant.
+
+To solve, either:
+
+\begin{enumerate}
+\item Use the cosine rule to find the magnitude, and sine rule for the
+	direction.
+\item Split both vectors into horizontal and vertical components, then add
+	corresponding components.
+\end{enumerate}
+
+\subsection{Subtraction}
+
+Negate the second vector, then add them as above.
+
+
+\section{Motion}
+
+\subsection{Displacement}
+
+Symbol: $s$
+
+Units: metres ($m$)
+
+Requires a direction.
+
+A vector from the origin to an object's position.
+
+\subsection{Velocity}
+
+Symbol: $v$
+
+Units: $\mbox{ms}^{-1}$
+
+Requires a direction.
+
+The rate of change of displacement with respect to time:
+
+$$
+v = \frac{\Delta s}{\Delta t}
+$$
+
+\subsection{Change in Velocity}
+
+The final velocity of an object, subtract its initial velocity:
+
+$$
+\Delta v = v_f - v_i
+$$
+
+Use vector subtraction (as above) to find the correct direction.
+
+\subsection{Relative Velocity}
+
+The velocity of $A$ relative to a stationary observer $B$ is:
+
+$$
+v_{a/b}
+$$
+
+This can be calculated using the velocities of $A$ and $B$ relative to a third,
+stationary observer $C$:
+
+$$
+v_{a/b} = v{a/c} + v{c/b}
+$$
+
+\subsubsection{River Problem}
+
+Description:
+
+\begin{itemize}
+\item You stand at $A$ on the side of a river 30 m wide.
+\item You must reach $B$ on the opposite side of the river, 10 m downstream.
+\item You can swim with a velocity of $2\mbox{ ms}^{-1}$.
+\item The river has a current with velocity of $3\mbox{ ms}^{-1}$
+\end{itemize}
+
+Questions:
+
+\begin{itemize}
+\item At what angle with the shore should you swim to reach $B$?
+\item What is your speed relative to the Earth?
+\item How long will it take to cross the river?
+\end{itemize}
+
+Solution:
+
+\begin{itemize}
+\item The direction of your resultant velocity must be towards $B$.
+\item Your velocity added to the velocity of the river's current forms a
+	triangle.
+\item Solve for the required sides and angles using various trigonometric rules.
+\end{itemize}
+
+\subsection{Acceleration}
+
+Symbol: $a$
+
+Units: $\mbox{ms}^{-2}$
+
+Requires a direction.
+
+The rate of change of velocity with respect to time:
+
+$$
+a = \frac{\Delta v}{\Delta t}
+$$
+
+
+\section{Equations of Motion}
+
+$$
+\begin{aligned}
+s & = vt \\
+v & = u + at \\
+v^2 & = u^2 + 2as \\
+s & = ut + \frac{1}{2}at^2 \\
+\end{aligned}
+$$
+
+For a constant acceleration.
+
+
+\section{Momentum}
+
+$$
+p = mv
+$$
+
+Symbol: $p$
+
+Units: $\mbox{kg m s}^{-1}$
+
+Requires a direction.
+
+\subsection{Conservation of Momentum}
+
+Assuming no energy loss to the surroundings, the total momentum of a system is
+conserved before and after a collision:
+
+$$
+\sum p_i = \sum p_f
+$$
+
+
+\section{Energy}
+
+Symbol: $E$
+
+Units: Joules ($J$)
+
+Scalar quantity.
+
+\subsection{Kinetic Energy}
+
+$$
+E_k = \frac{1}{2}mv^2
+$$
+
+Energy due to an object's motion.
+
+\subsection{Gravitational Potential Energy}
+
+$$
+E_p = mgh
+$$
+
+Energy due to an object's height above a fixed reference point (usually the
+ground).
+
+\subsection{Conservation of Energy}
+
+The total energy in a system is conserved:
+
+$$
+\sum E_i = \sum E_f
+$$
+
+
+\section{Force}
+
+Symbol: $F$
+
+Units: Newtons ($N$)
+
+Requires a direction.
+
+Anything that changes an object's acceleration.
+
+\subsection{Weight}
+
+Symbol: $W$ or $mg$
+
+Force due to gravity.
+
+Acts from the centre of mass towards the centre of the Earth (usually straight
+down).
+
+\subsection{Normal}
+
+Symbol: $F_N$
+
+When two objects come into contact.
+
+\subsection{Tension}
+
+Symbol: $T$
+
+A restoring force due to intermolecular attractions between particles that make
+up an object.
+
+Acts parallel to an object.
+
+\subsection{Friction}
+
+Symbol: $F_f$
+
+A force that retards the motion of an object.
+
+Acts along a surface, opposite to the direction of the object's motion.
+
+Static friction is the force required to start moving an object from rest:
+
+$$
+F_f = \mu F_N
+$$
+
+Where $\mu$ is the coefficient of static friction for the surface on which the
+object is moving across.
+
+Kinetic friction is the force required to overcome the frictional force while
+an object is moving, to maintain a constant velocity.
+
+\subsection{Newton's Laws}
+
+\subsubsection{First Law}
+
+Every object will continue in its current state of rest or straight line,
+uniform motion unless acted upon by a net, non-zero, external force.
+
+Uniform means the magnitude of the object's velocity isn't changing.
+
+Straight line means the direction of the object's velocity isn't changing.
+
+\subsubsection{Second Law}
+
+$$
+\sum F = ma
+$$
+
+The net force exerted on an object is equal to the object's mass multiplied by
+its acceleration.
+
+\subsubsection{Third Law}
+
+If one object exerts a force on another, the second will also exert a force on
+the first equal in magnitude but opposite in direction.
+
+
+\section{Dynamics}
+
+For objects undergoing a constant acceleration.
+
+\subsection{Method}
+
+The general approach to solving dynamics problems:
+
+\begin{enumerate}
+\item Split the forces acting on a body into horizontal and vertical components.
+\item Equate each component to $ma$, using the acceleration of the object along
+	each axis.
+\item Solve for unknowns.
+\end{enumerate}
+
+
+\section{Statics}
+
+For objects at a constant velocity or at rest.
+
+\subsection{Method}
+
+The general approach to solving statics problems:
+
+\begin{enumerate}
+\item Split the forces acting on a body into horizontal and vertical components.
+\item Equate each component to 0.
+\item Solve for unknowns.
+\end{enumerate}
+
+
+\section{Projectile Motion}
+
+For an object fired at an angle to the ground into the air.
+
+Assume:
+
+\begin{itemize}
+\item Gravity acts directly downwards.
+\item No air resistance (horizontal velocity is constant).
+\end{itemize}
+
+\subsection{Variables}
+
+Potential variables that may be given, or asked to be solved:
+
+\begin{itemize}
+\item Horizontal range
+\item Flight time
+\item Maximum height
+\item Initial velocity
+\item Final velocity when the object hits the ground
+\item Velocity after $t$ seconds
+\item Angle to the horizontal at which the object was fired
+\item Height above the ground of the surface from which the object was fired
+\item Height above the ground of the surface on which the object landed
+\end{itemize}
+
+\subsection{Flight Time}
+
+To find the time the object is in the air before hitting the ground again, use:
+
+$$
+s_y = u_y t + \frac{1}{2} a_y t^2
+$$
+
+Set $s_y$ to the vertical displacement of the object relative to its initial
+starting height at the point where it lands.
+
+Solve using the quadratic formula.
+
+\subsection{Range}
+
+The range the projectile travels is equivalent to its horizontal displacement:
+
+$$
+s_x = u_x t
+$$
+
+\subsection{Maximum Height}
+
+The vertical velocity of the projectile will be 0 at its maximum height, so
+solve for $s_y$ using:
+
+$$
+u_y^2 + 2 a_y s_y = 0
+$$
+
+\subsection{Final Velocity}
+
+Solve for each component of the final velocity separately, then combine them.
+
+The horizontal component is the same as the initial horizontal velocity (since
+there's no acceleration along the horizontal axis):
+
+$$
+v_x = u_x
+$$
+
+The vertical component is:
+
+$$
+v_y = u_y + a_y t
+$$
+
+\subsection{Air Resistance}
+
+Effects of air resistance on the path of the projectile:
+
+\begin{itemize}
+\item Reduced range.
+\item Reduced maximum height.
+\item Asymmetrical path, where the downwards part of its flight is more stunted.
+\end{itemize}
+
+These effects are more pronounced for faster moving objects, since the
+frictional force is proportional to the object's velocity.
+
+The upwards part of the projectile's flight takes less time than the downwards
+because:
+
+\begin{itemize}
+\item Air resistance and gravity both act downwards on the upwards part of the
+	flight, instead of in opposite directions on the downwards part.
+\item This causes the upwards part to take less time for the projectile to
+	complete.
+\end{itemize}
+
+
+\section{Circular Motion}
+
+For an object travelling in a circular path, at a radius from a central point.
+
+\subsection{Period}
+
+Symbol: $T$
+
+Units: seconds ($s$)
+
+Time taken for the object to complete one revolution.
+
+\subsection{Frequency}
+
+Symbol: $f$
+
+Units: Hertz (Hz) or $\mbox{s}^{-1}$
+
+The number of revolutions completed in 1 second.
+
+Related to the period by:
+
+$$
+f = \frac{1}{T}
+$$
+
+\subsection{Velocity}
+
+$$
+\begin{aligned}
+v & = \frac{2\pi r}{T} \\
+& = 2\pi r f \\
+\end{aligned}
+$$
+
+Tangential to the circular path, perpendicular to the radius.
+
+Constant magnitude, but continuously changing direction.
+
+\subsection{Centripetal Acceleration}
+
+$$
+\begin{aligned}
+a & = \frac{v^2}{r} \\
+& = \frac{4 \pi^2 r}{T^2} \\
+\end{aligned}
+$$
+
+Directed towards the centre of the circle.
+
+Constant magnitude, but continuously changing direction.
+
+\subsection{Centripetal Force}
+
+$$
+F_c = \frac{mv^2}{r}
+$$
+
+Directed towards the centre of the circle.
+
+The centripetal force isn't a new type of force, but is the resultant unbalanced
+force acting on an object travelling in a circular path.
+
+It is caused by other forces, such as a tension force in a string, or the normal
+force for a car travelling around a corner.
+
+\subsection{Horizontal Circular Motion}
+
+For an object travelling in a horizontal circle, parallel to the ground, where
+the weight force is perpendicular to the object's path.
+
+The centripetal force will be supplied solely by the tension force in the
+string.
+
+\subsection{Vertical Circular Motion}
+
+For an object travelling in a vertical circle, perpendicular to the ground. We
+assume the average velocity of such an object to be constant.
+
+The centripetal force will be provided by a combination of the tension force
+in the string, and the object's weight force:
+
+$$
+F_c = T + W
+$$
+
+At the top of the object's path:
+
+\begin{itemize}
+\item Tension, weight, and the resultant centripetal force act down.
+\item Tension is at a minimum, as the weight force is providing part of the
+	required centripetal force.
+\end{itemize}
+
+At the bottom of the object's path:
+
+\begin{itemize}
+\item Tension and the resultant centripetal force act upwards, weight downwards.
+\item Tension is at a maximum, as it must overcome the weight force and provide
+	the required centripetal force.
+\end{itemize}
+
+Can also consider a rollercoaster or plane moving in a vertical circle, where
+the centripetal force is provided by the normal force, instead of tension.
+
+Applies when a car moves over a speed hump (decrease in normal force) and when
+a car moves through a ditch (increase in normal force).
+
+\subsubsection{Apparent Weightlessness}
+
+Apparent weightlessness occurs when the normal force exerted on a person is 0.
+
+TODO: Questions about spaceship
+
+\subsubsection{Minimum Velocity}
+
+There exists a certain velocity for a rollercoaster in a loop such that a
+person would experience apparent weightlessness at the top of the loop, where
+the normal force would be 0.
+
+At the top of the loop, taking up to be positive:
+
+$$
+-F_c = -F_N - mg
+$$
+
+$F_N$ is 0, so:
+
+$$
+\begin{aligned}
+\frac{mv^2}{r} & = mg \\
+v^2 & = rg \\
+v & = \sqrt{rg} \\
+\end{aligned}
+$$
+
+\subsection{Conical Circular Motion}
+
+When an object moves in a horizontal circle, making an angle with the vertical.
+
+For example, a mass on the end of a string:
+
+\begin{itemize}
+\item Forms a cone when swung, with the string at an angle to the vertical.
+\item The tension force is at an angle to the vertical, and has a horizontal
+	component.
+\item This horizontal component provides the centripetal force for the
+	horizontal circular motion.
+\end{itemize}
+
+For example, a plane banking around a corner, travelling in a horizontal circle:
+
+\begin{itemize}
+\item The lift force, perpendicular to the wings, is at an angle to the
+	vertical.
+\item The horizontal component of the lift force provides the centripetal force
+	for the circle.
+\end{itemize}
+
+For example, a car on a cambered (angled) track:
+
+\begin{itemize}
+\item The normal force, perpendicular to the cambered track, is at an angle to
+	the vertical.
+\item The horizontal component of the normal force provdies the centripetal
+	force.
+\end{itemize}
+
+The upwards vertical component of these forces will counteract the weight force
+of the object.
+
+\subsubsection{Velocity}
+
+For a specific angle with the vertical, the mass will have a certain velocity.
+
+For a car on a cambered track, a certain velocity will allow it to travel
+around the corner without any friction acting on the tyres (where $F_f$ along
+the slope of the road is 0):
+
+$$
+\begin{aligned}
+\sum F & = ma \\
+\sum F_v & = 0 \\
+F_N \cos{\theta} - mg & = 0 \\
+F_N \cos{\theta} & = mg \\
+\sum F_h & = \frac{mv^2}{r} \\
+F_N \sin{\theta} & = \frac{mv^2}{r} \\
+\end{aligned}
+$$
+
+Dividing the one equation by the other:
+
+$$
+\begin{aligned}
+\frac{F_N \sin{\theta}}{F_N \cos{\theta}} & = \frac{mv^2}{rmg} \\
+\tan{\theta} & = \frac{v^2}{rg} \\
+\end{aligned}
+$$
+
+Solving for the velocity:
+
+$$
+v = \sqrt{rg \tan{\theta}}
+$$
+
+
+\section{Gravity}
+
+\subsection{Gravitational Field}
+
+A gravitational field exists at a point if a force is exerted on a particle
+with mass when it is placed at the point.
+
+Any particle with mass has a gravitational field around it.
+
+\subsection{Gravitational Field Lines}
+
+The conditions for drawing gravitational field lines around an object with mass:
+
+\begin{itemize}
+\item Symmetrical about every axis.
+\item Arrows point towards centre of mass.
+\item All arrows the same length.
+\item Density of lines indicates the relative strength of the gravitational
+	field.
+\end{itemize}
+
+\subsection{Universal Law of Gravitation}
+
+$$
+F_g = \frac{G m_1 m_2}{r^2}
+$$
+
+The force exerted on an object with mass $m_1$ by another object with mass
+$m_2$, when they are distance of $r$ metres apart.
+
+$G$ is the universal gravitation constant:
+
+$$
+G = 6.67 \times 10^{-11}\mbox{ N m}^2\mbox{ kg}^{-2}
+$$
+
+The force requires a direction. For the force exerted by $m_2$ on $m_1$, the
+direction will be towards $m_2$.
+
+\subsection{Gravitational Field Strength}
+
+$$
+a_g = \frac{G m}{r^2}
+$$
+
+Units: Newtons per metre ($\mbox{N m}^{-1}$), equivalent to $\mbox{ms}^{-1}$
+
+The force exerted on an object per unit of mass by an object with mass $m_2$,
+a distance of $r$ metres away.
+
+Also called acceleration due to gravity ($g$).
+
+\subsection{Centripetal Force from Planet's Rotation}
+
+An object on Earth experiences a centripetal force from the Earth's rotation.
+
+TODO: What was I going on about??
+
+\subsection{Circular Orbit}
+
+Assuming the path of an object orbiting a planet is circular, the centripetal
+force is due solely to the planet's gravity:
+
+$$
+\begin{aligned}
+F_g & = F_c \\
+\frac{G m_1 m_2}{r^2} & = \frac{m_1 v^2}{r} \\
+v^2 = \frac{G m_2}{r} \\
+\end{aligned}
+$$
+
+The velocity of an orbiting object is constant for a particular altitude.
+
+When the velocity of an orbiting object is increased:
+
+\begin{itemize}
+\item Increase in tangential velocity of the object increases the required
+	centripetal force to sustain the current radius.
+\item Only gravity provides the centripetal force, and it can't increase to
+	compensate for the required centripetal force.
+\item Object will increase in altitude, increasing the radius of orbit,
+	decreasing the required centripetal force.
+\item Increasing its altitude increases the object's gravitational potential
+	energy.
+\item Since energy must be conserved, the object's kinetic energy must
+	decrease, decreasing its velocity.
+\end{itemize}
+
+\subsection{Escape Velocity}
+
+The minimum velocity required by an object launched from an altitude of $r$
+above a body to completely escape its gravitational field, ignoring any other
+energy loss:
+
+$$
+v = \sqrt{\frac{2 G m_2}{r}}
+$$
+
+\subsection{Lagrangian Points}
+
+A point in between two bodies where the gravitational force exerted by each is
+equal in magnitude and opposite in direction.
+
+An object at this point will not fall towards either body.
+
+For two bodies of mass $m_1$ and $m_2$ separated by a distance $r$, where $x$
+is the distance from body 1 to the Lagrangian point:
+
+$$
+\begin{aligned}
+\frac{G m_1 m_b}{x^2} & = \frac{G m_2 m_b}{(r - x)^2} \\
+\frac{m_1}{m_2} & = \frac{x^2}{(r - x)^2} \\
+x & = \frac{r\sqrt{\frac{m_E}{m_m}}}{1 + \sqrt{\frac{m_E}{m_m}}} \\
+\end{aligned}
+$$
+
+\subsection{Kepler's Laws}
+
+\subsubsection{First Law}
+
+The path of the planets around the sun are elliptical.
+
+One foci of the ellipse is the sun.
+
+\subsubsection{Second Law}
+
+All planets orbiting the sun sweep out equal areas in equal times.
+
+\subsubsection{Third Law}
+
+Derives a relationship between an objects's period of orbit ($T$) and orbital
+radius ($r$) around a planet with mass $m$:
+
+$$
+\begin{aligned}
+F_g & = F_c \\
+\frac{G m m_b}{r^2} & = \frac{m_b v^2}{r} \\
+& = \frac{m_b 4 \pi^2 r}{T^2} \\
+\frac{r^3}{T^2} & = \frac{G m}{4 \pi^2} \\
+\end{aligned}
+$$
+
+\subsection{Geosynchronous Orbit}
+
+Where the period of rotation of an object around a planet is the same as the
+planet's rotational period (24 hours for Earth).
+
+The altitude of this orbit can be derived using Kepler's third law (above),
+since the mass of the Earth and the orbital period (24 hours) is known.
+
+\subsection{Geostationary Orbit}
+
+Where the period of rotation of an object is equal to the planet's rotational
+period, and the object orbits around the equator.
+
+This means the object is always in the same position in the sky relative to an
+observer on Earth.
+
+This is used for communication satellites, where radio waves are always aimed
+at the same point in the sky.
+
+\subsection{Barycentre}
+
+Two planets will orbit each other around their centre of mass.
+
+Most commonly:
+
+\begin{itemize}
+\item The mass of the planet is much larger than that of the orbiting object.
+\item The centre of mass will be very close to the centre of the planet, making
+	the difference negligible.
+\item Only significant when the masses of both objects are similar.
+\end{itemize}
+
+For two objects with masses $m_1$ and $m_2$ a distance $r$ apart, the barycentre
+is located $x$ metres from object 1:
+
+$$
+x = \frac{m_2}{m_1 + m_2} r
+$$
+
+\subsubsection{Kepler's Third Law}
+
+Kepler's third law cannot be used as we assumed the radius of orbit was equal
+to the distance the planets were apart.
+
+
+\section{Torque}
+
+Symbol: $\tau$
+
+Units: Newton metres ($N m$)
+
+Requires a direction (commonly clockwise or anticlockwise).
+
+A rotational force about a pivot point.
+
+For a force $F$ applied $r$ metres away from the pivot, at an angle of $\theta$
+to the line of action, this produces the torque:
+
+$$
+\tau = rF \sin{\theta}
+$$
+
+\subsection{Centre of Mass}
+
+Assume all objects are of uniform density, unless otherwise stated.
+
+Thus an object's weight force acts from its centre of mass.
+
+\subsection{Stability}
+
+How prone an object is to falling over.
+
+If an object's centre of mass moves outside it's base, it will fall over.
+
+To increase stability:
+
+\begin{itemize}
+\item Lower the centre of mass.
+\item Widen the object's base.
+\end{itemize}
+
+Both options increase the distance the centre of mass must be moved for it to
+be outside the object's base, increasing its stability.
+
+\subsection{Equilibrium}
+
+Translational equilibrium is where:
+
+$$
+\begin{aligned}
+\sum F_x & = 0 \\
+\sum F_y & = 0 \\
+\end{aligned}
+$$
+
+There is no net force acting on the object, and its acceleration remains
+constant.
+
+Rotational equilibrium is where:
+
+$$
+\sum \tau_{cw} = \sum \tau_{acw}
+$$
+
+Where $cw$ and $acw$ stand for clockwise and anticlockwise respectively.
+
+There is no net change on an object's rotational acceleration.
+
+\subsubsection{Types of Equilibrium}
+
+The types of equilibrium can be demonstrated with a cylinder:
+
+\begin{description}
+\item [Stable] Cylinder stands on its circular base. Will not move if pushed.
+\item [Neutral] Cylinder stands still on its side. Will move if pushed.
+\item [Unstable] Cylinder balances on the edge of its circular base. Will fall
+	over if pushed.
+\end{description}
+
+\subsection{Solving Torque Problems}
+
+In torque problems, all objects will be in rotational and translational
+equilibrium, so:
+
+\begin{enumerate}
+\item Set $\sum \tau_{cw} = \sum \tau_{acw}$ and solve for required unknowns.
+\item Set $\sum F_y = 0$ and solve for vertical reaction force.
+\item Set $\sum F_x = 0$ and solve for horizontal reaction force.
+\end{enumerate}
+
+\subsubsection{Perpendicular Distance}
+
+Instead of finding the angle with the line of action, we can use the
+perpendicular distance from where the force is acting to the pivot point.
+
+There will be 2 perpendicular distances, one representing $\cos{\theta}$ and
+the other $\sin{\theta}$.
+Use the one representing $\sin{\theta}$.
+
+\subsection{See Saw Problem}
+
+Description:
+
+\begin{itemize}
+\item Multiple objects on a see saw at different distances from a pivot point.
+\item Find the location of a missing mass in order to balance the system.
+\item Find the mass of an object at a location in order to balance the system.
+\end{itemize}
+
+Variables:
+
+\begin{itemize}
+\item Mass of objects.
+\item Distance of objects from pivot.
+\item Location of pivot.
+\item Reaction force at pivot.
+\end{itemize}
+
+Method:
+
+\begin{itemize}
+\item Set $\sum \tau = 0$ and solve for unknown mass/radius.
+\item Set $\sum F_y = 0$ and solve for reaction force at pivot.
+\end{itemize}
+
+\subsection{Painter's Scaffolding Problem}
+
+Description:
+
+\begin{itemize}
+\item Platform suspended by multiple cables.
+\item Multiple masses placed on platform.
+\item Solve for unknown masses, distances, or tension in cables.
+\end{itemize}
+
+Variables:
+
+\begin{itemize}
+\item Mass of objects.
+\item Distances of objects from a side of the plank.
+\item Length of plank (ie. distance of an ending cable from the left pivot).
+\item Tension in cables.
+\end{itemize}
+
+Method:
+
+\begin{itemize}
+\item Chose one cable to act as the pivot point.
+\item Set $\sum \tau = 0$ and solve for unknown tension.
+\item Set $\sum F_y = 0$ and solve for other tension.
+\end{itemize}
+
+\subsection{Ladder Problem}
+
+Description:
+
+\begin{itemize}
+\item Ladder resting against a wall at an angle.
+\item Weight force acts down, exerting a torque on the ladder.
+\item Normal force provided by wall counteracts the torque produced by the
+	weight.
+\item Normal force acts perpendicular to wall.
+\end{itemize}
+
+Variables:
+
+\begin{itemize}
+\item Mass of ladder.
+\item Length of ladder.
+\item Angle made with wall.
+\item Normal force produced by wall.
+\item Friction force exerted by ground on base of ladder (horizontal component
+	of reaction force).
+\item Normal force produced by ground (vertical component of reaction force).
+\end{itemize}
+
+Method:
+
+\begin{itemize}
+\item Take the ladder's point of contact with ground as the pivot point.
+\item Set $\sum \tau = 0$ and solve for the wall's normal force.
+\item Set $\sum F_y = 0$ and solve for the normal force exerted by ground.
+\item Set $\sum F_x = 0$ and solve for the friction force between the ladder
+	and the ground.
+\item Find the resultant reaction force.
+\end{itemize}
+
+\subsection{Crane Problem}
+
+Description:
+
+\begin{itemize}
+\item Crane arm suspended at an angle above the horizontal.
+\item Supported by a cable fixed to a vertical tower.
+\item A load is attached at the end of the arm.
+\end{itemize}
+
+Variables:
+
+\begin{itemize}
+\item Mass of arm.
+\item Mass of load.
+\item Angle the arm makes with the horizontal.
+\item Tension in the supporting cable.
+\end{itemize}
+
+Method:
+
+\begin{itemize}
+\item Set $\sum \tau = 0$ and solve for the unknown tension in the supporting
+	cable.
+\item Set $\sum F_y = 0$ and solve for the vertical reaction force.
+\item Set $\sum F_x = 0$ and solve for the horizontal reaction force.
+\end{itemize}
+
+\subsection{Door Hinge Problem}
+
+Description:
+
+\begin{itemize}
+\item Door attached to a door frame at two hinges.
+\item Centre of mass acting downwards in the middle of the door.
+\item Door attempts to rotate clockwise around lower hinge.
+\item There is a reaction force directed left exerted on the upper hinge, and
+	one exerted right on the lower hinge.
+\end{itemize}
+
+Variables:
+
+\begin{itemize}
+\item Mass of door
+\item Dimensions of door
+\item Location of hinges
+\end{itemize}
+
+Method:
+
+TODO: I don't know how to do this one
+
+
+
+
+\chapter{Electromagnetism}
+
+\section{Charge}
+
+Symbol: $q$
+
+Units: Coulombs ($C$)
+
+Charge is a fundamental property of a subatomic particle.
+
+\subsection{Types}
+
+There are two types of charge:
+
+\begin{enumerate}
+\item Positive
+\item Negative
+\end{enumerate}
+
+A particle can also possess no charge (neutral).
+
+\subsection{Quantised Nature}
+
+Charge is quantised (exists in discrete units).
+
+The charge on any particle is some integer multiple of the charge on an
+electron.
+
+1 electron has a charge of $1.60 \times 10^{-19}\mbox{ C}$.
+
+1 Coulomb of charge contains $6.25 \times 10^{18}$ electrons.
+
+\subsection{Repulsion and Attraction}
+
+Like charges repel, and opposite charges attract.
+
+
+\section{Electric Field Lines}
+
+The requirements in drawing field lines around point charges:
+
+\begin{itemize}
+\item Symmetrical about every axis.
+\item Arrows point from positive towards negative.
+\item Density of lines around the charge indicates the relative strength of the
+	electric field.
+\end{itemize}
+
+\subsection{Required Diagrams}
+
+The required electric field line diagrams are:
+
+\begin{itemize}
+\item Single positive and negative point charges.
+\item A positive and negative charge near each other.
+\item Two positive and two negative charges near each other.
+\item Two charged plates separated by a distance.
+\end{itemize}
+
+
+\section{Electricity}
+
+\subsection{Electrical Potential Energy}
+
+Work must be done to move two particles with like charges close together.
+
+A charge gains electrical potential energy when work is done in moving it close
+to another particle with like charge.
+
+\subsection{Voltage}
+
+$$
+V = \frac{W}{q}
+$$
+
+Symbol: $V$
+
+Units: Volts ($V$), equivalent to Joules per Coulomb ($JC^{-1}$)
+
+The difference in potential energy between two points in a circuit.
+
+\subsection{Current}
+
+$$
+I = \frac{q}{s}
+$$
+
+Symbol: $I$
+
+Units: Amperes ($A$), equivalent to Coulombs per second ($Cs^{-1}$)
+
+The rate of flow of charge through a certain point in a circuit.
+
+\subsubsection{Conventional Current}
+
+The direction of flow of positive charge in a circuit.
+
+Assume all given current directions are conventional unless stated otherwise.
+
+\subsubsection{Electron Current}
+
+The direction of flow of negative charge (electrons) in a circuit.
+
+Opposite to conventional current.
+
+\subsection{Resistance}
+
+Symbol: $R$
+
+Units: Ohms ($\Omega$)
+
+A measure of by how much a circuit or element in a circuit impedes the flow of
+charge.
+
+\subsection{Voltage Drop}
+
+Voltage drop is how much energy per Coulomb of charge is lost over a segment of
+a circuit.
+
+This means that the electrons just before the entering the component have a
+higher electrical potential energy than after they leave.
+
+This difference in potential energy is equivalent to a drop in voltage across
+the component.
+
+\subsection{Ohms Law}
+
+$$
+V = IR
+$$
+
+Where $V$ is the voltage drop across a component of a circuit with resistance
+$R$, when a current $I$ flows through it.
+
+
+\section{Electric Fields}
+
+\subsection{Eletric Field Strength}
+
+$$
+E = \frac{F}{q}
+$$
+
+Symbol: $E$
+
+Units: Newtons per Coulomb ($NC^{-1}$)
+
+Requires a direction.
+
+An electric field exists at a certain point in space only when a point charge
+$q$ experiences a force $F$ at this point.
+
+The electric field strength at a point in space is defined as the force exerted
+per unit of charge at that point.
+
+\subsection{Electric Field Between Two Plates}
+
+$$
+E = \frac{V}{d}
+$$
+
+The eletric field strength between two metal plates separated by a distance of
+$d$ metres, with a potential difference of $V$ across them.
+
+\subsection{Force on a Charged Particle}
+
+$$
+F = \frac{1}{4 \pi \epsilon_0} \times \frac{q_1 q_2}{r^2}
+$$
+
+The force on a particle with charge $q_1$ positioned $r$ metres away from
+another particle with charge $q_2$ is $F$.
+
+The direction of this force will either be ``attraction" or ``repulsion", for
+unlike or like charges respectively.
+
+The electric field strength around a point charge decays with the square of
+the distance from the point (inverse square law).
+
+\subsection{Field Strength due to a Point Charge}
+
+$$
+E = \frac{1}{4\pi \epsilon_0} \times \frac{q}{r^2}
+$$
+
+The electric field strength a distance of $r$ metres away from a point charge
+with a charge of $q$.
+
+Derived from the equation for the force on a charged particle, when divided by
+$q_2$.
+
+
+\section{Magnetism}
+
+\subsection{Permanent Magnets}
+
+A permanent magnet is formed when the spin on a significant number of
+electrons within a region of a piece of solid metal align.
+
+The regions of aligned electron spin are called domains.
+
+Only ferromagnetic metals can form permanent magnets (eg. iron, nickel,
+cobalt).
+
+Ferromagnetic metals can have their domains aligned when exposed to an external
+magnetic field, becoming permanent magnets.
+
+\subsection{Paramagnetism}
+
+Where the domains in a metal temporarily align when in the presence of an
+external magnetic field.
+The domains align in the same direction as those of the external field.
+
+Causes an attraction between the paramagnet and the external magnet.
+
+\subsection{Diamagnetism}
+
+Where the domains in a metal temporarily align when in the presence of an
+external magnetic field.
+The domains align in the opposite direction as those of the external field.
+
+Causes a repulsion between the diamagnet and the external magnet.
+
+Only occurs for certain metals below a critical temperature.
+
+
+\section{Magnetic Field Lines}
+
+\subsection{Convention}
+
+Conventions for drawing magnetic field lines:
+
+\begin{itemize}
+\item Symmetrical about every axis.
+\item Arrows point from North to South.
+\item Density of lines indicates the relative field strength.
+\end{itemize}
+
+In addition to arrows, we can represent magnetic fields travelling into and
+out of the page using the symbols:
+
+\begin{description}
+\item [Cross] Field lines pointing out of the page.
+\item [Dot] Field lines pointing into the page.
+\end{description}
+
+\subsection{Required Diagrams}
+
+The required magnetic field diagrams are:
+
+\begin{itemize}
+\item A single dipole magnet.
+\item A single bar magnet
+\item Two bar magnets placed side by side, where the North pole of each is at
+	the top of the page
+\item Two bar magnets placed side by side, where the North pole of one is placed
+	next to the South pole of the other
+\item Two bar magnets placed end to end, where the two North poles are closest
+\item Two bar magnets placed end to end, where the North pole of one is closest
+	to the South pole of the other
+\item Magnetic field around a wire.
+\item Magnetic field around two wires with current flowing in either the same
+	or opposite directions (showing an attraction or repulsion between the
+	wires).
+\end{itemize}
+
+\subsection{Magnetic Field Lines Around Earth}
+
+The Earth acts as a large bar.
+
+The South magnetic pole is at the geographic North pole.
+
+The North magnetic pole is at the South geographic pole.
+
+\subsubsection{Direction of Field Lines}
+
+Above the equator, the Earth's magnetic field lines have no vertical component.
+They point directly towards the North geographic pole.
+
+At the North geographic pole, the magnetic field lines point directly down.
+
+At the South geographic pole, the magnetic field lines point directly up.
+
+\subsubsection{Angle of Dip}
+
+The angle above a tangent at a point on Earth's surface which the magnetic
+field lines point.
+
+\subsubsection{Angle of Declination}
+
+The angle between the North-South magnetic and geographic axes.
+
+
+\section{Magnetic Fields}
+
+\subsection{Magnetic Field Strength}
+
+Symbol: $B$
+
+Units: Tesla ($T$)
+
+Requires a direction.
+
+A magnetic field exists at a certain point in space only when a permanent
+magnet would experience a force at this point.
+
+Also called magnetic flux density.
+
+\subsection{Charge Moving Through a Magnetic Field}
+
+A moving charge experiences a force when travelling through a magnetic field:
+
+$$
+F = qvB
+$$
+
+Use only the component of the magnetic field perpendicular to the particle's
+velocity.
+
+\subsubsection{Direction}
+
+The force acts in a direction as determined by the right hand rule (ie. use
+your right hand):
+
+\begin{itemize}
+\item Point fingers in the direction of the magnetic field.
+\item Point thumb in the direction of conventional current.
+\item Palm points in direction of force.
+\end{itemize}
+
+\subsection{Current in a Wire}
+
+A current flowing through a wire in the presence of a magnetic field will
+cause the wire to experience a force:
+
+$$
+F = BIl
+$$
+
+Only use the component of the magnetic field perpendicular to the wire.
+
+The direction of the force is determined by the right hand rule.
+
+
+\section{Induced Magnetic Field}
+
+A moving charge in a wire will induce a circular magnetic field around the
+wire.
+
+\subsection{Direction}
+
+The direction of the field is determined by the right grip rule (ie. use your
+right hand):
+
+\begin{itemize}
+\item Point thumb in direction of conventional current.
+\item The direction your fingers move when curled inwards is the direction of
+	the circular induced magnetic field around the wire.
+\end{itemize}
+
+\subsection{Induced Magnetic Field Strength}
+
+$$
+B = \frac{\mu_0}{2\pi} \times \frac{I}{r}
+$$
+
+The magnetic field strength of an induced field around a wire with a current
+$I$ flowing through it, a distance of $r$ metres away.
+
+$\mu_0$ is the permeability of free space:
+
+$$
+\mu_0 = 4\pi \times 10^{-7}
+$$
+
+The direction of the magnetic field at a point can be found using the right
+grip rule to determine the circular direction of the field, as above.
+
+\subsection{In Two Wires}
+
+In two wires side by side, the induced magnetic fields will either cause them
+to repel or attract each other, depending on the direction of current.
+
+For current travelling in the same direction (upwards):
+
+\begin{itemize}
+\item The induced magnetic field around each magnet will be anticlockwise when
+	viewed from above (right grip rule).
+\item For the wire on the left, the direction of the magnetic field induced by
+	the current in the other wire will be out of the page.
+\item This will exert a force towards the right on the wire (right hand rule).
+\item Similarly, a force towards the left will be exerted on the wire on the
+	right.
+\item This will cause an attraction between the two wires.
+\end{itemize}
+
+\subsection{In a Solenoid}
+
+A solenoid is a long circular coil of wire with a current running through it.
+
+This creates a dipole electromagnet.
+
+From the direction of flow of current, use the right grip rule to determine the
+direction of the field lines around the solenoid.
+
+Use the direction of field lines to determine the polarity of the solenoid
+(which end is North and South).
+
+\subsubsection{Soft Iron Core}
+
+An iron core within a solenoid has the effect of greatly increasing the
+strength of the magnetic field produced by the solenoid, as the magnetic
+domains within the soft iron can easily align.
+
+
+\section{Magnetic Flux}
+
+\subsection{Magnetic Flux Density}
+
+Equivalent to magnetic field strength.
+
+\subsection{Magnetic Flux}
+
+$$
+\begin{aligned}
+\phi & = BA_{\bot} \\
+& = BA \cos{\theta} \\
+\end{aligned}
+$$
+
+Symbol: $\phi$
+
+Units: Tesla metres squared ($\text{Tm}^2$) or Webber ($\text{Wb}$)
+
+The amount of magnetic field that passes through a given area perpendicular to
+the magnetic field.
+
+In the equation above, $\theta$ is the angle between the normal to the area
+and the magnetic field.
+
+\subsubsection{Maximum Flux}
+
+When the area is perpendicular to the magnetic field (the normal is parallel).
+
+\subsection{Change in Magnetic Flux}
+
+$$
+\Delta \phi = \phi_f - \phi_i
+$$
+
+Ways to change magnetic flux:
+
+\begin{itemize}
+\item Change the area in the magnetic field.
+\item Move the area outside the magnetic field.
+\item Change the angle between the area and the magnetic field.
+\item Change the magnetic field strength.
+\end{itemize}
+
+\subsubsection{Direction}
+
+To find the direction of a change in magnetic flux:
+
+\begin{itemize}
+\item Find the initial direction and rough magnitude of the magnetic flux.
+\item Find the final direction and rough magnitude of magnetic flux.
+\item Find the direction which would cause such a change.
+\end{itemize}
+
+For example, in moving the area outside of the magnetic field which is directed
+into the page:
+
+\begin{itemize}
+\item Initial magnetic flux is into the page.
+\item Final magnetic flux is 0 (no magnetic field).
+\item A change in out of the page.
+\end{itemize}
+
+For example, increasing the area inside a magnetic field directed into the
+page:
+
+\begin{itemize}
+\item Initial magnetic flux is a small into the page.
+\item Final magnetic flux is a large into the page
+\item A change in into the page.
+\end{itemize}
+
+
+\section{Induced EMF}
+
+$$
+\varepsilon = -n \frac{\Delta \phi}{\Delta t}
+$$
+
+Symbol: $\varepsilon$
+
+Units: Volts ($V$)
+
+Induced EMF is where the movement of a wire through a magnetic field will induce
+a potential difference across the wire.
+
+Magnetic flux must change per unit time to induce an EMF.
+
+The negative in the equation implies that the direction of the induced EMF will
+be opposite to the change in flux that caused it.
+
+\subsection{Reason}
+
+Induced EMF occurs because:
+
+\begin{itemize}
+\item A wire moving through a magnetic field represents the motion of charge
+	through a magnetic field.
+\item Thus a force is exerted on the electrons in the wire, moving a majority
+	towards one end of the wire.
+\item This induces a potential difference across the two ends of the wire.
+\end{itemize}
+
+For example, a wire moving left through a magnetic field directed into the
+page:
+
+\begin{itemize}
+\item Positive charges are moving left.
+\item Will experience a force up.
+\item Positive charge will accumulate at the top of the wire.
+\item Negative charge will accumulate at the bottom of the wire.
+\item Induces a potential difference across the wire.
+\end{itemize}
+
+In a circuit with a changing magnetic flux, this potential difference will
+induce a current in the wire.
+
+\subsection{Faraday's Law}
+
+States that the magnitude of the induced EMF is proportional to the change in
+magnetic flux.
+
+\subsection{Lenz's Law}
+
+States that the direction of the induced EMF opposes that of the change in
+magnetic flux.
+
+\subsection{Wire}
+
+For a wire moving with a constant velocity through a magnetic field, the induced
+EMF is:
+
+$$
+\begin{aligned}
+\phi & = BA \\
+\varepsilon & = -\frac{\Delta \phi}{\Delta t} \\
+& = -\frac{Blvt}{t} \\
+& = Blv \\
+\end{aligned}
+$$
+
+Where $v$ is perpendicular to the direction of $B$.
+
+
+\section{Eddy Currents}
+
+Where small circular spirals of moving charge are set up in metals that
+experience a changing magnetic flux ($\Delta \phi$).
+
+Only occurs in metals, as they have free moving electrons that are capable of
+forming eddy currents.
+
+\subsection{Energy Transformation}
+
+Converts mechanical or kinetic energy in a moving magnetised object (which
+causes a changing magnetic flux) into heat (increasing the kinetic energy of
+particles in the metal).
+
+As the velocity of the moving object increases, so does the changing magnetic
+flux, increasing the magnitude of the eddy currents in the metal and the energy
+loss.
+
+\subsection{Magnet Through Aluminium Pipe}
+
+As the magnet falls through an aluminium pipe:
+
+\begin{itemize}
+\item Sections of the pipe experience a changing magnetic flux.
+\item Faraday's law states that the magnitude of the induced EMF in the pipe
+	will be proportional to the changing magnetic flux.
+\item Lenz's law states that the direction of the induced EMF in the pipe will
+	be opposite to that of the change in flux.
+\item This produces spirals of moving charge (eddy currents) in the pipe.
+\item This exerts a magnetic repulsion force on the falling magnet opposite to
+	its direction of motion.
+\item This slows its descent and causes it to take longer to fall through the
+	pipe.
+\end{itemize}
+
+\subsubsection{Direction of Eddy Current Spirals}
+
+Consider a magnet falling through a pipe, with its North end closest to the
+ground.
+
+Just below the magnet:
+
+\begin{itemize}
+\item Magnetic field lines extend from below the magnet, then out of the page,
+	then upwards parallel to the page.
+\item Thus on the surface of the aluminium pipe, the magnetic field lines
+	are out of the page.
+\item This produces anticlockwise eddy currents (right screw rule).
+\end{itemize}
+
+Just above the magnet:
+
+\begin{itemize}
+\item On the surface of the aliminium pipe, the magnetic field lines are into
+	the page.
+\item This produces clockwise eddy currents (right screw rule).
+\end{itemize}
+
+\subsection{Induction Heating}
+
+Induction heating works by:
+
+\begin{itemize}
+\item AC current is used in a solenoid to generate a changing magnetic field.
+\item Metals placed near this changing magnetic field experience a changing
+	magnetic flux.
+\item This induces eddy currents in the metal, converting eletrical energy to
+	heat, increasing the temperature of the metal.
+\end{itemize}
+
+Stovetops:
+
+\begin{itemize}
+\item Solenoid is placed below the stovetop, with a non conducting substance
+	placed above it (which the pan sits on top of).
+\item This non-conducting substance does not have free moving electrons,
+	preventing eddy currents from forming in it due to the changing magnetic
+	flux produced by the solenoid.
+\item Thus the stovetop does not become hot.
+\end{itemize}
+
+\subsection{Reducing Eddy Currents}
+
+Eddy currents can be reduced by laminating the metal:
+
+\begin{itemize}
+\item This involves cutting small slits in the metal.
+\item This reduces the bulk of metal in which eddy currents can form.
+\item Reduces loss of energy to heat as the formation of eddy currents is
+	impeded.
+\end{itemize}
+
+
+\section{Basic DC Motor}
+
+For a rectangular coil of wire in a permanent magnetic field, allowed to rotate
+about a horizontal axis.
+
+The two sides perpendicular to the magnetic field will experience opposing
+forces (one up, one down).
+
+The two sides parallel to the magnetic field will experience no force.
+
+There is no net translational force, but there is an unbalanced rotational
+torque.
+
+\subsection{Torque}
+
+The torque on the coil when in its initial position (where the force is
+perpendicular to the line of action):
+
+$$
+\begin{aligned}
+\tau & = rF \\
+\sum \tau_{cw} & = \sum \tau_{acw} \\
+\tau & = 2rF \\
+& = 2rBIl \\
+\end{aligned}
+$$
+
+Since $A$ (the area of the coil) is equivalent to $2rl$:
+
+$$
+\tau = BAI
+$$
+
+\subsubsection{Multiple Coils}
+
+For a wire that has been coiled in a rectanglar shape $n$ times, each coil will
+have the same force exerted on it.
+
+For the force exerted on one side of the motor:
+
+$$
+F = BIln
+$$
+
+For the total torque exerted on the motor:
+
+$$
+\begin{aligned}
+\sum \tau_{cw} & = \sum \tau_{acw} \\
+\tau & = rF \\
+& = 2r BILn \\
+& = BAIn \\
+\end{aligned}
+$$
+
+When rotated by an angle of $\theta$:
+
+$$
+\tau = BAIn \sin{\theta} \\
+$$
+
+\subsubsection{RMS Torque}
+
+The root mean squared torque (average torque) is:
+
+$$
+= \frac{\tau}{\sqrt{2}}
+$$
+
+\subsection{Design Limitations}
+
+The unbalanced rotational force exerts a torque on the motor, causing it to
+rotate.
+
+Once the coil passes $90^\circ$, the direction of applied torque will reverse
+since the direction of force applied on each side of the coil doesn't change.
+
+This torque opposes the angular velocity of the coil, causing it to rotate in
+the opposite direction.
+
+This stops the motor from continuing its motion.
+
+
+\section{DC Motor}
+
+The design limitations of the basic DC motor are resolved by flipping the
+direction of current in the wire at $90^\circ$.
+
+This swaps the direction of the forces exerted on the sides of the coil,
+maintaining a constant direction of torque, allowing it to continue to rotate.
+
+This is achieved using a split ring commutator.
+
+\subsection{Split Ring Commutator}
+
+Two C-shaped semicircles connected to the rotating coil and rotate with it.
+
+Brushes fixed to the battery circuit come in contact with the moving commutators
+to close the circuit.
+
+At $90^\circ$, the brushes change which commutator they are in contact with,
+reversing the current direction.
+
+\subsection{Torque Curve}
+
+A graph of torque against time.
+
+Appears as the graph of $\lvert \cos{\theta} \rvert$ (absolute value of a
+cosine graph).
+
+The maximum torque in this graph will be when the forces exerted on the sides
+of the coil is perpendicular to the line of action.
+
+The average torque will be less than this maximum torque (drawn as a dotted,
+horizontal line).
+
+\subsection{Curving Permanent Magnets}
+
+The permanent magnets supplying the magnetic field can be curved around the
+circular path of the coils.
+
+This causes the applied force to act perpendicular to the line of action for
+a larger part of the coil's rotation.
+
+This increases the average torque of the motor, but doesn't affect the maximum
+torque.
+
+The torque curve graph appears flatter at the peaks, more like a table.
+
+\subsection{Multiple Coils}
+
+Another split ring commutator pair and coil can be added, perpendicular to the
+existing coil.
+
+Only the commutator pair and coil at the optimal rotation angle will form a
+circuit with the brushes.
+
+Torque curve graph appears as two overlapping cosine graphs $90^\circ$ out of
+phase.
+
+Maximum torque remains the same, but increases the average torque.
+
+\subsection{Increase Maximum Torque}
+
+Increase any variables in the equation to increase the maximum torque of a DC
+motor:
+
+$$
+\tau = B A I n \sin{\theta}
+$$
+
+\begin{itemize}
+\item Increase magnetic field strength
+\item Increase number of coils
+\item Increase current in the circuit
+\item Increase the width of the coil (radius from pivot)
+\end{itemize}
+
+Note that, for a constant voltage supply, increasing the length of the wire
+would increase the resistance and decrease the current. This would result in
+little change in the maximum torque.
+
+\subsection{Increase Average Torque}
+
+Ways to increase the average torque of a DC motor without changing the maximum
+torque:
+
+\begin{itemize}
+\item Curve the permanent magnets to fit the circular rotation of the coils.
+\item Add another commutator pair and coil.
+\end{itemize}
+
+\subsection{Servicing Motors}
+
+Factors that could cause a decrease in the efficiency, average, or maxium
+torque of a motor:
+
+\begin{itemize}
+\item Sparking when the brushes jump the small gap between commutators,
+	causing carbon build up on the copper commutators, increasing the
+	resistance and reducing the current through the circuit.
+\item The carbon brushes may disintegrate, decreasing the time in one full
+	revolution during which they are in contact with the commutators,
+	decreasing the average current flow, decreasing maximum torque.
+\end{itemize}
+
+
+\section{AC Motors}
+
+AC motors rotate at the same frenquecy as the oscillating current supplied.
+
+Construction of the motor:
+
+\begin{itemize}
+\item Rectangular coil of wire free to rotate on an axis.
+\item Stator coils (solenoids) are used instead of permanent magnets.
+\item A split ring commutator pair is used at the end of the coil.
+\end{itemize}
+
+How it works:
+
+\begin{itemize}
+\item When the coil reaches $90^\circ$, the current in the wires swaps direction
+	(since it is AC) for both the armature windings and stator coils.
+\item This swaps the direction of the magnetic field produced by the stator
+	coils.
+\item The commutator pair swaps the direction of the current in the armature
+	windings a second time.
+\item This swaps the direction of the force, producing a continuous torque.
+\end{itemize}
+
+\subsection{Benefits Over DC Motors}
+
+The benefits of using an AC motor over a DC one include:
+
+\begin{itemize}
+\item Using stator coils allows for much stronger magnetic fields than can be
+	achieved with the permanent magnets in a DC motor. Allows for a higher
+	maximum torque.
+\item DC motors produce a rectified DC wave, with a lower average voltage.
+	Average voltage for AC motors is not considered.
+\end{itemize}
+
+
+\section{Back EMF}
+
+Back EMF:
+
+\begin{itemize}
+\item The rotation of the coil exposes the coil to a changing magnetic flux.
+\item Faraday's law states that the magnitude of the induced EMF in the coil
+	is proportional to this changing magnetic flux.
+\item Lenz's law states that the direction of this induced EMF in the coil
+	opposes that of the magnetic flux that induced it.
+\item This reduces the net EMF in the coil, reducing the current flowing through
+	the wire.
+\item This decreases the torque of the motor.
+\item As the angular velocity of the coil increases over time, so does the
+	changing magnetic flux, further reducing the net EMF in the wire, causing
+	the motor to eventually reach a constant RPM.
+\end{itemize}
+
+Back EMF applies to both DC and AC motors.
+
+\subsection{Calculation}
+
+After a period of time, the motor's back EMF will approach a constant:
+
+$$
+\begin{aligned}
+V = \varepsilon - \varepsilon_b \\
+I = \frac{\varepsilon - \varepsilon_b}{R} \\
+\end{aligned}
+$$
+
+Where $V$ is the operating current, and $\varepsilon_b$ is the back EMF
+induced in the coil.
+
+This calculated current, incorporating the back EMF, is the operating current
+of the motor.
+
+\subsection{Damage}
+
+Motors have a maximum load limit because:
+
+\begin{itemize}
+\item If a high load is placed on the motor, the velocity of the coil will
+	decrease.
+\item This reduces the magnitude of the changing magnetic flux, reducing the
+	back EMF in the coil.
+\item This increases the net voltage in the coil, increasing the current.
+\item If this current exceeds the maximum current for which the motor was
+	designed, the motor may be damaged.
+\end{itemize}
+
+
+\section{AC Generator}
+
+Generators produce an AC current using induced EMF in a wire.
+
+There is a retarding force exerted on the coil when the generator is turned due
+to induced EMF (similar to back EMF in a motor).
+
+\subsection{Workings}
+
+\begin{itemize}
+\item A coil, free to rotate on an axis, is manually turned.
+\item The coil sits in a permanent magnetic field.
+\item Each end of the coil is attached to a slip ring which rotates in contact
+	with a carbon brush attached to a wire.
+\item As the coil is rotated, this produces a changing effective area and thus
+	a changing magnetic flux.
+\item Faraday's law states that the induced EMF in the wire is proportional to
+	this changing magnetic flux.
+\item This produces an AC voltage in the wire.
+\end{itemize}
+
+\subsection{Voltage Graphs}
+
+The graph of effective area against time is a sine curve offset depending on
+the initial rotation of the coil.
+
+The change in effective area against time (equivalent to the graph of change in
+magnetic flux) is the derivative of the effective area graph.
+
+The EMF graph is the negative of the change in flux graph (since Lenz's law,
+where the direction of the induced EMF is opposite to that of the change in
+flux).
+
+\subsection{Maximum EMF}
+
+When moving through the magnetic field, the coil traces out a changing area.
+The change in magnetic flux over time is:
+
+$$
+\frac{\Delta \phi}{t} = 2vBl
+$$
+
+This is multiplied by 2 since there are 2 wires either side of the coil.
+
+The induced EMF is:
+
+$$
+\varepsilon = 2nvBl
+$$
+
+Since the wire is moving in a circular path, $v = 2\pi r f$:
+
+$$
+\varepsilon = 2n 2 \pi r f B l
+$$
+
+Since the area of the coil is $A = 2 r l$:
+
+$$
+\varepsilon = 2\pi n BA f
+$$
+
+\subsection{Root Mean Squared EMF}
+
+The root mean squared (RMS) EMF is:
+
+$$
+= \frac{\varepsilon}{\sqrt{2}}
+$$
+
+
+\section{DC Generator}
+
+Same as an AC generator, but a split ring commutator pair as in a DC motor is
+used, instead of slip rings.
+
+This flips the direction of current at $90^\circ$, creating a recitified DC
+wave.
+
+\subsection{Increase Average Voltage}
+
+We can increase the average output voltage the same way we increase the average
+torque in a DC motor:
+
+\begin{enumerate}
+\item Curve magnets to apply a field perpendicular to the area of the coil for
+	a greater portion of its rotation.
+\item Increase the number of coils and commutator pairs.
+\end{enumerate}
+
+Both of these have the same effect on the voltage graph as they did on the
+torque graph for a DC motor.
+
+\subsection{Increase Maximum Voltage}
+
+Increase any variables in the equation:
+
+$$
+\varepsilon = 2\pi n BA f
+$$
+
+\begin{itemize}
+\item Increase number of coils.
+\item Increase the strength of the magnetic field.
+\item Increase the area of the coils.
+\item Increase the frequency of rotation.
+\end{itemize}
+
+
+\section{Transformer}
+
+Raises or lowers AC voltages in wires.
+
+\subsection{Construction}
+
+The construction of a transformer:
+
+\begin{itemize}
+\item A square loop of soft iron.
+\item One side has a number of coils of wire (the primary coils), through which
+	the initial AC current is passed.
+\item The other side has a different number of coils (the secondary coils),
+	in which an EMF is induced due to a changing magnetic field.
+\end{itemize}
+
+How it works:
+
+\begin{itemize}
+\item An AC current in the primary coils creates a changing magnetic field
+	within the soft iron core.
+\item The secondary coils experience a changing magnetic flux.
+\item Faraday's law states that the induced EMF in the secondary coils will be
+	proportional to this changing magnetic flux.
+\item Since the rate of change of magnetic flux for both coils is the same,
+	the ratio of the number of primary and secondary coils determines the
+	factor by which the voltage is stepped up or down.
+\end{itemize}
+
+\subsection{Lamination}
+
+Lamination is where:
+
+\begin{itemize}
+\item Soft iron core is cut into thin strips and laminated.
+\item This reduces the amount of bulk metal in which eddy currents can form.
+\item Reduces energy lost to resistive heating in the core
+\end{itemize}
+
+\subsection{Calculations}
+
+$$
+\frac{V_p}{V_s} = \frac{N_p}{N_s} = \frac{I_s}{I_p}
+$$
+
+\subsection{Power Loss}
+
+$$
+P_s = \mbox{efficiency} \times P_p
+$$
+
+Power will be lost due to heating of the primary or secondary wires, or eddy
+currents in the soft iron core (also heating it).
+
+The ratio of voltages will always remain constant no matter the efficiency of
+the transformer.
+
+Any loss in power will be expressed by a drop in current in the second coil
+from what would exist in an ideal transformer.
+
+
+\section{Electricity Transmission}
+
+When electricity is travelling large distances, power is lost to heat in the
+wires it travels through, according to:
+
+$$
+\begin{aligned}
+V & = IR \\
+P & = IV \\
+P & = I^2 R \\
+\end{aligned}
+$$
+
+Electricity should be transmitted at high voltage as:
+
+\begin{itemize}
+\item There will be a voltage drop across the wires as the wire has a
+	resistance, and power will also be lost due to resistive heating.
+\item Since the power at the generator is constant, a large voltage will
+	result in a low current ($P = IV$).
+\item This decreases voltage drop across the wires ($V = IR$) and decreases
+	power lost to resistive heating ($P = I^2R$).
+\end{itemize}
+
+Transmitted as AC because:
+
+\begin{itemize}
+\item Transformers are used to step up and down the voltage in the wires.
+\item Transformers require AC voltage as they must produce a changing magnetic
+	field to induce an EMF in the secondary coils.
+\end{itemize}
+
+
+\section{Questions}
+
+\subsection{Field Lines}
+
+Draw electric or magnetic field lines around:
+
+\begin{enumerate}
+\item A single positive charge
+\item A single negative charge
+\item A positive and negative charge placed apart
+\item Two positive charges placed apart
+\item Two negative charges placed apart
+\item A single bar magnet
+\item Two bar magnets placed side by side, where the North pole of each is at
+	the top of the page
+\item Two bar magnets placed side by side, where the North pole of one is placed
+	next to the South pole of the other
+\item Two bar magnets placed end to end, where the two North poles are closest
+\item Two bar magnets placed end to end, where the North pole of one is closest
+	to the South pole of the other
+\end{enumerate}
+
+\subsection{Electric Fields}
+
+\begin{enumerate}
+\item Find the electric field strength of two plates placed apart
+\item Find the acceleration of a charged particle placed between these two
+	plates
+\item Find the vertical displacement of a charged particle fired horizontally
+	thorugh a pair of charged plates
+\item Find the resultant force on 3 charged particles placed near each other
+\end{enumerate}
+
+\subsection{Magnetic Fields}
+
+\begin{enumerate}
+\item Find the force experienced by a charge moving through a magnetic field
+\item Find force experienced by a wire with a current flowing through it when
+	in the presence of a magnetic field
+\item Find the magnetic flux density at a point a certain distance away from a
+	wire with a current running through it
+\item Find the force exerted on each of two wires placed next to each other,
+	both with current running through them
+\item Find the polarity of a solenoid
+\end{enumerate}
+
+\subsection{Induced EMF}
+
+\begin{enumerate}
+\item Explain the direction of an induced EMF in a coil
+\item Find the induced EMF in a wire moving through a magnetic field with a
+	velocity
+\item Explain why a magnet dropped through an aluminium pipe falls slower than
+	in a plastic pipe
+\item Explain how induction heating works
+\item Explain why the ceramic above the stovetop on which the pan is placed
+	does not heat up
+\end{enumerate}
+
+\subsection{DC Motors}
+
+\begin{enumerate}
+\item Explain how a DC motor works
+\item Calculate the maximum and RMS torque for a DC motor
+\item Explain how to increase the maximum and average torque for this motor
+\item Graph a torque curve of a DC motor, with curved magnets, and multiple
+	coils
+\item Explain factors that could decrease the efficiency of a DC motor over
+	time
+\item Explain why a DC motor approaches a constant RPM
+\item Explain why placing a large load on a motor could damage it
+\end{enumerate}
+
+\subsection{AC Motors}
+
+\begin{enumerate}
+\item Explain how an AC motor works
+\item Explain the benefits of using an AC motor over DC
+\end{enumerate}
+
+\subsection{AC Generators}
+
+\begin{enumerate}
+\item Explain how an AC generator works
+\item Draw a voltage graph of an AC generator
+\item Explain why there is a resistive force felt when the generator is turned
+\end{enumerate}
+
+\subsection{DC Generators}
+
+\begin{enumerate}
+\item Explain how a DC generator works
+\item Explain how to increase the average and maximum output voltage of a DC
+	generator
+\end{enumerate}
+
+\subsection{Transformers}
+
+\begin{enumerate}
+\item Explain how a transformer works
+\item Explain the features of a transformer that reduce power loss
+\item Calculate voltage transformations in transformers
+\item Apply efficiency of a transformer to calculations
+\item Explain why electricity is transferred as high voltage AC
+\end{enumerate}
+
+
+
+
+\chapter{Atomic Structure}
+
+\section{Thompson}
+
+The \textbf{Thompson} model of an atom postulated that:
+
+\begin{itemize}
+\item Each atom was a spherical particle that contained positive and negative
+	charge.
+\item These charges were distributed evenly throughout the particle such that
+	the overall charge was neutral.
+\item It was known that positive charge made up most of the mass of an atom.
+\end{itemize}
+
+\subsection{Flaw}
+
+Rutherford performed an experiment that contradicted this model:
+
+\begin{itemize}
+\item Alpha particles ($\alpha^{2+}$) were fired at gold foil.
+\item About 1 in every 20000 of these particles were deflected backwards
+	towards the source from where they were fired.
+\item This phenomena was impossible with the Thompson model.
+\item Thus Rutherford concluded there was a nucleus consisting of dense positive
+	charge with electrons orbiting it.
+\end{itemize}
+
+
+\section{Rutherford}
+
+The \textbf{Rutherford} model postulated:
+
+\begin{itemize}
+\item An atom consists of a dense nucleus containing all positive charge.
+\item The negatively charged electrons then orbit this nucleus in circular
+	paths, under the influence of electrostatic attraction.
+\end{itemize}
+
+\subsection{Flaw}
+
+\begin{itemize}
+\item The electrons are undergoing centripetal acceleration around the nucelus,
+	meaning they should be emitting energy in the form of electromagnetic waves.
+\item This would cause the electrons to lose kinetic energy and spiral into the
+	nucelus, rather than maintain stable orbits.
+\end{itemize}
+
+
+\section{Bohr}
+
+The \textbf{Bohr} model postulated:
+
+\begin{itemize}
+\item Electrons move in a circular orbit about the nucelus under the influence
+	of electrostatic attraction.
+\item Electrons are only capable of moving in certain discrete orbits, where
+	their angular momentum is an integer multiple of $h$.
+\item The accelerating electrons do not emit electromagnetic waves. Their
+	total energy is constant.
+\item Electromagnetic radiation is emitted if an electron discontinuously
+	changes the orbital it exists in.
+\end{itemize}
+
+\subsection{Orbital Transitions}
+
+% TODO: Diagram of Bohr atom showing transitions between orbitals
+
+When an electron moves from a higher orbital to a lower one, it emits an
+electromagnetic wave with energy equal to the difference in energies between
+each of the orbitals:
+
+$$
+E = hf = E_{n + 1} - E_n
+$$
+
+Certain transitions are more likely to occur than others.
+
+
+\section{Emission and Absorption Spectra}
+
+An \textbf{emission spectra} is where the electrons in an atom of a particular
+element are excited to higher level energy states, then allowed to transition
+back to lower ones. The emitted electromagnetic waves are then plotted as
+colourful lines on a continuous spectrum (only for visible light).
+
+An \textbf{absorption spectra} is where white light (consisting of all
+frequencies of light) is passed through a cold gas of an element. This excites
+electrons up to higher orbital levels, absorbing specific wavelengths of light.
+This results in black bars on a continuous colourful spectra (only for visible
+light).
+
+Although these excited electrons will decay again, releasing these wavelengths
+of light, it is very unlikely that the electron will emit the photon in the
+direction of the detector, since there is an equal probability assigned to
+every possible direction in which to emit the photon.
+
+The black bars in an absorption spectra correspond exactly to the colourful
+bars on an emission spectra.
+
+The relative intensity of these bars corresponds to how likely a specific
+transition is.
+
+\subsection{Types of Spectra}
+
+A \textbf{continuous spectrum} is one where all colours are outputted, with
+no discrete elements.
+
+A \textbf{band absorption spectrum} is a continuous spectrum with discrete bands
+missing from the spectrum.
+
+A \textbf{line emission spectrum} is a non-continuous spectrum with colourful
+bands on a black background.
+
+\subsection{Energy Level Diagram}
+
+% TODO: Diagram of energy levels for Hydrogen
+
+Each downwards transition corresponds to the emission of an electromagnetic
+wave with a particular energy:
+
+$$
+E = hf = E_{n + 1} - E_n
+$$
+
+The frequency and wavelength of the emitted light can then be calculated.
+
+Any emitted waves that fall in the visible part of the electromagnetic spectrum
+will correspond to lines on an absorption/emission spectra.
+
+\subsection{Fraunhofer Lines}
+
+\textbf{Fraunhofer lines} are absorption/emission spectra for molecules, rather
+than pure elements. They consist of bands spread across a range of frequencies,
+rather than discrete lines.
+
+\subsection{Photon Excitation}
+
+If a photon is to excite an electron to a higher orbital level, it must have
+exactly the amount of energy required by the electron to reach that higher
+orbital level in order to be absorbed. The photon cannot impart only some of
+its energy to an electron.
+
+If a photon is to ionise an electron, it can have any amount of energy greater
+than the ionisation energy. Any additional energy will be transferred to the
+electron as kinetic energy.
+
+\subsection{Electron Excitation}
+
+\textbf{Electron excitation} is where another electron excites an orbital
+electron within an atom to a higher energy state, rather than a photon.
+
+Unlike a photon, an electron can impart a fraction of its energy to an orbital
+electron, exciting it up to a higher state, while the incident electron
+continues on with a lower $E_K$.
+
+Similar to a photon, an electron can ionise an orbital electron, imparting
+part of its energy. The incident electron will recoil with a lower $E_K$, and
+the orbital electron will be ejected with some $E_K$.
+
+
+\section{Fluorescence}
+
+% TODO: Energy level diagram of cascading effect
+
+\textbf{Fluorescence} is the emission of visible light by certain substances
+after the excitation of orbital electrons from the absorption of radiation of
+a higher frequency than visible light.
+
+For a material to be able to fluoresce:
+
+\begin{itemize}
+\item Capable of absorbing radiation with a higher frequency than visible light.
+\item Must have energy transitions that emit radiation with frequencies within
+	the visible light part of the electromagnetic spectrum.
+\end{itemize}
+
+This is called a ``cascading" effect.
+
+\subsection{Fluroescent Light}
+
+% TODO: Diagram of light
+
+A \textbf{fluorescent light} works by:
+
+\begin{itemize}
+\item A tube contains a low pressure gas.
+\item Electrons are accelerated across a voltage through the tube.
+\item The electrons collide with particles in the gas, exciting their orbital
+	electrons, producing UV light.
+\item This UV light is absorbed by a fluorescent coating on the outside of the
+	tube.
+\item The coating absorbs the UV light and emits visible light through the
+	cascading effect.
+\end{itemize}
+
+Some UV light will still be produced.
+
+\subsection{Fluorescing Dyes}
+
+Laundry detergents and paper contain \textbf{fluorescing dyes}, which make
+clothes and paper appear brighter (or cleaner) as they absorb ambient UV light
+produced by artificial light and fluoresce.
+
+LED lights do not emit UV light and thus fail to create this effect.
+
+\subsection{Phosphorescence}
+
+\textbf{Phosphorescence} is similar to fluorescence, but the subsequent emission
+of radiation after the initial excitation occurs over a much longer time frame,
+allowing a substance to glow in the dark after being exposed to incident
+radiation.
+
+
+\section{X-Rays}
+
+\textbf{Soft} X-rays have an energy roughly less than 10000 eV.
+
+\textbf{Hard} X-rays have an energy roughly less than 50000 eV.
+
+\subsection{Bremsstrahlung Radiation}
+
+% TODO: Diagram of electron bending around an atom, emitting radiation
+
+% TODO: Diagram of Bremsstrahlung (no spikes, just the curve)
+
+\textbf{Bremsstrahlung radiation} is emitted when an electron bends around an
+atom due to an electrostatic attraction to the nucelus (not colliding with it
+or any of its orbital electrons), losing kinetic energy and emitting radiation.
+
+This is usually accomplished by firing electrons at a metal plate after
+accelerating them across a high potential.
+
+The maximum possible energy for a produced X-ray would be if all the kinetic
+energy of an electron accelerated across the potential difference were
+transferred to this X-ray:
+
+$$
+E = qV = hf
+$$
+
+Not all of the electron's kinetic energy is likely to be transferred to the
+emitted radiation. A spectrum of radiation is produced (see Figure ??).
+
+We can graph intensity of X-rays with a given wavelength against wavelength.
+There will be a minimum wavelength on the graph, corresponding to the case when
+all an electron's kinetic energy is transferred to the radiation.
+
+\subsection{K-Shell Emission}
+
+% TODO: Diagram of K-Shell emission (just vertical spikes at certain
+% wavelengths)
+
+\textbf{K-Shell emission} occurs when an incident electron ionises an orbital
+electron from an inner shell, causing an electron in a higher orbital to
+transition down, replacing the ionised electron to stabilise the atom. This
+produces high energy photons in the process.
+
+X-rays with discrete wavelengths/frequencies will be measured (no spectrum is
+produced).
+
+The transition from level 2 to 1 is most likely (higher intensity), and has
+the least energy emitted (higher wavelength), than the transition from 3 to 1,
+etc.
+
+There is a gap along the x axis between transitions to level 1 and transitions
+to level 2. A transition from 3 to 2 produces less energy than any transition
+to level 1. We cannot comment on the relative intensity of these transitions
+compared to transitions to level 1.
+
+Since some orbital electron transitions are more likely than others, the
+measured intensity of some produced X-rays will be higher than others.
+
+\subsection{Bremsstrahlung and K-Shell Emission}
+
+% TODO: Combined diagram of Bremsstrahlung and K-Shell emission
+% TODO: Diagram of V_2 > V_1 (two voltages)
+
+Both Bremsstrahlung and K-Shell emission are combined on the same graph.
+
+If the accelerating voltage for the electrons is increased (see Figure ??):
+
+\begin{itemize}
+\item The minimum wavelength will decrease.
+\item The intensity level at every measured wavelength will increase.
+\item The spikes from K-Shell emission will remain at the same wavelengths
+	(since they depend on the metal, not on the accelerating voltage).
+\end{itemize}
+
+If the metal is changed:
+
+\begin{itemize}
+\item The minimum wavelength and shape of the curve will remain the same.
+\item The spikes from K-Shell emission will change locations.
+\end{itemize}
+
+A minimum wavelength exists because:
+
+\begin{itemize}
+\item The minimum wavelength corresponds to a maximum energy value.
+\item This maximum energy radiation occurs when an incident electron imparts all
+	of its kinetic energy to the emitted radiation.
+\item Since an electron cannot have negative kinetic energy in this context,
+	this is the maximum possible energy for the emitted photon.
+\end{itemize}
+
+
+\section{De Broglie Wavelength}
+
+The \textbf{De Broglie wavelength} is the wavelength of a photon with a
+particular momentum:
+
+$$
+\lambda = \frac{h}{p}
+$$
+
+\subsection{Electron Standing Waves}
+
+% TODO: Diagram of electrons forming standing waves
+
+For an electron to exist in an orbital, it must have a wavelength that is an
+integer multiple of $h$?
+
+\subsection{Electron Diffraction}
+
+Electrons also show interference patterns when used instead of light in a
+double slit experiment consistent with wave behaviour.
+
+For an electron accelerated across a voltage $V$:
+
+$$
+E = qV
+$$
+
+The speed of the electron is:
+
+$$
+\begin{aligned}
+qV & = \frac{1}{2}mv^2 \\
+v & = \sqrt{\frac{2qV}{m}} \\
+\end{aligned}
+$$
+
+The associated De Broglie wavelength is:
+
+$$
+\begin{aligned}
+\lambda & = \frac{h}{p} \\
+& = \frac{h}{mv} \\
+& = \frac{h}{\sqrt{2qVm}} \\
+\end{aligned}
+$$
+
+
+
+
+\chapter{Light}
+
+\section{Electrons}
+
+\subsection{Electron Volts}
+
+An \textbf{electron volt} (symbol: eV) is a unit of energy, where 1 eV is
+equivalent to the increase in energy one electron incurs when travelling across
+a potential difference of 1 V.
+
+It is \textbf{not} a measure of voltage.
+
+\subsection{Kinetic Energy from Voltage}
+
+For an electron accelerated across a potential difference of $V$ volts, the
+imparted kinetic energy on the electron is:
+
+$$
+E = qV
+$$
+
+
+\section{Waves}
+
+\textbf{Waves} are the regular oscillation of particles, propagated without the
+net movement of particles.
+
+\textbf{Mechanical waves} require a medium to travel through.
+
+\textbf{Electromagnetic waves} do not require a medium to travel through, and
+are self propagating, due to self-sustained oscillations between a magentic and
+electric field.
+
+A \textbf{cycle} of a wave is one complete oscillation of a particle, where it
+returns to an identical position and velocity it had previously.
+
+The \textbf{amplitude} of a wave is the distance from the mean point of
+oscillation to the maximum point.
+
+The \textbf{period} ($T$) is the time taken for the wave to complete one cycle.
+
+The \textbf{frequency} ($f$, in Hz or $s^{-1}$) is the number of cycles
+completed in 1 second.
+
+The \textbf{wavelength} ($\lambda$) is the distance between two consecutive,
+identical points on the wave.
+
+The \textbf{wave speed} ($v$) is the rate at which the wave propagates.
+
+\subsection{Wave Equation}
+
+$$
+v = f \lambda
+$$
+
+The speed of the wave is the product of its frequency and wavelength.
+
+
+\section{Wave Fronts}
+
+A \textbf{ray} is a straight line drawn in the direction of propagation of a
+wave.
+
+A \textbf{wave front} is a straight line drawn perpendicular to a ray, where
+consecutive wave fronts are separated by a distance of $\lambda$ (the
+wavelength).
+
+Although a source emitting waves will likely emit them in a circular or
+spherical fashion, waves far away from their source can be considered planar
+(parallel to each other).
+
+\subsection{Reflection}
+
+% TODO: Diagram
+
+\textbf{Reflection} is where a wave bounces of a surface.
+
+The angle of incidence of a reflected ray is equal to the angle of reflection,
+where angles are taken between the ray and the normal to the surface.
+
+Changes:
+
+\begin{itemize}
+\item No change in the speed of the wave, since there is no change in the
+	medium.
+\item No change in frequency, since the frequency is set by the source.
+\item No change in wavelength, since no change in freuqnecy or speed.
+\end{itemize}
+
+\subsection{Refraction}
+
+% TODO: Diagram
+
+\textbf{Refraction} is where a wave bends towards or away from the normal as it
+enters a substance of a different refractive index.
+
+For light:
+
+\begin{itemize}
+\item Refracts towards the normal when entering a more dense substance (with
+	a higher refractive index), since light slows down.
+\item Refracts away from the normal when entering a less dense substance (with
+	a lower refractive index), since light speeds up.
+\end{itemize}
+
+\subsection{Diffraction}
+
+% TODO: Diagram (for obstacles and slits)
+
+\textbf{Diffraction} is the bending of light around obstacles.
+
+For obstacles:
+
+\begin{itemize}
+\item For a wavelength much larger than the obstacle, the wave passes through
+	the obstacle without any change.
+\item For a given obstacle, a wave with a larger wavelength will diffract more
+	around the obstacle than one with a smaller wavelength.
+\end{itemize}
+
+For slits:
+
+\begin{itemize}
+\item For a given wavelength, a wave will diffract more through a small slit
+	than a large slit.
+\item For a given slit size, a wave with a larger wavelength will diffract more
+	than one with a smaller wavelength.
+\end{itemize}
+
+Maximum diffraction occurs when the slit size equals the wavelength.
+
+
+\section{Light}
+
+\textbf{Light} is an electromagnetic wave produced by a changing magnetic and
+electric field.
+
+The \textbf{electromagnetic spectrum} is the range of wavelengths an
+electromagnetic wave can assume.
+
+\subsection{Speed of Light}
+
+$$
+c = 3.00 \times 10^8
+$$
+
+The speed of light in a vacuum is constant.
+
+
+\section{Wave Nature}
+
+Light can be demonstrated to act as a wave in certain experiments.
+
+\subsection{Wave Equation}
+
+$$
+c = f \lambda
+$$
+
+$v$ in the wave equation is constant when dealing with light, and is equal to
+$c$.
+
+\subsection{Young's Double Slit Experiment}
+
+% TODO: Diagram
+
+Light is passed through two small slits separated by distance $d$.
+
+When light rays pass through the slits, they are assumed to be parallel.
+
+A screen is set up parallel to the slits, separated by a distance of $L$.
+
+Bright and dark areas on the screen are observed, corresponding to areas of
+destructive and constructive interference from waves of light.
+
+To reach point $p$ on the screen, which is a distance of $y$ above the midpoint
+of the two slits, the light from each slit would have to travel different
+distances, $r_1$ and $r_2$.
+
+The \textbf{path difference} ($\delta$) is the difference in these distances
+(ie. $r_2 - r_1$):
+
+$$
+\delta = r_2 - r_1
+$$
+
+The angle between the midpoint of the two slits and $p$ is $\theta$, which is
+equal to the angle between the normal to $r_1$ and $d$, if we assume $r_1$ and
+$r_2$ are parallel.
+
+Thus:
+
+$$
+\begin{aligned}
+\sin{\theta} & = \frac{\delta}{d} \\
+\tan{\theta} & = \frac{y}{L} \\
+\end{aligned}
+$$
+
+For small $\theta$, $\sin{\theta} \approx \tan{\theta}$:
+
+$$
+\frac{\delta}{d} = \frac{y}{L}
+$$
+
+Thus:
+
+$$
+y = \frac{L\delta}{d}
+$$
+
+For bright spots, the path difference is some multiple of the wavelength of the
+light $\lambda$:
+
+$$
+y = \frac{L n \lambda}{d} \qquad n \in \mathbb{Z}
+$$
+
+For dark spots, the light waves from each slit are $90^\circ$ out of phase:
+
+$$
+y = \frac{L (n + \frac{1}{2}) \lambda}{d} \qquad n \in \mathbb{Z}
+$$
+
+
+\section{Particle Nature}
+
+Packets of light can only exist in discrete \textbf{quanta} (called a photon).
+
+A quanta of light with frequency $f$ has the energy:
+
+$$
+E = hf
+$$
+
+Where $h$ is Plank's constant ($6.63 \times 10^{-34}$ Js).
+
+Given the wavelength of light $\lambda$ instead of the frequency:
+
+$$
+E = \frac{hc}{\lambda}
+$$
+
+\subsection{Black Body Radiation}
+
+% TODO: Diagram of intensity vs. wavelength
+
+\textbf{Black body radiation} is the constant emission of electromagnetic waves
+by all objects.
+
+The distribution and intensity of these waves depends on the object's
+temperature.
+
+As an object's temperature increases, the distribution of wavelengths emitted
+changes:
+
+\begin{itemize}
+\item The peak wavelength (which has the highest intensity) decreases, moving
+	more into the visible light part of the spectrum, and eventually the
+	ultraviolet part.
+\item The peak intensity increases, making any emitted light brighter.
+\end{itemize}
+
+The wavelength at the peak intensity is given by Wien's law:
+
+$$
+\lambda = \frac{b}{T}
+$$
+
+Where $b$ is Wien's constant ($2.90 \times 10^{-3}$) and $T$ is the temperature
+in Kelvin.
+
+The wave model of light predicts no lower bound on the intensity of short
+wavelengths of light, suggesting there will be an infinite amount of short
+wavelength radiation, contradicting the black body curve observed
+experimentally.
+
+\subsection{Photoelectric Effect}
+
+Light is shone at a polished metal surface connected to a circuit that is
+capable of measuring current.
+
+Each photon, when it collides with an electron on the metal surface, imparts
+energy, causing a flow of \textbf{photoelectrons}, causing the ammeter to show
+a current reading.
+
+Photoelectrons are only produced when the light is above a certain frequency
+(shorter than a certain wavelength).
+
+A certain number of photoelectrons are produced per second. This is dependent
+on how many photons strike the plate per second. This is equivalent to the
+current in the circuit (since current is the rate of flow of charge).
+
+Thus the current is proportional to the intensity, not the frequency of light.
+
+When a photon strikes an electron, it imparts a certain amount of energy to
+the electron. This is equivalent to the voltage in the circuit (since voltage
+is the amount of energy per Coulomb of charge).
+
+The \textbf{stopping voltage} is a measure of how much energy each Coulomb of
+photoelectrons has. It is calculated by creating a potential difference in the
+circuit that opposes the photocurrent.
+
+Thus the stopping voltage is proportional to the frequency of light, not the
+intensity.
+
+\subsubsection{Einstein's Explanation}
+
+When a photon strikes an electron on the plate, it imparts all its energy to
+the electron. The energy of the photon is given by:
+
+$$
+E = hf
+$$
+
+The \textbf{work function} ($W$) for the metal plate is equal to the energy
+required to liberate an electron from the metal, turning it into a
+photoelectron.
+
+More strongly bound electrons (closer to the nucleus) require more energy to
+liberate (in accordance with their ionisation energies).
+
+Different metals will have different work functions. Metals with more strongly
+bound electrons will require more energy to liberate, and have higher work
+functions.
+
+Any additional energy supplied by the photon after that will turn into the
+electron's kinetic energy.
+
+The energy of the incident photon is (where $V_s$ is the stopping voltage):
+
+$$
+E_{ph} = qV_s + W
+$$
+
+The kinetic energy of the photoelectron is:
+
+$$
+E_K = hf - W
+$$
+
+\subsubsection{Photocurrent Graph}
+
+% TODO: Diagram
+
+A graph of kinetic energy of photoelectron against frequency of light.
+
+The line represents how much kinetic energy each photoelectron will have if it
+collides with a photon of the given frequency:
+
+$$
+E_K = hf - W
+$$
+
+Negative energy values represent photons with not enough energy to liberate the
+electron from the metal to produce a photocurrent.
+
+The x intercept represents the minimum frequency of light required to liberate
+an electron from the metal.
+
+Positive energy values represent photons with energy greater than the metal's
+work function, creating a photocurrent with the additional energy.
+
+The gradient of the line (in accordance with the above equation) is Plank's
+constant, $h$.
+
+Different metals (with different work functions) will all be parallel lines,
+but with different y intercepts.
+
+\subsection{Compton Scattering}
+
+\textbf{Compton scattering} is where incident radiation is fired at an atom
+with sufficient energy to ionise an electron.
+
+By measuring the angle at which the electron and the incident photon move after
+the collision, Compton could determine the momentum of a photon:
+
+$$
+p = \frac{h}{\lambda}
+$$
+
+
+
+\chapter{Special Relativity}
+
+\section{Michelson-Morley Experiment}
+
+% TODO: Diagram of equipment setup
+
+The \textbf{Michelson-Morley experiment} demonstrated that the speed of light
+was constant in all inertial reference frames.
+
+A light was shone from a source onto a half silvered mirror, where half of the
+light was reflected to an upper mirror, and half of the light was allowed to
+pass through onto another mirror. The two paths for light were of the same
+distance, but in different directions.
+
+If Earth was moving relative to an aether, this would produce fringe effects
+in the observed interference patterns as the speed of light relative to Earth
+changed over a 6 month period.
+
+No such fringe effects were observed, proving that the speed of light was
+a constant in all inertial reference frames.
+
+
+\section{Reference Frames}
+
+A \textbf{reference frame} specifies the motion of an observer, able to make
+measurements of the world around them.
+
+An \textbf{inertial reference frame} is one that has a constant velocity (no
+acceleration).
+
+\textbf{Gallileo's principle of relativity} states that all motion is relative
+to a particular reference frame. There is no reference frame that has an
+absolute zero velocity.
+
+
+\section{Classical Relativity}
+
+An object travelling at \textbf{relativistic speeds} has a velocity greater
+than $0.1c$ (for calculations done to 3 significant figures).
+
+\textbf{Classical relativity} is derived from Newton's laws of motion. It is
+applicable for all objects travelling under relativistic speeds. Above this,
+relativistic effects become significant in calculations (to 3 significant
+figures).
+
+Classical relativity is merely an approximation of special relativity, which
+only holds for velocities less than relativistic speeds.
+
+
+\section{Einstein's Postulates}
+
+The \textbf{first postulate} states that the laws of physics are the same in
+any inertial reference frame.
+
+The \textbf{second postulate} states that the speed of light is the same
+relative to any observer, and therefore independent of the motion of the
+observer.
+
+
+\section{Effects of Special Relativity}
+
+Since no object can have a velocity greater than the speed of light, time,
+distance, and mass change depending on velocity to ensure this.
+
+\subsection{Time Dilation}
+
+\textbf{Time dilation} occurs for objects travelling at relativistic speeds,
+where their perception of time slows (moving clocks tick slower):
+
+$$
+\begin{aligned}
+t & = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}} \\
+& = \gamma t_0 \\
+\end{aligned}
+$$
+
+Where $\gamma$ is the \textbf{Lorentz factor}:
+
+$$
+\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+$$
+
+For $v \to c$, $t \to \infty$. Thus an object travelling at the speed of light
+experiences no time.
+
+\subsubsection{Proof}
+
+Consider a train moving with velocity $v$. On the floor of the train is a
+photon emitter, firing a photon vertically so that it hits the roof of the
+train.
+
+An observer on the train watches the photon travel up vertically, hitting the
+roof in time $t_0$ (the \textbf{proper time}).
+
+A stationary observer sees the light travel diagonally (with a horizontal
+component of $v$ due to the train's movement), hitting the roof in a time $t$.
+
+$ct_0$ is the vertical distance from the floor to the roof for the observer on
+the train.
+
+$vt$ is the distance the train moves forward in time $t$ for the stationary
+observer.
+
+$ct$ is the diagonal distance the light travels in time $t$ for the stationary
+observer.
+
+By Pythagoras:
+
+$$
+\begin{aligned}
+(ct_0)^2 + (vt)^2 & = (ct)^2 \\
+t^2 & = \frac{c^2t_0^2}{c^2 - v^2} \\
+& = \frac{t_0^2}{1 - \frac{v^2}{c^2}} \\
+t & = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}} \\
+& = \gamma t_0 \\
+\end{aligned}
+$$
+
+\subsection{Simultaneity}
+
+\textbf{Simultaneity} is where two events occur at the same moment in time, as
+measured by two observers in different inertial reference frames.
+
+Simultaneity does not necessarily apply when considering observers travelling
+at relativistic speeds.
+
+\subsection{Length Contraction}
+
+\textbf{Length contraction} occurs for objects travelling at relativistic
+speeds, where their perception of distance in the direction of their velocity
+vector contracts:
+
+$$
+\begin{aligned}
+L & = L_0 \sqrt{1 - \frac{v^2}{c^2}} \\
+& = \frac{L_0}{\gamma} \\
+\end{aligned}
+$$
+
+\subsection{Mass Increase}
+
+As $v$ asymptotes at $c$, the force required to produce a given acceleration
+approaches infinity. This can be expressed by an increase in the mass of the
+object.
+
+Objects travelling at relativistic speeds experience an \textbf{increase in
+mass}:
+
+$$
+\begin{aligned}
+m & = \frac{m_0}{\sqrt{1 - \frac{v^2}{c^2}}} \\
+& = \gamma m_0 \\
+\end{aligned}
+$$
+
+\subsection{Kinetic Energy}
+
+An object's \textbf{kinetic energy} when travelling at relativistic speeds is
+given by:
+
+$$
+E_K = m_0 c^2 (\gamma - 1)
+$$
+
+\subsection{Rest Energy}
+
+An object's \textbf{rest energy} is the amount of energy produced if all its
+mass were converted into energy:
+
+$$
+E_0 = m_0 c^2
+$$
+
+\subsection{Total Energy}
+
+An object's \textbf{total energy} is the sum of its rest and kinetic energies:
+
+$$
+\begin{aligned}
+E & = m_0 c^2 + m_0 c^2 (\gamma - 1)
+& = \gamma m_0 c^2
+\end{aligned}
+$$
+
+Total energy is \textbf{conserved} across interations.
+
+\subsection{Momentum}
+
+An object's \textbf{momentum} when travelling at relativistic speeds is given
+by:
+
+$$
+p = \gamma m_0 v
+$$
+
+\subsubsection{Photons}
+
+For a massless photon, where $v = c$:
+
+$$
+\begin{aligned}
+p & = \gamma m_0 c \\
+E & = \gamma m_0 c^2 \\
+& = pc \\
+\end{aligned}
+$$
+
+Thus for photons:
+
+$$
+\begin{aligned}
+p & = \frac{E}{c} \\
+& = \frac{hf}{c} \\
+& = \frac{hc}{\lambda c} \\
+& = \frac{h}{\lambda} \\
+\end{aligned}
+$$
+
+Proving that photons have a momentum that depends upon their wavelength,
+despite having no mass.
+
+
+\section{Relative Velocities}
+
+Since no object can have $v > c$, expressing the velocity of an object from a
+different reference frame can no longer be calculated through simple addition.
+
+For an object travelling with velocity $u'$ relative to a moving observer
+travelling with velocity $v$, the velocity $u$ of the object relative to a
+second, stationary observer is:
+
+$$
+u = \frac{v + u'}{1 + \frac{vu'}{c^2}}
+$$
+
+This can be applied to objects travelling in opposite directions through
+manipulating the signs of the velocities.
+
+\end{document}
