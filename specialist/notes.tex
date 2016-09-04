@@ -1,0 +1,4312 @@
+
+\documentclass[a4paper,11pt]{report}
+
+% Math symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{esvect}
+
+% Hyperlink contents page
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% \cis and \Arg
+\DeclareMathOperator\cis{cis}
+\DeclareMathOperator\Arg{Arg}
+
+% No indent on new paragraphs
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.2cm}
+
+% Alias \boldsymbol to \bb for vectors
+\newcommand{\bb}{\boldsymbol}
+
+
+\begin{document}
+
+\title{Mathematics Specialist Notes}
+\author{Ben Anderson}
+\date{\today}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+
+
+\chapter{Complex Numbers}
+
+\section{Number Sets}
+
+\subsection{Natural Numbers}
+
+Symbol: $\mathbb{N}$
+
+All positive integers, and 0.
+
+\subsection{Integers}
+
+Symbol: $\mathbb{Z}$
+
+All positive integers, negative integers, and 0.
+
+Contains all natural numbers.
+
+\subsection{Rational Numbers}
+
+Symbol: $\mathbb{Q}$ (meaning quotient)
+
+All numbers, positive and negative, that can be represented in the form
+$\frac{a}{b}$ where $a, b \in \mathbb{Z}$.
+
+Contains all integers.
+
+\subsection{Irrational Numbers}
+
+All numbers which cannot be represented in the form $\frac{a}{b}$.
+
+Contains all real numbers not in the set of all rational numbers.
+
+\subsection{Real Numbers}
+
+Symbol: $\mathbb{R}$
+
+The set of all rational and irrational numbers.
+
+\subsection{Complex Numbers}
+
+Symbol: $\mathbb{C}$
+
+The set of all numbers with a real and imaginary component.
+
+Contains all real numbers.
+
+
+\section{Complex Numbers}
+
+\subsection{i}
+
+$i$ is defined as the solution to the equation:
+
+$$
+i^2 = -1
+$$
+
+\subsection{Representation}
+
+A complex number is a number with both a real and imaginary component.
+
+Written as:
+
+$$
+z = a + bi
+$$
+
+This representation is called cartesian or rectangular form.
+
+\subsection{Components}
+
+Given the complex number $z = a + bi$.
+
+The real component is $Re(z) = a$.
+
+The imaginary component is $Im(z) = b$.
+
+\subsection{Conjugate}
+
+The conjugate of $z = a + bi$ is $\overline{z} = a - bi$.
+
+Found by negating the imaginary component.
+
+\subsubsection{Properties}
+
+The conjugate of a complex number has the following properties:
+
+$$
+\begin{aligned}
+\overline{z_1 \pm z_2} & = \overline{z_1} \pm \overline{z_2} \\
+\overline{z_1 \times z_2} & = \overline{z_1} \times \overline{z_2} \\
+\overline{(\frac{z_1}{z_2})} & = \frac{\overline{z_1}}{\overline{z_2}} \\
+\end{aligned}
+$$
+
+
+\section{Arithmetic}
+
+\subsection{Surd Simplification}
+
+Examples of simplifying complex surds:
+
+$$
+\begin{aligned}
+\sqrt{-64} & = \sqrt{-1} \times \sqrt{64} \\
+& = 8i \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\sqrt{-8} & = \sqrt{-1} \times \sqrt{8} \\
+& = 2 \sqrt{2} i \\
+\end{aligned}
+$$
+
+\subsection{Addition and Subtraction}
+
+Add both real and complex components separately.
+
+Given $z_1 = a + bi$ and $z_2 = c + di$:
+
+$$
+z_1 + z_2 = a + c + (b + d)i
+$$
+
+\subsection{Multiplication or Division by Scalar}
+
+Multiply or divide each component by the scalar.
+
+Given $z = a + bi$:
+
+$$
+\begin{aligned}
+cz & = c(a + bi) \\
+& = ca + cbi \\
+\end{aligned}
+$$
+
+\subsection{Multiplication by Complex Number}
+
+Distribute the multiplication across each component.
+
+Given $z_1 = a + bi$ and $z_2 = c + di$:
+
+$$
+\begin{aligned}
+z_1 z_2 & = (a + bi)(c + di) \\
+& = ac + adi + bci + bdi^2 \\
+& = ac - bd + (ad + bc)i \\
+\end{aligned}
+$$
+
+\subsection{Multiplication by Conjugate}
+
+Given $z = a + bi$ and its conjugate $\overline{z} = a - bi$:
+
+$$
+\begin{aligned}
+z \overline{z} & = (a + bi)(a - bi) \\
+& = a^2 + b^2 \\
+\end{aligned}
+$$
+
+\subsection{Division by Complex Number}
+
+Multiply the numerator and denominator by the conjugate of the denominator.
+
+$$
+\begin{aligned}
+\frac{4 + 5i}{2 + i} & = \frac{4 + 5i}{2 + i} \times \frac{2 - i}{2 - i} \\
+& = \frac{13 + 6i}{3} \\
+& = \frac{13}{3} + 2i \\
+\end{aligned}
+$$
+
+\subsection{Equality}
+
+Two complex numbers are equal if and only if both their real and imaginary
+components are equal.
+
+Given $z_1 = z_2$, then $Re(z_1) = Re(z_2)$ and $Im(z_1) = Im(z_2)$.
+
+
+\section{Quadratics}
+
+\subsection{Roots}
+
+Given the quadratic $ax^2 + bx + c$.
+
+If the discriminant $b^2 - 4ac < 0$, then the quadratic will have 2 complex
+roots.
+
+Complex roots for any polynomial with real coefficients appear in conjugate
+pairs.
+
+\subsection{Solving}
+
+\subsubsection{Quadratic Formula}
+
+Apply the formula:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+To solve for the 2 complex conjugate roots.
+
+\subsubsection{Completing the Square}
+
+Complete the square:
+
+$$
+\begin{aligned}
+x^2 + 4x + 10 & = 0 \\
+(x + 2)^2 + 6 & = 0 \\
+(x + 2)^2 & = -6 \\
+x & = -2 \pm \sqrt{6}i
+\end{aligned}
+$$
+
+\subsection{Expression From Roots}
+
+Given a complex root for a quadratic $z = a + bi$.
+
+The other root is its conjugate $\overline{z} = a - bi$.
+
+The quadratic expression can be found by expanding:
+
+$$
+(x - z)(x - \overline{z}) = (x - (a + bi))(x - (a - bi))
+$$
+
+\subsection{Coefficients From Roots}
+
+Given the quadratic $ax^2 + bx + c$ with roots $x_1$ and $x_2$ (real or
+complex):
+
+$$
+\begin{aligned}
+-\frac{b}{a} & = x_1 + x_2 \\
+\frac{c}{a} & = x_1 x_2 \\
+\end{aligned}
+$$
+
+
+\section{Argand Plane}
+
+A cartesian plane, where the y axis is the imaginary axis, and the x axis the
+real axis.
+
+Complex numbers can be plot as vectors on this plane.
+
+\subsection{Magnitude}
+
+The length of the vector formed by the complex number when placed on the plane.
+
+Given $z = a + bi$, the magnitude $\lvert z \rvert$ is:
+
+$$
+\lvert z \rvert = \sqrt{a^2 + b^2}
+$$
+
+\subsubsection{Properties}
+
+The magnitude of a complex number has the following properties:
+
+$$
+\begin{aligned}
+\lvert z_1 z_2 \rvert & = \lvert z_1 \rvert \lvert z_2 \rvert \\
+\lvert \frac{z_1}{z_2} \rvert & = \frac{\lvert z_1 \rvert}{\lvert z_2 \rvert} \\
+\end{aligned}
+$$
+
+\subsection{Argument}
+
+The angle the complex number makes with the positive real axis.
+
+Given $z = a + bi$, the argument $\Arg(z)$ is:
+
+$$
+\Arg(z) = \tan^{-1}(\frac{b}{a})
+$$
+
+Usually given in radians in the range $-\pi < \Arg(z) \leq \pi$.
+
+\subsection{Transformations}
+
+\subsubsection{Conjugate}
+
+Reflection about the x axis.
+
+\subsubsection{Multiplication by i}
+
+Rotation anti-clockwise by $90^\circ$.
+
+Expontents of $i$ represent multiples of this rotation:
+
+\begin{center}
+\begin{tabular}{c|c}
+$n$ & Rotation for $i^n$ \\
+\hline
+-1 & $90^\circ$ clockwise \\
+0 & No rotation \\
+1 & $90^\circ$ anti-clockwise \\
+2 & $180^\circ$ \\
+3 & $90^\circ$ clockwise \\
+4 & No rotation \\
+\end{tabular}
+\end{center}
+
+
+\section{Polar Form}
+
+Representation of a complex number by a magnitude and angle, measured
+anti-clockwise from the positive real axis.
+
+For a complex number of magnitude $r$, making an angle of $\theta$ with the
+positive real axis:
+
+$$
+z = r (\cos{\theta} + i\sin{\theta})
+$$
+
+Also written:
+
+$$
+z = r \cis{\theta}
+$$
+
+Where $r > 0$ and $-\pi < \theta \leq \pi$.
+
+\subsection{Simplifcation}
+
+Add or subtract multiples of $2\pi$ to restrict $\theta$ to the range
+$-\pi < \theta \leq \pi$.
+
+If $r < 0$, take the absolute value of $r$, and add $\pi$ to $\theta$ to rotate
+by $180^\circ$.
+
+\subsection{Conversion}
+
+\subsubsection{From Cartesian Form}
+
+$r$ is the magnitude of the complex number.
+
+$\theta$ is its argument.
+
+Given the complex number $z = a + bi$, the polar form of this number will be:
+
+$$
+\begin{aligned}
+z & = r \cis{\theta} \\
+r & = \sqrt{a^2 + b^2} \\
+\theta & = \tan^{-1}(\frac{b}{a}) \\
+\end{aligned}
+$$
+
+\subsubsection{To Cartesian Form}
+
+Expand the definition of $r \cis{\theta}$ to:
+
+$$
+z = r \cos{\theta} + ri\sin{\theta}
+$$
+
+And calculate the cosine and sine values.
+
+\subsection{Arithmetic}
+
+\subsubsection{Conjugate}
+
+Negate the argument.
+
+Given $z = r \cis{\theta}$:
+
+$$
+\overline{z} = r \cis(-\theta)
+$$
+
+Thus $\cos{-\theta} + i\sin{-\theta}$ can be written as
+$\cos{\theta} - i\sin{\theta}$ (important for proofs).
+
+\subsubsection{Negation}
+
+Subtract or add $\pi$ to the argument.
+
+Given $z = r \cis{\theta}$:
+
+$$
+-z = r \cis(\theta \pm \pi)
+$$
+
+Chose positive or negative depending on which will result in an argument within
+the correct principle range.
+
+\subsubsection{Addition and Subtraction}
+
+Convert to cartesian form and perform the addition or subtraction.
+
+\subsubsection{Multiplication}
+
+Multiply radii and add arguments.
+
+Given $z_1 = r_1 \cis{\theta_1}$ and $z_2 = r_2 \cis{\theta_2}$:
+
+$$
+z_1 z_2 = r_1 r_2 \cis(\theta_1 + \theta_2)
+$$
+
+\subsubsection{Division}
+
+Divide radii and subtract arguments.
+
+Given $z_1 = r_1 \cis{\theta_1}$ and $z_2 = r_2 \cis{\theta_2}$:
+
+$$
+\frac{z_1}{z_2} = \frac{r_1}{r_2} \cis(\theta_1 - \theta_2)
+$$
+
+
+\section{Regions}
+
+\subsection{Lines Perpendicular to Axes}
+
+\subsubsection{Real Axis}
+
+For a line perpendicular to the real axis at $k$, where $k \in \mathbb{R}$:
+
+$$
+Re(z) = k
+$$
+
+\subsubsection{Imaginary Axis}
+
+For a line perpendicular to the imaginary axis at $k$, where $k \in \mathbb{R}$:
+
+$$
+Im(z) = k
+$$
+
+\subsection{Circles}
+
+For a circle centred at the origin, with radius $r$:
+
+$$
+\lvert z \rvert = r
+$$
+
+For a circle centred at $a + bi$, with radius $r$:
+
+$$
+\lvert z - (a + bi) \rvert = r
+$$
+
+For a region containing all points within a circle at center $a + bi$, with
+radius $r$, including all points on the circumference:
+
+$$
+\lvert z - (a + bi) \rvert \leq r
+$$
+
+Excluding the circumference:
+
+$$
+\lvert z - (a + bi) \rvert < r
+$$
+
+\subsubsection{Maximum Modulus}
+
+Given the equation of a circle:
+
+$$
+\lvert z - (a + bi) \rvert = r
+$$
+
+The maximum value of $\lvert z \rvert$ will be the distance to the centre of
+the circle, plus the radius:
+
+$$
+= \sqrt{a^2 + b^2} + r
+$$
+
+\subsubsection{Minimum or Maximum Argument}
+
+Given the equation of a circle:
+
+$$
+\lvert z - (a + bi) \rvert = r
+$$
+
+The minimum or maximum value of $\Arg(z)$ is a tangent to the circle,
+perpendicular to the radius.
+
+Find the angle between the tangent and the vector from the origin to the centre
+of the circle using tan.
+
+The minimum or maximum argument is then the argument to the centre of the
+circle, plus or minus this angle.
+
+\subsection{Perpendicular Bisector}
+
+For a perpendicular bisector between $a + bi$ and $c + di$:
+
+$$
+\lvert z - (a + bi) \rvert = \lvert z - (c + di) \rvert
+$$
+
+\subsection{Rays}
+
+For a ray extending from the origin in direction $\theta$:
+
+$$
+\Arg(z) = \theta
+$$
+
+Excludes the origin as the argument of 0 is undefined.
+
+For a ray starting at $a + bi$ in direction $\theta$:
+
+$$
+\Arg(z - (a + bi)) = \theta
+$$
+
+Excludes the starting point $a + bi$, as the argument of 0 is undefined.
+
+\subsection{Cartesian Equation}
+
+Substitude $x + yi$ for $z$ in the complex equation and simplify.
+
+\subsubsection{Circle}
+
+$$
+\begin{aligned}
+\lvert (x + yi) - (a + bi) \rvert & = r \\
+\lvert (x - a) + i(y - b) \rvert & = r \\
+(x - a)^2 + (y - b)^2 & = r^2 \\
+\end{aligned}
+$$
+
+\subsubsection{Perpendicular Bisector}
+
+A perpendicular bisector equation will simplify to a straight line.
+
+\subsubsection{Rays}
+
+Rays can be represented by a line with a restriction on the $x$ value.
+
+The gradient of the line will be $\tan{\theta}$ (given $\theta$ is in the first
+quadrant):
+
+$$
+\begin{aligned}
+\Arg(z) & = \theta \\
+y & = \tan{\theta} x \quad x > 0 \\
+\end{aligned}
+$$
+
+Must be $x > 0$ (not $x \geq 0$) since the ray is undefined at the origin.
+
+If $\theta$ isn't in the first quadrant, then modify the restriction on $x$
+accordingly.
+
+
+\section{De Moivre's Theorem}
+
+For the exponent of a complex number in polar form:
+
+$$
+(r \cis{\theta})^n = r^n \cis{n \theta}
+$$
+
+The theorem is valid for positive, negative, and fractional indices.
+
+\subsection{Proof}
+
+For $n = 1$:
+
+$$
+\begin{aligned}
+(r \cis{\theta})^1 = r^1 \cis(1 \theta) \\
+r \cis{\theta} = r \cis{\theta} \\
+\end{aligned}
+$$
+
+Thus the theorem holds for $n = 1$.
+
+Assume $n = k$:
+
+$$
+(r \cis{\theta})^k = r^k \cis(k \theta) \\
+$$
+
+Let $n = k + 1$:
+
+$$
+\begin{aligned}
+(r \cis{\theta})^{k + 1} & = (r \cis(\theta))(r \cis(\theta))^k \\
+& = r^{k + 1} (\cis(\theta) \cis(k \theta)) \\
+& = r^{k + 1} (\cos(\theta) + i \sin(\theta))(\cos(k \theta) + i \sin(k \theta)) \\
+& = r^{k + 1} (\cos(\theta) \cos(k \theta) - \sin(\theta) \sin(k \theta) + i(\sin(\theta) \cos(k \theta) + \cos(\theta) \sin(k \theta))) \\
+& = r^{k + 1} (\cos((k + 1) \theta) + i \sin((k + 1) \theta)) \\
+\end{aligned}
+$$
+
+\subsubsection{For Negative Integers}
+
+$$
+\begin{aligned}
+(r \cis{\theta})^{-1} & = \frac{1}{r \cis{\theta}} \\
+& = \frac{\cis{0}}{r \cis{\theta}} \\
+& = \frac{1}{r} \cis{0 - \theta} \\
+& = \frac{1}{r} \cis{-\theta} \\
+\end{aligned}
+$$
+
+\subsection{For Cartesian Form}
+
+To raise a complex number in cartesian form to a certain power:
+
+\begin{enumerate}
+\item Convert it to polar form and use De Moivre's Theorem.
+\item Expand using binomial expansion and simplify.
+\end{enumerate}
+
+\subsection{Expansion of Trigonometric Functions}
+
+Express $\cos{n \theta}$ or $\sin{n \theta}$ in terms of only $\cos{\theta}$ or
+$\sin{\theta}$:
+
+\begin{enumerate}
+\item Express as $\cis{n \theta}$.
+\item Expand to $\cos{n \theta} + i \sin{n \theta}$.
+\item Reverse De Moivre's Theorem $(\cos{\theta} + i \sin{\theta})^n$.
+\item Expand using binomial expansion.
+\item Take only the real or complex component.
+\end{enumerate}
+
+
+\section{Roots of Real Number}
+
+The equation:
+
+$$
+z^n = k
+$$
+
+Will have $n$ complex and real solutions.
+
+The first solution will be the $n$th root of $k$ (ie. $\sqrt[n]{k}$).
+
+The roots will evenly divide the complex plane into $n$ regions (evenly spaced
+around a unit circle).
+
+The roots will appear in conjugate pairs.
+
+\subsection{Example}
+
+For the equation:
+
+$$
+z^5 = 1
+$$
+
+The first solution is $\sqrt[5]{1} = 1$, equivalent to $\cis{0}$.
+
+The angle between adjacent roots will be $\frac{2\pi}{5}$.
+
+Thus all roots are:
+
+\begin{itemize}
+\item $\cis{0}$
+\item $\cis{\frac{2\pi}{5}}$
+\item $\cis{\frac{4\pi}{5}}$
+\item $\cis{-\frac{4\pi}{5}}$
+\item $\cis{-\frac{2\pi}{5}}$
+\end{itemize}
+
+Ensure all roots are given with $r > 0$ and $-\pi < \theta \leq \pi$.
+
+
+\section{Roots of Complex Number}
+
+The equation:
+
+$$
+z^n = a + bi
+$$
+
+Will have $n$ complex and real solutions.
+
+The roots will evenly divide the complex plane into $n$ regions (evenly spaced
+around a unit circle).
+
+The roots do not necessarily appear in conjugate pairs.
+
+\subsection{Given a Solution}
+
+Given the equation:
+
+$$
+z^6 = -8i
+$$
+
+Has a solution $1 + i$, find the other solutions.
+
+Implies $(1 + i)^6 = -8i$.
+
+Writing $1 + i$ in polar form, $\sqrt{2} \cis{\frac{\pi}{4}}$.
+
+Angle between roots will be $\frac{2\pi}{6} = \frac{\pi}{3}$.
+
+Thus solutions are:
+
+\begin{itemize}
+\item $\sqrt{2} \cis{\frac{\pi}{4}}$ (given)
+\item $\sqrt{2} \cis{\frac{7\pi}{12}}$
+\item $\sqrt{2} \cis{\frac{11\pi}{12}}$
+\item $\sqrt{2} \cis{-\frac{3\pi}{4}}$
+\item $\sqrt{2} \cis{-\frac{5\pi}{12}}$
+\item $\sqrt{2} \cis{-\frac{\pi}{12}}$
+\end{itemize}
+
+\subsection{Given No Solutions}
+
+Given the equation:
+
+$$
+z^n = a + bi
+$$
+
+Write $a + bi$ in polar form with an additional constant:
+
+$$
+a + bi = r \cis{\theta + 2k\pi} \quad k \in \mathbb{Z}
+$$
+
+This implies:
+
+$$
+\begin{aligned}
+z^n & = r \cis{\theta + 2k\pi} \\
+(z^n)^{\frac{1}{n}} & = (r \cis{\theta + 2k\pi})^{\frac{1}{n}} \\
+z & = \sqrt[n]{r} \cis{\frac{\theta}{n} + \frac{2k\pi}{n}} \\
+\end{aligned}
+$$
+
+Substitute $n$ values of $k$ centred around 0 to find $n$ solutions for $z$.
+
+Centre the values of $k$ around 0 to ensure the arguments are within the range
+$-\pi < \theta \leq \pi$.
+
+
+\section{Polynomials}
+
+\subsection{Remainder Theorem}
+
+The remainder when $f(x)$ is divided by $x - a$ is $f(a)$.
+
+\subsubsection{Proof}
+
+Consider the division identity:
+
+$$
+f(x) = D(x) Q(x) + R(x)
+$$
+
+When $f(x)$ is divided by $x - a$, the remainder must be at least 1 order less
+than the divisor, thus $R(x)$ is a constant:
+
+$$
+f(x) = (x - a) Q(x) + k \quad k \in \mathbb{R}
+$$
+
+Consider $f(a)$:
+
+$$
+\begin{aligned}
+f(a) & = (a - a) Q(a) + k \\
+& = k \\
+\end{aligned}
+$$
+
+Thus $f(a)$ is the remainder when $f(x)$ is divided by $x - a$.
+
+\subsection{Factor Theorem}
+
+$x - a$ is a factor of $f(x)$ if and only if $f(a) = 0$.
+
+\subsubsection{Proof}
+
+If $f(a) = 0$, then $f(x)$ will have a remainder of 0 when divided by $x - a$,
+by the remainder theorem proved above.
+
+Thus $x - a$ is a factor of $f(x)$.
+
+\subsection{Factorising}
+
+Find factors of $f(x)$ using the factor theorem by guessing values of $a$.
+
+Try values of $a$ that are factors of the constant term.
+
+Find as many real factors as possible.
+
+\subsubsection{Inspection}
+
+If sufficient real factors can be found such that we are left with a series of
+linear factors and 1 complex quadratic factor, like so:
+
+$$
+\begin{aligned}
+f(x) & = 8x^4 + 8x^3 - 4x^2 - 3x - 9 \\
+& = (x - 1)(2x + 3)(ax^2 + bx + c) \\
+\end{aligned}
+$$
+
+For $a$:
+
+$$
+\begin{aligned}
+1 \times 2 \times a & = 8 \\
+a & = 4 \\
+\end{aligned}
+$$
+
+For $c$:
+
+$$
+\begin{aligned}
+-1 \times 3 \times c & = -9 \\
+c & = 3 \\
+\end{aligned}
+$$
+
+For $b$ (using the cubed term):
+
+$$
+\begin{aligned}
+1 \times 2 \times b + 1 \times 3 \times a - 1 \times 2 \times a & = 8 \\
+2b + 12 - 8 & = 8 \\
+b & = 2 \\
+\end{aligned}
+$$
+
+Thus $f(x) = (x - 1)(2x + 3)(4x^2 + 2x + 3)$.
+
+\subsubsection{Algebraic Juggling}
+
+For example, $x^2 + 3x + 4$ divided by $x + 4$:
+
+$$
+\begin{aligned}
+\frac{x^2 + 3x + 4}{x + 4} & = \frac{x(x + 4) - x + 4}{x + 4} \\
+& = x + \frac{-x + 4}{x + 4} \\
+& = x + \frac{-(x + 4) + 8}{x + 4} \\
+& = x - 1 + \frac{8}{x + 4} \\
+\end{aligned}
+$$
+
+Thus the quotient is $x - 1$, with a remainder of $8$.
+
+\subsection{Solving}
+
+Factorise the polynomial, leaving only linear or quadratic factors.
+
+Apply the null factor law to find solutions.
+
+\subsubsection{Real Coefficients}
+
+All complex roots will appear in conjugate pairs.
+
+\subsubsection{Complex Coefficients}
+
+Complex roots do not necessarily appear in conjugate pairs.
+
+Also try simple complex factors of the constant term when guessing values for
+$a$.
+
+
+
+
+\chapter{Calculus}
+
+\section{Vector Calculus}
+
+\subsection{Derivative}
+
+Given the vector function:
+
+$$
+\bb{r} = \binom{2 + 3t}{3t + t^2}
+$$
+
+Derive each component of the vector function to find its derivative:
+
+$$
+\frac{d\bb{r}}{dt} = \binom{3}{3 + 2t}
+$$
+
+\subsection{Indefinite Integral}
+
+Given the vector function:
+
+$$
+\bb{r} = \binom{2 + 4t}{8t + 3t^2}
+$$
+
+Integrate each component to find its indefinite integral:
+
+$$
+\int \bb{r} dt = \binom{2t + 2t^2 + c_1}{4t^2 + t^3 + c_2}
+$$
+
+\subsection{Definite Integral}
+
+Same as normal calculus:
+
+$$
+\int_a^b \frac{d}{dt}\bb{r}(t) dt = \bb{r}(b) - \bb{r}(a)
+$$
+
+
+\section{Rectilinear Motion}
+
+\subsection{Circular or Elliptical Motion}
+
+For a body travelling in a circle or an ellipse around a fixed point.
+
+The velocity is perpendicular to the acceleration and to the direction of
+motion:
+
+$$
+\begin{aligned}
+\bb{v} \cdot \bb{r} & = 0
+\bb{v} \cdot \bb{a} & = 0
+\end{aligned}
+$$
+
+\subsection{Cartesian Equation of Path}
+
+Convert $\bb{r}(t)$ to a cartesian equation.
+
+\subsection{Graphing Circular Motion}
+
+For increasing values of $t$, plot the corresponding value of $\bb{r}(t)$ on a
+cartesian plane.
+
+To indicate the direction of motion, find $\bb{r}(0)$ to find the initial
+position of the body, then find $\bb{r}(1)$ to find where it moves to next,
+indicating its direction of motion.
+
+\subsection{Projectile Motion}
+
+To find the maximum height reached, solve for when the $\bb{j}$ component of
+the velocity is 0.
+
+
+\section{Differentiation Techniques}
+
+\subsection{Implicit Differentiation}
+
+Given some implicitly defined function $y$:
+
+$$
+y - 4x = 2
+$$
+
+We are able to differentiate each term separately to obtain an expression for
+the derivative:
+
+$$
+\frac{dy}{dx} - 4 = 0
+$$
+
+\subsubsection{Product Rule}
+
+The implicit function:
+
+$$
+3xy = 2
+$$
+
+Can be derived using the product rule:
+
+$$
+3y + 3x \frac{dy}{dx} = 0
+$$
+
+\subsubsection{Chain Rule}
+
+Given the implicit function:
+
+$$
+y^3 - 10x = 4
+$$
+
+The first term $y^3$ is derived using the chain rule:
+
+$$
+\begin{aligned}
+\frac{d}{dx} (y^3) - 10 & = 0 \\
+\frac{d}{dy} (y^3) \times \frac{dy}{dx} - 10 & = 0 \\
+3y^2 \frac{dy}{dx} - 10 & = 0 \\
+\end{aligned}
+$$
+
+\subsubsection{Second Derivative}
+
+Given the implicitly defined function:
+
+$$
+y^2 + 3x = 2x^3
+$$
+
+The first derivative is determined by implicit differentiation:
+
+$$
+2y \frac{dy}{dx} + 3 = 6x
+$$
+
+The second derivative is determined by deriving again:
+
+$$
+2y \frac{d^2y}{dx^2} + 2 (\frac{dy}{dx})^2 = 6
+$$
+
+\subsection{Parametric Function Differentiation}
+
+Given the parametrical equations:
+
+$$
+x = 3t + 1 \qquad y = t^2
+$$
+
+Finding the derivative of each:
+
+$$
+\begin{aligned}
+\frac{dx}{dt} & = 3 \\
+\frac{dy}{dt} & = 2t \\
+\end{aligned}
+$$
+
+Using the chain rule:
+
+$$
+\begin{aligned}
+\frac{dy}{dx} & = \frac{dy}{dt} \frac{dt}{dx} \\
+& = \frac{2t}{3} \\
+\end{aligned}
+$$
+
+\subsection{Related Rates}
+
+Given a function $y$ in terms of $x$:
+
+$$
+y = 5x^2 + 2x - 3
+$$
+
+And knowing $\frac{dx}{dt} = a$, we can find $\frac{dy}{dt}$ using the chain
+rule:
+
+$$
+\begin{aligned}
+\frac{dy}{dt} & = \frac{dy}{dx} \frac{dx}{dt} \\
+& = a(10x + 2) \\
+\end{aligned}
+$$
+
+\subsubsection{Rectilinear Motion}
+
+Given the velocity function $v$ in terms of $x$ (the displacement):
+
+$$
+v = 3x + 4
+$$
+
+To determine the acceleration function:
+
+$$
+\begin{aligned}
+a & = \frac{dv}{dt} \\
+& = \frac{dv}{dx} \frac{dx}{dt} \\
+& = \frac{dv}{dx} v \\
+& = 3v \\
+& = 3(3x + 4) \\
+\end{aligned}
+$$
+
+This makes use of the fact that $\frac{dx}{dt} = v$.
+
+This fact can also be done when integrating. Given the acceleration $a$:
+
+$$
+a = 3x^2 + 1
+$$
+
+The velocity can be found by:
+
+$$
+\begin{aligned}
+\frac{dv}{dt} & = 3x^2 + 1 \\
+\frac{dv}{dx} \frac{dx}{dt} & = 3x^2 + 1 \\
+v \frac{dv}{dx} & = 3x^2 + 1 \\
+\int v \frac{dv}{dx} dx & = \int 3x^2 + 1 dx \\
+\frac{1}{2} v^2 & = x^2 + x + c \\
+\end{aligned}
+$$
+
+\subsubsection{Word Problems}
+
+The information that must be determined includes:
+
+\begin{itemize}
+\item An equation relating two variables.
+\item The rate of change of one variable with respect to a third.
+\end{itemize}
+
+For example, consider a ladder of length $l$ leaning on a wall, with its base
+$x$ meters from the wall and its top $y$ meters above the wall. An equation
+relating $x$ and $y$ is Pythagoras:
+
+$$
+x^2 + y^2 = l^2
+$$
+
+If the base slips away from the wall at a rate of $r$ meters per second, then
+$\frac{dx}{dt} = r$ (a constant rate of change). The rate at which the top
+of the ladder falls towards the ground is $\frac{dy}{dt}$.
+
+This is determined by implicitly differentiating the above equation.
+
+\subsection{Logarithmic Differentiation}
+
+Given the function:
+
+$$
+y = 3^x
+$$
+
+We can find the derivative by taking the log of both sides:
+
+$$
+\ln{y} = x \ln{3}
+$$
+
+Then implicitly differentiating:
+
+$$
+$$
+
+Thus the derivative is:
+
+$$
+\begin{aligned}
+\frac{1}{y} \frac{dy}{dx} & = \ln{3} \\
+\frac{dy}{dx} & = y\ln{3} \\
+& = 3^x \ln{3} \\
+\end{aligned}
+$$
+
+
+\section{Integration Techniques}
+
+\subsection{Basic}
+
+If given an integral in the form:
+
+$$
+\int f'(x) f(x) dx
+$$
+
+Then use standard integration techniques to solve it.
+
+\subsection{Substitution}
+
+Involves changing the variable used in the integration.
+
+Given:
+
+$$
+\int 56x(2x - 3)^5 dx
+$$
+
+Find an appropriate substitution. Chose a part of the function which is raised
+to a power.
+
+Let $u = 2x - 3$:
+
+$$
+\int 56xu^5 dx
+$$
+
+Convert $dx$ to $du$:
+
+$$
+\begin{aligned}
+\frac{du}{dx} & = 2 \\
+dx & = \frac{du}{2} \\
+\end{aligned}
+$$
+
+Thus:
+
+$$
+\int 56xu^5 \frac{1}{2} du
+$$
+
+Convert $x$ to $u$ by rearranging $u = 2x - 3$ for $x$:
+
+$$
+\int 14u^5(u + 3) du
+$$
+
+Expand the brackets:
+
+$$
+\int 14u^6 + 42u^5 du
+$$
+
+Perform the integration:
+
+$$
+2u^7 + 7u^6 + c
+$$
+
+Substitute in $u = 2x - 3$:
+
+$$
+2(2x - 3)^7 + 7(2x - 3)^6 + c
+$$
+
+\subsection{Substitution with Definite Integrals}
+
+When solving definite integrals using substitution, convert the limits of the
+integral to be in terms of $u$.
+
+Given:
+
+$$
+\int_1^2 56x(2x - 3)^5 dx
+$$
+
+Let $u = 2x - 3$.
+
+$u$ given $x = 1$ is -1, and given $x = 2$ is 1.
+
+From above:
+
+$$
+\begin{aligned}
+& = \int_{-1}^1 14u^6 + 42u^5 du \\
+& = \big[2u^7 + 7u^6\big]_{-1}^1 \\
+& = 2 + 7 - (-2 + 7) \\
+& = 4 \\
+\end{aligned}
+$$
+
+\subsection{Trigonometric Identities}
+
+\subsubsection{Odd Power}
+
+For $\sin^n{x}$ or $\cos^n{x}$, where $n$ is odd, pull out a $\sin{x}$ or
+$\cos{x}$ to make the power even, then substitute $1 - \cos^2{x}$ or
+$1 - \sin^2{x}$ from the Pythagorean identity:
+
+$$
+\begin{aligned}
+\int \sin^3{x} dx & = \int \sin{x}\sin^2{x} dx \\
+& = \int \sin{x}(1 - \cos^2{x}) dx \\
+& = \int \sin{x} - \sin{x}\cos^2{x} dx \\
+& = -\cos{x} + \frac{1}{3} \cos^3{x} + c \\
+\end{aligned}
+$$
+
+\subsubsection{Even Power}
+
+For $\sin^n{x}$ or $\cos^n{x}$, where $n$ is even, use the double angle formula
+for $\cos{2x}$:
+
+$$
+\begin{aligned}
+\cos{2x} & = 1 - 2\sin^2{x} \\
+& = 2\cos^2{x} - 1 \\
+\end{aligned}
+$$
+
+Rearrange the equation in terms of $\cos{2x}$:
+
+$$
+\begin{aligned}
+\int \sin^2{x} dx & = \int \frac{1}{2} - \frac{1}{2}\cos{2x} dx \\
+& = \frac{x}{2} - \frac{1}{4}\sin{2x} + c \\
+\end{aligned}
+$$
+
+\subsubsection{Secant}
+
+For $\tan^2{x}$, substitute $\sec^2{x} - 1$ from the identity:
+
+$$
+\sec^2{x} = \tan^2{x} + 1
+$$
+
+\subsubsection{Product to Sum}
+
+For:
+
+$$
+\int \sin{ax}\cos{bx} dx
+$$
+
+Use the product to sum identities (these should be given in the question).
+
+\subsection{Logarithmic Integration}
+
+$$
+\begin{aligned}
+\int \frac{1}{x} dx & = \ln{|x|} + c \qquad x \neq 0 \\
+\int \frac{f'(x)}{f(x)} dx & = \ln(|f(x)|) + c \qquad f(x) \neq 0 \\
+\end{aligned}
+$$
+\subsubsection{Improper Fractions}
+
+Given an improper fraction to integrate:
+
+$$
+\int \frac{2x}{x + 1} dx
+$$
+
+Convert the fraction to a proper one (use algebraic juggling):
+
+$$
+\int 2 - \frac{2}{x + 1} dx
+$$
+
+And integrate:
+
+$$
+2x - 2\ln{|x + 1|} + c
+$$
+
+\subsection{Logarithmic Definite Integrals}
+
+Given:
+
+$$
+\int_a^b \frac{f'(x)}{f(x)} dx
+$$
+
+If $f(x) = 0$ for any $x$ in the interval $a \leq x \leq b$, then the integral
+is undefined.
+
+\subsection{Partial Fractions}
+
+For proper fractions with a series of factors in the denominator.
+
+The number of unknowns in the numerator will be the same as the degree of the
+denominator.
+
+\subsubsection{Linear Factors}
+
+Given a proper fraction with a series of linear factors in the denominator:
+
+$$
+\int \frac{4x - 3}{(x + 3)(2x + 1)} dx
+$$
+
+Consider the inner fraction:
+
+$$
+\frac{4x - 3}{(x + 3)(2x + 1)}
+$$
+
+Split the fraction into parts, where the denominator of each is one of the
+linear factors, and the numerator is some polynomial of one degree less than
+the denominator:
+
+$$
+\frac{4x - 3}{(x + 3)(2x + 1)} = \frac{A}{x + 3} + \frac{B}{2x + 1}
+$$
+
+Multiply by $(x + 3)(2x + 1)$:
+
+$$
+4x - 3 = A(2x + 1) + B(x + 3)
+$$
+
+Compare coefficients to solve for $A$ and $B$:
+
+$$
+\begin{aligned}
+4 & = 2A + B \\
+-3 & = A + 3B \\
+\end{aligned}
+$$
+
+Solve the system of equations by elimination:
+
+$$
+\begin{aligned}
+10 & = -5B \\
+B & = -2 \\
+A & = 3 \\
+\end{aligned}
+$$
+
+Thus the partial fractions are:
+
+$$
+\frac{3}{x + 3} - \frac{2}{2x + 1}
+$$
+
+Use logarithms to solve the integral:
+
+$$
+\begin{aligned}
+\int \frac{4x - 3}{(x + 3)(2x + 1)} dx & = \int \frac{3}{x + 3} - \frac{2}{2x + 1} dx \\
+& = 3\ln{|x + 3|} - \ln{|2x + 1|} \\
+\end{aligned}
+$$
+
+\subsubsection{Cover Up Method}
+
+A method to easily find the required partial fractions.
+Only applies to fractions with linear factors.
+
+Again, consider the fraction:
+
+$$
+\frac{4x - 3}{(x + 3)(2x + 1)}
+$$
+
+We require an expression in the form:
+
+$$
+\frac{A}{x + 3} + \frac{B}{2x + 1}
+$$
+
+For each linear factor, solve for $x$ when the factor equals 0.
+
+Then cover up this linear factor in the original fraction, and substitute in
+the value for $x$ to find the corresponding constant in the partial fractions.
+
+To find $A$, solve $x + 3 = 0$, hence $x = -3$. Cover up the factor $x + 3$ in
+the original fraction to give:
+
+$$
+\frac{4x - 3}{2x + 1}
+$$
+
+And substitute $x = -3$ to give $A = -3$.
+
+To find $B$, solve $2x + 1 = 0$, hence $x = -0.5$. Substitute this into:
+
+$$
+\frac{4x - 3}{x + 3}
+$$
+
+To give $B = -2$.
+
+\subsubsection{Quadratic Factors}
+
+To find the integral:
+
+$$
+\int \frac{7x^2 - 2x + 5}{(x - 1)(x^2 + 1)} dx
+$$
+
+Use the partial fractions:
+
+$$
+\frac{A}{x - 1} + \frac{Bx + C}{x^2 + 1}
+$$
+
+Solve for the constants by equating this to the original fraction:
+
+$$
+\frac{7x^2 - 2x + 5}{(x - 1)(x^2 + 1)}  = \frac{A}{x - 1} + \frac{Bx + C}{x^2 + 1}
+$$
+
+Multiply through by $(x - 1)(x^2 + 1)$:
+
+$$
+7x^2 - 2x + 5  = A(x^2 + 1) + (Bx + C)(x - 1)
+$$
+
+Solve for $A$, $B$, and $C$ by comparing coefficients:
+
+$$
+\begin{aligned}
+7 & = A + B \\
+5 & = A - C \\
+-2 & = -B + C \\
+\end{aligned}
+$$
+
+Solve the system of equations by elimination:
+
+$$
+\begin{aligned}
+5 & = A + C \\
+10 & = 2A \\
+A & = 5 \\
+B & = 2 \\
+C & = 0 \\
+\end{aligned}
+$$
+
+Substitute these values into the partial fractions and solve the integral using
+logarithms.
+
+\subsubsection{Repeated Factors}
+
+Given the integral:
+
+$$
+\int \frac{6x^2 + 6x - 20}{(x + 3)(x - 1)^2} dx
+$$
+
+Use the partial fractions:
+
+$$
+\frac{A}{x + 3} + \frac{B}{x - 1} + \frac{C}{(x - 1)^2}
+$$
+
+Solve for the constants by equating the two:
+
+$$
+\frac{6x^2 + 6x - 20}{(x + 3)(x - 1)^2} = \frac{A}{x + 3} + \frac{B}{x - 1} + \frac{C}{(x - 1)^2}
+$$
+
+Multiply by the denominator:
+
+$$
+6x^2 + 6x - 20 = A(x - 1)^2 + B(x + 3)(x - 1) + C(x + 3)
+$$
+
+Solve by comparing coefficients:
+
+$$
+\begin{aligned}
+6 & = A + B \\
+-20 & = A + 2B + 3C \\
+6 & = -2A + B + C \\
+\end{aligned}
+$$
+
+Solve the system of equations:
+
+$$
+\begin{aligned}
+A & = -4 \\
+B & = 10 \\
+C & = -12 \\
+\end{aligned}
+$$
+
+Perform the integration using logarithms.
+
+\subsection{Integration by Parts}
+
+Used to integrate expressions with two functions multiplied together.
+
+The formula is derived from the product rule:
+
+$$
+\begin{aligned}
+(f(x)g(x))' & = f'(x)g(x) + g'(x)f(x) \\
+f(x)g(x) & = \int f'(x)g(x) dx + \int g'(x)f(x) dx \\
+\int f'(x)g(x) dx & = f(x)g(x) - \int g'(x)f(x) dx \\
+\end{aligned}
+$$
+
+Given the integral:
+
+$$
+\int e^x x dx
+$$
+
+Let $f'(x) = e^x$ and $g(x) = x$.
+
+Hence $f(x) = e^x$ (ignore the integrating constant) and $g'(x) = 1$.
+
+Using the formula from above:
+
+$$
+\begin{aligned}
+\int e^x x dx & = e^x x - \int 1 \times e^x dx \\
+& = x e^x - e^x + c \\
+\end{aligned}
+$$
+
+\subsection{Summary}
+
+Given a certain function in different forms, use several different methods for
+integration:
+
+Basic:
+
+$$
+\int f'(x) f(x) dx
+$$
+
+Substitution (let $u = f(x)$):
+
+$$
+\int g(x) (f(x))^n dx
+$$
+
+Use trigonometric identities for an integration involving some combination of
+trigonometric functions.
+
+Logarithms:
+
+$$
+\int \frac{f'(x)}{f(x)} dx
+$$
+
+Partial fractions, using the cover up method:
+
+$$
+\int \frac{f(x)}{(x + a)(x + b)}
+$$
+
+Partial fractions with a quadratic factor:
+
+$$
+\int \frac{f(x)}{(x^2 + bx + c)(x + d)}
+$$
+
+Partial fractions with a repeated factor:
+
+$$
+\int \frac{f(x)}{(x + a)^2 (x + b)}
+$$
+
+Integration by parts:
+
+$$
+\int f(x)g(x) dx
+$$
+
+
+\section{Numerical Integration}
+
+Several functions cannot be algebraically integrated.
+Numerical integration approximates a definite integral of such functions.
+
+Given the definite integral:
+
+$$
+\int^2_0 e^{x^2} dx
+$$
+
+Different rules express the integral as an infinite sum of the areas of adjacent
+shapes.
+
+The integral can be approximated by taking a finite number of terms from such
+sequences.
+
+Summing more terms improves the accuracy of the approximation.
+
+\subsection{Trapezium Rule}
+
+The area of a trapezium with parallel side lengths $y_0$ and $y_1$, and
+perpendicular height $h$ is:
+
+$$
+h\frac{y_0 + y_1}{2}
+$$
+
+Summing the areas of these trapeziums:
+
+$$
+\begin{aligned}
+& = \sum_{i = 1}^n h\frac{y_{i - 1} + y_i}{2} \\
+& = \frac{h}{2} \sum_{i = 1}^n y_{i - 1} + y_i \\
+& = \frac{h}{2} (y_0 + 2\sum_{i = 1}^{n - 1} y_i + y_n) \\
+\end{aligned}
+$$
+
+Given some definite integral:
+
+$$
+\int^a_b f(x) dx
+$$
+
+We have:
+
+$$
+\begin{aligned}
+h & = \frac{a - b}{n} \\
+y_0 & = f(b) \\
+y_n & = f(a) \\
+y_i & = f(b + ih) \\
+\end{aligned}
+$$
+
+\subsection{Simpson's Rule}
+
+Models the tops of the strips as parabolas.
+
+Only applies for an even number of strips.
+
+$$
+\frac{h}{3}(y_0 + \sum_{i = 1}^{n - 2} (4y_i + 2y_{i + 2}) + 4y_{n - 1} + y_n)
+$$
+
+$h$ and $y_i$ are calculated the same as when applying the Trapezium rule.
+
+
+\section{Volumes of Revolution}
+
+The volume of the solid formed when an area under a curve is rotated in 3D
+around a line (usually an axis).
+
+\subsection{Around X Axis}
+
+Split the area into vertical disks of thickness $\delta x$.
+
+The volume of one of these disks is:
+
+$$
+\pi y^2 \delta x
+$$
+
+Summing the volume of an infinite number of these disks between $x = a$ and
+$x = b$ gives:
+
+$$
+\lim_{\delta x \to 0} \sum_{x = a}^{b} \pi y^2 \delta x
+$$
+
+Using the definition of integration:
+
+$$
+\pi \int^b_a y^2 dx
+$$
+
+\subsubsection{Area with the Y Axis Rotated About the X Axis}
+
+The volume of a solid formed when an area bounded by a function $f(x)$, the x
+axis, and the lines $x = a$ and $x = b$ is rotated about the y axis.
+
+Consider the inner surface area of a cylinder of radius $x$ and height $y$:
+
+$$
+2 \pi x y
+$$
+
+The volume of the solid is the sum of an infinite number of these cylinders
+between $x = a$ and $x = b$:
+
+$$
+2 \pi \int^b_a x y dx
+$$
+
+\subsection{Around Y Axis}
+
+Split the area into horizontal disks of thickness $\delta y$.
+
+The volume of one disk is:
+
+$$
+\pi x^2 \delta y
+$$
+
+Summing the volumes of these disks between $y = a$ and $y = b$ gives:
+
+$$
+\lim_{\delta y \to 0} \sum_{y = a}^{b} \pi x^2 \delta y
+$$
+
+Using the definition of integration:
+
+$$
+\pi \int^b_a x^2 dy
+$$
+
+\subsubsection{Area with the X Axis Rotated About the Y Axis}
+
+The volume of a solid formed when an area bounded by a function $f(x)$, the y
+axis, and the lines $y = a$ and $y = b$ is rotated about the x axis.
+
+Consider the inner surface area of a cylinder of radius $y$ and height $x$:
+
+$$
+2 \pi x y
+$$
+
+The volume of the solid is the sum of an infinite number of these cylinders
+between $y = a$ and $y = b$:
+
+$$
+2 \pi \int^b_a x y dy
+$$
+
+\subsection{Around a Vertical Line}
+
+Perform a change in origin for the function. To rotate around the line:
+
+$$
+x = a
+$$
+
+Use the function $f(x - a)$ to make the function centred around $a$.
+
+\subsection{Area Between Two Curves}
+
+The volume of a solid formed when the area between the curves $f(x)$ and $g(x)$
+is rotated about one of the axes.
+
+Given $f(x)$ is above $g(x)$ for the interval over which we're rotating,
+subtract the volume of the solid formed using $g(x)$ from that of $f(x)$:
+
+For example, rotating about the $x$ axis and bound by the lines $x = a$ and
+$x = b$:
+
+$$
+\pi \int^b_a (f(x))^2 dx - \pi \int^b_a (g(x))^2 dx
+$$
+
+Use a graph of the two functions to determine the required areas in more
+complicated scenarios.
+
+
+\section{Differential Equations}
+
+A \textbf{differential equation} is where the defining expression for a function
+$y$ involves one of its derivatives.
+
+The \textbf{order} of a differential equation is equal to the highest order of
+any derivative involed in the function.
+
+To \textbf{solve} a differential equation, we must find a relationship between the
+variables that does not involve a derivative.
+
+\subsection{Separating the Variables}
+
+This involves manipulating the expression into the form:
+
+$$
+f(y) \frac{dy}{dx} = g(x)
+$$
+
+We can then integrate both sides with respect to $x$:
+
+$$
+\begin{aligned}
+\int f(y) \frac{dy}{dx} dx & = \int g(x) dx \\
+\int f(y) dy & = \int g(x) dx \\
+\end{aligned}
+$$
+
+This will produce two constants of integration, although these can be written
+as a single one:
+
+$$
+F(y) = G(x) + c
+$$
+
+Where $F(y)$ and $G(x)$ are the anti-derivatives of $f(y)$ and $g(x)$
+respectively.
+
+\subsection{Logistic Growth Model}
+
+A model for growth which initially rapidly increases, but plateaus off at a
+certain $y$ value (a horizontal asymptote):
+
+$$
+\frac{dy}{dx} = ay - by^2
+$$
+
+Where $a > 0$ and $b > 0$.
+
+It has the general solution:
+
+$$
+y = \frac{a}{b + ce^{-at}}
+$$
+
+\subsubsection{Proof}
+
+% TODO. Involves partial fractions and logarithmic integration
+
+\subsection{Slope Field}
+
+A \textbf{slope} or \textbf{gradient field} shows the gradient of a function at
+each point on a Cartesian plane, through a short line segment pointing in a
+certain direction.
+
+To determine what a slope field looks like for a differential equation, consider
+for what $x$ or $y$ values the derivative is 0, positive, and negative.
+
+\subsection{Euler's Approximation}
+
+\textbf{Euler's method} is used to determine approximate solutions to
+differential equations, using the small changes formula:
+
+$$
+\delta y \approx \frac{dy}{dx} \delta x
+$$
+
+Given an expression involving the derivative, and a known $x$ and $y$
+coordinate, the procedure is:
+
+\begin{itemize}
+\item Compute the derivative at the starting coordinate $(x, y)$.
+\item Chose an increment for $\delta x$.
+\item Calculate the corresponding $\delta y$ using the small changes formula.
+\item This results in a new coordinate to plot $(x + \delta x, y + \delta y)$.
+\item Repeat this procedure for the new coordinate.
+\end{itemize}
+
+
+\section{Simple Harmonic Motion}
+
+\textbf{Simple harmonic motion} is where an object's acceleration is negatively
+proportional to its position from its mean point:
+
+$$
+\frac{d^2x}{dt^2} = -k^2 x
+$$
+
+This causes an object to \textbf{oscillate} about a mean point.
+
+The \textbf{amplitude} ($a$) of the motion is the distance between the object's
+mean point of oscillation and its maximum displacement from this mean point.
+
+The \textbf{period} ($T$) of the motion is the time the object takes to
+complete one full oscillation.
+
+The \textbf{phase angle} ($\alpha$) of the motion is where the object starts
+within a cycle.
+
+\subsection{Solving}
+
+To \textbf{solve} a differential equation in this form:
+
+$$
+\begin{aligned}
+\frac{dv}{dt} & = -k^2 x \\
+\frac{dv}{dx} \frac{dx}{dt} & = -k^2 x \\
+v \frac{dv}{dx} & = -k^2 x \\
+\int v dv & = \int -k^2 x dx \\
+\frac{v^2}{2} & = -\frac{k^2 x^2}{2} + c \\
+\end{aligned}
+$$
+
+Given the object's amplitude $a$, it is known that when the displacement is at
+its maximum (ie. $x = a$), the velocity is 0 ($v = 0$):
+
+$$
+\begin{aligned}
+0 & = -\frac{k^2 a^2}{2} + c \\
+c & = \frac{k^2 a^2}{2} \\
+\end{aligned}
+$$
+
+Substituting into the original velocity equation, we have:
+
+$$
+v^2 = k^2(a^2 - x^2)
+$$
+
+Continuing further to find an equation for displacement:
+
+$$
+\begin{aligned}
+\frac{dx}{dt} & = k\sqrt{a^2 - x^2} \\
+\int \frac{1}{\sqrt{a^2 - x^2}} dx & = \int k dt \\
+\end{aligned}
+$$
+
+Using the substitution $x = a \sin{u}$, which has the derivative
+$\frac{dx}{du} = a \cos{u}$:
+
+$$
+\begin{aligned}
+\int du & = kt + \alpha \\
+u & = kt + \alpha \\
+\end{aligned}
+$$
+
+From the earlier substitution equation:
+
+$$
+x = a \sin(kt + \alpha)
+$$
+
+\subsection{Relationships}
+
+An equation for an object's acceleration is:
+
+$$
+a = -k^2 x
+$$
+
+An equation for its velocity is:
+
+$$
+v^2 = k^2(a^2 - x^2)
+$$
+
+An equation for its displacement is:
+
+$$
+x = a \sin(kt + \alpha)
+$$
+
+Another equation for its velocity is thus:
+
+$$
+v = ka \cos(kt + \alpha)
+$$
+
+The period is (identical to the period of the sin function in the displacement
+equation):
+
+$$
+k = \frac{2\pi}{T}
+$$
+
+The phase angle is $\alpha$.
+
+If an object starts its motion at its mean displacement (the origin), then:
+
+$$
+x = a \sin(kt)
+$$
+
+If an object starts its motion at its maximum or minimum displacement, then:
+
+$$
+x = a \sin(kt + \frac{\pi}{2}) = a \cos(kt)
+$$
+
+An object's maximum velocity is:
+
+$$
+|ka|
+$$
+
+When an object is at its mean displacement:
+
+\begin{itemize}
+\item $x = 0$
+\item $v$ is at its maximum or minimum value
+\end{itemize}
+
+When an object is at its maximum or minimum displacement:
+
+\begin{itemize}
+\item $x$ is at its maximum or minimum value
+\item $v = 0$
+\end{itemize}
+
+\subsection{Demonstrating Simple Harmonic Motion}
+
+Given an equation for $x$:
+
+$$
+x = a \sin(kt + \alpha)
+$$
+
+We can show that this motion is simple harmonic motion by demonstrating that
+the equation satisfies the rule:
+
+$$
+\frac{d^2x}{dt^2} = -k^2 x
+$$
+
+Differentiating once:
+
+$$
+\frac{dx}{dt} = ka \cos(kt + \alpha)
+$$
+
+Differentiating again:
+
+$$
+\begin{aligned}
+\frac{d^2x}{dt^2} & = -k^2 a \sin(kt + \alpha) \\
+& = -k^2 x \\
+\end{aligned}
+$$
+
+
+
+
+\chapter{Functions}
+
+\section{Function and Relations}
+
+A function is a series of operations that maps one or more input values to one
+output value.
+
+A relation is a series of operations that maps one or more input values to one
+or more output values.
+
+\subsection{Types}
+
+A one-to-one function means each input value has one possible output value.
+For example, $f(x) = x$.
+
+A many-to-one function means multiple input values will map to the same output
+value. For example, $f(x) = x^2$.
+
+A one-to-many relation means one input value will map to multiple output values.
+For example, $f(x) = \pm \sqrt{x}$.
+
+A many-to-many relation means multiple input values will map to multiple output
+values. For example, $x^2 + y^2 = 9$.
+
+\subsection{Vertical Line Test}
+
+Where a vertical line is moved from left to right over a graph.
+
+If it intersects the curve more than once at any point, the graph is a relation,
+not a function.
+
+\subsection{Horizontal Line Test}
+
+Where a horizontal line is moved from top to bottom over a graph.
+
+If it intersects the curve more than once at any point, the function is
+one-to-many (not one-to-one).
+
+
+\section{Domain}
+
+The set of all possible input values for a function.
+
+\subsection{Polynomials}
+
+All polynomials have a domain of $x \in \mathbb{R}$.
+
+\subsection{Fractional Polynomials}
+
+For any function with $x$ in the denominator of a fraction, the entire
+denominator cannot equal 0.
+
+For example:
+
+$$
+f(x) = \frac{g(x)}{h(x)}
+$$
+
+Solve $h(x) = 0$ to determine the values of $x$ which are not in the domain.
+
+\subsection{Square Root}
+
+The contents of the square root must be greater than or equal to 0 (positive).
+
+For example:
+
+$$
+f(x) = \sqrt{g(x)}
+$$
+
+Solve $g(x) > 0$ to determine the values of $x$ in the domain.
+
+\subsection{Sine and Cosine}
+
+The domain for $\sin{x}$ and $\cos{x}$ is $x \in \mathbb{R}$.
+
+\subsection{Tangent}
+
+The domain for $\tan{x}$ excludes all vertical asymptotes,
+$x \neq \frac{\pi}{2} + n\pi, n \in \mathbb{Z}$.
+
+\subsection{Logarithm}
+
+The domain for $\ln{x}$ is $x > 0$, for $\ln{|x|}$ its $x \neq 0$.
+
+
+\section{Range}
+
+The set of all output values of a function.
+
+The range is a subset of the codomain.
+
+\subsection{Codomain}
+
+The set of all possible output values of a function.
+
+The codomain is part of the definition of the function. It is usually assumed
+to be all real numbers, but can be defined as something else.
+
+\subsubsection{Example}
+
+Define the function $f(x) = x^2$ with a domain $x \in \mathbb{Z}$ and codomain
+$y \in \mathbb{R}$.
+
+The range of the function is ${1, 4, 9, 16, \ldots}$, yet the codomain was
+defined to be all real numbers.
+
+Thus the range is only a subset of the codomain.
+
+\subsection{Calculating Range}
+
+\subsubsection{Polynomials}
+
+Polynomials with an odd degree have a domain and range across all real numbers.
+
+Polynomials with an even degree have a domain across all real numbers and a
+range above or below the lowest or highest turning point (depending if the
+function has a maximum or minimum turning point).
+
+\subsubsection{Hyperbolas}
+
+Draw a rough sketch of the graph to determine the range of $y$ values which the
+function never outputs.
+
+\subsubsection{Square Root}
+
+The result of a square root is greater than or equal to 0.
+
+
+\section{Asymptotes}
+
+To determine asymptotes for the function:
+
+$$
+f(x) = \frac{g(x)}{h(x)}
+$$
+
+Where $g(x)$ and $h(x)$ are polynomials.
+
+\subsection{Vertical Asymptotes}
+
+Occur when the denominator is 0.
+
+Solve $h(x) = 0$.
+
+\subsubsection{Behaviour Around Vertical Asymptotes}
+
+Given there is a vertical asymptote at $x = a$.
+
+The function will approach either positive or negative infinity either side of
+$x = a$.
+
+For the behaviour of the function as it approaches the asymptote from the left:
+
+\begin{itemize}
+\item If $f(a^-)$ is negative, the function approaches negative infinity.
+\item If $f(a^-)$ is postiive, the function approaches positive infinity.
+\end{itemize}
+
+For the behaviour of the function as it approaches the asymptote from the right:
+
+\begin{itemize}
+\item If $f(a^+)$ is negative, the function approaches negative infinity.
+\item If $f(a^+)$ is postiive, the function approaches positive infinity.
+\end{itemize}
+
+\subsubsection{Example}
+
+Given the function:
+
+$$
+f(x) = \frac{2x - 1}{x^2 + 4x}
+$$
+
+Solving the denominator equal to 0 for vertical asymptotes:
+
+$$
+\begin{aligned}
+x^2 + 4x & = 0 \\
+x(x + 4) & = 0 \\
+x & = 0, -4 \\
+\end{aligned}
+$$
+
+Thus there are two vertical asymptotes with the equations $x = 0$ and $x = -4$.
+
+Approaching the asymptote $x = -4$ from the left. Consider $f(-4^-)$:
+
+\begin{itemize}
+\item $2x$ is negative.
+\item $2x - 1$ is still negative.
+\item Consider the denominator as $x(x + 4)$.
+\item $x + 4$ is still slightly negative.
+\item $x(x + 4)$ is therefore two negatives multiplied together, forming a
+	positive.
+\item Thus overall the fraction is negative, so it approaches negative infinity.
+\end{itemize}
+
+Approaching the asymptote $x = -4$ from the right. Consider $f(-4^+)$:
+
+\begin{itemize}
+\item $2x - 1$ is negative.
+\item $x + 4$ is slightly positive.
+\item $x(x + 4)$ is therefore negative.
+\item Thus overall the fraction is positive, so it approaches positive infinity.
+\end{itemize}
+
+\subsection{Oblique Asymptote}
+
+A function will have at most 1 oblique asymptote.
+
+It only occurs when the degree of the numerator is 1 larger than the denominator.
+
+The linear equation for the asymptote can be found by simplifying the fraction
+using algebraic juggling.
+
+\subsection{Horizontal Asymptote}
+
+A function will have at most 1 horizontal asymptote.
+
+If the degree of the numerator is larger, there is no horizontal asymptote.
+
+If the degree of numerator and denominator are the same, then there is a
+horizontal asymptote at:
+
+$$
+\frac{\text{leading coefficient of $g(x)$}}{\text{leading coefficient of $h(x)$}}
+$$
+
+If the degree of the denominator is larger, then there is a horizontal
+asymptote at $y = 0$.
+
+\subsubsection{Behaviour Approaching Infinity}
+
+The horizontal asymptote is apparent due to the behaviour of the function as
+$x$ approaches $\pm \infty$.
+
+It is important whether the function approaches the horizontal asymptote from
+above or below.
+
+Consider:
+
+$$
+\frac{\text{leading term of $g(x)$}}{\text{leading term of $h(x)$}}
+$$
+
+If the fraction is positive for $x = \infty$, then the function approaches the
+horizontal asymptote from above for large positive values of $x$.
+
+If the fraction is negative for $x = \infty$, then the function approaches the
+horizontal asymptote from below for large positive values of $x$.
+
+If the fraction is positive for $x = -\infty$, then the function approaches the
+horizontal asymptote from above for large negative values of $x$.
+
+If the fraction is negative for $x = -\infty$, then the function approaches the
+horizontal asymptote from below for large negative values of $x$.
+
+
+\section{Graphing Hyperbolas}
+
+To graph the function, where $g(x)$ and $h(x)$ are polynomials:
+
+$$
+f(x) = \frac{g(x)}{h(x)}
+$$
+
+First attempt to simplify the function to a set of transformations on a normal
+hyperbola:
+
+$$
+f(x) = \frac{a}{b(x + c)} + d
+$$
+
+Otherwise:
+
+\begin{description}
+\item [Asymptotes] Find all vertical, horizontal, and oblique asymptotes and
+	the behaviour of the function either side of them.
+\item [Axis Intercepts] Place a point at all axis intercepts.
+\item [Stationary Points] Place a point at all stationary points (using
+	$f'(x) = 0$).
+\end{description}
+
+\subsection{Simplification}
+
+Given:
+
+$$
+f(x) = \frac{x + 3}{x + 3}
+$$
+
+This is equivalent to a graph of $f(x) = 1$, but with a point of discontinuity
+at $x = -3$ (an open circle).
+
+\subsection{Range}
+
+For some $f(x)$ there is a gap in the middle of the graph for which no $y$ value
+is defined.
+
+Given:
+
+$$
+f(x) = \frac{3x - 2}{x(x + 2)}
+$$
+
+To solve for this gap algebraically:
+
+$$
+\begin{aligned}
+y & = \frac{3x - 2}{x(x + 2)} \\
+yx^2 + 2yx & = 3x - 2 \qquad x \neq 0, -2 \\
+yx^2 + (2y - 3)x + 2 & = 0 \\
+\end{aligned}
+$$
+
+This is a quadratic equation in terms of $x$.
+
+For real valued $y$, the discriminant must be non-negative:
+
+$$
+\begin{aligned}
+b^2 - 4ac & \geq 0 \\
+(2y - 3)^2 - 8y & \geq 0 \\
+4y^2 - 20y + 9 & \geq 0 \\
+(2y - 9)(2y - 1) & \geq 0 \\
+\end{aligned}
+$$
+
+Consider the sign of each factor between the roots of this quadratic:
+
+\begin{center}
+\begin{tabular}{c|c|c|c}
+& $y < 0.5$ & $0.5 < y < 4.5$ & $y > 4.5$ \\
+\hline
+$2y - 9$ & - & - & + \\
+$2y - 1$ & - & + & + \\
+$(2y - 9)(2y - 1)$ & + & - & + \\
+\end{tabular}
+\end{center}
+
+Thus the range for $f(x)$ is $y < 0.5$ and $y > 4.5$.
+
+
+\section{Composite Functions}
+
+Using the output of one function as the input for another:
+
+$$
+f(g(x))
+$$
+
+\subsection{Domain and Range}
+
+\subsubsection{Method 1}
+
+Find the resulting expression for the composite function, and determine the
+domain and range of it.
+
+Beware of simplifying (especially with square roots), as it can lead to a wrong
+answer.
+
+\subsubsection{Method 2}
+
+Given the composite function $f(g(x))$.
+
+$f(x)$ must be able to cope with the output of $g(x)$ for the composite
+function to be defined.
+
+Thus the range of $g(x)$ must be a subset of the domain of $f(x)$. It must not
+output values $f(x)$ is not defined for.
+
+Thus the domain of $g(x)$ must be restricted to exclude values from its range
+for which $f(x)$ is not defined.
+
+For example, given $f(x) = \frac{1}{x - 1}$ and $g(x) = x - 5$.
+
+$f(x)$ has the domain $x \in \mathbb{R}, x \neq 1$ and range
+$y \in mathbb{R}, y \neq 0$.
+
+$g(x)$ has a domain and range $x, y \in \mathbb{R}$
+
+For the domain of $f(g(x))$:
+
+$$
+\begin{aligned}
+g(x) & \neq 1 \\
+x - 5 & \neq 1 \\
+x \neq 6 \\
+\end{aligned}
+$$
+
+Thus the domain for $f(g(x))$ is $x \in \mathbb{R}, x \neq 6$.
+
+The range for $f(g(x))$ will be the same as $f(x)$:
+$y \in \mathbb{R}, y \neq 0$.
+
+
+\section{Inverse Functions}
+
+Reverses the operations performed by a function such that:
+
+$$
+f^{-1}(f(x)) = x
+$$
+
+\subsection{Conditions for an Inverse to Exist}
+
+In order for the inverse of a function to exist as a function (and not a
+relation), $f(x)$ must be a one-to-one function.
+
+$f(x)$ must pass the horizontal line test.
+
+\subsection{Domain and Range}
+
+The domain of $f^{-1}(x)$ is the range of $f(x)$.
+
+The range of $f^{-1}(x)$ is the domain of $f(x)$.
+
+\subsection{Graphical Relation}
+
+The inverse of a function represents a reflection about the line $y = x$.
+
+The points at which $f(x)$ will intersect with its inverse are the same as the
+intersection between $f(x)$ and the line $y = x$.
+
+\subsection{Calculating}
+
+Given the function $y$:
+
+$$
+y = 3x + 4
+$$
+
+The inverse function can be found by rearranging for $x$:
+
+$$
+\begin{aligned}
+3x & = y - 4 \\
+x & = \frac{y - 4}{3} \\
+f^{-1}(x) & = \frac{x - 4}{3} \\
+\end{aligned}
+$$
+
+\subsection{Many-To-One Functions}
+
+The domain or range of many-to-one (or many-to-many) functions can be
+restricted to make them one-to-one functions.
+
+An inverse function can then be defined for the restricted domain or range.
+
+\subsubsection{Quadratics}
+
+We must decide whether to chose the positive or negative side of the quadratic
+depending on the original function.
+
+The inverse of $f(x) = x^2$ for $x < 0$ is $f^{-1}(x) = -\sqrt{x}$. We must
+chose the negative square root (rather than using $\pm\sqrt{x}$) due to the
+original restriction on the domain of $f(x)$.
+
+The inverse of $f(x) = \sqrt{x - 5}$ is $f^{-1}(x) = x^2 + 5$. We must restrict
+the domain of this inverse to accurately reflect $f(x)$.
+
+The range of $f(x)$ is the domain of $f^{-1}(x)$, thus
+$x \in \mathbb{R}, x \geq 0$.
+
+\subsubsection{Example}
+
+The function $f(x) = (x - 1)^2$ does not have an inverse function for its
+natural domain.
+
+$f(x)$ has a range $y \in \mathbb{R}, y \geq 0$.
+
+The domain can be restricted to $x \geq 1$ or $x \leq 1$. The function is
+one-to-one for this domain, and has an inverse.
+
+The inverse is $f^{-1}(x) = 1 \pm \sqrt{x}$. We must chose either the positive
+or negative square root based on our original domain restriction.
+
+For the restriction $x \geq 1$ on $f(x)$, the inverse has a domain $x \geq 0$
+and range $x \geq 1$.
+
+To satisfy this range, we must chose the positive. The inverse is then
+$f^{-1}(x) = 1 + \sqrt{x}$.
+
+
+\section{Absolute Value Function}
+
+The absolute value function $f(x) = \lvert x \rvert$ is defined as:
+
+$$
+\lvert x \rvert = \begin{cases}
+\begin{aligned}
+	x \qquad & x \geq 0, \\
+	-x \qquad & x < 0, \\
+\end{aligned}
+\end{cases}
+$$
+
+It can also be defined as:
+
+$$
+\lvert x \rvert = \sqrt{x^2}
+$$
+
+The order of the square root and square is important.
+
+All parts of the graph of any $f(x)$ that are below the x axis are reflected
+about the x axis.
+
+\subsection{Solving Equations}
+
+$\lvert x \rvert$ represents the distance of $x$ from the origin.
+
+If $\lvert x \rvert = k$, then either $x = k$ or $x = -k$.
+
+Each solution must be checked by substituting it back into the original
+equation, as false solutions can arise.
+
+\subsection{Solving Complicated Equations}
+
+Given an equation such as $2 - \lvert x + 1 \rvert = \lvert 3x + 2 \rvert$.
+
+There are four possible equations that can be formed:
+
+\begin{itemize}
+\item $2 - (x + 1) = 3x + 2$
+\item $2 - (x + 1) = -(3x + 2)$
+\item $2 + (x + 1) = 3x + 2$
+\item $2 + (x + 1) = -(3x + 2)$
+\end{itemize}
+
+These represent the intersection of each branch of the left hand function with
+each branch of the right hand one.
+
+Two of these equations will give invalid solutions, so substitute each result
+back into the original equation to check its validity.
+
+\subsubsection{Given a Graph}
+
+Given a graph of the left and right hand sides of the equation, we can eliminate
+the two equations which give invalid solutions.
+
+For each intersection between the two functions in the graph, determine on which
+branch of each function the intersection point lies.
+
+Equate the equation of each of these branches to solve for $x$.
+
+\subsubsection{Squaring}
+
+Given the equation $\lvert x + 1 \rvert = \lvert 3x + 2 \rvert$.
+
+We can also use the definition of the absolute value as $\sqrt{x^2}$ to solve
+the equation.
+
+Square both sides:
+
+$$
+(x + 1)^2 = (3x + 2)^2
+$$
+
+Expand the brackets and solve the resulting quadratic.
+
+Substitute each solution back into the original inequality to ensure their
+validity.
+
+\subsection{Solving Inequalities}
+
+$\lvert x \rvert < a$ implies the distance from $x$ to the origin is less than
+$a$. This means:
+
+$$
+-a < x < a
+$$
+
+$\lvert x \rvert > a$ implies the distance from $x$ to the origin is greater
+than $a$. This means:
+
+$$
+x < -a \qquad x > a
+$$
+
+$\lvert x - b \rvert < a$ implies the distance from $x$ to $b$ on a number line
+is less than $a$.
+
+$\lvert x - b \rvert > a$ implies the distance from $x$ to $b$ on a number line
+is greater than $a$.
+
+Since $\lvert x \rvert$ is always positive, $\lvert x \rvert > -a$ implies
+$x \in \mathbb{R}$.
+
+Also, $\lvert x \rvert < -a$ has no solutions for $x$.
+
+\subsection{Solving Complicated Inequalities}
+
+Given an inequality such as $2 - \lvert x + 1 \rvert > \lvert 3x + 2 \rvert$.
+
+Solve for each intersection point by equating the left and right hand sides.
+
+Given two solutions, $x_1$ and $x_2$, there are 2 possible cases:
+
+\begin{itemize}
+\item $x_1 < x < x_2$
+\item $x < x_1$ and $x > x_2$
+\end{itemize}
+
+Find a test value of $x$ for each case, substitute into the original inequality,
+and eliminate the incorrect case.
+
+Given there is only one solution, $x_1$, to the equation, there are also 2
+possible cases:
+
+\begin{itemize}
+\item $x < x_1$
+\item $x > x_1$
+\end{itemize}
+
+Again, find a test value of $x$ for each case, substitute into the original
+inequality, and eliminate the incorrect case.
+
+\subsubsection{Given a Graph}
+
+A graph of the two functions ($2 - \lvert x + 1 \rvert$ and
+$\lvert 3x + 2 \rvert$) allows us to determine which of the two possible cases
+is correct by inspection.
+
+Solve the inequality for 1 or 2 solutions, $x_1$ and $x_2$, using the graph to
+chose the correct branches to equate.
+
+For each case, observe which function is on top of the other, and select the
+correct range of $x$ values.
+
+
+\section{Reciprocal Function}
+
+The reciprocal graph of $f(x)$ is:
+
+$$
+\frac{1}{f(x)}
+$$
+
+\subsection{Graphing}
+
+Given a graph of $f(x)$ and asked to find the reciprocal:
+
+\begin{itemize}
+\item Roots of $f(x)$ will be vertical asymptotes on the reciprocal.
+\item The $x$ coordinate of stationary points on $f(x)$ will also be the $x$
+	coordinate of a stationary point on the reciprocal.
+\item Positive and negative points on $f(x)$ will also be positive or negative
+	on the reciprocal.
+\item $f(x)$ and its reciprocal will intersect wherever $f(x) = 1$.
+\end{itemize}
+
+\subsubsection{Behaviour Around Asymptotes}
+
+Given $f(x)$ has a root at $x_1$, the reciprocal will have a vertical asymptote
+with the equation $x = x_1$.
+We must determine the behaviour of the reciprocal around this asymptote.
+
+When approaching the asymptote from the left:
+
+\begin{itemize}
+\item If $f(x)$ is positive, the asymptote will approach positive infinity.
+\item If $f(x)$ is negative, the asymptote will approach negative infinity.
+\end{itemize}
+
+Use the same method for approaching the asymptote from the right.
+
+
+\section{Continuity}
+
+\subsection{Limit}
+
+The limit of a function at $x = a$ is defined when:
+
+$$
+\lim_{x \to a^+} f(x) = \lim_{x \to a^-} f(x)
+$$
+
+The value obtained when approaching $a$ from the left is equal to that obtained
+when approaching $a$ from the right.
+
+\subsection{Continuous}
+
+A function $f(x)$ is continuous at a point $x = a$ if:
+
+\begin{enumerate}
+\item $f(a)$ is defined
+\item $\lim_{x \to a} f(x)$ is defined
+\item $\lim_{x \to a} f(x) = f(a)$
+\end{enumerate}
+
+A function is continuous if it satisifes the above conditions for all $x$ in
+the function's domain.
+
+Informally, a function is continuous if it can be drawn without lifting the pen
+from the page.
+
+\subsection{Differentiable}
+
+A function $f(x)$ is differentiable at point $x = a$ if it is continuous at $a$,
+and:
+
+$$
+\lim_{h \to 0^+} \frac{f(a + h) - f(a)}{h} = \lim_{h \to 0^-} \frac{f(a + h) - f(a)}{h}
+$$
+
+A function is differentiable if it is continuous and satisfies the above
+equation for all $x$ in its domain.
+
+
+
+
+\chapter{Vectors}
+
+\section{Definition}
+
+A vector is a value with both magnitude and direction.
+
+A unit vector has a magnitude of 1.
+
+$\bb{i}$, $\bb{j}$, $\bb{k}$ are unit vectors in the direction of the x, y, and z axes respectively.
+
+\subsection{Magnitude}
+
+$|\bb{a}|$ is the magnitude of vector $\bb{a}$, which is defined as:
+
+$$
+\begin{aligned}
+\lvert \begin{pmatrix} x \\ y \end{pmatrix} \rvert & = \sqrt{x^2 + y^2} \\
+\lvert \begin{pmatrix} x \\ y \\ z \end{pmatrix} \rvert & = \sqrt{x^2 + y^2 + z^2} \\
+\end{aligned}
+$$
+
+\subsection{Equality}
+
+Two vectors are equal if and only if the magnitude and direction of both vectors
+are equal.
+
+For vectors in component form, all components must be equal for the vectors to
+be equal.
+
+Two or three equations can be formed form equating two vectors:
+
+$$
+\begin{pmatrix} 3a \\ 4 \end{pmatrix} = \begin{pmatrix} 6 \\ 2b \end{pmatrix}
+$$
+
+This implies $3a = 6$ and $4 = 2b$.
+
+\subsection{Parallel}
+
+Two vectors are parallel if one is a scalar multiple of the other:
+
+$$
+\bb{a} = k \bb{b}
+$$
+
+If $k$ is positive, the vectors are like parallel vectors. They point in the
+same direction.
+
+If $k$ is negative, the vectors are unlike parallel vectors. They point in
+opposite directions.
+
+If $h \bb{a} = k \bb{b}$ where $\bb{a}$ and $\bb{b}$ are not parallel, then
+$h = k = 0$.
+
+\subsection{Position Vectors}
+
+The position of a point P in space given as a direction and distance from the
+origin O:
+
+$$
+\bb{p} = \vv{OP}
+$$
+
+\subsection{Relative Vectors}
+
+Given the position vectors of two points A and B.
+
+Point B relative to A is given as $\vv{AB} = _B\bb{r}_A = \vv{OB} - \vv{OA}$.
+
+Point A relative to B is given as $\vv{BA} = _A\bb{r}_B = \vv{OA} - \vv{OB}$.
+
+\subsection{Dot Product}
+
+The dot product is defined as:
+
+$$
+\bb{a} \cdot \bb{b} = \lvert \bb{a} \rvert \lvert \bb{b} \rvert \cos{\theta}
+$$
+
+Where $\theta$ is the angle between the two vectors, when they are both pointing
+away from a common point.
+
+It can also be calculated as:
+
+$$
+\begin{pmatrix} x_1 \\ y_1 \end{pmatrix} \cdot \begin{pmatrix} x_2 \\ y_2 \end{pmatrix} = x_1 x_2 + y_1 y_2
+$$
+
+If $\bb{a}$ and $\bb{b}$ are perpendicular, then:
+
+$$
+\bb{a} \cdot \bb{b}\cdot = 0
+$$
+
+\subsubsection{Properties}
+
+The dot product has the following properties:
+
+$$
+\begin{aligned}
+\bb{a} \cdot \bb{b} & = \bb{b} \cdot \bb{a} \\
+\bb{a} \cdot (k \bb{b}) & = (k \bb{a}) \cdot \bb{b} = k (\bb{a} \cdot \bb{b}) \\
+\bb{a} \cdot \bb{a} & = \lvert \bb{a} \rvert^2 \\
+\bb{a} \cdot (\bb{b} + \bb{c}) & = \bb{a} \cdot \bb{b} + \bb{a} \cdot \bb{c} \\
+\end{aligned}
+$$
+
+\subsection{Cross Product}
+
+The cross product is defined as:
+
+$$
+\bb{a} \times \bb{b} = \lvert \bb{a} \rvert \lvert \bb{b} \rvert \sin{\theta} \hat{\bb{n}}
+$$
+
+Where $\hat{\bb{n}}$ is a unit vector perpendicular to both $\bb{a}$ and
+$\bb{b}$, called the normal.
+
+The cross product of two parallel vectors (like or unlike parallel) is 0 (as
+the angle between them is 0).
+
+The cross product of a vector with itself is 0:
+
+$$
+\bb{a} \times \bb{a} = 0
+$$
+
+\subsubsection{Area of Parallelogram}
+
+The magnitude of the cross product of two vectors $\bb{a}$ and $\bb{b}$:
+
+$$
+\lvert \bb{a} \times \bb{b} \rvert
+$$
+
+is equivalent to the area of the parallelogram bounded by $\bb{a}$ and $\bb{b}$.
+
+Thus the area of the triangle bounded by $\bb{a}$, $\bb{b}$, and
+$\bb{b} - \bb{a}$ is:
+
+$$
+\frac{1}{2} \lvert \bb{a} \times \bb{b} \rvert
+$$
+
+Proved using the definition of the cross product, relating it to to the area of
+a triangle calculated by $\frac{1}{2} a b \sin{\theta}$.
+
+\subsubsection{Angle Between Vectors}
+
+Given two vectors $\bb{a}$ and $\bb{b}$ in component form.
+
+The angle between them using the dot product is:
+
+$$
+\cos{\theta} = \frac{\bb{a} \cdot \bb{b}}{\lvert \bb{a} \rvert \lvert \bb{b} \rvert}
+$$
+
+The angle between them using the cross product is:
+
+$$
+\sin{\theta} = \frac{\lvert \bb{a} \times \bb{b} \rvert}{\lvert \bb{a} \rvert \lvert \bb{b} \rvert}
+$$
+
+\subsection{Scalar Projection}
+
+The scalar projection of a vector onto another is the distance it extends along
+it.
+
+The scalar projection of $\bb{a}$ onto $\bb{b}$ is:
+
+$$
+\lvert \bb{a} \rvert \cos{\theta} = \bb{a} \cdot \hat{\bb{b}}
+$$
+
+Where $\theta$ is the angle between the two vectors.
+
+\subsection{Vector Projection}
+
+The vector projection is a vector parallel to one vector with magnitude equal to
+the scalar projection of another vector onto that vector.
+
+The vector projection of $\bb{a}$ onto $\bb{b}$ is:
+
+$$
+\lvert \bb{a} \rvert \cos{\theta} \hat{\bb{b}} = (\bb{a} \cdot \hat{\bb{b}}) \hat{\bb{b}}
+$$
+
+\subsection{Ratio Theorem}
+
+Given points A and B. Point P divides the line $\vv{AB}$ in the ratio
+$\vv{AP} : \vv{PB} = a : b$.
+
+$\vv{OP}$ is given by:
+
+$$
+\vv{OP} = \frac{b\vv{OA} + a\vv{OB}}{a + b}
+$$
+
+If P lies outside the line segment $\vv{AB}$, then use point B as the central
+point and rearrange the above equation for $\vv{OP}$.
+
+
+\section{Lines}
+
+\subsection{Vector Equation}
+
+Vector equation for a line in direction $\bb{d}$ that passes through a point
+with position vector $\bb{a}$:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{d} \qquad \lambda \in \mathbb{R}
+$$
+
+\subsection{Dot Product Equation}
+
+2D only.
+
+Dot product form of a line perpendicular to $\bb{n}$ (the normal) that passes
+through a point with position vector $\bb{a}$ is:
+
+$$
+\bb{r} \cdot \bb{n} = \bb{a} \cdot \bb{n}
+$$
+
+The right hand side evaluates to a constant, leaving:
+
+$$
+\bb{r} \cdot \bb{n} = c \qquad c \in \mathbb{R}
+$$
+
+\subsection{Parametric Equation}
+
+Given the vector equation of a line $\bb{r} = \bb{a} + \lambda \bb{b}$.
+
+The parametric equation is:
+
+$$
+\begin{cases}
+x & = \bb{a}_x + \lambda \bb{b}_x \\
+y & = \bb{a}_y + \lambda \bb{b}_y \\
+\end{cases}
+$$
+
+\subsection{Cartesian Equation}
+
+The cartesian equation of a line in 2D is:
+
+$$
+ax + by = c
+$$
+
+The cartesian equation of a line in 3D is:
+
+$$
+ax + b = cy + d = ez + f
+$$
+
+\subsection{Conversion}
+
+\subsubsection{Vector to Dot Product in 2D}
+
+Given the vector equation of a line:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{d} \qquad \lambda \in \mathbb{R}
+$$
+
+Find a vector perpendicular to the direction for the normal.
+
+$\bb{a}$ is a point on the line.
+
+Substitute these values into the dot product equation of a line.
+
+\subsubsection{Dot Product to Vector in 2D}
+
+Given the dot product equation of a line:
+
+$$
+\bb{r} \cdot \bb{n} = c
+$$
+
+Find a vector perpendicular to the normal for the direction of the line.
+
+Find a point $\bb{a}$ that satisfies the dot product equation as a point on the
+line.
+
+Substitute these values into the vector equation of a line.
+
+\subsubsection{Vector to Parametric}
+
+Let $\bb{r} = \begin{pmatrix} x \\ y \end{pmatrix}$:
+
+$$
+\begin{pmatrix} x \\ y \end{pmatrix} = \bb{a} + \lambda \bb{d} \qquad \lambda \in \mathbb{R}
+$$
+
+Gives the parametric equation:
+
+$$
+\begin{cases}
+\begin{aligned}
+x & = \bb{a}_x + \lambda \bb{d}_x \\
+y & = \bb{a}_y + \lambda \bb{d}_y \\
+\end{aligned}
+\end{cases}
+$$
+
+\subsubsection{Parametric to Vector}
+
+Perform by inspection from the coefficient of $\lambda$ and the constant
+term.
+
+\subsubsection{Vector to Cartesian}
+
+Find the two parametric equations:
+
+$$
+\begin{aligned}
+x & = \bb{a}_x + \lambda \bb{d}_x \\
+y & = \bb{a}_y + \lambda \bb{d}_y \\
+\end{aligned}
+$$
+
+Rearrange for $\lambda$ (assuming both components of $\bb{d}$ are non-zero):
+
+$$
+\begin{aligned}
+\lambda & = \frac{x - \bb{a}_x}{\bb{d}_x} \\
+\lambda & = \frac{y - \bb{a}_y}{\bb{d}_y} \\
+\end{aligned}
+$$
+
+Equate the two equations:
+
+$$
+\frac{x - \bb{a}_x}{\bb{d}_x} = \frac{y - \bb{a}_y}{\bb{d}_y}
+$$
+
+If one of the components of $\bb{d}$ is 0, the line will be perpendicular to
+one of the axes.
+
+For example, if $\bb{d}_x = 0$, the parametric equations are:
+
+$$
+\begin{aligned}
+x & = \bb{a}_x \\
+y & = \bb{a}_y + \lambda \bb{d}_y \\
+\end{aligned}
+$$
+
+Gives the cartesian equation:
+
+$$
+x = \bb{a}_x
+$$
+
+Which is a line parallel to the y axis.
+
+\subsubsection{Dot Product to Cartesian in 2D}
+
+Let $\bb{r} = \begin{pmatrix} x \\ y \end{pmatrix}$:
+
+$$
+\begin{pmatrix} x \\ y \end{pmatrix} \cdot \bb{n} = c
+$$
+
+Gives the cartesian equation:
+
+$$
+\bb{n}_x x + \bb{n}_y y = c
+$$
+
+\subsubsection{Cartesian to Dot Product in 2D}
+
+Use the coefficients of $x$ and $y$ to determine the components of the normal.
+
+The constant on the right hand side remains the same.
+
+\subsection{Construction}
+
+\subsection{From Two Points}
+
+Given the points $\bb{a}$ and $\bb{b}$, the direction of the line is:
+
+$$
+\bb{d} = \bb{a} - \bb{b}
+$$
+
+The vector equation is:
+
+$$
+\bb{r} = \bb{a} + \lambda (\bb{a} - \bb{b})
+$$
+
+\subsection{Parallel Lines}
+
+Two lines are parallel if:
+
+\begin{itemize}
+\item The two direction vectors are parallel.
+\item The direction vector and the normal are perpendicular.
+\item The two normals are parallel.
+\end{itemize}
+
+\subsection{Perpendicular Lines}
+
+Two lines are perpendicular if:
+
+\begin{itemize}
+\item The two direction vectors are perpendicular.
+\item The direction vector and normal are parallel.
+\item The two normals are perpendicular.
+\end{itemize}
+
+\subsection{Collisions}
+
+Two objects travelling with constant velocity must be in the same location at
+the same time to collide:
+
+$$
+\bb{r}_1 + t_1 \bb{v}_1 = \bb{r}_2 + t_2 \bb{v}_2
+$$
+
+The objects collide if $t_1 = t_2$ and $t_1 \geq 0$.
+
+
+\section{Circles and Spheres}
+
+The vector equation for a circle or sphere with centre at position vector
+$\bb{d}$ and radius $r$ is:
+
+$$
+\lvert \bb{r} - \bb{d} \rvert = r
+$$
+
+\subsection{Cartesian Equation}
+
+Expanding the vector equation:
+
+$$
+\begin{aligned}
+\lvert \begin{pmatrix} x \\ y \end{pmatrix} - \begin{pmatrix} a \\ b \end{pmatrix} \rvert & = r \\
+(x - a)^2 + (y - b)^2 & = r^2 \\
+\end{aligned}
+$$
+
+\subsection{Parametric Equation}
+
+The parametric equation for a sphere is unnecessary.
+
+A circle with centre $(a, b)$ and radius $r$ can be written in parametric form
+as:
+
+$$
+\begin{cases}
+x = r \cos{\theta} + a \\
+y = r \sin{\theta} + b \\
+\end{cases}
+$$
+
+Using the Pythagorean trigonometric identity to eliminate $\theta$ to arrive at
+the cartesian equation:
+
+$$
+\begin{cases}
+(x - a)^2 = r^2 \cos^2{\theta} \\
+(y - b)^2 = r^2 \sin^2{\theta} \\
+\end{cases}
+$$
+
+Add both equations together:
+
+$$
+\begin{aligned}
+(x - a)^2 + (y - b)^2 & = r^2 \cos^2{\theta} + r^2 \sin^2{\theta} \\
+(x - a)^2 + (y - b)^2 & = r^2 \\
+\end{aligned}
+$$
+
+
+\section{Ellipses}
+
+2D only.
+
+\subsection{Parametric Equation}
+
+An ellipse with centre $(a, b)$, horizontal radius $r_h$ and vertical radius
+$r_v$ has the parametric equation:
+
+$$
+\begin{cases}
+\begin{aligned}
+x & = r_h \cos{\lambda} + a \\
+y & = r_v \sin{\lambda} + b \\
+\end{aligned}
+\end{cases}
+$$
+
+\subsection{Cartesian Equation}
+
+An ellipse with centre $(a, b)$, horizontal radius $r_h$ and vertical radius
+$r_v$ has the Cartesian equation:
+
+$$
+(\frac{x - a}{r_h})^2 + (\frac{y - b}{r_v})^2 = 1
+$$
+
+\subsection{Conversions}
+
+\subsubsection{Parametric to Cartesian}
+
+Given the parametric equation for an ellipse:
+
+$$
+\begin{cases}
+\begin{aligned}
+x & = r_h \cos{\lambda} + a \\
+y & = r_v \sin{\lambda} + b \\
+\end{aligned}
+\end{cases}
+$$
+
+Move $a$ and $b$ to the left hand side of the equations and divide by the
+radii:
+
+$$
+\begin{cases}
+\begin{aligned}
+\frac{x - a}{r_h} & = \cos{\lambda} \\
+\frac{y - b}{r_v} & = \sin{\lambda} \\
+\end{aligned}
+\end{cases}
+$$
+
+Square each equation and add them together:
+
+$$
+(\frac{x - a}{r_h})^2 + (\frac{y - b}{r_v})^2 = \cos^2{\lambda} + \sin^2{\lambda}
+$$
+
+Use the Pythagorean identity to eliminate $\lambda$:
+
+$$
+(\frac{x - a}{r_h})^2 + (\frac{y - b}{r_v})^2 = 1
+$$
+
+
+\section{Planes}
+
+3D only.
+
+\subsection{Vector Equation}
+
+The vector equation for a plane that passes through a point with position
+vector $\bb{a}$ and extends in directions $\bb{b}$ and $\bb{c}$.
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{b} + \mu \bb{c}
+$$
+
+$\bb{b}$ and $\bb{c}$ are two vectors parallel to the plane.
+
+\subsection{Dot Product Form}
+
+The equation for a plane in dot product form with normal $\bb{n}$ that passes
+through a point with position vector $\bb{a}$:
+
+$$
+\bb{r} \cdot \bb{n} = \bb{n} \cdot \bb{a}
+$$
+
+Since the right hand side evaluates to a constant, this is equivalent to:
+
+$$
+\bb{r} \cdot \bb{n} = c \qquad c \in \mathbb{R}
+$$
+
+\subsection{Parametric Form}
+
+The parametric form of a plane from its vector equation is:
+
+$$
+\begin{cases}
+\begin{aligned}
+x & = \bb{a}_x + \lambda \bb{b}_x + \mu \bb{c}_x \\
+y & = \bb{a}_y + \lambda \bb{b}_y + \mu \bb{c}_y \\
+z & = \bb{a}_z + \lambda \bb{b}_z + \mu \bb{c}_z \\
+\end{aligned}
+\end{cases}
+$$
+
+\subsection{Cartesian Form}
+
+The cartesian form of a plane is:
+
+$$
+ax + by + cz = d
+$$
+
+\subsection{Conversions}
+
+\subsubsection{Vector to Dot Product}
+
+Given the equation of a plane in vector form:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{b} + \mu \bb{c}
+$$
+
+The normal is the cross product of $\bb{b}$ and $\bb{c}$:
+
+$$
+\bb{n} = \bb{b} \times \bb{c}
+$$
+
+$\bb{a}$ is a point on the plane.
+
+Substitute these values into the dot product equation for a plane.
+
+\subsubsection{Dot Product to Vector}
+
+Find any two non-parallel vectors that are perpendicular to the normal (dot
+product is 0).
+
+Find a point that satisfies the dot product equation for the plane.
+
+Substitute these values into the vector equation for a plane.
+
+\subsubsection{Dot Product to Cartesian}
+
+Expand $\bb{r}$ into its components:
+
+$$
+\begin{pmatrix} x \\ y \\ z \end{pmatrix} \cdot \bb{n} = c
+$$
+
+Simplify the dot product:
+
+$$
+\bb{n}_x x + \bb{n}_y y + \bb{n}_z z = c
+$$
+
+\subsubsection{Cartesian to Dot Product}
+
+Use the coefficients of $x$, $y$, and $z$ to find the components of the normal.
+
+\subsubsection{Vector to Cartesian}
+
+Convert the vector equation into dot product form, then the dot product form
+to cartesian.
+
+\subsubsection{Cartesian to Vector}
+
+Convert the cartesian into dot product form, then the dot product form to
+vector.
+
+\subsection{Construction}
+
+\subsubsection{From 2 Points and Parallel Vector}
+
+Given two points at position vectors $\bb{a}$ and $\bb{b}$ that lie on the
+plane, and a vector $\bb{c}$ parallel to the plane.
+
+Find a second direction from the two points:
+
+$$
+\bb{d} = \bb{a} - \bb{b}
+$$
+
+Substitute into the vector equation for a plane:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{c} + \mu (\bb{a} - \bb{b})
+$$
+
+\subsubsection{From 3 Points}
+
+Given three points at position vectors $\bb{a}$, $\bb{b}$ and $\bb{c}$ that lie
+on the plane.
+
+Find 2 direction vectors from the 3 points and substitute into the vector
+equation of a plane:
+
+$$
+\bb{r} = \bb{a} + \lambda (\bb{a} - \bb{b}) + \mu (\bb{a} - \bb{c})
+$$
+
+\subsubsection{From 2 Lines}
+
+Use the directions of the two lines as two vectors parallel to the plane, and
+any point on either of the lines as a point on the plane.
+
+
+\section{Angle Between}
+
+Usually, a question will ask for the acute angle. If the angle found is obtuse,
+use $180^\circ - \theta$.
+
+\subsection{Two Lines}
+
+Find the angle between the two direction vectors of the lines.
+
+\subsection{Line and Plane}
+
+\subsubsection{Plane in Dot Product Form}
+
+Find the angle $\theta$ between the direction of the line and the plane's normal.
+
+The angle between the plane and line is then $\frac{\pi}{2} - \theta$.
+
+Convert to an acute angle.
+
+\subsubsection{Plane in Vector Form}
+
+Convert the plane to dot product form and use the method above.
+
+\subsection{Two Planes}
+
+Convert both planes to dot product form and find the angle between the two
+normals.
+
+
+\section{Point On Surface Tests}
+
+Given a point with position vector $\bb{p}$.
+
+\subsection{Line}
+
+Equate the point and the equation of the line:
+
+$$
+\bb{p} = \bb{a} + \lambda \bb{b}
+$$
+
+Form 2 or 3 equations for $\lambda$:
+
+$$
+\begin{aligned}
+\bb{p}_x & = \bb{a}_x + \lambda \bb{b}_x \\
+\bb{p}_y & = \bb{a}_y + \lambda \bb{b}_y \\
+\end{aligned}
+$$
+
+Solve for $\lambda$ using each equation.
+
+If the values of $\lambda$ are consistent, the point lies on the line.
+
+\subsection{Plane}
+
+\subsubsection{Vector Form}
+
+Equate the point and the equation of the plane:
+
+$$
+\bb{p} = \bb{a} + \lambda \bb{b} + \mu \bb{c}
+$$
+
+Solve for $\lambda$ and $\mu$ using equations formed from the x and y
+components.
+
+Substitute these values into the equation formed from the z components. If the
+values are consistent, the point lies on the plane.
+
+\subsubsection{Dot Product Form}
+
+Substitute the point into the equation of the plane:
+
+$$
+\bb{p} \cdot \bb{n} = c
+$$
+
+Calculate the dot product and if it is consistent with the constant $c$, the
+point lies on the plane.
+
+\subsection{Sphere}
+
+Substitute the point into the equation for the sphere:
+
+$$
+\lvert \bb{p} - \bb{d} \rvert = r
+$$
+
+If the left hand side is less than $r$, the point lies inside the sphere.
+
+If the left hand side equals $r$, the point lies on the sphere.
+
+If the left hand side is greater than $r$, the point lies outside the sphere.
+
+
+\section{Line On Surface Tests}
+
+\subsection{Plane}
+
+A line lies on a plane if its direction is parallel to the plane, and the line
+and plane have a common point.
+
+Calculate the normal to the plane, and check it is perpendicular to the line's
+direction.
+
+Check a point on the line satisfies the equation for the plane.
+
+
+\section{Intersections}
+
+\subsection{Line and Line}
+
+Given the equations of two lines:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a}_1 + \lambda \bb{d}_1 \\
+\bb{r}_2 & = \bb{a}_2 + \mu \bb{d}_2 \\
+\end{aligned}
+$$
+
+Equate them:
+
+$$
+\bb{a}_1 + \lambda \bb{d}_1 = \bb{a}_2 + \mu \bb{d}_2
+$$
+
+Solve for $\lambda$ and $\mu$ using equations formed from the x and y
+components.
+
+Substitute the two values into the equation formed from the z component. If it
+is consistent, the lines intersect.
+
+Substitute $\lambda$ or $\mu$ back into one of the original line equations to
+find the point of intersection.
+
+\subsection{Line and Plane}
+
+\subsubsection{Vector Equation}
+
+Given the equation of a line and plane:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a} + \lambda \bb{b} \\
+\bb{r}_2 & = \bb{c} + \mu \bb{d} + \alpha \bb{e} \\
+\end{aligned}
+$$
+
+Equate them:
+
+$$
+\bb{a} + \lambda \bb{b}  = \bb{c} + \mu \bb{d} + \alpha \bb{e}
+$$
+
+Solve for $\lambda$, $\mu$, and $\alpha$.
+
+Substitute $\lambda$ back into the original line equation to find the point of
+intersection.
+
+\subsubsection{Dot Product Equation}
+
+Given the equation of a line and plane:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a} + \lambda \bb{b} \\
+\bb{r}_2 \cdot \bb{n} & = c \\
+\end{aligned}
+$$
+
+Substitute the line equation into the plane equation:
+
+$$
+(\bb{a} + \lambda \bb{b}) \cdot \bb{n} = c
+$$
+
+Expand the dot product and solve for $\lambda$.
+
+Substitute $\lambda$ back into the original line equation to find the point of
+intersection.
+
+\subsection{Line and Circle}
+
+Given the equation of a line and circle:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a} + \lambda \bb{b} \\
+\lvert \bb{r}_2 - \bb{c} \rvert & = r \\
+\end{aligned}
+$$
+
+Substitute the line equation into the circle equation:
+
+$$
+\lvert \bb{a} + \lambda \bb{b} - \bb{c} \rvert = r
+$$
+
+This will simplify to a quadratic in terms of $\lambda$.
+
+If there are two solutions, the line intersects the circle and is not
+tangential to it.
+
+If there is one solution, the line is tangent to the circle.
+
+If there are no solutions, the line does not intersect the circle.
+
+\subsection{Plane and Plane}
+
+Two planes intersect along a line.
+
+The line has a direction perpendicular to the two normals of the planes.
+
+A point on the line is a point common to both planes (satisfies both plane
+equations).
+
+\subsection{Circle and Axis Plane}
+
+For the xy-plane, $z = 0$.
+
+For the xz-plane, $y = 0$.
+
+For the yz-plane, $x = 0$.
+
+Find the cartesian equation of a sphere:
+
+$$
+(x - a)^2 + (y - b)^2 + (z - c)^2 = r^2
+$$
+
+Substitute either $x = 0$, $y = 0$, or $z = 0$ depending on the axis plane.
+
+The equation is the cartesian equation for the intersecting circle on this
+plane.
+
+
+\section{Minimum Distance}
+
+The minimum distance between two vector surfaces.
+
+\subsection{Point and Line}
+
+Given a point at position vector $\bb{p}$ and line:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{d}
+$$
+
+\subsubsection{Dot Product}
+
+The closest distance is when the vector between an arbitrary point on the line
+and $\bb{p}$ and the direction of the line are perpendicular.
+
+The vector between $\bb{p}$ and an aribtrary point on the line is:
+
+$$
+\bb{p} - \bb{r} = \bb{p} - \bb{a} - \lambda \bb{d}
+$$
+
+This must be perpendicular to the direction of the line:
+
+$$
+(\bb{p} - \bb{a} - \lambda \bb{d}) \cdot \bb{d} = 0
+$$
+
+Solve for $\lambda$.
+
+Substitute $\lambda$ back into the line equation to get the closest point on
+the line (point $\bb{c}$)
+
+Find the magnitude $\lvert \bb{p} - \bb{c} \rvert$ for distance between the
+point and the closest point on the line ($\bb{c}$).
+
+\subsubsection{Cross Product}
+
+Chose some aribtrary point on the line Q.
+
+Let the point closest to P on the line be C.
+
+Form a right angled triangle QPC.
+
+Let $\theta$ be the angle at Q (ie. the angle between $\vv{QP}$ and
+$\vv{QC}$).
+
+The perpendicular distance is thus $\lvert \vv{QP} \rvert \sin{\theta}$.
+
+This can be written as:
+
+$$
+\begin{aligned}
+& = \frac{\lvert \vv{QP} \rvert \lvert \vv{QC} \rvert \sin{\theta}}{\lvert \vv{QC} \rvert} \\
+& = \frac{\lvert \vv{QP} \times \vv{QC} \rvert}{\lvert \vv{QC} \rvert} \\
+\end{aligned}
+$$
+
+Which is equivalent to:
+
+$$
+\frac{\lvert \bb{p} - \bb{a} \times \bb{d} \rvert}{\lvert \bb{d} \rvert}
+$$
+
+\subsection{Point and Plane}
+
+Given the point $\bb{p}$.
+
+\subsubsection{Vector Equation of Plane}
+
+Given the vector equation of a plane:
+
+$$
+\bb{r} = \bb{a} + \lambda \bb{b} + \mu \bb{c}
+$$
+
+The vector between an arbitrary point on the plane and $\bb{p}$ will be
+perpendicular to the directions of the plane:
+
+$$
+\begin{aligned}
+(\bb{p} - \bb{a} - \lambda \bb{b} - \mu \bb{c}) \cdot \bb{b} & = 0 \\
+(\bb{p} - \bb{a} - \lambda \bb{b} - \mu \bb{c}) \cdot \bb{c} & = 0 \\
+\end{aligned}
+$$
+
+Solve simultaneously for $\lambda$ and $\mu$.
+
+Substitute back into the equation for the plane to find the closest point and
+distance.
+
+Alternatively, determine the normal and use the below method.
+
+\subsubsection{Dot Product Equation of Plane}
+
+Given the dot product equation of a plane:
+
+$$
+\bb{r} \cdot \bb{n} = c
+$$
+
+Find a point on the plane $\bb{a}$.
+
+Find the vector between $\bb{a}$ and $\bb{p}$, $\vv{AP}$.
+
+Find the scalar projection of this onto the normal $\bb{n}$.
+
+\subsection{Point and Sphere}
+
+Equivalent to the distance between the point and the centre of the sphere,
+subtract the radius.
+
+\subsection{Line and Line}
+
+\subsubsection{Not Parallel}
+
+Find a vector $\bb{n}$ perpendicular to the directions of both lines.
+
+Find the vector between two points on the lines.
+
+Find the scalar projection of this onto $\bb{n}$.
+
+\subsubsection{Parallel}
+
+Pick a point on one of the lines.
+
+Find the closest distance between this point and the other line using the
+method above.
+
+\subsection{Line and Parallel Plane}
+
+Pick a point on the line.
+
+Find the closest distance between this point and the plane using the method
+above.
+
+\subsection{Line and Sphere}
+
+Find the closest distance between the line and the centre of the sphere, then
+subtract the radius.
+
+\subsection{Plane and Parallel Plane}
+
+Pick a point on one of the planes.
+
+Find the closest distance between this point and the other plane using the
+method above.
+
+\subsection{Plane and Sphere}
+
+Find closest distance between plane and centre of sphere, then subtract the
+radius.
+
+\subsection{Sphere and Sphere}
+
+Find the distance between the two centres, then subtract both radii.
+
+
+\section{Closest Approach}
+
+The closest distance between two objects travelling in defined paths. Cannot
+use above methods, as the position of the objects depends on the time.
+
+For two objects travelling in straight lines, this can be solved using relative
+velocities and the methods above.
+
+For objects not travelling in straight lines, requires calculus to solve.
+Find an expression for the distance between the two objects at any time, then
+minimise this function.
+
+\subsection{Lines}
+
+Given two objects travelling in the lines:
+
+$$
+\begin{aligned}
+\bb{r}_1 & = \bb{a}_1 + t \bb{v}_1 \\
+\bb{r}_2 & = \bb{a}_2 + t \bb{v}_2 \\
+\end{aligned}
+$$
+
+Find the position of object 2 relative to object 1, $_2\bb{r}_1$.
+
+Find the velocity of object 2 relative to object 1, $_2\bb{v}_1$.
+
+Form an equation of motion for object 2 relative to object 1:
+
+$$
+\bb{r} = _2\bb{r}_1 + _2\bb{v}_1 t
+$$
+
+Minimise the distance between this line and the origin (the location of object
+1) to find the closest time and distance they are apart.
+
+
+
+
+\chapter{Systems of Equations}
+
+\section{Definition}
+
+Multiple variables to be solved simultaneously:
+
+$$
+\begin{cases}
+\begin{aligned}
+3x + 4y - z & = 4 \\
+2x + 9y + 5z & = 10 \\
+-x - 5y + z & = 12 \\
+\end{aligned}
+\end{cases}
+$$
+
+We require as many unique equations as variables in order to fully solve the
+system.
+
+\subsection{Matrix Form}
+
+Each column represents a variable.
+
+The final column represents the constant on the right hand side of each of the
+three equations.
+
+Each row represents the coefficients of the variables in one equation.
+
+For example, the system of equations:
+
+$$
+\begin{cases}
+\begin{aligned}
+ 3x + 4y - z & = 4  \\
+2x + 9y + 5z & = 10 \\
+ -x - 5y + z & = 12 \\
+\end{aligned}
+\end{cases}
+$$
+
+Can be written in matrix form as:
+
+$$
+\begin{bmatrix}
+ 3 &  4 & -1 & 4  \\
+ 2 &  9 &  5 & 10 \\
+-1 & -5 &  1 & 12 \\
+\end{bmatrix}
+$$
+
+The leading diagonal is the diagonal line of coefficients starting at the top
+left corner, moving down and to the right.
+
+\subsection{Elementary Row Operations}
+
+Elementary row operations on a system of equations in matrix form include:
+
+\begin{itemize}
+\item Reordering rows.
+\item Multiplying or dividing a row by a constant.
+\item Adding or subtracting two rows from each other.
+\end{itemize}
+
+To perform a series of elementary row operations, we assign a row to the desired
+combination of these operations.
+
+\subsection{Row Echelon Form}
+
+Where all coefficients below the leading diagonal of a system of equations in
+matrix form are 0.
+
+For example:
+
+$$
+\begin{bmatrix}
+8 & 1 & -3 & -2 \\
+0 & 2 &  2 &  4 \\
+0 & 0 & -1 &  5 \\
+\end{bmatrix}
+$$
+
+Matrices can be manipulated using elementary row operations into row echelon
+form.
+
+\subsection{Solving}
+
+To solve a system of equations, write them in matrix form, manipulate the matrix
+into row echelon form, and solve for each variable.
+
+In the example above:
+
+$$
+\begin{aligned}
+z & = -5 \\
+2y + 2 \times -5 & = 4 \\
+y & = 7 \\
+8x + 1 \times 7 - 3 \times -5 & = -2 \\
+x & = -3 \\
+\end{aligned}
+$$
+
+Using this process to solve simultaneous equations is called Gaussian
+Elimination.
+
+
+\section{No Solutions}
+
+Once a system of equations in matrix form is reduced to row echelon form, the
+system has no solutions if all variables in one row have coefficients of 0,
+with a non-zero constant in the final column.
+
+For example:
+
+$$
+\begin{bmatrix}
+a & b & c & d \\
+0 & e & f & g \\
+0 & 0 & 0 & h \\
+\end{bmatrix}
+$$
+
+The final row implies $0x + 0y + 0z = h$, where $h \neq 0$. This equation has
+no solutions.
+
+Thus the system itself has no solutions.
+
+
+\section{Infinite Solutions}
+
+Once a system of equations in matrix form is reduced to row echelon form, the
+system has no solutions if all variables in one row have coefficients of 0,
+with an additional 0 in the final column.
+
+For example:
+
+$$
+\begin{bmatrix}
+a & b & c & d \\
+0 & e & f & g \\
+0 & 0 & 0 & 0 \\
+\end{bmatrix}
+$$
+
+The final row implies $0x + 0y + 0z = 0$.
+
+There is not enough information to uniquely solve the system, thus the system
+has infinitely many solutions.
+
+If any row in the system is a multiple of another, the system has infinite
+solutions.
+
+
+\section{Conditions for Infinite or No Solutions}
+
+Given the system of equations, where $p, q \in \mathbb{R}$:
+
+$$
+\begin{cases}
+\begin{aligned}
+x - y + 2z & = 1 \\
+2x - 5y + 5z & = 9 \\
+3x + 3y + pz & = q \\
+\end{aligned}
+\end{cases}
+$$
+
+The row echelon form matrix is:
+
+$$
+\begin{bmatrix}
+1 & -1 & 2 & 1 \\
+0 & -3 & 1 & 7 \\
+0 & 0 & p - 4 & q + 11 \\
+\end{bmatrix}
+$$
+
+The system has a unique solution when the coefficient of $z$ in the final row
+is non-zero:
+
+$$
+\begin{aligned}
+p - 4 \neq 0 \\
+p \neq 4 \\
+\end{aligned}
+$$
+
+This is written as: $p, q \in \mathbb{R}, p \neq 4$
+
+The system has no solutions when $p = 4$ and $q \in \mathbb{R}, q \neq -11$.
+
+The system has infinite solutions when $p = 4$ and $q = -11$.
+
+
+\section{Graphical Representation}
+
+Each equation in the system can be represented by a 3D plane:
+
+\begin{description}
+\item [Unique Solution] When the 3 planes intersect at a single point.
+\item [Infinite Solutions] When the 3 planes intersect in a single line.
+\item [No Solutions] When the 3 planes intersect in 3 separate lines.
+\end{description}
+
+
+
+
+\chapter{Probability}
+
+\textbf{Population parameters} or \textbf{population statistics} refer to
+pieces of information derived in consideration of the entire population.
+
+\textbf{Sample statistics} refer to pieces of information derived in
+consideration of only a sample from the population.
+
+The \textbf{standard error} is equivalent to the standard deviation.
+
+Sample statistics approximate population statistics if the sample is unbiased.
+
+Sample statistics usually are notated with a ``hat":
+
+$$
+\hat{\mu} \quad \hat{\sigma} \quad \hat{p}
+$$
+
+
+\section{Distribution of Sample Means}
+
+Given a random variable $X$ with an unknown distribution. $X$ has a mean $\mu$
+and standard deviation $\sigma$ (population statistics).
+
+A \textbf{sample mean} is the mean of a sample taken from $X$, written as
+$\hat{\mu}$.
+
+If we take a number of samples from $X$ and calculate their sample means, we
+can find a \textbf{distribution of sample means}.
+
+\subsection{Central Limit Theorem}
+
+The \textbf{Central Limit Theorem} states that the distribution of sample means
+approximates a normal distribution with mean:
+
+$$
+\hat{\mu} = \mu
+$$
+
+and standard deviation:
+
+$$
+\hat{\sigma} = \frac{\sigma}{\sqrt{n}}
+$$
+
+Where $n$ is the sample size.
+
+The mean of all sample means ($\hat{\mu}$) approaches the population mean
+($\mu$) as the sample size increases.
+
+The standard deviation of the distribution of sample means decreases as the
+sample size increases.
+
+For a population distributed according to a non-uniform or unknown distribution,
+a sample size of $n \geq 30$ is required for the distribution of sample means to
+adequately approximate a normal distribution.
+
+For a population that is normally distributed, there is no restriction on the
+sample size required for the distribution of sample means to approximate a
+normal distribution.
+
+\subsection{Unknown Population Statistics}
+
+If the population mean $\mu$ and standard deviation $\sigma$ are unknown, then
+we can approximate these using a point estimate from a single sample.
+
+Given a single sample from the population with a mean $\hat{\mu}$ and standard
+deviation $\hat{\sigma}$, the distribution of sample means can be approximated
+by a normal distribution with mean $\hat{\mu}$ and standard deviation:
+
+$$
+\frac{\hat{\sigma}}{\sqrt{n}}
+$$
+
+\subsection{Sample Mean Probabilities}
+
+Knowing that sample means are normally distributed allows us to:
+
+\begin{itemize}
+\item Estimate the probability of a sample having a mean that lies within a
+	given interval.
+\item Determine if a sample mean is unexpectedly high or low.
+\end{itemize}
+
+\subsection{Significant Difference}
+
+A \textbf{significant difference} at the $a$\% level indicates that the sample
+mean lies outside of $a$\% of all sample means.
+
+It is either in the top or bottom $\frac{a}{2}$\% of all sample means.
+
+\subsection{Sample Mean Confidence Intervals}
+
+Similar to sample proportions, we can apply the Central Limit Theorem to infer
+confidence intervals for the population mean from sample statistics.
+
+Given a sample of size $n$ ($n \geq 30$) for a population of an unknown
+distribution. The sample has a mean $\hat{\mu}$ and standard deviation
+$\hat{\sigma}$.
+
+The distributions of sample means will be a normal distribution with mean
+$\hat{\mu}$ and standard deviation:
+
+$$
+\frac{\hat{\sigma}}{\sqrt{n}}
+$$
+
+We can be $a$\% confident that the population mean will lie within the interval:
+
+$$
+\hat{\mu} - k \frac{\hat{\sigma}}{\sqrt{n}} \leq \mu \leq \hat{\mu} + k \frac{\hat{\sigma}}{\sqrt{n}}
+$$
+
+Where $k$ is the corresponding number of standard deviations for an $a$\%
+confidence interval:
+
+\begin{itemize}
+\item 90\% confidence interval has $k = 1.645$
+\item 95\% confidence interval has $k = 1.96$
+\item 99\% confidence interval has $k = 2.576$
+\end{itemize}
+
+Similar to sample proportions, in a set of $m$ samples, we would expect $a$\%
+of samples to have a mean that lies within an $a$\% confidence interval.
+
+\end{document}

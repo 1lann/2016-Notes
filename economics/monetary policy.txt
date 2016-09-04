@@ -1,0 +1,42 @@
+
+Monetary Policy
+
+- definition
+	- cash rate definition
+	- rba features
+- objectives
+	- priorities
+
+- market operations
+	Market operations refers to the mechanism through which the RBA affects the cash rate, which is the rate charged between financial institutions for overnight loans in the short term money market, in which the RBA conducts their operations. As part of their operating license, a financial institution must hold an Exchange Settlement Account (ESA) with the RBA, which is used for transactions between financial institutions. The RBA require the account to have a positive balance at the close of business each day. In order to achieve this, financial institutions loan money to each other overnight, charged at the cash rate, which is therefore determined by the supply and demand for funds in the market. A larger supply of funds decreases the demand for loans at higher interest rates, causing the cash rate to decrease. The RBA affects the cash rate by influencing this supply of funds through buying and selling Commonwealth Government Securities (bonds), or short term repurchase agreements (repos). To lower the cash rate (expansionary policy), the RBA will buy existing government bonds in the market from financial institutions, increasing the supply of cash in the market, lowering the cash rate. This is demonstrated in the following diagram, where the RBA has increased the supply of funds:
+	[diagram]
+	The supply curve is vertical to represent the RBA's ability to absolutely control the supply of funds in the market.
+
+	As a requirement of their operating license, financial institutions are required to hold an Exchange Settlement Account (ESA) with the Reserve Bank of Australia (RBA), which is used to complete day to day transactions between finanical institutions. The RBA requires that the account have a positive balance at the close of business each day. In order to achieve this, financial institutions will loan money to each other overnight in the short term money market. Lenders charge interest on these loans at the cash rate, which is determined by the supply and demand for funds in the short term money market. A larger supply of funds will decrease demand for loans at higher interest rates, causing the cash rate to fall. The RBA affects this supply of funds by buying and selling Commonwealth Government Securities (bonds), or short term repurchase agreements (repos). By buying bonds off financial institutions and thus injecting funds into the market, the RBA increase the supply of funds, reducing the cash rate. This is demonstrated in the following diagram, where an increase in the quantity of funds causes a 0.25% decrease in the cash rate from 1.75% to 1.5%:
+
+	The vertical supply curve represents the RBA's ability to absolutely control the supply of funds in the market.
+
+
+	Market operations refers to the mechanism through which the Reserve Bank of Australia (RBA) affects the cash rate, or the rate charged for overnight loans between financial institutions in the short term money market. As a requirement of their operating license, these institutions are required to hold an Exchange Settlement Account (ESA) with the RBA, which is used to complete day to day transactions. The RBA require the account have a positive balance by the close of business each day. In order to achieve this, institutions loan each other money overnight at the cash rate, which is determined by the supply and demand of funds in the short term money market. A larger supply of funds will decrease demand for loans at higher interest rates, causing the cash rate to fall. The RBA affects this supply of funds by buying and selling Commonwealth Government Securities (bonds), or short term repurchase agreements (repos). By buying bonds off financial institutions and thus injecting funds into the market, the RBA increase the supply of funds, reducing the cash rate. This is demonstrated in the following diagram, where an increase in the quantity of funds causes a 0.25% decrease in the cash rate from 1.75% to 1.5%:
+
+	The vertical supply curve represents the RBA's ability to absolutely control the supply of funds in the market.
+
+- transmission mechanism
+	In reducing the cash rate, the RBA lowers the cost of overnight loans for financial institutions, reducing their operating costs. This prompts them to lower market interest rates for consumers and firms. Additionally, following the announcement by the RBA of a cash rate cut, business and consumer confidence are expected to rise in anticipation of increasing aggregate demand causing a lift in sales and profits for firms, and disposable income for consumers.
+
+	Reduced market interest rates affect most of the components of aggregate demand. In relation to consumption, lower market interest rates reduce the variable rate paid by consumers on loans such as mortgages, decreasing the size of interest repayments on existing debt. Since most consumers are net borrowers, this will increase household disposable income, causing an increase in consumption. In addition, lower market interest rates reduce the cost of financing purchases through credit and the opportunity cost of borrowing over simply holding cash, further increasing consumption, particularly in relation to buying expensive durable goods. This increase in consumption also causes a fall in household savings, as the rise in the marginal propensity to consume (MPC) causes a corresponding decrease in the marginal propensity to save (MPS).
+
+	In relation to investment, lower market interest rates reduce interest repayments on existing debt for firms, increasing cash flow and profit, promoting investment. Additionally, lower interest rates increase the marginal efficiency of capital since the ongoing cost of purchasing capital funded by credit is reduced. This further promotes investment.
+
+	Falling market interest rates also cause the value of assets to rise - in particular, shares and property. This is due to an increased demand for these assets. This rise in asset prices causes an increases in a consumer's level of wealth, prompting them to consume more so that their lifestyle reflects their wealth (the wealth effect). This rise in asset prices also positively impacts consumer and business confidence, further promoting consumption and investment. The value of assets used as collateral for loans also increases, allowing firms and consumers to borrow more.
+
+	Finally, reduced market interest rates causes a decrease in Australia's interest rate differential compared with other countries, discouraging foreign investment due to decreased returns for investors. This reduces demand for the $AUD, causing a depreciation. This decreases the price of our export for overseas consumers, improving our competitiveness and causing a rise in export income after a time lag (in accordance with the J-curve theory). Additionally, a depreciation causes a rise in the price of imports for domestic consumers, decreasing import spending and increasing import substitution, promoting growth in import competing industries. This increases net exports, lifting aggregate demand.
+
+	This rise in aggregate demand causes a corresponding lift in output and real GDP, as demonstrated in the diagram below:
+
+	[diagram]
+
+	This will cause an increase in the derived demand for labour, reducing the unemployment rate and potentially increasing real wage rates. This will cause cost push inflationary pressures that, when combined with demand pull inflationary pressures from a rising aggregate demand, will cause a rise in the inflation rate.
+
+- strengths and weaknesses
+
